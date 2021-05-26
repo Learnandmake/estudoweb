@@ -13,5 +13,10 @@ namespace freiconsole.function
             return soma;
 
     }
+    public decimal media (decimal n1,decimal n2, decimal n3)
+    {
+            decimal media = (n1 + n2 + n3) / 3;
+            return media;
+    }
     }
 }

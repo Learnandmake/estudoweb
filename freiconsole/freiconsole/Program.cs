@@ -9,7 +9,9 @@ namespace freiconsole
     class Program
     {
         static void Main(string[] args)
-        {//1a
+        {
+            //SESSIONONE
+            //1a
             Console.WriteLine("Hello world");
 
             //1b
@@ -67,7 +69,7 @@ namespace freiconsole
             total = quantidade * valor;
             Console.WriteLine("P total a pagar é "+total);
 
-            //3aI
+            //3a
             int n3 = 0;
             int n4 = 0;
             int soma2 = 0;
@@ -78,6 +80,22 @@ namespace freiconsole
             function.calculadora calculadora = new function.calculadora();
             soma2= calculadora.somar(n3, n4);
             Console.WriteLine("A soma é: " + soma2);
+
+            //3b
+            decimal nota4 = 0;
+            decimal nota5 = 0;
+            decimal nota6 = 0;
+            decimal media2 = 0;
+            Console.WriteLine("informe a primeira nota");
+            nota4 = Convert.ToDecimal(Console.ReadLine());
+            Console.WriteLine("informe a segunda nota");
+            nota5 = Convert.ToDecimal(Console.ReadLine());
+            Console.WriteLine("informe a terceira nota");
+            nota6 = Convert.ToDecimal(Console.ReadLine());
+            function.calculadora calculadora2 = new function.calculadora();
+            media2 = calculadora2.media(nota4, nota5, nota6);
+
+            //SESSIONTWO
         }
     }
 }
