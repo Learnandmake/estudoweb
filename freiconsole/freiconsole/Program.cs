@@ -57,7 +57,27 @@ namespace freiconsole
 
             //2c
             int quantidade = 0;
+            decimal valor =  0;
+            decimal total = 0;
 
+            Console.WriteLine("Informe a quantidade de ingressos");
+             quantidade = 0;
+            Console.WriteLine("Informe o valor do ingresso");
+            valor = 0;
+            total = quantidade * valor;
+            Console.WriteLine("P total a pagar é "+total);
+
+            //3aI
+            int n3 = 0;
+            int n4 = 0;
+            int soma2 = 0;
+            Console.WriteLine("Informe o primeiro número:");
+            n3 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Informe o segundo número:");
+            n4 = Convert.ToInt32(Console.ReadLine());
+            function.calculadora calculadora = new function.calculadora();
+            soma2= calculadora.somar(n3, n4);
+            Console.WriteLine("A soma é: " + soma2);
         }
     }
 }
