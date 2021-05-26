@@ -77,7 +77,7 @@ namespace freiconsole
             n3 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Informe o segundo número:");
             n4 = Convert.ToInt32(Console.ReadLine());
-            function.calculadora calculadora = new function.calculadora();
+            function.sessionone calculadora = new function.sessionone();
             soma2= calculadora.somar(n3, n4);
             Console.WriteLine("A soma é: " + soma2);
 
@@ -92,10 +92,13 @@ namespace freiconsole
             nota5 = Convert.ToDecimal(Console.ReadLine());
             Console.WriteLine("informe a terceira nota");
             nota6 = Convert.ToDecimal(Console.ReadLine());
-            function.calculadora calculadora2 = new function.calculadora();
+            function.sessionone calculadora2 = new function.sessionone();
             media2 = calculadora2.media(nota4, nota5, nota6);
 
             //SESSIONTWO
+            
+            //nivel1
+
         }
     }
 }

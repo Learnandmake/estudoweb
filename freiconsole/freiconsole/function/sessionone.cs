@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace freiconsole.function
 {
-    class calculadora
+    class sessionone
     { public int somar(int n1, int n2)
     {
             int soma = n1 + n2;
