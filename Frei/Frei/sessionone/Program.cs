@@ -40,6 +40,24 @@ namespace Frei
             Console.WriteLine("A soma é " + soma);
 
             //2b
+            decimal nota1 = 0;
+            decimal nota2 = 0;
+            decimal nota3 = 0;
+
+            Console.WriteLine("informe a primeira nota");
+            nota1 = Convert.ToDecimal(Console.ReadLine());
+            Console.WriteLine("informe a segunda nota");
+            nota2 = Convert.ToDecimal(Console.ReadLine());
+            Console.WriteLine("informe a terceira nota");
+            nota3 = Convert.ToDecimal(Console.ReadLine());
+
+            decimal media = nota1 + nota2 + nota3 / 3;
+
+            Console.WriteLine("Sua média é " + media);
+
+            //2c
+            int quantidade = 0;
+
         }
     }
 }
