@@ -34,6 +34,7 @@ namespace freiconsole
             int n1 = 0;
             int n2 = 0;
             int soma = 0;
+            Console.WriteLine("Vamos calcular uma soma");
             Console.WriteLine("Informe o primeiro número:");
             n1 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Informe o segundo número:");
@@ -45,7 +46,7 @@ namespace freiconsole
             decimal nota1 = 0;
             decimal nota2 = 0;
             decimal nota3 = 0;
-
+            Console.WriteLine("Vamos calcular sua média ");
             Console.WriteLine("informe a primeira nota");
             nota1 = Convert.ToDecimal(Console.ReadLine());
             Console.WriteLine("informe a segunda nota");
@@ -73,6 +74,7 @@ namespace freiconsole
             int n3 = 0;
             int n4 = 0;
             int soma2 = 0;
+            Console.WriteLine("Vamos calcular uma soma de novo");
             Console.WriteLine("Informe o primeiro número:");
             n3 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Informe o segundo número:");
@@ -86,6 +88,7 @@ namespace freiconsole
             decimal nota5 = 0;
             decimal nota6 = 0;
             decimal media2 = 0;
+            Console.WriteLine("Vamos calcular sua média de novo");
             Console.WriteLine("informe a primeira nota");
             nota4 = Convert.ToDecimal(Console.ReadLine());
             Console.WriteLine("informe a segunda nota");
@@ -96,8 +99,34 @@ namespace freiconsole
             media2 = calculadora2.media(nota4, nota5, nota6);
 
             //SESSIONTWO
-            
-            //nivel1
+
+            //NIVEL1
+            //a
+            int idade1 = 0;
+            int fmc = 0;
+            Console.WriteLine("Hoje irei calcular sua frequência média cardíaca");
+            Console.WriteLine("Informe sua idade");
+            idade1 =Convert.ToInt32( Console.ReadLine());
+
+            function.sessiontwo fmc1 = new function.sessiontwo();
+            fmc = fmc1.fmc(idade1);
+
+            Console.WriteLine("Sua frequência média cardíaca é "+fmc);
+
+            //b
+            decimal altura = 0;
+            decimal peso = 0;
+            decimal imc = 0;
+            Console.WriteLine("Vamos calcular seu imc");
+            Console.WriteLine("Informe sua altura");
+            altura = Convert.ToDecimal(Console.ReadLine());
+            Console.WriteLine("Informe seu peso");
+            peso = Convert.ToDecimal(Console.ReadLine());
+            function.sessiontwo fimc = new function.sessiontwo();
+            imc = fimc.imc(peso, altura);
+            Console.WriteLine("Seu imc é " + imc);
+
+            //c
 
         }
     }
