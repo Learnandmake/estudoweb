@@ -127,6 +127,44 @@ namespace freiconsole
             Console.WriteLine("Seu imc é " + imc);
 
             //c
+            decimal valor1 = 0;
+            int qtdinteira = 0;
+            int qtdmeia = 0;
+            decimal total1 = 0;
+            Console.WriteLine("Vamos calcular tipos de  ingressos inteiros  e meios");
+         
+            Console.WriteLine("qual o valor do ingresso?");
+            valor1=Convert.ToDecimal(Console.ReadLine());
+            Console.WriteLine("quantas inteiras?");
+            qtdinteira = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("quantas meias?");
+            qtdmeia = Convert.ToInt32(Console.ReadLine());
+            function.sessiontwo ingresso = new function.sessiontwo();
+            total1 = ingresso.ingresso(valor, qtdinteira, qtdmeia);
+            Console.WriteLine("O total é "+ total1);
+
+            //NIVEL2
+            //a
+            int idade2 = 0;
+            string re;
+            Console.WriteLine("Vou verificar sua maioridade");
+            Console.WriteLine("Informe sua idade");
+            idade2 = Convert.ToInt32(Console.ReadLine());
+            function.sessiontwo vidade = new function.sessiontwo();
+            re = vidade.verificaridade(idade2);
+            Console.WriteLine("É maior de idade? "+re);
+
+            //b
+            decimal nota7 = 0;
+            Console.WriteLine("Vou te aconselhar a estudar");
+            Console.WriteLine("Me fale sua nota");
+            nota7 = Convert.ToDecimal(Console.ReadLine());
+            function.sessiontwo dica = new function.sessiontwo();
+            string conselho =  dica.conselho(nota7);
+
+            Console.WriteLine("Eu te aconselho a " + conselho);
+
+            //c
 
         }
     }
