@@ -265,7 +265,21 @@ namespace freiconsole
             Console.WriteLine("Sua temperatura arredondade é " + n7+"°C");
 
             //3
+            double cat1 ;
+            double cat2;
+            double hip;
+            Console.WriteLine("Vou calcular uma hipotenusa");
+            
 
+            Console.WriteLine("Digite o valor do primeiro cateto");
+            cat1 = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Digite o valor do primeiro cateto");
+            cat2 = Convert.ToDouble(Console.ReadLine());
+
+            function.sessiontwo hipfun = new function.sessiontwo();
+            hip = hipfun.calcularhipotenusa(cat1, cat2);
+            Console.WriteLine("A hipotenusa é "+hip);
         }
 
 

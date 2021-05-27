@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 namespace freiconsole.function
 {
     class sessiontwo
-    { public int fmc(int idade)
+    {
+        public int fmc(int idade)
         {
             int rfmc = 220 - idade;
             return rfmc;
@@ -194,11 +195,11 @@ namespace freiconsole.function
             bool par = false;
             decimal resto = numero % 2;
 
-       if (resto == 0)
-       {
+            if (resto == 0)
+            {
                 par = true;
 
-       }
+            }
 
             if (resto == 0)
             {
@@ -209,7 +210,7 @@ namespace freiconsole.function
             return par;
         }
 
-        public decimal arredondartemperatura (decimal numero)
+        public decimal arredondartemperatura(decimal numero)
         {
             decimal resultado = Math.Round(numero, 2);
 
@@ -217,6 +218,19 @@ namespace freiconsole.function
 
         }
 
+        public double calcularhipotenusa(double cateto1, double cateto2)
+        { double cateto3 = Math.Pow(cateto1,2);
+            double cateto4 = Math.Pow(cateto2, 2);
+
+            double somadocateto = cateto3 + cateto4;
+
+            double raiz = Math.Sqrt(somadocateto);
+
+            return raiz;
+
+
+          
+             }
 
         }
         }
