@@ -287,18 +287,25 @@ namespace freiconsole
             double b = 0;
             double c = 0;
          
-            Console.WriteLine("Digite o valor do primeiro cateto");
+            Console.WriteLine("Digite o valor do a ");
             a= Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Digite o valor do primeiro cateto");
+            Console.WriteLine("Digite o valor do b ");
             b=Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Digite o valor do primeiro cateto");
+            Console.WriteLine("Digite o valor do c");
             c=Convert.ToDouble(Console.ReadLine());
 
             function.sessiontwo bhasfunction = new function.sessiontwo();
             string resultado3 = bhasfunction.calbaskhara(a,b,c);
             Console.WriteLine(resultado3);
 
-
+            //5
+            Console.WriteLine("Vou colocar sua frase em maiucula e depois em minuscula");
+            string frase = "";
+            
+            frase = Console.ReadLine();
+            Console.WriteLine("Sua frase em maiuscula fica" + frase.ToUpper());
+        
+            Console.WriteLine("Sua frase em minuscula fica" + frase.ToLower());
         }
 
 
