@@ -29,7 +29,7 @@ namespace freiconsole.function
         }
         public string verificaridade(int idade)
         {
-            string reidade;
+            string reidade="";
             if (idade >= 18)
             {
                 reidade = "sim";
@@ -41,9 +41,7 @@ namespace freiconsole.function
                 reidade = "não";
                 return reidade;
             }
-
             return reidade;
-
         }
 
         public string conselho(decimal nota)
@@ -72,5 +70,42 @@ namespace freiconsole.function
 
             return dica;
         }
+
+        public int calcalorias(int qcomida ,int qbebida , int qsobremesa ,string comida,string bebida, string sobremesa)
+        {
+           
+            int ccomida = 0;
+            int cbebida = 0;
+            int csobremesa = 0;
+           
+            
+            if(comida == "fast-food")
+            {
+                ccomida = 300 * qcomida;
+             }
+            if (comida == "churras")
+            { ccomida = 400 * qcomida; }
+            if (comida == "lanche-natural")
+            { ccomida = 100 * qcomida; }
+
+            if (bebida == "coca-cola")
+            { cbebida = 200 * qbebida; }
+            if (bebida == "suco-caixa")
+            { cbebida = 150 * qbebida; }
+            if (bebida == "suco-Natural")
+            { cbebida = 80 * qbebida; }
+
+            if (sobremesa== "açai")
+            { csobremesa = 350 * qsobremesa; }
+            if (sobremesa == "bolo")
+            { csobremesa = 270 * qsobremesa; }
+            if (sobremesa == "mousse")
+            { csobremesa = 300 * qsobremesa; }
+
+            int total = ccomida + cbebida + csobremesa;
+            return total;
+
+        }
+
     }
 }

@@ -165,7 +165,35 @@ namespace freiconsole
             Console.WriteLine("Eu te aconselho a " + conselho);
 
             //c
+            string comida = "";
+            string bebida = "";
+            string sobremesa = "";
+            int qcomida = 0;
+            int qbebida = 0;
+            int qsobremesa = 0;
+            int caloria = 0;
 
+            Console.WriteLine("Vamos medir suas calorias");
+            Console.WriteLine("O que voce comeu?");
+            Console.WriteLine("Comida:fast-food/churras/lanche-natural");
+            comida = Console.ReadLine();
+            Console.WriteLine("quantidade?");
+            qcomida = Convert.ToInt32( Console.ReadLine());
+            Console.WriteLine("O que vc bebel?");
+            Console.WriteLine("Bebida:coca-cola/suco-caixa/suco-Natural");
+            bebida = Console.ReadLine();
+            Console.WriteLine("quantidade?");
+            qbebida = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Qual foi sua sobremesa?");
+            Console.WriteLine("Sobremesa:açai/bolo/mousse");
+            sobremesa = Console.ReadLine();
+            Console.WriteLine("quantidade?");
+            qsobremesa = Convert.ToInt32(Console.ReadLine());
+            
+            function.sessiontwo calkcal = new function.sessiontwo();
+            caloria = calkcal.calcalorias(qcomida, qbebida, qsobremesa, comida, bebida, sobremesa);
+
+            Console.WriteLine("voce ingeriu no total"+caloria+"kcal");
         }
     }
 }
