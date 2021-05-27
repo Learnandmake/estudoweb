@@ -117,7 +117,8 @@ namespace freiconsole.function
                 Console.WriteLine(ano);
                 return ano;    
             }
-            
+
+            return ano;
         }
 
         public void showhist(int ano)

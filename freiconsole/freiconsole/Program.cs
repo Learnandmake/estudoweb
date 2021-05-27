@@ -342,8 +342,7 @@ namespace freiconsole
 
             while (tabuada1 <= limite)
             {
-                tabuada1 = atenumero.tabuada2atelimite(limite);
-                Console.WriteLine(tabuada1);
+                atenumero.tabuadaate100();
             }
 
             //SESSIONTHREE
