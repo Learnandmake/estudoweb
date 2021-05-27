@@ -156,5 +156,36 @@ namespace freiconsole.function
 
             return periodo;
         }
+
+        public int tabuadaate100 (int numero)
+        {
+            int tabuada = 0;
+            int resultado = 0;
+
+            while(tabuada <=10)
+            {
+                resultado = numero * tabuada;
+                tabuada++;
+                return resultado;
+
+            }
+
+            return resultado;
+
+        }
+
+       public int tabuada2atelimite(int limite)
+       {
+         
+            int numero= 1;
+            int resultado = 0;
+            while(resultado <=limite)
+            {
+                resultado = numero * 2;
+                return resultado;
+            }
+            return resultado;
+       }
+
     }
 }

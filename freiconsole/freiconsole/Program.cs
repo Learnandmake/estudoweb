@@ -60,15 +60,15 @@ namespace freiconsole
 
             //2c
             int quantidade = 0;
-            decimal valor =  0;
+            decimal valor = 0;
             decimal total = 0;
 
             Console.WriteLine("Informe a quantidade de ingressos");
-             quantidade = 0;
+            quantidade = 0;
             Console.WriteLine("Informe o valor do ingresso");
             valor = 0;
             total = quantidade * valor;
-            Console.WriteLine("P total a pagar é "+total);
+            Console.WriteLine("P total a pagar é " + total);
 
             //3a
             int n3 = 0;
@@ -80,7 +80,7 @@ namespace freiconsole
             Console.WriteLine("Informe o segundo número:");
             n4 = Convert.ToInt32(Console.ReadLine());
             function.sessionone calculadora = new function.sessionone();
-            soma2= calculadora.somar(n3, n4);
+            soma2 = calculadora.somar(n3, n4);
             Console.WriteLine("A soma é: " + soma2);
 
             //3b
@@ -106,12 +106,12 @@ namespace freiconsole
             int fmc = 0;
             Console.WriteLine("Hoje irei calcular sua frequência média cardíaca");
             Console.WriteLine("Informe sua idade");
-            idade1 =Convert.ToInt32( Console.ReadLine());
+            idade1 = Convert.ToInt32(Console.ReadLine());
 
             function.sessiontwo fmc1 = new function.sessiontwo();
             fmc = fmc1.fmc(idade1);
 
-            Console.WriteLine("Sua frequência média cardíaca é "+fmc);
+            Console.WriteLine("Sua frequência média cardíaca é " + fmc);
 
             //b
             decimal altura = 0;
@@ -132,16 +132,16 @@ namespace freiconsole
             int qtdmeia = 0;
             decimal total1 = 0;
             Console.WriteLine("Vamos calcular tipos de  ingressos inteiros  e meios");
-         
+
             Console.WriteLine("qual o valor do ingresso?");
-            valor1=Convert.ToDecimal(Console.ReadLine());
+            valor1 = Convert.ToDecimal(Console.ReadLine());
             Console.WriteLine("quantas inteiras?");
             qtdinteira = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("quantas meias?");
             qtdmeia = Convert.ToInt32(Console.ReadLine());
             function.sessiontwo ingresso = new function.sessiontwo();
             total1 = ingresso.ingresso(valor, qtdinteira, qtdmeia);
-            Console.WriteLine("O total é "+ total1);
+            Console.WriteLine("O total é " + total1);
 
             //NIVEL2
             //a
@@ -152,7 +152,7 @@ namespace freiconsole
             idade2 = Convert.ToInt32(Console.ReadLine());
             function.sessiontwo vidade = new function.sessiontwo();
             re = vidade.verificaridade(idade2);
-            Console.WriteLine("É maior de idade? "+re);
+            Console.WriteLine("É maior de idade? " + re);
 
             //b
             decimal nota7 = 0;
@@ -160,7 +160,7 @@ namespace freiconsole
             Console.WriteLine("Me fale sua nota");
             nota7 = Convert.ToDecimal(Console.ReadLine());
             function.sessiontwo dica = new function.sessiontwo();
-            string conselho =  dica.conselho(nota7);
+            string conselho = dica.conselho(nota7);
 
             Console.WriteLine("Eu te aconselho a " + conselho);
 
@@ -178,7 +178,7 @@ namespace freiconsole
             Console.WriteLine("Comida:fast-food/churras/lanche-natural");
             comida = Console.ReadLine();
             Console.WriteLine("quantidade?");
-            qcomida = Convert.ToInt32( Console.ReadLine());
+            qcomida = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("O que vc bebel?");
             Console.WriteLine("Bebida:coca-cola/suco-caixa/suco-Natural");
             bebida = Console.ReadLine();
@@ -189,11 +189,11 @@ namespace freiconsole
             sobremesa = Console.ReadLine();
             Console.WriteLine("quantidade?");
             qsobremesa = Convert.ToInt32(Console.ReadLine());
-            
+
             function.sessiontwo calkcal = new function.sessiontwo();
             caloria = calkcal.calcalorias(qcomida, qbebida, qsobremesa, comida, bebida, sobremesa);
 
-            Console.WriteLine("voce ingeriu no total"+caloria+"kcal");
+            Console.WriteLine("voce ingeriu no total" + caloria + "kcal");
 
             //NIVEL3
 
@@ -216,9 +216,30 @@ namespace freiconsole
                 periodo1 = st.contarhistorico(chistoria);
                 Console.WriteLine(periodo1);
             }
-            
+
+            //b
+            Console.WriteLine("Vou calcular a tabuada até cem apartir de um numero que você dé");
+            int numero = 0;
+            int total2 = 0;
+            function.sessiontwo tabuada = new function.sessiontwo();
+            total2= tabuada.tabuadaate100(numero);
+
+            Console.WriteLine(total2);
+
+            //c
+            Console.WriteLine("Vou calcular a tabuada do 2 até o limite indicado");
+            Console.WriteLine("Digite o limite indicado");
+            int limite = Convert.ToInt32(Console.ReadLine());
+            function.sessiontwo atenumero = new function.sessiontwo();
+            int tabuada1 = 0;
 
 
+            while (tabuada1 <=limite)
+            {
+                tabuada1 = atenumero.tabuada2atelimite(limite);
+                Console.WriteLine(tabuada1);
+            }
+        }
             
     }
 }
