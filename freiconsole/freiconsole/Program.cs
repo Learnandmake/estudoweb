@@ -264,6 +264,8 @@ namespace freiconsole
             n7 = arredondar.arredondartemperatura(n6);
             Console.WriteLine("Sua temperatura arredondade é " + n7+"°C");
 
+            //3
+
         }
 
 
