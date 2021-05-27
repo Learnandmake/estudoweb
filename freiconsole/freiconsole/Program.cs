@@ -222,7 +222,7 @@ namespace freiconsole
             int numero = 0;
             int total2 = 0;
             function.sessiontwo tabuada = new function.sessiontwo();
-            total2= tabuada.tabuadaate100(numero);
+            total2 = tabuada.tabuadaate100(numero);
 
             Console.WriteLine(total2);
 
@@ -234,12 +234,15 @@ namespace freiconsole
             int tabuada1 = 0;
 
 
-            while (tabuada1 <=limite)
+            while (tabuada1 <= limite)
             {
                 tabuada1 = atenumero.tabuada2atelimite(limite);
                 Console.WriteLine(tabuada1);
             }
         }
-            
+
+
+        //SESSIONFOUR
+
     }
 }
