@@ -210,12 +210,13 @@ namespace freiconsole.function
         }
 
         public decimal arredondartemperatura (decimal numero)
-            {
-            
-           
-            
+        {
+            decimal resultado = Math.Round(numero, 2);
 
-            }
+            return resultado;
+
+        }
+
 
         }
         }

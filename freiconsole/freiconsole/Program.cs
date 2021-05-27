@@ -257,8 +257,12 @@ namespace freiconsole
             //2
             Console.WriteLine("vou arredondar sua temperatura");
             decimal n6 = 0;
+            decimal n7 = 0;
             Console.WriteLine("Informe a temperatura");
-            
+            n6 = Convert.ToDecimal(Console.ReadLine());
+            function.sessiontwo arredondar = new function.sessiontwo();
+            n7 = arredondar.arredondartemperatura(n6);
+            Console.WriteLine("Sua temperatura arredondade é " + n7+"°C");
 
         }
 
