@@ -239,10 +239,22 @@ namespace freiconsole
                 tabuada1 = atenumero.tabuada2atelimite(limite);
                 Console.WriteLine(tabuada1);
             }
+
+            //SESSIONFOUR
+            //1
+            Console.WriteLine("Vou ver se seu numero é impar ou par");
+            Console.WriteLine("digite um numero inteiro");
+            int n5 = Convert.ToInt32(Console.ReadLine());
+            function.sessiontwo imparoupar = new function.sessiontwo();
+            string resultado = imparoupar.imparoupa(n5);
+
+            Console.WriteLine("Seu número é " + resultado);
+
+            //2
+
         }
 
 
-        //SESSIONFOUR
 
     }
 }

@@ -7,19 +7,19 @@ using System.Threading.Tasks;
 namespace freiconsole.function
 {
     class sessiontwo
-    { public int fmc (int idade)
-    {
+    { public int fmc(int idade)
+        {
             int rfmc = 220 - idade;
             return rfmc;
-    }
+        }
 
-        public decimal imc(decimal peso, decimal altura )
+        public decimal imc(decimal peso, decimal altura)
         {
-            decimal rimc = peso/(altura * altura);
+            decimal rimc = peso / (altura * altura);
             return rimc;
         }
 
-        public decimal ingresso (decimal valor, int qtdinteira, int qtdmeia)
+        public decimal ingresso(decimal valor, int qtdinteira, int qtdmeia)
         {
             decimal vli = valor * qtdinteira;
             decimal vlm = (valor * qtdmeia) / 2;
@@ -29,13 +29,13 @@ namespace freiconsole.function
         }
         public string verificaridade(int idade)
         {
-            string reidade="";
+            string reidade = "";
             if (idade >= 18)
             {
                 reidade = "sim";
                 return reidade;
             }
-           
+
             if (idade < 18)
             {
                 reidade = "não";
@@ -47,8 +47,8 @@ namespace freiconsole.function
         public string conselho(decimal nota)
         {
             string dica;
-        if (0<=3)
-        {
+            if (0 <= 3)
+            {
                 dica = "Verifique os pontos de dificuldade antes de continuar.";
                 return dica;
             }
@@ -71,18 +71,18 @@ namespace freiconsole.function
             return dica;
         }
 
-        public int calcalorias(int qcomida ,int qbebida , int qsobremesa ,string comida,string bebida, string sobremesa)
+        public int calcalorias(int qcomida, int qbebida, int qsobremesa, string comida, string bebida, string sobremesa)
         {
-           
+
             int ccomida = 0;
             int cbebida = 0;
             int csobremesa = 0;
-           
-            
-            if(comida == "fast-food")
+
+
+            if (comida == "fast-food")
             {
                 ccomida = 300 * qcomida;
-             }
+            }
             if (comida == "churras")
             { ccomida = 400 * qcomida; }
             if (comida == "lanche-natural")
@@ -95,7 +95,7 @@ namespace freiconsole.function
             if (bebida == "suco-Natural")
             { cbebida = 80 * qbebida; }
 
-            if (sobremesa== "açai")
+            if (sobremesa == "açai")
             { csobremesa = 350 * qsobremesa; }
             if (sobremesa == "bolo")
             { csobremesa = 270 * qsobremesa; }
@@ -109,64 +109,64 @@ namespace freiconsole.function
 
         public string contarhistorico(int ano)
         {
-           string periodo = "";
-          
-                if (ano == 476)
-                {
-                    periodo = "Antiguidade-termino";
-                    return periodo;
-                }
-                if (ano == -4000)
-                {
-                    periodo = "Antiguidade-inicio";
-                    return periodo;
-                }
+            string periodo = "";
+
+            if (ano == 476)
+            {
+                periodo = "Antiguidade-termino";
+
+            }
+            if (ano == -4000)
+            {
+                periodo = "Antiguidade-inicio";
+
+            }
 
 
-                if (ano == 477)
-                {
-                    periodo = "idademedia-incio";
-                    return periodo;
-                }
-                if (ano == 1453)
-                {
-                    periodo = "idademedia-termino";
-                    return periodo;
-                }
+            if (ano == 477)
+            {
+                periodo = "idademedia-incio";
+
+            }
+            if (ano == 1453)
+            {
+                periodo = "idademedia-termino";
+
+            }
 
 
-                if (ano == 1454)
-                {
-                    periodo = "idademoderna-incio";
-                    return periodo;
-                }
-                if (ano == 1789)
-                {
-                    periodo = "idademoderna-termino";
-                    return periodo;
-                }
+            if (ano == 1454)
+            {
+                periodo = "idademoderna-incio";
+
+            }
+            if (ano == 1789)
+            {
+                periodo = "idademoderna-termino";
+
+            }
 
 
-                if (ano == 1790)
-                {
-                    periodo = "idadecontemporanea-incio";
-                    return periodo;
-                }
-            
+            if (ano == 1790)
+            {
+                periodo = "idadecontemporanea-incio";
+
+            }
+
 
             return periodo;
         }
 
-        public int tabuadaate100 (int numero)
+        public int tabuadaate100(int numero)
         {
             int tabuada = 0;
             int resultado = 0;
 
-            while(tabuada <=10)
+            while (tabuada <= 10)
             {
                 resultado = numero * tabuada;
                 tabuada++;
-                return resultado;
+
 
             }
 
@@ -174,18 +174,42 @@ namespace freiconsole.function
 
         }
 
-       public int tabuada2atelimite(int limite)
-       {
-         
-            int numero= 1;
+        public int tabuada2atelimite(int limite)
+        {
+
+            int numero = 1;
             int resultado = 0;
-            while(resultado <=limite)
+            while (resultado <= limite)
             {
                 resultado = numero * 2;
-                return resultado;
+
             }
             return resultado;
-       }
+        }
 
-    }
-}
+
+        public string imparoupa(int numero)
+        {
+            int operacao = numero % 2;
+
+            string resultado = "";
+            if (operacao == 0)
+            {
+                resultado = "par";
+
+            }
+
+            else
+            { resultado = "impar"; }
+            return resultado;
+
+            }
+
+
+        }
+        }
+
+    
+
+      
+  
