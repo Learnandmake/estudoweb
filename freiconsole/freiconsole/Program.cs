@@ -99,6 +99,122 @@ namespace freiconsole
             function.sessionone calculadora2 = new function.sessionone();
             media2 = calculadora2.media(nota4, nota5, nota6);
 
+            //3c
+            int quantidadeingresso = 0;
+            decimal valoringresso = 0;
+            decimal totalingresso = 0;
+
+            Console.WriteLine("Informe a quantidade de ingressos");
+            quantidadeingresso = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Informe o valor de ingressos");
+            valoringresso = Convert.ToInt32(Console.ReadLine());
+
+            function.sessionone bilhete = new function.sessionone();
+            totalingresso = bilhete.calculartotal(quantidade, valoringresso);
+
+            //4a
+            decimal nota4a = 0;
+            decimal nota4a1 = 0;
+            decimal nota4a2 = 0;
+            decimal media4a = 0;
+
+            Console.WriteLine("Informe a primeira nota");
+            nota4a = Convert.ToDecimal(Console.ReadLine());
+
+
+            Console.WriteLine("Informe a segunda nota");
+            nota4a1 = Convert.ToDecimal(Console.ReadLine());
+
+
+            Console.WriteLine("Informe a terceira nota");
+            nota4a2 = Convert.ToDecimal(Console.ReadLine());
+
+            media4a = (nota4a + nota4a1 + nota4a2) / 3;
+
+            Console.WriteLine("A média é: " + media4a);
+
+            if (media4a >= 5)
+            {
+                Console.WriteLine("Parabéns, você passou!");
+
+            }
+
+            else
+            {
+                Console.WriteLine("Infelizmente você não passou");
+            }
+
+            //4b
+            int quantidadeingresso1 = 0;
+            decimal valoringresso1 = 0;
+            string tipoingresso = "";
+            decimal totalingresso1 = 0;
+
+            Console.WriteLine("Informe a quantidade de ingressos");
+            quantidadeingresso1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Informe o valor dos ingressos");
+            valoringresso1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Informe o tipo de ingresso");
+            tipoingresso = Console.ReadLine();
+
+            if(tipoingresso == "inteira")
+            {
+                totalingresso1 = quantidadeingresso1 * valoringresso1;
+
+            }
+
+            else 
+            {
+                totalingresso1 = (quantidadeingresso1 * valoringresso1)/2 ;
+            }
+
+            Console.WriteLine("O total a pagar é: " +totalingresso1);
+
+            //4c
+            int qtdingresso2 = 0;
+            decimal vlingresso2 = 0;
+            string tipoing = "";
+            decimal tlingresso = 0;
+
+            Console.WriteLine("Informe a quantidade de ingressos");
+            qtdingresso2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Informe o valor dos ingressos");
+            vlingresso2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Informe o tipo de ingresso");
+            tipoing = Console.ReadLine();
+
+            function.sessionone calc = new function.sessionone();
+
+            tlingresso = calc.calculartotal(qtdingresso2, vlingresso2, tipoing);
+
+            Console.WriteLine("O total a pagar é: " + total);
+
+            //4d
+            decimal nt1 = 0;
+            decimal nt2 = 0;
+            decimal nt3 = 0;
+            decimal ma = 0;
+
+            Console.WriteLine("informe a primeira nota ");
+            nt1 = Convert.ToDecimal(Console.ReadLine());
+
+            Console.WriteLine("informe a segunda nota ");
+            nt2 = Convert.ToDecimal(Console.ReadLine());
+
+            Console.WriteLine("informe a terceira nota ");
+            nt3 = Convert.ToDecimal(Console.ReadLine());
+
+            function.sessionone calmedia = new function.sessionone();
+            ma = calmedia.calmedia(nt1, nt2, nt3);
+
+            Console.WriteLine("A média é: " + ma);
+
+            calmedia.verificarmedia(media);
             //SESSIONTWO
 
             //NIVEL1
