@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace freiconsole
@@ -262,14 +263,14 @@ namespace freiconsole
             n6 = Convert.ToDecimal(Console.ReadLine());
             function.sessiontwo arredondar = new function.sessiontwo();
             n7 = arredondar.arredondartemperatura(n6);
-            Console.WriteLine("Sua temperatura arredondade é " + n7+"°C");
+            Console.WriteLine("Sua temperatura arredondade é " + n7 + "°C");
 
             //3
-            double cat1 ;
+            double cat1;
             double cat2;
             double hip;
             Console.WriteLine("Vou calcular uma hipotenusa");
-            
+
 
             Console.WriteLine("Digite o valor do primeiro cateto");
             cat1 = Convert.ToDouble(Console.ReadLine());
@@ -279,32 +280,32 @@ namespace freiconsole
 
             function.sessiontwo hipfun = new function.sessiontwo();
             hip = hipfun.calcularhipotenusa(cat1, cat2);
-            Console.WriteLine("A hipotenusa é "+hip);
+            Console.WriteLine("A hipotenusa é " + hip);
 
             //4
             Console.WriteLine("Vou calcular baskhara");
             double a = 0;
             double b = 0;
             double c = 0;
-         
+
             Console.WriteLine("Digite o valor do a ");
-            a= Convert.ToDouble(Console.ReadLine());
+            a = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Digite o valor do b ");
-            b=Convert.ToDouble(Console.ReadLine());
+            b = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Digite o valor do c");
-            c=Convert.ToDouble(Console.ReadLine());
+            c = Convert.ToDouble(Console.ReadLine());
 
             function.sessiontwo bhasfunction = new function.sessiontwo();
-            string resultado3 = bhasfunction.calbaskhara(a,b,c);
+            string resultado3 = bhasfunction.calbaskhara(a, b, c);
             Console.WriteLine(resultado3);
 
             //5
             Console.WriteLine("Vou colocar sua frase em maiucula e depois em minuscula");
             string frase = "";
-            
+
             frase = Console.ReadLine();
             Console.WriteLine("Sua frase em maiuscula fica" + frase.ToUpper());
-        
+
             Console.WriteLine("Sua frase em minuscula fica" + frase.ToLower());
 
             //6
@@ -329,7 +330,7 @@ namespace freiconsole
             Console.WriteLine("Digite seu numero");
             string tel = Convert.ToString(Console.ReadLine());
             brasil = tel.Contains("+55");
-            if(brasil== true)
+            if (brasil == true)
             {
                 Console.WriteLine("seu numero pertence ao Brasil");
             }
@@ -340,18 +341,18 @@ namespace freiconsole
             Console.WriteLine("vou mudar as vogais da sua frase");
             Console.WriteLine("Digite a frase");
             string frase2 = Console.ReadLine();
-           
-            int a1 =  frase2.IndexOf("a");
-            frase2.Substring(a1,4);
-          
+
+            int a1 = frase2.IndexOf("a");
+            frase2.Substring(a1, 4);
+
             int e = frase2.IndexOf("e");
-             frase2.Substring(e, 3);
+            frase2.Substring(e, 3);
 
             int i = frase2.IndexOf("i");
-             frase2.Substring(i, 1);
+            frase2.Substring(i, 1);
 
             int o = frase2.IndexOf("o");
-           frase2.Substring(o, 0);
+            frase2.Substring(o, 0);
 
             int u = frase2.IndexOf("u");
             frase2.Substring(u, 9);
@@ -360,10 +361,30 @@ namespace freiconsole
             Console.WriteLine(frase2);
 
             //10
+            Console.WriteLine("vou tirar as letras da sua frase");
+            Console.WriteLine("digite sua frase");
+            var frase3 = Console.ReadLine();
+            var apenasDigitos = new Regex(@"[^\d]");
+            string frasetratada = apenasDigitos.Replace(frase3, "");
+            Console.WriteLine("Sua frase ficou assim");
+            Console.WriteLine(frasetratada);
+
+
+            //11
+            Console.WriteLine("Vou dizer seu primeiro nome");
+            Console.WriteLine("informe seu nome completo");
+            string nomecompleto = Console.ReadLine();
+            
+
+            
+
+        }
+
+            
 
         }
 
 
 
     }
-}
+
