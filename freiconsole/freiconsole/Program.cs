@@ -306,6 +306,36 @@ namespace freiconsole
             Console.WriteLine("Sua frase em maiuscula fica" + frase.ToUpper());
         
             Console.WriteLine("Sua frase em minuscula fica" + frase.ToLower());
+
+            //6
+            Console.WriteLine("Vou falar quantas letras tem sua palavra");
+            Console.WriteLine("Infome a palavra");
+            string palavra = Console.ReadLine();
+            int legth = palavra.Length;
+            Console.WriteLine("Sua palavra tem " + legth + " letras");
+
+            //7
+            Console.WriteLine("Vou dizer a primeira e a ultima letra da sua palavra");
+            Console.WriteLine("Digite a palavra");
+            string palavra1 = Console.ReadLine();
+            string pletra = palavra1.Substring(1);
+            string uletra = palavra1.Substring(palavra1.Length - 1, 1);
+            Console.WriteLine("a primeira letra é " + pletra);
+            Console.WriteLine("a ultima letra é " + uletra);
+
+            //8
+            Console.WriteLine("Vou verificar se seu numero é do brasil");
+            bool brasil = false;
+            Console.WriteLine("Digite seu numero");
+            string tel = Convert.ToString(Console.ReadLine());
+            brasil = tel.Contains("+55");
+            if(brasil== true)
+            {
+                Console.WriteLine("seu numero pertence ao Brasil");
+            }
+            else
+            { Console.WriteLine("seu numero não é do brasil"); }
+
         }
 
 
