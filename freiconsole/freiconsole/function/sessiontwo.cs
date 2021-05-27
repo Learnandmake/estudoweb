@@ -188,23 +188,34 @@ namespace freiconsole.function
         }
 
 
-        public string imparoupa(int numero)
+        public bool imparoupa(decimal numero)
         {
-            int operacao = numero % 2;
+            numero = Math.Ceiling(numero);
+            bool par = false;
+            decimal resto = numero % 2;
 
-            string resultado = "";
-            if (operacao == 0)
+       if (resto == 0)
+       {
+                par = true;
+
+       }
+
+            if (resto == 0)
             {
-                resultado = "par";
+                par = false;
 
             }
 
-            else
-            { resultado = "impar"; }
-            return resultado;
+            return par;
+        }
+
+        public decimal arredondartemperatura (decimal numero)
+            {
+            
+           
+            
 
             }
-
 
         }
         }

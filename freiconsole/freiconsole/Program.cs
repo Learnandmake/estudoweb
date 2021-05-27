@@ -240,17 +240,25 @@ namespace freiconsole
                 Console.WriteLine(tabuada1);
             }
 
-            //SESSIONFOUR
+            //SESSIONTHREE
             //1
             Console.WriteLine("Vou ver se seu numero é impar ou par");
             Console.WriteLine("digite um numero inteiro");
-            int n5 = Convert.ToInt32(Console.ReadLine());
+            decimal n5 = Convert.ToDecimal(Console.ReadLine());
             function.sessiontwo imparoupar = new function.sessiontwo();
-            string resultado = imparoupar.imparoupa(n5);
+            bool resultado = imparoupar.imparoupa(n5);
 
-            Console.WriteLine("Seu número é " + resultado);
+            if (resultado == true)
+            { Console.WriteLine("Seu número é par"); }
+
+            if (resultado == false)
+            { Console.WriteLine("Seu número é impar"); }
 
             //2
+            Console.WriteLine("vou arredondar sua temperatura");
+            decimal n6 = 0;
+            Console.WriteLine("Informe a temperatura");
+            
 
         }
 
