@@ -194,6 +194,31 @@ namespace freiconsole
             caloria = calkcal.calcalorias(qcomida, qbebida, qsobremesa, comida, bebida, sobremesa);
 
             Console.WriteLine("voce ingeriu no total"+caloria+"kcal");
-        }
+
+            //NIVEL3
+
+            //a
+            Console.WriteLine("vamos ver o periodo historico");
+            function.sessiontwo contar = new function.sessiontwo();
+
+            string periodo1;
+            int chistoria = -4000;
+
+            while (chistoria < 2019)
+            {
+                chistoria++;
+                Console.WriteLine(chistoria);
+            }
+
+            while (chistoria < 2019)
+            {
+                function.sessiontwo st = new function.sessiontwo();
+                periodo1 = st.contarhistorico(chistoria);
+                Console.WriteLine(periodo1);
+            }
+            
+
+
+            
     }
 }

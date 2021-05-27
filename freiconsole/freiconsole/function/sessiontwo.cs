@@ -107,5 +107,54 @@ namespace freiconsole.function
 
         }
 
+        public string contarhistorico(int ano)
+        {
+           string periodo = "";
+          
+                if (ano == 476)
+                {
+                    periodo = "Antiguidade-termino";
+                    return periodo;
+                }
+                if (ano == -4000)
+                {
+                    periodo = "Antiguidade-inicio";
+                    return periodo;
+                }
+
+
+                if (ano == 477)
+                {
+                    periodo = "idademedia-incio";
+                    return periodo;
+                }
+                if (ano == 1453)
+                {
+                    periodo = "idademedia-termino";
+                    return periodo;
+                }
+
+
+                if (ano == 1454)
+                {
+                    periodo = "idademoderna-incio";
+                    return periodo;
+                }
+                if (ano == 1789)
+                {
+                    periodo = "idademoderna-termino";
+                    return periodo;
+                }
+
+
+                if (ano == 1790)
+                {
+                    periodo = "idadecontemporanea-incio";
+                    return periodo;
+                }
+            
+
+            return periodo;
+        }
     }
 }
