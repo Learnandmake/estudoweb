@@ -280,6 +280,25 @@ namespace freiconsole
             function.sessiontwo hipfun = new function.sessiontwo();
             hip = hipfun.calcularhipotenusa(cat1, cat2);
             Console.WriteLine("A hipotenusa é "+hip);
+
+            //4
+            Console.WriteLine("Vou calcular baskhara");
+            double a = 0;
+            double b = 0;
+            double c = 0;
+         
+            Console.WriteLine("Digite o valor do primeiro cateto");
+            a= Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Digite o valor do primeiro cateto");
+            b=Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Digite o valor do primeiro cateto");
+            c=Convert.ToDouble(Console.ReadLine());
+
+            function.sessiontwo bhasfunction = new function.sessiontwo();
+            string resultado3 = bhasfunction.calbaskhara(a,b,c);
+            Console.WriteLine(resultado3);
+
+
         }
 
 

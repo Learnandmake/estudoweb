@@ -227,11 +227,20 @@ namespace freiconsole.function
             double raiz = Math.Sqrt(somadocateto);
 
             return raiz;
-
-
-          
              }
 
+             public string  calbaskhara( double a,double b,double c )
+              {
+            double delta = ((Math.Pow(b, 2)) - 4 * a * c);
+
+            double xp = ((-b + (Math.Sqrt(delta)) / 2*a));
+
+            double xn = ((-b + (Math.Sqrt(delta)) / 2 * a));
+
+            string resultado = "O resultado positivo é " + Convert.ToString(xp) + " E o negativo é: " + Convert.ToString(xn) + ".";
+
+            return resultado;
+        }
         }
         }
 
