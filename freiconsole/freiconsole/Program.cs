@@ -336,6 +336,31 @@ namespace freiconsole
             else
             { Console.WriteLine("seu numero não é do brasil"); }
 
+            //9
+            Console.WriteLine("vou mudar as vogais da sua frase");
+            Console.WriteLine("Digite a frase");
+            string frase2 = Console.ReadLine();
+           
+            int a1 =  frase2.IndexOf("a");
+            frase2.Substring(a1,4);
+          
+            int e = frase2.IndexOf("e");
+             frase2.Substring(e, 3);
+
+            int i = frase2.IndexOf("i");
+             frase2.Substring(i, 1);
+
+            int o = frase2.IndexOf("o");
+           frase2.Substring(o, 0);
+
+            int u = frase2.IndexOf("u");
+            frase2.Substring(u, 9);
+
+            Console.WriteLine("Sua frase ficou");
+            Console.WriteLine(frase2);
+
+            //10
+
         }
 
 
