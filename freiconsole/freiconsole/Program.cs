@@ -381,7 +381,7 @@ namespace freiconsole
             Console.WriteLine("Vou dizer seu ultimo nome");
             Console.WriteLine("digite seu nome completo");
             string ultimonome = Console.ReadLine();
-            ultimonome.Substring(primeironome.LastIndexOf(" "),0);
+            ultimonome.Substring(primeironome.LastIndexOf(" "),ultimonome.Length);
             
 
             
