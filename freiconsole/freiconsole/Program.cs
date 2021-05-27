@@ -317,22 +317,11 @@ namespace freiconsole
             //a
             Console.WriteLine("vamos ver o periodo historico");
             function.sessiontwo contar = new function.sessiontwo();
-
-            string periodo1;
-            int chistoria = -4000;
-
-            while (chistoria < 2019)
-            {
-                chistoria++;
-                Console.WriteLine(chistoria);
-            }
-
-            while (chistoria < 2019)
-            {
-                function.sessiontwo st = new function.sessiontwo();
-                periodo1 = st.contarhistorico(chistoria);
-                Console.WriteLine(periodo1);
-            }
+            int ano = -4000;
+            int ano1 =  contar.contarhist(ano);
+          
+            contar.showhist(ano1);
+           
 
             //b
             Console.WriteLine("Vou calcular a tabuada até cem apartir de um numero que você dé");

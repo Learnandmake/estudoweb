@@ -107,55 +107,67 @@ namespace freiconsole.function
             return total;
 
         }
+        public int  contarhist (int ano)
+        {
+        
 
-        public string contarhistorico(int ano)
+            while(ano<=2019)
+            {
+                ano++;
+                Console.WriteLine(ano);
+                return ano;    
+            }
+            
+        }
+
+        public void showhist(int ano)
         {
             string periodo = "";
 
             if (ano == 476)
             {
-                periodo = "Antiguidade-termino";
+                Console.WriteLine( "Antiguidade-termino");
 
             }
             if (ano == -4000)
             {
-                periodo = "Antiguidade-inicio";
+                Console.WriteLine("Antiguidade-inicio");
 
             }
 
 
             if (ano == 477)
             {
-                periodo = "idademedia-incio";
+                Console.WriteLine("idademedia-incio");
 
             }
             if (ano == 1453)
             {
-                periodo = "idademedia-termino";
+                Console.WriteLine("idademedia-termino");
 
             }
 
 
             if (ano == 1454)
             {
-                periodo = "idademoderna-incio";
+                Console.WriteLine("idademoderna-incio");
 
             }
             if (ano == 1789)
             {
-                periodo = "idademoderna-termino";
+                Console.WriteLine("idademoderna-termino");
 
             }
 
 
             if (ano == 1790)
             {
-                periodo = "idadecontemporanea-incio";
+                Console.WriteLine("idadecontemporanea-incio");
 
             }
 
 
-            return periodo;
+          
         }
 
         public int tabuadaate100(int numero)
