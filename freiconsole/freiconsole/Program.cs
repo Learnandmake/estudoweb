@@ -373,7 +373,15 @@ namespace freiconsole
             //11
             Console.WriteLine("Vou dizer seu primeiro nome");
             Console.WriteLine("informe seu nome completo");
-            string nomecompleto = Console.ReadLine();
+            string primeironome = Console.ReadLine();
+            primeironome.Substring(0, primeironome.IndexOf(" "));
+            Console.WriteLine("O seu primerio nome é" + primeironome);
+
+            //12
+            Console.WriteLine("Vou dizer seu ultimo nome");
+            Console.WriteLine("digite seu nome completo");
+            string ultimonome = Console.ReadLine();
+            ultimonome.Substring(primeironome.LastIndexOf(" "),0);
             
 
             
