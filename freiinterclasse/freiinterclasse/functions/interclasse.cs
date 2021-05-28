@@ -252,7 +252,34 @@ namespace freiinterclasse.functions
             return convertida;
         }
 
+        public string leragencia (string frase)
+        {
+            int ag = frase.IndexOf("ag=");
+            int espaco = frase.IndexOf(" ", ag);
 
+            int inicio = ag + 3;
+            int tamanho = espaco - inicio;
+
+            string agencia = frase.Substring(inicio, tamanho);
+
+            return agencia;
+
+        }
+        
+        public string lerconta( string frase )
+        {
+            int cc = frase.IndexOf("cc=");
+            int espaco = frase.IndexOf(" ", cc);
+
+            int incio = cc + 3;
+            int tamanho = espaco - incio;
+
+            string agencia = frase.Substring(incio, tamanho);
+            return agencia;
+
+        }
+
+        
     }
 
             }

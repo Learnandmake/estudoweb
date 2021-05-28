@@ -147,7 +147,15 @@ namespace freiinterclasse
 
             Console.WriteLine(r11);
 
+            Console.WriteLine(" informe um Cpf:");
+            string palavra4 = Console.ReadLine();
 
+            string ag = interclassefunction.leragencia(palavra3);
+            string cc = interclassefunction.lerconta(palavra3);
+
+            Console.WriteLine(ag);
+            Console.WriteLine(cc);
+       
 
              }
 
