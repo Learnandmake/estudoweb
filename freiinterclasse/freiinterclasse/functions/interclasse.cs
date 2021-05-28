@@ -279,6 +279,28 @@ namespace freiinterclasse.functions
 
         }
 
+        public string periodonascimento (DateTime nasc)
+        {
+         if(nasc.Hour >= 6 && nasc.Hour <12)
+         {
+                return "Manhã";
+         }
+
+         else if (nasc.Hour >= 12 && nasc.Hour <18)
+         {
+                return "Tarde";
+
+         }
+
+         else
+         {
+                return "Noite";
+         }
+        }
+
+
+
+
         
     }
 

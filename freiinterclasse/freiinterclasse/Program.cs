@@ -133,6 +133,7 @@ namespace freiinterclasse
                 Console.WriteLine("Perdeu");
             }
 
+            //12.exercicio
             Console.WriteLine("Informe um CPF:");
             string palavra3 = Console.ReadLine();
 
@@ -140,6 +141,8 @@ namespace freiinterclasse
 
             Console.WriteLine(r10);
 
+
+            //13.exercicio
             Console.WriteLine("Informe um frase:");
             string frase2 = Console.ReadLine();
 
@@ -147,6 +150,7 @@ namespace freiinterclasse
 
             Console.WriteLine(r11);
 
+            //14.exercicio
             Console.WriteLine(" informe um Cpf:");
             string palavra4 = Console.ReadLine();
 
@@ -155,8 +159,14 @@ namespace freiinterclasse
 
             Console.WriteLine(ag);
             Console.WriteLine(cc);
-       
 
+            //15.exercicio
+            Console.WriteLine("Informe sua data de nascimento:");
+            DateTime nasc = Convert.ToDateTime(Console.ReadLine());
+
+            string r12 = interclassefunction.periodonascimento(nasc);
+
+            Console.WriteLine(r12);
              }
 
 
