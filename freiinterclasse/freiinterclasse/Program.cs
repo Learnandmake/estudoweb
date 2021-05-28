@@ -67,8 +67,58 @@ namespace freiinterclasse
                 Console.WriteLine("Não possui todas as vogais");
 
             }
-            
-            } 
+            //5.exercicio
+            Console.WriteLine("Informe um numero:");
+            string n1 = Console.ReadLine();
+
+            double numero = Convert.ToDouble(n1.Trim());
+
+            double r3 = interclassefunction.calcularraiz(numero);
+
+            Console.WriteLine(r3);
+
+            //6.exercicio
+            Console.WriteLine("Informe um numero");
+            double n2 = Convert.ToDouble(Console.ReadLine());
+
+            double r4 = interclassefunction.arredondar(n2);
+
+            Console.WriteLine(r4);
+
+            //7.exercicio
+            Console.WriteLine("informe um e-mail");
+            string email = Console.ReadLine();
+
+            string r5 = interclassefunction.empresaemail(email);
+
+            Console.WriteLine(r5);
+
+            //8.exercicio
+            Console.WriteLine("informe uma palavra composta");
+            string palavra = Console.ReadLine();
+
+            string r6 = interclassefunction.inverter(palavra);
+
+            Console.WriteLine(r6);
+
+
+            //9.exercicio
+            Console.WriteLine("informe uma palavra composta:");
+
+            string r7 = interclassefunction.formatar(palavra);
+
+            Console.WriteLine(r7);
+
+            //10.exercicio
+            Console.WriteLine("Informe uma palavra composta:");
+            string palavra1 = Console.ReadLine();
+            string r8 = interclassefunction.aocontrario(palavra1);
+
+            Console.WriteLine(r8);
+
+             }
+
+
 
     }
 }

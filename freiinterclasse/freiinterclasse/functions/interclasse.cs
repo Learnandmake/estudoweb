@@ -71,6 +71,101 @@ namespace freiinterclasse.functions
             {
                 return false;
             }
-        }
+            }
+
+            public double calcularraiz(double numero)
+            {
+            double raiz = Math.Sqrt(numero);
+            return raiz;
+
+            }
+
+        public double arredondar(double numero)
+        {
+            double abs = Math.Abs(numero);
+            double dec = numero - abs;
+
+            if (dec >= 0 && dec <= 0.34)
+            {
+                numero = Math.Floor(numero);
+
+            }
+
+            if( dec >= 0.35 && dec <= 0.74)
+            {
+                numero = abs + 0.5;
+
+            }
+
+            if( dec >= 0.75)
+            {
+                numero = Math.Ceiling(numero);
+            }
+            return numero;
+            }
+
+            public string empresaemail(string email)
+            {
+            int arroba = email.IndexOf("@");
+            int ponto = email.IndexOf(".", arroba);
+
+            int inicio = arroba + 1;
+            int tamanho = ponto - inicio;
+
+            string empresa = email.Substring(inicio, tamanho);
+
+            return empresa;
+
+            }
+
+            public string inverter (string palavra)
+            {
+            int hifen = palavra.IndexOf("-");
+            string primeira = palavra.Substring(0, hifen);
+            string ultima = palavra.Substring(hifen + 1);
+
+            string invertida = ultima + "-" + primeira;
+
+            return invertida;
+            }
+
+        public string formatar(string palavra)
+        {
+            string convertida = "";
+            bool iniciopalavra = false;
+
+            for (int i = 0; i < palavra.Length; i++)
+            {
+                string letra = palavra.Substring(i, 1);
+
+                if (i == 0 || iniciopalavra == true)
+                    convertida = convertida + letra.ToLower();
+
+                else
+                    convertida = convertida + letra.ToUpper();
+
+                if (letra == " ")
+                    iniciopalavra = true;
+                else
+                    iniciopalavra = false;
+            }
+            return convertida;
+
+            }
+
+            public string aocontrario (string palavra)
+            {
+            string convertida = "";
+
+            for (int i = 0; i < palavra.Length; i++)
+            {
+                string letra = palavra.Substring(i, 1);
+
+                convertida = letra + convertida;
+
+            }
+            return convertida;
+            }
+
     }
 }
