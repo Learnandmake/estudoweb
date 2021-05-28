@@ -116,6 +116,33 @@ namespace freiinterclasse
 
             Console.WriteLine(r8);
 
+            //11.exercicio
+            Console.WriteLine("Informe um RG:");
+            string palavra2 = Console.ReadLine();
+
+            bool r9 = interclassefunction.ganhou(palavra2);
+
+            if( r9 == true)
+            {
+                Console.WriteLine("Ganhou");
+
+            }
+
+            else
+            {
+                Console.WriteLine("Perdeu");
+            }
+
+            Console.WriteLine("Informe um CPF:");
+            string palavra3 = Console.ReadLine();
+
+            string r10 = interclassefunction.formatarcpf(palavra3);
+
+            Console.WriteLine(r10);
+
+
+
+
              }
 
 

@@ -167,5 +167,42 @@ namespace freiinterclasse.functions
             return convertida;
             }
 
+            public bool ganhou (string rg)
+            {
+            rg = rg.Replace(".", "");
+            rg = rg.Replace("-", "");
+            rg = rg.Replace(" ", "");
+
+            string rgganhador = "12345678x";
+
+            if (rg == rgganhador)
+            {
+                return true;
+            }
+
+            else
+            {
+                return false;
+            }
+            }
+
+            public string  formatarcpf (string cpf)
+            {
+            cpf = cpf.Replace(".", "");
+            cpf = cpf.Replace("-", "");
+            cpf = cpf.Replace(" ", "");
+
+            string p1 = cpf.Substring(0, 3);
+            string p2 = cpf.Substring(3, 3);
+            string p3 = cpf.Substring(6, 3);
+            string p4 = cpf.Substring(9, 2);
+
+            string cpfformatado = p1 + "." + p2 + "." + p3 + "." + p4;
+
+            return cpfformatado; 
+
+
+        }
+
     }
 }
