@@ -342,7 +342,7 @@ namespace freiconsole
 
             while (tabuada1 <= limite)
             {
-                atenumero.tabuadaate100();
+                atenumero.tabuadaate100(numero);
             }
 
             //SESSIONTHREE
