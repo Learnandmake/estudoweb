@@ -8,12 +8,12 @@ namespace freiinterclasse.functions
 {
     class interclasse
     { public bool verificarpar(decimal numero)
-    {
+        {
             numero = Math.Ceiling(numero);
 
-            decimal resto = numero% 2;
+            decimal resto = numero % 2;
 
-            if (resto ==0)
+            if (resto == 0)
             {
                 return true;
             }
@@ -23,37 +23,37 @@ namespace freiinterclasse.functions
                 return false;
             }
 
-    }
+        }
 
-    public double calcformula (double a, double b)
-    {
+        public double calcformula(double a, double b)
+        {
             double s = a / b;
             double r = Math.Pow(s, 4);
 
             return r;
-    }
-    public string lucroprejuizo (double gasto,double lucro)
-    {
+        }
+        public string lucroprejuizo(double gasto, double lucro)
+        {
             double saldo = lucro - gasto;
 
             double absoluto = Math.Abs(saldo);
 
             string r = "";
 
-            if (saldo>=0)
+            if (saldo >= 0)
             {
                 r = "O lucro foi de " + absoluto + " reais";
 
             }
-    else
+            else
             {
                 r = "O prejuizo foi de " + absoluto + " reais";
- }
-            return r; 
             }
+            return r;
+        }
 
-           public bool possuivogais (string frase)
-           {
+        public bool possuivogais(string frase)
+        {
             frase = frase.ToLower();
 
             bool a = frase.Contains("a");
@@ -62,7 +62,7 @@ namespace freiinterclasse.functions
             bool o = frase.Contains("o");
             bool u = frase.Contains("u");
 
-            if (a == true && e ==true &&i == true && o == true && u == true)
+            if (a == true && e == true && i == true && o == true && u == true)
             {
                 return true;
             }
@@ -71,14 +71,14 @@ namespace freiinterclasse.functions
             {
                 return false;
             }
-            }
+        }
 
-            public double calcularraiz(double numero)
-            {
+        public double calcularraiz(double numero)
+        {
             double raiz = Math.Sqrt(numero);
             return raiz;
 
-            }
+        }
 
         public double arredondar(double numero)
         {
@@ -91,21 +91,21 @@ namespace freiinterclasse.functions
 
             }
 
-            if( dec >= 0.35 && dec <= 0.74)
+            if (dec >= 0.35 && dec <= 0.74)
             {
                 numero = abs + 0.5;
 
             }
 
-            if( dec >= 0.75)
+            if (dec >= 0.75)
             {
                 numero = Math.Ceiling(numero);
             }
             return numero;
-            }
+        }
 
-            public string empresaemail(string email)
-            {
+        public string empresaemail(string email)
+        {
             int arroba = email.IndexOf("@");
             int ponto = email.IndexOf(".", arroba);
 
@@ -116,10 +116,10 @@ namespace freiinterclasse.functions
 
             return empresa;
 
-            }
+        }
 
-            public string inverter (string palavra)
-            {
+        public string inverter(string palavra)
+        {
             int hifen = palavra.IndexOf("-");
             string primeira = palavra.Substring(0, hifen);
             string ultima = palavra.Substring(hifen + 1);
@@ -127,7 +127,7 @@ namespace freiinterclasse.functions
             string invertida = ultima + "-" + primeira;
 
             return invertida;
-            }
+        }
 
         public string formatar(string palavra)
         {
@@ -151,10 +151,10 @@ namespace freiinterclasse.functions
             }
             return convertida;
 
-            }
+        }
 
-            public string aocontrario (string palavra)
-            {
+        public string aocontrario(string palavra)
+        {
             string convertida = "";
 
             for (int i = 0; i < palavra.Length; i++)
@@ -165,10 +165,10 @@ namespace freiinterclasse.functions
 
             }
             return convertida;
-            }
+        }
 
-            public bool ganhou (string rg)
-            {
+        public bool ganhou(string rg)
+        {
             rg = rg.Replace(".", "");
             rg = rg.Replace("-", "");
             rg = rg.Replace(" ", "");
@@ -184,10 +184,10 @@ namespace freiinterclasse.functions
             {
                 return false;
             }
-            }
+        }
 
-            public string  formatarcpf (string cpf)
-            {
+        public string formatarcpf(string cpf)
+        {
             cpf = cpf.Replace(".", "");
             cpf = cpf.Replace("-", "");
             cpf = cpf.Replace(" ", "");
@@ -199,10 +199,65 @@ namespace freiinterclasse.functions
 
             string cpfformatado = p1 + "." + p2 + "." + p3 + "." + p4;
 
-            return cpfformatado; 
+            return cpfformatado;
 
 
         }
 
+        public string zenitpolar(string frase)
+        {
+            string convertida = "";
+
+            for (int i = 0; i < frase.Length; i++)
+            {
+                string cript = "";
+                string letra = frase.Substring(i, 1);
+
+                if (letra == "P")
+                    cript = "z";
+
+                else if (letra == "z")
+                    cript = "p";
+
+                else if (letra == "O")
+                    cript = "e";
+
+                else if (letra == "e")
+                    cript = "o";
+
+                else if (letra == "L")
+                    cript = "n";
+
+                else if (letra == "n")
+                    cript = "l";
+
+                else if (letra == "A")
+                    cript = "i";
+
+                else if (letra == "i")
+                    cript = "a";
+
+                else if (letra == "R")
+                    cript = "t";
+
+                else if (letra == "t")
+                    cript = "r";
+
+                else
+                    cript = letra;
+
+                convertida = convertida + cript;
+            }
+
+            return convertida;
+        }
+
+
     }
-}
+
+            }
+        
+
+
+    
+

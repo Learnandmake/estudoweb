@@ -140,6 +140,12 @@ namespace freiinterclasse
 
             Console.WriteLine(r10);
 
+            Console.WriteLine("Informe um frase:");
+            string frase2 = Console.ReadLine();
+
+            string r11 = interclassefunction.zenitpolar(frase2);
+
+            Console.WriteLine(r11);
 
 
 
