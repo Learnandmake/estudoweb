@@ -297,10 +297,50 @@ namespace freiinterclasse.functions
                 return "Noite";
          }
         }
+        public string lermes (DateTime nasc)
+       {
+            if (nasc.Month == 1)
+                return "Janeiro";
+            else if (nasc.Month == 2)
+                return "Fevereiro";
+            else if (nasc.Month == 3)
+                return "Março";
+            else if (nasc.Month == 4)
+                return "Abril";
+            else if (nasc.Month == 5)
+                return "Maio";
+            else if (nasc.Month == 6)
+                return "Junho";
+            else if (nasc.Month == 7)
+                return "Julho";
+            else if (nasc.Month == 8)
+                return "Agosto";
+            else if (nasc.Month == 9)
+                return "Setembro";
+            else if (nasc.Month == 10)
+                return "Outubro";
+            else if (nasc.Month == 11)
+                return "Novembro";
+            else if (nasc.Month == 12)
+                return "Dezembro";
+
+            else
+                return "Mês inexistente";
 
 
+        }
 
+        public int diasdevida (DateTime nasc)
+    {
+            DateTime agora = DateTime.Now;
 
+            TimeSpan diferenca = agora - nasc;
+
+            int totaldias = diferenca.Days;
+
+            return totaldias;
+
+    }
         
     }
 

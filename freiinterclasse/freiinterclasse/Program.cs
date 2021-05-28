@@ -167,7 +167,25 @@ namespace freiinterclasse
             string r12 = interclassefunction.periodonascimento(nasc);
 
             Console.WriteLine(r12);
-             }
+
+            //16.exercicio
+            Console.WriteLine("Informe sua data de nascimento:");
+            DateTime nasc1 = Convert.ToDateTime(Console.ReadLine());
+
+            string r13 = interclassefunction.lermes(nasc1);
+
+            Console.WriteLine(r13);
+
+            //17.exercicio
+            Console.WriteLine("Informe sua data de nascimento:");
+            DateTime nasc2 = Convert.ToDateTime(Console.ReadLine());
+
+            int r14 = interclassefunction.diasdevida(nasc2);
+
+            Console.WriteLine(r14);
+        }
+
+
 
 
 
