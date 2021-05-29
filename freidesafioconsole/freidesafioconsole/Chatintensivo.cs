@@ -43,5 +43,4 @@ namespace freidesafioconsole
             string resposta = rest.UploadString("http://localhost:5000/api/Chat/Inserir/" + nome + ":" + mensagem, string.Empty);
         }
     }
-
 }
