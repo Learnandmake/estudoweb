@@ -102,6 +102,30 @@ namespace freiintensivoconsole
                 Console.WriteLine("nao e uma cor primaria");
             }
 
+            //4.exercicio
+            Console.WriteLine("Informe a opcao para comida");
+
+            Console.WriteLine("1.fastfood");
+            Console.WriteLine("2.churras");
+            Console.WriteLine("3.lanche natural");
+            int opcaocomida = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Informe a opcao para bebida");
+            Console.WriteLine("1.coca-cola");
+            Console.WriteLine("2.suco caixa");
+            Console.WriteLine("3.suco natural");
+            int opcaobebida = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Informe a opcao para sobremessa");
+            Console.WriteLine("1.açai");
+            Console.WriteLine("2.bolo");
+            Console.WriteLine("3.mousse");
+            int opcaosobremessa = Convert.ToInt32(Console.ReadLine());
+
+            double resultado = intensivo.calcularcalorias(opcaocomida, opcaobebida, opcaosobremessa);
+
+            Console.WriteLine("O total de calorias foi de" + r);
+
         }
     }
 }
