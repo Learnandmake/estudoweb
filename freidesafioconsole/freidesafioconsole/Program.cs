@@ -9,7 +9,7 @@ namespace freidesafioconsole
     class Program
     {
         static void Main(string[] args)
-        {//SESSIONSIX-DESAFIO
+        {//SESSIONSIX-DESAFIO CEP
             string cep = "";
             Console.WriteLine("vou consultar seu endereco pelo cep");
             Console.WriteLine("digite seu cep com digito");
@@ -21,7 +21,7 @@ namespace freidesafioconsole
 
             Console.WriteLine("Seu endereco é:  "+endereco.cidade+" "+ endereco.end +" "+endereco.bairro +" "+ endereco.complemento);
             Console.ReadKey();
-
+            //DESAFIO-EMAIL
 
                     }
     }
