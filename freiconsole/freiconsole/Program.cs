@@ -350,7 +350,7 @@ namespace freiconsole
             Console.WriteLine("Vou ver se seu numero é impar ou par");
             Console.WriteLine("digite um numero inteiro");
             decimal n5 = Convert.ToDecimal(Console.ReadLine());
-            function.sessiontwo imparoupar = new function.sessiontwo();
+            function.sessionthree imparoupar = new function.sessionthree();
             bool resultado = imparoupar.imparoupa(n5);
 
             if (resultado == true)
@@ -365,7 +365,7 @@ namespace freiconsole
             decimal n7 = 0;
             Console.WriteLine("Informe a temperatura");
             n6 = Convert.ToDecimal(Console.ReadLine());
-            function.sessiontwo arredondar = new function.sessiontwo();
+            function.sessionthree arredondar = new function.sessionthree();
             n7 = arredondar.arredondartemperatura(n6);
             Console.WriteLine("Sua temperatura arredondade é " + n7 + "°C");
 
@@ -382,7 +382,7 @@ namespace freiconsole
             Console.WriteLine("Digite o valor do primeiro cateto");
             cat2 = Convert.ToDouble(Console.ReadLine());
 
-            function.sessiontwo hipfun = new function.sessiontwo();
+            function.sessionthree hipfun = new function.sessionthree();
             hip = hipfun.calcularhipotenusa(cat1, cat2);
             Console.WriteLine("A hipotenusa é " + hip);
 
@@ -399,7 +399,7 @@ namespace freiconsole
             Console.WriteLine("Digite o valor do c");
             c = Convert.ToDouble(Console.ReadLine());
 
-            function.sessiontwo bhasfunction = new function.sessiontwo();
+            function.sessionthree bhasfunction = new function.sessionthree();
             string resultado3 = bhasfunction.calbaskhara(a, b, c);
             Console.WriteLine(resultado3);
 
@@ -486,7 +486,27 @@ namespace freiconsole
             Console.WriteLine("digite seu nome completo");
             string ultimonome = Console.ReadLine();
             ultimonome.Substring(primeironome.LastIndexOf(" "),ultimonome.Length);
+
+            //SESSIONNINE
+
+            //NIVEL1
+
+            //a
+
+            try
+            {
+                Console.WriteLine("Vou calcular a area de um triangulo");
+
+                double baset = 0;
+                double alturat = 0;
+
+            }
             
+            catch(Exception)
+            {
+                Console.WriteLine("Erro verifique o formulario");
+            }
+
 
             
 
