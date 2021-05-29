@@ -662,14 +662,70 @@ namespace freiconsole
             {
                 Console.WriteLine("Erro verifique o formulario");
             }
+
+            //b
+            try
+            {
+                Console.WriteLine("Vou veficar seu cpf");
+                Console.WriteLine("digite seu cpf");
+                string cpf = Convert.ToString(Console.ReadLine());
+
+                cpf.Replace(".", "");
+                cpf.Replace(".", "");
+                cpf.Replace(".", "");
+                cpf.Replace("-", "");
+
+                function.sessionine verificar = new function.sessionine();
+                bool ver = verificar.verificarcpf(cpf);
+
+                if (ver == true)
+                {
+                    Console.WriteLine("seu cpf é valido");
+                }
+
+                else
+                {
+                    Console.WriteLine("seu cpf não é valido");
+                }
+            }
+
+            catch (Exception)
+            {
+                Console.WriteLine("Erro verifique o formulario");
+            }
+
+            //c
+
+            try
+            {
+                Console.WriteLine("Vou verificar sua senha");
+                Console.WriteLine("Informe sua senha");
+                string senha = Convert.ToString(Console.ReadLine());
+
+                function.sessionine verificar = new function.sessionine();
+
+                 bool vsenha =verificar.verificarsenha(senha);
+                 if (vsenha == true)
+                 {
+                    Console.WriteLine("senha valida");
+                 }
+                 else
+                {
+                    Console.WriteLine("senha invalida");
+                }
+            }
+
+            catch (Exception)
+            {
+                Console.WriteLine("Erro verifique o formulario");
+            }
+
+
+
+
         }
 
-        //b
-
-
     }
-
-
 
     }
 

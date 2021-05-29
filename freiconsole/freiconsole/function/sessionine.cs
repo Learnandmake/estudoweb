@@ -106,5 +106,21 @@ namespace freiconsole.function
 
             return resultado;
         }
+
+        public bool verificarsenha(string senha)
+        {
+            bool resultado = false;
+
+            if(senha.Length>=8 && senha.Contains("!")== true && senha.Contains("@")==true && senha.Contains("#") == true && senha.Contains("$") == true && senha.Contains("%") == true && senha.Contains("&") == true && senha.Count()>0 && senha.Contains(" ")==false)
+            { resultado = true; }
+
+            else
+            {
+                resultado = false;
+            }
+            return resultado;
+        }
+
+
     }
 }
