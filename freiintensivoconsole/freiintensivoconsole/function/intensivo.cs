@@ -77,5 +77,22 @@ namespace freiintensivoconsole.function
             return r;
 
         }
+
+        public bool corprimaria (string cor)
+        {
+            cor = cor.ToLower();
+
+            if(cor == "azul" || cor == "amarelo"|| cor == "vermelho")
+            {
+                return true;
+            }
+
+            else
+            {
+                return false;
+            }
+
+        }
+    
     }
 }

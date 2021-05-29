@@ -9,7 +9,11 @@ namespace freiintensivoconsole
     class Program
     {
         static void Main(string[] args)
-        { //1.exercicio
+        {
+            function.intensivo intensivo = new function.intensivo();
+
+
+            //1.exercicio
             Console.WriteLine("informe a nota 1:");
             double n1 = Convert.ToDouble(Console.ReadLine());
 
@@ -22,7 +26,7 @@ namespace freiintensivoconsole
             Console.WriteLine("informe a nota 4:");
             double n4 = Convert.ToDouble(Console.ReadLine());
 
-            function.intensivo intensivo = new function.intensivo();
+          
             double media = intensivo.calcularmedia(n1, n2, n3, n4);
             string sugestao = intensivo.darsugestao(media);
 
@@ -30,7 +34,73 @@ namespace freiintensivoconsole
             Console.WriteLine(sugestao);
 
             //2.exercicio
+            Console.WriteLine("Escolha sua operação:");
+            Console.WriteLine("1. Somar");
+            Console.WriteLine("2. Subtrair");
+            Console.WriteLine("3. Multiplicar");
+            Console.WriteLine("4. Dividir");
+            Console.WriteLine("5. Potência");
+            Console.WriteLine("6. Raiz quadrada");
+            int opcao = Convert.ToInt32(Console.ReadLine());
 
+            double resposta = 0;
+            Console.WriteLine("Informe o numero 1:");
+            double n5 = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Informe o numero 2:");
+            double n6 = Convert.ToDouble(Console.ReadLine());
+
+            if (opcao ==1)
+            { resposta = intensivo.somar(n5, n6); }
+
+            else if (opcao == 2)
+            { resposta = intensivo.subtrair(n5, n6); }
+            else if (opcao == 3)
+            { resposta = intensivo.multiplicar(n5, n6); }
+
+            else if (opcao == 4)
+            { resposta = intensivo.dividir(n5, n6); }
+
+            if (opcao ==5 )
+            { Console.WriteLine("Informe o numero:");
+                double n7 = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine("Informe a potencia:");
+                double np = Convert.ToDouble(Console.ReadLine());
+
+                resposta = intensivo.potencia(n7, np);
+            }
+
+            if(opcao == 6)
+            {
+                Console.WriteLine("Informe o numero:");
+
+                double n8 = Convert.ToDouble(Console.ReadLine());
+
+                resposta = intensivo.raizquadrada(n8);
+                
+            }
+
+            Console.WriteLine(resposta);
+
+            //3.exercicio
+
+            Console.WriteLine("Informe uma cor:");
+            string cor = Console.ReadLine();
+
+
+            bool r = intensivo.corprimaria(cor);
+
+            if(r == true)
+            {
+                Console.WriteLine("é uma cor primaria");
+
+            }
+
+            else
+            {
+                Console.WriteLine("nao e uma cor primaria");
+            }
 
         }
     }
