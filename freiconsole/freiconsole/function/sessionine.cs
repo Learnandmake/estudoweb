@@ -72,6 +72,39 @@ namespace freiconsole.function
         }
 
         
+        
+        public bool verificaridade (DateTime nascimento)
+        { int ano = DateTime.Now.Year - nascimento.Year;
+            bool resultado = false;
+        if(ano >= 18 && nascimento.DayOfYear>=DateTime.Now.DayOfYear)
+        {
+                resultado = true;
 
+        }
+
+        else
+        {
+                resultado = false;
+        }
+            return resultado;
+
+        }
+
+        public bool verificarcpf (string cpf)
+        {
+            bool resultado = false;
+
+            if(cpf.Length ==11)
+            {
+             resultado = true;
+            }
+
+            else
+            {
+                resultado = false;
+            }
+
+            return resultado;
+        }
     }
 }

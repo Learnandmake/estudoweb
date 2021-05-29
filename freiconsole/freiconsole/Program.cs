@@ -160,18 +160,18 @@ namespace freiconsole
             Console.WriteLine("Informe o tipo de ingresso");
             tipoingresso = Console.ReadLine();
 
-            if(tipoingresso == "inteira")
+            if (tipoingresso == "inteira")
             {
                 totalingresso1 = quantidadeingresso1 * valoringresso1;
 
             }
 
-            else 
+            else
             {
-                totalingresso1 = (quantidadeingresso1 * valoringresso1)/2 ;
+                totalingresso1 = (quantidadeingresso1 * valoringresso1) / 2;
             }
 
-            Console.WriteLine("O total a pagar é: " +totalingresso1);
+            Console.WriteLine("O total a pagar é: " + totalingresso1);
 
             //4c
             int qtdingresso2 = 0;
@@ -318,10 +318,10 @@ namespace freiconsole
             Console.WriteLine("vamos ver o periodo historico");
             function.sessiontwo contar = new function.sessiontwo();
             int ano = -4000;
-            int ano1 =  contar.contarhist(ano);
-          
+            int ano1 = contar.contarhist(ano);
+
             contar.showhist(ano1);
-           
+
 
             //b
             Console.WriteLine("Vou calcular a tabuada até cem apartir de um numero que você dé");
@@ -485,7 +485,7 @@ namespace freiconsole
             Console.WriteLine("Vou dizer seu ultimo nome");
             Console.WriteLine("digite seu nome completo");
             string ultimonome = Console.ReadLine();
-            ultimonome.Substring(primeironome.LastIndexOf(" "),ultimonome.Length);
+            ultimonome.Substring(primeironome.LastIndexOf(" "), ultimonome.Length);
 
             //SESSIONNINE
 
@@ -510,10 +510,10 @@ namespace freiconsole
                 function.sessionine trigonometria = new function.sessionine();
                 resultadot = trigonometria.calcareatriangulo(baset, alturat);
 
-                Console.WriteLine("a area do triangulo é: "+resultadot);
+                Console.WriteLine("a area do triangulo é: " + resultadot);
             }
-            
-            catch(Exception)
+
+            catch (Exception)
             {
                 Console.WriteLine("Erro verifique o formulario");
             }
@@ -533,14 +533,14 @@ namespace freiconsole
             }
 
 
-            catch(Exception)
+            catch (Exception)
             {
                 Console.WriteLine("Erro verifique o formulario");
             }
 
-               //c
-                 try
-                {        
+            //c
+            try
+            {
                 double pert = 0;
 
                 Console.WriteLine("Vou calcular a area do octogono");
@@ -575,7 +575,7 @@ namespace freiconsole
 
                 bool resultadocor = cores.corprimaria(cor);
 
-                if(resultadocor == true)
+                if (resultadocor == true)
                 {
                     Console.WriteLine("Sua cor é primaria");
                 }
@@ -586,7 +586,7 @@ namespace freiconsole
                 }
             }
 
-            catch(Exception)
+            catch (Exception)
             {
                 Console.WriteLine("Erro verifique o formulario");
 
@@ -622,12 +622,12 @@ namespace freiconsole
                     cor2 = Convert.ToString(Console.ReadLine());
                 }
                 if (cores.corprimaria(cor1) == true && cores.corprimaria(cor2) == true)
-                   { Console.WriteLine("a cor resultante é: " + corresultante); } 
-                  
+                { Console.WriteLine("a cor resultante é: " + corresultante); }
+
             }
 
 
-            catch(Exception)
+            catch (Exception)
             {
                 Console.WriteLine("Erro verifique o formulario");
             }
@@ -638,10 +638,33 @@ namespace freiconsole
             // O programa deve continuar pedindo uma cor ao usuário
             // até que a cor seja primária.
 
+            //NIVEL3
+            //a
+            try
+            {
+                Console.WriteLine("Vou verificar se você é maior ou meno de idade");
+                Console.WriteLine("Digite sua data de nascimento");
+                DateTime nascimento = Convert.ToDateTime(Console.ReadLine());
+                function.sessionine verificar = new function.sessionine();
+                bool resultado4 = verificar.verificaridade(nascimento);
 
+                if (resultado4 = true)
+                {
+                    Console.WriteLine("É maior de idade");
+                }
 
+                else
+                {
+                    Console.WriteLine("É menor de idade");
+                }
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Erro verifique o formulario");
+            }
         }
 
+        //b
 
 
     }
