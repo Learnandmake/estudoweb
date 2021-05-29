@@ -4,14 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace freiintensivoconsole
+namespace freiintensivoconsole.function
 {
-    class Program
+    class intensivo
     {
-        static void Main(string[] args)
-        { //1.exercicio
-
-
-        }
     }
 }
