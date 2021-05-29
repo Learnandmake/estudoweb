@@ -9,8 +9,42 @@ namespace freidesafioconsole
     class Program
     {
         static void Main(string[] args)
-        {   //DESAFIO-EMAIL
+        {
+            //CHAT
+            Console.WriteLine("digite seu nome para entrar no chat");
+            string nome = Convert.ToString(Console.ReadLine());
+            Chatintensivo chat = new Chatintensivo();
 
+            chat.Entrar(nome);
+
+            Console.WriteLine("digite algo");
+            string mensagemchat = Convert.ToString(Console.ReadLine());
+            chat.Inserir(mensagemchat);
+         
+            Console.WriteLine(chat.ListarProximasMensagens());
+            
+
+            Console.WriteLine("deseja enviar outra mensagem?");
+            Console.WriteLine("1.sim/2.não");
+            int opcao = Convert.ToInt32(Console.ReadLine());
+
+            while( opcao == 1)
+            {
+                Console.WriteLine(chat.ListarProximasMensagens());
+                Console.WriteLine("digite algo");
+                mensagemchat = Convert.ToString(Console.ReadLine());
+                Console.WriteLine("deseja enviar outra mensagem?");
+                Console.WriteLine("1.sim/2.não");
+                opcao = Convert.ToInt32(Console.ReadLine());
+            }
+
+            if(opcao == 2)
+            {
+                Console.WriteLine("Chat encerrado. Bye");
+            }
+
+
+            //DESAFIO-EMAIL
             string remetente = "testinmail21@gmail.com";
             string senha = "98847685";
 
