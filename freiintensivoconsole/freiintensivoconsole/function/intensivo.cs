@@ -94,5 +94,57 @@ namespace freiintensivoconsole.function
 
         }
     
+        public double calcularcalorias (int  opcaocomida, int opcaobebida,int opcaosobremessa )
+        {
+            double calcomida = this.caloriacomida(opcaocomida);
+            double calbebida = this.caloriabebida(opcaobebida);
+            double calsobremesa = this.caloriasobremesa(opcaosobremessa);
+
+            double totatl = calcomida + calbebida + calsobremesa;
+
+            return totatl;
+        }
+
+        private double caloriacomida( int opcao)
+        {
+            if (opcao == 1)
+                return 300;
+            else if (opcao == 2)
+                return 300;
+            else if (opcao == 3)
+                return 100;
+
+            else
+                return 0;
+         }
+
+         private double caloriabebida (int opcao)
+         {
+            if (opcao == 1)
+                return 200;
+            else if (opcao == 2)
+                return 150;
+            else if (opcao == 3)
+                return 80;
+
+            else
+                return 0;
+
+        }
+
+        private double caloriasobremesa(int opcao)
+        {
+
+            if (opcao == 1)
+                return 350;
+            else if (opcao == 2)
+                return 270;
+            else if (opcao == 3)
+                return 300;
+
+            else
+                return 0;
+
+        }
     }
 }
