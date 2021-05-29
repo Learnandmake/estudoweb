@@ -562,12 +562,89 @@ namespace freiconsole
 
             //NIVEL2
 
+            //a
+
+            try
+            {
+                Console.WriteLine("vou verificar se sua cor é primaria");
+
+                string cor = Convert.ToString(Console.ReadLine());
+                cor.Trim();
+                cor.ToLower();
+                function.sessionine cores = new function.sessionine();
+
+                bool resultadocor = cores.corprimaria(cor);
+
+                if(resultadocor == true)
+                {
+                    Console.WriteLine("Sua cor é primaria");
+                }
+
+                else
+                {
+                    Console.WriteLine("Sua cor não é primaria");
+                }
+            }
+
+            catch(Exception)
+            {
+                Console.WriteLine("Erro verifique o formulario");
+
+            }
+
+            //b
+            try
+            {
+                Console.WriteLine("vou falar a cor resultante de duas primarias");
+                string cor1 = "";
+                string cor2 = "";
+                string corresultante = "";
+
+                Console.WriteLine("Digite a primeira cor");
+                cor1 = Convert.ToString(Console.ReadLine());
+                Console.WriteLine("Digite a segunda cor");
+                cor2 = Convert.ToString(Console.ReadLine());
+
+                cor1.Trim();
+                cor1.ToLower();
+
+                cor2.Trim();
+                cor2.ToLower();
+
+                function.sessionine cores = new function.sessionine();
+                corresultante = cores.correprimaria(cor1, cor2);
+                while (cores.corprimaria(cor1) == false && cores.corprimaria(cor2) == false)
+                {
+                    Console.WriteLine("as cores inseridas não sao primarias, as cores primarias são: Amarelo,Vermelho e Azul");
+                    Console.WriteLine("Digite a primeira cor");
+                    cor1 = Convert.ToString(Console.ReadLine());
+                    Console.WriteLine("Digite a segunda cor");
+                    cor2 = Convert.ToString(Console.ReadLine());
+                }
+                if (cores.corprimaria(cor1) == true && cores.corprimaria(cor2) == true)
+                   { Console.WriteLine("a cor resultante é: " + corresultante); } 
+                  
+            }
+
+
+            catch(Exception)
+            {
+                Console.WriteLine("Erro verifique o formulario");
+            }
+
+
+            //c
+            //Acrescente no programa acima (b) a seguinte regra:
+            // O programa deve continuar pedindo uma cor ao usuário
+            // até que a cor seja primária.
+
+
 
         }
 
-            
 
-        }
+
+    }
 
 
 
