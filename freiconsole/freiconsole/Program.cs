@@ -499,7 +499,18 @@ namespace freiconsole
 
                 double baset = 0;
                 double alturat = 0;
+                double resultadot = 0;
 
+                Console.WriteLine("digite a base");
+                baset = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine("digite a altura");
+                alturat = Convert.ToDouble(Console.ReadLine());
+
+                function.sessionine trigonometria = new function.sessionine();
+                resultadot = trigonometria.calcareatriangulo(baset, alturat);
+
+                Console.WriteLine("a area do triangulo é: "+resultadot);
             }
             
             catch(Exception)
@@ -507,8 +518,50 @@ namespace freiconsole
                 Console.WriteLine("Erro verifique o formulario");
             }
 
+            //b
+            try
+            {
+                double raiot = 0;
+                Console.WriteLine("Vou calcular a circunferencia ");
+                Console.WriteLine("Digite o raio");
+                raiot = Convert.ToDouble(Console.ReadLine());
 
-            
+                function.sessionine trigonometria = new function.sessionine();
+                double resultadoc = trigonometria.calccircunferencia(raiot);
+
+                Console.WriteLine("A circunferencia é: " + resultadoc);
+            }
+
+
+            catch(Exception)
+            {
+                Console.WriteLine("Erro verifique o formulario");
+            }
+
+               //c
+                 try
+                {        
+                double pert = 0;
+
+                Console.WriteLine("Vou calcular a area do octogono");
+
+                Console.WriteLine("digite o lado");
+                pert = Convert.ToDouble(Console.ReadLine());
+
+                function.sessionine trigonometria = new function.sessionine();
+
+                double resultadoo = trigonometria.calcperoctogono(pert);
+
+                Console.WriteLine("O perimetro do seu octogno é: " + resultadoo);
+            }
+
+            catch (Exception)
+            {
+                Console.WriteLine("Erro verifique o formulario");
+            }
+
+            //NIVEL2
+
 
         }
 
