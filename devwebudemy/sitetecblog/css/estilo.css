@@ -3,29 +3,35 @@
     padding:0;
 }
 
-body{
-font-size: 1em;
-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-background: #e6e6e6;
+
+
+#area-principal
+{
+    width: 920px;
+    margin:0 auto;
+    padding:15px;
+    
 }
-a{
-    text-decoration:none;
-}
-
-
-a:link, a:visited
-{ color: #f7b600;
-   
-    padding: 8px 12px;
-}
-
-a:hover
-{ color: #fff ;
-   
-    background:#f7b600;
-
+#area-postagen
+{
+    width: 660px;
+    float: left;
 }
 
+#area-lateral
+{
+    width: 240px;
+   float: right;
+  
+}
+
+#rodape
+{
+    background:#ccc;
+    text-align: center;
+    clear: both;
+    padding:15px;
+}
 #area-cabecalho
 {
 
@@ -39,48 +45,81 @@ a:hover
     padding: 10px;
 
 }
-
-#h1
+body{
+    font-size: 1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #e6e6e6;
+    }
+h1
 {
 color: #4e4e4e;
 font-size: 2.5em;
 }
 
+h2
+{
+ color:    #f7b600;
+}
+h3
+{
+    color:#565656;
+    background: #ccc;
+}
+.texto-lateral
+{
+    font-size: 0.8em;
+    padding: 5px;
+   
+}
+.conteudo-lateral
+{
+    background-color: white;
+    padding:10px;
+    margin-bottom: 20px;
+}
 .branco
 {
     color:white;
 }
 
-
-
-#area-principal
+.data-postagem
 {
-    width: 920px;
-    margin:0 auto;
-    
-}
-#area-postagen
-{
-    width: 660px;
-    float: left;
+font-size: 0.8em;
+border-bottom: 1px solid #f4f4f4;
+padding-bottom:10px;
+margin-bottom: 10px;
+display: block;
+
 }
 
-#area-lateral
-{
-    width: 240px;
-   float: right;
+a{
+    text-decoration:none;
+    color: #fff 
 }
-#area-postagen, #area-lateral
-{
-    background:orange;
+
+
+#area-cabecalho a:link, #area-cabecalho a:visited
+{  color: #fff ;
+    padding: 8px 12px;
 }
-#rodape
+
+#area-cabecalho a:hover
 {
-    background:#ccc;
-    text-align: center;
-    clear: both;
-    padding:15px;
+    color:#f7b600 ;
+    background:#fff ;
+    text-decoration: none;
+
 }
+ a:link, a:visited
+{   color:#f7b600 ;
+  
+}
+
+ a:hover
+{
+ text-decoration: underline;
+}
+
 
 .postagem
 {
