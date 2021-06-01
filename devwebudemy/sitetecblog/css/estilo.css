@@ -14,15 +14,15 @@ a{
 
 
 a:link, a:visited
-{
-    color:#fff;
+{ color: #f7b600;
+   
     padding: 8px 12px;
 }
 
 a:hover
-{
-    color: #f7b600;
-    background: #fff;
+{ color: #fff ;
+   
+    background:#f7b600;
 
 }
 
@@ -51,10 +51,40 @@ font-size: 2.5em;
     color:white;
 }
 
+
+
 #area-principal
 {
-    background:white;
     width: 920px;
-
+    margin:0 auto;
     
+}
+#area-postagen
+{
+    width: 660px;
+    float: left;
+}
+
+#area-lateral
+{
+    width: 240px;
+   float: right;
+}
+#area-postagen, #area-lateral
+{
+    background:orange;
+}
+#rodape
+{
+    background:#ccc;
+    text-align: center;
+    clear: both;
+    padding:15px;
+}
+
+.postagem
+{
+    padding:20px;
+    margin-bottom: 20px;
+    background-color: white;
 }
