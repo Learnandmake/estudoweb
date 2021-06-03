@@ -8,19 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace freidesktop.session1.menu
+namespace freidesktop.session1.tela
 {
-    public partial class menu : Form
+    public partial class imc : Form
     {
-        public menu()
+        public imc()
         {
             InitializeComponent();
-        }
-
-        private void aToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Form1 a = new Form1();
-            a.Show();
         }
     }
 }
