@@ -34,6 +34,7 @@
             this.aToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nivel2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -81,9 +82,18 @@
             // 
             // nivel2ToolStripMenuItem
             // 
+            this.nivel2ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aToolStripMenuItem1});
             this.nivel2ToolStripMenuItem.Name = "nivel2ToolStripMenuItem";
             this.nivel2ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.nivel2ToolStripMenuItem.Text = "nivel2";
+            // 
+            // aToolStripMenuItem1
+            // 
+            this.aToolStripMenuItem1.Name = "aToolStripMenuItem1";
+            this.aToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.aToolStripMenuItem1.Text = "a";
+            this.aToolStripMenuItem1.Click += new System.EventHandler(this.aToolStripMenuItem1_Click);
             // 
             // menu
             // 
@@ -109,5 +119,6 @@
         private System.Windows.Forms.ToolStripMenuItem aToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nivel2ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aToolStripMenuItem1;
     }
 }

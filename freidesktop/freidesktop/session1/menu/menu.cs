@@ -28,5 +28,12 @@ namespace freidesktop.session1.menu
             tela.imc a = new tela.imc();
             a.Show();
         }
+
+       
+        private void aToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            tela.midade midade = new tela.midade();
+            midade.Show();
+        }
     }
 }
