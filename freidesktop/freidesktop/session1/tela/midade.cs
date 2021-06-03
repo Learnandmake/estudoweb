@@ -19,7 +19,32 @@ namespace freidesktop.session1.tela
 
         private void btnfmc_Click(object sender, EventArgs e)
         {
+        try
+            {
+                int idade = Convert.ToInt32(txtidade.Text);
+                function.sessionone vmidade = new function.sessionone();
+                bool re = vmidade.vmidade(idade);
+                if(re==true)
+                {
+                lblresposta.Visible=true;
+                    lblfmc.Visible = true;
+                    lblfmc.Text = "maior de idade";
+                }
+                else
+                {
+                    lblresposta.Visible = true;
+                    lblfmc.Visible = true;
+                    lblfmc.Text = "menor de idade";
+                }
+              } 
+          
 
+            catch(Exception)
+            {
+                lblresposta.Text = "erro verifique o formulario";
+                lblresposta.Visible = true;
+                lblfmc.Visible = false;
+            }
         }
 
 

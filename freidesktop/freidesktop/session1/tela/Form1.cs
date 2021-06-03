@@ -34,7 +34,8 @@ namespace freidesktop
         {
                 resposta.Text = "erro verifique o formulario";
                 resposta.Visible = true;
-        }
+                lblfmc.Visible = false;
+            }
         }
     }
 }

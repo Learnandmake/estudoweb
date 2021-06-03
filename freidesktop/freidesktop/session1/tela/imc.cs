@@ -29,8 +29,8 @@ namespace freidesktop.session1.tela
                 resposta.Visible = true;
                 lblfmc.Text = resultado;
                 lblfmc.Visible = true;
+               
 
-                
 
 
             }
@@ -38,7 +38,8 @@ namespace freidesktop.session1.tela
             catch(Exception)
             { resposta.Text = "erro verifique o formulario";
                 resposta.Visible = true;
-             }
+                lblfmc.Visible = false;
+            }
           
         }
     }
