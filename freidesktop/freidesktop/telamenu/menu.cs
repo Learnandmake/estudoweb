@@ -21,7 +21,7 @@ namespace freidesktop.telamenu
         {
             session1.menu.menu one = new session1.menu.menu();
             one.Show();
-            this.Visible = false;
+        
         }
     }
 }
