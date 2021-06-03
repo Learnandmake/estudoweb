@@ -16,5 +16,30 @@ namespace freidesktop.session1.tela
         {
             InitializeComponent();
         }
+
+        private void btnfmc_Click(object sender, EventArgs e)
+        {try
+            {
+                function.sessionone menu = new function.sessionone();
+
+                double altura = Convert.ToDouble(nudaltura.Value);
+                double peso = Convert.ToDouble(nudpeso.Value);
+                string resultado = Convert.ToString(menu.calcimc(peso, altura));
+                
+                resposta.Visible = true;
+                lblfmc.Text = resultado;
+                lblfmc.Visible = true;
+
+                
+
+
+            }
+
+            catch(Exception)
+            { resposta.Text = "erro verifique o formulario";
+                resposta.Visible = true;
+             }
+          
+        }
     }
 }

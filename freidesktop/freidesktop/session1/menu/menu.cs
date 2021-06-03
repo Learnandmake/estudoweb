@@ -22,5 +22,11 @@ namespace freidesktop.session1.menu
             Form1 a = new Form1();
             a.Show();
         }
+
+        private void bToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            tela.imc a = new tela.imc();
+            a.Show();
+        }
     }
 }

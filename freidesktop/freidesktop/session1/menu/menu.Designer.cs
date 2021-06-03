@@ -31,9 +31,9 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fmcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nivel2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nivel2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,13 +64,6 @@
             this.fmcToolStripMenuItem.Name = "fmcToolStripMenuItem";
             this.fmcToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.fmcToolStripMenuItem.Text = "nivel1";
-      
-            // 
-            // nivel2ToolStripMenuItem
-            // 
-            this.nivel2ToolStripMenuItem.Name = "nivel2ToolStripMenuItem";
-            this.nivel2ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.nivel2ToolStripMenuItem.Text = "nivel2";
             // 
             // aToolStripMenuItem
             // 
@@ -84,6 +77,13 @@
             this.bToolStripMenuItem.Name = "bToolStripMenuItem";
             this.bToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.bToolStripMenuItem.Text = "b";
+            this.bToolStripMenuItem.Click += new System.EventHandler(this.bToolStripMenuItem_Click);
+            // 
+            // nivel2ToolStripMenuItem
+            // 
+            this.nivel2ToolStripMenuItem.Name = "nivel2ToolStripMenuItem";
+            this.nivel2ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.nivel2ToolStripMenuItem.Text = "nivel2";
             // 
             // menu
             // 

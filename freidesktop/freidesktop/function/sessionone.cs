@@ -12,7 +12,12 @@ namespace freidesktop.function
     {
             int resultado = 220 - idade;
             return resultado;
-
     }
+        public double calcimc(double peso, double altura)
+        {
+            double resultado = (peso / (Math.Pow(altura, 2)));
+            Math.Round(resultado, 2);
+            return resultado;
+        }
     }
 }

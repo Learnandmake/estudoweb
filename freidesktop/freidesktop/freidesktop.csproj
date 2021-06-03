@@ -76,6 +76,9 @@
     <EmbeddedResource Include="session1\menu\menu.resx">
       <DependentUpon>menu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="session1\tela\imc.resx">
+      <DependentUpon>imc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="telamenu\menu.resx">
       <DependentUpon>menu.cs</DependentUpon>
     </EmbeddedResource>
