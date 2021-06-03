@@ -8,13 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace freidesktop
+namespace freidesktop.session1.menu
 {
-    public partial class Form1 : Form
+    public partial class menu : Form
     {
-        public Form1()
+        public menu()
         {
             InitializeComponent();
+        }
+
+        private void fmcToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form1 a = new Form1();
+            a.Show();
         }
     }
 }
