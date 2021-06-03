@@ -1,0 +1,48 @@
+body{
+    background:#d2d2c1 
+    url('https://lh3.googleusercontent.com/pw/ACtC-3cF8t1OhYzAM0dpBP5uYWhkpUaw1kzSe7nZVRt-btbpIJ1tgbzAhedioREseaaHAMOiK6j8qAuavuQVyUlWEwT331n2VaMeaPeWc0K4pOxZ2jCPJQgOoxhiN0VGwRlFiuiP-uKVIz3H3XMNtPq_AJ__=w92-h80-no?authuser=9');
+     font: 16px Arial, Helvetica, sans-serif;
+}
+#principal
+{
+   
+
+    width:900px;
+  
+}
+
+#menu
+{
+    background-color: #c5c5b2;
+    padding :18px;
+}
+
+a
+{
+    color:#4b566a;
+    text-decoration: none;
+    font-weight :bold;
+    padding: 5px;
+}
+
+#conteudo
+{
+background-color: #e8e8d9;
+padding: 10px;
+}
+
+#rodape
+{
+    text-align: center;
+}
+
+.imgcampanha
+{
+    border:10px solid #c3c3ae;
+}
+h1
+{
+color: #828271;
+font-size: 1.2em;
+
+}

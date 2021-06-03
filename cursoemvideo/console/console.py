@@ -1,3 +1,6 @@
+
+
+
 Nome = input("Bom dia, bem vindo ao sistema, por favor insira seu nome")
 print("Bem vindo {}!".format(Nome))
 print ("o que deseja fazer {}? ".format(Nome) )
@@ -24,7 +27,7 @@ if escolha==1:
           "4.divisão\n"
           "5.potenciação\n"
           "6.raiz\n"
-          "7.pcrcentagem\n"
+          "7.porcentagem\n"
           "8.media\n")
 
     op =int (input("digite o numero da operação desejada"))
@@ -79,8 +82,4 @@ if escolha==3:
           "2.metros\n"
           "quilometros\n")
 
-    unidade2=input("digite aqui")
-    if(unidade1=="1" ):
 
-else:
-    print("{} essa função não existe" .format(Nome))
