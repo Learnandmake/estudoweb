@@ -44,7 +44,8 @@ namespace freidesktop.session1.menu
 
         private void aToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-
+            tela.corprimaria midade = new tela.corprimaria();
+            midade.Show();
         }
     }
 }

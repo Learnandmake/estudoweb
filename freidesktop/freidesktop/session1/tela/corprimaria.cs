@@ -16,5 +16,28 @@ namespace freidesktop.session1.tela
         {
             InitializeComponent();
         }
+
+      
+        private void button1_Click(object sender, EventArgs e)
+        {
+        try
+        {
+                string cor1 = Convert.ToString(cbo1cor.SelectedItem);
+                string cor2 = Convert.ToString(cbo2cor.SelectedItem);
+
+                function.sessionone one = new function.sessionone();
+
+                lblcor.Text = one.cor(cor1, cor2);
+                lblcor.Visible = true;
+                lbltcor.Visible = true;
+
+            }
+           
+            catch(Exception)
+            {
+                lblcor.Text = "Erro verifique o formulario";
+                lblcor.Visible = true;
+            }
+        }
     }
 }

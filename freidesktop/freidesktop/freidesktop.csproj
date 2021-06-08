@@ -97,6 +97,9 @@
     <EmbeddedResource Include="session1\tela\calccaloria.resx">
       <DependentUpon>calccaloria.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="session1\tela\corprimaria.resx">
+      <DependentUpon>corprimaria.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="session1\tela\imc.resx">
       <DependentUpon>imc.cs</DependentUpon>
     </EmbeddedResource>
