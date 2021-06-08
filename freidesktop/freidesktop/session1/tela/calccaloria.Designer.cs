@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.rbn = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -48,16 +48,16 @@
             this.lbltotal = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // radioButton1
+            // rbn
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(12, 86);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(85, 17);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbn.AutoSize = true;
+            this.rbn.Location = new System.Drawing.Point(12, 86);
+            this.rbn.Name = "rbn";
+            this.rbn.Size = new System.Drawing.Size(85, 17);
+            this.rbn.TabIndex = 0;
+            this.rbn.TabStop = true;
+            this.rbn.Text = "radioButton1";
+            this.rbn.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -250,7 +250,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.rbn);
             this.Name = "calccaloria";
             this.Text = "calccaloria";
             this.ResumeLayout(false);
@@ -260,7 +260,7 @@
 
         #endregion
 
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton rbn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
