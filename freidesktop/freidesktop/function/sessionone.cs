@@ -35,6 +35,72 @@ namespace freidesktop.function
             return re;
         }
 
+        public double  calccaloria(int opcaocomida, int opcaobebida, int opcaosobremesa)
+        {
+            double comida = this.calccomida(opcaocomida);
+            double bebida = this.calcbebida(opcaobebida);
+            double sobremesa= this.calcsobremesa(opcaosobremesa);
 
+            double total = comida + bebida + sobremesa;
+            return total;
+        }
+
+        private double calcsobremesa(int opcao)
+        {
+            if (opcao == 1)
+
+                return 350;
+
+
+     
+            else if (opcao == 2)
+
+                return 270;
+
+            else if (opcao == 3)
+
+                return 300;
+
+            else
+                return 0;
+        }
+
+        private double calccomida(int opcao)
+        {
+            if (opcao == 1)
+
+                return 300;
+
+
+            else if (opcao == 2)
+
+                return 400;
+
+            else if (opcao == 3)
+
+                return 100;
+
+            else
+                return 0;
+        }
+
+        private double calcbebida(int opcao)
+        {
+            if (opcao == 1)
+
+                return 350;
+
+
+            else if (opcao == 2)
+
+                return 270;
+
+            else if (opcao == 3)
+
+                return 300;
+
+            else
+                return 0;
+        }
     }
 }

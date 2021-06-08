@@ -53,6 +53,12 @@
     <Compile Include="session1\menu\menu.Designer.cs">
       <DependentUpon>menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="session1\tela\calccaloria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="session1\tela\calccaloria.Designer.cs">
+      <DependentUpon>calccaloria.cs</DependentUpon>
+    </Compile>
     <Compile Include="session1\tela\imc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="session1\menu\menu.resx">
       <DependentUpon>menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="session1\tela\calccaloria.resx">
+      <DependentUpon>calccaloria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="session1\tela\imc.resx">
       <DependentUpon>imc.cs</DependentUpon>
