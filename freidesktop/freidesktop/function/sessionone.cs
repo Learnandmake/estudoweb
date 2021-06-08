@@ -102,5 +102,31 @@ namespace freidesktop.function
             else
                 return 0;
         }
+
+        public string cor (string amarelo,string vermelho,string azul)
+        { string re = "";
+            if (amarelo == "amarelo" && azul == "azul")
+            {
+                re = "verde";
+                return re;
+            }
+            else if (vermelho == "vermelho" && azul == "azul")
+            {
+                re = "roxo";
+                return re;
+            }
+            else if (amarelo == "amarelo" && vermelho == "vermelho")
+            {
+                re = "laranja";
+                return re;
+            }
+
+            else
+                return re;
+        }
+
+
+
+
     }
 }

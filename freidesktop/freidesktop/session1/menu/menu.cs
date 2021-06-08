@@ -41,5 +41,10 @@ namespace freidesktop.session1.menu
             tela.calccaloria midade = new tela.calccaloria();
             midade.Show();
         }
+
+        private void aToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

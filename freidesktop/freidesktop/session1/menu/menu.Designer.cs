@@ -36,6 +36,8 @@
             this.nivel2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.bToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.nivel3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,7 +55,8 @@
             // 
             this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fmcToolStripMenuItem,
-            this.nivel2ToolStripMenuItem});
+            this.nivel2ToolStripMenuItem,
+            this.nivel3ToolStripMenuItem});
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
             this.menuToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.menuToolStripMenuItem.Text = "menu";
@@ -93,16 +96,31 @@
             // aToolStripMenuItem1
             // 
             this.aToolStripMenuItem1.Name = "aToolStripMenuItem1";
-            this.aToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.aToolStripMenuItem1.Size = new System.Drawing.Size(81, 22);
             this.aToolStripMenuItem1.Text = "a";
             this.aToolStripMenuItem1.Click += new System.EventHandler(this.aToolStripMenuItem1_Click);
             // 
             // bToolStripMenuItem1
             // 
             this.bToolStripMenuItem1.Name = "bToolStripMenuItem1";
-            this.bToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.bToolStripMenuItem1.Size = new System.Drawing.Size(81, 22);
             this.bToolStripMenuItem1.Text = "b";
             this.bToolStripMenuItem1.Click += new System.EventHandler(this.bToolStripMenuItem1_Click);
+            // 
+            // nivel3ToolStripMenuItem
+            // 
+            this.nivel3ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aToolStripMenuItem2});
+            this.nivel3ToolStripMenuItem.Name = "nivel3ToolStripMenuItem";
+            this.nivel3ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.nivel3ToolStripMenuItem.Text = "nivel3";
+            // 
+            // aToolStripMenuItem2
+            // 
+            this.aToolStripMenuItem2.Name = "aToolStripMenuItem2";
+            this.aToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.aToolStripMenuItem2.Text = "a";
+            this.aToolStripMenuItem2.Click += new System.EventHandler(this.aToolStripMenuItem2_Click);
             // 
             // menu
             // 
@@ -130,5 +148,7 @@
         private System.Windows.Forms.ToolStripMenuItem bToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem bToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem nivel3ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aToolStripMenuItem2;
     }
 }
