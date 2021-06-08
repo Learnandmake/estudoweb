@@ -47,5 +47,11 @@ namespace freidesktop.session1.menu
             tela.corprimaria midade = new tela.corprimaria();
             midade.Show();
         }
+
+        private void bToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            tela.totalday midade = new tela.totalday();
+            midade.Show();
+        }
     }
 }

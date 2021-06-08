@@ -77,6 +77,12 @@
     <Compile Include="session1\tela\midade.Designer.cs">
       <DependentUpon>midade.cs</DependentUpon>
     </Compile>
+    <Compile Include="session1\tela\totalday.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="session1\tela\totalday.Designer.cs">
+      <DependentUpon>totalday.cs</DependentUpon>
+    </Compile>
     <Compile Include="telamenu\menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +111,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="session1\tela\midade.resx">
       <DependentUpon>midade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="session1\tela\totalday.resx">
+      <DependentUpon>totalday.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="telamenu\menu.resx">
       <DependentUpon>menu.cs</DependentUpon>

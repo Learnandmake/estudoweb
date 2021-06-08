@@ -125,7 +125,13 @@ namespace freidesktop.function
            
         }
 
-
+        public int diasdevida(DateTime nascimento)
+        {
+            DateTime now = DateTime.Now;
+            TimeSpan dif = now - nascimento;
+            int totaldays = Convert.ToInt32(dif.TotalDays);
+            return totaldays;
+        }
 
 
     }
