@@ -66,6 +66,12 @@
     <Compile Include="session1\tela\corprimaria.Designer.cs">
       <DependentUpon>corprimaria.cs</DependentUpon>
     </Compile>
+    <Compile Include="session1\tela\enviaremail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="session1\tela\enviaremail.Designer.cs">
+      <DependentUpon>enviaremail.cs</DependentUpon>
+    </Compile>
     <Compile Include="session1\tela\imc.cs">
       <SubType>Form</SubType>
     </Compile>
