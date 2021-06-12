@@ -49,15 +49,15 @@
             this.pv3 = new System.Windows.Forms.RadioButton();
             this.pv1 = new System.Windows.Forms.RadioButton();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbo = new System.Windows.Forms.ComboBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblreais = new System.Windows.Forms.Label();
+            this.lblreal = new System.Windows.Forms.Label();
+            this.lblvl2 = new System.Windows.Forms.Label();
+            this.lblvl1 = new System.Windows.Forms.Label();
+            this.lblp = new System.Windows.Forms.Label();
+            this.lblt = new System.Windows.Forms.Label();
+            this.lblorc = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -288,99 +288,99 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "Placa de video";
             // 
-            // comboBox1
+            // cbo
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbo.FormattingEnabled = true;
+            this.cbo.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
             "4",
             "5",
             "6"});
-            this.comboBox1.Location = new System.Drawing.Point(12, 140);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(312, 21);
-            this.comboBox1.TabIndex = 9;
-            this.comboBox1.Text = "selecione";
+            this.cbo.Location = new System.Drawing.Point(12, 140);
+            this.cbo.Name = "cbo";
+            this.cbo.Size = new System.Drawing.Size(312, 21);
+            this.cbo.TabIndex = 9;
+            this.cbo.Text = "selecione";
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.label11);
-            this.groupBox5.Controls.Add(this.label8);
-            this.groupBox5.Controls.Add(this.label10);
-            this.groupBox5.Controls.Add(this.label9);
-            this.groupBox5.Controls.Add(this.label5);
-            this.groupBox5.Controls.Add(this.label6);
-            this.groupBox5.Controls.Add(this.label7);
+            this.groupBox5.Controls.Add(this.lblreais);
+            this.groupBox5.Controls.Add(this.lblreal);
+            this.groupBox5.Controls.Add(this.lblvl2);
+            this.groupBox5.Controls.Add(this.lblvl1);
+            this.groupBox5.Controls.Add(this.lblp);
+            this.groupBox5.Controls.Add(this.lblt);
+            this.groupBox5.Controls.Add(this.lblorc);
             this.groupBox5.Location = new System.Drawing.Point(73, 159);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(194, 63);
             this.groupBox5.TabIndex = 13;
             this.groupBox5.TabStop = false;
             // 
-            // label11
+            // lblreais
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(79, 31);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(21, 13);
-            this.label11.TabIndex = 21;
-            this.label11.Text = "R$";
+            this.lblreais.AutoSize = true;
+            this.lblreais.Location = new System.Drawing.Point(89, 31);
+            this.lblreais.Name = "lblreais";
+            this.lblreais.Size = new System.Drawing.Size(21, 13);
+            this.lblreais.TabIndex = 21;
+            this.lblreais.Text = "R$";
             // 
-            // label8
+            // lblreal
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(89, 45);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(21, 13);
-            this.label8.TabIndex = 20;
-            this.label8.Text = "R$";
+            this.lblreal.AutoSize = true;
+            this.lblreal.Location = new System.Drawing.Point(89, 45);
+            this.lblreal.Name = "lblreal";
+            this.lblreal.Size = new System.Drawing.Size(21, 13);
+            this.lblreal.TabIndex = 20;
+            this.lblreal.Text = "R$";
             // 
-            // label10
+            // lblvl2
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(60, 45);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(23, 13);
-            this.label10.TabIndex = 19;
-            this.label10.Text = "HD";
+            this.lblvl2.AutoSize = true;
+            this.lblvl2.Location = new System.Drawing.Point(60, 45);
+            this.lblvl2.Name = "lblvl2";
+            this.lblvl2.Size = new System.Drawing.Size(23, 13);
+            this.lblvl2.TabIndex = 19;
+            this.lblvl2.Text = "HD";
             // 
-            // label9
+            // lblvl1
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(50, 31);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(23, 13);
-            this.label9.TabIndex = 18;
-            this.label9.Text = "HD";
+            this.lblvl1.AutoSize = true;
+            this.lblvl1.Location = new System.Drawing.Point(50, 31);
+            this.lblvl1.Name = "lblvl1";
+            this.lblvl1.Size = new System.Drawing.Size(23, 13);
+            this.lblvl1.TabIndex = 18;
+            this.lblvl1.Text = "HD";
             // 
-            // label5
+            // lblp
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(17, 45);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(46, 13);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "Parcela:";
+            this.lblp.AutoSize = true;
+            this.lblp.Location = new System.Drawing.Point(17, 45);
+            this.lblp.Name = "lblp";
+            this.lblp.Size = new System.Drawing.Size(46, 13);
+            this.lblp.TabIndex = 14;
+            this.lblp.Text = "Parcela:";
             // 
-            // label6
+            // lblt
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(14, 31);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(34, 13);
-            this.label6.TabIndex = 15;
-            this.label6.Text = "Total:";
+            this.lblt.AutoSize = true;
+            this.lblt.Location = new System.Drawing.Point(14, 31);
+            this.lblt.Name = "lblt";
+            this.lblt.Size = new System.Drawing.Size(34, 13);
+            this.lblt.TabIndex = 15;
+            this.lblt.Text = "Total:";
             // 
-            // label7
+            // lblorc
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(11, 12);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(62, 13);
-            this.label7.TabIndex = 16;
-            this.label7.Text = "Orçamento:";
+            this.lblorc.AutoSize = true;
+            this.lblorc.Location = new System.Drawing.Point(11, 12);
+            this.lblorc.Name = "lblorc";
+            this.lblorc.Size = new System.Drawing.Size(62, 13);
+            this.lblorc.TabIndex = 16;
+            this.lblorc.Text = "Orçamento:";
             // 
             // label12
             // 
@@ -398,7 +398,7 @@
             this.ClientSize = new System.Drawing.Size(344, 277);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.groupBox5);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbo);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.groupBox3);
@@ -448,15 +448,15 @@
         private System.Windows.Forms.RadioButton pv3;
         private System.Windows.Forms.RadioButton pv1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbo;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblreais;
+        private System.Windows.Forms.Label lblreal;
+        private System.Windows.Forms.Label lblvl2;
+        private System.Windows.Forms.Label lblvl1;
+        private System.Windows.Forms.Label lblp;
+        private System.Windows.Forms.Label lblt;
+        private System.Windows.Forms.Label lblorc;
         private System.Windows.Forms.Label label12;
     }
 }

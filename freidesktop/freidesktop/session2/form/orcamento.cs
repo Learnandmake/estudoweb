@@ -19,19 +19,19 @@ namespace freidesktop.session2.form
 
         private void button1_Click(object sender, EventArgs e)
         {
-            try
-            {
+           try
+           {
                 int opcaopro = 0;
                 int opcaohd = 0;
                 int opcaoram = 0;
                 int opcaopv = 0;
 
-                if(pp1.Checked == true)
+                if (pp1.Checked == true)
                 { opcaopro = 1; }
                 if (pp2.Checked == true)
                 { opcaopro = 2; }
                 if (pp3.Checked == true)
-                { opcaopro =  3; }
+                { opcaopro = 3; }
 
                 if (pp1.Checked == true)
                 { opcaopro = 1; }
@@ -63,8 +63,37 @@ namespace freidesktop.session2.form
 
                 function.sessiontwo two = new function.sessiontwo();
                 double total = two.totalorcamento(opcaopro, opcaohd, opcaoram, opcaopv);
+
+                double parcela = Convert.ToDouble(cbo.SelectedItem);
+                 if(parcela != 0)
+                {
+                    double ptotal = total / parcela;
+
+                    lblorc.Text = "Orcamento";
+                    lblorc.Visible = true;
+                    lblp.Visible = true;
+                    lblreais.Visible = true;
+                    lblreal.Visible = true;
+                    lblt.Visible = true;
+                    lblvl1.Text = Convert.ToString(total);
+                    lblvl1.Visible = true;
+                    lblvl2.Text = Convert.ToString(ptotal);
+                    lblvl2.Visible = true;
+                }
+               else
+               {
+                    lblorc.Text = "selecione uma parcela";
+                    lblorc.Visible = true;
+                }
+              
+            }
+            catch(Exception)
+            {
+                lblorc.Text = "erro";
+                   lblorc.Visible = true;
+            }    
                                            
             }
         }
     }
-}
+
