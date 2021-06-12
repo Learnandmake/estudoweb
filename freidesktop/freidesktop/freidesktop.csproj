@@ -84,6 +84,12 @@
     <Compile Include="session1\tela\totalday.Designer.cs">
       <DependentUpon>totalday.cs</DependentUpon>
     </Compile>
+    <Compile Include="session2\form\orcamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="session2\form\orcamento.Designer.cs">
+      <DependentUpon>orcamento.cs</DependentUpon>
+    </Compile>
     <Compile Include="session2\form\quiz.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +133,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="session1\tela\totalday.resx">
       <DependentUpon>totalday.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="session2\form\orcamento.resx">
+      <DependentUpon>orcamento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="session2\form\quiz.resx">
       <DependentUpon>quiz.cs</DependentUpon>

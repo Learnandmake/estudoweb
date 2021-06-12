@@ -30,13 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quizToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.orçamentoPcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.envioDeEmailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultaCepToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.criptografiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,11 +49,6 @@
             this.menuStrip1.Size = new System.Drawing.Size(284, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // menuToolStripMenuItem
             // 
@@ -79,6 +74,7 @@
             this.orçamentoPcToolStripMenuItem.Name = "orçamentoPcToolStripMenuItem";
             this.orçamentoPcToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.orçamentoPcToolStripMenuItem.Text = "Orçamento Pc";
+            this.orçamentoPcToolStripMenuItem.Click += new System.EventHandler(this.orçamentoPcToolStripMenuItem_Click);
             // 
             // envioDeEmailToolStripMenuItem
             // 
@@ -97,6 +93,11 @@
             this.criptografiaToolStripMenuItem.Name = "criptografiaToolStripMenuItem";
             this.criptografiaToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.criptografiaToolStripMenuItem.Text = "Criptografia";
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // menu
             // 

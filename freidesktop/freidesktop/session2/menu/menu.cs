@@ -22,5 +22,11 @@ namespace freidesktop.session2.menu
             session2.form.quiz q = new form.quiz();
             q.Show();
         }
+
+        private void orçamentoPcToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            form.orcamento o = new form.orcamento();
+            o.Show();
+        }
     }
 }
