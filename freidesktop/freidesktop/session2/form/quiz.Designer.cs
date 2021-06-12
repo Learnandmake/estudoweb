@@ -108,6 +108,7 @@
             this.rbp1b.TabStop = true;
             this.rbp1b.Text = "4";
             this.rbp1b.UseVisualStyleBackColor = true;
+            this.rbp1b.CheckedChanged += new System.EventHandler(this.rbp1b_CheckedChanged);
             // 
             // rbp1a
             // 
@@ -119,6 +120,7 @@
             this.rbp1a.TabStop = true;
             this.rbp1a.Text = "5";
             this.rbp1a.UseVisualStyleBackColor = true;
+            this.rbp1a.CheckedChanged += new System.EventHandler(this.rbp1a_CheckedChanged);
             // 
             // barra
             // 
@@ -137,6 +139,7 @@
             this.rbp1c.TabStop = true;
             this.rbp1c.Text = "10";
             this.rbp1c.UseVisualStyleBackColor = true;
+            this.rbp1c.CheckedChanged += new System.EventHandler(this.rbp1c_CheckedChanged);
             // 
             // groupBox2
             // 
@@ -160,6 +163,7 @@
             this.rbp2d.TabStop = true;
             this.rbp2d.Text = "ep11";
             this.rbp2d.UseVisualStyleBackColor = true;
+            this.rbp2d.CheckedChanged += new System.EventHandler(this.rbp2d_CheckedChanged);
             // 
             // rbp2c
             // 
@@ -171,6 +175,7 @@
             this.rbp2c.TabStop = true;
             this.rbp2c.Text = "ep10";
             this.rbp2c.UseVisualStyleBackColor = true;
+            this.rbp2c.CheckedChanged += new System.EventHandler(this.rbp2c_CheckedChanged);
             // 
             // rbp2a
             // 
@@ -182,6 +187,7 @@
             this.rbp2a.TabStop = true;
             this.rbp2a.Text = "ep13";
             this.rbp2a.UseVisualStyleBackColor = true;
+            this.rbp2a.CheckedChanged += new System.EventHandler(this.rbp2a_CheckedChanged);
             // 
             // label2
             // 
@@ -267,6 +273,7 @@
             this.rbp2b.TabStop = true;
             this.rbp2b.Text = "ep 5";
             this.rbp2b.UseVisualStyleBackColor = true;
+            this.rbp2b.CheckedChanged += new System.EventHandler(this.rbp2b_CheckedChanged);
             // 
             // rbp1d
             // 
@@ -278,6 +285,7 @@
             this.rbp1d.TabStop = true;
             this.rbp1d.Text = "7";
             this.rbp1d.UseVisualStyleBackColor = true;
+            this.rbp1d.CheckedChanged += new System.EventHandler(this.rbp1d_CheckedChanged);
             // 
             // groupBox4
             // 

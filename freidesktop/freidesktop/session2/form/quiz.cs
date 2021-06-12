@@ -19,10 +19,53 @@ namespace freidesktop.session2.form
 
         private void button1_Click(object sender, EventArgs e)
         {
+           
 
 
 
+        }
 
+        private void rbp1a_CheckedChanged(object sender, EventArgs e)
+        {
+            barra.Value = +20;
+        }
+
+        private void rbp1b_CheckedChanged(object sender, EventArgs e)
+        {
+
+            barra.Value = +20;
+        }
+
+        private void rbp1c_CheckedChanged(object sender, EventArgs e)
+        {
+
+            barra.Value = +20;
+        }
+
+        private void rbp1d_CheckedChanged(object sender, EventArgs e)
+        {
+
+            barra.Value= +20;
+        }
+
+        private void rbp2a_CheckedChanged(object sender, EventArgs e)
+        {
+            barra.Value = +40;
+        }
+
+        private void rbp2b_CheckedChanged(object sender, EventArgs e)
+        {
+            barra.Value = +40;
+        }
+
+        private void rbp2c_CheckedChanged(object sender, EventArgs e)
+        {
+            barra.Value = +40;
+        }
+
+        private void rbp2d_CheckedChanged(object sender, EventArgs e)
+        {
+            barra.Value = +40;
         }
     }
 }
