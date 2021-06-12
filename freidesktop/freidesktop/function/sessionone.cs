@@ -50,8 +50,6 @@ namespace freidesktop.function
             if (opcao == 1)
 
                 return 350;
-
-
      
             else if (opcao == 2)
 
