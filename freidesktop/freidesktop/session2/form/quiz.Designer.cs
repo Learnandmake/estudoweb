@@ -31,23 +31,23 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rbp1d = new System.Windows.Forms.RadioButton();
+            this.rbp1c = new System.Windows.Forms.RadioButton();
             this.rbp1b = new System.Windows.Forms.RadioButton();
             this.rbp1a = new System.Windows.Forms.RadioButton();
             this.barra = new System.Windows.Forms.ProgressBar();
-            this.rbp1c = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.rbp2d = new System.Windows.Forms.RadioButton();
             this.rbp2c = new System.Windows.Forms.RadioButton();
+            this.rbp2b = new System.Windows.Forms.RadioButton();
             this.rbp2a = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.rbp4d = new System.Windows.Forms.RadioButton();
             this.rbp4c = new System.Windows.Forms.RadioButton();
             this.rbp4b = new System.Windows.Forms.RadioButton();
             this.rbp4a = new System.Windows.Forms.RadioButton();
             this.label3 = new System.Windows.Forms.Label();
-            this.rbp4d = new System.Windows.Forms.RadioButton();
-            this.rbp2b = new System.Windows.Forms.RadioButton();
-            this.rbp1d = new System.Windows.Forms.RadioButton();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.rbp3d = new System.Windows.Forms.RadioButton();
             this.rbp3c = new System.Windows.Forms.RadioButton();
@@ -60,6 +60,9 @@
             this.rbp5b = new System.Windows.Forms.RadioButton();
             this.rbp5a = new System.Windows.Forms.RadioButton();
             this.label5 = new System.Windows.Forms.Label();
+            this.lblvca = new System.Windows.Forms.Label();
+            this.lbltotal = new System.Windows.Forms.Label();
+            this.lblp = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -78,7 +81,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(152, 284);
+            this.button1.Location = new System.Drawing.Point(152, 303);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(324, 53);
             this.button1.TabIndex = 1;
@@ -97,6 +100,30 @@
             this.groupBox1.Size = new System.Drawing.Size(78, 100);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
+            // 
+            // rbp1d
+            // 
+            this.rbp1d.AutoSize = true;
+            this.rbp1d.Location = new System.Drawing.Point(16, 77);
+            this.rbp1d.Name = "rbp1d";
+            this.rbp1d.Size = new System.Drawing.Size(31, 17);
+            this.rbp1d.TabIndex = 3;
+            this.rbp1d.TabStop = true;
+            this.rbp1d.Text = "7";
+            this.rbp1d.UseVisualStyleBackColor = true;
+            this.rbp1d.CheckedChanged += new System.EventHandler(this.rbp1d_CheckedChanged);
+            // 
+            // rbp1c
+            // 
+            this.rbp1c.AutoSize = true;
+            this.rbp1c.Location = new System.Drawing.Point(16, 55);
+            this.rbp1c.Name = "rbp1c";
+            this.rbp1c.Size = new System.Drawing.Size(37, 17);
+            this.rbp1c.TabIndex = 2;
+            this.rbp1c.TabStop = true;
+            this.rbp1c.Text = "10";
+            this.rbp1c.UseVisualStyleBackColor = true;
+            this.rbp1c.CheckedChanged += new System.EventHandler(this.rbp1c_CheckedChanged);
             // 
             // rbp1b
             // 
@@ -128,18 +155,6 @@
             this.barra.Name = "barra";
             this.barra.Size = new System.Drawing.Size(605, 23);
             this.barra.TabIndex = 3;
-            // 
-            // rbp1c
-            // 
-            this.rbp1c.AutoSize = true;
-            this.rbp1c.Location = new System.Drawing.Point(16, 55);
-            this.rbp1c.Name = "rbp1c";
-            this.rbp1c.Size = new System.Drawing.Size(37, 17);
-            this.rbp1c.TabIndex = 2;
-            this.rbp1c.TabStop = true;
-            this.rbp1c.Text = "10";
-            this.rbp1c.UseVisualStyleBackColor = true;
-            this.rbp1c.CheckedChanged += new System.EventHandler(this.rbp1c_CheckedChanged);
             // 
             // groupBox2
             // 
@@ -177,6 +192,18 @@
             this.rbp2c.UseVisualStyleBackColor = true;
             this.rbp2c.CheckedChanged += new System.EventHandler(this.rbp2c_CheckedChanged);
             // 
+            // rbp2b
+            // 
+            this.rbp2b.AutoSize = true;
+            this.rbp2b.Location = new System.Drawing.Point(16, 32);
+            this.rbp2b.Name = "rbp2b";
+            this.rbp2b.Size = new System.Drawing.Size(46, 17);
+            this.rbp2b.TabIndex = 1;
+            this.rbp2b.TabStop = true;
+            this.rbp2b.Text = "ep 5";
+            this.rbp2b.UseVisualStyleBackColor = true;
+            this.rbp2b.CheckedChanged += new System.EventHandler(this.rbp2b_CheckedChanged);
+            // 
             // rbp2a
             // 
             this.rbp2a.AutoSize = true;
@@ -209,48 +236,7 @@
             this.groupBox3.Size = new System.Drawing.Size(78, 100);
             this.groupBox3.TabIndex = 7;
             this.groupBox3.TabStop = false;
-            // 
-            // rbp4c
-            // 
-            this.rbp4c.AutoSize = true;
-            this.rbp4c.Location = new System.Drawing.Point(16, 55);
-            this.rbp4c.Name = "rbp4c";
-            this.rbp4c.Size = new System.Drawing.Size(37, 17);
-            this.rbp4c.TabIndex = 2;
-            this.rbp4c.TabStop = true;
-            this.rbp4c.Text = "16";
-            this.rbp4c.UseVisualStyleBackColor = true;
-            // 
-            // rbp4b
-            // 
-            this.rbp4b.AutoSize = true;
-            this.rbp4b.Location = new System.Drawing.Point(16, 32);
-            this.rbp4b.Name = "rbp4b";
-            this.rbp4b.Size = new System.Drawing.Size(37, 17);
-            this.rbp4b.TabIndex = 1;
-            this.rbp4b.TabStop = true;
-            this.rbp4b.Text = "15";
-            this.rbp4b.UseVisualStyleBackColor = true;
-            // 
-            // rbp4a
-            // 
-            this.rbp4a.AutoSize = true;
-            this.rbp4a.Location = new System.Drawing.Point(16, 9);
-            this.rbp4a.Name = "rbp4a";
-            this.rbp4a.Size = new System.Drawing.Size(37, 17);
-            this.rbp4a.TabIndex = 0;
-            this.rbp4a.TabStop = true;
-            this.rbp4a.Text = "17";
-            this.rbp4a.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 135);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(191, 13);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Quantos atores  principais tem ao todo ";
+            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
             // rbp4d
             // 
@@ -262,30 +248,52 @@
             this.rbp4d.TabStop = true;
             this.rbp4d.Text = "8";
             this.rbp4d.UseVisualStyleBackColor = true;
+            this.rbp4d.CheckedChanged += new System.EventHandler(this.rbp4d_CheckedChanged);
             // 
-            // rbp2b
+            // rbp4c
             // 
-            this.rbp2b.AutoSize = true;
-            this.rbp2b.Location = new System.Drawing.Point(16, 32);
-            this.rbp2b.Name = "rbp2b";
-            this.rbp2b.Size = new System.Drawing.Size(46, 17);
-            this.rbp2b.TabIndex = 1;
-            this.rbp2b.TabStop = true;
-            this.rbp2b.Text = "ep 5";
-            this.rbp2b.UseVisualStyleBackColor = true;
-            this.rbp2b.CheckedChanged += new System.EventHandler(this.rbp2b_CheckedChanged);
+            this.rbp4c.AutoSize = true;
+            this.rbp4c.Location = new System.Drawing.Point(16, 55);
+            this.rbp4c.Name = "rbp4c";
+            this.rbp4c.Size = new System.Drawing.Size(37, 17);
+            this.rbp4c.TabIndex = 2;
+            this.rbp4c.TabStop = true;
+            this.rbp4c.Text = "16";
+            this.rbp4c.UseVisualStyleBackColor = true;
+            this.rbp4c.CheckedChanged += new System.EventHandler(this.rbp4c_CheckedChanged);
             // 
-            // rbp1d
+            // rbp4b
             // 
-            this.rbp1d.AutoSize = true;
-            this.rbp1d.Location = new System.Drawing.Point(16, 77);
-            this.rbp1d.Name = "rbp1d";
-            this.rbp1d.Size = new System.Drawing.Size(31, 17);
-            this.rbp1d.TabIndex = 3;
-            this.rbp1d.TabStop = true;
-            this.rbp1d.Text = "7";
-            this.rbp1d.UseVisualStyleBackColor = true;
-            this.rbp1d.CheckedChanged += new System.EventHandler(this.rbp1d_CheckedChanged);
+            this.rbp4b.AutoSize = true;
+            this.rbp4b.Location = new System.Drawing.Point(16, 32);
+            this.rbp4b.Name = "rbp4b";
+            this.rbp4b.Size = new System.Drawing.Size(37, 17);
+            this.rbp4b.TabIndex = 1;
+            this.rbp4b.TabStop = true;
+            this.rbp4b.Text = "15";
+            this.rbp4b.UseVisualStyleBackColor = true;
+            this.rbp4b.CheckedChanged += new System.EventHandler(this.rbp4b_CheckedChanged);
+            // 
+            // rbp4a
+            // 
+            this.rbp4a.AutoSize = true;
+            this.rbp4a.Location = new System.Drawing.Point(16, 9);
+            this.rbp4a.Name = "rbp4a";
+            this.rbp4a.Size = new System.Drawing.Size(37, 17);
+            this.rbp4a.TabIndex = 0;
+            this.rbp4a.TabStop = true;
+            this.rbp4a.Text = "17";
+            this.rbp4a.UseVisualStyleBackColor = true;
+            this.rbp4a.CheckedChanged += new System.EventHandler(this.rbp4a_CheckedChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(12, 135);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(191, 13);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Quantos atores  principais tem ao todo ";
             // 
             // groupBox4
             // 
@@ -309,6 +317,7 @@
             this.rbp3d.TabStop = true;
             this.rbp3d.Text = "11";
             this.rbp3d.UseVisualStyleBackColor = true;
+            this.rbp3d.CheckedChanged += new System.EventHandler(this.rbp3d_CheckedChanged);
             // 
             // rbp3c
             // 
@@ -320,6 +329,7 @@
             this.rbp3c.TabStop = true;
             this.rbp3c.Text = "10";
             this.rbp3c.UseVisualStyleBackColor = true;
+            this.rbp3c.CheckedChanged += new System.EventHandler(this.rbp3c_CheckedChanged);
             // 
             // rbp3b
             // 
@@ -331,6 +341,7 @@
             this.rbp3b.TabStop = true;
             this.rbp3b.Text = "8";
             this.rbp3b.UseVisualStyleBackColor = true;
+            this.rbp3b.CheckedChanged += new System.EventHandler(this.rbp3b_CheckedChanged);
             // 
             // rbp3a
             // 
@@ -342,6 +353,7 @@
             this.rbp3a.TabStop = true;
             this.rbp3a.Text = "23";
             this.rbp3a.UseVisualStyleBackColor = true;
+            this.rbp3a.CheckedChanged += new System.EventHandler(this.rbp3a_CheckedChanged);
             // 
             // label4
             // 
@@ -374,6 +386,7 @@
             this.rbp5d.TabStop = true;
             this.rbp5d.Text = "1996";
             this.rbp5d.UseVisualStyleBackColor = true;
+            this.rbp5d.CheckedChanged += new System.EventHandler(this.rbp5d_CheckedChanged);
             // 
             // rbp5c
             // 
@@ -385,6 +398,7 @@
             this.rbp5c.TabStop = true;
             this.rbp5c.Text = "1984";
             this.rbp5c.UseVisualStyleBackColor = true;
+            this.rbp5c.CheckedChanged += new System.EventHandler(this.rbp5c_CheckedChanged);
             // 
             // rbp5b
             // 
@@ -396,6 +410,7 @@
             this.rbp5b.TabStop = true;
             this.rbp5b.Text = "1985";
             this.rbp5b.UseVisualStyleBackColor = true;
+            this.rbp5b.CheckedChanged += new System.EventHandler(this.rbp5b_CheckedChanged);
             // 
             // rbp5a
             // 
@@ -407,6 +422,7 @@
             this.rbp5a.TabStop = true;
             this.rbp5a.Text = "1990";
             this.rbp5a.UseVisualStyleBackColor = true;
+            this.rbp5a.CheckedChanged += new System.EventHandler(this.rbp5a_CheckedChanged);
             // 
             // label5
             // 
@@ -417,11 +433,44 @@
             this.label5.TabIndex = 10;
             this.label5.Text = "Qual o ano de nascimento de jesse pinkman";
             // 
+            // lblvca
+            // 
+            this.lblvca.AutoSize = true;
+            this.lblvca.Location = new System.Drawing.Point(251, 287);
+            this.lblvca.Name = "lblvca";
+            this.lblvca.Size = new System.Drawing.Size(74, 13);
+            this.lblvca.TabIndex = 12;
+            this.lblvca.Text = "Você acertou ";
+            this.lblvca.Visible = false;
+            // 
+            // lbltotal
+            // 
+            this.lbltotal.AutoSize = true;
+            this.lbltotal.Location = new System.Drawing.Point(319, 287);
+            this.lbltotal.Name = "lbltotal";
+            this.lbltotal.Size = new System.Drawing.Size(13, 13);
+            this.lbltotal.TabIndex = 13;
+            this.lbltotal.Text = "0";
+            this.lbltotal.Visible = false;
+            // 
+            // lblp
+            // 
+            this.lblp.AutoSize = true;
+            this.lblp.Location = new System.Drawing.Point(331, 287);
+            this.lblp.Name = "lblp";
+            this.lblp.Size = new System.Drawing.Size(54, 13);
+            this.lblp.TabIndex = 14;
+            this.lblp.Text = "perguntas";
+            this.lblp.Visible = false;
+            // 
             // quiz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(636, 342);
+            this.ClientSize = new System.Drawing.Size(636, 368);
+            this.Controls.Add(this.lblp);
+            this.Controls.Add(this.lbltotal);
+            this.Controls.Add(this.lblvca);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.groupBox4);
@@ -485,5 +534,8 @@
         private System.Windows.Forms.RadioButton rbp5b;
         private System.Windows.Forms.RadioButton rbp5a;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblvca;
+        private System.Windows.Forms.Label lbltotal;
+        private System.Windows.Forms.Label lblp;
     }
 }
