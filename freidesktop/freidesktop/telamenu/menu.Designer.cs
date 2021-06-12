@@ -31,6 +31,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.sessionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.oneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.twoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,7 +48,8 @@
             // sessionToolStripMenuItem
             // 
             this.sessionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.oneToolStripMenuItem});
+            this.oneToolStripMenuItem,
+            this.twoToolStripMenuItem});
             this.sessionToolStripMenuItem.Name = "sessionToolStripMenuItem";
             this.sessionToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
             this.sessionToolStripMenuItem.Text = "Session";
@@ -58,6 +60,13 @@
             this.oneToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.oneToolStripMenuItem.Text = "one";
             this.oneToolStripMenuItem.Click += new System.EventHandler(this.oneToolStripMenuItem_Click);
+            // 
+            // twoToolStripMenuItem
+            // 
+            this.twoToolStripMenuItem.Name = "twoToolStripMenuItem";
+            this.twoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.twoToolStripMenuItem.Text = "two";
+            this.twoToolStripMenuItem.Click += new System.EventHandler(this.twoToolStripMenuItem_Click);
             // 
             // menu
             // 
@@ -80,5 +89,6 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem sessionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem oneToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem twoToolStripMenuItem;
     }
 }

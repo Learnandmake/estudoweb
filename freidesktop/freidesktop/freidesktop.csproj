@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="function\sessionone.cs" />
+    <Compile Include="function\sessiontwo.cs" />
     <Compile Include="session1\menu\menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +84,18 @@
     <Compile Include="session1\tela\totalday.Designer.cs">
       <DependentUpon>totalday.cs</DependentUpon>
     </Compile>
+    <Compile Include="session2\form\quiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="session2\form\quiz.Designer.cs">
+      <DependentUpon>quiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="session2\menu\menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="session2\menu\menu.Designer.cs">
+      <DependentUpon>menu.cs</DependentUpon>
+    </Compile>
     <Compile Include="telamenu\menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +127,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="session1\tela\totalday.resx">
       <DependentUpon>totalday.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="session2\menu\menu.resx">
+      <DependentUpon>menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="telamenu\menu.resx">
       <DependentUpon>menu.cs</DependentUpon>
