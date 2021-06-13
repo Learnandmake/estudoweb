@@ -24,7 +24,8 @@ namespace freidesktop.session2.form
             if(chave.Length ==16)
             {
                 function.sessiontwo criptografia = new function.sessiontwo();
-                 criptografia.Criptografar(chave, mensagem);
+            string c =criptografia.Criptografar(chave, mensagem);
+                txtm.Text = c;
             }
        
         }
@@ -35,7 +36,7 @@ namespace freidesktop.session2.form
             string mensagem = Convert.ToString(txtcm.Text);
 
             function.sessiontwo criptografia = new function.sessiontwo();
-            lblm.Text = criptografia.Descriptografar(chave, mensagem);
+            txtm.Text = criptografia.Descriptografar(chave, mensagem);
         }
     }
 }

@@ -38,8 +38,11 @@
             this.txtcc = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.lblm = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtm = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -124,27 +127,47 @@
             this.label5.TabIndex = 18;
             this.label5.Text = "Criptografar";
             // 
-            // lblm
+            // groupBox2
             // 
-            this.lblm.AutoSize = true;
-            this.lblm.Location = new System.Drawing.Point(241, 41);
-            this.lblm.Name = "lblm";
-            this.lblm.Size = new System.Drawing.Size(59, 13);
-            this.lblm.TabIndex = 19;
-            this.lblm.Text = "Mensagem";
+            this.groupBox2.Controls.Add(this.txtm);
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Location = new System.Drawing.Point(218, 25);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(200, 165);
+            this.groupBox2.TabIndex = 18;
+            this.groupBox2.TabStop = false;
+            // 
+            // txtm
+            // 
+            this.txtm.Location = new System.Drawing.Point(9, 32);
+            this.txtm.Multiline = true;
+            this.txtm.Name = "txtm";
+            this.txtm.Size = new System.Drawing.Size(185, 127);
+            this.txtm.TabIndex = 16;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 16);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(58, 13);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "mensagem";
             // 
             // criptografia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(447, 198);
-            this.Controls.Add(this.lblm);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.groupBox1);
             this.Name = "criptografia";
             this.Text = "criptografia";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -161,6 +184,8 @@
         private System.Windows.Forms.TextBox txtcc;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label lblm;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.TextBox txtm;
+        private System.Windows.Forms.Label label3;
     }
 }
