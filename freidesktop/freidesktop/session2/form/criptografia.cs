@@ -16,5 +16,26 @@ namespace freidesktop.session2.form
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string chave = Convert.ToString(txtcc.Text);
+            string mensagem = Convert.ToString(txtcm.Text);
+            if(chave.Length ==16)
+            {
+                function.sessiontwo criptografia = new function.sessiontwo();
+                 criptografia.Criptografar(chave, mensagem);
+            }
+       
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string chave = Convert.ToString(txtcc.Text);
+            string mensagem = Convert.ToString(txtcm.Text);
+
+            function.sessiontwo criptografia = new function.sessiontwo();
+            lblm.Text = criptografia.Descriptografar(chave, mensagem);
+        }
     }
 }
