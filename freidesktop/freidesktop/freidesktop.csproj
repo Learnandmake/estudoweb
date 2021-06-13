@@ -160,6 +160,9 @@
     <EmbeddedResource Include="session2\form\correio.resx">
       <DependentUpon>correio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="session2\form\criptografia.resx">
+      <DependentUpon>criptografia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="session2\form\enviaremail.resx">
       <DependentUpon>enviaremail.cs</DependentUpon>
     </EmbeddedResource>
