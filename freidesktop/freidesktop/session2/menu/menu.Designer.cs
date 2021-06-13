@@ -95,6 +95,7 @@
             this.criptografiaToolStripMenuItem.Name = "criptografiaToolStripMenuItem";
             this.criptografiaToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.criptografiaToolStripMenuItem.Text = "Criptografia";
+            this.criptografiaToolStripMenuItem.Click += new System.EventHandler(this.criptografiaToolStripMenuItem_Click);
             // 
             // contextMenuStrip1
             // 

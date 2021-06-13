@@ -95,6 +95,12 @@
     <Compile Include="session2\form\correio.Designer.cs">
       <DependentUpon>correio.cs</DependentUpon>
     </Compile>
+    <Compile Include="session2\form\criptografia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="session2\form\criptografia.Designer.cs">
+      <DependentUpon>criptografia.cs</DependentUpon>
+    </Compile>
     <Compile Include="session2\form\enviaremail.cs">
       <SubType>Form</SubType>
     </Compile>

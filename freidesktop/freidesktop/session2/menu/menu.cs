@@ -40,5 +40,11 @@ namespace freidesktop.session2.menu
             form.correio co = new form.correio();
             co.Show();
         }
+
+        private void criptografiaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            form.criptografia cr = new form.criptografia();
+            cr.Show();
+        }
     }
 }
