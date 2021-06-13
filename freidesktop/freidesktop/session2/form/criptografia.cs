@@ -33,7 +33,7 @@ namespace freidesktop.session2.form
         private void button2_Click(object sender, EventArgs e)
         {
             string chave = Convert.ToString(txtcc.Text);
-            string mensagem = Convert.ToString(txtcm.Text);
+            string mensagem = Convert.ToString(txtm.Text);
 
             function.sessiontwo criptografia = new function.sessiontwo();
             txtm.Text = criptografia.Descriptografar(chave, mensagem);
