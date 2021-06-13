@@ -81,6 +81,7 @@
             this.envioDeEmailToolStripMenuItem.Name = "envioDeEmailToolStripMenuItem";
             this.envioDeEmailToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.envioDeEmailToolStripMenuItem.Text = "Envio de e-mail";
+            this.envioDeEmailToolStripMenuItem.Click += new System.EventHandler(this.envioDeEmailToolStripMenuItem_Click);
             // 
             // consultaCepToolStripMenuItem
             // 

@@ -66,12 +66,6 @@
     <Compile Include="session1\tela\corprimaria.Designer.cs">
       <DependentUpon>corprimaria.cs</DependentUpon>
     </Compile>
-    <Compile Include="session1\tela\enviaremail.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="session1\tela\enviaremail.Designer.cs">
-      <DependentUpon>enviaremail.cs</DependentUpon>
-    </Compile>
     <Compile Include="session1\tela\imc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +83,12 @@
     </Compile>
     <Compile Include="session1\tela\totalday.Designer.cs">
       <DependentUpon>totalday.cs</DependentUpon>
+    </Compile>
+    <Compile Include="session2\form\enviaremail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="session2\form\enviaremail.Designer.cs">
+      <DependentUpon>enviaremail.cs</DependentUpon>
     </Compile>
     <Compile Include="session2\form\orcamento.cs">
       <SubType>Form</SubType>
@@ -139,6 +139,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="session1\tela\totalday.resx">
       <DependentUpon>totalday.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="session2\form\enviaremail.resx">
+      <DependentUpon>enviaremail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="session2\form\orcamento.resx">
       <DependentUpon>orcamento.cs</DependentUpon>

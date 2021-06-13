@@ -28,5 +28,11 @@ namespace freidesktop.session2.menu
             form.orcamento o = new form.orcamento();
             o.Show();
         }
+
+        private void envioDeEmailToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            form.enviaremail ee = new form.enviaremail();
+            ee.Show();
+        }
     }
 }
