@@ -88,6 +88,7 @@
             this.consultaCepToolStripMenuItem.Name = "consultaCepToolStripMenuItem";
             this.consultaCepToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.consultaCepToolStripMenuItem.Text = "Consulta cep";
+            this.consultaCepToolStripMenuItem.Click += new System.EventHandler(this.consultaCepToolStripMenuItem_Click);
             // 
             // criptografiaToolStripMenuItem
             // 

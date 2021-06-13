@@ -33,8 +33,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Correios, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Correios-Api.1.1.1\lib\portable-net45+win\Correios.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -83,6 +88,12 @@
     </Compile>
     <Compile Include="session1\tela\totalday.Designer.cs">
       <DependentUpon>totalday.cs</DependentUpon>
+    </Compile>
+    <Compile Include="session2\form\correio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="session2\form\correio.Designer.cs">
+      <DependentUpon>correio.cs</DependentUpon>
     </Compile>
     <Compile Include="session2\form\enviaremail.cs">
       <SubType>Form</SubType>
@@ -140,6 +151,9 @@
     <EmbeddedResource Include="session1\tela\totalday.resx">
       <DependentUpon>totalday.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="session2\form\correio.resx">
+      <DependentUpon>correio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="session2\form\enviaremail.resx">
       <DependentUpon>enviaremail.cs</DependentUpon>
     </EmbeddedResource>
@@ -167,6 +181,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -34,5 +34,11 @@ namespace freidesktop.session2.menu
             form.enviaremail ee = new form.enviaremail();
             ee.Show();
         }
+
+        private void consultaCepToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            form.correio co = new form.correio();
+            co.Show();
+        }
     }
 }
