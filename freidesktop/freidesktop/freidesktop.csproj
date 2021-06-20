@@ -150,6 +150,18 @@
     <Compile Include="session3\menu\menu.Designer.cs">
       <DependentUpon>menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="session4\form\spotify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="session4\form\spotify.Designer.cs">
+      <DependentUpon>spotify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="session4\menu\menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="session4\menu\menu.Designer.cs">
+      <DependentUpon>menu.cs</DependentUpon>
+    </Compile>
     <Compile Include="telamenu\menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -210,6 +222,12 @@
       <DependentUpon>facebook.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="session3\menu\menu.resx">
+      <DependentUpon>menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="session4\form\spotify.resx">
+      <DependentUpon>spotify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="session4\menu\menu.resx">
       <DependentUpon>menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="telamenu\menu.resx">

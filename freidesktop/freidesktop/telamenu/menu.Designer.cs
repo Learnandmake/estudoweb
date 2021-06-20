@@ -35,6 +35,7 @@
             this.threeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eventoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.desafioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fourToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,7 +55,8 @@
             this.sessionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.oneToolStripMenuItem,
             this.twoToolStripMenuItem,
-            this.threeToolStripMenuItem});
+            this.threeToolStripMenuItem,
+            this.fourToolStripMenuItem});
             this.sessionToolStripMenuItem.Name = "sessionToolStripMenuItem";
             this.sessionToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
             this.sessionToolStripMenuItem.Text = "Session";
@@ -62,21 +64,21 @@
             // oneToolStripMenuItem
             // 
             this.oneToolStripMenuItem.Name = "oneToolStripMenuItem";
-            this.oneToolStripMenuItem.Size = new System.Drawing.Size(104, 22);
+            this.oneToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.oneToolStripMenuItem.Text = "one";
             this.oneToolStripMenuItem.Click += new System.EventHandler(this.oneToolStripMenuItem_Click);
             // 
             // twoToolStripMenuItem
             // 
             this.twoToolStripMenuItem.Name = "twoToolStripMenuItem";
-            this.twoToolStripMenuItem.Size = new System.Drawing.Size(104, 22);
+            this.twoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.twoToolStripMenuItem.Text = "two";
             this.twoToolStripMenuItem.Click += new System.EventHandler(this.twoToolStripMenuItem_Click);
             // 
             // threeToolStripMenuItem
             // 
             this.threeToolStripMenuItem.Name = "threeToolStripMenuItem";
-            this.threeToolStripMenuItem.Size = new System.Drawing.Size(104, 22);
+            this.threeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.threeToolStripMenuItem.Text = "Three";
             this.threeToolStripMenuItem.Click += new System.EventHandler(this.threeToolStripMenuItem_Click);
             // 
@@ -91,9 +93,16 @@
             // desafioToolStripMenuItem
             // 
             this.desafioToolStripMenuItem.Name = "desafioToolStripMenuItem";
-            this.desafioToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.desafioToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
             this.desafioToolStripMenuItem.Text = "Desafio";
             this.desafioToolStripMenuItem.Click += new System.EventHandler(this.desafioToolStripMenuItem_Click_1);
+            // 
+            // fourToolStripMenuItem
+            // 
+            this.fourToolStripMenuItem.Name = "fourToolStripMenuItem";
+            this.fourToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.fourToolStripMenuItem.Text = "Four";
+            this.fourToolStripMenuItem.Click += new System.EventHandler(this.fourToolStripMenuItem_Click);
             // 
             // menu
             // 
@@ -120,5 +129,6 @@
         private System.Windows.Forms.ToolStripMenuItem threeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eventoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem desafioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fourToolStripMenuItem;
     }
 }

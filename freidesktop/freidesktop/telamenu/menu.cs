@@ -46,5 +46,11 @@ namespace freidesktop.telamenu
             desafio.menu.Form1 m = new desafio.menu.Form1();
             m.Show();
         }
+
+        private void fourToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            session4.menu.menu m = new session4.menu.menu();
+            m.Show();
+        }
     }
 }
