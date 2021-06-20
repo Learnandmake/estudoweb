@@ -164,6 +164,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="desafio\form\mouse.resx">
+      <DependentUpon>mouse.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="desafio\menu\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

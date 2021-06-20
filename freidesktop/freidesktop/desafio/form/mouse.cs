@@ -16,5 +16,30 @@ namespace freidesktop.desafio.form
         {
             InitializeComponent();
         }
+
+        private void pic_MouseEnter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pic_MouseLeave(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pic_MouseLeave_1(object sender, EventArgs e)
+        {
+
+            Point posicao = pic.PointToScreen(Point.Empty);
+
+            posicao.X += pic.Width / 2;
+            posicao.Y += pic.Height / 2;
+
+            Cursor.Position = posicao;
+            Cursor.Current = Cursors.No;
+
+            lblaviso2.Visible = true;
+            lblaviso1.Visible = false;
+        }
     }
 }

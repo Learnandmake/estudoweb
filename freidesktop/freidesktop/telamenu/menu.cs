@@ -40,5 +40,11 @@ namespace freidesktop.telamenu
         {
 
         }
+
+        private void desafioToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            desafio.menu.Form1 m = new desafio.menu.Form1();
+            m.Show();
+        }
     }
 }

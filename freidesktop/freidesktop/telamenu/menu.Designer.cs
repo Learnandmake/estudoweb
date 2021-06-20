@@ -62,21 +62,21 @@
             // oneToolStripMenuItem
             // 
             this.oneToolStripMenuItem.Name = "oneToolStripMenuItem";
-            this.oneToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.oneToolStripMenuItem.Size = new System.Drawing.Size(104, 22);
             this.oneToolStripMenuItem.Text = "one";
             this.oneToolStripMenuItem.Click += new System.EventHandler(this.oneToolStripMenuItem_Click);
             // 
             // twoToolStripMenuItem
             // 
             this.twoToolStripMenuItem.Name = "twoToolStripMenuItem";
-            this.twoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.twoToolStripMenuItem.Size = new System.Drawing.Size(104, 22);
             this.twoToolStripMenuItem.Text = "two";
             this.twoToolStripMenuItem.Click += new System.EventHandler(this.twoToolStripMenuItem_Click);
             // 
             // threeToolStripMenuItem
             // 
             this.threeToolStripMenuItem.Name = "threeToolStripMenuItem";
-            this.threeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.threeToolStripMenuItem.Size = new System.Drawing.Size(104, 22);
             this.threeToolStripMenuItem.Text = "Three";
             this.threeToolStripMenuItem.Click += new System.EventHandler(this.threeToolStripMenuItem_Click);
             // 
@@ -93,6 +93,7 @@
             this.desafioToolStripMenuItem.Name = "desafioToolStripMenuItem";
             this.desafioToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.desafioToolStripMenuItem.Text = "Desafio";
+            this.desafioToolStripMenuItem.Click += new System.EventHandler(this.desafioToolStripMenuItem_Click_1);
             // 
             // menu
             // 
