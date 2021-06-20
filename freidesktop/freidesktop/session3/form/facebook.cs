@@ -76,5 +76,31 @@ namespace freidesktop.session3.form
                 btncadastro.Enabled = false;
             }
         }
+
+        private void mskcep_TextChanged(object sender, EventArgs e)
+        {
+           string cep1= String.Join("", System.Text.RegularExpressions.Regex.Split(mskcep.Text, @"[^\d]"));
+            int n = cep1.Length;
+           
+         if(n == 8)
+            {
+                string cep = Convert.ToString(mskcep.Text);
+                Correios.CorreiosApi correio = new Correios.CorreiosApi();
+                var endereco =  correio.consultaCEP(cep);
+                lblrua.Text = endereco.end;
+                lblrua.Visible = true;
+                lblbairro.Text = endereco.bairro;
+                lblbairro.Visible = true;
+                lblcidade.Text = endereco.cidade;
+                lblcidade.Visible = true;
+                lblestado.Text = endereco.uf;
+                lblestado.Visible = true;
+            }
+        }
+
+        private void btncadastro_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

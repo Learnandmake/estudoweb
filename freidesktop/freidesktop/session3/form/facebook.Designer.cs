@@ -42,7 +42,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.mskcep = new System.Windows.Forms.MaskedTextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.lblendereco = new System.Windows.Forms.Label();
+            this.lblestado = new System.Windows.Forms.Label();
             this.cbamigo = new System.Windows.Forms.CheckBox();
             this.label7 = new System.Windows.Forms.Label();
             this.cbtrabalho = new System.Windows.Forms.CheckBox();
@@ -58,6 +58,9 @@
             this.lblaviso = new System.Windows.Forms.Label();
             this.lblfsenha = new System.Windows.Forms.Label();
             this.txtoutro = new System.Windows.Forms.TextBox();
+            this.lblrua = new System.Windows.Forms.Label();
+            this.lblbairro = new System.Windows.Forms.Label();
+            this.lblcidade = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picfb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picfbesp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picfbbr)).BeginInit();
@@ -175,6 +178,7 @@
             this.mskcep.Name = "mskcep";
             this.mskcep.Size = new System.Drawing.Size(57, 20);
             this.mskcep.TabIndex = 12;
+            this.mskcep.TextChanged += new System.EventHandler(this.mskcep_TextChanged);
             // 
             // label5
             // 
@@ -185,14 +189,15 @@
             this.label5.TabIndex = 13;
             this.label5.Text = "Cep:";
             // 
-            // lblendereco
+            // lblestado
             // 
-            this.lblendereco.AutoSize = true;
-            this.lblendereco.Location = new System.Drawing.Point(42, 191);
-            this.lblendereco.Name = "lblendereco";
-            this.lblendereco.Size = new System.Drawing.Size(248, 13);
-            this.lblendereco.TabIndex = 14;
-            this.lblendereco.Text = "informe o seu cep para carregar seu endereco aqui";
+            this.lblestado.AutoSize = true;
+            this.lblestado.Location = new System.Drawing.Point(42, 230);
+            this.lblestado.Name = "lblestado";
+            this.lblestado.Size = new System.Drawing.Size(39, 13);
+            this.lblestado.TabIndex = 14;
+            this.lblestado.Text = "estado";
+            this.lblestado.Visible = false;
             // 
             // cbamigo
             // 
@@ -274,6 +279,7 @@
             this.btncadastro.TabIndex = 23;
             this.btncadastro.Text = "Sing up";
             this.btncadastro.UseVisualStyleBackColor = true;
+            this.btncadastro.Click += new System.EventHandler(this.btncadastro_Click);
             // 
             // picfbesp
             // 
@@ -336,11 +342,44 @@
             this.txtoutro.TabIndex = 30;
             this.txtoutro.Visible = false;
             // 
+            // lblrua
+            // 
+            this.lblrua.AutoSize = true;
+            this.lblrua.Location = new System.Drawing.Point(42, 191);
+            this.lblrua.Name = "lblrua";
+            this.lblrua.Size = new System.Drawing.Size(27, 13);
+            this.lblrua.TabIndex = 31;
+            this.lblrua.Text = "Rua";
+            this.lblrua.Visible = false;
+            // 
+            // lblbairro
+            // 
+            this.lblbairro.AutoSize = true;
+            this.lblbairro.Location = new System.Drawing.Point(42, 204);
+            this.lblbairro.Name = "lblbairro";
+            this.lblbairro.Size = new System.Drawing.Size(33, 13);
+            this.lblbairro.TabIndex = 32;
+            this.lblbairro.Text = "bairro";
+            this.lblbairro.Visible = false;
+            // 
+            // lblcidade
+            // 
+            this.lblcidade.AutoSize = true;
+            this.lblcidade.Location = new System.Drawing.Point(42, 217);
+            this.lblcidade.Name = "lblcidade";
+            this.lblcidade.Size = new System.Drawing.Size(40, 13);
+            this.lblcidade.TabIndex = 33;
+            this.lblcidade.Text = "Cidade";
+            this.lblcidade.Visible = false;
+            // 
             // facebook
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(293, 460);
+            this.Controls.Add(this.lblcidade);
+            this.Controls.Add(this.lblbairro);
+            this.Controls.Add(this.lblrua);
             this.Controls.Add(this.txtoutro);
             this.Controls.Add(this.lblfsenha);
             this.Controls.Add(this.lblaviso);
@@ -356,7 +395,7 @@
             this.Controls.Add(this.cbtrabalho);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.cbamigo);
-            this.Controls.Add(this.lblendereco);
+            this.Controls.Add(this.lblestado);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.mskcep);
             this.Controls.Add(this.label4);
@@ -395,7 +434,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.MaskedTextBox mskcep;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label lblendereco;
+        private System.Windows.Forms.Label lblestado;
         private System.Windows.Forms.CheckBox cbamigo;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.CheckBox cbtrabalho;
@@ -411,5 +450,8 @@
         private System.Windows.Forms.Label lblaviso;
         private System.Windows.Forms.Label lblfsenha;
         private System.Windows.Forms.TextBox txtoutro;
+        private System.Windows.Forms.Label lblrua;
+        private System.Windows.Forms.Label lblbairro;
+        private System.Windows.Forms.Label lblcidade;
     }
 }
