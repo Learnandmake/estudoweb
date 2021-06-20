@@ -32,27 +32,26 @@
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpnasc = new System.Windows.Forms.DateTimePicker();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtnome = new System.Windows.Forms.TextBox();
+            this.txtemail = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cboidioma = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.mskcep = new System.Windows.Forms.MaskedTextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.lblendereco = new System.Windows.Forms.Label();
+            this.cbamigo = new System.Windows.Forms.CheckBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.cbtrabalho = new System.Windows.Forms.CheckBox();
+            this.cboutro = new System.Windows.Forms.CheckBox();
+            this.txtsenha = new System.Windows.Forms.TextBox();
+            this.txtcsenha = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -95,12 +94,12 @@
             this.radioButton2.Text = "F";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
-            // dateTimePicker1
+            // dtpnasc
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(40, 134);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(123, 20);
-            this.dateTimePicker1.TabIndex = 5;
+            this.dtpnasc.Location = new System.Drawing.Point(40, 134);
+            this.dtpnasc.Name = "dtpnasc";
+            this.dtpnasc.Size = new System.Drawing.Size(123, 20);
+            this.dtpnasc.TabIndex = 5;
             // 
             // pictureBox1
             // 
@@ -110,19 +109,19 @@
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox1
+            // txtnome
             // 
-            this.textBox1.Location = new System.Drawing.Point(40, 61);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(201, 20);
-            this.textBox1.TabIndex = 7;
+            this.txtnome.Location = new System.Drawing.Point(40, 61);
+            this.txtnome.Name = "txtnome";
+            this.txtnome.Size = new System.Drawing.Size(201, 20);
+            this.txtnome.TabIndex = 7;
             // 
-            // textBox2
+            // txtemail
             // 
-            this.textBox2.Location = new System.Drawing.Point(40, 85);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(201, 20);
-            this.textBox2.TabIndex = 9;
+            this.txtemail.Location = new System.Drawing.Point(40, 85);
+            this.txtemail.Name = "txtemail";
+            this.txtemail.Size = new System.Drawing.Size(201, 20);
+            this.txtemail.TabIndex = 9;
             // 
             // label3
             // 
@@ -133,13 +132,13 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "E-mail:";
             // 
-            // comboBox1
+            // cboidioma
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(40, 108);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(201, 21);
-            this.comboBox1.TabIndex = 10;
+            this.cboidioma.FormattingEnabled = true;
+            this.cboidioma.Location = new System.Drawing.Point(40, 108);
+            this.cboidioma.Name = "cboidioma";
+            this.cboidioma.Size = new System.Drawing.Size(201, 21);
+            this.cboidioma.TabIndex = 10;
             // 
             // label4
             // 
@@ -150,13 +149,13 @@
             this.label4.TabIndex = 11;
             this.label4.Text = "Nasc:";
             // 
-            // maskedTextBox1
+            // mskcep
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(40, 157);
-            this.maskedTextBox1.Mask = "00000-000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(57, 20);
-            this.maskedTextBox1.TabIndex = 12;
+            this.mskcep.Location = new System.Drawing.Point(40, 157);
+            this.mskcep.Mask = "00000-000";
+            this.mskcep.Name = "mskcep";
+            this.mskcep.Size = new System.Drawing.Size(57, 20);
+            this.mskcep.TabIndex = 12;
             // 
             // label5
             // 
@@ -167,24 +166,24 @@
             this.label5.TabIndex = 13;
             this.label5.Text = "Cep:";
             // 
-            // label6
+            // lblendereco
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(37, 180);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(248, 13);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "informe o seu cep para carregar seu endereco aqui";
+            this.lblendereco.AutoSize = true;
+            this.lblendereco.Location = new System.Drawing.Point(37, 180);
+            this.lblendereco.Name = "lblendereco";
+            this.lblendereco.Size = new System.Drawing.Size(248, 13);
+            this.lblendereco.TabIndex = 14;
+            this.lblendereco.Text = "informe o seu cep para carregar seu endereco aqui";
             // 
-            // checkBox1
+            // cbamigo
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(12, 224);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(63, 17);
-            this.checkBox1.TabIndex = 15;
-            this.checkBox1.Text = "Amigos ";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.cbamigo.AutoSize = true;
+            this.cbamigo.Location = new System.Drawing.Point(12, 224);
+            this.cbamigo.Name = "cbamigo";
+            this.cbamigo.Size = new System.Drawing.Size(63, 17);
+            this.cbamigo.TabIndex = 15;
+            this.cbamigo.Text = "Amigos ";
+            this.cbamigo.UseVisualStyleBackColor = true;
             // 
             // label7
             // 
@@ -195,39 +194,39 @@
             this.label7.TabIndex = 16;
             this.label7.Text = "Interesse:";
             // 
-            // checkBox2
+            // cbtrabalho
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(98, 224);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(68, 17);
-            this.checkBox2.TabIndex = 17;
-            this.checkBox2.Text = "Trabalho";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.cbtrabalho.AutoSize = true;
+            this.cbtrabalho.Location = new System.Drawing.Point(98, 224);
+            this.cbtrabalho.Name = "cbtrabalho";
+            this.cbtrabalho.Size = new System.Drawing.Size(68, 17);
+            this.cbtrabalho.TabIndex = 17;
+            this.cbtrabalho.Text = "Trabalho";
+            this.cbtrabalho.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // cboutro
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(12, 247);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(57, 17);
-            this.checkBox3.TabIndex = 18;
-            this.checkBox3.Text = "Outros";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.cboutro.AutoSize = true;
+            this.cboutro.Location = new System.Drawing.Point(12, 247);
+            this.cboutro.Name = "cboutro";
+            this.cboutro.Size = new System.Drawing.Size(57, 17);
+            this.cboutro.TabIndex = 18;
+            this.cboutro.Text = "Outros";
+            this.cboutro.UseVisualStyleBackColor = true;
             // 
-            // textBox3
+            // txtsenha
             // 
-            this.textBox3.Location = new System.Drawing.Point(55, 264);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(86, 20);
-            this.textBox3.TabIndex = 19;
+            this.txtsenha.Location = new System.Drawing.Point(55, 264);
+            this.txtsenha.Name = "txtsenha";
+            this.txtsenha.Size = new System.Drawing.Size(86, 20);
+            this.txtsenha.TabIndex = 19;
             // 
-            // textBox4
+            // txtcsenha
             // 
-            this.textBox4.Location = new System.Drawing.Point(55, 290);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(86, 20);
-            this.textBox4.TabIndex = 20;
+            this.txtcsenha.Location = new System.Drawing.Point(55, 290);
+            this.txtcsenha.Name = "txtcsenha";
+            this.txtcsenha.Size = new System.Drawing.Size(86, 20);
+            this.txtcsenha.TabIndex = 20;
             // 
             // label8
             // 
@@ -247,38 +246,39 @@
             this.label9.TabIndex = 22;
             this.label9.Text = "Confirmar:";
             // 
-            // pictureBox2
+            // button1
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(80, 333);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(124, 33);
-            this.pictureBox2.TabIndex = 23;
-            this.pictureBox2.TabStop = false;
+            this.button1.Location = new System.Drawing.Point(55, 316);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(113, 53);
+            this.button1.TabIndex = 23;
+            this.button1.Text = "Singup";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // facebook
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(293, 381);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
+            this.Controls.Add(this.txtcsenha);
+            this.Controls.Add(this.txtsenha);
+            this.Controls.Add(this.cboutro);
+            this.Controls.Add(this.cbtrabalho);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.cbamigo);
+            this.Controls.Add(this.lblendereco);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.mskcep);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.cboidioma);
+            this.Controls.Add(this.txtemail);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtnome);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dtpnasc);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.radioButton1);
@@ -286,7 +286,6 @@
             this.Name = "facebook";
             this.Text = "facebook";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -297,24 +296,24 @@
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpnasc;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtnome;
+        private System.Windows.Forms.TextBox txtemail;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cboidioma;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox mskcep;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Label lblendereco;
+        private System.Windows.Forms.CheckBox cbamigo;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.CheckBox cbtrabalho;
+        private System.Windows.Forms.CheckBox cboutro;
+        private System.Windows.Forms.TextBox txtsenha;
+        private System.Windows.Forms.TextBox txtcsenha;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button button1;
     }
 }
