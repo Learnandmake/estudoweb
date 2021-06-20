@@ -60,6 +60,24 @@ namespace freidesktop.session4.form
             gp4.AddArc(r4.X + r4.Width - d4, r4.Y + r4.Height - d4, d4, d4, 0, 90);
             gp4.AddArc(r4.X, r4.Y + r4.Height - d4, d4, d4, 90, 90);
             picg2.Region = new Region(gp4);
+            //designi1
+            Rectangle r5 = new Rectangle(0, 0, pici1.Width, pici1.Height);
+            System.Drawing.Drawing2D.GraphicsPath gp5 = new System.Drawing.Drawing2D.GraphicsPath();
+            int d5 = 50;
+            gp5.AddArc(r5.X, r5.Y, d5, d5, 180, 90);
+            gp5.AddArc(r5.X + r5.Width - d5, r5.Y, d5, d5, 270, 90);
+            gp5.AddArc(r5.X + r5.Width - d5, r5.Y + r5.Height - d5, d5, d5, 0, 90);
+            gp5.AddArc(r5.X, r5.Y + r5.Height - d5, d5, d5, 90, 90);
+            pici1.Region = new Region(gp5);
+            //designi2
+            Rectangle r6 = new Rectangle(0, 0, pici2.Width, pici2.Height);
+            System.Drawing.Drawing2D.GraphicsPath gp6 = new System.Drawing.Drawing2D.GraphicsPath();
+            int d6 = 50;
+            gp6.AddArc(r6.X, r6.Y, d6, d6, 180, 90);
+            gp6.AddArc(r6.X + r6.Width - d6, r6.Y, d6, d6, 270, 90);
+            gp6.AddArc(r6.X + r6.Width - d6, r6.Y + r6.Height - d6, d6, d6, 0, 90);
+            gp6.AddArc(r6.X, r6.Y + r6.Height - d6, d6, d6, 90, 90);
+            pici2.Region = new Region(gp6);
         }
 
         private void pictureBox8_Click(object sender, EventArgs e)

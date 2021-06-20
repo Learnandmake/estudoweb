@@ -54,8 +54,8 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.pici1 = new System.Windows.Forms.PictureBox();
+            this.pici2 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
@@ -63,6 +63,7 @@
             this.picg1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picfb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -71,14 +72,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbtn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pici1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pici2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picg1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // picfb
@@ -355,23 +357,23 @@
             this.label15.TabIndex = 37;
             this.label15.Text = "Inscrever-se no Spotify";
             // 
-            // pictureBox12
+            // pici1
             // 
-            this.pictureBox12.BackColor = System.Drawing.Color.White;
-            this.pictureBox12.Location = new System.Drawing.Point(34, 458);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(317, 45);
-            this.pictureBox12.TabIndex = 36;
-            this.pictureBox12.TabStop = false;
+            this.pici1.BackColor = System.Drawing.Color.White;
+            this.pici1.Location = new System.Drawing.Point(34, 458);
+            this.pici1.Name = "pici1";
+            this.pici1.Size = new System.Drawing.Size(317, 45);
+            this.pici1.TabIndex = 36;
+            this.pici1.TabStop = false;
             // 
-            // pictureBox13
+            // pici2
             // 
-            this.pictureBox13.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.pictureBox13.Location = new System.Drawing.Point(33, 456);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(319, 50);
-            this.pictureBox13.TabIndex = 35;
-            this.pictureBox13.TabStop = false;
+            this.pici2.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.pici2.Location = new System.Drawing.Point(33, 456);
+            this.pici2.Name = "pici2";
+            this.pici2.Size = new System.Drawing.Size(319, 50);
+            this.pici2.TabIndex = 35;
+            this.pici2.TabStop = false;
             // 
             // pictureBox10
             // 
@@ -437,11 +439,20 @@
             this.pictureBox6.TabIndex = 44;
             this.pictureBox6.TabStop = false;
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Location = new System.Drawing.Point(13, 463);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(19, 31);
+            this.pictureBox5.TabIndex = 45;
+            this.pictureBox5.TabStop = false;
+            // 
             // spotify
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(385, 538);
+            this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.picg1);
@@ -450,8 +461,8 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.pictureBox12);
-            this.Controls.Add(this.pictureBox13);
+            this.Controls.Add(this.pici1);
+            this.Controls.Add(this.pici2);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.picbtn);
@@ -486,14 +497,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbtn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pici1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pici2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picg1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -526,8 +538,8 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.PictureBox pictureBox13;
+        private System.Windows.Forms.PictureBox pici1;
+        private System.Windows.Forms.PictureBox pici2;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox11;
@@ -535,5 +547,6 @@
         private System.Windows.Forms.PictureBox picg1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox5;
     }
 }
