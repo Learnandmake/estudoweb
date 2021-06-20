@@ -16,6 +16,7 @@ namespace freidesktop.session3.form
         {
             InitializeComponent();
             txtsenha.UseSystemPasswordChar = true;
+            txtcsenha.UseSystemPasswordChar = true;
         }
 
         private void cboidioma_TextChanged(object sender, EventArgs e)
@@ -101,7 +102,23 @@ namespace freidesktop.session3.form
 
         private void btncadastro_Click(object sender, EventArgs e)
         {
+            try
+            {
+            if(txtnome.Text.Length >0 && txtemail.Text.Length > 0 && txtsenha.Text.Length > 0 && txtsenha.Text== txtcsenha.Text && txtemail.Text.Contains('@')==true)
+            {
+                    lblaviso.Text = "cadastro efetuado com sucesso";
+                    lblaviso.Visible = true;
+            }
+            else
+            {
+                    lblaviso.Text = "Erro verifique o formulario";
+                    lblaviso.Visible = true;
+                }
+            }
+            catch(Exception)
+            {
 
+            }
         }
 
         private void txtnome_TextChanged(object sender, EventArgs e)
