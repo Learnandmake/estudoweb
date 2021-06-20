@@ -15,6 +15,7 @@ namespace freidesktop.session3.form
         public facebook()
         {
             InitializeComponent();
+            txtsenha.UseSystemPasswordChar = true;
         }
 
         private void cboidioma_TextChanged(object sender, EventArgs e)
@@ -114,6 +115,30 @@ namespace freidesktop.session3.form
             {
                 txtnome.BackColor = Color.White;
                 txtnome.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtsenha_TextChanged(object sender, EventArgs e)
+        {
+            txtsenha.Text.ToLower();
+            txtsenha.Text.Trim();
+            txtcsenha.Text.ToLower();
+            txtcsenha.Text.Trim();
+       
+            if (txtsenha.Text.Length <=3)
+            {
+                lblfsenha.Text = "Fraca";
+                lblfsenha.Visible = true;
+            }
+            if (txtsenha.Text.Length >=4 && txtsenha.Text.Length <=7)
+            {
+                lblfsenha.Text = "Média";
+                lblfsenha.Visible = true;
+            }
+            if (txtsenha.Text.Length >= 8 )
+            {
+                lblfsenha.Text = "Forte";
+                lblfsenha.Visible = true;
             }
         }
     }

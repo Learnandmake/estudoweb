@@ -246,6 +246,7 @@
             this.txtsenha.Name = "txtsenha";
             this.txtsenha.Size = new System.Drawing.Size(86, 20);
             this.txtsenha.TabIndex = 19;
+            this.txtsenha.TextChanged += new System.EventHandler(this.txtsenha_TextChanged);
             // 
             // txtcsenha
             // 
