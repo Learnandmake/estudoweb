@@ -44,5 +44,17 @@ namespace freidesktop.session3.form
             }
 
         }
+
+        private void cboutro_CheckedChanged(object sender, EventArgs e)
+        {
+            if(cboutro.Checked == true)
+            {
+                txtoutro.Visible = true;
+            }
+            else
+            {
+                txtoutro.Visible = false;
+            }
+        }
     }
 }

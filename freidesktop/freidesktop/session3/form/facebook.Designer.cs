@@ -231,6 +231,7 @@
             this.cboutro.TabIndex = 18;
             this.cboutro.Text = "Outros";
             this.cboutro.UseVisualStyleBackColor = true;
+            this.cboutro.CheckedChanged += new System.EventHandler(this.cboutro_CheckedChanged);
             // 
             // txtsenha
             // 
@@ -332,6 +333,7 @@
             this.txtoutro.Name = "txtoutro";
             this.txtoutro.Size = new System.Drawing.Size(86, 20);
             this.txtoutro.TabIndex = 30;
+            this.txtoutro.Visible = false;
             // 
             // facebook
             // 
