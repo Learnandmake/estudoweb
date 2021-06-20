@@ -28,12 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(facebook));
             this.label1 = new System.Windows.Forms.Label();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.dtpnasc = new System.Windows.Forms.DateTimePicker();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picfb = new System.Windows.Forms.PictureBox();
             this.txtnome = new System.Windows.Forms.TextBox();
             this.txtemail = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -51,13 +52,20 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.picfbesp = new System.Windows.Forms.PictureBox();
+            this.picfbbr = new System.Windows.Forms.PictureBox();
+            this.picfbeua = new System.Windows.Forms.PictureBox();
+            this.lblcadastro = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.picfb)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picfbesp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picfbbr)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picfbeua)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(5, 64);
+            this.label1.Location = new System.Drawing.Point(10, 75);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(38, 13);
             this.label1.TabIndex = 1;
@@ -66,7 +74,7 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(170, 138);
+            this.radioButton1.Location = new System.Drawing.Point(175, 149);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(34, 17);
             this.radioButton1.TabIndex = 2;
@@ -77,7 +85,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(2, 111);
+            this.label2.Location = new System.Drawing.Point(7, 122);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 13);
             this.label2.TabIndex = 3;
@@ -86,7 +94,7 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(210, 138);
+            this.radioButton2.Location = new System.Drawing.Point(215, 149);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(31, 17);
             this.radioButton2.TabIndex = 4;
@@ -96,29 +104,31 @@
             // 
             // dtpnasc
             // 
-            this.dtpnasc.Location = new System.Drawing.Point(40, 134);
+            this.dtpnasc.Location = new System.Drawing.Point(45, 145);
             this.dtpnasc.Name = "dtpnasc";
             this.dtpnasc.Size = new System.Drawing.Size(123, 20);
             this.dtpnasc.TabIndex = 5;
             // 
-            // pictureBox1
+            // picfb
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(98, 5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(85, 50);
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
+            this.picfb.Image = ((System.Drawing.Image)(resources.GetObject("picfb.Image")));
+            this.picfb.Location = new System.Drawing.Point(96, 5);
+            this.picfb.Name = "picfb";
+            this.picfb.Size = new System.Drawing.Size(93, 61);
+            this.picfb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picfb.TabIndex = 6;
+            this.picfb.TabStop = false;
             // 
             // txtnome
             // 
-            this.txtnome.Location = new System.Drawing.Point(40, 61);
+            this.txtnome.Location = new System.Drawing.Point(45, 72);
             this.txtnome.Name = "txtnome";
             this.txtnome.Size = new System.Drawing.Size(201, 20);
             this.txtnome.TabIndex = 7;
             // 
             // txtemail
             // 
-            this.txtemail.Location = new System.Drawing.Point(40, 85);
+            this.txtemail.Location = new System.Drawing.Point(45, 96);
             this.txtemail.Name = "txtemail";
             this.txtemail.Size = new System.Drawing.Size(201, 20);
             this.txtemail.TabIndex = 9;
@@ -126,7 +136,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(5, 88);
+            this.label3.Location = new System.Drawing.Point(10, 99);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(38, 13);
             this.label3.TabIndex = 8;
@@ -135,7 +145,7 @@
             // cboidioma
             // 
             this.cboidioma.FormattingEnabled = true;
-            this.cboidioma.Location = new System.Drawing.Point(40, 108);
+            this.cboidioma.Location = new System.Drawing.Point(45, 119);
             this.cboidioma.Name = "cboidioma";
             this.cboidioma.Size = new System.Drawing.Size(201, 21);
             this.cboidioma.TabIndex = 10;
@@ -143,7 +153,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(5, 134);
+            this.label4.Location = new System.Drawing.Point(10, 145);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(35, 13);
             this.label4.TabIndex = 11;
@@ -151,7 +161,7 @@
             // 
             // mskcep
             // 
-            this.mskcep.Location = new System.Drawing.Point(40, 157);
+            this.mskcep.Location = new System.Drawing.Point(45, 168);
             this.mskcep.Mask = "00000-000";
             this.mskcep.Name = "mskcep";
             this.mskcep.Size = new System.Drawing.Size(57, 20);
@@ -160,7 +170,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(5, 160);
+            this.label5.Location = new System.Drawing.Point(10, 171);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(29, 13);
             this.label5.TabIndex = 13;
@@ -169,7 +179,7 @@
             // lblendereco
             // 
             this.lblendereco.AutoSize = true;
-            this.lblendereco.Location = new System.Drawing.Point(37, 180);
+            this.lblendereco.Location = new System.Drawing.Point(42, 191);
             this.lblendereco.Name = "lblendereco";
             this.lblendereco.Size = new System.Drawing.Size(248, 13);
             this.lblendereco.TabIndex = 14;
@@ -178,7 +188,7 @@
             // cbamigo
             // 
             this.cbamigo.AutoSize = true;
-            this.cbamigo.Location = new System.Drawing.Point(12, 224);
+            this.cbamigo.Location = new System.Drawing.Point(17, 235);
             this.cbamigo.Name = "cbamigo";
             this.cbamigo.Size = new System.Drawing.Size(63, 17);
             this.cbamigo.TabIndex = 15;
@@ -188,7 +198,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(2, 208);
+            this.label7.Location = new System.Drawing.Point(7, 219);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(53, 13);
             this.label7.TabIndex = 16;
@@ -197,7 +207,7 @@
             // cbtrabalho
             // 
             this.cbtrabalho.AutoSize = true;
-            this.cbtrabalho.Location = new System.Drawing.Point(98, 224);
+            this.cbtrabalho.Location = new System.Drawing.Point(103, 235);
             this.cbtrabalho.Name = "cbtrabalho";
             this.cbtrabalho.Size = new System.Drawing.Size(68, 17);
             this.cbtrabalho.TabIndex = 17;
@@ -207,7 +217,7 @@
             // cboutro
             // 
             this.cboutro.AutoSize = true;
-            this.cboutro.Location = new System.Drawing.Point(12, 247);
+            this.cboutro.Location = new System.Drawing.Point(17, 258);
             this.cboutro.Name = "cboutro";
             this.cboutro.Size = new System.Drawing.Size(57, 17);
             this.cboutro.TabIndex = 18;
@@ -216,14 +226,14 @@
             // 
             // txtsenha
             // 
-            this.txtsenha.Location = new System.Drawing.Point(55, 264);
+            this.txtsenha.Location = new System.Drawing.Point(60, 275);
             this.txtsenha.Name = "txtsenha";
             this.txtsenha.Size = new System.Drawing.Size(86, 20);
             this.txtsenha.TabIndex = 19;
             // 
             // txtcsenha
             // 
-            this.txtcsenha.Location = new System.Drawing.Point(55, 290);
+            this.txtcsenha.Location = new System.Drawing.Point(60, 301);
             this.txtcsenha.Name = "txtcsenha";
             this.txtcsenha.Size = new System.Drawing.Size(86, 20);
             this.txtcsenha.TabIndex = 20;
@@ -231,7 +241,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(14, 267);
+            this.label8.Location = new System.Drawing.Point(19, 278);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(41, 13);
             this.label8.TabIndex = 21;
@@ -240,7 +250,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(1, 293);
+            this.label9.Location = new System.Drawing.Point(6, 304);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(54, 13);
             this.label9.TabIndex = 22;
@@ -248,18 +258,65 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(55, 316);
+            this.button1.Location = new System.Drawing.Point(96, 340);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(113, 53);
             this.button1.TabIndex = 23;
-            this.button1.Text = "Singup";
+            this.button1.Text = "Sing up";
             this.button1.UseVisualStyleBackColor = true;
+            // 
+            // picfbesp
+            // 
+            this.picfbesp.Image = ((System.Drawing.Image)(resources.GetObject("picfbesp.Image")));
+            this.picfbesp.Location = new System.Drawing.Point(96, 5);
+            this.picfbesp.Name = "picfbesp";
+            this.picfbesp.Size = new System.Drawing.Size(93, 61);
+            this.picfbesp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picfbesp.TabIndex = 24;
+            this.picfbesp.TabStop = false;
+            this.picfbesp.Visible = false;
+            // 
+            // picfbbr
+            // 
+            this.picfbbr.Image = ((System.Drawing.Image)(resources.GetObject("picfbbr.Image")));
+            this.picfbbr.Location = new System.Drawing.Point(96, 5);
+            this.picfbbr.Name = "picfbbr";
+            this.picfbbr.Size = new System.Drawing.Size(93, 61);
+            this.picfbbr.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picfbbr.TabIndex = 26;
+            this.picfbbr.TabStop = false;
+            this.picfbbr.Visible = false;
+            // 
+            // picfbeua
+            // 
+            this.picfbeua.Image = ((System.Drawing.Image)(resources.GetObject("picfbeua.Image")));
+            this.picfbeua.Location = new System.Drawing.Point(96, 5);
+            this.picfbeua.Name = "picfbeua";
+            this.picfbeua.Size = new System.Drawing.Size(93, 61);
+            this.picfbeua.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picfbeua.TabIndex = 27;
+            this.picfbeua.TabStop = false;
+            this.picfbeua.Visible = false;
+            // 
+            // lblcadastro
+            // 
+            this.lblcadastro.AutoSize = true;
+            this.lblcadastro.Location = new System.Drawing.Point(57, 324);
+            this.lblcadastro.Name = "lblcadastro";
+            this.lblcadastro.Size = new System.Drawing.Size(159, 13);
+            this.lblcadastro.TabIndex = 28;
+            this.lblcadastro.Text = "Cadastro efetuado com sucesso";
+            this.lblcadastro.Visible = false;
             // 
             // facebook
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(293, 381);
+            this.ClientSize = new System.Drawing.Size(293, 399);
+            this.Controls.Add(this.lblcadastro);
+            this.Controls.Add(this.picfbeua);
+            this.Controls.Add(this.picfbbr);
+            this.Controls.Add(this.picfbesp);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -277,7 +334,7 @@
             this.Controls.Add(this.txtemail);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtnome);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.picfb);
             this.Controls.Add(this.dtpnasc);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.label2);
@@ -285,7 +342,10 @@
             this.Controls.Add(this.label1);
             this.Name = "facebook";
             this.Text = "facebook";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picfb)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picfbesp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picfbbr)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picfbeua)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -297,7 +357,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.DateTimePicker dtpnasc;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picfb;
         private System.Windows.Forms.TextBox txtnome;
         private System.Windows.Forms.TextBox txtemail;
         private System.Windows.Forms.Label label3;
@@ -315,5 +375,9 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox picfbesp;
+        private System.Windows.Forms.PictureBox picfbbr;
+        private System.Windows.Forms.PictureBox picfbeua;
+        private System.Windows.Forms.Label lblcadastro;
     }
 }
