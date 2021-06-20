@@ -22,5 +22,11 @@ namespace freidesktop.session3.menu
             form.facebook m = new form.facebook();
             m.Show();
         }
+
+        private void facebookToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            form.facebook m = new form.facebook();
+            m.Show();
+        }
     }
 }
