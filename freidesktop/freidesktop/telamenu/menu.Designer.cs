@@ -33,13 +33,16 @@
             this.oneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.twoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.threeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eventoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.desafioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.sessionToolStripMenuItem});
+            this.sessionToolStripMenuItem,
+            this.eventoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(376, 24);
@@ -77,6 +80,20 @@
             this.threeToolStripMenuItem.Text = "Three";
             this.threeToolStripMenuItem.Click += new System.EventHandler(this.threeToolStripMenuItem_Click);
             // 
+            // eventoToolStripMenuItem
+            // 
+            this.eventoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.desafioToolStripMenuItem});
+            this.eventoToolStripMenuItem.Name = "eventoToolStripMenuItem";
+            this.eventoToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
+            this.eventoToolStripMenuItem.Text = "Evento";
+            // 
+            // desafioToolStripMenuItem
+            // 
+            this.desafioToolStripMenuItem.Name = "desafioToolStripMenuItem";
+            this.desafioToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.desafioToolStripMenuItem.Text = "Desafio";
+            // 
             // menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -100,5 +117,7 @@
         private System.Windows.Forms.ToolStripMenuItem oneToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem twoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem threeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eventoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem desafioToolStripMenuItem;
     }
 }

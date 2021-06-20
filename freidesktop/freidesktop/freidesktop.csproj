@@ -51,6 +51,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="desafio\form\mouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="desafio\form\mouse.Designer.cs">
+      <DependentUpon>mouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="desafio\menu\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="desafio\menu\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="function\sessionone.cs" />
     <Compile Include="function\sessionthree.cs" />
     <Compile Include="function\sessiontwo.cs" />
@@ -152,6 +164,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="desafio\menu\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="session1\menu\menu.resx">
       <DependentUpon>menu.cs</DependentUpon>
     </EmbeddedResource>
