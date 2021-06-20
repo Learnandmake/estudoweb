@@ -162,6 +162,24 @@
     <Compile Include="session4\menu\menu.Designer.cs">
       <DependentUpon>menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="session5\form\login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="session5\form\login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="session5\menu\menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="session5\menu\menu.Designer.cs">
+      <DependentUpon>menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="session5\menu\menus5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="session5\menu\menus5.Designer.cs">
+      <DependentUpon>menus5.cs</DependentUpon>
+    </Compile>
     <Compile Include="telamenu\menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -228,6 +246,12 @@
       <DependentUpon>spotify.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="session4\menu\menu.resx">
+      <DependentUpon>menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="session5\form\login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="session5\menu\menu.resx">
       <DependentUpon>menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="telamenu\menu.resx">
