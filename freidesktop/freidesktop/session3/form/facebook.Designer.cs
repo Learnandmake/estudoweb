@@ -56,6 +56,8 @@
             this.picfbbr = new System.Windows.Forms.PictureBox();
             this.picfbeua = new System.Windows.Forms.PictureBox();
             this.lblcadastro = new System.Windows.Forms.Label();
+            this.lblfsenha = new System.Windows.Forms.Label();
+            this.txtoutro = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.picfb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picfbesp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picfbbr)).BeginInit();
@@ -232,14 +234,14 @@
             // 
             // txtsenha
             // 
-            this.txtsenha.Location = new System.Drawing.Point(57, 316);
+            this.txtsenha.Location = new System.Drawing.Point(60, 335);
             this.txtsenha.Name = "txtsenha";
             this.txtsenha.Size = new System.Drawing.Size(86, 20);
             this.txtsenha.TabIndex = 19;
             // 
             // txtcsenha
             // 
-            this.txtcsenha.Location = new System.Drawing.Point(57, 342);
+            this.txtcsenha.Location = new System.Drawing.Point(60, 361);
             this.txtcsenha.Name = "txtcsenha";
             this.txtcsenha.Size = new System.Drawing.Size(86, 20);
             this.txtcsenha.TabIndex = 20;
@@ -247,7 +249,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(16, 319);
+            this.label8.Location = new System.Drawing.Point(19, 338);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(41, 13);
             this.label8.TabIndex = 21;
@@ -256,7 +258,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(3, 345);
+            this.label9.Location = new System.Drawing.Point(6, 364);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(54, 13);
             this.label9.TabIndex = 22;
@@ -264,7 +266,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(93, 381);
+            this.button1.Location = new System.Drawing.Point(96, 400);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(113, 53);
             this.button1.TabIndex = 23;
@@ -307,18 +309,37 @@
             // lblcadastro
             // 
             this.lblcadastro.AutoSize = true;
-            this.lblcadastro.Location = new System.Drawing.Point(54, 365);
+            this.lblcadastro.Location = new System.Drawing.Point(57, 384);
             this.lblcadastro.Name = "lblcadastro";
             this.lblcadastro.Size = new System.Drawing.Size(159, 13);
             this.lblcadastro.TabIndex = 28;
             this.lblcadastro.Text = "Cadastro efetuado com sucesso";
             this.lblcadastro.Visible = false;
             // 
+            // lblfsenha
+            // 
+            this.lblfsenha.AutoSize = true;
+            this.lblfsenha.Location = new System.Drawing.Point(152, 338);
+            this.lblfsenha.Name = "lblfsenha";
+            this.lblfsenha.Size = new System.Drawing.Size(31, 13);
+            this.lblfsenha.TabIndex = 29;
+            this.lblfsenha.Text = "fraco";
+            this.lblfsenha.Visible = false;
+            // 
+            // txtoutro
+            // 
+            this.txtoutro.Location = new System.Drawing.Point(77, 296);
+            this.txtoutro.Name = "txtoutro";
+            this.txtoutro.Size = new System.Drawing.Size(86, 20);
+            this.txtoutro.TabIndex = 30;
+            // 
             // facebook
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(293, 460);
+            this.Controls.Add(this.txtoutro);
+            this.Controls.Add(this.lblfsenha);
             this.Controls.Add(this.lblcadastro);
             this.Controls.Add(this.picfbeua);
             this.Controls.Add(this.picfbbr);
@@ -385,5 +406,7 @@
         private System.Windows.Forms.PictureBox picfbbr;
         private System.Windows.Forms.PictureBox picfbeua;
         private System.Windows.Forms.Label lblcadastro;
+        private System.Windows.Forms.Label lblfsenha;
+        private System.Windows.Forms.TextBox txtoutro;
     }
 }
