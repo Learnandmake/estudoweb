@@ -56,5 +56,25 @@ namespace freidesktop.session3.form
                 txtoutro.Visible = false;
             }
         }
+
+        private void dtpnasc_ValueChanged(object sender, EventArgs e)
+        {
+            bool vidade = false;
+
+            function.sessionthree three = new function.sessionthree();
+            vidade = three.vidade(dtpnasc.Value);
+         
+            if(vidade==true )
+            {
+                lblaviso.Visible = false;
+                btncadastro.Enabled = true;
+            }
+            else
+            {
+                lblaviso.Visible = true;
+                lblaviso.Text = "Tem que ser maior de idade";
+                btncadastro.Enabled = false;
+            }
+        }
     }
 }

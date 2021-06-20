@@ -51,11 +51,11 @@
             this.txtcsenha = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btncadastro = new System.Windows.Forms.Button();
             this.picfbesp = new System.Windows.Forms.PictureBox();
             this.picfbbr = new System.Windows.Forms.PictureBox();
             this.picfbeua = new System.Windows.Forms.PictureBox();
-            this.lblcadastro = new System.Windows.Forms.Label();
+            this.lblaviso = new System.Windows.Forms.Label();
             this.lblfsenha = new System.Windows.Forms.Label();
             this.txtoutro = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.picfb)).BeginInit();
@@ -110,6 +110,7 @@
             this.dtpnasc.Name = "dtpnasc";
             this.dtpnasc.Size = new System.Drawing.Size(123, 20);
             this.dtpnasc.TabIndex = 5;
+            this.dtpnasc.ValueChanged += new System.EventHandler(this.dtpnasc_ValueChanged);
             // 
             // picfb
             // 
@@ -265,14 +266,14 @@
             this.label9.TabIndex = 22;
             this.label9.Text = "Confirmar:";
             // 
-            // button1
+            // btncadastro
             // 
-            this.button1.Location = new System.Drawing.Point(96, 400);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(113, 53);
-            this.button1.TabIndex = 23;
-            this.button1.Text = "Sing up";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btncadastro.Location = new System.Drawing.Point(96, 400);
+            this.btncadastro.Name = "btncadastro";
+            this.btncadastro.Size = new System.Drawing.Size(113, 53);
+            this.btncadastro.TabIndex = 23;
+            this.btncadastro.Text = "Sing up";
+            this.btncadastro.UseVisualStyleBackColor = true;
             // 
             // picfbesp
             // 
@@ -307,15 +308,15 @@
             this.picfbeua.TabStop = false;
             this.picfbeua.Visible = false;
             // 
-            // lblcadastro
+            // lblaviso
             // 
-            this.lblcadastro.AutoSize = true;
-            this.lblcadastro.Location = new System.Drawing.Point(57, 384);
-            this.lblcadastro.Name = "lblcadastro";
-            this.lblcadastro.Size = new System.Drawing.Size(159, 13);
-            this.lblcadastro.TabIndex = 28;
-            this.lblcadastro.Text = "Cadastro efetuado com sucesso";
-            this.lblcadastro.Visible = false;
+            this.lblaviso.AutoSize = true;
+            this.lblaviso.Location = new System.Drawing.Point(57, 384);
+            this.lblaviso.Name = "lblaviso";
+            this.lblaviso.Size = new System.Drawing.Size(159, 13);
+            this.lblaviso.TabIndex = 28;
+            this.lblaviso.Text = "Cadastro efetuado com sucesso";
+            this.lblaviso.Visible = false;
             // 
             // lblfsenha
             // 
@@ -342,11 +343,11 @@
             this.ClientSize = new System.Drawing.Size(293, 460);
             this.Controls.Add(this.txtoutro);
             this.Controls.Add(this.lblfsenha);
-            this.Controls.Add(this.lblcadastro);
+            this.Controls.Add(this.lblaviso);
             this.Controls.Add(this.picfbeua);
             this.Controls.Add(this.picfbbr);
             this.Controls.Add(this.picfbesp);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btncadastro);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txtcsenha);
@@ -403,11 +404,11 @@
         private System.Windows.Forms.TextBox txtcsenha;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btncadastro;
         private System.Windows.Forms.PictureBox picfbesp;
         private System.Windows.Forms.PictureBox picfbbr;
         private System.Windows.Forms.PictureBox picfbeua;
-        private System.Windows.Forms.Label lblcadastro;
+        private System.Windows.Forms.Label lblaviso;
         private System.Windows.Forms.Label lblfsenha;
         private System.Windows.Forms.TextBox txtoutro;
     }
