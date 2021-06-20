@@ -187,6 +187,9 @@
     <EmbeddedResource Include="session2\menu\menu.resx">
       <DependentUpon>menu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="session3\form\facebook.resx">
+      <DependentUpon>facebook.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="session3\menu\menu.resx">
       <DependentUpon>menu.cs</DependentUpon>
     </EmbeddedResource>
