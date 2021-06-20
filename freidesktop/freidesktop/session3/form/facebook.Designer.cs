@@ -145,10 +145,16 @@
             // cboidioma
             // 
             this.cboidioma.FormattingEnabled = true;
+            this.cboidioma.Items.AddRange(new object[] {
+            "Brasil",
+            "Espanha",
+            "Estados Unidos"});
             this.cboidioma.Location = new System.Drawing.Point(45, 119);
             this.cboidioma.Name = "cboidioma";
             this.cboidioma.Size = new System.Drawing.Size(201, 21);
             this.cboidioma.TabIndex = 10;
+            this.cboidioma.Text = "Selecione:";
+            this.cboidioma.TextChanged += new System.EventHandler(this.cboidioma_TextChanged);
             // 
             // label4
             // 
