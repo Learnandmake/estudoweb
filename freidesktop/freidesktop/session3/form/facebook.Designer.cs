@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(facebook));
             this.label1 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.rbm = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.rbf = new System.Windows.Forms.RadioButton();
             this.dtpnasc = new System.Windows.Forms.DateTimePicker();
             this.picfb = new System.Windows.Forms.PictureBox();
             this.txtnome = new System.Windows.Forms.TextBox();
@@ -71,16 +71,16 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Nome:";
             // 
-            // radioButton1
+            // rbm
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(175, 149);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(34, 17);
-            this.radioButton1.TabIndex = 2;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "M";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbm.AutoSize = true;
+            this.rbm.Location = new System.Drawing.Point(175, 149);
+            this.rbm.Name = "rbm";
+            this.rbm.Size = new System.Drawing.Size(34, 17);
+            this.rbm.TabIndex = 2;
+            this.rbm.TabStop = true;
+            this.rbm.Text = "M";
+            this.rbm.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -91,16 +91,16 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Idioma:";
             // 
-            // radioButton2
+            // rbf
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(215, 149);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(31, 17);
-            this.radioButton2.TabIndex = 4;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "F";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbf.AutoSize = true;
+            this.rbf.Location = new System.Drawing.Point(215, 149);
+            this.rbf.Name = "rbf";
+            this.rbf.Size = new System.Drawing.Size(31, 17);
+            this.rbf.TabIndex = 4;
+            this.rbf.TabStop = true;
+            this.rbf.Text = "F";
+            this.rbf.UseVisualStyleBackColor = true;
             // 
             // dtpnasc
             // 
@@ -188,7 +188,7 @@
             // cbamigo
             // 
             this.cbamigo.AutoSize = true;
-            this.cbamigo.Location = new System.Drawing.Point(17, 235);
+            this.cbamigo.Location = new System.Drawing.Point(14, 276);
             this.cbamigo.Name = "cbamigo";
             this.cbamigo.Size = new System.Drawing.Size(63, 17);
             this.cbamigo.TabIndex = 15;
@@ -198,7 +198,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(7, 219);
+            this.label7.Location = new System.Drawing.Point(4, 260);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(53, 13);
             this.label7.TabIndex = 16;
@@ -207,7 +207,7 @@
             // cbtrabalho
             // 
             this.cbtrabalho.AutoSize = true;
-            this.cbtrabalho.Location = new System.Drawing.Point(103, 235);
+            this.cbtrabalho.Location = new System.Drawing.Point(100, 276);
             this.cbtrabalho.Name = "cbtrabalho";
             this.cbtrabalho.Size = new System.Drawing.Size(68, 17);
             this.cbtrabalho.TabIndex = 17;
@@ -217,7 +217,7 @@
             // cboutro
             // 
             this.cboutro.AutoSize = true;
-            this.cboutro.Location = new System.Drawing.Point(17, 258);
+            this.cboutro.Location = new System.Drawing.Point(14, 299);
             this.cboutro.Name = "cboutro";
             this.cboutro.Size = new System.Drawing.Size(57, 17);
             this.cboutro.TabIndex = 18;
@@ -226,14 +226,14 @@
             // 
             // txtsenha
             // 
-            this.txtsenha.Location = new System.Drawing.Point(60, 275);
+            this.txtsenha.Location = new System.Drawing.Point(57, 316);
             this.txtsenha.Name = "txtsenha";
             this.txtsenha.Size = new System.Drawing.Size(86, 20);
             this.txtsenha.TabIndex = 19;
             // 
             // txtcsenha
             // 
-            this.txtcsenha.Location = new System.Drawing.Point(60, 301);
+            this.txtcsenha.Location = new System.Drawing.Point(57, 342);
             this.txtcsenha.Name = "txtcsenha";
             this.txtcsenha.Size = new System.Drawing.Size(86, 20);
             this.txtcsenha.TabIndex = 20;
@@ -241,7 +241,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(19, 278);
+            this.label8.Location = new System.Drawing.Point(16, 319);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(41, 13);
             this.label8.TabIndex = 21;
@@ -250,7 +250,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(6, 304);
+            this.label9.Location = new System.Drawing.Point(3, 345);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(54, 13);
             this.label9.TabIndex = 22;
@@ -258,7 +258,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(96, 340);
+            this.button1.Location = new System.Drawing.Point(93, 381);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(113, 53);
             this.button1.TabIndex = 23;
@@ -301,7 +301,7 @@
             // lblcadastro
             // 
             this.lblcadastro.AutoSize = true;
-            this.lblcadastro.Location = new System.Drawing.Point(57, 324);
+            this.lblcadastro.Location = new System.Drawing.Point(54, 365);
             this.lblcadastro.Name = "lblcadastro";
             this.lblcadastro.Size = new System.Drawing.Size(159, 13);
             this.lblcadastro.TabIndex = 28;
@@ -312,7 +312,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(293, 399);
+            this.ClientSize = new System.Drawing.Size(293, 460);
             this.Controls.Add(this.lblcadastro);
             this.Controls.Add(this.picfbeua);
             this.Controls.Add(this.picfbbr);
@@ -336,9 +336,9 @@
             this.Controls.Add(this.txtnome);
             this.Controls.Add(this.picfb);
             this.Controls.Add(this.dtpnasc);
-            this.Controls.Add(this.radioButton2);
+            this.Controls.Add(this.rbf);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.rbm);
             this.Controls.Add(this.label1);
             this.Name = "facebook";
             this.Text = "facebook";
@@ -353,9 +353,9 @@
 
         #endregion
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton rbm;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton rbf;
         private System.Windows.Forms.DateTimePicker dtpnasc;
         private System.Windows.Forms.PictureBox picfb;
         private System.Windows.Forms.TextBox txtnome;
