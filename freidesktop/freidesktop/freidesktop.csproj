@@ -125,6 +125,18 @@
     <Compile Include="session2\menu\menu.Designer.cs">
       <DependentUpon>menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="session3\form\facebook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="session3\form\facebook.Designer.cs">
+      <DependentUpon>facebook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="session3\menu\menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="session3\menu\menu.Designer.cs">
+      <DependentUpon>menu.cs</DependentUpon>
+    </Compile>
     <Compile Include="telamenu\menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,6 +185,9 @@
       <DependentUpon>quiz.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="session2\menu\menu.resx">
+      <DependentUpon>menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="session3\menu\menu.resx">
       <DependentUpon>menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="telamenu\menu.resx">

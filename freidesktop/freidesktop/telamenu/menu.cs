@@ -29,5 +29,11 @@ namespace freidesktop.telamenu
             session2.menu.menu m = new session2.menu.menu();
             m.Show();
         }
+
+        private void threeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            session3.menu.menu m = new session3.menu.menu();
+            m.Show(); 
+        } 
     }
 }
