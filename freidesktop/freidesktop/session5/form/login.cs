@@ -27,7 +27,17 @@ namespace freidesktop.session5.form
             {
                 session5.menu.menus5 m = new menu.menus5();
                 m.Show();
+                
             }
+            else
+            {
+                lblaviso.Visible = true;
+            }
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
 
         }
     }

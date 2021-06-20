@@ -26,6 +26,7 @@ namespace freidesktop.session5.menu
         private void loginToolStripMenuItem_Click(object sender, EventArgs e)
         {
             form.login m = new form.login();
+            m.Show();
         }
     }
 }

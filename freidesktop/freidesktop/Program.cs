@@ -16,7 +16,7 @@ namespace freidesktop
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new session4.form.spotify());
+            Application.Run(new telamenu.menu());
         }
     }
 }
