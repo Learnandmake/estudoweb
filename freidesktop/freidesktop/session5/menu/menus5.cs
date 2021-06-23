@@ -16,6 +16,8 @@ namespace freidesktop.session5.menu
         public menus5()
         {
             InitializeComponent();
+            picarea.BackColor = Color.Aqua;
+            picclose.BackColor = Color.IndianRed;
         }
         public static void ThreadProc()
         {
@@ -30,10 +32,13 @@ namespace freidesktop.session5.menu
             m.Show();
 
             this.Hide();
-        
+
             }
 
-
+        private void picclose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
     }
 

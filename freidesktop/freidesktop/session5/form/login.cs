@@ -23,10 +23,11 @@ namespace freidesktop.session5.form
             string usuario = Convert.ToString(txtlogin.Text);
             string senha = Convert.ToString(txtsenha.Text);
 
-            if(usuario=="conhecimento" && senha=="knowledge")
+           if (usuario=="conhecimento" && senha=="knowledge")
             {
                 session5.menu.menus5 m = new menu.menus5();
                 m.Show();
+                this.Visible = false;
                 
             }
             else
