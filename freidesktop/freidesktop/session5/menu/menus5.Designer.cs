@@ -57,6 +57,7 @@
             this.picarea.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picarea.TabIndex = 2;
             this.picarea.TabStop = false;
+            this.picarea.Click += new System.EventHandler(this.picarea_Click);
             // 
             // pictureBox1
             // 

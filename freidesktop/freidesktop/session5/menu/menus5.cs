@@ -30,14 +30,21 @@ namespace freidesktop.session5.menu
 
             form.login m = new form.login();
             m.Show();
+            this.Visible = false;
 
-            this.Hide();
 
-            }
+        }
 
         private void picclose_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void picarea_Click(object sender, EventArgs e)
+        {
+            form.area m = new form.area();
+            m.Show();
+            this.Visible = false;
         }
     }
     }
