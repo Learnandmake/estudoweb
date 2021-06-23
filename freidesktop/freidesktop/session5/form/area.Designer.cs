@@ -72,7 +72,6 @@
             this.lblestado = new System.Windows.Forms.Label();
             this.lblcapital = new System.Windows.Forms.Label();
             this.lblsp = new System.Windows.Forms.Label();
-            this.lblmg = new System.Windows.Forms.Label();
             this.lblrj = new System.Windows.Forms.Label();
             this.lbles = new System.Windows.Forms.Label();
             this.lblba = new System.Windows.Forms.Label();
@@ -89,7 +88,6 @@
             this.lblsc = new System.Windows.Forms.Label();
             this.lblrs = new System.Windows.Forms.Label();
             this.lblma = new System.Windows.Forms.Label();
-            this.lblro = new System.Windows.Forms.Label();
             this.lblap = new System.Windows.Forms.Label();
             this.lblpe = new System.Windows.Forms.Label();
             this.lblrn = new System.Windows.Forms.Label();
@@ -99,6 +97,8 @@
             this.lbldf = new System.Windows.Forms.Label();
             this.lblal = new System.Windows.Forms.Label();
             this.lblse = new System.Windows.Forms.Label();
+            this.lblro = new System.Windows.Forms.Label();
+            this.lblmg = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.gm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -501,6 +501,7 @@
             // lblsp
             // 
             this.lblsp.AutoSize = true;
+            this.lblsp.BackColor = System.Drawing.Color.Thistle;
             this.lblsp.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblsp.Location = new System.Drawing.Point(236, 140);
             this.lblsp.Name = "lblsp";
@@ -508,19 +509,10 @@
             this.lblsp.TabIndex = 10;
             this.lblsp.Text = "?";
             // 
-            // lblmg
-            // 
-            this.lblmg.AutoSize = true;
-            this.lblmg.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblmg.Location = new System.Drawing.Point(256, 116);
-            this.lblmg.Name = "lblmg";
-            this.lblmg.Size = new System.Drawing.Size(14, 13);
-            this.lblmg.TabIndex = 11;
-            this.lblmg.Text = "?";
-            // 
             // lblrj
             // 
             this.lblrj.AutoSize = true;
+            this.lblrj.BackColor = System.Drawing.Color.Thistle;
             this.lblrj.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblrj.Location = new System.Drawing.Point(278, 147);
             this.lblrj.Name = "lblrj";
@@ -531,6 +523,7 @@
             // lbles
             // 
             this.lbles.AutoSize = true;
+            this.lbles.BackColor = System.Drawing.Color.Thistle;
             this.lbles.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbles.Location = new System.Drawing.Point(294, 133);
             this.lbles.Name = "lbles";
@@ -541,6 +534,7 @@
             // lblba
             // 
             this.lblba.AutoSize = true;
+            this.lblba.BackColor = System.Drawing.Color.Gold;
             this.lblba.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblba.Location = new System.Drawing.Point(286, 91);
             this.lblba.Name = "lblba";
@@ -551,6 +545,7 @@
             // lblmt
             // 
             this.lblmt.AutoSize = true;
+            this.lblmt.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.lblmt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblmt.Location = new System.Drawing.Point(189, 91);
             this.lblmt.Name = "lblmt";
@@ -561,6 +556,7 @@
             // lblam
             // 
             this.lblam.AutoSize = true;
+            this.lblam.BackColor = System.Drawing.Color.YellowGreen;
             this.lblam.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblam.Location = new System.Drawing.Point(143, 44);
             this.lblam.Name = "lblam";
@@ -571,6 +567,7 @@
             // lblrr
             // 
             this.lblrr.AutoSize = true;
+            this.lblrr.BackColor = System.Drawing.Color.YellowGreen;
             this.lblrr.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblrr.Location = new System.Drawing.Point(149, 15);
             this.lblrr.Name = "lblrr";
@@ -581,6 +578,7 @@
             // lblac
             // 
             this.lblac.AutoSize = true;
+            this.lblac.BackColor = System.Drawing.Color.YellowGreen;
             this.lblac.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblac.Location = new System.Drawing.Point(95, 82);
             this.lblac.Name = "lblac";
@@ -591,6 +589,7 @@
             // lblto
             // 
             this.lblto.AutoSize = true;
+            this.lblto.BackColor = System.Drawing.Color.YellowGreen;
             this.lblto.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblto.Location = new System.Drawing.Point(236, 81);
             this.lblto.Name = "lblto";
@@ -601,6 +600,7 @@
             // lblpi
             // 
             this.lblpi.AutoSize = true;
+            this.lblpi.BackColor = System.Drawing.Color.Gold;
             this.lblpi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblpi.Location = new System.Drawing.Point(278, 62);
             this.lblpi.Name = "lblpi";
@@ -652,6 +652,7 @@
             // lblpa
             // 
             this.lblpa.AutoSize = true;
+            this.lblpa.BackColor = System.Drawing.Color.YellowGreen;
             this.lblpa.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblpa.Location = new System.Drawing.Point(205, 55);
             this.lblpa.Name = "lblpa";
@@ -662,6 +663,7 @@
             // lblms
             // 
             this.lblms.AutoSize = true;
+            this.lblms.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.lblms.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblms.Location = new System.Drawing.Point(190, 129);
             this.lblms.Name = "lblms";
@@ -672,6 +674,7 @@
             // lblpr
             // 
             this.lblpr.AutoSize = true;
+            this.lblpr.BackColor = System.Drawing.Color.HotPink;
             this.lblpr.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblpr.Location = new System.Drawing.Point(216, 153);
             this.lblpr.Name = "lblpr";
@@ -682,6 +685,7 @@
             // lblsc
             // 
             this.lblsc.AutoSize = true;
+            this.lblsc.BackColor = System.Drawing.Color.HotPink;
             this.lblsc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblsc.Location = new System.Drawing.Point(231, 168);
             this.lblsc.Name = "lblsc";
@@ -692,6 +696,7 @@
             // lblrs
             // 
             this.lblrs.AutoSize = true;
+            this.lblrs.BackColor = System.Drawing.Color.HotPink;
             this.lblrs.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblrs.Location = new System.Drawing.Point(205, 177);
             this.lblrs.Name = "lblrs";
@@ -702,6 +707,7 @@
             // lblma
             // 
             this.lblma.AutoSize = true;
+            this.lblma.BackColor = System.Drawing.Color.Gold;
             this.lblma.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblma.Location = new System.Drawing.Point(258, 44);
             this.lblma.Name = "lblma";
@@ -709,19 +715,10 @@
             this.lblma.TabIndex = 26;
             this.lblma.Text = "?";
             // 
-            // lblro
-            // 
-            this.lblro.AutoSize = true;
-            this.lblro.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblro.Location = new System.Drawing.Point(137, 81);
-            this.lblro.Name = "lblro";
-            this.lblro.Size = new System.Drawing.Size(14, 13);
-            this.lblro.TabIndex = 27;
-            this.lblro.Text = "?";
-            // 
             // lblap
             // 
             this.lblap.AutoSize = true;
+            this.lblap.BackColor = System.Drawing.Color.YellowGreen;
             this.lblap.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblap.Location = new System.Drawing.Point(216, 20);
             this.lblap.Name = "lblap";
@@ -732,6 +729,7 @@
             // lblpe
             // 
             this.lblpe.AutoSize = true;
+            this.lblpe.BackColor = System.Drawing.Color.Gold;
             this.lblpe.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblpe.Location = new System.Drawing.Point(328, 70);
             this.lblpe.Name = "lblpe";
@@ -742,6 +740,7 @@
             // lblrn
             // 
             this.lblrn.AutoSize = true;
+            this.lblrn.BackColor = System.Drawing.Color.Gold;
             this.lblrn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblrn.Location = new System.Drawing.Point(317, 51);
             this.lblrn.Name = "lblrn";
@@ -752,6 +751,7 @@
             // lblce
             // 
             this.lblce.AutoSize = true;
+            this.lblce.BackColor = System.Drawing.Color.Gold;
             this.lblce.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblce.Location = new System.Drawing.Point(298, 47);
             this.lblce.Name = "lblce";
@@ -762,6 +762,7 @@
             // lblpb
             // 
             this.lblpb.AutoSize = true;
+            this.lblpb.BackColor = System.Drawing.Color.Gold;
             this.lblpb.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblpb.Location = new System.Drawing.Point(329, 56);
             this.lblpb.Name = "lblpb";
@@ -772,6 +773,7 @@
             // lblgo
             // 
             this.lblgo.AutoSize = true;
+            this.lblgo.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.lblgo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblgo.Location = new System.Drawing.Point(221, 115);
             this.lblgo.Name = "lblgo";
@@ -782,6 +784,7 @@
             // lbldf
             // 
             this.lbldf.AutoSize = true;
+            this.lbldf.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.lbldf.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbldf.Location = new System.Drawing.Point(237, 104);
             this.lbldf.Name = "lbldf";
@@ -792,6 +795,7 @@
             // lblal
             // 
             this.lblal.AutoSize = true;
+            this.lblal.BackColor = System.Drawing.Color.Gold;
             this.lblal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblal.Location = new System.Drawing.Point(324, 81);
             this.lblal.Name = "lblal";
@@ -802,12 +806,35 @@
             // lblse
             // 
             this.lblse.AutoSize = true;
+            this.lblse.BackColor = System.Drawing.Color.Gold;
             this.lblse.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblse.Location = new System.Drawing.Point(317, 87);
             this.lblse.Name = "lblse";
             this.lblse.Size = new System.Drawing.Size(14, 13);
             this.lblse.TabIndex = 36;
             this.lblse.Text = "?";
+            // 
+            // lblro
+            // 
+            this.lblro.AutoSize = true;
+            this.lblro.BackColor = System.Drawing.Color.YellowGreen;
+            this.lblro.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblro.Location = new System.Drawing.Point(137, 81);
+            this.lblro.Name = "lblro";
+            this.lblro.Size = new System.Drawing.Size(14, 13);
+            this.lblro.TabIndex = 27;
+            this.lblro.Text = "?";
+            // 
+            // lblmg
+            // 
+            this.lblmg.AutoSize = true;
+            this.lblmg.BackColor = System.Drawing.Color.Thistle;
+            this.lblmg.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblmg.Location = new System.Drawing.Point(256, 116);
+            this.lblmg.Name = "lblmg";
+            this.lblmg.Size = new System.Drawing.Size(14, 13);
+            this.lblmg.TabIndex = 11;
+            this.lblmg.Text = "?";
             // 
             // area
             // 
@@ -886,7 +913,6 @@
         private System.Windows.Forms.Label lblrn;
         private System.Windows.Forms.Label lblpe;
         private System.Windows.Forms.Label lblap;
-        private System.Windows.Forms.Label lblro;
         private System.Windows.Forms.Label lblma;
         private System.Windows.Forms.Label lblrs;
         private System.Windows.Forms.Label lblsc;
@@ -902,7 +928,6 @@
         private System.Windows.Forms.Label lblba;
         private System.Windows.Forms.Label lbles;
         private System.Windows.Forms.Label lblrj;
-        private System.Windows.Forms.Label lblmg;
         private System.Windows.Forms.Label lblsp;
         private System.Windows.Forms.Label lblcapital;
         private System.Windows.Forms.Label lblestado;
@@ -913,5 +938,7 @@
         private System.Windows.Forms.Label lblgo;
         private System.Windows.Forms.Label lblal;
         private System.Windows.Forms.Label lblse;
+        private System.Windows.Forms.Label lblro;
+        private System.Windows.Forms.Label lblmg;
     }
 }
