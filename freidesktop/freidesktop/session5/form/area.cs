@@ -105,6 +105,8 @@ namespace freidesktop.session5.form
                 lblai.Text = qtdai.ToString();
                 int qtdar = five.qtdar(frase);
                 lblad.Text = qtdar.ToString();
+                int qtdpre = five.qtdpre(frase);
+                lblqp.Text = qtdpre.ToString();
             }
 
             catch(Exception)
