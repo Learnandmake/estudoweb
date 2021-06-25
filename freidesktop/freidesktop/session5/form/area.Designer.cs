@@ -31,17 +31,17 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(area));
             this.gm = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.btna = new System.Windows.Forms.Button();
-            this.pic = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lbla = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.lblp = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.lblper = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lblarea = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.nma = new System.Windows.Forms.NumericUpDown();
+            this.label1 = new System.Windows.Forms.Label();
+            this.nmb = new System.Windows.Forms.NumericUpDown();
+            this.btna = new System.Windows.Forms.Button();
+            this.picarea = new System.Windows.Forms.PictureBox();
             this.gp = new System.Windows.Forms.GroupBox();
             this.lblqp = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -108,9 +108,9 @@
             this.químicaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.gm.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nma)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nmb)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picarea)).BeginInit();
             this.gp.SuspendLayout();
             this.gf.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picnext)).BeginInit();
@@ -129,16 +129,16 @@
             // gm
             // 
             this.gm.Controls.Add(this.label4);
-            this.gm.Controls.Add(this.lblp);
+            this.gm.Controls.Add(this.lblper);
             this.gm.Controls.Add(this.label5);
-            this.gm.Controls.Add(this.lbla);
+            this.gm.Controls.Add(this.lblarea);
             this.gm.Controls.Add(this.label3);
             this.gm.Controls.Add(this.label2);
-            this.gm.Controls.Add(this.numericUpDown2);
+            this.gm.Controls.Add(this.nma);
             this.gm.Controls.Add(this.label1);
-            this.gm.Controls.Add(this.numericUpDown1);
+            this.gm.Controls.Add(this.nmb);
             this.gm.Controls.Add(this.btna);
-            this.gm.Controls.Add(this.pic);
+            this.gm.Controls.Add(this.picarea);
             this.gm.Location = new System.Drawing.Point(12, 27);
             this.gm.Name = "gm";
             this.gm.Size = new System.Drawing.Size(342, 208);
@@ -146,73 +146,23 @@
             this.gm.TabStop = false;
             this.gm.Visible = false;
             // 
-            // label1
+            // label4
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 31);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(34, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Base:";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 15);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(244, 13);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Escolha as informações  para a área do retângulo:";
             // 
-            // numericUpDown1
+            // lblper
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(47, 29);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(63, 20);
-            this.numericUpDown1.TabIndex = 4;
-            // 
-            // btna
-            // 
-            this.btna.Location = new System.Drawing.Point(35, 81);
-            this.btna.Name = "btna";
-            this.btna.Size = new System.Drawing.Size(75, 23);
-            this.btna.TabIndex = 5;
-            this.btna.Text = "aplicar";
-            this.btna.UseVisualStyleBackColor = true;
-            // 
-            // pic
-            // 
-            this.pic.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pic.Location = new System.Drawing.Point(140, 92);
-            this.pic.Name = "pic";
-            this.pic.Size = new System.Drawing.Size(51, 35);
-            this.pic.TabIndex = 6;
-            this.pic.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 57);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 13);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Altura:";
-            // 
-            // numericUpDown2
-            // 
-            this.numericUpDown2.Location = new System.Drawing.Point(47, 55);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(63, 20);
-            this.numericUpDown2.TabIndex = 8;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(149, 31);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(32, 13);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Área:";
-            // 
-            // lbla
-            // 
-            this.lbla.AutoSize = true;
-            this.lbla.Location = new System.Drawing.Point(190, 31);
-            this.lbla.Name = "lbla";
-            this.lbla.Size = new System.Drawing.Size(13, 13);
-            this.lbla.TabIndex = 10;
-            this.lbla.Text = "0";
+            this.lblper.AutoSize = true;
+            this.lblper.Location = new System.Drawing.Point(190, 57);
+            this.lblper.Name = "lblper";
+            this.lblper.Size = new System.Drawing.Size(13, 13);
+            this.lblper.TabIndex = 12;
+            this.lblper.Text = "0";
             // 
             // label5
             // 
@@ -223,23 +173,74 @@
             this.label5.TabIndex = 11;
             this.label5.Text = "Perímetro";
             // 
-            // lblp
+            // lblarea
             // 
-            this.lblp.AutoSize = true;
-            this.lblp.Location = new System.Drawing.Point(190, 57);
-            this.lblp.Name = "lblp";
-            this.lblp.Size = new System.Drawing.Size(13, 13);
-            this.lblp.TabIndex = 12;
-            this.lblp.Text = "0";
+            this.lblarea.AutoSize = true;
+            this.lblarea.Location = new System.Drawing.Point(190, 31);
+            this.lblarea.Name = "lblarea";
+            this.lblarea.Size = new System.Drawing.Size(13, 13);
+            this.lblarea.TabIndex = 10;
+            this.lblarea.Text = "0";
             // 
-            // label4
+            // label3
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 15);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(244, 13);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "Escolha as informações  para a área do retângulo:";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(149, 31);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(32, 13);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Área:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 57);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(37, 13);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Altura:";
+            // 
+            // nma
+            // 
+            this.nma.Location = new System.Drawing.Point(47, 55);
+            this.nma.Name = "nma";
+            this.nma.Size = new System.Drawing.Size(63, 20);
+            this.nma.TabIndex = 8;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(9, 31);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(34, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Base:";
+            // 
+            // nmb
+            // 
+            this.nmb.Location = new System.Drawing.Point(47, 29);
+            this.nmb.Name = "nmb";
+            this.nmb.Size = new System.Drawing.Size(63, 20);
+            this.nmb.TabIndex = 4;
+            // 
+            // btna
+            // 
+            this.btna.Location = new System.Drawing.Point(35, 81);
+            this.btna.Name = "btna";
+            this.btna.Size = new System.Drawing.Size(75, 23);
+            this.btna.TabIndex = 5;
+            this.btna.Text = "aplicar";
+            this.btna.UseVisualStyleBackColor = true;
+            this.btna.Click += new System.EventHandler(this.btna_Click);
+            // 
+            // picarea
+            // 
+            this.picarea.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picarea.Location = new System.Drawing.Point(140, 92);
+            this.picarea.Name = "picarea";
+            this.picarea.Size = new System.Drawing.Size(51, 35);
+            this.picarea.TabIndex = 6;
+            this.picarea.TabStop = false;
             // 
             // gp
             // 
@@ -251,7 +252,7 @@
             this.gp.Controls.Add(this.label7);
             this.gp.Controls.Add(this.label9);
             this.gp.Controls.Add(this.lblai);
-            this.gp.Location = new System.Drawing.Point(12, 26);
+            this.gp.Location = new System.Drawing.Point(438, 119);
             this.gp.Name = "gp";
             this.gp.Size = new System.Drawing.Size(342, 208);
             this.gp.TabIndex = 7;
@@ -337,7 +338,7 @@
             this.gf.Controls.Add(this.comboBox1);
             this.gf.Controls.Add(this.label8);
             this.gf.Controls.Add(this.picninja);
-            this.gf.Location = new System.Drawing.Point(12, 28);
+            this.gf.Location = new System.Drawing.Point(24, 337);
             this.gf.Name = "gf";
             this.gf.Size = new System.Drawing.Size(342, 208);
             this.gf.TabIndex = 8;
@@ -434,7 +435,7 @@
             this.gg.Controls.Add(this.label12);
             this.gg.Controls.Add(this.label11);
             this.gg.Controls.Add(this.pictureBox1);
-            this.gg.Location = new System.Drawing.Point(12, 26);
+            this.gg.Location = new System.Drawing.Point(419, 322);
             this.gg.Name = "gg";
             this.gg.Size = new System.Drawing.Size(342, 210);
             this.gg.TabIndex = 9;
@@ -798,7 +799,7 @@
             this.gq.Controls.Add(this.label13);
             this.gq.Controls.Add(this.comboBox2);
             this.gq.Controls.Add(this.picc);
-            this.gq.Location = new System.Drawing.Point(12, 31);
+            this.gq.Location = new System.Drawing.Point(524, 73);
             this.gq.Name = "gq";
             this.gq.Size = new System.Drawing.Size(342, 206);
             this.gq.TabIndex = 11;
@@ -926,7 +927,7 @@
             this.químicaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(363, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(932, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -934,7 +935,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(363, 241);
+            this.ClientSize = new System.Drawing.Size(932, 500);
             this.Controls.Add(this.gq);
             this.Controls.Add(this.gg);
             this.Controls.Add(this.gf);
@@ -946,9 +947,9 @@
             this.Text = "area";
             this.gm.ResumeLayout(false);
             this.gm.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nma)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nmb)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picarea)).EndInit();
             this.gp.ResumeLayout(false);
             this.gp.PerformLayout();
             this.gf.ResumeLayout(false);
@@ -975,16 +976,16 @@
         #endregion
         private System.Windows.Forms.GroupBox gm;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label lbla;
+        private System.Windows.Forms.Label lblarea;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.NumericUpDown nma;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown nmb;
         private System.Windows.Forms.Button btna;
-        private System.Windows.Forms.PictureBox pic;
+        private System.Windows.Forms.PictureBox picarea;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label lblp;
+        private System.Windows.Forms.Label lblper;
         private System.Windows.Forms.GroupBox gp;
         private System.Windows.Forms.Label lblqp;
         private System.Windows.Forms.TextBox textBox1;
