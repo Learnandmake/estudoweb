@@ -55,7 +55,7 @@
             this.picnext = new System.Windows.Forms.PictureBox();
             this.picbefore = new System.Windows.Forms.PictureBox();
             this.lblcitacao = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbofilosofo = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.picninja = new System.Windows.Forms.PictureBox();
             this.gg = new System.Windows.Forms.GroupBox();
@@ -107,6 +107,11 @@
             this.geografiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.químicaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.picaritosteles = new System.Windows.Forms.PictureBox();
+            this.picsocrates = new System.Windows.Forms.PictureBox();
+            this.picrene = new System.Windows.Forms.PictureBox();
+            this.picrich = new System.Windows.Forms.PictureBox();
+            this.picepicro = new System.Windows.Forms.PictureBox();
             this.gm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nma)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nmb)).BeginInit();
@@ -124,6 +129,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picc)).BeginInit();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picaritosteles)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picsocrates)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picrene)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picrich)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picepicro)).BeginInit();
             this.SuspendLayout();
             // 
             // gm
@@ -333,13 +343,18 @@
             // 
             // gf
             // 
+            this.gf.Controls.Add(this.picaritosteles);
+            this.gf.Controls.Add(this.picsocrates);
+            this.gf.Controls.Add(this.picrene);
+            this.gf.Controls.Add(this.picrich);
+            this.gf.Controls.Add(this.picepicro);
             this.gf.Controls.Add(this.picnext);
             this.gf.Controls.Add(this.picbefore);
             this.gf.Controls.Add(this.lblcitacao);
-            this.gf.Controls.Add(this.comboBox1);
+            this.gf.Controls.Add(this.cbofilosofo);
             this.gf.Controls.Add(this.label8);
             this.gf.Controls.Add(this.picninja);
-            this.gf.Location = new System.Drawing.Point(24, 337);
+            this.gf.Location = new System.Drawing.Point(12, 27);
             this.gf.Name = "gf";
             this.gf.Size = new System.Drawing.Size(342, 208);
             this.gf.TabIndex = 8;
@@ -349,39 +364,49 @@
             // picnext
             // 
             this.picnext.Image = ((System.Drawing.Image)(resources.GetObject("picnext.Image")));
-            this.picnext.Location = new System.Drawing.Point(222, 103);
+            this.picnext.Location = new System.Drawing.Point(278, 125);
             this.picnext.Name = "picnext";
             this.picnext.Size = new System.Drawing.Size(64, 50);
             this.picnext.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picnext.TabIndex = 11;
             this.picnext.TabStop = false;
+            this.picnext.Click += new System.EventHandler(this.picnext_Click);
             // 
             // picbefore
             // 
             this.picbefore.Image = ((System.Drawing.Image)(resources.GetObject("picbefore.Image")));
-            this.picbefore.Location = new System.Drawing.Point(155, 103);
+            this.picbefore.Location = new System.Drawing.Point(206, 125);
             this.picbefore.Name = "picbefore";
             this.picbefore.Size = new System.Drawing.Size(64, 50);
             this.picbefore.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picbefore.TabIndex = 10;
             this.picbefore.TabStop = false;
+            this.picbefore.Click += new System.EventHandler(this.picbefore_Click);
             // 
             // lblcitacao
             // 
             this.lblcitacao.AutoSize = true;
-            this.lblcitacao.Location = new System.Drawing.Point(9, 70);
+            this.lblcitacao.Location = new System.Drawing.Point(0, 92);
             this.lblcitacao.Name = "lblcitacao";
             this.lblcitacao.Size = new System.Drawing.Size(148, 13);
             this.lblcitacao.TabIndex = 9;
             this.lblcitacao.Text = "\"citação filosofo selecionado\"";
             // 
-            // comboBox1
+            // cbofilosofo
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(12, 28);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 6;
+            this.cbofilosofo.FormattingEnabled = true;
+            this.cbofilosofo.Items.AddRange(new object[] {
+            "Sócrates",
+            "René Descartes",
+            "Aristóteles",
+            "Friedrich Nietzsche",
+            "Epicuro"});
+            this.cbofilosofo.Location = new System.Drawing.Point(12, 28);
+            this.cbofilosofo.Name = "cbofilosofo";
+            this.cbofilosofo.Size = new System.Drawing.Size(121, 21);
+            this.cbofilosofo.TabIndex = 6;
+            this.cbofilosofo.Text = "Selecione:";
+            this.cbofilosofo.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label8
             // 
@@ -395,7 +420,7 @@
             // picninja
             // 
             this.picninja.Image = ((System.Drawing.Image)(resources.GetObject("picninja.Image")));
-            this.picninja.Location = new System.Drawing.Point(163, 16);
+            this.picninja.Location = new System.Drawing.Point(219, 12);
             this.picninja.Name = "picninja";
             this.picninja.Size = new System.Drawing.Size(117, 81);
             this.picninja.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -932,6 +957,61 @@
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
+            // picaritosteles
+            // 
+            this.picaritosteles.Image = ((System.Drawing.Image)(resources.GetObject("picaritosteles.Image")));
+            this.picaritosteles.Location = new System.Drawing.Point(219, 12);
+            this.picaritosteles.Name = "picaritosteles";
+            this.picaritosteles.Size = new System.Drawing.Size(117, 81);
+            this.picaritosteles.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picaritosteles.TabIndex = 12;
+            this.picaritosteles.TabStop = false;
+            this.picaritosteles.Visible = false;
+            // 
+            // picsocrates
+            // 
+            this.picsocrates.Image = ((System.Drawing.Image)(resources.GetObject("picsocrates.Image")));
+            this.picsocrates.Location = new System.Drawing.Point(219, 12);
+            this.picsocrates.Name = "picsocrates";
+            this.picsocrates.Size = new System.Drawing.Size(117, 81);
+            this.picsocrates.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picsocrates.TabIndex = 13;
+            this.picsocrates.TabStop = false;
+            this.picsocrates.Visible = false;
+            // 
+            // picrene
+            // 
+            this.picrene.Image = ((System.Drawing.Image)(resources.GetObject("picrene.Image")));
+            this.picrene.Location = new System.Drawing.Point(219, 12);
+            this.picrene.Name = "picrene";
+            this.picrene.Size = new System.Drawing.Size(117, 81);
+            this.picrene.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picrene.TabIndex = 14;
+            this.picrene.TabStop = false;
+            this.picrene.Visible = false;
+            // 
+            // picrich
+            // 
+            this.picrich.Image = ((System.Drawing.Image)(resources.GetObject("picrich.Image")));
+            this.picrich.Location = new System.Drawing.Point(219, 12);
+            this.picrich.Name = "picrich";
+            this.picrich.Size = new System.Drawing.Size(117, 81);
+            this.picrich.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picrich.TabIndex = 15;
+            this.picrich.TabStop = false;
+            this.picrich.Visible = false;
+            // 
+            // picepicro
+            // 
+            this.picepicro.Image = ((System.Drawing.Image)(resources.GetObject("picepicro.Image")));
+            this.picepicro.Location = new System.Drawing.Point(219, 12);
+            this.picepicro.Name = "picepicro";
+            this.picepicro.Size = new System.Drawing.Size(117, 81);
+            this.picepicro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picepicro.TabIndex = 16;
+            this.picepicro.TabStop = false;
+            this.picepicro.Visible = false;
+            // 
             // area
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -969,6 +1049,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.picc)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picaritosteles)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picsocrates)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picrene)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picrich)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picepicro)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1000,7 +1085,7 @@
         private System.Windows.Forms.PictureBox picnext;
         private System.Windows.Forms.PictureBox picbefore;
         private System.Windows.Forms.Label lblcitacao;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbofilosofo;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.PictureBox picninja;
         private System.Windows.Forms.GroupBox gg;
@@ -1052,5 +1137,10 @@
         private System.Windows.Forms.ToolStripMenuItem geografiaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem químicaToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.PictureBox picaritosteles;
+        private System.Windows.Forms.PictureBox picsocrates;
+        private System.Windows.Forms.PictureBox picrene;
+        private System.Windows.Forms.PictureBox picrich;
+        private System.Windows.Forms.PictureBox picepicro;
     }
 }
