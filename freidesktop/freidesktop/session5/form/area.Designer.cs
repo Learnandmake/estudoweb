@@ -44,7 +44,7 @@
             this.picarea = new System.Windows.Forms.PictureBox();
             this.gp = new System.Windows.Forms.GroupBox();
             this.lblqp = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtpfrase = new System.Windows.Forms.TextBox();
             this.lblad = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -245,14 +245,14 @@
             // gp
             // 
             this.gp.Controls.Add(this.lblqp);
-            this.gp.Controls.Add(this.textBox1);
+            this.gp.Controls.Add(this.txtpfrase);
             this.gp.Controls.Add(this.lblad);
             this.gp.Controls.Add(this.label6);
             this.gp.Controls.Add(this.label10);
             this.gp.Controls.Add(this.label7);
             this.gp.Controls.Add(this.label9);
             this.gp.Controls.Add(this.lblai);
-            this.gp.Location = new System.Drawing.Point(438, 119);
+            this.gp.Location = new System.Drawing.Point(12, 27);
             this.gp.Name = "gp";
             this.gp.Size = new System.Drawing.Size(342, 208);
             this.gp.TabIndex = 7;
@@ -268,13 +268,14 @@
             this.lblqp.TabIndex = 23;
             this.lblqp.Text = "0";
             // 
-            // textBox1
+            // txtpfrase
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 36);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(258, 61);
-            this.textBox1.TabIndex = 17;
+            this.txtpfrase.Location = new System.Drawing.Point(12, 36);
+            this.txtpfrase.Multiline = true;
+            this.txtpfrase.Name = "txtpfrase";
+            this.txtpfrase.Size = new System.Drawing.Size(258, 61);
+            this.txtpfrase.TabIndex = 17;
+            this.txtpfrase.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // lblad
             // 
@@ -988,7 +989,7 @@
         private System.Windows.Forms.Label lblper;
         private System.Windows.Forms.GroupBox gp;
         private System.Windows.Forms.Label lblqp;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtpfrase;
         private System.Windows.Forms.Label lblad;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label10;

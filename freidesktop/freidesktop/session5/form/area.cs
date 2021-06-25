@@ -70,21 +70,47 @@ namespace freidesktop.session5.form
         }
 
         private void btna_Click(object sender, EventArgs e)
+        { try
+            {
+                decimal b = nmb.Value;
+                decimal a = nma.Value;
+
+                picarea.Width = Convert.ToInt32(b);
+                picarea.Height = Convert.ToInt32(a);
+
+                function.sessionfive five = new function.sessionfive();
+
+                decimal area = five.calcarea(b, a);
+                decimal perimetro = five.calcper(b, a);
+
+                lblarea.Text = area.ToString();
+                lblper.Text = perimetro.ToString();
+            }
+           catch(Exception)
+           {
+                MessageBox.Show("erro verifique o formulario");
+           }
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            decimal b = nmb.Value;
-            decimal a = nma.Value;
-    
-            picarea.Width =Convert.ToInt32( b);
-            picarea.Height = Convert.ToInt32(a);
+            try
+            {
+                string frase =txtpfrase.Text.ToLower().ToString();
+               
+                function.sessionfive five = new function.sessionfive();
+              
+                int qtdai = five.qtdai(frase);
+                lblai.Text = qtdai.ToString();
+                int qtdar = five.qtdar(frase);
+                lblad.Text = qtdar.ToString();
+            }
 
-            function.sessionfive five = new function.sessionfive();
-
-            decimal area = five.calcarea(b, a);
-            decimal perimetro = five.calcper(b, a);
-
-            lblarea.Text = area.ToString();
-            lblper.Text = perimetro.ToString();
-
+            catch(Exception)
+            {
+                MessageBox.Show("erro verifique o formulario");
+            }
         }
     }
 }
