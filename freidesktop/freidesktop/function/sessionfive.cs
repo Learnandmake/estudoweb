@@ -21,7 +21,7 @@ namespace freidesktop.function
 
         public int qtdai(string frase)
         {
-           
+            frase.ToLower();
             int total = 0;
             if (frase.Contains(" um ") == true)
             {
@@ -45,7 +45,7 @@ namespace freidesktop.function
 
         public int qtdar(string frase)
         {
-         
+            frase.ToLower();
             int total = 0;
             if (frase.Contains(" a ") == true)
             {
@@ -69,7 +69,7 @@ namespace freidesktop.function
 
         public int qtdpre(string frase)
         {
-
+            frase.ToLower();
             int total = 0;
             if (frase.Contains(" a ") == true)
             {
