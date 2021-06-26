@@ -653,6 +653,7 @@
             this.pictureBox13.TabIndex = 55;
             this.pictureBox13.TabStop = false;
             this.pictureBox13.Visible = false;
+          
             // 
             // pictureBox14
             // 
@@ -686,6 +687,7 @@
             this.pictureBox16.TabIndex = 52;
             this.pictureBox16.TabStop = false;
             this.pictureBox16.Visible = false;
+           
             // 
             // pictureBox17
             // 
@@ -697,6 +699,7 @@
             this.pictureBox17.TabIndex = 51;
             this.pictureBox17.TabStop = false;
             this.pictureBox17.Visible = false;
+   
             // 
             // pictureBox18
             // 
@@ -708,6 +711,7 @@
             this.pictureBox18.TabIndex = 50;
             this.pictureBox18.TabStop = false;
             this.pictureBox18.Visible = false;
+   
             // 
             // pictureBox19
             // 
@@ -719,6 +723,7 @@
             this.pictureBox19.TabIndex = 49;
             this.pictureBox19.TabStop = false;
             this.pictureBox19.Visible = false;
+         
             // 
             // picveloz
             // 
