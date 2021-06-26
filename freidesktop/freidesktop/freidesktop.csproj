@@ -300,6 +300,9 @@
     <EmbeddedResource Include="session5\menu\menus5.resx">
       <DependentUpon>menus5.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="session6\form\comprar.resx">
+      <DependentUpon>comprar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="session6\form\frmlogin.resx">
       <DependentUpon>frmlogin.cs</DependentUpon>
     </EmbeddedResource>
