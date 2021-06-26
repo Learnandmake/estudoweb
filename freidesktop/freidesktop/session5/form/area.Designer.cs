@@ -484,6 +484,7 @@
             // 
             // gg
             // 
+            this.gg.Controls.Add(this.gq);
             this.gg.Controls.Add(this.lblse);
             this.gg.Controls.Add(this.lblal);
             this.gg.Controls.Add(this.lbldf);
@@ -907,7 +908,7 @@
             this.gq.Controls.Add(this.label13);
             this.gq.Controls.Add(this.comboBox2);
             this.gq.Controls.Add(this.picc);
-            this.gq.Location = new System.Drawing.Point(524, 73);
+            this.gq.Location = new System.Drawing.Point(1, 7);
             this.gq.Name = "gq";
             this.gq.Size = new System.Drawing.Size(342, 206);
             this.gq.TabIndex = 11;
@@ -1044,7 +1045,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(932, 500);
-            this.Controls.Add(this.gq);
             this.Controls.Add(this.gg);
             this.Controls.Add(this.gf);
             this.Controls.Add(this.gp);
