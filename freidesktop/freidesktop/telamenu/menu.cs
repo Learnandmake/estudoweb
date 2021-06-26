@@ -58,5 +58,11 @@ namespace freidesktop.telamenu
             session5.menu.menu m = new session5.menu.menu();
             m.Show();
         }
+
+        private void sixToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            session6.menu.menu m = new session6.menu.menu();
+            m.Show();
+        }
     }
 }
