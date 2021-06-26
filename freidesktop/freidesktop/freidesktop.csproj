@@ -63,6 +63,12 @@
     <Compile Include="desafio\menu\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="exemplo\frmConceito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="exemplo\frmConceito.Designer.cs">
+      <DependentUpon>frmConceito.cs</DependentUpon>
+    </Compile>
     <Compile Include="function\sessionfive.cs" />
     <Compile Include="function\sessionone.cs" />
     <Compile Include="function\sessionthree.cs" />
@@ -206,6 +212,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="desafio\menu\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="exemplo\frmConceito.resx">
+      <DependentUpon>frmConceito.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="session1\menu\menu.resx">
       <DependentUpon>menu.cs</DependentUpon>
