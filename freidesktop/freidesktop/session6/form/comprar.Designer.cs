@@ -67,26 +67,9 @@
             this.f1 = new System.Windows.Forms.PictureBox();
             this.e1 = new System.Windows.Forms.PictureBox();
             this.d1 = new System.Windows.Forms.PictureBox();
-            this.a1r = new System.Windows.Forms.PictureBox();
-            this.b1r = new System.Windows.Forms.PictureBox();
-            this.c1r = new System.Windows.Forms.PictureBox();
-            this.d1r = new System.Windows.Forms.PictureBox();
-            this.a2r = new System.Windows.Forms.PictureBox();
-            this.b2r = new System.Windows.Forms.PictureBox();
-            this.c2r = new System.Windows.Forms.PictureBox();
-            this.b3r = new System.Windows.Forms.PictureBox();
-            this.a3r = new System.Windows.Forms.PictureBox();
-            this.c3r = new System.Windows.Forms.PictureBox();
-            this.d3r = new System.Windows.Forms.PictureBox();
-            this.f2r = new System.Windows.Forms.PictureBox();
-            this.e2r = new System.Windows.Forms.PictureBox();
-            this.d2r = new System.Windows.Forms.PictureBox();
-            this.h1r = new System.Windows.Forms.PictureBox();
-            this.g1r = new System.Windows.Forms.PictureBox();
-            this.f1r = new System.Windows.Forms.PictureBox();
-            this.e1r = new System.Windows.Forms.PictureBox();
             this.picveloz = new System.Windows.Forms.PictureBox();
             this.picavenger = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudmeia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudinteira)).BeginInit();
@@ -111,26 +94,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.f1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.e1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.d1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a1r)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b1r)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c1r)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.d1r)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a2r)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b2r)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c2r)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b3r)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a3r)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c3r)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.d3r)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.f2r)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.e2r)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.d2r)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.h1r)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.g1r)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.f1r)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.e1r)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picveloz)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picavenger)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -149,7 +115,7 @@
             this.groupBox1.Controls.Add(this.btnlogin);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(39, 2);
+            this.groupBox1.Location = new System.Drawing.Point(1, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(219, 274);
             this.groupBox1.TabIndex = 1;
@@ -293,7 +259,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(-26, -2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1026, 446);
+            this.pictureBox1.Size = new System.Drawing.Size(1048, 446);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -345,380 +311,200 @@
             // a1
             // 
             this.a1.BackColor = System.Drawing.Color.LimeGreen;
-            this.a1.Location = new System.Drawing.Point(305, 97);
+            this.a1.Location = new System.Drawing.Point(319, 97);
             this.a1.Name = "a1";
             this.a1.Size = new System.Drawing.Size(42, 33);
             this.a1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.a1.TabIndex = 23;
             this.a1.TabStop = false;
+            this.a1.Click += new System.EventHandler(this.a1_Click);
             // 
             // b1
             // 
             this.b1.BackColor = System.Drawing.Color.LimeGreen;
-            this.b1.Location = new System.Drawing.Point(353, 97);
+            this.b1.Location = new System.Drawing.Point(367, 97);
             this.b1.Name = "b1";
             this.b1.Size = new System.Drawing.Size(42, 33);
             this.b1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.b1.TabIndex = 24;
             this.b1.TabStop = false;
+            this.b1.Click += new System.EventHandler(this.b1_Click);
             // 
             // c2
             // 
             this.c2.BackColor = System.Drawing.Color.LimeGreen;
-            this.c2.Location = new System.Drawing.Point(449, 136);
+            this.c2.Location = new System.Drawing.Point(463, 136);
             this.c2.Name = "c2";
             this.c2.Size = new System.Drawing.Size(42, 33);
             this.c2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c2.TabIndex = 25;
             this.c2.TabStop = false;
+            this.c2.Click += new System.EventHandler(this.c2_Click);
             // 
             // a2
             // 
             this.a2.BackColor = System.Drawing.Color.LimeGreen;
-            this.a2.Location = new System.Drawing.Point(353, 136);
+            this.a2.Location = new System.Drawing.Point(367, 136);
             this.a2.Name = "a2";
             this.a2.Size = new System.Drawing.Size(42, 33);
             this.a2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.a2.TabIndex = 25;
             this.a2.TabStop = false;
+            this.a2.Click += new System.EventHandler(this.a2_Click);
             // 
             // b2
             // 
             this.b2.BackColor = System.Drawing.Color.LimeGreen;
-            this.b2.Location = new System.Drawing.Point(401, 136);
+            this.b2.Location = new System.Drawing.Point(415, 136);
             this.b2.Name = "b2";
             this.b2.Size = new System.Drawing.Size(42, 33);
             this.b2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.b2.TabIndex = 26;
             this.b2.TabStop = false;
+            this.b2.Click += new System.EventHandler(this.b2_Click);
             // 
             // c1
             // 
             this.c1.BackColor = System.Drawing.Color.LimeGreen;
-            this.c1.Location = new System.Drawing.Point(401, 97);
+            this.c1.Location = new System.Drawing.Point(415, 97);
             this.c1.Name = "c1";
             this.c1.Size = new System.Drawing.Size(42, 33);
             this.c1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c1.TabIndex = 27;
             this.c1.TabStop = false;
+            this.c1.Click += new System.EventHandler(this.c1_Click);
             // 
             // a3
             // 
             this.a3.BackColor = System.Drawing.Color.LimeGreen;
-            this.a3.Location = new System.Drawing.Point(401, 175);
+            this.a3.Location = new System.Drawing.Point(415, 175);
             this.a3.Name = "a3";
             this.a3.Size = new System.Drawing.Size(42, 33);
             this.a3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.a3.TabIndex = 28;
             this.a3.TabStop = false;
+            this.a3.Click += new System.EventHandler(this.a3_Click);
             // 
             // b3
             // 
             this.b3.BackColor = System.Drawing.Color.LimeGreen;
-            this.b3.Location = new System.Drawing.Point(449, 175);
+            this.b3.Location = new System.Drawing.Point(463, 175);
             this.b3.Name = "b3";
             this.b3.Size = new System.Drawing.Size(42, 33);
             this.b3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.b3.TabIndex = 30;
             this.b3.TabStop = false;
+            this.b3.Click += new System.EventHandler(this.b3_Click);
             // 
             // d3
             // 
             this.d3.BackColor = System.Drawing.Color.LimeGreen;
-            this.d3.Location = new System.Drawing.Point(555, 175);
+            this.d3.Location = new System.Drawing.Point(569, 175);
             this.d3.Name = "d3";
             this.d3.Size = new System.Drawing.Size(42, 33);
             this.d3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.d3.TabIndex = 39;
             this.d3.TabStop = false;
+            this.d3.Click += new System.EventHandler(this.d3_Click);
             // 
             // h1
             // 
             this.h1.BackColor = System.Drawing.Color.LimeGreen;
-            this.h1.Location = new System.Drawing.Point(651, 97);
+            this.h1.Location = new System.Drawing.Point(665, 97);
             this.h1.Name = "h1";
             this.h1.Size = new System.Drawing.Size(42, 33);
             this.h1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.h1.TabIndex = 38;
             this.h1.TabStop = false;
+            this.h1.Click += new System.EventHandler(this.h1_Click);
             // 
             // c3
             // 
             this.c3.BackColor = System.Drawing.Color.LimeGreen;
-            this.c3.Location = new System.Drawing.Point(507, 175);
+            this.c3.Location = new System.Drawing.Point(521, 175);
             this.c3.Name = "c3";
             this.c3.Size = new System.Drawing.Size(42, 33);
             this.c3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c3.TabIndex = 37;
             this.c3.TabStop = false;
+            this.c3.Click += new System.EventHandler(this.c3_Click);
             // 
             // g1
             // 
             this.g1.BackColor = System.Drawing.Color.LimeGreen;
-            this.g1.Location = new System.Drawing.Point(603, 97);
+            this.g1.Location = new System.Drawing.Point(617, 97);
             this.g1.Name = "g1";
             this.g1.Size = new System.Drawing.Size(42, 33);
             this.g1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.g1.TabIndex = 36;
             this.g1.TabStop = false;
+            this.g1.Click += new System.EventHandler(this.g1_Click);
             // 
             // f2
             // 
             this.f2.BackColor = System.Drawing.Color.LimeGreen;
-            this.f2.Location = new System.Drawing.Point(555, 136);
+            this.f2.Location = new System.Drawing.Point(569, 136);
             this.f2.Name = "f2";
             this.f2.Size = new System.Drawing.Size(42, 33);
             this.f2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.f2.TabIndex = 35;
             this.f2.TabStop = false;
+            this.f2.Click += new System.EventHandler(this.f2_Click);
             // 
             // d2
             // 
             this.d2.BackColor = System.Drawing.Color.LimeGreen;
-            this.d2.Location = new System.Drawing.Point(507, 136);
+            this.d2.Location = new System.Drawing.Point(521, 136);
             this.d2.Name = "d2";
             this.d2.Size = new System.Drawing.Size(42, 33);
             this.d2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.d2.TabIndex = 33;
             this.d2.TabStop = false;
+            this.d2.Click += new System.EventHandler(this.d2_Click);
             // 
             // g2
             // 
             this.g2.BackColor = System.Drawing.Color.LimeGreen;
-            this.g2.Location = new System.Drawing.Point(603, 136);
+            this.g2.Location = new System.Drawing.Point(617, 136);
             this.g2.Name = "g2";
             this.g2.Size = new System.Drawing.Size(42, 33);
             this.g2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.g2.TabIndex = 34;
             this.g2.TabStop = false;
+            this.g2.Click += new System.EventHandler(this.g2_Click);
             // 
             // f1
             // 
             this.f1.BackColor = System.Drawing.Color.LimeGreen;
-            this.f1.Location = new System.Drawing.Point(555, 97);
+            this.f1.Location = new System.Drawing.Point(569, 97);
             this.f1.Name = "f1";
             this.f1.Size = new System.Drawing.Size(42, 33);
             this.f1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.f1.TabIndex = 32;
             this.f1.TabStop = false;
+            this.f1.Click += new System.EventHandler(this.f1_Click);
             // 
             // e1
             // 
             this.e1.BackColor = System.Drawing.Color.LimeGreen;
-            this.e1.Location = new System.Drawing.Point(507, 97);
+            this.e1.Location = new System.Drawing.Point(521, 97);
             this.e1.Name = "e1";
             this.e1.Size = new System.Drawing.Size(42, 33);
             this.e1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.e1.TabIndex = 31;
             this.e1.TabStop = false;
+            this.e1.Click += new System.EventHandler(this.e1_Click);
             // 
             // d1
             // 
             this.d1.BackColor = System.Drawing.Color.LimeGreen;
-            this.d1.Location = new System.Drawing.Point(449, 97);
+            this.d1.Location = new System.Drawing.Point(463, 97);
             this.d1.Name = "d1";
             this.d1.Size = new System.Drawing.Size(42, 33);
             this.d1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.d1.TabIndex = 29;
             this.d1.TabStop = false;
-            // 
-            // a1r
-            // 
-            this.a1r.BackColor = System.Drawing.Color.Firebrick;
-            this.a1r.Location = new System.Drawing.Point(305, 97);
-            this.a1r.Name = "a1r";
-            this.a1r.Size = new System.Drawing.Size(42, 33);
-            this.a1r.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.a1r.TabIndex = 40;
-            this.a1r.TabStop = false;
-            this.a1r.Visible = false;
-            // 
-            // b1r
-            // 
-            this.b1r.BackColor = System.Drawing.Color.Firebrick;
-            this.b1r.Location = new System.Drawing.Point(353, 97);
-            this.b1r.Name = "b1r";
-            this.b1r.Size = new System.Drawing.Size(42, 33);
-            this.b1r.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.b1r.TabIndex = 41;
-            this.b1r.TabStop = false;
-            this.b1r.Visible = false;
-            // 
-            // c1r
-            // 
-            this.c1r.BackColor = System.Drawing.Color.Firebrick;
-            this.c1r.Location = new System.Drawing.Point(401, 97);
-            this.c1r.Name = "c1r";
-            this.c1r.Size = new System.Drawing.Size(42, 33);
-            this.c1r.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.c1r.TabIndex = 42;
-            this.c1r.TabStop = false;
-            this.c1r.Visible = false;
-            // 
-            // d1r
-            // 
-            this.d1r.BackColor = System.Drawing.Color.Firebrick;
-            this.d1r.Location = new System.Drawing.Point(449, 97);
-            this.d1r.Name = "d1r";
-            this.d1r.Size = new System.Drawing.Size(42, 33);
-            this.d1r.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.d1r.TabIndex = 43;
-            this.d1r.TabStop = false;
-            this.d1r.Visible = false;
-            // 
-            // a2r
-            // 
-            this.a2r.BackColor = System.Drawing.Color.Firebrick;
-            this.a2r.Location = new System.Drawing.Point(353, 136);
-            this.a2r.Name = "a2r";
-            this.a2r.Size = new System.Drawing.Size(42, 33);
-            this.a2r.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.a2r.TabIndex = 44;
-            this.a2r.TabStop = false;
-            this.a2r.Visible = false;
-            // 
-            // b2r
-            // 
-            this.b2r.BackColor = System.Drawing.Color.Firebrick;
-            this.b2r.Location = new System.Drawing.Point(401, 136);
-            this.b2r.Name = "b2r";
-            this.b2r.Size = new System.Drawing.Size(42, 33);
-            this.b2r.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.b2r.TabIndex = 45;
-            this.b2r.TabStop = false;
-            this.b2r.Visible = false;
-            // 
-            // c2r
-            // 
-            this.c2r.BackColor = System.Drawing.Color.Firebrick;
-            this.c2r.Location = new System.Drawing.Point(449, 136);
-            this.c2r.Name = "c2r";
-            this.c2r.Size = new System.Drawing.Size(42, 33);
-            this.c2r.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.c2r.TabIndex = 46;
-            this.c2r.TabStop = false;
-            this.c2r.Visible = false;
-            // 
-            // b3r
-            // 
-            this.b3r.BackColor = System.Drawing.Color.Firebrick;
-            this.b3r.Location = new System.Drawing.Point(449, 175);
-            this.b3r.Name = "b3r";
-            this.b3r.Size = new System.Drawing.Size(42, 33);
-            this.b3r.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.b3r.TabIndex = 47;
-            this.b3r.TabStop = false;
-            this.b3r.Visible = false;
-            // 
-            // a3r
-            // 
-            this.a3r.BackColor = System.Drawing.Color.Firebrick;
-            this.a3r.Location = new System.Drawing.Point(401, 175);
-            this.a3r.Name = "a3r";
-            this.a3r.Size = new System.Drawing.Size(42, 33);
-            this.a3r.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.a3r.TabIndex = 48;
-            this.a3r.TabStop = false;
-            this.a3r.Visible = false;
-            // 
-            // c3r
-            // 
-            this.c3r.BackColor = System.Drawing.Color.Firebrick;
-            this.c3r.Location = new System.Drawing.Point(507, 175);
-            this.c3r.Name = "c3r";
-            this.c3r.Size = new System.Drawing.Size(42, 33);
-            this.c3r.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.c3r.TabIndex = 57;
-            this.c3r.TabStop = false;
-            this.c3r.Visible = false;
-            // 
-            // d3r
-            // 
-            this.d3r.BackColor = System.Drawing.Color.Firebrick;
-            this.d3r.Location = new System.Drawing.Point(555, 175);
-            this.d3r.Name = "d3r";
-            this.d3r.Size = new System.Drawing.Size(42, 33);
-            this.d3r.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.d3r.TabIndex = 56;
-            this.d3r.TabStop = false;
-            this.d3r.Visible = false;
-            // 
-            // f2r
-            // 
-            this.f2r.BackColor = System.Drawing.Color.Firebrick;
-            this.f2r.Location = new System.Drawing.Point(603, 136);
-            this.f2r.Name = "f2r";
-            this.f2r.Size = new System.Drawing.Size(42, 33);
-            this.f2r.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.f2r.TabIndex = 55;
-            this.f2r.TabStop = false;
-            this.f2r.Visible = false;
-            // 
-            // e2r
-            // 
-            this.e2r.BackColor = System.Drawing.Color.Firebrick;
-            this.e2r.Location = new System.Drawing.Point(555, 136);
-            this.e2r.Name = "e2r";
-            this.e2r.Size = new System.Drawing.Size(42, 33);
-            this.e2r.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.e2r.TabIndex = 54;
-            this.e2r.TabStop = false;
-            this.e2r.Visible = false;
-            // 
-            // d2r
-            // 
-            this.d2r.BackColor = System.Drawing.Color.Firebrick;
-            this.d2r.Location = new System.Drawing.Point(507, 136);
-            this.d2r.Name = "d2r";
-            this.d2r.Size = new System.Drawing.Size(42, 33);
-            this.d2r.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.d2r.TabIndex = 53;
-            this.d2r.TabStop = false;
-            this.d2r.Visible = false;
-            // 
-            // h1r
-            // 
-            this.h1r.BackColor = System.Drawing.Color.Firebrick;
-            this.h1r.Location = new System.Drawing.Point(651, 97);
-            this.h1r.Name = "h1r";
-            this.h1r.Size = new System.Drawing.Size(42, 33);
-            this.h1r.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.h1r.TabIndex = 52;
-            this.h1r.TabStop = false;
-            this.h1r.Visible = false;
-            // 
-            // g1r
-            // 
-            this.g1r.BackColor = System.Drawing.Color.Firebrick;
-            this.g1r.Location = new System.Drawing.Point(603, 97);
-            this.g1r.Name = "g1r";
-            this.g1r.Size = new System.Drawing.Size(42, 33);
-            this.g1r.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.g1r.TabIndex = 51;
-            this.g1r.TabStop = false;
-            this.g1r.Visible = false;
-            // 
-            // f1r
-            // 
-            this.f1r.BackColor = System.Drawing.Color.Firebrick;
-            this.f1r.Location = new System.Drawing.Point(555, 97);
-            this.f1r.Name = "f1r";
-            this.f1r.Size = new System.Drawing.Size(42, 33);
-            this.f1r.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.f1r.TabIndex = 50;
-            this.f1r.TabStop = false;
-            this.f1r.Visible = false;
-            // 
-            // e1r
-            // 
-            this.e1r.BackColor = System.Drawing.Color.Firebrick;
-            this.e1r.Location = new System.Drawing.Point(507, 97);
-            this.e1r.Name = "e1r";
-            this.e1r.Size = new System.Drawing.Size(42, 33);
-            this.e1r.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.e1r.TabIndex = 49;
-            this.e1r.TabStop = false;
-            this.e1r.Visible = false;
+            this.d1.Click += new System.EventHandler(this.d1_Click);
             // 
             // picveloz
             // 
@@ -734,7 +520,7 @@
             // picavenger
             // 
             this.picavenger.Image = ((System.Drawing.Image)(resources.GetObject("picavenger.Image")));
-            this.picavenger.Location = new System.Drawing.Point(733, -2);
+            this.picavenger.Location = new System.Drawing.Point(733, 0);
             this.picavenger.Name = "picavenger";
             this.picavenger.Size = new System.Drawing.Size(254, 310);
             this.picavenger.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -742,31 +528,26 @@
             this.picavenger.TabStop = false;
             this.picavenger.Visible = false;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Black;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(991, 2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(29, 26);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 60;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
             // comprar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(999, 443);
+            this.ClientSize = new System.Drawing.Size(1020, 443);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.picavenger);
             this.Controls.Add(this.picveloz);
-            this.Controls.Add(this.c3r);
-            this.Controls.Add(this.d3r);
-            this.Controls.Add(this.f2r);
-            this.Controls.Add(this.e2r);
-            this.Controls.Add(this.d2r);
-            this.Controls.Add(this.h1r);
-            this.Controls.Add(this.g1r);
-            this.Controls.Add(this.f1r);
-            this.Controls.Add(this.e1r);
-            this.Controls.Add(this.a3r);
-            this.Controls.Add(this.b3r);
-            this.Controls.Add(this.c2r);
-            this.Controls.Add(this.b2r);
-            this.Controls.Add(this.a2r);
-            this.Controls.Add(this.d1r);
-            this.Controls.Add(this.c1r);
-            this.Controls.Add(this.b1r);
-            this.Controls.Add(this.a1r);
             this.Controls.Add(this.d3);
             this.Controls.Add(this.h1);
             this.Controls.Add(this.c3);
@@ -819,26 +600,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.f1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.e1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.d1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a1r)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b1r)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c1r)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.d1r)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a2r)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b2r)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c2r)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b3r)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a3r)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c3r)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.d3r)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.f2r)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.e2r)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.d2r)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.h1r)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.g1r)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.f1r)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.e1r)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picveloz)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picavenger)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -884,25 +648,8 @@
         private System.Windows.Forms.PictureBox f1;
         private System.Windows.Forms.PictureBox e1;
         private System.Windows.Forms.PictureBox d1;
-        private System.Windows.Forms.PictureBox a1r;
-        private System.Windows.Forms.PictureBox b1r;
-        private System.Windows.Forms.PictureBox c1r;
-        private System.Windows.Forms.PictureBox d1r;
-        private System.Windows.Forms.PictureBox a2r;
-        private System.Windows.Forms.PictureBox b2r;
-        private System.Windows.Forms.PictureBox c2r;
-        private System.Windows.Forms.PictureBox b3r;
-        private System.Windows.Forms.PictureBox a3r;
-        private System.Windows.Forms.PictureBox c3r;
-        private System.Windows.Forms.PictureBox d3r;
-        private System.Windows.Forms.PictureBox f2r;
-        private System.Windows.Forms.PictureBox e2r;
-        private System.Windows.Forms.PictureBox d2r;
-        private System.Windows.Forms.PictureBox h1r;
-        private System.Windows.Forms.PictureBox g1r;
-        private System.Windows.Forms.PictureBox f1r;
-        private System.Windows.Forms.PictureBox e1r;
         private System.Windows.Forms.PictureBox picveloz;
         private System.Windows.Forms.PictureBox picavenger;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
