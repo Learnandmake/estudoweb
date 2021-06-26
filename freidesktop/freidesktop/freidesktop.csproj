@@ -193,6 +193,12 @@
     <Compile Include="session5\menu\menus5.Designer.cs">
       <DependentUpon>menus5.cs</DependentUpon>
     </Compile>
+    <Compile Include="session6\form\comprar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="session6\form\comprar.Designer.cs">
+      <DependentUpon>comprar.cs</DependentUpon>
+    </Compile>
     <Compile Include="session6\form\frmlogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -296,6 +302,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="session6\form\frmlogin.resx">
       <DependentUpon>frmlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="session6\form\inicial.resx">
+      <DependentUpon>inicial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="session6\menu\menu.resx">
       <DependentUpon>menu.cs</DependentUpon>

@@ -16,5 +16,19 @@ namespace freidesktop.session6.form
         {
             InitializeComponent();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btncomprar_Click(object sender, EventArgs e)
+        {
+
+            comprar m = new comprar();
+            m.Show();
+            this.Visible = false;
+
+        }
     }
 }
