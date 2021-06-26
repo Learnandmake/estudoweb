@@ -52,6 +52,11 @@
             this.label9 = new System.Windows.Forms.Label();
             this.lblai = new System.Windows.Forms.Label();
             this.gf = new System.Windows.Forms.GroupBox();
+            this.picaritosteles = new System.Windows.Forms.PictureBox();
+            this.picsocrates = new System.Windows.Forms.PictureBox();
+            this.picrene = new System.Windows.Forms.PictureBox();
+            this.picrich = new System.Windows.Forms.PictureBox();
+            this.picepicro = new System.Windows.Forms.PictureBox();
             this.picnext = new System.Windows.Forms.PictureBox();
             this.picbefore = new System.Windows.Forms.PictureBox();
             this.lblcitacao = new System.Windows.Forms.Label();
@@ -107,17 +112,17 @@
             this.geografiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.químicaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.picaritosteles = new System.Windows.Forms.PictureBox();
-            this.picsocrates = new System.Windows.Forms.PictureBox();
-            this.picrene = new System.Windows.Forms.PictureBox();
-            this.picrich = new System.Windows.Forms.PictureBox();
-            this.picepicro = new System.Windows.Forms.PictureBox();
             this.gm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nma)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nmb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picarea)).BeginInit();
             this.gp.SuspendLayout();
             this.gf.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picaritosteles)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picsocrates)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picrene)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picrich)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picepicro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picnext)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbefore)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picninja)).BeginInit();
@@ -129,11 +134,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picc)).BeginInit();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picaritosteles)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picsocrates)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picrene)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picrich)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picepicro)).BeginInit();
             this.SuspendLayout();
             // 
             // gm
@@ -361,10 +361,65 @@
             this.gf.TabStop = false;
             this.gf.Visible = false;
             // 
+            // picaritosteles
+            // 
+            this.picaritosteles.Image = ((System.Drawing.Image)(resources.GetObject("picaritosteles.Image")));
+            this.picaritosteles.Location = new System.Drawing.Point(219, 12);
+            this.picaritosteles.Name = "picaritosteles";
+            this.picaritosteles.Size = new System.Drawing.Size(117, 81);
+            this.picaritosteles.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picaritosteles.TabIndex = 12;
+            this.picaritosteles.TabStop = false;
+            this.picaritosteles.Visible = false;
+            // 
+            // picsocrates
+            // 
+            this.picsocrates.Image = ((System.Drawing.Image)(resources.GetObject("picsocrates.Image")));
+            this.picsocrates.Location = new System.Drawing.Point(219, 12);
+            this.picsocrates.Name = "picsocrates";
+            this.picsocrates.Size = new System.Drawing.Size(117, 81);
+            this.picsocrates.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picsocrates.TabIndex = 13;
+            this.picsocrates.TabStop = false;
+            this.picsocrates.Visible = false;
+            // 
+            // picrene
+            // 
+            this.picrene.Image = ((System.Drawing.Image)(resources.GetObject("picrene.Image")));
+            this.picrene.Location = new System.Drawing.Point(219, 12);
+            this.picrene.Name = "picrene";
+            this.picrene.Size = new System.Drawing.Size(117, 81);
+            this.picrene.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picrene.TabIndex = 14;
+            this.picrene.TabStop = false;
+            this.picrene.Visible = false;
+            // 
+            // picrich
+            // 
+            this.picrich.Image = ((System.Drawing.Image)(resources.GetObject("picrich.Image")));
+            this.picrich.Location = new System.Drawing.Point(219, 12);
+            this.picrich.Name = "picrich";
+            this.picrich.Size = new System.Drawing.Size(117, 81);
+            this.picrich.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picrich.TabIndex = 15;
+            this.picrich.TabStop = false;
+            this.picrich.Visible = false;
+            // 
+            // picepicro
+            // 
+            this.picepicro.Image = ((System.Drawing.Image)(resources.GetObject("picepicro.Image")));
+            this.picepicro.Location = new System.Drawing.Point(219, 12);
+            this.picepicro.Name = "picepicro";
+            this.picepicro.Size = new System.Drawing.Size(117, 81);
+            this.picepicro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picepicro.TabIndex = 16;
+            this.picepicro.TabStop = false;
+            this.picepicro.Visible = false;
+            // 
             // picnext
             // 
             this.picnext.Image = ((System.Drawing.Image)(resources.GetObject("picnext.Image")));
-            this.picnext.Location = new System.Drawing.Point(278, 125);
+            this.picnext.Location = new System.Drawing.Point(272, 125);
             this.picnext.Name = "picnext";
             this.picnext.Size = new System.Drawing.Size(64, 50);
             this.picnext.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -386,7 +441,7 @@
             // lblcitacao
             // 
             this.lblcitacao.AutoSize = true;
-            this.lblcitacao.Location = new System.Drawing.Point(0, 92);
+            this.lblcitacao.Location = new System.Drawing.Point(15, 99);
             this.lblcitacao.Name = "lblcitacao";
             this.lblcitacao.Size = new System.Drawing.Size(148, 13);
             this.lblcitacao.TabIndex = 9;
@@ -461,7 +516,7 @@
             this.gg.Controls.Add(this.label12);
             this.gg.Controls.Add(this.label11);
             this.gg.Controls.Add(this.pictureBox1);
-            this.gg.Location = new System.Drawing.Point(419, 322);
+            this.gg.Location = new System.Drawing.Point(12, 27);
             this.gg.Name = "gg";
             this.gg.Size = new System.Drawing.Size(342, 210);
             this.gg.TabIndex = 9;
@@ -478,6 +533,7 @@
             this.lblse.Size = new System.Drawing.Size(14, 13);
             this.lblse.TabIndex = 36;
             this.lblse.Text = "?";
+            this.lblse.MouseEnter += new System.EventHandler(this.lblse_MouseEnter);
             // 
             // lblal
             // 
@@ -489,6 +545,7 @@
             this.lblal.Size = new System.Drawing.Size(14, 13);
             this.lblal.TabIndex = 35;
             this.lblal.Text = "?";
+            this.lblal.MouseEnter += new System.EventHandler(this.lblal_MouseEnter);
             // 
             // lbldf
             // 
@@ -500,6 +557,7 @@
             this.lbldf.Size = new System.Drawing.Size(14, 13);
             this.lbldf.TabIndex = 34;
             this.lbldf.Text = "?";
+            this.lbldf.MouseEnter += new System.EventHandler(this.lbldf_MouseEnter);
             // 
             // lblgo
             // 
@@ -511,6 +569,7 @@
             this.lblgo.Size = new System.Drawing.Size(14, 13);
             this.lblgo.TabIndex = 33;
             this.lblgo.Text = "?";
+            this.lblgo.MouseEnter += new System.EventHandler(this.lblgo_MouseEnter);
             // 
             // lblpb
             // 
@@ -522,6 +581,7 @@
             this.lblpb.Size = new System.Drawing.Size(14, 13);
             this.lblpb.TabIndex = 32;
             this.lblpb.Text = "?";
+            this.lblpb.MouseEnter += new System.EventHandler(this.lblpb_MouseEnter);
             // 
             // lblce
             // 
@@ -533,6 +593,7 @@
             this.lblce.Size = new System.Drawing.Size(14, 13);
             this.lblce.TabIndex = 31;
             this.lblce.Text = "?";
+            this.lblce.MouseEnter += new System.EventHandler(this.lblce_MouseEnter);
             // 
             // lblrn
             // 
@@ -544,6 +605,7 @@
             this.lblrn.Size = new System.Drawing.Size(14, 13);
             this.lblrn.TabIndex = 30;
             this.lblrn.Text = "?";
+            this.lblrn.MouseEnter += new System.EventHandler(this.lblrn_MouseEnter);
             // 
             // lblpe
             // 
@@ -555,6 +617,7 @@
             this.lblpe.Size = new System.Drawing.Size(14, 13);
             this.lblpe.TabIndex = 29;
             this.lblpe.Text = "?";
+            this.lblpe.MouseEnter += new System.EventHandler(this.lblpe_MouseEnter);
             // 
             // lblap
             // 
@@ -566,6 +629,7 @@
             this.lblap.Size = new System.Drawing.Size(14, 13);
             this.lblap.TabIndex = 28;
             this.lblap.Text = "?";
+            this.lblap.MouseEnter += new System.EventHandler(this.lblap_MouseEnter);
             // 
             // lblro
             // 
@@ -577,6 +641,7 @@
             this.lblro.Size = new System.Drawing.Size(14, 13);
             this.lblro.TabIndex = 27;
             this.lblro.Text = "?";
+            this.lblro.MouseEnter += new System.EventHandler(this.lblro_MouseEnter);
             // 
             // lblma
             // 
@@ -588,6 +653,7 @@
             this.lblma.Size = new System.Drawing.Size(14, 13);
             this.lblma.TabIndex = 26;
             this.lblma.Text = "?";
+            this.lblma.MouseEnter += new System.EventHandler(this.lblma_MouseEnter);
             // 
             // lblrs
             // 
@@ -599,6 +665,7 @@
             this.lblrs.Size = new System.Drawing.Size(14, 13);
             this.lblrs.TabIndex = 25;
             this.lblrs.Text = "?";
+            this.lblrs.MouseEnter += new System.EventHandler(this.lblrs_MouseEnter);
             // 
             // lblsc
             // 
@@ -610,6 +677,7 @@
             this.lblsc.Size = new System.Drawing.Size(14, 13);
             this.lblsc.TabIndex = 24;
             this.lblsc.Text = "?";
+            this.lblsc.MouseEnter += new System.EventHandler(this.lblsc_MouseEnter);
             // 
             // lblpr
             // 
@@ -621,6 +689,7 @@
             this.lblpr.Size = new System.Drawing.Size(14, 13);
             this.lblpr.TabIndex = 23;
             this.lblpr.Text = "?";
+            this.lblpr.MouseEnter += new System.EventHandler(this.lblpr_MouseEnter);
             // 
             // lblms
             // 
@@ -632,6 +701,7 @@
             this.lblms.Size = new System.Drawing.Size(14, 13);
             this.lblms.TabIndex = 22;
             this.lblms.Text = "?";
+            this.lblms.MouseEnter += new System.EventHandler(this.lblms_MouseEnter);
             // 
             // lblpi
             // 
@@ -643,6 +713,7 @@
             this.lblpi.Size = new System.Drawing.Size(14, 13);
             this.lblpi.TabIndex = 21;
             this.lblpi.Text = "?";
+            this.lblpi.MouseEnter += new System.EventHandler(this.lblpi_MouseEnter);
             // 
             // lblto
             // 
@@ -654,6 +725,7 @@
             this.lblto.Size = new System.Drawing.Size(14, 13);
             this.lblto.TabIndex = 20;
             this.lblto.Text = "?";
+            this.lblto.MouseEnter += new System.EventHandler(this.lblto_MouseEnter);
             // 
             // lblpa
             // 
@@ -665,6 +737,7 @@
             this.lblpa.Size = new System.Drawing.Size(14, 13);
             this.lblpa.TabIndex = 19;
             this.lblpa.Text = "?";
+            this.lblpa.MouseEnter += new System.EventHandler(this.lblpa_MouseEnter);
             // 
             // lblac
             // 
@@ -676,6 +749,7 @@
             this.lblac.Size = new System.Drawing.Size(14, 13);
             this.lblac.TabIndex = 18;
             this.lblac.Text = "?";
+            this.lblac.MouseEnter += new System.EventHandler(this.lblac_MouseEnter);
             // 
             // lblrr
             // 
@@ -687,28 +761,31 @@
             this.lblrr.Size = new System.Drawing.Size(14, 13);
             this.lblrr.TabIndex = 17;
             this.lblrr.Text = "?";
+            this.lblrr.MouseEnter += new System.EventHandler(this.lblrr_MouseEnter);
             // 
             // lblam
             // 
             this.lblam.AutoSize = true;
             this.lblam.BackColor = System.Drawing.Color.YellowGreen;
             this.lblam.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblam.Location = new System.Drawing.Point(143, 44);
+            this.lblam.Location = new System.Drawing.Point(133, 46);
             this.lblam.Name = "lblam";
             this.lblam.Size = new System.Drawing.Size(14, 13);
             this.lblam.TabIndex = 16;
             this.lblam.Text = "?";
+            this.lblam.MouseEnter += new System.EventHandler(this.lblam_MouseEnter);
             // 
             // lblmt
             // 
             this.lblmt.AutoSize = true;
             this.lblmt.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.lblmt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblmt.Location = new System.Drawing.Point(189, 91);
+            this.lblmt.Location = new System.Drawing.Point(189, 99);
             this.lblmt.Name = "lblmt";
             this.lblmt.Size = new System.Drawing.Size(14, 13);
             this.lblmt.TabIndex = 15;
             this.lblmt.Text = "?";
+            this.lblmt.MouseEnter += new System.EventHandler(this.lblmt_MouseEnter);
             // 
             // lblba
             // 
@@ -720,6 +797,7 @@
             this.lblba.Size = new System.Drawing.Size(14, 13);
             this.lblba.TabIndex = 14;
             this.lblba.Text = "?";
+            this.lblba.MouseEnter += new System.EventHandler(this.lblba_MouseEnter);
             // 
             // lbles
             // 
@@ -731,6 +809,7 @@
             this.lbles.Size = new System.Drawing.Size(14, 13);
             this.lbles.TabIndex = 13;
             this.lbles.Text = "?";
+            this.lbles.MouseEnter += new System.EventHandler(this.lbles_MouseEnter);
             // 
             // lblrj
             // 
@@ -742,17 +821,19 @@
             this.lblrj.Size = new System.Drawing.Size(14, 13);
             this.lblrj.TabIndex = 12;
             this.lblrj.Text = "?";
+            this.lblrj.MouseEnter += new System.EventHandler(this.lblrj_MouseEnter);
             // 
             // lblmg
             // 
             this.lblmg.AutoSize = true;
             this.lblmg.BackColor = System.Drawing.Color.Thistle;
             this.lblmg.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblmg.Location = new System.Drawing.Point(256, 116);
+            this.lblmg.Location = new System.Drawing.Point(258, 125);
             this.lblmg.Name = "lblmg";
             this.lblmg.Size = new System.Drawing.Size(14, 13);
             this.lblmg.TabIndex = 11;
             this.lblmg.Text = "?";
+            this.lblmg.MouseEnter += new System.EventHandler(this.lblmg_MouseEnter);
             // 
             // lblsp
             // 
@@ -764,12 +845,13 @@
             this.lblsp.Size = new System.Drawing.Size(14, 13);
             this.lblsp.TabIndex = 10;
             this.lblsp.Text = "?";
+            this.lblsp.MouseEnter += new System.EventHandler(this.lblsp_MouseEnter);
             // 
             // lblcapital
             // 
             this.lblcapital.AutoSize = true;
             this.lblcapital.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblcapital.Location = new System.Drawing.Point(15, 166);
+            this.lblcapital.Location = new System.Drawing.Point(21, 166);
             this.lblcapital.Name = "lblcapital";
             this.lblcapital.Size = new System.Drawing.Size(11, 13);
             this.lblcapital.TabIndex = 9;
@@ -779,7 +861,7 @@
             // 
             this.lblestado.AutoSize = true;
             this.lblestado.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblestado.Location = new System.Drawing.Point(16, 129);
+            this.lblestado.Location = new System.Drawing.Point(21, 129);
             this.lblestado.Name = "lblestado";
             this.lblestado.Size = new System.Drawing.Size(11, 13);
             this.lblestado.TabIndex = 8;
@@ -957,61 +1039,6 @@
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // picaritosteles
-            // 
-            this.picaritosteles.Image = ((System.Drawing.Image)(resources.GetObject("picaritosteles.Image")));
-            this.picaritosteles.Location = new System.Drawing.Point(219, 12);
-            this.picaritosteles.Name = "picaritosteles";
-            this.picaritosteles.Size = new System.Drawing.Size(117, 81);
-            this.picaritosteles.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picaritosteles.TabIndex = 12;
-            this.picaritosteles.TabStop = false;
-            this.picaritosteles.Visible = false;
-            // 
-            // picsocrates
-            // 
-            this.picsocrates.Image = ((System.Drawing.Image)(resources.GetObject("picsocrates.Image")));
-            this.picsocrates.Location = new System.Drawing.Point(219, 12);
-            this.picsocrates.Name = "picsocrates";
-            this.picsocrates.Size = new System.Drawing.Size(117, 81);
-            this.picsocrates.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picsocrates.TabIndex = 13;
-            this.picsocrates.TabStop = false;
-            this.picsocrates.Visible = false;
-            // 
-            // picrene
-            // 
-            this.picrene.Image = ((System.Drawing.Image)(resources.GetObject("picrene.Image")));
-            this.picrene.Location = new System.Drawing.Point(219, 12);
-            this.picrene.Name = "picrene";
-            this.picrene.Size = new System.Drawing.Size(117, 81);
-            this.picrene.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picrene.TabIndex = 14;
-            this.picrene.TabStop = false;
-            this.picrene.Visible = false;
-            // 
-            // picrich
-            // 
-            this.picrich.Image = ((System.Drawing.Image)(resources.GetObject("picrich.Image")));
-            this.picrich.Location = new System.Drawing.Point(219, 12);
-            this.picrich.Name = "picrich";
-            this.picrich.Size = new System.Drawing.Size(117, 81);
-            this.picrich.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picrich.TabIndex = 15;
-            this.picrich.TabStop = false;
-            this.picrich.Visible = false;
-            // 
-            // picepicro
-            // 
-            this.picepicro.Image = ((System.Drawing.Image)(resources.GetObject("picepicro.Image")));
-            this.picepicro.Location = new System.Drawing.Point(219, 12);
-            this.picepicro.Name = "picepicro";
-            this.picepicro.Size = new System.Drawing.Size(117, 81);
-            this.picepicro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picepicro.TabIndex = 16;
-            this.picepicro.TabStop = false;
-            this.picepicro.Visible = false;
-            // 
             // area
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1035,6 +1062,11 @@
             this.gp.PerformLayout();
             this.gf.ResumeLayout(false);
             this.gf.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picaritosteles)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picsocrates)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picrene)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picrich)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picepicro)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picnext)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbefore)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picninja)).EndInit();
@@ -1049,11 +1081,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.picc)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picaritosteles)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picsocrates)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picrene)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picrich)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picepicro)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -210,5 +210,171 @@ namespace freidesktop.session5.form
 
     }
         }
+        //sudeste
+        private void lblsp_MouseEnter(object sender, EventArgs e)
+        {
+            lblcapital.Text = "São Paulo";
+            lblestado.Text = "São Paulo";
+        }
+
+        private void lblmg_MouseEnter(object sender, EventArgs e)
+        {
+            lblcapital.Text = "Belo Horizonte";
+            lblestado.Text = "Minas Gerais";
+        }
+
+        private void lblrj_MouseEnter(object sender, EventArgs e)
+        {
+            lblcapital.Text = "Rio de janeiro";
+            lblestado.Text = "Rio de janeiro";
+        }
+
+        private void lbles_MouseEnter(object sender, EventArgs e)
+        {
+            lblcapital.Text = "Vitória";
+            lblestado.Text = "Espírito Santo";
+        }
+
+        //sul
+        private void lblpr_MouseEnter(object sender, EventArgs e)
+        {
+            lblcapital.Text = "Curitiba";
+            lblestado.Text = "Paraná";
+        }
+
+        private void lblsc_MouseEnter(object sender, EventArgs e)
+        {
+            lblcapital.Text = "Florianópolis";
+            lblestado.Text = "Santa Catarina";
+        }
+
+        private void lblrs_MouseEnter(object sender, EventArgs e)
+        {
+            lblcapital.Text = "Porto Alegre";
+            lblestado.Text = "Rio Grande do Sul";
+        }
+
+        //centrooeste
+        private void lblms_MouseEnter(object sender, EventArgs e)
+        {
+            lblcapital.Text = "Campo Grande";
+            lblestado.Text = "Mato Grosso do Sul";
+        }
+
+        private void lblmt_MouseEnter(object sender, EventArgs e)
+        {
+            lblcapital.Text = "Cuiabá";
+            lblestado.Text = "Mato Grosso";
+        }
+
+        private void lblgo_MouseEnter(object sender, EventArgs e)
+        {
+            lblcapital.Text = "Goiânia";
+            lblestado.Text = "Goiás";
+        }
+
+        private void lbldf_MouseEnter(object sender, EventArgs e)
+        {
+            lblcapital.Text = "Brasília";
+            lblestado.Text = "Distrito Federal";
+        }
+
+        //norte
+        private void lblac_MouseEnter(object sender, EventArgs e)
+        {
+            lblcapital.Text = "Rio Branco";
+            lblestado.Text = "Acre";
+        }
+
+        private void lblro_MouseEnter(object sender, EventArgs e)
+        {
+            lblcapital.Text = "Porto Velho";
+            lblestado.Text = "Rondônia";
+        }
+
+        private void lblam_MouseEnter(object sender, EventArgs e)
+        {
+            lblcapital.Text = "Manaus";
+            lblestado.Text = "Amazonas";
+        }
+
+        private void lblrr_MouseEnter(object sender, EventArgs e)
+        {
+            lblcapital.Text = "Boa Vista";
+            lblestado.Text = "Roraima";
+        }
+
+        private void lblpa_MouseEnter(object sender, EventArgs e)
+        {
+            lblcapital.Text = "Belém";
+            lblestado.Text = "Pará";
+        }
+
+        private void lblap_MouseEnter(object sender, EventArgs e)
+        {
+            lblcapital.Text = "Macapá";
+            lblestado.Text = "Amapá";
+        }
+
+        private void lblto_MouseEnter(object sender, EventArgs e)
+        {
+            lblcapital.Text = "Palmas";
+            lblestado.Text = "Tocantins";
+        }
+
+        //nordeste
+        private void lblba_MouseEnter(object sender, EventArgs e)
+        {
+            lblcapital.Text = "Salvador";
+            lblestado.Text = "Bahia";
+        }
+
+        private void lblse_MouseEnter(object sender, EventArgs e)
+        {
+            lblcapital.Text = "Aracaju";
+            lblestado.Text = "Sergipe";
+        }
+
+        private void lblal_MouseEnter(object sender, EventArgs e)
+        {
+            lblcapital.Text = "Maceió";
+            lblestado.Text = "Alagoas";
+        }
+
+        private void lblpe_MouseEnter(object sender, EventArgs e)
+        {
+            lblcapital.Text = "Recife";
+            lblestado.Text = "Pernambuco";
+        }
+
+        private void lblpb_MouseEnter(object sender, EventArgs e)
+        {
+            lblcapital.Text = "João Pessoa";
+            lblestado.Text = "Paraíba";
+        }
+
+        private void lblrn_MouseEnter(object sender, EventArgs e)
+        {
+            lblcapital.Text = "Natal";
+            lblestado.Text = "Rio Grande do Norte";
+        }
+
+        private void lblce_MouseEnter(object sender, EventArgs e)
+        {
+            lblcapital.Text = "Fortaleza";
+            lblestado.Text = "Ceará";
+        }
+
+        private void lblpi_MouseEnter(object sender, EventArgs e)
+        {
+            lblcapital.Text = "Teresina";
+            lblestado.Text = "Piauí";
+        }
+
+        private void lblma_MouseEnter(object sender, EventArgs e)
+        {
+            lblcapital.Text = "São Luís";
+            lblestado.Text = "Maranhão";
+        }
     }
 }
