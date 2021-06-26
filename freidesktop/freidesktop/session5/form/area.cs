@@ -376,5 +376,71 @@ namespace freidesktop.session5.form
             lblcapital.Text = "São Luís";
             lblestado.Text = "Maranhão";
         }
+
+        private void cboelemento_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string elemento = cboelemento.SelectedItem.ToString();
+
+            if(elemento =="ouro")
+            {
+                picouro.Visible = true;
+                picprata.Visible = false;
+                picc.Visible = false;
+            }
+            if (elemento == "prata")
+            {
+                picouro.Visible = false;
+                picprata.Visible = true;
+                picc.Visible = false;
+            }
+            if (elemento == "agua")
+            {
+                picouro.Visible = false;
+                picprata.Visible = false;
+                picc.Visible = true;
+            }
+            nudgrau.Maximum = 2865;
+            lblqestado.Text = "Estado:";
+            lblqestado.ForeColor = Color.Black;
+            nudgrau.Minimum = -20;
+            nudgrau.Value = -20;
+        }
+
+        private void nudgrau_ValueChanged(object sender, EventArgs e)
+        {
+            decimal grau = nudgrau.Value;
+            
+            if(grau== 0 &&cboelemento.SelectedItem.ToString()== "agua")
+            {
+                lblqestado.Text = "Liquido";
+                lblqestado.ForeColor = Color.Blue;
+            }
+
+            if (grau >= 100 && cboelemento.SelectedItem.ToString() == "agua")
+            {
+                lblqestado.Text = "Gás";
+                lblqestado.ForeColor = Color.Red;
+            }
+            if (grau >= 1538 && cboelemento.SelectedItem.ToString() == "prata")
+            {
+                lblqestado.Text = "Liquido";
+                lblqestado.ForeColor = Color.Green;
+            }
+            if (grau >= 2861 && cboelemento.SelectedItem.ToString() == "prata")
+            {
+                lblqestado.Text = "Gás";
+                lblqestado.ForeColor = Color.Red;
+            }
+            if (grau >= 1064 && cboelemento.SelectedItem.ToString() == "ouro")
+            {
+                lblqestado.Text = "Liquido";
+                lblqestado.ForeColor = Color.Green;
+            }
+            if (grau >= 2865 && cboelemento.SelectedItem.ToString() == "ouro")
+            {
+                lblqestado.Text = "Gás";
+                lblqestado.ForeColor = Color.Red;
+            }
+        }
     }
 }

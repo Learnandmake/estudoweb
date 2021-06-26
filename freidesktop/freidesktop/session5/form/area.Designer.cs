@@ -101,9 +101,9 @@
             this.picprata = new System.Windows.Forms.PictureBox();
             this.lblqestado = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.nudgrau = new System.Windows.Forms.NumericUpDown();
             this.label13 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cboelemento = new System.Windows.Forms.ComboBox();
             this.picc = new System.Windows.Forms.PictureBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.matematicaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -131,7 +131,7 @@
             this.gq.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picouro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picprata)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudgrau)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picc)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -484,7 +484,6 @@
             // 
             // gg
             // 
-            this.gg.Controls.Add(this.gq);
             this.gg.Controls.Add(this.lblse);
             this.gg.Controls.Add(this.lblal);
             this.gg.Controls.Add(this.lbldf);
@@ -904,11 +903,11 @@
             this.gq.Controls.Add(this.picprata);
             this.gq.Controls.Add(this.lblqestado);
             this.gq.Controls.Add(this.label14);
-            this.gq.Controls.Add(this.numericUpDown3);
+            this.gq.Controls.Add(this.nudgrau);
             this.gq.Controls.Add(this.label13);
-            this.gq.Controls.Add(this.comboBox2);
+            this.gq.Controls.Add(this.cboelemento);
             this.gq.Controls.Add(this.picc);
-            this.gq.Location = new System.Drawing.Point(1, 7);
+            this.gq.Location = new System.Drawing.Point(12, 31);
             this.gq.Name = "gq";
             this.gq.Size = new System.Drawing.Size(342, 206);
             this.gq.TabIndex = 11;
@@ -945,7 +944,6 @@
             this.lblqestado.Size = new System.Drawing.Size(54, 13);
             this.lblqestado.TabIndex = 14;
             this.lblqestado.Text = "Elemento:";
-            this.lblqestado.Visible = false;
             // 
             // label14
             // 
@@ -956,12 +954,13 @@
             this.label14.TabIndex = 13;
             this.label14.Text = "Graus Celsius:";
             // 
-            // numericUpDown3
+            // nudgrau
             // 
-            this.numericUpDown3.Location = new System.Drawing.Point(6, 69);
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown3.TabIndex = 10;
+            this.nudgrau.Location = new System.Drawing.Point(6, 69);
+            this.nudgrau.Name = "nudgrau";
+            this.nudgrau.Size = new System.Drawing.Size(120, 20);
+            this.nudgrau.TabIndex = 10;
+            this.nudgrau.ValueChanged += new System.EventHandler(this.nudgrau_ValueChanged);
             // 
             // label13
             // 
@@ -972,13 +971,19 @@
             this.label13.TabIndex = 10;
             this.label13.Text = "Elemento:";
             // 
-            // comboBox2
+            // cboelemento
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(6, 26);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 11;
+            this.cboelemento.FormattingEnabled = true;
+            this.cboelemento.Items.AddRange(new object[] {
+            "agua",
+            "prata",
+            "ouro"});
+            this.cboelemento.Location = new System.Drawing.Point(6, 26);
+            this.cboelemento.Name = "cboelemento";
+            this.cboelemento.Size = new System.Drawing.Size(121, 21);
+            this.cboelemento.TabIndex = 11;
+            this.cboelemento.Text = "Selecionar:";
+            this.cboelemento.SelectedIndexChanged += new System.EventHandler(this.cboelemento_SelectedIndexChanged);
             // 
             // picc
             // 
@@ -1036,7 +1041,7 @@
             this.químicaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(932, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(358, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -1044,7 +1049,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(932, 500);
+            this.ClientSize = new System.Drawing.Size(358, 241);
+            this.Controls.Add(this.gq);
             this.Controls.Add(this.gg);
             this.Controls.Add(this.gf);
             this.Controls.Add(this.gp);
@@ -1077,7 +1083,7 @@
             this.gq.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picouro)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picprata)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudgrau)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picc)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -1153,9 +1159,9 @@
         private System.Windows.Forms.PictureBox picprata;
         private System.Windows.Forms.Label lblqestado;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
+        private System.Windows.Forms.NumericUpDown nudgrau;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cboelemento;
         private System.Windows.Forms.PictureBox picc;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.ToolStripMenuItem matematicaToolStripMenuItem;
