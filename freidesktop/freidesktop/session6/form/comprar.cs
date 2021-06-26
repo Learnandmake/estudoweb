@@ -16,12 +16,15 @@ namespace freidesktop.session6.form
         {
             InitializeComponent();
         }
+      
+            
+          
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-     
+      
         //asento
         private void h1_Click(object sender, EventArgs e)
         {
@@ -203,6 +206,159 @@ namespace freidesktop.session6.form
             }
             else
             { d3.BackColor = Color.LimeGreen; }
+        }
+
+        private void cbofilme_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(cbofilme.SelectedItem.ToString() == "Harry potter")
+            {
+                try
+                {
+                    decimal inteira = nudinteira.Value;
+                    decimal meia = nudmeia.Value;
+                    string filme = cbofilme.SelectedItem.ToString();
+                    string cupom = txtcupom.Text;
+                    DateTime dia = dtpagendar.Value;
+                    cupom.ToLower();
+                    function.sessionsix six = new function.sessionsix();
+                    decimal total = six.calctotal(filme, inteira, meia, cupom, dia);
+                    lbltotal.Text = total.ToString();
+                }
+                catch (Exception)
+                { }
+                picharry.Visible = true;
+                picavenger.Visible = false;
+                picveloz.Visible = false;
+                gsinopse.Visible = true;
+                lblsinopse.Text = "Depois da sessão você vai sair falando as magia e fingindo que tem uma varinha";
+             }
+
+            if (cbofilme.SelectedItem.ToString() == "Velozes e furiosos")
+            {
+                try
+                {
+                    decimal inteira = nudinteira.Value;
+                    decimal meia = nudmeia.Value;
+                    string filme = cbofilme.SelectedItem.ToString();
+                    string cupom = txtcupom.Text;
+                    DateTime dia = dtpagendar.Value;
+                    cupom.ToLower();
+                    function.sessionsix six = new function.sessionsix();
+                    decimal total = six.calctotal(filme, inteira, meia, cupom, dia);
+                    lbltotal.Text = total.ToString();
+                }
+                catch (Exception)
+                { }
+                picharry.Visible = false;
+                picavenger.Visible = false;
+                picveloz.Visible = true;
+                gsinopse.Visible = true;
+                lblsinopse.Text = "Louco demais, e o toretto ainda continua careca";
+            }
+
+
+            if (cbofilme.SelectedItem.ToString() == "Avengers")
+            {
+                try
+                {
+                    decimal inteira = nudinteira.Value;
+                    decimal meia = nudmeia.Value;
+                    string filme = cbofilme.SelectedItem.ToString();
+                    string cupom = txtcupom.Text;
+                    DateTime dia = dtpagendar.Value;
+                    cupom.ToLower();
+                    function.sessionsix six = new function.sessionsix();
+                    decimal total = six.calctotal(filme, inteira, meia, cupom, dia);
+                    lbltotal.Text = total.ToString();
+                }
+                catch (Exception)
+                { }
+                picharry.Visible = false;
+                picavenger.Visible = true;
+                picveloz.Visible = false;
+                gsinopse.Visible = true;
+                lblsinopse.Text = "Como você ainda não assitiu?";
+            }
+        }
+        public void calc (string filme,decimal inteira,decimal meia)
+        {
+          
+          
+        }
+        private void lblcupom_Click(object sender, EventArgs e)
+        {
+            lblcupom.Visible = false;
+        }
+
+        private void btnlogin_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                decimal inteira = nudinteira.Value;
+                decimal meia = nudmeia.Value;
+                string filme = cbofilme.SelectedItem.ToString();
+                string cupom = txtcupom.Text;
+                DateTime dia = dtpagendar.Value;
+                cupom.ToLower();
+                function.sessionsix six = new function.sessionsix();
+                decimal total = six.calctotal(filme, inteira, meia, cupom, dia);
+                lbltotal.Text = total.ToString();
+            }
+            catch (Exception)
+            { }
+        }
+        private void nudinteira_ValueChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                decimal inteira = nudinteira.Value;
+                decimal meia = nudmeia.Value;
+                string filme = cbofilme.SelectedItem.ToString();
+                string cupom = txtcupom.Text;
+                DateTime dia = dtpagendar.Value;
+                cupom.ToLower();
+                function.sessionsix six = new function.sessionsix();
+                decimal total = six.calctotal(filme, inteira, meia, cupom, dia);
+                lbltotal.Text = total.ToString();
+            }
+            catch (Exception)
+            { }
+        }
+
+        private void nudmeia_ValueChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                decimal inteira = nudinteira.Value;
+                decimal meia = nudmeia.Value;
+                string filme = cbofilme.SelectedItem.ToString();
+                string cupom = txtcupom.Text;
+                DateTime dia = dtpagendar.Value;
+                cupom.ToLower();
+                function.sessionsix six = new function.sessionsix();
+                decimal total = six.calctotal(filme, inteira, meia, cupom, dia);
+                lbltotal.Text = total.ToString();
+            }
+            catch (Exception)
+            { }
+        }
+
+        private void dtpagendar_ValueChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                decimal inteira = nudinteira.Value;
+                decimal meia = nudmeia.Value;
+                string filme = cbofilme.SelectedItem.ToString();
+                string cupom = txtcupom.Text;
+                DateTime dia = dtpagendar.Value;
+                cupom.ToLower();
+                function.sessionsix six = new function.sessionsix();
+                decimal total = six.calctotal(filme, inteira, meia, cupom, dia);
+                lbltotal.Text = total.ToString();
+            }
+            catch(Exception)
+            { }
         }
     }
 }

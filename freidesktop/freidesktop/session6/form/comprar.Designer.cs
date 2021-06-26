@@ -132,6 +132,7 @@
             this.lblcupom.Size = new System.Drawing.Size(199, 15);
             this.lblcupom.TabIndex = 20;
             this.lblcupom.Text = "Insira seu cupom de desconto";
+            this.lblcupom.Click += new System.EventHandler(this.lblcupom_Click);
             // 
             // label6
             // 
@@ -150,6 +151,7 @@
             this.nudmeia.Name = "nudmeia";
             this.nudmeia.Size = new System.Drawing.Size(35, 20);
             this.nudmeia.TabIndex = 18;
+            this.nudmeia.ValueChanged += new System.EventHandler(this.nudmeia_ValueChanged);
             // 
             // label5
             // 
@@ -168,6 +170,7 @@
             this.dtpagendar.Name = "dtpagendar";
             this.dtpagendar.Size = new System.Drawing.Size(120, 20);
             this.dtpagendar.TabIndex = 16;
+            this.dtpagendar.ValueChanged += new System.EventHandler(this.dtpagendar_ValueChanged);
             // 
             // nudinteira
             // 
@@ -175,19 +178,21 @@
             this.nudinteira.Name = "nudinteira";
             this.nudinteira.Size = new System.Drawing.Size(35, 20);
             this.nudinteira.TabIndex = 15;
+            this.nudinteira.ValueChanged += new System.EventHandler(this.nudinteira_ValueChanged);
             // 
             // cbofilme
             // 
             this.cbofilme.FormattingEnabled = true;
             this.cbofilme.Items.AddRange(new object[] {
             "Harry potter",
-            "Velozes e furiosos 8",
-            "Avengers",
-            ""});
+            "Velozes e furiosos",
+            "Avengers"});
             this.cbofilme.Location = new System.Drawing.Point(6, 19);
             this.cbofilme.Name = "cbofilme";
             this.cbofilme.Size = new System.Drawing.Size(200, 21);
             this.cbofilme.TabIndex = 14;
+            this.cbofilme.Text = "Selecione:";
+            this.cbofilme.SelectedIndexChanged += new System.EventHandler(this.cbofilme_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -229,8 +234,9 @@
             this.btnlogin.Name = "btnlogin";
             this.btnlogin.Size = new System.Drawing.Size(207, 44);
             this.btnlogin.TabIndex = 7;
-            this.btnlogin.Text = "Login";
+            this.btnlogin.Text = "Aplicar";
             this.btnlogin.UseVisualStyleBackColor = false;
+            this.btnlogin.Click += new System.EventHandler(this.btnlogin_Click);
             // 
             // button1
             // 
@@ -289,11 +295,11 @@
             // 
             // lblsinopse
             // 
-            this.lblsinopse.AutoSize = true;
+            this.lblsinopse.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblsinopse.ForeColor = System.Drawing.Color.White;
-            this.lblsinopse.Location = new System.Drawing.Point(6, 16);
+            this.lblsinopse.Location = new System.Drawing.Point(6, 18);
             this.lblsinopse.Name = "lblsinopse";
-            this.lblsinopse.Size = new System.Drawing.Size(35, 13);
+            this.lblsinopse.Size = new System.Drawing.Size(242, 97);
             this.lblsinopse.TabIndex = 9;
             this.lblsinopse.Text = "label2";
             // 
@@ -581,7 +587,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picharry)).EndInit();
             this.gsinopse.ResumeLayout(false);
-            this.gsinopse.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.a1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.b1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c2)).EndInit();
