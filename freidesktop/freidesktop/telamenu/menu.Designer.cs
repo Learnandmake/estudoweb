@@ -35,9 +35,10 @@
             this.threeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fourToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fiveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sixToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eventoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.desafioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sixToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sevenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,7 +61,8 @@
             this.threeToolStripMenuItem,
             this.fourToolStripMenuItem,
             this.fiveToolStripMenuItem,
-            this.sixToolStripMenuItem});
+            this.sixToolStripMenuItem,
+            this.sevenToolStripMenuItem});
             this.sessionToolStripMenuItem.Name = "sessionToolStripMenuItem";
             this.sessionToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
             this.sessionToolStripMenuItem.Text = "Session";
@@ -100,6 +102,13 @@
             this.fiveToolStripMenuItem.Text = "Five";
             this.fiveToolStripMenuItem.Click += new System.EventHandler(this.fiveToolStripMenuItem_Click);
             // 
+            // sixToolStripMenuItem
+            // 
+            this.sixToolStripMenuItem.Name = "sixToolStripMenuItem";
+            this.sixToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.sixToolStripMenuItem.Text = "Six ";
+            this.sixToolStripMenuItem.Click += new System.EventHandler(this.sixToolStripMenuItem_Click);
+            // 
             // eventoToolStripMenuItem
             // 
             this.eventoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -115,12 +124,12 @@
             this.desafioToolStripMenuItem.Text = "Desafio";
             this.desafioToolStripMenuItem.Click += new System.EventHandler(this.desafioToolStripMenuItem_Click_1);
             // 
-            // sixToolStripMenuItem
+            // sevenToolStripMenuItem
             // 
-            this.sixToolStripMenuItem.Name = "sixToolStripMenuItem";
-            this.sixToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.sixToolStripMenuItem.Text = "Six ";
-            this.sixToolStripMenuItem.Click += new System.EventHandler(this.sixToolStripMenuItem_Click);
+            this.sevenToolStripMenuItem.Name = "sevenToolStripMenuItem";
+            this.sevenToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.sevenToolStripMenuItem.Text = "Seven";
+            this.sevenToolStripMenuItem.Click += new System.EventHandler(this.sevenToolStripMenuItem_Click);
             // 
             // menu
             // 
@@ -150,5 +159,6 @@
         private System.Windows.Forms.ToolStripMenuItem fourToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fiveToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sixToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sevenToolStripMenuItem;
     }
 }

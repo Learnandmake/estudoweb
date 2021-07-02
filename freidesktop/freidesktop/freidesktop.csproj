@@ -218,6 +218,18 @@
     <Compile Include="session6\menu\menu.Designer.cs">
       <DependentUpon>menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="session7\form\acai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="session7\form\acai.Designer.cs">
+      <DependentUpon>acai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="session7\menu\menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="session7\menu\menu.Designer.cs">
+      <DependentUpon>menu.cs</DependentUpon>
+    </Compile>
     <Compile Include="telamenu\menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -311,6 +323,9 @@
       <DependentUpon>inicial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="session6\menu\menu.resx">
+      <DependentUpon>menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="session7\menu\menu.resx">
       <DependentUpon>menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="telamenu\menu.resx">
