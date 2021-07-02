@@ -16,7 +16,7 @@ namespace freidesktop
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new telamenu.menu ());
+            Application.Run(new session7.form.acai ());
         }
     }
 }

@@ -325,6 +325,9 @@
     <EmbeddedResource Include="session6\menu\menu.resx">
       <DependentUpon>menu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="session7\form\acai.resx">
+      <DependentUpon>acai.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="session7\menu\menu.resx">
       <DependentUpon>menu.cs</DependentUpon>
     </EmbeddedResource>
