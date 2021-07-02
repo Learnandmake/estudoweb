@@ -16,5 +16,15 @@ namespace freidesktop.session7.form
         {
             InitializeComponent();
         }
+
+        private void acai_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
