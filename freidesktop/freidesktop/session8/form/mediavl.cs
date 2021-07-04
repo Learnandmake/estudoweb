@@ -19,14 +19,15 @@ namespace freidesktop.session8.form
 
         private void button1_Click(object sender, EventArgs e)
         {
+           
             decimal nota1 = Convert.ToDecimal(txt1bi.Text);
             decimal nota2 = Convert.ToDecimal(txt2bi.Text);
             decimal nota3 = Convert.ToDecimal(txt3bi.Text);
             decimal nota4 = Convert.ToDecimal(txt4bi.Text);
-            decimal recu = Convert.ToDecimal(txtrecu.Text);
 
             function.sessioneight m = new function.sessioneight();
-            decimal total= m.calcmedia1(nota1, nota2, nota3, nota4);
+            decimal total = m.calcmedia1(nota1, nota2, nota3, nota4);
+          
 
             lbltotal.Text = total.ToString();
             lbltotal.Visible = true;
@@ -35,16 +36,19 @@ namespace freidesktop.session8.form
             if (passou == true)
             {
                 lblpassou.Text = "Você passou";
-                lbltotal.Visible = true;
+                lblpassou.Visible = true;
             }
             else 
-           { lblpassou.Text = "Você não passou digite sua nota de recuperação";
-                lblpassou.Visible = true;
-                txtrecu.Visible = true;
-                lblrecu.Visible = true; 
-                }
+           { lblpassou.Text = "Você não passou ";
+                lblpassou.Visible = true;    
+            }
+ 
 
+        }
 
+        private void picclose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

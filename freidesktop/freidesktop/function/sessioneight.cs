@@ -9,9 +9,9 @@ namespace freidesktop.function
     class sessioneight
     {
     public decimal calcmedia1(decimal n1, decimal n2, decimal n3, decimal n4)
-    {
-            decimal total = (n1 + n2 + n3 + n4) / 4;
-            return total;
+    {    decimal total = 0;
+         total = (n1 + n2 + n3 + n4) / 4; 
+         return total;
     }
     public bool vmedia (decimal total)
     {

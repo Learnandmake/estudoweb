@@ -32,20 +32,17 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.picclose = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblpassou = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txt4bi = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txt3bi = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txt2bi = new System.Windows.Forms.TextBox();
+            this.lbltotal = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txt1bi = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.lbltotal = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txt2bi = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txt3bi = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txt4bi = new System.Windows.Forms.TextBox();
-            this.lblrecu = new System.Windows.Forms.Label();
-            this.txtrecu = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.lblpassou = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picclose)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -70,13 +67,11 @@
             this.picclose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picclose.TabIndex = 18;
             this.picclose.TabStop = false;
+            this.picclose.Click += new System.EventHandler(this.picclose_Click);
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.lblpassou);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.lblrecu);
-            this.groupBox1.Controls.Add(this.txtrecu);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.txt4bi);
             this.groupBox1.Controls.Add(this.label3);
@@ -89,9 +84,84 @@
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Location = new System.Drawing.Point(11, 28);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(162, 243);
+            this.groupBox1.Size = new System.Drawing.Size(162, 212);
             this.groupBox1.TabIndex = 19;
             this.groupBox1.TabStop = false;
+            // 
+            // lblpassou
+            // 
+            this.lblpassou.AutoSize = true;
+            this.lblpassou.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblpassou.ForeColor = System.Drawing.Color.Black;
+            this.lblpassou.Location = new System.Drawing.Point(46, 147);
+            this.lblpassou.Name = "lblpassou";
+            this.lblpassou.Size = new System.Drawing.Size(51, 16);
+            this.lblpassou.TabIndex = 36;
+            this.lblpassou.Text = "label3";
+            this.lblpassou.Visible = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(13, 94);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(84, 16);
+            this.label4.TabIndex = 30;
+            this.label4.Text = "4 bimestre:";
+            // 
+            // txt4bi
+            // 
+            this.txt4bi.Location = new System.Drawing.Point(103, 93);
+            this.txt4bi.Name = "txt4bi";
+            this.txt4bi.Size = new System.Drawing.Size(43, 20);
+            this.txt4bi.TabIndex = 31;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(13, 68);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(84, 16);
+            this.label3.TabIndex = 28;
+            this.label3.Text = "3 bimestre:";
+            // 
+            // txt3bi
+            // 
+            this.txt3bi.Location = new System.Drawing.Point(103, 67);
+            this.txt3bi.Name = "txt3bi";
+            this.txt3bi.Size = new System.Drawing.Size(43, 20);
+            this.txt3bi.TabIndex = 29;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(13, 42);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(84, 16);
+            this.label2.TabIndex = 26;
+            this.label2.Text = "2 bimestre:";
+            // 
+            // txt2bi
+            // 
+            this.txt2bi.Location = new System.Drawing.Point(103, 41);
+            this.txt2bi.Name = "txt2bi";
+            this.txt2bi.Size = new System.Drawing.Size(43, 20);
+            this.txt2bi.TabIndex = 27;
+            // 
+            // lbltotal
+            // 
+            this.lbltotal.AutoSize = true;
+            this.lbltotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltotal.ForeColor = System.Drawing.Color.Black;
+            this.lbltotal.Location = new System.Drawing.Point(46, 123);
+            this.lbltotal.Name = "lbltotal";
+            this.lbltotal.Size = new System.Drawing.Size(51, 16);
+            this.lbltotal.TabIndex = 25;
+            this.lbltotal.Text = "label3";
+            this.lbltotal.Visible = false;
             // 
             // label1
             // 
@@ -115,7 +185,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Maroon;
-            this.button1.Location = new System.Drawing.Point(16, 194);
+            this.button1.Location = new System.Drawing.Point(16, 166);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(130, 30);
             this.button1.TabIndex = 22;
@@ -123,117 +193,11 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // lbltotal
-            // 
-            this.lbltotal.AutoSize = true;
-            this.lbltotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltotal.ForeColor = System.Drawing.Color.Black;
-            this.lbltotal.Location = new System.Drawing.Point(46, 151);
-            this.lbltotal.Name = "lbltotal";
-            this.lbltotal.Size = new System.Drawing.Size(51, 16);
-            this.lbltotal.TabIndex = 25;
-            this.lbltotal.Text = "label3";
-            this.lbltotal.Visible = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(13, 42);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 16);
-            this.label2.TabIndex = 26;
-            this.label2.Text = "2 bimestre:";
-            // 
-            // txt2bi
-            // 
-            this.txt2bi.Location = new System.Drawing.Point(103, 41);
-            this.txt2bi.Name = "txt2bi";
-            this.txt2bi.Size = new System.Drawing.Size(43, 20);
-            this.txt2bi.TabIndex = 27;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(13, 68);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 16);
-            this.label3.TabIndex = 28;
-            this.label3.Text = "3 bimestre:";
-            // 
-            // txt3bi
-            // 
-            this.txt3bi.Location = new System.Drawing.Point(103, 67);
-            this.txt3bi.Name = "txt3bi";
-            this.txt3bi.Size = new System.Drawing.Size(43, 20);
-            this.txt3bi.TabIndex = 29;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(13, 94);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(84, 16);
-            this.label4.TabIndex = 30;
-            this.label4.Text = "4 bimestre:";
-            // 
-            // txt4bi
-            // 
-            this.txt4bi.Location = new System.Drawing.Point(103, 93);
-            this.txt4bi.Name = "txt4bi";
-            this.txt4bi.Size = new System.Drawing.Size(43, 20);
-            this.txt4bi.TabIndex = 31;
-            // 
-            // lblrecu
-            // 
-            this.lblrecu.AutoSize = true;
-            this.lblrecu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblrecu.Location = new System.Drawing.Point(7, 121);
-            this.lblrecu.Name = "lblrecu";
-            this.lblrecu.Size = new System.Drawing.Size(106, 16);
-            this.lblrecu.TabIndex = 32;
-            this.lblrecu.Text = "Recuperação:";
-            this.lblrecu.Visible = false;
-            // 
-            // txtrecu
-            // 
-            this.txtrecu.Location = new System.Drawing.Point(116, 119);
-            this.txtrecu.Name = "txtrecu";
-            this.txtrecu.Size = new System.Drawing.Size(30, 20);
-            this.txtrecu.TabIndex = 33;
-            this.txtrecu.Visible = false;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(21, 175);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(76, 16);
-            this.label6.TabIndex = 35;
-            this.label6.Text = "Você        ";
-            this.label6.Visible = false;
-            // 
-            // lblpassou
-            // 
-            this.lblpassou.AutoSize = true;
-            this.lblpassou.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblpassou.ForeColor = System.Drawing.Color.Black;
-            this.lblpassou.Location = new System.Drawing.Point(64, 175);
-            this.lblpassou.Name = "lblpassou";
-            this.lblpassou.Size = new System.Drawing.Size(51, 16);
-            this.lblpassou.TabIndex = 36;
-            this.lblpassou.Text = "label3";
-            this.lblpassou.Visible = false;
-            // 
             // mediavl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(182, 276);
+            this.ClientSize = new System.Drawing.Size(182, 250);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.picclose);
             this.Controls.Add(this.pictureBox1);
@@ -253,8 +217,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox picclose;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label lblrecu;
-        private System.Windows.Forms.TextBox txtrecu;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txt4bi;
         private System.Windows.Forms.Label label3;
@@ -266,6 +228,5 @@
         private System.Windows.Forms.TextBox txt1bi;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label lblpassou;
-        private System.Windows.Forms.Label label6;
     }
 }
