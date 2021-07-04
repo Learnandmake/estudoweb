@@ -11,14 +11,14 @@ namespace freidesktop.desafio.database
     {
         public void Inserir(desafio.model.modelfilme filme)
         {
-            string script = @"insert into tb_filme (nm_filme, vl_avaliacao, bt_disponivel, dt_estreia)
-                                            values (@nm_filme, @vl_avaliacao, @bt_disponivel, @dt_estreia)";
+            string script = @"insert into tbfilme (nmfilme, vlavaliacao, btdisponivel, dtestreia)
+                                            values (@nmfilme, @vlavaliacao, @btdisponivel, @dtestreia)";
 
             List<MySqlParameter> parms = new List<MySqlParameter>();
-            parms.Add(new MySqlParameter("nm_filme", filme.nome));
-            parms.Add(new MySqlParameter("vl_avaliacao", filme.avaliacao));
-            parms.Add(new MySqlParameter("bt_disponivel", filme.disponivel));
-            parms.Add(new MySqlParameter("dt_estreia", filme.dtestreia));
+            parms.Add(new MySqlParameter("nmfilme", filme.nome));
+            parms.Add(new MySqlParameter("vlavaliacao", filme.avaliacao));
+            parms.Add(new MySqlParameter("btdisponivel", filme.disponivel));
+            parms.Add(new MySqlParameter("dtestreia", filme.dtestreia));
 
             db db = new db();
             db.ExecuteInsertScript(script, parms);
@@ -26,7 +26,7 @@ namespace freidesktop.desafio.database
 
         public List<model.modelfilme> FiltrarPorNome(string nome)
         {
-            string script = "select * from tb_filme where nm_filme like @nome";
+            string script = "select * from tbfilme where nmfilme like @nome";
 
             List<MySqlParameter> parms = new List<MySqlParameter>();
             parms.Add(new MySqlParameter("nome", "%" + nome + "%"));
@@ -39,11 +39,11 @@ namespace freidesktop.desafio.database
             while (reader.Read())
             {
                 model.modelfilme filme = new model.modelfilme();
-                filme.idfilme = Convert.ToInt32(reader["id_filme"]);
-                filme.nome = Convert.ToString(reader["nm_filme"]);
-                filme.avaliacao = Convert.ToDecimal(reader["vl_avaliacao"]);
-                filme.dtestreia = Convert.ToDateTime(reader["dt_estreia"]);
-                filme.disponivel = Convert.ToBoolean(reader["bt_disponivel"]);
+                filme.idfilme = Convert.ToInt32(reader["idfilme"]);
+                filme.nome = Convert.ToString(reader["nmfilme"]);
+                filme.avaliacao = Convert.ToDecimal(reader["vlavaliacao"]);
+                filme.dtestreia = Convert.ToDateTime(reader["dtestreia"]);
+                filme.disponivel = Convert.ToBoolean(reader["btdisponivel"]);
 
                 lista.Add(filme);
             }

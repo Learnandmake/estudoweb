@@ -10,7 +10,7 @@ namespace freidesktop.desafio.database
     {
         public MySql.Data.MySqlClient.MySqlConnection Create()
         {
-            string connectionString = "server=localhost;database=infoX01_2019DB;uid=root;password=1234";
+            string connectionString = "server=localhost;database=filme;uid=root;password=";
 
             MySql.Data.MySqlClient.MySqlConnection connection = new MySql.Data.MySqlClient.MySqlConnection(connectionString);
             connection.Open();

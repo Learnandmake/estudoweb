@@ -19,7 +19,24 @@ namespace freidesktop.desafio.form
 
         private void button1_Click(object sender, EventArgs e)
         {
+           
+                string nome = txtnome.Text;
+                decimal nota = numav.Value;
+                DateTime data = dtpdatetime.Value;
+                bool disponivel = cbdisponivel.Checked;
 
+                model.modelfilme m = new model.modelfilme();
+                m.avaliacao = nota;
+                m.disponivel = disponivel;
+                m.dtestreia = data;
+              
+                bussines.bussinesfilme b = new bussines.bussinesfilme();
+
+                b.insert(m);
+
+                MessageBox.Show("Deu certo");
+            
+          
         }
     }
 }

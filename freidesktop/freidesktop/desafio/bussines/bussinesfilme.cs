@@ -8,7 +8,12 @@ namespace freidesktop.desafio.bussines
 {
     class bussinesfilme
     {
+        database.database data = new database.database();
+        public void insert (model.modelfilme modelo)
+        {
+            data.Inserir(modelo);
 
+        }
     
     }
 }
