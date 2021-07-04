@@ -90,7 +90,26 @@ namespace freidesktop.function
             return total;
         }
         //8
+        private decimal calc2(decimal n1, decimal n2, decimal n3, decimal n4, decimal recu)
+        {
+            decimal total = (n1 + n2 + n3 + n4) / 4;
+            if (total < 5)
+            {
+                total = (n1 + n2 + n3 + n4 + recu) / 5;
 
-
+            }
+            return total;
+        }
+        public bool passou3(decimal n1, decimal n2, decimal n3, decimal n4, decimal recu)
+        {
+            decimal nota = calc2(n1, n2, n3, n4, recu);
+            bool passou = false;
+            if (nota >= 5)
+            {
+                passou = true;
+            }
+            return passou;
+        }
+        //9
     }
 }
