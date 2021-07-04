@@ -84,7 +84,7 @@
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Location = new System.Drawing.Point(11, 28);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(162, 212);
+            this.groupBox1.Size = new System.Drawing.Size(162, 203);
             this.groupBox1.TabIndex = 19;
             this.groupBox1.TabStop = false;
             // 
@@ -197,7 +197,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(182, 250);
+            this.ClientSize = new System.Drawing.Size(182, 238);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.picclose);
             this.Controls.Add(this.pictureBox1);

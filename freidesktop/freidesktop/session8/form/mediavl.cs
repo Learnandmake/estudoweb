@@ -28,7 +28,6 @@ namespace freidesktop.session8.form
             function.sessioneight m = new function.sessioneight();
             decimal total = m.calcmedia1(nota1, nota2, nota3, nota4);
           
-
             lbltotal.Text = total.ToString();
             lbltotal.Visible = true;
 
