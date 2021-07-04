@@ -8,7 +8,17 @@ namespace freidesktop.function
 {
     class sessioneight
     {
-
-
+    public decimal calcmedia1(decimal n1, decimal n2, decimal n3, decimal n4)
+    {
+            decimal total = (n1 + n2 + n3 + n4) / 4;
+            return total;
+    }
+    public bool vmedia (decimal total)
+    {
+            bool passou = false;
+            if (total >= 5)
+                passou = true;
+    return passou;
+    }
     }
 }

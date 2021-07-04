@@ -16,5 +16,31 @@ namespace freidesktop.session8.form
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            decimal nota1 = Convert.ToDecimal(txt1bi.Text);
+            decimal nota2 = Convert.ToDecimal(txt2bi.Text);
+            decimal nota3 = Convert.ToDecimal(txt3bi.Text);
+            decimal nota4 = Convert.ToDecimal(txt4bi.Text);
+            decimal recu = Convert.ToDecimal(txtrecu.Text);
+
+            function.sessioneight m = new function.sessioneight();
+            decimal total= m.calcmedia1(nota1, nota2, nota3, nota4);
+
+            lbltotal.Text = total.ToString();
+            lbltotal.Visible = true;
+
+            bool passou = m.vmedia(total);
+            if (passou == true)
+            {
+                lblpassou.Text = "Você passou";
+                lbltotal.Visible = true;
+
+            }
+
+
+
+        }
     }
 }
