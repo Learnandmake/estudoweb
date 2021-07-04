@@ -69,6 +69,7 @@
     <Compile Include="exemplo\frmConceito.Designer.cs">
       <DependentUpon>frmConceito.cs</DependentUpon>
     </Compile>
+    <Compile Include="function\sessioneight.cs" />
     <Compile Include="function\sessionfive.cs" />
     <Compile Include="function\sessionone.cs" />
     <Compile Include="function\sessionseven.cs" />
@@ -343,6 +344,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="session7\menu\menu.resx">
       <DependentUpon>menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="session8\form\mediavl.resx">
+      <DependentUpon>mediavl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="session8\menu\menu.resx">
       <DependentUpon>menu.cs</DependentUpon>
