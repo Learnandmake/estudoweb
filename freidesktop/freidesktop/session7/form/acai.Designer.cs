@@ -177,6 +177,7 @@
             this.numacai300.Name = "numacai300";
             this.numacai300.Size = new System.Drawing.Size(42, 20);
             this.numacai300.TabIndex = 2;
+            this.numacai300.ValueChanged += new System.EventHandler(this.numacai300_ValueChanged);
             // 
             // cbbanana
             // 
@@ -412,6 +413,7 @@
             this.picclose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picclose.TabIndex = 17;
             this.picclose.TabStop = false;
+            this.picclose.Click += new System.EventHandler(this.picclose_Click);
             // 
             // acai
             // 

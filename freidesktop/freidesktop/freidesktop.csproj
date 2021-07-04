@@ -71,6 +71,7 @@
     </Compile>
     <Compile Include="function\sessionfive.cs" />
     <Compile Include="function\sessionone.cs" />
+    <Compile Include="function\sessionseven.cs" />
     <Compile Include="function\sessionsix.cs" />
     <Compile Include="function\sessionthree.cs" />
     <Compile Include="function\sessiontwo.cs" />
