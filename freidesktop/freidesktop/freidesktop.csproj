@@ -37,7 +37,20 @@
       <HintPath>..\packages\Correios-Api.1.1.1\lib\portable-net45+win\Correios.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.12.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.6.9.12\lib\net45\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
@@ -49,6 +62,14 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="Ubiety.Dns.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.25\lib\net452\Ubiety.Dns.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Zstandard.Net, Version=1.1.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.25\lib\net452\Zstandard.Net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="desafio\form\mouse.cs">
@@ -71,6 +92,7 @@
     </Compile>
     <Compile Include="function\sessioneight.cs" />
     <Compile Include="function\sessionfive.cs" />
+    <Compile Include="function\sessionnine.cs" />
     <Compile Include="function\sessionone.cs" />
     <Compile Include="function\sessionseven.cs" />
     <Compile Include="function\sessionsix.cs" />
@@ -244,6 +266,19 @@
     <Compile Include="session8\menu\menu.Designer.cs">
       <DependentUpon>menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="session9\database\connection.cs" />
+    <Compile Include="session9\form\tela.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="session9\form\tela.Designer.cs">
+      <DependentUpon>tela.cs</DependentUpon>
+    </Compile>
+    <Compile Include="session9\menu\menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="session9\menu\menu.Designer.cs">
+      <DependentUpon>menu.cs</DependentUpon>
+    </Compile>
     <Compile Include="telamenu\menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -351,6 +386,9 @@
     <EmbeddedResource Include="session8\menu\menu.resx">
       <DependentUpon>menu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="session9\form\tela.resx">
+      <DependentUpon>tela.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="telamenu\menu.resx">
       <DependentUpon>menu.cs</DependentUpon>
     </EmbeddedResource>
@@ -380,7 +418,10 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="session9\bussines\" />
+    <Folder Include="session9\model\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
