@@ -130,17 +130,29 @@ namespace freidesktop.function
             }
             return passou;
         }
-        public string passounastring (decimal n1, decimal n2, decimal n3, decimal n4, decimal recu)
+        public string passounastring(decimal n1, decimal n2, decimal n3, decimal n4, decimal recu)
         {
             string aviso = "";
-           bool passou =  calc3(n1, n2, n3, n4, recu);
-           if(passou == true)
-           {
+            bool passou = calc3(n1, n2, n3, n4, recu);
+            if (passou == true)
+            {
                 aviso = "voce passou";
-           }
-           else
-           { aviso = "voce nao passou"; }
+            }
+            else
+            { aviso = "voce nao passou"; }
             return aviso;
+        }
+        //10
+        public decimal nota(decimal n1, decimal n2, decimal n3, decimal n4, decimal recu)
+        {
+            decimal soma = n1 + n2 + n3+n4;
+            decimal soma2 = n1 + n2 + n3 + n4+recu;
+            decimal total = soma / 4;
+            if(total<5)
+            {
+                total = soma2 / 5;
+            }
+            return total;
         }
     }
 }
