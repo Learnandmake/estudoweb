@@ -36,9 +36,13 @@ namespace freidesktop.session8.form
             {
                 lblpassou.Text = "Você passou";
                 lbltotal.Visible = true;
-
             }
-
+            else 
+           { lblpassou.Text = "Você não passou digite sua nota de recuperação";
+                lblpassou.Visible = true;
+                txtrecu.Visible = true;
+                lblrecu.Visible = true; 
+                }
 
 
         }

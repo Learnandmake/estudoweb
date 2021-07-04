@@ -42,7 +42,7 @@
             this.txt3bi = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txt4bi = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblrecu = new System.Windows.Forms.Label();
             this.txtrecu = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.lblpassou = new System.Windows.Forms.Label();
@@ -75,7 +75,7 @@
             // 
             this.groupBox1.Controls.Add(this.lblpassou);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.lblrecu);
             this.groupBox1.Controls.Add(this.txtrecu);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.txt4bi);
@@ -186,16 +186,16 @@
             this.txt4bi.Size = new System.Drawing.Size(43, 20);
             this.txt4bi.TabIndex = 31;
             // 
-            // label5
+            // lblrecu
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(7, 121);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(106, 16);
-            this.label5.TabIndex = 32;
-            this.label5.Text = "Recuperação:";
-            this.label5.Visible = false;
+            this.lblrecu.AutoSize = true;
+            this.lblrecu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblrecu.Location = new System.Drawing.Point(7, 121);
+            this.lblrecu.Name = "lblrecu";
+            this.lblrecu.Size = new System.Drawing.Size(106, 16);
+            this.lblrecu.TabIndex = 32;
+            this.lblrecu.Text = "Recuperação:";
+            this.lblrecu.Visible = false;
             // 
             // txtrecu
             // 
@@ -253,7 +253,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox picclose;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblrecu;
         private System.Windows.Forms.TextBox txtrecu;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txt4bi;
