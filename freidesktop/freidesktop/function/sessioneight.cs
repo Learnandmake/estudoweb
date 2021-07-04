@@ -10,7 +10,8 @@ namespace freidesktop.function
     {
         //1
         public decimal calcmedia1(decimal n1, decimal n2, decimal n3, decimal n4, decimal recu)
-        { decimal total = 0;
+        {
+            decimal total = 0;
             total = (n1 + n2 + n3 + n4 + recu) / 5;
             return total;
         }
@@ -38,7 +39,8 @@ namespace freidesktop.function
 
         //3
         public string passouounao(decimal n1, decimal n2, decimal n3, decimal n4, decimal recu)
-        { string passou = "";
+        {
+            string passou = "";
 
             if (((n1 + n2 + n3 + n4 + recu) / 5) >= 5)
             {
@@ -51,7 +53,8 @@ namespace freidesktop.function
 
         //4
         public bool passaounaopassa(decimal n1, decimal n2, decimal n3, decimal n4, decimal recu)
-        {   bool passa = false;
+        {
+            bool passa = false;
             while (((n1 + n2 + n3 + n4 + recu) / 5) >= 5)
             { passa = true; }
 
@@ -76,17 +79,17 @@ namespace freidesktop.function
         public decimal calcmedia(decimal n1, decimal n2, decimal n3, decimal n4, decimal recu)
         {
             decimal total = (n1 + n2 + n3 + n4) / 4;
-            if(total < 5)
+            if (total < 5)
             {
                 total = (n1 + n2 + n3 + n4 + recu) / 5;
-             
+
             }
             return total;
         }
         //7
         public decimal mediacomrecuperacao(decimal n1, decimal n2, decimal n3, decimal n4, decimal recu)
         {
-            decimal total = (n1 + n2 + n3 + n4+recu) / 5;
+            decimal total = (n1 + n2 + n3 + n4 + recu) / 5;
             return total;
         }
         //8
@@ -111,5 +114,33 @@ namespace freidesktop.function
             return passou;
         }
         //9
+        private bool calc3(decimal n1, decimal n2, decimal n3, decimal n4, decimal recu)
+        {
+            bool passou = false;
+            decimal total = 0;
+
+            if (recu == 0)
+            { total = (n1 + n2 + n3 + n4) / 4; }
+            else
+            { total = (n1 + n2 + n3 + n4 + recu) / 5; }
+
+            if (total >= 5)
+            {
+                passou = true;
+            }
+            return passou;
+        }
+        public string passounastring (decimal n1, decimal n2, decimal n3, decimal n4, decimal recu)
+        {
+            string aviso = "";
+           bool passou =  calc3(n1, n2, n3, n4, recu);
+           if(passou == true)
+           {
+                aviso = "voce passou";
+           }
+           else
+           { aviso = "voce nao passou"; }
+            return aviso;
+        }
     }
 }
