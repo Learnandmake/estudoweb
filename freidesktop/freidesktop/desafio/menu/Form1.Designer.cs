@@ -31,6 +31,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.desafioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mouseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.filmeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,7 +48,8 @@
             // desafioToolStripMenuItem
             // 
             this.desafioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mouseToolStripMenuItem});
+            this.mouseToolStripMenuItem,
+            this.filmeToolStripMenuItem});
             this.desafioToolStripMenuItem.Name = "desafioToolStripMenuItem";
             this.desafioToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
             this.desafioToolStripMenuItem.Text = "desafio";
@@ -58,6 +60,13 @@
             this.mouseToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.mouseToolStripMenuItem.Text = "mouse";
             this.mouseToolStripMenuItem.Click += new System.EventHandler(this.mouseToolStripMenuItem_Click);
+            // 
+            // filmeToolStripMenuItem
+            // 
+            this.filmeToolStripMenuItem.Name = "filmeToolStripMenuItem";
+            this.filmeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.filmeToolStripMenuItem.Text = "filme";
+            this.filmeToolStripMenuItem.Click += new System.EventHandler(this.filmeToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -80,5 +89,6 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem desafioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mouseToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem filmeToolStripMenuItem;
     }
 }

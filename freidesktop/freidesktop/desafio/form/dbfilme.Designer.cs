@@ -1,6 +1,6 @@
-﻿namespace freidesktop.session9.form
+﻿namespace freidesktop.desafio.form
 {
-    partial class tela
+    partial class dbfilme
     {
         /// <summary>
         /// Required designer variable.
@@ -28,11 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(tela));
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dbfilme));
             this.label2 = new System.Windows.Forms.Label();
-            this.picclose = new System.Windows.Forms.PictureBox();
             this.txtnome = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -41,28 +38,13 @@
             this.dtpdatetime = new System.Windows.Forms.DateTimePicker();
             this.numav = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picclose)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picclose = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numav)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picclose)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(25, 29);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 13);
-            this.label1.TabIndex = 0;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.SteelBlue;
-            this.pictureBox1.Location = new System.Drawing.Point(-7, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(269, 27);
-            this.pictureBox1.TabIndex = 19;
-            this.pictureBox1.TabStop = false;
             // 
             // label2
             // 
@@ -72,17 +54,6 @@
             this.label2.Size = new System.Drawing.Size(38, 13);
             this.label2.TabIndex = 12;
             this.label2.Text = "Nome:";
-            // 
-            // picclose
-            // 
-            this.picclose.BackColor = System.Drawing.Color.SteelBlue;
-            this.picclose.Image = ((System.Drawing.Image)(resources.GetObject("picclose.Image")));
-            this.picclose.Location = new System.Drawing.Point(212, 4);
-            this.picclose.Name = "picclose";
-            this.picclose.Size = new System.Drawing.Size(34, 27);
-            this.picclose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picclose.TabIndex = 22;
-            this.picclose.TabStop = false;
             // 
             // txtnome
             // 
@@ -112,7 +83,7 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.numav);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Location = new System.Drawing.Point(15, 37);
+            this.groupBox1.Location = new System.Drawing.Point(22, 37);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(192, 155);
             this.groupBox1.TabIndex = 21;
@@ -161,34 +132,49 @@
             this.label3.TabIndex = 13;
             this.label3.Text = "avaliação:";
             // 
-            // tela
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.SteelBlue;
+            this.pictureBox1.Location = new System.Drawing.Point(-5, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(269, 27);
+            this.pictureBox1.TabIndex = 23;
+            this.pictureBox1.TabStop = false;
+            // 
+            // picclose
+            // 
+            this.picclose.BackColor = System.Drawing.Color.SteelBlue;
+            this.picclose.Image = ((System.Drawing.Image)(resources.GetObject("picclose.Image")));
+            this.picclose.Location = new System.Drawing.Point(204, 0);
+            this.picclose.Name = "picclose";
+            this.picclose.Size = new System.Drawing.Size(34, 27);
+            this.picclose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picclose.TabIndex = 24;
+            this.picclose.TabStop = false;
+            // 
+            // dbfilme
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(260, 196);
+            this.ClientSize = new System.Drawing.Size(241, 204);
             this.Controls.Add(this.picclose);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "tela";
-            this.Text = "tela";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picclose)).EndInit();
+            this.Name = "dbfilme";
+            this.Text = "dbfilme";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numav)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picclose)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox picclose;
         private System.Windows.Forms.TextBox txtnome;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox groupBox1;
@@ -197,5 +183,7 @@
         private System.Windows.Forms.DateTimePicker dtpdatetime;
         private System.Windows.Forms.NumericUpDown numav;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picclose;
     }
 }
