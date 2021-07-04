@@ -8,5 +8,7 @@ namespace freidesktop.desafio.database
 {
     class database
     {
+
+
     }
 }
