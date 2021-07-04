@@ -16,5 +16,10 @@ namespace freidesktop.session9.form
         {
             InitializeComponent();
         }
+
+        private void picclose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

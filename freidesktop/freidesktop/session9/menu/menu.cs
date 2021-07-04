@@ -16,5 +16,10 @@ namespace freidesktop.session9.menu
         {
             InitializeComponent();
         }
+
+        private void telaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            mbox.
+        }
     }
 }

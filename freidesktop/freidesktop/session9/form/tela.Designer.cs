@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(tela));
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
@@ -38,8 +39,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.picclose = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numav)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picclose)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -60,7 +65,7 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.numav);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Location = new System.Drawing.Point(12, 45);
+            this.groupBox1.Location = new System.Drawing.Point(31, 33);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(192, 155);
             this.groupBox1.TabIndex = 9;
@@ -136,12 +141,35 @@
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 10;
             // 
+            // picclose
+            // 
+            this.picclose.BackColor = System.Drawing.Color.SteelBlue;
+            this.picclose.Image = ((System.Drawing.Image)(resources.GetObject("picclose.Image")));
+            this.picclose.Location = new System.Drawing.Point(228, 0);
+            this.picclose.Name = "picclose";
+            this.picclose.Size = new System.Drawing.Size(34, 27);
+            this.picclose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picclose.TabIndex = 20;
+            this.picclose.TabStop = false;
+            this.picclose.Click += new System.EventHandler(this.picclose_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.SteelBlue;
+            this.pictureBox1.Location = new System.Drawing.Point(-7, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(269, 27);
+            this.pictureBox1.TabIndex = 19;
+            this.pictureBox1.TabStop = false;
+            // 
             // tela
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(260, 251);
+            this.ClientSize = new System.Drawing.Size(260, 196);
+            this.Controls.Add(this.picclose);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "tela";
@@ -149,6 +177,8 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numav)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picclose)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -166,5 +196,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.NumericUpDown numav;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox picclose;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
