@@ -19,28 +19,38 @@ namespace freidesktop.session8.form
 
         private void button1_Click(object sender, EventArgs e)
         {
-           
-            decimal nota1 = Convert.ToDecimal(txt1bi.Text);
-            decimal nota2 = Convert.ToDecimal(txt2bi.Text);
-            decimal nota3 = Convert.ToDecimal(txt3bi.Text);
-            decimal nota4 = Convert.ToDecimal(txt4bi.Text);
-
-            function.sessioneight m = new function.sessioneight();
-            decimal total = m.calcmedia1(nota1, nota2, nota3, nota4);
-          
-            lbltotal.Text = total.ToString();
-            lbltotal.Visible = true;
-
-            bool passou = m.vmedia(total);
-            if (passou == true)
+         try
             {
-                lblpassou.Text = "Você passou";
-                lblpassou.Visible = true;
-            }
-            else 
-           { lblpassou.Text = "Você não passou ";
-                lblpassou.Visible = true;    
-            }
+                decimal nota1 = Convert.ToDecimal(txt1bi.Text);
+                decimal nota2 = Convert.ToDecimal(txt2bi.Text);
+                decimal nota3 = Convert.ToDecimal(txt3bi.Text);
+                decimal nota4 = Convert.ToDecimal(txt4bi.Text);
+                decimal recu = Convert.ToDecimal(txtrecu.Text);
+                if(recu==null)
+                {
+                    recu = 0;
+                }
+                
+                function.sessioneight m = new function.sessioneight();
+                decimal total = m.calcmedia1(nota1, nota2, nota3, nota4, recu);
+
+                lbltotal.Text = total.ToString();
+                lbltotal.Visible = true;
+
+                bool passou = m.vmedia(total);
+                if (passou == true)
+                {
+                    lblpassou.Text = "Você passou";
+                    lblpassou.Visible = true;
+                }
+                else
+                {
+                    lblpassou.Text = "Você não passou ";
+                    lblpassou.Visible = true;
+                }
+            }  
+           catch(Exception)
+           { }
  
 
         }

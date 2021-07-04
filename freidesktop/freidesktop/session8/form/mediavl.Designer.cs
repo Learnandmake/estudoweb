@@ -43,6 +43,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txt1bi = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtrecu = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picclose)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -71,6 +73,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.txtrecu);
             this.groupBox1.Controls.Add(this.lblpassou);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.txt4bi);
@@ -84,7 +88,7 @@
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Location = new System.Drawing.Point(11, 28);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(162, 203);
+            this.groupBox1.Size = new System.Drawing.Size(162, 227);
             this.groupBox1.TabIndex = 19;
             this.groupBox1.TabStop = false;
             // 
@@ -93,7 +97,7 @@
             this.lblpassou.AutoSize = true;
             this.lblpassou.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblpassou.ForeColor = System.Drawing.Color.Black;
-            this.lblpassou.Location = new System.Drawing.Point(46, 147);
+            this.lblpassou.Location = new System.Drawing.Point(46, 168);
             this.lblpassou.Name = "lblpassou";
             this.lblpassou.Size = new System.Drawing.Size(51, 16);
             this.lblpassou.TabIndex = 36;
@@ -156,7 +160,7 @@
             this.lbltotal.AutoSize = true;
             this.lbltotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltotal.ForeColor = System.Drawing.Color.Black;
-            this.lbltotal.Location = new System.Drawing.Point(46, 123);
+            this.lbltotal.Location = new System.Drawing.Point(46, 144);
             this.lbltotal.Name = "lbltotal";
             this.lbltotal.Size = new System.Drawing.Size(51, 16);
             this.lbltotal.TabIndex = 25;
@@ -185,7 +189,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Maroon;
-            this.button1.Location = new System.Drawing.Point(16, 166);
+            this.button1.Location = new System.Drawing.Point(16, 187);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(130, 30);
             this.button1.TabIndex = 22;
@@ -193,11 +197,28 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(6, 121);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(106, 16);
+            this.label5.TabIndex = 37;
+            this.label5.Text = "Recuperação:";
+            // 
+            // txtrecu
+            // 
+            this.txtrecu.Location = new System.Drawing.Point(116, 117);
+            this.txtrecu.Name = "txtrecu";
+            this.txtrecu.Size = new System.Drawing.Size(30, 20);
+            this.txtrecu.TabIndex = 38;
+            // 
             // mediavl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(182, 238);
+            this.ClientSize = new System.Drawing.Size(182, 267);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.picclose);
             this.Controls.Add(this.pictureBox1);
@@ -228,5 +249,7 @@
         private System.Windows.Forms.TextBox txt1bi;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label lblpassou;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtrecu;
     }
 }
