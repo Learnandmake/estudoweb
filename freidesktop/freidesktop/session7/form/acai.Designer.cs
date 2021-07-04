@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(acai));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cbpacoca = new System.Windows.Forms.CheckBox();
             this.numacai500 = new System.Windows.Forms.NumericUpDown();
             this.label9 = new System.Windows.Forms.Label();
             this.cblconde = new System.Windows.Forms.CheckBox();
             this.cbkiwi = new System.Windows.Forms.CheckBox();
             this.cblninho = new System.Windows.Forms.CheckBox();
-            this.cbpaçoca = new System.Windows.Forms.CheckBox();
             this.cbmorango = new System.Windows.Forms.CheckBox();
             this.numacai300 = new System.Windows.Forms.NumericUpDown();
             this.cbbanana = new System.Windows.Forms.CheckBox();
@@ -77,12 +77,12 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.BlueViolet;
+            this.groupBox1.Controls.Add(this.cbpacoca);
             this.groupBox1.Controls.Add(this.numacai500);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.cblconde);
             this.groupBox1.Controls.Add(this.cbkiwi);
             this.groupBox1.Controls.Add(this.cblninho);
-            this.groupBox1.Controls.Add(this.cbpaçoca);
             this.groupBox1.Controls.Add(this.cbmorango);
             this.groupBox1.Controls.Add(this.numacai300);
             this.groupBox1.Controls.Add(this.cbbanana);
@@ -93,12 +93,26 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
+            // cbpacoca
+            // 
+            this.cbpacoca.AutoSize = true;
+            this.cbpacoca.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbpacoca.ForeColor = System.Drawing.Color.White;
+            this.cbpacoca.Location = new System.Drawing.Point(106, 150);
+            this.cbpacoca.Name = "cbpacoca";
+            this.cbpacoca.Size = new System.Drawing.Size(88, 23);
+            this.cbpacoca.TabIndex = 10;
+            this.cbpacoca.Text = "Paçoca";
+            this.cbpacoca.UseVisualStyleBackColor = true;
+            this.cbpacoca.CheckedChanged += new System.EventHandler(this.cbpacoca_CheckedChanged);
+            // 
             // numacai500
             // 
             this.numacai500.Location = new System.Drawing.Point(166, 49);
             this.numacai500.Name = "numacai500";
             this.numacai500.Size = new System.Drawing.Size(42, 20);
             this.numacai500.TabIndex = 9;
+            this.numacai500.ValueChanged += new System.EventHandler(this.numacai500_ValueChanged);
             // 
             // label9
             // 
@@ -122,6 +136,7 @@
             this.cblconde.TabIndex = 7;
             this.cblconde.Text = "L.conde";
             this.cblconde.UseVisualStyleBackColor = true;
+            this.cblconde.CheckedChanged += new System.EventHandler(this.cblconde_CheckedChanged);
             // 
             // cbkiwi
             // 
@@ -134,30 +149,20 @@
             this.cbkiwi.TabIndex = 6;
             this.cbkiwi.Text = "Kiwi";
             this.cbkiwi.UseVisualStyleBackColor = true;
+            this.cbkiwi.CheckedChanged += new System.EventHandler(this.cbkiwi_CheckedChanged);
             // 
             // cblninho
             // 
             this.cblninho.AutoSize = true;
             this.cblninho.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cblninho.ForeColor = System.Drawing.Color.White;
-            this.cblninho.Location = new System.Drawing.Point(105, 169);
+            this.cblninho.Location = new System.Drawing.Point(105, 168);
             this.cblninho.Name = "cblninho";
             this.cblninho.Size = new System.Drawing.Size(89, 23);
             this.cblninho.TabIndex = 5;
             this.cblninho.Text = "L.ninho";
             this.cblninho.UseVisualStyleBackColor = true;
-            // 
-            // cbpaçoca
-            // 
-            this.cbpaçoca.AutoSize = true;
-            this.cbpaçoca.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbpaçoca.ForeColor = System.Drawing.Color.White;
-            this.cbpaçoca.Location = new System.Drawing.Point(106, 150);
-            this.cbpaçoca.Name = "cbpaçoca";
-            this.cbpaçoca.Size = new System.Drawing.Size(88, 23);
-            this.cbpaçoca.TabIndex = 4;
-            this.cbpaçoca.Text = "Paçoca";
-            this.cbpaçoca.UseVisualStyleBackColor = true;
+            this.cblninho.CheckedChanged += new System.EventHandler(this.cblninho_CheckedChanged);
             // 
             // cbmorango
             // 
@@ -170,6 +175,7 @@
             this.cbmorango.TabIndex = 3;
             this.cbmorango.Text = "Morango";
             this.cbmorango.UseVisualStyleBackColor = true;
+            this.cbmorango.CheckedChanged += new System.EventHandler(this.cbmorango_CheckedChanged);
             // 
             // numacai300
             // 
@@ -190,6 +196,7 @@
             this.cbbanana.TabIndex = 1;
             this.cbbanana.Text = "Banana";
             this.cbbanana.UseVisualStyleBackColor = true;
+            this.cbbanana.CheckedChanged += new System.EventHandler(this.cbbanana_CheckedChanged);
             // 
             // label3
             // 
@@ -223,6 +230,7 @@
             this.numpasteldoce.Name = "numpasteldoce";
             this.numpasteldoce.Size = new System.Drawing.Size(42, 20);
             this.numpasteldoce.TabIndex = 15;
+            this.numpasteldoce.ValueChanged += new System.EventHandler(this.numpasteldoce_ValueChanged);
             // 
             // label12
             // 
@@ -241,6 +249,7 @@
             this.numpastelespecial.Name = "numpastelespecial";
             this.numpastelespecial.Size = new System.Drawing.Size(42, 20);
             this.numpastelespecial.TabIndex = 13;
+            this.numpastelespecial.ValueChanged += new System.EventHandler(this.numpastelespecial_ValueChanged);
             // 
             // label11
             // 
@@ -259,6 +268,7 @@
             this.numpasteln.Name = "numpasteln";
             this.numpasteln.Size = new System.Drawing.Size(42, 20);
             this.numpasteln.TabIndex = 11;
+            this.numpasteln.ValueChanged += new System.EventHandler(this.numpasteln_ValueChanged);
             // 
             // label10
             // 
@@ -478,7 +488,6 @@
         private System.Windows.Forms.CheckBox cblconde;
         private System.Windows.Forms.CheckBox cbkiwi;
         private System.Windows.Forms.CheckBox cblninho;
-        private System.Windows.Forms.CheckBox cbpaçoca;
         private System.Windows.Forms.CheckBox cbmorango;
         private System.Windows.Forms.NumericUpDown numacai300;
         private System.Windows.Forms.CheckBox cbbanana;
@@ -491,5 +500,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox picclose;
+        private System.Windows.Forms.CheckBox cbpacoca;
     }
 }
