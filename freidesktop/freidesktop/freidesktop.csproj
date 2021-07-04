@@ -72,6 +72,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="desafio\bussines\bussinesfilme.cs" />
+    <Compile Include="desafio\database\connection.cs" />
+    <Compile Include="desafio\database\database.cs" />
+    <Compile Include="desafio\database\db.cs" />
     <Compile Include="desafio\form\dbfilme.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -272,20 +276,6 @@
     <Compile Include="session8\menu\menu.Designer.cs">
       <DependentUpon>menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="session9\database\connection.cs" />
-    <Compile Include="session9\database\database.cs" />
-    <Compile Include="session9\form\tela.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="session9\form\tela.Designer.cs">
-      <DependentUpon>tela.cs</DependentUpon>
-    </Compile>
-    <Compile Include="session9\menu\menu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="session9\menu\menu.Designer.cs">
-      <DependentUpon>menu.cs</DependentUpon>
-    </Compile>
     <Compile Include="telamenu\menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -396,12 +386,6 @@
     <EmbeddedResource Include="session8\menu\menu.resx">
       <DependentUpon>menu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="session9\form\tela.resx">
-      <DependentUpon>tela.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="session9\menu\menu.resx">
-      <DependentUpon>menu.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="telamenu\menu.resx">
       <DependentUpon>menu.cs</DependentUpon>
     </EmbeddedResource>
@@ -432,8 +416,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="session9\bussines\" />
-    <Folder Include="session9\model\" />
+    <Folder Include="desafio\model\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
