@@ -11,11 +11,10 @@ namespace freidesktop.session9.database
     {
         public MySqlConnection Create()
         {
-            string connectionString = "server=localhost;database=info2019DB;uid=root;password=1234";
+            string connectionString = "server=localhost;database=filme;uid=root;password=1234";
 
             MySqlConnection connection = new MySqlConnection(connectionString);
             connection.Open();
-
             return connection;
         }
     }

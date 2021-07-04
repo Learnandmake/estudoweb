@@ -267,6 +267,7 @@
       <DependentUpon>menu.cs</DependentUpon>
     </Compile>
     <Compile Include="session9\database\connection.cs" />
+    <Compile Include="session9\database\database.cs" />
     <Compile Include="session9\form\tela.cs">
       <SubType>Form</SubType>
     </Compile>
