@@ -1,25 +1,24 @@
-﻿using MySql.Data.MySqlClient;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace freidesktop.session9.database
+namespace freidesktop.desafio.database
 {
-    class database       
+    class db
     {
-        public void ExecuteInsertScript(string script, List<MySqlParameter> parameters)
+        public void ExecuteInsertScript(string script, List<MySql.Data.MySqlClient.MySqlParameter> parameters)
         {
-          session9.database.connection conn = new session9.database.connection();
-            MySqlConnection connection = conn.Create();
+             connection conn = new connection();
+            MySql.Data.MySqlClient.MySqlConnection connection = conn.Create();
 
-            MySqlCommand command = connection.CreateCommand();
+            MySql.Data.MySqlClient.MySqlCommand command = connection.CreateCommand();
             command.CommandText = script;
 
             if (parameters != null)
             {
-                foreach (MySqlParameter param in parameters)
+                foreach (MySql.Data.MySqlClient.MySqlParameter param in parameters)
                 {
                     command.Parameters.Add(param);
                 }
@@ -29,17 +28,17 @@ namespace freidesktop.session9.database
             connection.Close();
         }
 
-        public int ExecuteInsertScriptWithPk(string script, List<MySqlParameter> parameters)
+        public int ExecuteInsertScriptWithPk(string script, List<MySql.Data.MySqlClient.MySqlParameter> parameters)
         {
-            session9.database.connection conn = new session9.database.connection();
-            MySqlConnection connection = conn.Create();
+            connection conn = new connection();
+            MySql.Data.MySqlClient.MySqlConnection connection = conn.Create();
 
-            MySqlCommand command = connection.CreateCommand();
+            MySql.Data.MySqlClient.MySqlCommand command = connection.CreateCommand();
             command.CommandText = script;
 
             if (parameters != null)
             {
-                foreach (MySqlParameter param in parameters)
+                foreach (MySql.Data.MySqlClient.MySqlParameter param in parameters)
                 {
                     command.Parameters.Add(param);
                 }
@@ -52,26 +51,25 @@ namespace freidesktop.session9.database
             return id;
         }
 
-        public MySqlDataReader ExecuteSelectScript(string script, List<MySqlParameter> parameters)
+        public MySql.Data.MySqlClient.MySqlDataReader ExecuteSelectScript(string script, List<MySql.Data.MySqlClient.MySqlParameter> parameters)
         {
-            session9.database.connection conn = new session9.database.connection();
-            MySqlConnection connection = conn.Create();
+            connection conn = new connection();
+            MySql.Data.MySqlClient.MySqlConnection connection = conn.Create();
 
-            MySqlCommand command = connection.CreateCommand();
+            MySql.Data.MySqlClient.MySqlCommand command = connection.CreateCommand();
             command.CommandText = script;
 
             if (parameters != null)
             {
-                foreach (MySqlParameter param in parameters)
+                foreach (MySql.Data.MySqlClient.MySqlParameter param in parameters)
                 {
                     command.Parameters.Add(param);
                 }
             }
 
-            MySqlDataReader reader =
+            MySql.Data.MySqlClient.MySqlDataReader reader =
                  command.ExecuteReader(System.Data.CommandBehavior.CloseConnection);
             return reader;
         }
-
     }
 }
