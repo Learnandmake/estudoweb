@@ -19,7 +19,8 @@ namespace freidesktop.session9.menu
 
         private void telaToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            mbox.
+            form.tela m = new form.tela();
+            m.Show();
         }
     }
 }

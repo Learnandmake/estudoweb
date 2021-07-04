@@ -31,14 +31,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(tela));
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.cbdisponivel = new System.Windows.Forms.CheckBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpdatetime = new System.Windows.Forms.DateTimePicker();
             this.numav = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtnome = new System.Windows.Forms.TextBox();
             this.picclose = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
@@ -57,11 +57,11 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.checkBox1);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.cbdisponivel);
+            this.groupBox1.Controls.Add(this.txtnome);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
+            this.groupBox1.Controls.Add(this.dtpdatetime);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.numav);
             this.groupBox1.Controls.Add(this.label3);
@@ -71,15 +71,15 @@
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             // 
-            // checkBox1
+            // cbdisponivel
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(67, 95);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(75, 17);
-            this.checkBox1.TabIndex = 17;
-            this.checkBox1.Text = "Disponivel";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.cbdisponivel.AutoSize = true;
+            this.cbdisponivel.Location = new System.Drawing.Point(67, 95);
+            this.cbdisponivel.Name = "cbdisponivel";
+            this.cbdisponivel.Size = new System.Drawing.Size(75, 17);
+            this.cbdisponivel.TabIndex = 17;
+            this.cbdisponivel.Text = "Disponivel";
+            this.cbdisponivel.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
@@ -90,13 +90,13 @@
             this.label4.TabIndex = 16;
             this.label4.Text = "datetime:";
             // 
-            // dateTimePicker1
+            // dtpdatetime
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(67, 69);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(100, 20);
-            this.dateTimePicker1.TabIndex = 15;
+            this.dtpdatetime.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpdatetime.Location = new System.Drawing.Point(67, 69);
+            this.dtpdatetime.Name = "dtpdatetime";
+            this.dtpdatetime.Size = new System.Drawing.Size(100, 20);
+            this.dtpdatetime.TabIndex = 15;
             // 
             // numav
             // 
@@ -134,12 +134,12 @@
             this.button1.Text = "ok";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // txtnome
             // 
-            this.textBox1.Location = new System.Drawing.Point(67, 17);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 10;
+            this.txtnome.Location = new System.Drawing.Point(67, 17);
+            this.txtnome.Name = "txtnome";
+            this.txtnome.Size = new System.Drawing.Size(100, 20);
+            this.txtnome.TabIndex = 10;
             // 
             // picclose
             // 
@@ -188,11 +188,11 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.CheckBox cbdisponivel;
+        private System.Windows.Forms.TextBox txtnome;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpdatetime;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.NumericUpDown numav;
         private System.Windows.Forms.Label label3;
