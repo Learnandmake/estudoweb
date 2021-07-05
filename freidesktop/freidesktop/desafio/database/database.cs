@@ -51,5 +51,30 @@ namespace freidesktop.desafio.database
 
             return lista;
         }
+
+        public List<model.modelfilme> Filtrar()
+        {
+            string script = "select * from tbfilme";
+
+            db db = new db();
+            MySqlDataReader reader = db.ExecuteSelectScript(script, parms);
+
+            List<model.modelfilme> lista = new List<model.modelfilme>();
+
+            while (reader.Read())
+            {
+                model.modelfilme filme = new model.modelfilme();
+                filme.idfilme = Convert.ToInt32(reader["idfilme"]);
+                filme.nome = Convert.ToString(reader["nmfilme"]);
+                filme.avaliacao = Convert.ToDecimal(reader["vlavaliacao"]);
+                filme.dtestreia = Convert.ToDateTime(reader["dtestreia"]);
+                filme.disponivel = Convert.ToBoolean(reader["btdisponivel"]);
+
+                lista.Add(filme);
+            }
+            reader.Close();
+
+            return lista;
+        }
     }
 }

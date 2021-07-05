@@ -28,5 +28,16 @@ namespace freidesktop.desafio.menu
             form.dbfilme a = new form.dbfilme();
             a.Show();
         }
+
+        private void inserirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            form.dbfilme a = new form.dbfilme();
+            a.Show();
+        }
+
+        private void consultaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

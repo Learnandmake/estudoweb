@@ -19,8 +19,8 @@ namespace freidesktop.desafio.form
 
         private void button1_Click(object sender, EventArgs e)
         {
-           
-                string nome = txtnome.Text;
+           try {
+                string nome = Convert.ToString(txtnome.Text);
                 decimal nota = numav.Value;
                 DateTime data = dtpdatetime.Value;
                 bool disponivel = cbdisponivel.Checked;
@@ -29,12 +29,18 @@ namespace freidesktop.desafio.form
                 m.avaliacao = nota;
                 m.disponivel = disponivel;
                 m.dtestreia = data;
-              
+
                 bussines.bussinesfilme b = new bussines.bussinesfilme();
 
                 b.insert(m);
 
-                MessageBox.Show("Deu certo");
+                MessageBox.Show("Operação bem sucedida");
+
+            }
+              catch(Exception)
+              {
+                MessageBox.Show("Erro, verifique o formulario");
+            }
             
           
         }

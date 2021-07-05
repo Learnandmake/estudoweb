@@ -14,6 +14,7 @@ namespace freidesktop.desafio.bussines
             data.Inserir(modelo);
 
         }
+        public void 
     
     }
 }
