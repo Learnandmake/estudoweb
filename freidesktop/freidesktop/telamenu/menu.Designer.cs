@@ -41,6 +41,7 @@
             this.nineToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eventoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.desafioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,7 +67,8 @@
             this.sixToolStripMenuItem,
             this.sevenToolStripMenuItem,
             this.eightToolStripMenuItem,
-            this.nineToolStripMenuItem});
+            this.nineToolStripMenuItem,
+            this.tenToolStripMenuItem});
             this.sessionToolStripMenuItem.Name = "sessionToolStripMenuItem";
             this.sessionToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
             this.sessionToolStripMenuItem.Text = "Session";
@@ -149,6 +151,13 @@
             this.desafioToolStripMenuItem.Text = "Desafio";
             this.desafioToolStripMenuItem.Click += new System.EventHandler(this.desafioToolStripMenuItem_Click_1);
             // 
+            // tenToolStripMenuItem
+            // 
+            this.tenToolStripMenuItem.Name = "tenToolStripMenuItem";
+            this.tenToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.tenToolStripMenuItem.Text = "Ten";
+            this.tenToolStripMenuItem.Click += new System.EventHandler(this.tenToolStripMenuItem_Click);
+            // 
             // menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -180,5 +189,6 @@
         private System.Windows.Forms.ToolStripMenuItem sevenToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eightToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nineToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tenToolStripMenuItem;
     }
 }
