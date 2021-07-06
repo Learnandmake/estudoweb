@@ -15,7 +15,7 @@ namespace freidesktop.session9.form
         public consultar()
         {
             InitializeComponent();
-            InitializeComponent();
+           
             bussines.bussines b = new bussines.bussines();
             List<model.modelfilme> l = b.listartodos();
             dvgfilme.DataSource = l;

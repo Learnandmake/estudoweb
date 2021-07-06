@@ -9,7 +9,7 @@ namespace freidesktop.session9.database
 {
     class database
     {
-        public void Inserir(desafio.model.modelfilme filme)
+        public void Inserir(model.modelfilme filme)
         {
             string script = @"insert into tbfilme (nmfilme, vlavaliacao, btdisponivel, dtestreia)
                                             values (@nmfilme, @vlavaliacao, @btdisponivel, @dtestreia)";

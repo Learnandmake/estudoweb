@@ -9,9 +9,9 @@ namespace freidesktop.session9.bussines
     class bussines
     {
         database.database data = new database.database();
-        public void insert(model.modelfilme modelo)
+        public void insert(model.modelfilme model)
         {
-            data.Inserir(modelo);
+            data.Inserir(model);
 
         }
         public List<model.modelfilme> listartodos()
