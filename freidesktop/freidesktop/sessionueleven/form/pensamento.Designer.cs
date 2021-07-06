@@ -35,14 +35,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtpensamento = new System.Windows.Forms.TextBox();
+            this.txtgruposocial = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtpolaridade = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtsentimento = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.picclose = new System.Windows.Forms.PictureBox();
-            this.txtpolaridade = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtgruposocial = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dvg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -51,7 +51,7 @@
             // 
             // txtbnome
             // 
-            this.txtbnome.Location = new System.Drawing.Point(286, 39);
+            this.txtbnome.Location = new System.Drawing.Point(315, 39);
             this.txtbnome.Name = "txtbnome";
             this.txtbnome.Size = new System.Drawing.Size(189, 20);
             this.txtbnome.TabIndex = 30;
@@ -60,7 +60,7 @@
             // 
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.SteelBlue;
-            this.button2.Location = new System.Drawing.Point(480, 37);
+            this.button2.Location = new System.Drawing.Point(512, 37);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 32;
@@ -84,9 +84,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(252, 42);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(38, 13);
+            this.label3.Size = new System.Drawing.Size(63, 13);
             this.label3.TabIndex = 33;
-            this.label3.Text = "Nome:";
+            this.label3.Text = "Sentimento:";
             // 
             // pictureBox1
             // 
@@ -103,7 +103,7 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.txtpolaridade);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.txtpensamento);
+            this.groupBox1.Controls.Add(this.txtsentimento);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(11, 32);
@@ -112,12 +112,44 @@
             this.groupBox1.TabIndex = 34;
             this.groupBox1.TabStop = false;
             // 
-            // txtpensamento
+            // txtgruposocial
             // 
-            this.txtpensamento.Location = new System.Drawing.Point(67, 17);
-            this.txtpensamento.Name = "txtpensamento";
-            this.txtpensamento.Size = new System.Drawing.Size(141, 20);
-            this.txtpensamento.TabIndex = 10;
+            this.txtgruposocial.Location = new System.Drawing.Point(67, 65);
+            this.txtgruposocial.Name = "txtgruposocial";
+            this.txtgruposocial.Size = new System.Drawing.Size(141, 20);
+            this.txtgruposocial.TabIndex = 15;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(4, 68);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(67, 13);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "grupo social:";
+            // 
+            // txtpolaridade
+            // 
+            this.txtpolaridade.Location = new System.Drawing.Point(67, 41);
+            this.txtpolaridade.Name = "txtpolaridade";
+            this.txtpolaridade.Size = new System.Drawing.Size(141, 20);
+            this.txtpolaridade.TabIndex = 13;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 44);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(60, 13);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "Polaridade:";
+            // 
+            // txtsentimento
+            // 
+            this.txtsentimento.Location = new System.Drawing.Point(67, 17);
+            this.txtsentimento.Name = "txtsentimento";
+            this.txtsentimento.Size = new System.Drawing.Size(141, 20);
+            this.txtsentimento.TabIndex = 10;
             // 
             // button1
             // 
@@ -136,9 +168,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(2, 20);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 13);
+            this.label2.Size = new System.Drawing.Size(63, 13);
             this.label2.TabIndex = 12;
-            this.label2.Text = "Pensamento:";
+            this.label2.Text = "Sentimento:";
             // 
             // picclose
             // 
@@ -151,38 +183,6 @@
             this.picclose.TabIndex = 36;
             this.picclose.TabStop = false;
             this.picclose.Click += new System.EventHandler(this.picclose_Click);
-            // 
-            // txtpolaridade
-            // 
-            this.txtpolaridade.Location = new System.Drawing.Point(67, 41);
-            this.txtpolaridade.Name = "txtpolaridade";
-            this.txtpolaridade.Size = new System.Drawing.Size(141, 20);
-            this.txtpolaridade.TabIndex = 13;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 44);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 13);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "Polaridade:";
-            // 
-            // txtgruposocial
-            // 
-            this.txtgruposocial.Location = new System.Drawing.Point(67, 65);
-            this.txtgruposocial.Name = "txtgruposocial";
-            this.txtgruposocial.Size = new System.Drawing.Size(141, 20);
-            this.txtgruposocial.TabIndex = 15;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(4, 68);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 13);
-            this.label4.TabIndex = 16;
-            this.label4.Text = "grupo social:";
             // 
             // pensamento
             // 
@@ -217,7 +217,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txtpensamento;
+        private System.Windows.Forms.TextBox txtsentimento;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox picclose;

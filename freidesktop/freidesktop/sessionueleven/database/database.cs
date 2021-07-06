@@ -27,7 +27,7 @@ namespace freidesktop.sessionueleven.database
 
         public List<model.modelpensamento> FiltrarPorNome(string nome)
         {
-            string script = "select * from pensamento where dssentimento like @dssentimento";
+            string script = "select * from tbpensamento where dssentimento like @dssentimento";
 
             List<MySqlParameter> parms = new List<MySqlParameter>();
             parms.Add(new MySqlParameter("dssentimento", "%" + nome + "%"));
@@ -40,10 +40,10 @@ namespace freidesktop.sessionueleven.database
             while (reader.Read())
             {
                 model.modelpensamento pensamento = new model.modelpensamento();
-                pensamento.dspolaridade = Convert.ToString(reader["dssentimento"]);
-                pensamento.dspolaridade = Convert.ToString(reader["dssentimento"]);
-                pensamento.dspolaridade = Convert.ToString(reader["dsgruposocial"]);
-                pensamento.dspolaridade = Convert.ToString(reader["dtinclusao"]);
+                pensamento.dssentimento = Convert.ToString(reader["dssentimento"]);
+                pensamento.dspolaridade = Convert.ToString(reader["dspolaridade"]);
+                pensamento.dsgruposocial = Convert.ToString(reader["dsgruposocial"]);
+                pensamento.dtinclusao = Convert.ToDateTime(reader["dtinclusao"]);
                 lista.Add(pensamento);
             }
             reader.Close();
@@ -63,13 +63,11 @@ namespace freidesktop.sessionueleven.database
 
             while (reader.Read())
             {
-                 model.modelpensamento pensamento = new model.modelpensamento();
-                pensamento.dspolaridade = Convert.ToString(reader["dssentimento"]);
-                pensamento.dspolaridade = Convert.ToString(reader["dssentimento"]);
-                pensamento.dspolaridade = Convert.ToString(reader["dsgruposocial"]);
-                pensamento.dspolaridade = Convert.ToString(reader["dtinclusao"]);
-
-
+                model.modelpensamento pensamento = new model.modelpensamento();
+                pensamento.dssentimento = Convert.ToString(reader["dssentimento"]);
+                pensamento.dspolaridade = Convert.ToString(reader["dspolaridade"]);
+                pensamento.dsgruposocial = Convert.ToString(reader["dsgruposocial"]);
+                pensamento.dtinclusao = Convert.ToDateTime(reader["dtinclusao"]);
                 lista.Add(pensamento);
             }
             reader.Close();

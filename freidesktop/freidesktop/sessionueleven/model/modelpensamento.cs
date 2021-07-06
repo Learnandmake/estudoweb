@@ -11,6 +11,6 @@ namespace freidesktop.sessionueleven.model
     public string dspolaridade { get; set; }
     public string dssentimento { get; set; }
     public string dsgruposocial { get; set; }
-    public string dtinclusao { get; set; }
+    public DateTime dtinclusao { get; set; }
     }
 }
