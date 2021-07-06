@@ -38,9 +38,9 @@
             this.sixToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sevenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eightToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nineToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eventoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.desafioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nineToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -127,6 +127,13 @@
             this.eightToolStripMenuItem.Text = "Eight";
             this.eightToolStripMenuItem.Click += new System.EventHandler(this.eightToolStripMenuItem_Click);
             // 
+            // nineToolStripMenuItem
+            // 
+            this.nineToolStripMenuItem.Name = "nineToolStripMenuItem";
+            this.nineToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.nineToolStripMenuItem.Text = "Nine";
+            this.nineToolStripMenuItem.Click += new System.EventHandler(this.nineToolStripMenuItem_Click);
+            // 
             // eventoToolStripMenuItem
             // 
             this.eventoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -141,13 +148,6 @@
             this.desafioToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
             this.desafioToolStripMenuItem.Text = "Desafio";
             this.desafioToolStripMenuItem.Click += new System.EventHandler(this.desafioToolStripMenuItem_Click_1);
-            // 
-            // nineToolStripMenuItem
-            // 
-            this.nineToolStripMenuItem.Name = "nineToolStripMenuItem";
-            this.nineToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.nineToolStripMenuItem.Text = "Nine";
-            this.nineToolStripMenuItem.Click += new System.EventHandler(this.nineToolStripMenuItem_Click);
             // 
             // menu
             // 
