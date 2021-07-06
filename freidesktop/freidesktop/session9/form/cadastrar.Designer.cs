@@ -56,6 +56,7 @@
             this.picclose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picclose.TabIndex = 27;
             this.picclose.TabStop = false;
+            this.picclose.Click += new System.EventHandler(this.picclose_Click);
             // 
             // pictureBox1
             // 
@@ -118,6 +119,7 @@
             this.button1.TabIndex = 11;
             this.button1.Text = "ok";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dtpdatetime
             // 

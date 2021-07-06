@@ -15,6 +15,18 @@ namespace freidesktop.session9.form
         public consultar()
         {
             InitializeComponent();
+            InitializeComponent();
+            bussines.bussines b = new bussines.bussines();
+            List<model.modelfilme> l = b.listartodos();
+            dvgfilme.DataSource = l;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string nome = Convert.ToString(txtnome.Text);
+            bussines.bussines b = new bussines.bussines();
+            List<model.modelfilme> l = b.filtrarnome(nome);
+            dvgfilme.DataSource = l;
         }
     }
 }
