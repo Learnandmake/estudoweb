@@ -16,5 +16,20 @@ namespace freidesktop.sessionueleven.form
         {
             InitializeComponent();
         }
+
+        private void picclose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
