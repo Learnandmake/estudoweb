@@ -283,6 +283,29 @@
     <Compile Include="session8\menu\menu.Designer.cs">
       <DependentUpon>menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="session9\bussines\bussines.cs" />
+    <Compile Include="session9\database\connection.cs" />
+    <Compile Include="session9\database\database.cs" />
+    <Compile Include="session9\database\db.cs" />
+    <Compile Include="session9\form\cadastrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="session9\form\cadastrar.Designer.cs">
+      <DependentUpon>cadastrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="session9\form\consultar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="session9\form\consultar.Designer.cs">
+      <DependentUpon>consultar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="session9\menu\menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="session9\menu\menu.Designer.cs">
+      <DependentUpon>menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="session9\model\modelfilme.cs" />
     <Compile Include="telamenu\menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -395,6 +418,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="session8\menu\menu.resx">
       <DependentUpon>menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="session9\form\cadastrar.resx">
+      <DependentUpon>cadastrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="session9\form\consultar.resx">
+      <DependentUpon>consultar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="telamenu\menu.resx">
       <DependentUpon>menu.cs</DependentUpon>
