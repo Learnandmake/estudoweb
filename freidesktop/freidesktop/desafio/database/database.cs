@@ -52,12 +52,13 @@ namespace freidesktop.desafio.database
             return lista;
         }
 
-        public List<model.modelfilme> Filtrar()
+        public List<model.modelfilme> Filtrartodos()
         {
             string script = "select * from tbfilme";
 
+            List<MySqlParameter> parms = new List<MySqlParameter>();
             db db = new db();
-            MySqlDataReader reader = db.ExecuteSelectScript(script, parms);
+            MySqlDataReader reader = db.ExecuteSelectScript(script,parms);
 
             List<model.modelfilme> lista = new List<model.modelfilme>();
 

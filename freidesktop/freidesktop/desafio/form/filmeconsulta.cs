@@ -15,6 +15,14 @@ namespace freidesktop.desafio.form
         public filmeconsulta()
         {
             InitializeComponent();
+            bussines.bussinesfilme b = new bussines.bussinesfilme();
+            List<model.modelfilme> l = b.listartodos();
+            dvgfilme.DataSource = l;
+        }
+
+        private void dvgfilme_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

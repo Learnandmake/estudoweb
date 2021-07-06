@@ -37,7 +37,8 @@ namespace freidesktop.desafio.menu
 
         private void consultaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            form.filmeconsulta c = new form.filmeconsulta();
+            c.Show();
         }
     }
 }

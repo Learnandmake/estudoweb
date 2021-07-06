@@ -14,7 +14,16 @@ namespace freidesktop.desafio.bussines
             data.Inserir(modelo);
 
         }
-        public void 
-    
+        public List<model.modelfilme> listartodos ()
+        {
+            List<model.modelfilme> a = data.Filtrartodos();
+            return a;
+        }
+
+        public List<model.modelfilme> filtrarnome(string nome)
+        {
+            List<model.modelfilme> a = data.FiltrarPorNome(nome);
+            return a;
+        }
     }
 }

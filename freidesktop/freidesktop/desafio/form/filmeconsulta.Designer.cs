@@ -66,6 +66,7 @@
             this.dvgfilme.ReadOnly = true;
             this.dvgfilme.Size = new System.Drawing.Size(554, 196);
             this.dvgfilme.TabIndex = 3;
+            this.dvgfilme.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvgfilme_CellContentClick);
             // 
             // picclose
             // 
