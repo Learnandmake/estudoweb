@@ -340,6 +340,18 @@
       <DependentUpon>menu.cs</DependentUpon>
     </Compile>
     <Compile Include="sessionueleven\model\modelpensamento.cs" />
+    <Compile Include="sessionvtwelve\form\filme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sessionvtwelve\form\filme.Designer.cs">
+      <DependentUpon>filme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sessionvtwelve\menu\menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sessionvtwelve\menu\menu.Designer.cs">
+      <DependentUpon>menu.cs</DependentUpon>
+    </Compile>
     <Compile Include="telamenu\menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -471,6 +483,12 @@
     <EmbeddedResource Include="sessionueleven\menu\menu.resx">
       <DependentUpon>menu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="sessionvtwelve\form\filme.resx">
+      <DependentUpon>filme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sessionvtwelve\menu\menu.resx">
+      <DependentUpon>menu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="telamenu\menu.resx">
       <DependentUpon>menu.cs</DependentUpon>
     </EmbeddedResource>
@@ -500,7 +518,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="sessionvtwelve\bussines\" />
+    <Folder Include="sessionvtwelve\database\" />
+    <Folder Include="sessionvtwelve\model\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
