@@ -27,10 +27,10 @@ namespace freidesktop.sessionueleven.database
 
         public List<model.modelpensamento> FiltrarPorNome(string nome)
         {
-            string script = "select * from tbagenda where nmpessoa like @";
+            string script = "select * from pensamento where dssentimento like @dssentimento";
 
             List<MySqlParameter> parms = new List<MySqlParameter>();
-            parms.Add(new MySqlParameter("nmpessoa", "%" + nome + "%"));
+            parms.Add(new MySqlParameter("dssentimento", "%" + nome + "%"));
 
             db db = new db();
             MySqlDataReader reader = db.ExecuteSelectScript(script, parms);
@@ -40,37 +40,37 @@ namespace freidesktop.sessionueleven.database
             while (reader.Read())
             {
                 model.modelpensamento pensamento = new model.modelpensamento();
-                agenda.idagenda = Convert.ToInt32(reader["idagenda"]);
-                agenda.nmpessoa = Convert.ToString(reader["nmpessoa"]);
-                agenda.dscontato = Convert.ToString(reader["dscontato"]);
-
-
-                lista.Add(agenda);
+                pensamento.dspolaridade = Convert.ToString(reader["dssentimento"]);
+                pensamento.dspolaridade = Convert.ToString(reader["dssentimento"]);
+                pensamento.dspolaridade = Convert.ToString(reader["dsgruposocial"]);
+                pensamento.dspolaridade = Convert.ToString(reader["dtinclusao"]);
+                lista.Add(pensamento);
             }
             reader.Close();
 
             return lista;
         }
 
-        public List<mod.agendamodel> Filtrartodos()
+        public List<model.modelpensamento> Filtrartodos()
         {
-            string script = "select * from tbagenda";
+            string script = "select * from tbpensamento";
 
             List<MySqlParameter> parms = new List<MySqlParameter>();
             db db = new db();
             MySqlDataReader reader = db.ExecuteSelectScript(script, parms);
 
-            List<mod.agendamodel> lista = new List<mod.agendamodel>();
+            List < model.modelpensamento > lista = new List< model.modelpensamento > ();
 
             while (reader.Read())
             {
-                mod.agendamodel agenda = new mod.agendamodel();
-                agenda.idagenda = Convert.ToInt32(reader["idagenda"]);
-                agenda.nmpessoa = Convert.ToString(reader["nmpessoa"]);
-                agenda.dscontato = Convert.ToString(reader["dscontato"]);
+                 model.modelpensamento pensamento = new model.modelpensamento();
+                pensamento.dspolaridade = Convert.ToString(reader["dssentimento"]);
+                pensamento.dspolaridade = Convert.ToString(reader["dssentimento"]);
+                pensamento.dspolaridade = Convert.ToString(reader["dsgruposocial"]);
+                pensamento.dspolaridade = Convert.ToString(reader["dtinclusao"]);
 
 
-                lista.Add(agenda);
+                lista.Add(pensamento);
             }
             reader.Close();
 
