@@ -29,7 +29,7 @@ namespace freidesktop.desafio.form
                 m.avaliacao = nota;
                 m.disponivel = disponivel;
                 m.dtestreia = data;
-
+                m.nome = nome;
                 bussines.bussinesfilme b = new bussines.bussinesfilme();
 
                 b.insert(m);
@@ -43,6 +43,11 @@ namespace freidesktop.desafio.form
             }
             
           
+        }
+
+        private void picclose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

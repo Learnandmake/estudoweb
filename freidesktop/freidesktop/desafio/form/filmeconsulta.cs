@@ -24,5 +24,18 @@ namespace freidesktop.desafio.form
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string nome = Convert.ToString(txtnome.Text);
+            bussines.bussinesfilme b = new bussines.bussinesfilme();
+            List<model.modelfilme> l = b.filtrarnome(nome);
+            dvgfilme.DataSource = l;
+        }
+
+        private void picclose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

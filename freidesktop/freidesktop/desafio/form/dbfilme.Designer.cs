@@ -152,6 +152,7 @@
             this.picclose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picclose.TabIndex = 24;
             this.picclose.TabStop = false;
+            this.picclose.Click += new System.EventHandler(this.picclose_Click);
             // 
             // dbfilme
             // 
