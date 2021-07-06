@@ -28,5 +28,10 @@ namespace freidesktop.session9.form
             List<model.modelfilme> l = b.filtrarnome(nome);
             dvgfilme.DataSource = l;
         }
+
+        private void picclose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
