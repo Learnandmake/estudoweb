@@ -8,19 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace freidesktop.sessionten.menu
+namespace freidesktop.sessionten.form
 {
-    public partial class menu : Form
+    public partial class agenda : Form
     {
-        public menu()
+        public agenda()
         {
             InitializeComponent();
         }
 
-        private void agendaToolStripMenuItem_Click(object sender, EventArgs e)
+      
+        
+
+        private void picclose_Click(object sender, EventArgs e)
         {
-            form.cadastrar m = new form.cadastrar();
-            m.Show();
+
         }
     }
 }

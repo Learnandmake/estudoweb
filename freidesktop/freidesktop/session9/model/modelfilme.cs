@@ -6,14 +6,12 @@ using System.Threading.Tasks;
 
 namespace freidesktop.session9.model
 {
-   
-        class modelfilme
-        {
-            public int idfilme { get; set; }
-            public string nome { get; set; }
-            public decimal avaliacao { get; set; }
-            public bool disponivel { get; set; }
-            public DateTime dtestreia { get; set; }
-        }
-    
+    class modelfilme
+    {
+        public int idfilme { get; set; }
+        public string nome { get; set; }
+        public decimal avaliacao { get; set; }
+        public bool disponivel { get; set; }
+        public DateTime dtestreia { get; set; }
+    }
 }

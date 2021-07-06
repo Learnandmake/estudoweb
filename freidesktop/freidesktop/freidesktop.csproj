@@ -306,6 +306,12 @@
       <DependentUpon>menu.cs</DependentUpon>
     </Compile>
     <Compile Include="session9\model\modelfilme.cs" />
+    <Compile Include="sessionten\form\agenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sessionten\form\agenda.Designer.cs">
+      <DependentUpon>agenda.cs</DependentUpon>
+    </Compile>
     <Compile Include="sessionten\menu\menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -434,6 +440,9 @@
     <EmbeddedResource Include="session9\menu\menu.resx">
       <DependentUpon>menu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="sessionten\form\agenda.resx">
+      <DependentUpon>agenda.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="telamenu\menu.resx">
       <DependentUpon>menu.cs</DependentUpon>
     </EmbeddedResource>
@@ -463,9 +472,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="sessionten\form\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
