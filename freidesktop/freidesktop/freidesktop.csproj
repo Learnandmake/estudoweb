@@ -323,6 +323,9 @@
       <DependentUpon>menu.cs</DependentUpon>
     </Compile>
     <Compile Include="sessionten\mod\agendamodel.cs" />
+    <Compile Include="sessionueleven\database\connection.cs" />
+    <Compile Include="sessionueleven\database\database.cs" />
+    <Compile Include="sessionueleven\database\db.cs" />
     <Compile Include="sessionueleven\form\pensamento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -335,6 +338,7 @@
     <Compile Include="sessionueleven\menu\menu.Designer.cs">
       <DependentUpon>menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="sessionueleven\model\modelpensamento.cs" />
     <Compile Include="telamenu\menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -497,8 +501,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="sessionueleven\bussines\" />
-    <Folder Include="sessionueleven\database\" />
-    <Folder Include="sessionueleven\model\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
