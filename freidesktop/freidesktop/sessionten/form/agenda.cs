@@ -56,11 +56,15 @@ namespace freidesktop.sessionten.form
         }
 
         private void button2_Click(object sender, EventArgs e)
+        {try
         {
-            string nmpessoa =Convert.ToString( txtbnome.Text);
-            busi.bussines b = new busi.bussines();
-            List<mod.agendamodel> m1 = b.filtrarnome(nmpessoa);
-            dvg.DataSource = m1;
+                string nmpessoa = Convert.ToString(txtbnome.Text);
+                busi.bussines b = new busi.bussines();
+                List<mod.agendamodel> m1 = b.filtrarnome(nmpessoa);
+                dvg.DataSource = m1;
+            }
+           catch(Exception)
+            { MessageBox.Show("erro verique o formulario"); }
         }
     }
 }
