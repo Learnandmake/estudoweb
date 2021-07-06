@@ -22,7 +22,7 @@ namespace freidesktop.sessionten.form
 
         private void picclose_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
     }
 }
