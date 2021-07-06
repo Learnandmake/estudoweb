@@ -90,10 +90,12 @@ namespace freidesktop.sessionvtwelve.database
         }
         public void alterar(model.modelfilme filme)
         {
-            string script = "update  from tbfilme where nmfilme like @nome";
+            string script = "update  tbfilme set nmfilme=@nmfilme,vlavaliacao=@vlavaliacao,btdisponivel=@btdisponivel,dtestreia=@dtestreia where idfilme like @idfilme";
+          
 
             List<MySqlParameter> parms = new List<MySqlParameter>();
-
+            parms.Add(new MySqlParameter("idfilme", "%" + filme.idfilme + "%"));
+           
             parms.Add(new MySqlParameter("nmfilme", filme.nome));
             parms.Add(new MySqlParameter("vlavaliacao", filme.avaliacao));
             parms.Add(new MySqlParameter("btdisponivel", filme.disponivel));

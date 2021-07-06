@@ -84,8 +84,27 @@ namespace freidesktop.sessionvtwelve.form
 
         private void button4_Click(object sender, EventArgs e)
         {
-         
-            
+            string nome = Convert.ToString(txtnome.Text);
+            decimal nota = numav.Value;
+            DateTime data = dtesteia.Value;
+            bool disponivel = cbdisponivel.Checked;
+            int idfilme = Convert.ToInt32(txtid.Text);
+            model.modelfilme usuario = new model.modelfilme();
+
+            usuario.idfilme = idfilme;
+            usuario.avaliacao = nota;
+            usuario.disponivel = disponivel;
+            usuario.dtestreia = data;
+            usuario.nome = nome;
+            bussines.bussines b = new bussines.bussines();
+
+            b.update(usuario);
+
+            MessageBox.Show("Operação bem sucedida");
+
+            List<model.modelfilme> l = b.listartodos();
+            dvg.DataSource = l;
+
         }
 
         private void dvg_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
@@ -95,6 +114,7 @@ namespace freidesktop.sessionvtwelve.form
             numav.Value = Convert.ToDecimal(usuario.disponivel);
             dtesteia.Value = Convert.ToDateTime(usuario.dtestreia);
             cbdisponivel.Checked = Convert.ToBoolean(usuario.disponivel);
+            txtid.Text = Convert.ToString(usuario.idfilme);
         }
     }
 }

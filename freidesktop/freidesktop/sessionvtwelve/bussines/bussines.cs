@@ -33,7 +33,7 @@ namespace freidesktop.sessionvtwelve.bussines
         }
         public void update(model.modelfilme modelo )
         {
-        
+            data.alterar(modelo);
         }
     }
 }

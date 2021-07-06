@@ -44,6 +44,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.txtid = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dvg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picclose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -98,6 +99,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtid);
             this.groupBox1.Controls.Add(this.cbdisponivel);
             this.groupBox1.Controls.Add(this.txtnome);
             this.groupBox1.Controls.Add(this.label4);
@@ -210,6 +212,14 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // txtid
+            // 
+            this.txtid.Location = new System.Drawing.Point(15, 93);
+            this.txtid.Name = "txtid";
+            this.txtid.Size = new System.Drawing.Size(19, 20);
+            this.txtid.TabIndex = 41;
+            this.txtid.Visible = false;
+            // 
             // filme
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -249,5 +259,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NumericUpDown numav;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtid;
     }
 }
