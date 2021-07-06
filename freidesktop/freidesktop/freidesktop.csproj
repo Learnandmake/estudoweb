@@ -306,6 +306,7 @@
       <DependentUpon>menu.cs</DependentUpon>
     </Compile>
     <Compile Include="session9\model\modelfilme.cs" />
+    <Compile Include="sessionten\busi\bussines.cs" />
     <Compile Include="sessionten\data\connection.cs" />
     <Compile Include="sessionten\data\database.cs" />
     <Compile Include="sessionten\data\db.cs" />
@@ -476,9 +477,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="sessionten\busi\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

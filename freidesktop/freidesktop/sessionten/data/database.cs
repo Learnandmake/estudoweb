@@ -25,10 +25,10 @@ namespace freidesktop.sessionten.data
 
         public List<mod.agendamodel> FiltrarPorNome(string nome)
         {
-            string script = "select * from tbfilme where nmfilme like @nome";
+            string script = "select * from tbagenda where nmfilme like @nmpessoa";
 
             List<MySqlParameter> parms = new List<MySqlParameter>();
-            parms.Add(new MySqlParameter("nome", "%" + nome + "%"));
+            parms.Add(new MySqlParameter("nmpessoa", "%" + nome + "%"));
 
             db db = new db();
             MySqlDataReader reader = db.ExecuteSelectScript(script, parms);
@@ -52,7 +52,7 @@ namespace freidesktop.sessionten.data
 
         public List<mod.agendamodel> Filtrartodos()
         {
-            string script = "select * from tbfilme";
+            string script = "select * from tbagenda";
 
             List<MySqlParameter> parms = new List<MySqlParameter>();
             db db = new db();
