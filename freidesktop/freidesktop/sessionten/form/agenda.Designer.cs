@@ -37,14 +37,14 @@
             this.txtnome = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dvg = new System.Windows.Forms.DataGridView();
             this.txtbnome = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picclose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvg)).BeginInit();
             this.SuspendLayout();
             // 
             // picclose
@@ -126,16 +126,16 @@
             this.label2.TabIndex = 12;
             this.label2.Text = "Nome:";
             // 
-            // dataGridView1
+            // dvg
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(174, 65);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(443, 185);
-            this.dataGridView1.TabIndex = 15;
+            this.dvg.AllowUserToAddRows = false;
+            this.dvg.AllowUserToDeleteRows = false;
+            this.dvg.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dvg.Location = new System.Drawing.Point(174, 65);
+            this.dvg.Name = "dvg";
+            this.dvg.ReadOnly = true;
+            this.dvg.Size = new System.Drawing.Size(343, 185);
+            this.dvg.TabIndex = 15;
             // 
             // txtbnome
             // 
@@ -172,7 +172,7 @@
             this.ClientSize = new System.Drawing.Size(629, 262);
             this.Controls.Add(this.txtbnome);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dvg);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.picclose);
             this.Controls.Add(this.pictureBox1);
@@ -184,7 +184,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvg)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -200,7 +200,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.MaskedTextBox mcscontato;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dvg;
         private System.Windows.Forms.TextBox txtbnome;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label3;

@@ -19,7 +19,7 @@ namespace freidesktop.sessionten.menu
 
         private void agendaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            form.cadastrar m = new form.cadastrar();
+            form.agenda m = new form.agenda();
             m.Show();
         }
     }

@@ -18,7 +18,7 @@ namespace freidesktop.sessionten.busi
             List<mod.agendamodel> lista = data.Filtrartodos();
             return lista;
     }
-        public List<mod.agendamodel> listartodos(string nome)
+        public List<mod.agendamodel>filtrarnome(string nome)
         {
             List<mod.agendamodel> lista = data.FiltrarPorNome(nome);
             return lista;
