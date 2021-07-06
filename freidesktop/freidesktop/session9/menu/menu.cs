@@ -16,5 +16,17 @@ namespace freidesktop.session9.menu
         {
             InitializeComponent();
         }
+
+        private void cadastroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            form.cadastrar m = new form.cadastrar();
+            m.Show();
+        }
+
+        private void consultaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            form.consultar m = new form.consultar();
+            m.Show();
+        }
     }
 }

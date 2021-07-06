@@ -425,6 +425,9 @@
     <EmbeddedResource Include="session9\form\consultar.resx">
       <DependentUpon>consultar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="session9\menu\menu.resx">
+      <DependentUpon>menu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="telamenu\menu.resx">
       <DependentUpon>menu.cs</DependentUpon>
     </EmbeddedResource>
