@@ -26,5 +26,14 @@ namespace freidesktop.sessionvtwelve.bussines
             List<model.modelfilme> a = data.FiltrarPorNome(nome);
             return a;
         }
+        public void delete(string nome)
+        {
+            data.delete(nome);
+
+        }
+        public void update(model.modelfilme modelo )
+        {
+        
+        }
     }
 }

@@ -27,7 +27,7 @@ namespace freidesktop.sessionvtwelve.form
             {
                 string nome = Convert.ToString(txtnome.Text);
                 decimal nota = numav.Value;
-                DateTime data = dtpdatetime.Value;
+                DateTime data = dtesteia.Value;
                 bool disponivel = cbdisponivel.Checked;
 
                 model.modelfilme m = new model.modelfilme();
@@ -40,6 +40,9 @@ namespace freidesktop.sessionvtwelve.form
                 b.insert(m);
 
                 MessageBox.Show("Operação bem sucedida");
+             
+                List<model.modelfilme> l = b.listartodos();
+                dvg.DataSource = l;
 
             }
             catch (Exception)
@@ -55,6 +58,43 @@ namespace freidesktop.sessionvtwelve.form
             bussines.bussines b = new bussines.bussines();
             List<model.modelfilme> l = b.filtrarnome(nome);
             dvg.DataSource = l;
+        }
+
+        private void picclose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                model.modelfilme usuario = dvg.CurrentRow.DataBoundItem as model.modelfilme;
+                string nome = usuario.nome;
+                bussines.bussines b = new bussines.bussines();
+                b.delete(nome);
+                MessageBox.Show("Operação bem sucedida");
+
+                List<model.modelfilme> l = b.listartodos();
+                dvg.DataSource = l;
+            }
+            catch(Exception)
+            { MessageBox.Show("Erro, verifique o formulario"); }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+         
+            
+        }
+
+        private void dvg_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            model.modelfilme usuario = dvg.CurrentRow.DataBoundItem as model.modelfilme;
+            txtnome.Text = usuario.nome;
+            numav.Value = Convert.ToDecimal(usuario.disponivel);
+            dtesteia.Value = Convert.ToDateTime(usuario.dtestreia);
+            cbdisponivel.Checked = Convert.ToBoolean(usuario.disponivel);
         }
     }
 }

@@ -77,5 +77,29 @@ namespace freidesktop.sessionvtwelve.database
 
             return lista;
         }
+        public void delete (string nome)
+        {
+            string script = "delete  from tbfilme where nmfilme like @nome";
+
+            List<MySqlParameter> parms = new List<MySqlParameter>();
+            parms.Add(new MySqlParameter("nome", "%" + nome + "%"));
+
+            db db = new db();
+            MySqlDataReader reader = db.ExecuteSelectScript(script, parms);
+
+        }
+        public void alterar(model.modelfilme filme)
+        {
+            string script = "update  from tbfilme where nmfilme like @nome";
+
+            List<MySqlParameter> parms = new List<MySqlParameter>();
+
+            parms.Add(new MySqlParameter("nmfilme", filme.nome));
+            parms.Add(new MySqlParameter("vlavaliacao", filme.avaliacao));
+            parms.Add(new MySqlParameter("btdisponivel", filme.disponivel));
+            parms.Add(new MySqlParameter("dtestreia", filme.dtestreia));
+            db db = new db();
+            MySqlDataReader reader = db.ExecuteSelectScript(script, parms);
+        }
     }
 }

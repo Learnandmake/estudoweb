@@ -37,7 +37,7 @@
             this.cbdisponivel = new System.Windows.Forms.CheckBox();
             this.txtnome = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.dtpdatetime = new System.Windows.Forms.DateTimePicker();
+            this.dtesteia = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.numav = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
@@ -61,6 +61,7 @@
             this.button2.TabIndex = 33;
             this.button2.Text = "Delete";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // dvg
             // 
@@ -72,6 +73,7 @@
             this.dvg.ReadOnly = true;
             this.dvg.Size = new System.Drawing.Size(384, 185);
             this.dvg.TabIndex = 32;
+            this.dvg.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dvg_RowHeaderMouseClick);
             // 
             // picclose
             // 
@@ -83,6 +85,7 @@
             this.picclose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picclose.TabIndex = 37;
             this.picclose.TabStop = false;
+            this.picclose.Click += new System.EventHandler(this.picclose_Click);
             // 
             // pictureBox1
             // 
@@ -98,7 +101,7 @@
             this.groupBox1.Controls.Add(this.cbdisponivel);
             this.groupBox1.Controls.Add(this.txtnome);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.dtpdatetime);
+            this.groupBox1.Controls.Add(this.dtesteia);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.numav);
             this.groupBox1.Controls.Add(this.label3);
@@ -132,19 +135,19 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(18, 77);
+            this.label4.Location = new System.Drawing.Point(30, 77);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 13);
+            this.label4.Size = new System.Drawing.Size(42, 13);
             this.label4.TabIndex = 39;
-            this.label4.Text = "datetime:";
+            this.label4.Text = "Estreia:";
             // 
-            // dtpdatetime
+            // dtesteia
             // 
-            this.dtpdatetime.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpdatetime.Location = new System.Drawing.Point(74, 71);
-            this.dtpdatetime.Name = "dtpdatetime";
-            this.dtpdatetime.Size = new System.Drawing.Size(100, 20);
-            this.dtpdatetime.TabIndex = 38;
+            this.dtesteia.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtesteia.Location = new System.Drawing.Point(74, 71);
+            this.dtesteia.Name = "dtesteia";
+            this.dtesteia.Size = new System.Drawing.Size(100, 20);
+            this.dtesteia.TabIndex = 38;
             // 
             // label1
             // 
@@ -181,6 +184,7 @@
             this.button4.TabIndex = 16;
             this.button4.Text = "Update";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -241,7 +245,7 @@
         private System.Windows.Forms.CheckBox cbdisponivel;
         private System.Windows.Forms.TextBox txtnome;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DateTimePicker dtpdatetime;
+        private System.Windows.Forms.DateTimePicker dtesteia;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NumericUpDown numav;
         private System.Windows.Forms.Label label3;
