@@ -83,27 +83,31 @@ namespace freidesktop.sessionvtwelve.form
         }
 
         private void button4_Click(object sender, EventArgs e)
-        {
-            string nome = Convert.ToString(txtnome.Text);
-            decimal nota = numav.Value;
-            DateTime data = dtesteia.Value;
-            bool disponivel = cbdisponivel.Checked;
-            int idfilme = Convert.ToInt32(txtid.Text);
-            model.modelfilme usuario = new model.modelfilme();
+        {  try
+            {
+                string nome = Convert.ToString(txtnome.Text);
+                decimal nota = numav.Value;
+                DateTime data = dtesteia.Value;
+                bool disponivel = cbdisponivel.Checked;
+                int idfilme = Convert.ToInt32(txtid.Text);
+                model.modelfilme usuario = new model.modelfilme();
 
-            usuario.idfilme = idfilme;
-            usuario.avaliacao = nota;
-            usuario.disponivel = disponivel;
-            usuario.dtestreia = data;
-            usuario.nome = nome;
-            bussines.bussines b = new bussines.bussines();
+                usuario.idfilme = idfilme;
+                usuario.avaliacao = nota;
+                usuario.disponivel = disponivel;
+                usuario.dtestreia = data;
+                usuario.nome = nome;
+                bussines.bussines b = new bussines.bussines();
 
-            b.update(usuario);
+                b.update(usuario);
 
-            MessageBox.Show("Operação bem sucedida");
+                MessageBox.Show("Operação bem sucedida");
 
-            List<model.modelfilme> l = b.listartodos();
-            dvg.DataSource = l;
+                List<model.modelfilme> l = b.listartodos();
+                dvg.DataSource = l;
+            }
+           catch(Exception)
+            { MessageBox.Show("Erro, verifique o formulario"); }
 
         }
 
