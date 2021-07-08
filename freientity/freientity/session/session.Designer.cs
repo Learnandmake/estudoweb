@@ -168,10 +168,30 @@
             this.dtnascimento5 = new System.Windows.Forms.DateTimePicker();
             this.label40 = new System.Windows.Forms.Label();
             this.txtnrchamada5 = new System.Windows.Forms.NumericUpDown();
+            this.groupBox17 = new System.Windows.Forms.GroupBox();
+            this.groupBox18 = new System.Windows.Forms.GroupBox();
+            this.dvg6 = new System.Windows.Forms.DataGridView();
+            this.label41 = new System.Windows.Forms.Label();
+            this.nudnrchamada6 = new System.Windows.Forms.NumericUpDown();
+            this.button16 = new System.Windows.Forms.Button();
+            this.label43 = new System.Windows.Forms.Label();
+            this.txtnome6 = new System.Windows.Forms.TextBox();
+            this.label44 = new System.Windows.Forms.Label();
+            this.txtbairro6 = new System.Windows.Forms.TextBox();
+            this.label45 = new System.Windows.Forms.Label();
+            this.txtmunicipio6 = new System.Windows.Forms.TextBox();
+            this.dtnascimento6 = new System.Windows.Forms.DateTimePicker();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.txtidaluno6 = new System.Windows.Forms.TextBox();
+            this.button17 = new System.Windows.Forms.Button();
+            this.label47 = new System.Windows.Forms.Label();
+            this.txtturma6 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picfecha)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.schooldbDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbturmaBindingSource)).BeginInit();
+            this.tabPage6.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.groupBox10.SuspendLayout();
@@ -214,6 +234,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.dvg5)).BeginInit();
             this.groupBox16.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtnrchamada5)).BeginInit();
+            this.groupBox17.SuspendLayout();
+            this.groupBox18.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dvg6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudnrchamada6)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -283,6 +307,8 @@
             // 
             // tabPage6
             // 
+            this.tabPage6.Controls.Add(this.groupBox18);
+            this.tabPage6.Controls.Add(this.groupBox17);
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
@@ -1570,6 +1596,188 @@
             this.txtnrchamada5.Size = new System.Drawing.Size(81, 20);
             this.txtnrchamada5.TabIndex = 13;
             // 
+            // groupBox17
+            // 
+            this.groupBox17.Controls.Add(this.dvg6);
+            this.groupBox17.Location = new System.Drawing.Point(224, 17);
+            this.groupBox17.Name = "groupBox17";
+            this.groupBox17.Size = new System.Drawing.Size(522, 235);
+            this.groupBox17.TabIndex = 0;
+            this.groupBox17.TabStop = false;
+            // 
+            // groupBox18
+            // 
+            this.groupBox18.Controls.Add(this.label47);
+            this.groupBox18.Controls.Add(this.txtturma6);
+            this.groupBox18.Controls.Add(this.button17);
+            this.groupBox18.Controls.Add(this.label46);
+            this.groupBox18.Controls.Add(this.dtnascimento6);
+            this.groupBox18.Controls.Add(this.label45);
+            this.groupBox18.Controls.Add(this.txtmunicipio6);
+            this.groupBox18.Controls.Add(this.label44);
+            this.groupBox18.Controls.Add(this.txtbairro6);
+            this.groupBox18.Controls.Add(this.label43);
+            this.groupBox18.Controls.Add(this.txtnome6);
+            this.groupBox18.Controls.Add(this.label42);
+            this.groupBox18.Controls.Add(this.button16);
+            this.groupBox18.Controls.Add(this.txtidaluno6);
+            this.groupBox18.Controls.Add(this.nudnrchamada6);
+            this.groupBox18.Controls.Add(this.label41);
+            this.groupBox18.Location = new System.Drawing.Point(18, 17);
+            this.groupBox18.Name = "groupBox18";
+            this.groupBox18.Size = new System.Drawing.Size(200, 235);
+            this.groupBox18.TabIndex = 1;
+            this.groupBox18.TabStop = false;
+            // 
+            // dvg6
+            // 
+            this.dvg6.AllowUserToAddRows = false;
+            this.dvg6.AllowUserToDeleteRows = false;
+            this.dvg6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dvg6.Location = new System.Drawing.Point(6, 11);
+            this.dvg6.Name = "dvg6";
+            this.dvg6.ReadOnly = true;
+            this.dvg6.Size = new System.Drawing.Size(510, 218);
+            this.dvg6.TabIndex = 0;
+            this.dvg6.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dvg6_RowHeaderMouseClick);
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(11, 70);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(63, 13);
+            this.label41.TabIndex = 0;
+            this.label41.Text = "nrchamada:";
+            // 
+            // nudnrchamada6
+            // 
+            this.nudnrchamada6.Location = new System.Drawing.Point(70, 68);
+            this.nudnrchamada6.Name = "nudnrchamada6";
+            this.nudnrchamada6.Size = new System.Drawing.Size(79, 20);
+            this.nudnrchamada6.TabIndex = 1;
+            // 
+            // button16
+            // 
+            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button16.ForeColor = System.Drawing.Color.Maroon;
+            this.button16.Location = new System.Drawing.Point(7, 196);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(93, 33);
+            this.button16.TabIndex = 3;
+            this.button16.Text = "Update";
+            this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(11, 97);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(38, 13);
+            this.label43.TabIndex = 6;
+            this.label43.Text = "Nome:";
+            // 
+            // txtnome6
+            // 
+            this.txtnome6.Location = new System.Drawing.Point(58, 94);
+            this.txtnome6.Name = "txtnome6";
+            this.txtnome6.Size = new System.Drawing.Size(91, 20);
+            this.txtnome6.TabIndex = 5;
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(11, 123);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(37, 13);
+            this.label44.TabIndex = 8;
+            this.label44.Text = "Bairro:";
+            // 
+            // txtbairro6
+            // 
+            this.txtbairro6.Location = new System.Drawing.Point(58, 120);
+            this.txtbairro6.Name = "txtbairro6";
+            this.txtbairro6.Size = new System.Drawing.Size(91, 20);
+            this.txtbairro6.TabIndex = 7;
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(0, 150);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(55, 13);
+            this.label45.TabIndex = 10;
+            this.label45.Text = "Municipio:";
+            // 
+            // txtmunicipio6
+            // 
+            this.txtmunicipio6.Location = new System.Drawing.Point(58, 146);
+            this.txtmunicipio6.Name = "txtmunicipio6";
+            this.txtmunicipio6.Size = new System.Drawing.Size(91, 20);
+            this.txtmunicipio6.TabIndex = 9;
+            // 
+            // dtnascimento6
+            // 
+            this.dtnascimento6.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtnascimento6.Location = new System.Drawing.Point(70, 170);
+            this.dtnascimento6.Name = "dtnascimento6";
+            this.dtnascimento6.Size = new System.Drawing.Size(79, 20);
+            this.dtnascimento6.TabIndex = 2;
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(6, 175);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(66, 13);
+            this.label46.TabIndex = 11;
+            this.label46.Text = "Nascimento:";
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(11, 45);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(44, 13);
+            this.label42.TabIndex = 4;
+            this.label42.Text = "idaluno:";
+            // 
+            // txtidaluno6
+            // 
+            this.txtidaluno6.Location = new System.Drawing.Point(58, 42);
+            this.txtidaluno6.Name = "txtidaluno6";
+            this.txtidaluno6.Size = new System.Drawing.Size(91, 20);
+            this.txtidaluno6.TabIndex = 2;
+            // 
+            // button17
+            // 
+            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button17.ForeColor = System.Drawing.Color.Maroon;
+            this.button17.Location = new System.Drawing.Point(103, 196);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(93, 33);
+            this.button17.TabIndex = 12;
+            this.button17.Text = "Delete";
+            this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(11, 19);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(44, 13);
+            this.label47.TabIndex = 14;
+            this.label47.Text = "idturma:";
+            // 
+            // txtturma6
+            // 
+            this.txtturma6.Location = new System.Drawing.Point(58, 16);
+            this.txtturma6.Name = "txtturma6";
+            this.txtturma6.Size = new System.Drawing.Size(91, 20);
+            this.txtturma6.TabIndex = 13;
+            // 
             // session
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1588,6 +1796,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picfecha)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.schooldbDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbturmaBindingSource)).EndInit();
+            this.tabPage6.ResumeLayout(false);
             this.tabPage5.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
             this.groupBox10.ResumeLayout(false);
@@ -1643,6 +1852,11 @@
             this.groupBox16.ResumeLayout(false);
             this.groupBox16.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtnrchamada5)).EndInit();
+            this.groupBox17.ResumeLayout(false);
+            this.groupBox18.ResumeLayout(false);
+            this.groupBox18.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dvg6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudnrchamada6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1788,5 +2002,24 @@
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.DateTimePicker dtnascimento5;
         private System.Windows.Forms.NumericUpDown txtnrchamada5;
+        private System.Windows.Forms.GroupBox groupBox18;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.DateTimePicker dtnascimento6;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.TextBox txtmunicipio6;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.TextBox txtbairro6;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.TextBox txtnome6;
+        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.NumericUpDown nudnrchamada6;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.GroupBox groupBox17;
+        private System.Windows.Forms.DataGridView dvg6;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.TextBox txtidaluno6;
+        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.TextBox txtturma6;
     }
 }

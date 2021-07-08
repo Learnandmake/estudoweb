@@ -18,5 +18,13 @@ namespace freientity.bussines
             List<database.entity.tbaluno> lista = data.ltodosalfa();
             return lista;
         }
+        public void delete (int id)
+        {
+            data.delete(id);
+        }
+        public  void alterar(database.entity.tbaluno aluno)
+        {
+            data.alterar(aluno);
+        }
     }
 }

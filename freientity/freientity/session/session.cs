@@ -29,6 +29,8 @@ namespace freientity
             dvg4a3.DataSource = lista;
             dvg4a4.DataSource = lista;
             dvg4a5.DataSource = lista;
+       
+         
             //s2
             nudqtdaluno2.Minimum = 25;
             txtnmturma2.MaxLength = 50;
@@ -51,6 +53,7 @@ namespace freientity
             //s5 
             bussines.bussinesalunos al = new bussines.bussinesalunos();
             dvg5.DataSource = al.listartda();
+            dvg6.DataSource = al.listartda();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -470,6 +473,54 @@ namespace freientity
            {
                 MessageBox.Show("erro verifique o formulario");
            }
+
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            database.entity.tbaluno aluno = new database.entity.tbaluno();
+            aluno.dsbairro = Convert.ToString(txtbairro6.Text);
+            aluno.idaluno = Convert.ToInt32(txtidaluno6.Text);
+            aluno.dsmunicipio = Convert.ToString(txtmunicipio6.Text);
+            aluno.nmaluno = Convert.ToString(txtnome6.Text);
+            aluno.idturma = Convert.ToInt32(txtturma6.Text);
+            aluno.nrchamada = Convert.ToInt32(nudnrchamada6.Value);
+            aluno.dtnascimento = dtnascimento6.Value;
+
+            bussines.bussinesalunos b = new bussines.bussinesalunos();
+            b.alterar(aluno);
+
+            MessageBox.Show("operação bem sucedida");
+
+            dvg6.DataSource = b.listartda();
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {try
+        {
+                int id = Convert.ToInt32(txtidaluno6.Text);
+
+                bussines.bussinesalunos a = new bussines.bussinesalunos();
+                a.delete(id);
+
+                MessageBox.Show("Operação bem sucedida");
+
+                bussines.bussinesalunos al = new bussines.bussinesalunos();
+                dvg6.DataSource = al.listartda();
+            }
+          catch (Exception)
+          { MessageBox.Show("erro verifique o formulario"); }
+        }
+
+        private void dvg6_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            database.entity.tbaluno alunoselecionado = dvg6.CurrentRow.DataBoundItem as database.entity.tbaluno;
+            txtbairro6.Text = alunoselecionado.dsbairro;
+            txtidaluno6.Text = Convert.ToString(alunoselecionado.idaluno);
+            txtmunicipio6.Text = alunoselecionado.dsmunicipio;
+            txtnome6.Text = alunoselecionado.nmaluno;
+            txtturma6.Text = Convert.ToString(alunoselecionado.idturma);
+            dtnascimento6.Value = alunoselecionado.dtnascimento;
 
         }
     }

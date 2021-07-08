@@ -19,6 +19,29 @@ namespace freientity.database
             List<entity.tbaluno> lista = entitie.tbalunos.OrderBy(t => t.nmaluno).ToList();
             return lista;
         }
+        public void delete(int idaluno)
+        {
+            entity.tbaluno lista = entitie.tbalunos.FirstOrDefault(t => t.idaluno == idaluno);
+            entitie.Entry(lista).State = System.Data.EntityState.Deleted;
+            entitie.SaveChanges();
+        }
+        public void alterar(entity.tbaluno idaluno)
+        {
+            entity.tbaluno lista =  entitie.tbalunos.FirstOrDefault(t => t.idaluno == idaluno.idaluno);
 
+            if (lista != null)
+            {
+                lista.idturma = idaluno.idturma;
+                lista.nmaluno = idaluno.nmaluno;
+                lista.nrchamada = idaluno.nrchamada;
+                lista.dtnascimento = idaluno.dtnascimento;
+                lista.idaluno = lista.idaluno;
+                lista.dsmunicipio = idaluno.dsmunicipio;
+                lista.dsbairro = idaluno.dsbairro;
+                
+
+                entitie.SaveChanges();
+            }
+        }
     }
 }
