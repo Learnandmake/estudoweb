@@ -13,6 +13,7 @@ namespace freientity.database
         public void inserir(entity.tbturma turma)
         {
             entitie.tbturmas.Add(turma);
+            entitie.SaveChanges();
         }
 
         public List<entity.tbturma> ltodos()
@@ -20,9 +21,14 @@ namespace freientity.database
             List<entity.tbturma> lista = entitie.tbturmas.ToList();
             return lista;
         }
-        public List<entity.tbturma> fturma(string curso)
+        public List<entity.tbturma> fturma(string turma)
         {
-            List<entity.tbturma> lista = entitie.tbturmas.Where(t =>t.nmcurso == curso).ToList();
+            List<entity.tbturma> lista = entitie.tbturmas.Where(t =>t.nmturma == turma).ToList();
+            return lista;
+        }
+        public List<entity.tbturma> fcurso(string curso)
+        {
+            List<entity.tbturma> lista = entitie.tbturmas.Where(t => t.nmcurso == curso).ToList();
             return lista;
         }
     }

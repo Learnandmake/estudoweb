@@ -20,9 +20,14 @@ namespace freientity.bussines
             List < database.entity.tbturma > lista = data.ltodos();
             return lista;
         }
-        public List<database.entity.tbturma> ftodos(string curso)
+        public List<database.entity.tbturma> fturma(string turma)
         {
-            List<database.entity.tbturma> lista = data.fturma(curso);
+            List<database.entity.tbturma> lista = data.fturma(turma);
+            return lista;
+        }
+        public List<database.entity.tbturma> fcurso(string curso)
+        {
+            List<database.entity.tbturma> lista = data.fcurso(curso);
             return lista;
         }
     }
