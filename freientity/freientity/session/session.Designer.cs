@@ -102,16 +102,8 @@
             this.label26 = new System.Windows.Forms.Label();
             this.txtidturma4a2 = new System.Windows.Forms.TextBox();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
-            this.dataGridView6 = new System.Windows.Forms.DataGridView();
-            this.label37 = new System.Windows.Forms.Label();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.label38 = new System.Windows.Forms.Label();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.label39 = new System.Windows.Forms.Label();
-            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.dvg4a5 = new System.Windows.Forms.DataGridView();
             this.button15 = new System.Windows.Forms.Button();
-            this.label40 = new System.Windows.Forms.Label();
-            this.textBox24 = new System.Windows.Forms.TextBox();
             this.groupBox14 = new System.Windows.Forms.GroupBox();
             this.dvg4a4 = new System.Windows.Forms.DataGridView();
             this.button14 = new System.Windows.Forms.Button();
@@ -154,6 +146,12 @@
             this.txtcurso4a4 = new System.Windows.Forms.TextBox();
             this.label31 = new System.Windows.Forms.Label();
             this.cbonmturma4a4 = new System.Windows.Forms.ComboBox();
+            this.nudqtdaluno4a5 = new System.Windows.Forms.NumericUpDown();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.txtcurso4a5 = new System.Windows.Forms.TextBox();
+            this.txtnmturma4a5 = new System.Windows.Forms.TextBox();
+            this.label35 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picfecha)).BeginInit();
             this.One.SuspendLayout();
@@ -182,7 +180,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudqtdaluno4a2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dvg4a2)).BeginInit();
             this.groupBox15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvg4a5)).BeginInit();
             this.groupBox14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvg4a4)).BeginInit();
             this.groupBox11.SuspendLayout();
@@ -194,6 +192,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.tbturmaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudqtdaluno4a3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudqtdaluno4a4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudqtdaluno4a5)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -920,80 +919,30 @@
             // 
             // groupBox15
             // 
-            this.groupBox15.Controls.Add(this.dataGridView6);
-            this.groupBox15.Controls.Add(this.label37);
-            this.groupBox15.Controls.Add(this.textBox21);
-            this.groupBox15.Controls.Add(this.label38);
-            this.groupBox15.Controls.Add(this.textBox22);
-            this.groupBox15.Controls.Add(this.label39);
-            this.groupBox15.Controls.Add(this.textBox23);
+            this.groupBox15.Controls.Add(this.nudqtdaluno4a5);
+            this.groupBox15.Controls.Add(this.label33);
+            this.groupBox15.Controls.Add(this.label34);
+            this.groupBox15.Controls.Add(this.txtcurso4a5);
+            this.groupBox15.Controls.Add(this.txtnmturma4a5);
+            this.groupBox15.Controls.Add(this.label35);
+            this.groupBox15.Controls.Add(this.dvg4a5);
             this.groupBox15.Controls.Add(this.button15);
-            this.groupBox15.Controls.Add(this.label40);
-            this.groupBox15.Controls.Add(this.textBox24);
             this.groupBox15.Location = new System.Drawing.Point(8, 312);
             this.groupBox15.Name = "groupBox15";
             this.groupBox15.Size = new System.Drawing.Size(364, 150);
             this.groupBox15.TabIndex = 11;
             this.groupBox15.TabStop = false;
             // 
-            // dataGridView6
+            // dvg4a5
             // 
-            this.dataGridView6.AllowUserToAddRows = false;
-            this.dataGridView6.AllowUserToDeleteRows = false;
-            this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView6.Location = new System.Drawing.Point(159, 13);
-            this.dataGridView6.Name = "dataGridView6";
-            this.dataGridView6.ReadOnly = true;
-            this.dataGridView6.Size = new System.Drawing.Size(200, 127);
-            this.dataGridView6.TabIndex = 9;
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(6, 94);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(41, 13);
-            this.label37.TabIndex = 7;
-            this.label37.Text = "label37";
-            // 
-            // textBox21
-            // 
-            this.textBox21.Location = new System.Drawing.Point(53, 91);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(100, 20);
-            this.textBox21.TabIndex = 8;
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(6, 68);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(41, 13);
-            this.label38.TabIndex = 5;
-            this.label38.Text = "label38";
-            // 
-            // textBox22
-            // 
-            this.textBox22.Location = new System.Drawing.Point(53, 65);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(100, 20);
-            this.textBox22.TabIndex = 6;
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(6, 42);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(41, 13);
-            this.label39.TabIndex = 3;
-            this.label39.Text = "label39";
-            // 
-            // textBox23
-            // 
-            this.textBox23.Location = new System.Drawing.Point(53, 39);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(100, 20);
-            this.textBox23.TabIndex = 4;
+            this.dvg4a5.AllowUserToAddRows = false;
+            this.dvg4a5.AllowUserToDeleteRows = false;
+            this.dvg4a5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dvg4a5.Location = new System.Drawing.Point(159, 13);
+            this.dvg4a5.Name = "dvg4a5";
+            this.dvg4a5.ReadOnly = true;
+            this.dvg4a5.Size = new System.Drawing.Size(200, 127);
+            this.dvg4a5.TabIndex = 9;
             // 
             // button15
             // 
@@ -1003,24 +952,9 @@
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(144, 23);
             this.button15.TabIndex = 0;
-            this.button15.Text = "update";
+            this.button15.Text = "Insert";
             this.button15.UseVisualStyleBackColor = true;
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(6, 16);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(41, 13);
-            this.label40.TabIndex = 1;
-            this.label40.Text = "label40";
-            // 
-            // textBox24
-            // 
-            this.textBox24.Location = new System.Drawing.Point(53, 13);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(100, 20);
-            this.textBox24.TabIndex = 2;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // groupBox14
             // 
@@ -1415,6 +1349,54 @@
             this.cbonmturma4a4.TabIndex = 15;
             this.cbonmturma4a4.SelectedIndexChanged += new System.EventHandler(this.cbonmturma4a4_SelectedIndexChanged);
             // 
+            // nudqtdaluno4a5
+            // 
+            this.nudqtdaluno4a5.Location = new System.Drawing.Point(53, 72);
+            this.nudqtdaluno4a5.Name = "nudqtdaluno4a5";
+            this.nudqtdaluno4a5.Size = new System.Drawing.Size(100, 20);
+            this.nudqtdaluno4a5.TabIndex = 31;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(22, 75);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(25, 13);
+            this.label33.TabIndex = 30;
+            this.label33.Text = "qtd:";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(1, 49);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(50, 13);
+            this.label34.TabIndex = 28;
+            this.label34.Text = "nmcurso:";
+            // 
+            // txtcurso4a5
+            // 
+            this.txtcurso4a5.Location = new System.Drawing.Point(53, 46);
+            this.txtcurso4a5.Name = "txtcurso4a5";
+            this.txtcurso4a5.Size = new System.Drawing.Size(100, 20);
+            this.txtcurso4a5.TabIndex = 29;
+            // 
+            // txtnmturma4a5
+            // 
+            this.txtnmturma4a5.Location = new System.Drawing.Point(53, 20);
+            this.txtnmturma4a5.Name = "txtnmturma4a5";
+            this.txtnmturma4a5.Size = new System.Drawing.Size(100, 20);
+            this.txtnmturma4a5.TabIndex = 27;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(1, 23);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(50, 13);
+            this.label35.TabIndex = 26;
+            this.label35.Text = "nmturma:";
+            // 
             // session
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1466,7 +1448,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dvg4a2)).EndInit();
             this.groupBox15.ResumeLayout(false);
             this.groupBox15.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvg4a5)).EndInit();
             this.groupBox14.ResumeLayout(false);
             this.groupBox14.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvg4a4)).EndInit();
@@ -1481,6 +1463,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.tbturmaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudqtdaluno4a3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudqtdaluno4a4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudqtdaluno4a5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1554,16 +1537,8 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.GroupBox groupBox15;
-        private System.Windows.Forms.DataGridView dataGridView6;
-        private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.TextBox textBox21;
-        private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.TextBox textBox23;
+        private System.Windows.Forms.DataGridView dvg4a5;
         private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.TextBox textBox24;
         private System.Windows.Forms.GroupBox groupBox14;
         private System.Windows.Forms.DataGridView dvg4a4;
         private System.Windows.Forms.Button button14;
@@ -1612,5 +1587,11 @@
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.TextBox txtcurso4a4;
+        private System.Windows.Forms.NumericUpDown nudqtdaluno4a5;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.TextBox txtcurso4a5;
+        private System.Windows.Forms.TextBox txtnmturma4a5;
+        private System.Windows.Forms.Label label35;
     }
 }

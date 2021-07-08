@@ -9,15 +9,15 @@ namespace freientity.bussines
     class bussines
     {
         database.database data = new database.database();
-    
-        public void inserir (database.entity.tbturma turma)
+
+        public void inserir(database.entity.tbturma turma)
         {
             data.inserir(turma);
         }
-        
-        public List<database.entity.tbturma > ltodos()
+
+        public List<database.entity.tbturma> ltodos()
         {
-            List < database.entity.tbturma > lista = data.ltodos();
+            List<database.entity.tbturma> lista = data.ltodos();
             return lista;
         }
         public List<database.entity.tbturma> fturma(string turma)
@@ -40,7 +40,7 @@ namespace freientity.bussines
             List<database.entity.tbturma> lista = data.fqtdaluno(qtdmaxaluno);
             return lista;
         }
-        public void dturma (int id)
+        public void dturma(int id)
         {
             data.delete(id);
         }
@@ -56,6 +56,12 @@ namespace freientity.bussines
         {
             data.alterarpornome(turma);
         }
-      
+
+        public int vnmturma(string nmturma)
+        {
+           int b =  data.vnmturma(nmturma);
+            return b;
+        }
+
     }
 }

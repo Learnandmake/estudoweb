@@ -83,5 +83,10 @@ namespace freientity.database
             entitie.Entry(lista).State = System.Data.EntityState.Deleted;
             entitie.SaveChanges();
         }
+        public int vnmturma(string nmturma)
+        {
+           int b = entitie.tbturmas.Count(t=>t.nmturma==nmturma);
+            return b;
+        }
     }
 }

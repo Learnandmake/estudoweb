@@ -28,6 +28,7 @@ namespace freientity
             dvg4a2.DataSource = lista;
             dvg4a3.DataSource = lista;
             dvg4a4.DataSource = lista;
+            dvg4a5.DataSource = lista;
             //s2
             nudqtdaluno2.Minimum = 25;
             txtnmturma2.MaxLength = 50;
@@ -39,7 +40,8 @@ namespace freientity
             //s4
             txtqtdaluno4a1.Minimum = 25;
             nudqtdaluno4a2.Minimum = 25;
-           
+            nudqtdaluno4a5.Minimum = 25;
+
             cbonmturma4a2.DataSource = lista;
             cbonmturma4a2.DisplayMember = "nmturma";
             cbonmturma4a2.ValueMember = "nmturma";
@@ -117,6 +119,7 @@ namespace freientity
             dvgcurso2.DataSource = lista;
             dvgidturma2.DataSource = lista;
             dvgqtdaluno2.DataSource = lista;
+
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -192,6 +195,7 @@ namespace freientity
 
                 b.aturma(model);
                 MessageBox.Show("Operação bem sucedida");
+
             }
           
              else
@@ -212,58 +216,85 @@ namespace freientity
         }
 
         private void button10_Click(object sender, EventArgs e)
-        {
-            string curso = Convert.ToString(txtcurso4a1.Text);
-            string turma = Convert.ToString(txtnmturma4a1.Text);
-            int idturma = Convert.ToInt32(txtidturma4a1.Text);
-            int qtdaluno = Convert.ToInt32(txtqtdaluno4a1.Value);
-            bussines.bussines b = new bussines.bussines();
-            if (turma != string.Empty && curso != string.Empty && qtdaluno != null)
+        {try
             {
-                database.entity.tbturma model = new database.entity.tbturma();
-                model.idturma = idturma;
-                model.nmcurso = curso;
-                model.nmturma = turma;
-                model.qtmaxalunos = qtdaluno;
+                string curso = Convert.ToString(txtcurso4a1.Text);
+                string turma = Convert.ToString(txtnmturma4a1.Text);
+                int idturma = Convert.ToInt32(txtidturma4a1.Text);
+                int qtdaluno = Convert.ToInt32(txtqtdaluno4a1.Value);
+                bussines.bussines b = new bussines.bussines();
+                if (turma != string.Empty && curso != string.Empty && qtdaluno != null)
+                {
+                    database.entity.tbturma model = new database.entity.tbturma();
+                    model.idturma = idturma;
+                    model.nmcurso = curso;
+                    model.nmturma = turma;
+                    model.qtmaxalunos = qtdaluno;
 
-                b.aturmapornome(model);
-                MessageBox.Show("Operação bem sucedida");
+                    b.aturmapornome(model);
+                    MessageBox.Show("Operação bem sucedida");
+                }
+
+                else
+                { MessageBox.Show("erro verifique o formulario"); }
+
+                List<database.entity.tbturma> lista = b.ltodos();
+                dvg4a5.DataSource = lista;
+                dvg4a4.DataSource = lista;
+                dvg4a3.DataSource = lista;
+                dvg4a2.DataSource = lista;
+                dvg4a1.DataSource = lista;
+                cbonmturma4a2.DataSource = lista;
+                cbonmturma4a2.DisplayMember = "nmturma";
+                cbonmturma4a2.ValueMember = "nmturma";
+                cbonmturma4a4.DataSource = lista;
+                cbonmturma4a4.DisplayMember = "nmturma";
+                cbonmturma4a4.ValueMember = "nmturma";
             }
-
-            else
+            catch (Exception)
             { MessageBox.Show("erro verifique o formulario"); }
-
-            List<database.entity.tbturma> lista = b.ltodos();
-            dvg4a1.DataSource = lista;
         }
 
         private void button12_Click(object sender, EventArgs e)
-        {
-            var turma1 = cbonmturma4a2.SelectedItem as database.entity.tbturma;
-            string curso = Convert.ToString(txtcurso4a2.Text);
-            string turma = turma1.nmturma;
-            int idturma = Convert.ToInt32(txtidturma4a2.Text);
-            int qtdaluno = Convert.ToInt32(nudqtdaluno4a2.Value);
-            bussines.bussines b = new bussines.bussines();
-            if (turma != string.Empty && curso != string.Empty && qtdaluno != null)
+        {try
             {
+                var turma1 = cbonmturma4a2.SelectedItem as database.entity.tbturma;
+                string curso = Convert.ToString(txtcurso4a2.Text);
+                string turma = turma1.nmturma;
+                int idturma = Convert.ToInt32(txtidturma4a2.Text);
+                int qtdaluno = Convert.ToInt32(nudqtdaluno4a2.Value);
+                bussines.bussines b = new bussines.bussines();
+                if (turma != string.Empty && curso != string.Empty && qtdaluno != null)
+                {
 
 
-                database.entity.tbturma model = new database.entity.tbturma();
-                model.idturma = idturma;
-                model.nmcurso = curso;
-                model.nmturma = turma;
-                model.qtmaxalunos = qtdaluno;
+                    database.entity.tbturma model = new database.entity.tbturma();
+                    model.idturma = idturma;
+                    model.nmcurso = curso;
+                    model.nmturma = turma;
+                    model.qtmaxalunos = qtdaluno;
 
-                b.aturmapornome(model);
-                MessageBox.Show("Operação bem sucedida");
-            }
+                    b.aturmapornome(model);
+                    MessageBox.Show("Operação bem sucedida");
+                }
 
-            else
+                else
+                { MessageBox.Show("erro verifique o formulario"); }
+
+                List<database.entity.tbturma> lista = b.ltodos();
+                dvg4a5.DataSource = lista;
+                dvg4a4.DataSource = lista;
+                dvg4a3.DataSource = lista;
+                dvg4a2.DataSource = lista;
+                dvg4a1.DataSource = lista;
+                cbonmturma4a2.DataSource = lista;
+                cbonmturma4a2.DisplayMember = "nmturma";
+                cbonmturma4a2.ValueMember = "nmturma";
+                cbonmturma4a4.DataSource = lista;
+                cbonmturma4a4.DisplayMember = "nmturma";
+                cbonmturma4a4.ValueMember = "nmturma";}
+            catch (Exception)
             { MessageBox.Show("erro verifique o formulario"); }
-
-            List<database.entity.tbturma> lista = b.ltodos();
-            dvg4a2.DataSource = lista;
         }
         private void cbonmturma4a2_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -285,16 +316,30 @@ namespace freientity
         }
 
         private void button11_Click(object sender, EventArgs e)
-        {
-            string nome  = Convert.ToString(txtnmturma4a3.Text);
+        {try
+            {
+                string nome = Convert.ToString(txtnmturma4a3.Text);
 
-            bussines.bussines b = new bussines.bussines();
-            b.dturmanmturma(nome);
+                bussines.bussines b = new bussines.bussines();
+                b.dturmanmturma(nome);
 
-            MessageBox.Show("Operação bem sucedida");
+                MessageBox.Show("Operação bem sucedida");
 
-            List<database.entity.tbturma> lista = b.ltodos();
-            dvg4a3.DataSource = lista;
+                List<database.entity.tbturma> lista = b.ltodos();
+                dvg4a5.DataSource = lista;
+                dvg4a4.DataSource = lista;
+                dvg4a3.DataSource = lista;
+                dvg4a2.DataSource = lista;
+                dvg4a1.DataSource = lista;
+                cbonmturma4a2.DataSource = lista;
+                cbonmturma4a2.DisplayMember = "nmturma";
+                cbonmturma4a2.ValueMember = "nmturma";
+                cbonmturma4a4.DataSource = lista;
+                cbonmturma4a4.DisplayMember = "nmturma";
+                cbonmturma4a4.ValueMember = "nmturma";
+            }
+            catch (Exception)
+            { MessageBox.Show("erro verifique o formulario"); }
         }
 
         private void dvg4a3_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
@@ -307,17 +352,31 @@ namespace freientity
         }
 
         private void button14_Click(object sender, EventArgs e)
-        {
-            var turma = cbonmturma4a4.SelectedItem as database.entity.tbturma;
-            string nome = turma.nmturma;
+        {try
+            {
+                var turma = cbonmturma4a4.SelectedItem as database.entity.tbturma;
+                string nome = turma.nmturma;
 
-            bussines.bussines b = new bussines.bussines();
-            b.dturmanmturma(nome);
+                bussines.bussines b = new bussines.bussines();
+                b.dturmanmturma(nome);
 
-            MessageBox.Show("Operação bem sucedida");
+                MessageBox.Show("Operação bem sucedida");
 
-            List<database.entity.tbturma> lista = b.ltodos();
-            dvg4a4.DataSource = lista;
+                List<database.entity.tbturma> lista = b.ltodos();
+                dvg4a5.DataSource = lista;
+                dvg4a4.DataSource = lista;
+                dvg4a3.DataSource = lista;
+                dvg4a2.DataSource = lista;
+                dvg4a1.DataSource = lista;
+                cbonmturma4a2.DataSource = lista;
+                cbonmturma4a2.DisplayMember = "nmturma";
+                cbonmturma4a2.ValueMember = "nmturma";
+                cbonmturma4a4.DataSource = lista;
+                cbonmturma4a4.DisplayMember = "nmturma";
+                cbonmturma4a4.ValueMember = "nmturma";
+            }
+            catch (Exception)
+            { MessageBox.Show("erro verifique o formulario"); }
         }
 
         private void cbonmturma4a4_SelectedIndexChanged(object sender, EventArgs e)
@@ -327,6 +386,54 @@ namespace freientity
             txtcurso4a4.Text = turma.nmcurso;
             txtidturma4a4.Text = Convert.ToString(turma.idturma);
             nudqtdaluno4a4.Value = Convert.ToDecimal(turma.qtmaxalunos);
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {try
+            {
+                string nmturma = Convert.ToString(txtnmturma4a5.Text);
+                string curso = Convert.ToString(txtcurso4a5.Text);
+                int qtdaluno = Convert.ToInt32(nudqtdaluno4a5.Value);
+                nmturma.Trim();
+                curso.Trim();
+
+                bussines.bussines a = new bussines.bussines();
+
+                int b = a.vnmturma(nmturma);
+                if (nmturma != string.Empty && curso != string.Empty && qtdaluno != null && b == 0)
+                {
+
+
+                    database.entity.tbturma model = new database.entity.tbturma();
+
+                    model.nmcurso = curso;
+                    model.nmturma = nmturma;
+                    model.qtmaxalunos = qtdaluno;
+
+                    a.inserir(model);
+
+                    MessageBox.Show("Operação bem sucedida");
+                }
+
+                else
+                { MessageBox.Show("ja tem uma turma com esse nome"); }
+                bussines.bussines b1 = new bussines.bussines();
+
+                List<database.entity.tbturma> lista = b1.ltodos();
+                dvg4a5.DataSource = lista;
+                dvg4a4.DataSource = lista;
+                dvg4a3.DataSource = lista;
+                dvg4a2.DataSource = lista;
+                dvg4a1.DataSource = lista;
+                cbonmturma4a2.DataSource = lista;
+                cbonmturma4a2.DisplayMember = "nmturma";
+                cbonmturma4a2.ValueMember = "nmturma";
+                cbonmturma4a4.DataSource = lista;
+                cbonmturma4a4.DisplayMember = "nmturma";
+                cbonmturma4a4.ValueMember = "nmturma";
+            }
+            catch (Exception)
+            { MessageBox.Show("erro verifique o formulario"); }
         }
     }
 }
