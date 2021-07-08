@@ -44,6 +44,10 @@ namespace freientity.bussines
         {
             data.delete(id);
         }
+        public void dturmanmturma(string id)
+        {
+            data.deletenmturma(id);
+        }
         public void aturma(database.entity.tbturma turma)
         {
             data.alterar(turma);
@@ -52,5 +56,6 @@ namespace freientity.bussines
         {
             data.alterarpornome(turma);
         }
+      
     }
 }

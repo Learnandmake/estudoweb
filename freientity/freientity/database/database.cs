@@ -23,7 +23,7 @@ namespace freientity.database
         }
         public List<entity.tbturma> fturma(string turma)
         {
-            List<entity.tbturma> lista = entitie.tbturmas.Where(t =>t.nmturma == turma).ToList();
+            List<entity.tbturma> lista = entitie.tbturmas.Where(t => t.nmturma == turma).ToList();
             return lista;
         }
         public List<entity.tbturma> fcurso(string curso)
@@ -41,19 +41,19 @@ namespace freientity.database
             List<entity.tbturma> lista = entitie.tbturmas.Where(t => t.qtmaxalunos == qtdaluno).ToList();
             return lista;
         }
-        public void delete (int idturma)
+        public void delete(int idturma)
         {
-          entity.tbturma lista = entitie.tbturmas.FirstOrDefault(t => t.idturma == idturma);
+            entity.tbturma lista = entitie.tbturmas.FirstOrDefault(t => t.idturma == idturma);
             entitie.Entry(lista).State = System.Data.EntityState.Deleted;
             entitie.SaveChanges();
         }
-       public void alterar(entity.tbturma turma)
-       {
-            entity.tbturma lista =entitie.tbturmas.FirstOrDefault(t => t.idturma == turma.idturma);
+        public void alterar(entity.tbturma turma)
+        {
+            entity.tbturma lista = entitie.tbturmas.FirstOrDefault(t => t.idturma == turma.idturma);
 
             if (lista != null)
             {
-                lista.idturma = lista.idturma ;
+                lista.idturma = lista.idturma;
                 lista.nmcurso = turma.nmcurso;
                 lista.nmturma = turma.nmturma;
                 lista.qtmaxalunos = turma.qtmaxalunos;
@@ -61,6 +61,7 @@ namespace freientity.database
                 entitie.SaveChanges();
             }
         }
+
         public void alterarpornome(entity.tbturma turma)
         {
             entity.tbturma lista = entitie.tbturmas.FirstOrDefault(t => t.nmturma == turma.nmturma);
@@ -74,6 +75,13 @@ namespace freientity.database
 
                 entitie.SaveChanges();
             }
+        }
+      
+        public void deletenmturma(string nmturma)
+        {
+            entity.tbturma lista = entitie.tbturmas.FirstOrDefault(t => t.nmturma == nmturma);
+            entitie.Entry(lista).State = System.Data.EntityState.Deleted;
+            entitie.SaveChanges();
         }
     }
 }

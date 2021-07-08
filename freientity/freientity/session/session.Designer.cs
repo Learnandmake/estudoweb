@@ -76,67 +76,31 @@
             this.label6 = new System.Windows.Forms.Label();
             this.dvgcurso2 = new System.Windows.Forms.DataGridView();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lbltime = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.dvgturma3 = new System.Windows.Forms.DataGridView();
-            this.label13 = new System.Windows.Forms.Label();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.button8 = new System.Windows.Forms.Button();
-            this.txtidturma3 = new System.Windows.Forms.TextBox();
-            this.txtnmturma3 = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.button9 = new System.Windows.Forms.Button();
-            this.nudqtdaluno3 = new System.Windows.Forms.NumericUpDown();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.dvgturma3 = new System.Windows.Forms.DataGridView();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.txtnmcurso3 = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.lbl = new System.Windows.Forms.Label();
-            this.txtidturma4a1 = new System.Windows.Forms.TextBox();
-            this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.button10 = new System.Windows.Forms.Button();
-            this.lv = new System.Windows.Forms.Label();
-            this.txtnmturma4a1 = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.txtcurso4a1 = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.label21 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.button11 = new System.Windows.Forms.Button();
-            this.label24 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.groupBox13 = new System.Windows.Forms.GroupBox();
-            this.dataGridView4 = new System.Windows.Forms.DataGridView();
-            this.label29 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.label30 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.label31 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.button13 = new System.Windows.Forms.Button();
-            this.label32 = new System.Windows.Forms.Label();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.groupBox14 = new System.Windows.Forms.GroupBox();
-            this.dataGridView5 = new System.Windows.Forms.DataGridView();
-            this.label33 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.label34 = new System.Windows.Forms.Label();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.label35 = new System.Windows.Forms.Label();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.button14 = new System.Windows.Forms.Button();
-            this.label36 = new System.Windows.Forms.Label();
-            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.nudqtdaluno3 = new System.Windows.Forms.NumericUpDown();
+            this.button9 = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtnmturma3 = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txtidturma3 = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.button8 = new System.Windows.Forms.Button();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.cbonmturma4a2 = new System.Windows.Forms.ComboBox();
+            this.nudqtdaluno4a2 = new System.Windows.Forms.NumericUpDown();
+            this.dvg4a2 = new System.Windows.Forms.DataGridView();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.txtcurso4a2 = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.button12 = new System.Windows.Forms.Button();
+            this.label26 = new System.Windows.Forms.Label();
+            this.txtidturma4a2 = new System.Windows.Forms.TextBox();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
             this.dataGridView6 = new System.Windows.Forms.DataGridView();
             this.label37 = new System.Windows.Forms.Label();
@@ -148,8 +112,48 @@
             this.button15 = new System.Windows.Forms.Button();
             this.label40 = new System.Windows.Forms.Label();
             this.textBox24 = new System.Windows.Forms.TextBox();
-            this.dvg4a1 = new System.Windows.Forms.DataGridView();
+            this.groupBox14 = new System.Windows.Forms.GroupBox();
+            this.dvg4a4 = new System.Windows.Forms.DataGridView();
+            this.button14 = new System.Windows.Forms.Button();
+            this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.dvg4a3 = new System.Windows.Forms.DataGridView();
+            this.button11 = new System.Windows.Forms.Button();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.txtqtdaluno4a1 = new System.Windows.Forms.NumericUpDown();
+            this.dvg4a1 = new System.Windows.Forms.DataGridView();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.txtcurso4a1 = new System.Windows.Forms.TextBox();
+            this.lv = new System.Windows.Forms.Label();
+            this.txtnmturma4a1 = new System.Windows.Forms.TextBox();
+            this.button10 = new System.Windows.Forms.Button();
+            this.lbl = new System.Windows.Forms.Label();
+            this.txtidturma4a1 = new System.Windows.Forms.TextBox();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lbltime = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.schooldbDataSet = new freientity.schooldbDataSet();
+            this.tbturmaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tbturmaTableAdapter = new freientity.schooldbDataSetTableAdapters.tbturmaTableAdapter();
+            this.label21 = new System.Windows.Forms.Label();
+            this.nudqtdaluno4a3 = new System.Windows.Forms.NumericUpDown();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.txtcurso4a3 = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.txtnmturma4a3 = new System.Windows.Forms.TextBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.txtidturma4a3 = new System.Windows.Forms.TextBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.nudqtdaluno4a4 = new System.Windows.Forms.NumericUpDown();
+            this.label29 = new System.Windows.Forms.Label();
+            this.txtidturma4a4 = new System.Windows.Forms.TextBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.txtcurso4a4 = new System.Windows.Forms.TextBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.cbonmturma4a4 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picfecha)).BeginInit();
             this.One.SuspendLayout();
@@ -169,22 +173,27 @@
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvgcurso2)).BeginInit();
             this.tabPage3.SuspendLayout();
-            this.tabPage4.SuspendLayout();
+            this.groupBox9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvgturma3)).BeginInit();
             this.groupBox8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudqtdaluno3)).BeginInit();
-            this.groupBox9.SuspendLayout();
-            this.groupBox10.SuspendLayout();
-            this.groupBox11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            this.groupBox13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
-            this.groupBox14.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
+            this.tabPage4.SuspendLayout();
+            this.groupBox12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudqtdaluno4a2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvg4a2)).BeginInit();
             this.groupBox15.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dvg4a1)).BeginInit();
+            this.groupBox14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dvg4a4)).BeginInit();
+            this.groupBox11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dvg4a3)).BeginInit();
+            this.groupBox10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtqtdaluno4a1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvg4a1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.schooldbDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbturmaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudqtdaluno4a3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudqtdaluno4a4)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -364,7 +373,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(761, 429);
+            this.tabPage2.Size = new System.Drawing.Size(761, 508);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Two";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -660,70 +669,14 @@
             this.tabPage3.Text = "Three";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // tabPage4
+            // groupBox9
             // 
-            this.tabPage4.Controls.Add(this.groupBox15);
-            this.tabPage4.Controls.Add(this.groupBox14);
-            this.tabPage4.Controls.Add(this.groupBox13);
-            this.tabPage4.Controls.Add(this.groupBox11);
-            this.tabPage4.Controls.Add(this.groupBox10);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(761, 508);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Four";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(761, 454);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "Five";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // tabPage6
-            // 
-            this.tabPage6.Location = new System.Drawing.Point(4, 22);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(761, 429);
-            this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "Six";
-            this.tabPage6.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Maroon;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 31);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Session";
-            // 
-            // lbltime
-            // 
-            this.lbltime.AutoSize = true;
-            this.lbltime.BackColor = System.Drawing.Color.Maroon;
-            this.lbltime.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltime.ForeColor = System.Drawing.Color.White;
-            this.lbltime.Location = new System.Drawing.Point(172, 0);
-            this.lbltime.Name = "lbltime";
-            this.lbltime.Size = new System.Drawing.Size(73, 31);
-            this.lbltime.TabIndex = 4;
-            this.lbltime.Text = "Hora";
-            // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.groupBox9.Controls.Add(this.dvgturma3);
+            this.groupBox9.Location = new System.Drawing.Point(229, 6);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(507, 159);
+            this.groupBox9.TabIndex = 3;
+            this.groupBox9.TabStop = false;
             // 
             // dvgturma3
             // 
@@ -736,15 +689,6 @@
             this.dvgturma3.Size = new System.Drawing.Size(495, 140);
             this.dvgturma3.TabIndex = 0;
             this.dvgturma3.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dvgturma3_RowHeaderMouseClick);
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(38, 16);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(18, 13);
-            this.label13.TabIndex = 1;
-            this.label13.Text = "id:";
             // 
             // groupBox8
             // 
@@ -764,24 +708,49 @@
             this.groupBox8.TabIndex = 2;
             this.groupBox8.TabStop = false;
             // 
-            // button8
+            // txtnmcurso3
             // 
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.ForeColor = System.Drawing.Color.Maroon;
-            this.button8.Location = new System.Drawing.Point(9, 112);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
-            this.button8.TabIndex = 0;
-            this.button8.Text = "Update";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.txtnmcurso3.Location = new System.Drawing.Point(57, 62);
+            this.txtnmcurso3.Name = "txtnmcurso3";
+            this.txtnmcurso3.Size = new System.Drawing.Size(100, 20);
+            this.txtnmcurso3.TabIndex = 8;
             // 
-            // txtidturma3
+            // label16
             // 
-            this.txtidturma3.Location = new System.Drawing.Point(57, 13);
-            this.txtidturma3.Name = "txtidturma3";
-            this.txtidturma3.Size = new System.Drawing.Size(100, 20);
-            this.txtidturma3.TabIndex = 1;
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(21, 65);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(36, 13);
+            this.label16.TabIndex = 9;
+            this.label16.Text = "curso:";
+            // 
+            // nudqtdaluno3
+            // 
+            this.nudqtdaluno3.Location = new System.Drawing.Point(57, 87);
+            this.nudqtdaluno3.Name = "nudqtdaluno3";
+            this.nudqtdaluno3.Size = new System.Drawing.Size(100, 20);
+            this.nudqtdaluno3.TabIndex = 7;
+            // 
+            // button9
+            // 
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.ForeColor = System.Drawing.Color.DarkRed;
+            this.button9.Location = new System.Drawing.Point(90, 112);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(75, 23);
+            this.button9.TabIndex = 6;
+            this.button9.Text = "Delete";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(6, 90);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(51, 13);
+            this.label15.TabIndex = 5;
+            this.label15.Text = "qtdaluno:";
             // 
             // txtnmturma3
             // 
@@ -799,457 +768,155 @@
             this.label14.TabIndex = 3;
             this.label14.Text = "turma:";
             // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(6, 90);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(51, 13);
-            this.label15.TabIndex = 5;
-            this.label15.Text = "qtdaluno:";
-            // 
-            // button9
-            // 
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.ForeColor = System.Drawing.Color.DarkRed;
-            this.button9.Location = new System.Drawing.Point(90, 112);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(75, 23);
-            this.button9.TabIndex = 6;
-            this.button9.Text = "Delete";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
-            // 
-            // nudqtdaluno3
-            // 
-            this.nudqtdaluno3.Location = new System.Drawing.Point(57, 87);
-            this.nudqtdaluno3.Name = "nudqtdaluno3";
-            this.nudqtdaluno3.Size = new System.Drawing.Size(100, 20);
-            this.nudqtdaluno3.TabIndex = 7;
-            // 
-            // groupBox9
-            // 
-            this.groupBox9.Controls.Add(this.dvgturma3);
-            this.groupBox9.Location = new System.Drawing.Point(229, 6);
-            this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(507, 159);
-            this.groupBox9.TabIndex = 3;
-            this.groupBox9.TabStop = false;
-            // 
-            // txtnmcurso3
-            // 
-            this.txtnmcurso3.Location = new System.Drawing.Point(57, 62);
-            this.txtnmcurso3.Name = "txtnmcurso3";
-            this.txtnmcurso3.Size = new System.Drawing.Size(100, 20);
-            this.txtnmcurso3.TabIndex = 8;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(21, 65);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(36, 13);
-            this.label16.TabIndex = 9;
-            this.label16.Text = "curso:";
-            // 
-            // lbl
-            // 
-            this.lbl.AutoSize = true;
-            this.lbl.Location = new System.Drawing.Point(6, 16);
-            this.lbl.Name = "lbl";
-            this.lbl.Size = new System.Drawing.Size(44, 13);
-            this.lbl.TabIndex = 1;
-            this.lbl.Text = "idturma:";
-            // 
-            // txtidturma4a1
-            // 
-            this.txtidturma4a1.Location = new System.Drawing.Point(53, 13);
-            this.txtidturma4a1.Name = "txtidturma4a1";
-            this.txtidturma4a1.Size = new System.Drawing.Size(100, 20);
-            this.txtidturma4a1.TabIndex = 2;
-            // 
-            // groupBox10
-            // 
-            this.groupBox10.Controls.Add(this.txtqtdaluno4a1);
-            this.groupBox10.Controls.Add(this.dvg4a1);
-            this.groupBox10.Controls.Add(this.label20);
-            this.groupBox10.Controls.Add(this.label19);
-            this.groupBox10.Controls.Add(this.txtcurso4a1);
-            this.groupBox10.Controls.Add(this.lv);
-            this.groupBox10.Controls.Add(this.txtnmturma4a1);
-            this.groupBox10.Controls.Add(this.button10);
-            this.groupBox10.Controls.Add(this.lbl);
-            this.groupBox10.Controls.Add(this.txtidturma4a1);
-            this.groupBox10.Location = new System.Drawing.Point(8, 6);
-            this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(364, 150);
-            this.groupBox10.TabIndex = 4;
-            this.groupBox10.TabStop = false;
-            // 
-            // button10
-            // 
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.ForeColor = System.Drawing.Color.Maroon;
-            this.button10.Location = new System.Drawing.Point(9, 117);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(144, 23);
-            this.button10.TabIndex = 0;
-            this.button10.Text = "update";
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
-            // 
-            // lv
-            // 
-            this.lv.AutoSize = true;
-            this.lv.Location = new System.Drawing.Point(1, 42);
-            this.lv.Name = "lv";
-            this.lv.Size = new System.Drawing.Size(50, 13);
-            this.lv.TabIndex = 3;
-            this.lv.Text = "nmturma:";
-            // 
-            // txtnmturma4a1
-            // 
-            this.txtnmturma4a1.Location = new System.Drawing.Point(53, 39);
-            this.txtnmturma4a1.Name = "txtnmturma4a1";
-            this.txtnmturma4a1.Size = new System.Drawing.Size(100, 20);
-            this.txtnmturma4a1.TabIndex = 4;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(1, 68);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(50, 13);
-            this.label19.TabIndex = 5;
-            this.label19.Text = "nmcurso:";
-            // 
-            // txtcurso4a1
-            // 
-            this.txtcurso4a1.Location = new System.Drawing.Point(53, 65);
-            this.txtcurso4a1.Name = "txtcurso4a1";
-            this.txtcurso4a1.Size = new System.Drawing.Size(100, 20);
-            this.txtcurso4a1.TabIndex = 6;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(22, 94);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(25, 13);
-            this.label20.TabIndex = 7;
-            this.label20.Text = "qtd:";
-            // 
-            // groupBox11
-            // 
-            this.groupBox11.Controls.Add(this.dataGridView2);
-            this.groupBox11.Controls.Add(this.label21);
-            this.groupBox11.Controls.Add(this.textBox5);
-            this.groupBox11.Controls.Add(this.label22);
-            this.groupBox11.Controls.Add(this.textBox6);
-            this.groupBox11.Controls.Add(this.label23);
-            this.groupBox11.Controls.Add(this.textBox7);
-            this.groupBox11.Controls.Add(this.button11);
-            this.groupBox11.Controls.Add(this.label24);
-            this.groupBox11.Controls.Add(this.textBox8);
-            this.groupBox11.Location = new System.Drawing.Point(8, 162);
-            this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(364, 150);
-            this.groupBox11.TabIndex = 10;
-            this.groupBox11.TabStop = false;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.AllowUserToAddRows = false;
-            this.dataGridView2.AllowUserToDeleteRows = false;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(159, 13);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.Size = new System.Drawing.Size(200, 127);
-            this.dataGridView2.TabIndex = 9;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(6, 94);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(41, 13);
-            this.label21.TabIndex = 7;
-            this.label21.Text = "label21";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(53, 91);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 8;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(6, 68);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(41, 13);
-            this.label22.TabIndex = 5;
-            this.label22.Text = "label22";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(53, 65);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 6;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(6, 42);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(41, 13);
-            this.label23.TabIndex = 3;
-            this.label23.Text = "label23";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(53, 39);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
-            this.textBox7.TabIndex = 4;
-            // 
-            // button11
-            // 
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.ForeColor = System.Drawing.Color.Maroon;
-            this.button11.Location = new System.Drawing.Point(9, 117);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(144, 23);
-            this.button11.TabIndex = 0;
-            this.button11.Text = "update";
-            this.button11.UseVisualStyleBackColor = true;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(6, 16);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(41, 13);
-            this.label24.TabIndex = 1;
-            this.label24.Text = "label24";
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(53, 13);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 20);
-            this.textBox8.TabIndex = 2;
-            // 
-            // groupBox13
-            // 
-            this.groupBox13.Controls.Add(this.dataGridView4);
-            this.groupBox13.Controls.Add(this.label29);
-            this.groupBox13.Controls.Add(this.textBox13);
-            this.groupBox13.Controls.Add(this.label30);
-            this.groupBox13.Controls.Add(this.textBox14);
-            this.groupBox13.Controls.Add(this.label31);
-            this.groupBox13.Controls.Add(this.textBox15);
-            this.groupBox13.Controls.Add(this.button13);
-            this.groupBox13.Controls.Add(this.label32);
-            this.groupBox13.Controls.Add(this.textBox16);
-            this.groupBox13.Location = new System.Drawing.Point(379, 6);
-            this.groupBox13.Name = "groupBox13";
-            this.groupBox13.Size = new System.Drawing.Size(396, 150);
-            this.groupBox13.TabIndex = 11;
-            this.groupBox13.TabStop = false;
-            // 
-            // dataGridView4
-            // 
-            this.dataGridView4.AllowUserToAddRows = false;
-            this.dataGridView4.AllowUserToDeleteRows = false;
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Location = new System.Drawing.Point(159, 13);
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.ReadOnly = true;
-            this.dataGridView4.Size = new System.Drawing.Size(222, 127);
-            this.dataGridView4.TabIndex = 9;
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(6, 94);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(41, 13);
-            this.label29.TabIndex = 7;
-            this.label29.Text = "label29";
-            // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(53, 91);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(100, 20);
-            this.textBox13.TabIndex = 8;
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(6, 68);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(41, 13);
-            this.label30.TabIndex = 5;
-            this.label30.Text = "label30";
-            // 
-            // textBox14
-            // 
-            this.textBox14.Location = new System.Drawing.Point(53, 65);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(100, 20);
-            this.textBox14.TabIndex = 6;
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(6, 42);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(41, 13);
-            this.label31.TabIndex = 3;
-            this.label31.Text = "label31";
-            // 
-            // textBox15
-            // 
-            this.textBox15.Location = new System.Drawing.Point(53, 39);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(100, 20);
-            this.textBox15.TabIndex = 4;
-            // 
-            // button13
-            // 
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.ForeColor = System.Drawing.Color.Maroon;
-            this.button13.Location = new System.Drawing.Point(9, 117);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(144, 23);
-            this.button13.TabIndex = 0;
-            this.button13.Text = "update";
-            this.button13.UseVisualStyleBackColor = true;
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(6, 16);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(41, 13);
-            this.label32.TabIndex = 1;
-            this.label32.Text = "label32";
-            // 
-            // textBox16
-            // 
-            this.textBox16.Location = new System.Drawing.Point(53, 13);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(100, 20);
-            this.textBox16.TabIndex = 2;
-            // 
-            // groupBox14
-            // 
-            this.groupBox14.Controls.Add(this.dataGridView5);
-            this.groupBox14.Controls.Add(this.label33);
-            this.groupBox14.Controls.Add(this.textBox17);
-            this.groupBox14.Controls.Add(this.label34);
-            this.groupBox14.Controls.Add(this.textBox18);
-            this.groupBox14.Controls.Add(this.label35);
-            this.groupBox14.Controls.Add(this.textBox19);
-            this.groupBox14.Controls.Add(this.button14);
-            this.groupBox14.Controls.Add(this.label36);
-            this.groupBox14.Controls.Add(this.textBox20);
-            this.groupBox14.Location = new System.Drawing.Point(377, 162);
-            this.groupBox14.Name = "groupBox14";
-            this.groupBox14.Size = new System.Drawing.Size(396, 150);
-            this.groupBox14.TabIndex = 12;
-            this.groupBox14.TabStop = false;
-            // 
-            // dataGridView5
-            // 
-            this.dataGridView5.AllowUserToAddRows = false;
-            this.dataGridView5.AllowUserToDeleteRows = false;
-            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView5.Location = new System.Drawing.Point(159, 13);
-            this.dataGridView5.Name = "dataGridView5";
-            this.dataGridView5.ReadOnly = true;
-            this.dataGridView5.Size = new System.Drawing.Size(222, 127);
-            this.dataGridView5.TabIndex = 9;
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(6, 94);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(41, 13);
-            this.label33.TabIndex = 7;
-            this.label33.Text = "label33";
-            // 
-            // textBox17
-            // 
-            this.textBox17.Location = new System.Drawing.Point(53, 91);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(100, 20);
-            this.textBox17.TabIndex = 8;
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(6, 68);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(41, 13);
-            this.label34.TabIndex = 5;
-            this.label34.Text = "label34";
-            // 
-            // textBox18
-            // 
-            this.textBox18.Location = new System.Drawing.Point(53, 65);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(100, 20);
-            this.textBox18.TabIndex = 6;
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(6, 42);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(41, 13);
-            this.label35.TabIndex = 3;
-            this.label35.Text = "label35";
-            // 
-            // textBox19
-            // 
-            this.textBox19.Location = new System.Drawing.Point(53, 39);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(100, 20);
-            this.textBox19.TabIndex = 4;
-            // 
-            // button14
-            // 
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.ForeColor = System.Drawing.Color.Maroon;
-            this.button14.Location = new System.Drawing.Point(9, 117);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(144, 23);
-            this.button14.TabIndex = 0;
-            this.button14.Text = "update";
-            this.button14.UseVisualStyleBackColor = true;
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(6, 16);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(41, 13);
-            this.label36.TabIndex = 1;
-            this.label36.Text = "label36";
-            // 
-            // textBox20
-            // 
-            this.textBox20.Location = new System.Drawing.Point(53, 13);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(100, 20);
-            this.textBox20.TabIndex = 2;
+            // txtidturma3
+            // 
+            this.txtidturma3.Location = new System.Drawing.Point(57, 13);
+            this.txtidturma3.Name = "txtidturma3";
+            this.txtidturma3.Size = new System.Drawing.Size(100, 20);
+            this.txtidturma3.TabIndex = 1;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(38, 16);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(18, 13);
+            this.label13.TabIndex = 1;
+            this.label13.Text = "id:";
+            // 
+            // button8
+            // 
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.ForeColor = System.Drawing.Color.Maroon;
+            this.button8.Location = new System.Drawing.Point(9, 112);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(75, 23);
+            this.button8.TabIndex = 0;
+            this.button8.Text = "Update";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.groupBox12);
+            this.tabPage4.Controls.Add(this.groupBox15);
+            this.tabPage4.Controls.Add(this.groupBox14);
+            this.tabPage4.Controls.Add(this.groupBox11);
+            this.tabPage4.Controls.Add(this.groupBox10);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(761, 508);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Four";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // groupBox12
+            // 
+            this.groupBox12.Controls.Add(this.cbonmturma4a2);
+            this.groupBox12.Controls.Add(this.nudqtdaluno4a2);
+            this.groupBox12.Controls.Add(this.dvg4a2);
+            this.groupBox12.Controls.Add(this.label17);
+            this.groupBox12.Controls.Add(this.label18);
+            this.groupBox12.Controls.Add(this.txtcurso4a2);
+            this.groupBox12.Controls.Add(this.label25);
+            this.groupBox12.Controls.Add(this.button12);
+            this.groupBox12.Controls.Add(this.label26);
+            this.groupBox12.Controls.Add(this.txtidturma4a2);
+            this.groupBox12.Location = new System.Drawing.Point(377, 6);
+            this.groupBox12.Name = "groupBox12";
+            this.groupBox12.Size = new System.Drawing.Size(364, 150);
+            this.groupBox12.TabIndex = 14;
+            this.groupBox12.TabStop = false;
+            // 
+            // cbonmturma4a2
+            // 
+            this.cbonmturma4a2.FormattingEnabled = true;
+            this.cbonmturma4a2.Location = new System.Drawing.Point(53, 38);
+            this.cbonmturma4a2.Name = "cbonmturma4a2";
+            this.cbonmturma4a2.Size = new System.Drawing.Size(100, 21);
+            this.cbonmturma4a2.TabIndex = 14;
+            this.cbonmturma4a2.SelectedIndexChanged += new System.EventHandler(this.cbonmturma4a2_SelectedIndexChanged);
+            // 
+            // nudqtdaluno4a2
+            // 
+            this.nudqtdaluno4a2.Location = new System.Drawing.Point(53, 91);
+            this.nudqtdaluno4a2.Name = "nudqtdaluno4a2";
+            this.nudqtdaluno4a2.Size = new System.Drawing.Size(100, 20);
+            this.nudqtdaluno4a2.TabIndex = 13;
+            // 
+            // dvg4a2
+            // 
+            this.dvg4a2.AllowUserToAddRows = false;
+            this.dvg4a2.AllowUserToDeleteRows = false;
+            this.dvg4a2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dvg4a2.Location = new System.Drawing.Point(159, 13);
+            this.dvg4a2.Name = "dvg4a2";
+            this.dvg4a2.ReadOnly = true;
+            this.dvg4a2.Size = new System.Drawing.Size(200, 127);
+            this.dvg4a2.TabIndex = 9;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(22, 94);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(25, 13);
+            this.label17.TabIndex = 7;
+            this.label17.Text = "qtd:";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(1, 68);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(50, 13);
+            this.label18.TabIndex = 5;
+            this.label18.Text = "nmcurso:";
+            // 
+            // txtcurso4a2
+            // 
+            this.txtcurso4a2.Location = new System.Drawing.Point(53, 65);
+            this.txtcurso4a2.Name = "txtcurso4a2";
+            this.txtcurso4a2.Size = new System.Drawing.Size(100, 20);
+            this.txtcurso4a2.TabIndex = 6;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(1, 42);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(50, 13);
+            this.label25.TabIndex = 3;
+            this.label25.Text = "nmturma:";
+            // 
+            // button12
+            // 
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button12.ForeColor = System.Drawing.Color.Maroon;
+            this.button12.Location = new System.Drawing.Point(9, 117);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(144, 23);
+            this.button12.TabIndex = 0;
+            this.button12.Text = "update";
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(6, 16);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(44, 13);
+            this.label26.TabIndex = 1;
+            this.label26.Text = "idturma:";
+            // 
+            // txtidturma4a2
+            // 
+            this.txtidturma4a2.Location = new System.Drawing.Point(53, 13);
+            this.txtidturma4a2.Name = "txtidturma4a2";
+            this.txtidturma4a2.Size = new System.Drawing.Size(100, 20);
+            this.txtidturma4a2.TabIndex = 2;
             // 
             // groupBox15
             // 
@@ -1355,6 +1022,115 @@
             this.textBox24.Size = new System.Drawing.Size(100, 20);
             this.textBox24.TabIndex = 2;
             // 
+            // groupBox14
+            // 
+            this.groupBox14.Controls.Add(this.cbonmturma4a4);
+            this.groupBox14.Controls.Add(this.label28);
+            this.groupBox14.Controls.Add(this.dvg4a4);
+            this.groupBox14.Controls.Add(this.nudqtdaluno4a4);
+            this.groupBox14.Controls.Add(this.button14);
+            this.groupBox14.Controls.Add(this.label29);
+            this.groupBox14.Controls.Add(this.txtidturma4a4);
+            this.groupBox14.Controls.Add(this.label31);
+            this.groupBox14.Controls.Add(this.label30);
+            this.groupBox14.Controls.Add(this.txtcurso4a4);
+            this.groupBox14.Location = new System.Drawing.Point(377, 162);
+            this.groupBox14.Name = "groupBox14";
+            this.groupBox14.Size = new System.Drawing.Size(396, 150);
+            this.groupBox14.TabIndex = 12;
+            this.groupBox14.TabStop = false;
+            // 
+            // dvg4a4
+            // 
+            this.dvg4a4.AllowUserToAddRows = false;
+            this.dvg4a4.AllowUserToDeleteRows = false;
+            this.dvg4a4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dvg4a4.Location = new System.Drawing.Point(159, 13);
+            this.dvg4a4.Name = "dvg4a4";
+            this.dvg4a4.ReadOnly = true;
+            this.dvg4a4.Size = new System.Drawing.Size(222, 127);
+            this.dvg4a4.TabIndex = 9;
+            // 
+            // button14
+            // 
+            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button14.ForeColor = System.Drawing.Color.Maroon;
+            this.button14.Location = new System.Drawing.Point(9, 117);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(144, 23);
+            this.button14.TabIndex = 0;
+            this.button14.Text = "delete";
+            this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
+            // 
+            // groupBox11
+            // 
+            this.groupBox11.Controls.Add(this.label21);
+            this.groupBox11.Controls.Add(this.dvg4a3);
+            this.groupBox11.Controls.Add(this.nudqtdaluno4a3);
+            this.groupBox11.Controls.Add(this.button11);
+            this.groupBox11.Controls.Add(this.label22);
+            this.groupBox11.Controls.Add(this.txtidturma4a3);
+            this.groupBox11.Controls.Add(this.label23);
+            this.groupBox11.Controls.Add(this.label27);
+            this.groupBox11.Controls.Add(this.txtcurso4a3);
+            this.groupBox11.Controls.Add(this.txtnmturma4a3);
+            this.groupBox11.Controls.Add(this.label24);
+            this.groupBox11.Location = new System.Drawing.Point(8, 162);
+            this.groupBox11.Name = "groupBox11";
+            this.groupBox11.Size = new System.Drawing.Size(364, 150);
+            this.groupBox11.TabIndex = 10;
+            this.groupBox11.TabStop = false;
+            // 
+            // dvg4a3
+            // 
+            this.dvg4a3.AllowUserToAddRows = false;
+            this.dvg4a3.AllowUserToDeleteRows = false;
+            this.dvg4a3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dvg4a3.Location = new System.Drawing.Point(159, 13);
+            this.dvg4a3.Name = "dvg4a3";
+            this.dvg4a3.ReadOnly = true;
+            this.dvg4a3.Size = new System.Drawing.Size(200, 127);
+            this.dvg4a3.TabIndex = 9;
+            this.dvg4a3.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dvg4a3_RowHeaderMouseClick);
+            // 
+            // button11
+            // 
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.ForeColor = System.Drawing.Color.Maroon;
+            this.button11.Location = new System.Drawing.Point(9, 117);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(144, 23);
+            this.button11.TabIndex = 0;
+            this.button11.Text = "Delete";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // groupBox10
+            // 
+            this.groupBox10.Controls.Add(this.txtqtdaluno4a1);
+            this.groupBox10.Controls.Add(this.dvg4a1);
+            this.groupBox10.Controls.Add(this.label20);
+            this.groupBox10.Controls.Add(this.label19);
+            this.groupBox10.Controls.Add(this.txtcurso4a1);
+            this.groupBox10.Controls.Add(this.lv);
+            this.groupBox10.Controls.Add(this.txtnmturma4a1);
+            this.groupBox10.Controls.Add(this.button10);
+            this.groupBox10.Controls.Add(this.lbl);
+            this.groupBox10.Controls.Add(this.txtidturma4a1);
+            this.groupBox10.Location = new System.Drawing.Point(8, 6);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(364, 150);
+            this.groupBox10.TabIndex = 4;
+            this.groupBox10.TabStop = false;
+            // 
+            // txtqtdaluno4a1
+            // 
+            this.txtqtdaluno4a1.Location = new System.Drawing.Point(53, 91);
+            this.txtqtdaluno4a1.Name = "txtqtdaluno4a1";
+            this.txtqtdaluno4a1.Size = new System.Drawing.Size(100, 20);
+            this.txtqtdaluno4a1.TabIndex = 13;
+            // 
             // dvg4a1
             // 
             this.dvg4a1.AllowUserToAddRows = false;
@@ -1367,12 +1143,277 @@
             this.dvg4a1.TabIndex = 9;
             this.dvg4a1.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dvg4a1_RowHeaderMouseClick);
             // 
-            // txtqtdaluno4a1
+            // label20
             // 
-            this.txtqtdaluno4a1.Location = new System.Drawing.Point(53, 91);
-            this.txtqtdaluno4a1.Name = "txtqtdaluno4a1";
-            this.txtqtdaluno4a1.Size = new System.Drawing.Size(100, 20);
-            this.txtqtdaluno4a1.TabIndex = 13;
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(22, 94);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(25, 13);
+            this.label20.TabIndex = 7;
+            this.label20.Text = "qtd:";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(1, 68);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(50, 13);
+            this.label19.TabIndex = 5;
+            this.label19.Text = "nmcurso:";
+            // 
+            // txtcurso4a1
+            // 
+            this.txtcurso4a1.Location = new System.Drawing.Point(53, 65);
+            this.txtcurso4a1.Name = "txtcurso4a1";
+            this.txtcurso4a1.Size = new System.Drawing.Size(100, 20);
+            this.txtcurso4a1.TabIndex = 6;
+            // 
+            // lv
+            // 
+            this.lv.AutoSize = true;
+            this.lv.Location = new System.Drawing.Point(1, 42);
+            this.lv.Name = "lv";
+            this.lv.Size = new System.Drawing.Size(50, 13);
+            this.lv.TabIndex = 3;
+            this.lv.Text = "nmturma:";
+            // 
+            // txtnmturma4a1
+            // 
+            this.txtnmturma4a1.Location = new System.Drawing.Point(53, 39);
+            this.txtnmturma4a1.Name = "txtnmturma4a1";
+            this.txtnmturma4a1.Size = new System.Drawing.Size(100, 20);
+            this.txtnmturma4a1.TabIndex = 4;
+            // 
+            // button10
+            // 
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button10.ForeColor = System.Drawing.Color.Maroon;
+            this.button10.Location = new System.Drawing.Point(9, 117);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(144, 23);
+            this.button10.TabIndex = 0;
+            this.button10.Text = "update";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // lbl
+            // 
+            this.lbl.AutoSize = true;
+            this.lbl.Location = new System.Drawing.Point(6, 16);
+            this.lbl.Name = "lbl";
+            this.lbl.Size = new System.Drawing.Size(44, 13);
+            this.lbl.TabIndex = 1;
+            this.lbl.Text = "idturma:";
+            // 
+            // txtidturma4a1
+            // 
+            this.txtidturma4a1.Location = new System.Drawing.Point(53, 13);
+            this.txtidturma4a1.Name = "txtidturma4a1";
+            this.txtidturma4a1.Size = new System.Drawing.Size(100, 20);
+            this.txtidturma4a1.TabIndex = 2;
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(761, 508);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Five";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(761, 508);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "Six";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Maroon;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(111, 31);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Session";
+            // 
+            // lbltime
+            // 
+            this.lbltime.AutoSize = true;
+            this.lbltime.BackColor = System.Drawing.Color.Maroon;
+            this.lbltime.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltime.ForeColor = System.Drawing.Color.White;
+            this.lbltime.Location = new System.Drawing.Point(172, 0);
+            this.lbltime.Name = "lbltime";
+            this.lbltime.Size = new System.Drawing.Size(73, 31);
+            this.lbltime.TabIndex = 4;
+            this.lbltime.Text = "Hora";
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // schooldbDataSet
+            // 
+            this.schooldbDataSet.DataSetName = "schooldbDataSet";
+            this.schooldbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tbturmaBindingSource
+            // 
+            this.tbturmaBindingSource.DataMember = "tbturma";
+            this.tbturmaBindingSource.DataSource = this.schooldbDataSet;
+            // 
+            // tbturmaTableAdapter
+            // 
+            this.tbturmaTableAdapter.ClearBeforeFill = true;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(6, 16);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(44, 13);
+            this.label21.TabIndex = 15;
+            this.label21.Text = "idturma:";
+            // 
+            // nudqtdaluno4a3
+            // 
+            this.nudqtdaluno4a3.Location = new System.Drawing.Point(53, 91);
+            this.nudqtdaluno4a3.Name = "nudqtdaluno4a3";
+            this.nudqtdaluno4a3.Size = new System.Drawing.Size(100, 20);
+            this.nudqtdaluno4a3.TabIndex = 23;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(22, 94);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(25, 13);
+            this.label22.TabIndex = 22;
+            this.label22.Text = "qtd:";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(1, 68);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(50, 13);
+            this.label23.TabIndex = 20;
+            this.label23.Text = "nmcurso:";
+            // 
+            // txtcurso4a3
+            // 
+            this.txtcurso4a3.Location = new System.Drawing.Point(53, 65);
+            this.txtcurso4a3.Name = "txtcurso4a3";
+            this.txtcurso4a3.Size = new System.Drawing.Size(100, 20);
+            this.txtcurso4a3.TabIndex = 21;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(1, 42);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(50, 13);
+            this.label24.TabIndex = 18;
+            this.label24.Text = "nmturma:";
+            // 
+            // txtnmturma4a3
+            // 
+            this.txtnmturma4a3.Location = new System.Drawing.Point(53, 39);
+            this.txtnmturma4a3.Name = "txtnmturma4a3";
+            this.txtnmturma4a3.Size = new System.Drawing.Size(100, 20);
+            this.txtnmturma4a3.TabIndex = 19;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(6, 16);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(44, 13);
+            this.label27.TabIndex = 16;
+            this.label27.Text = "idturma:";
+            // 
+            // txtidturma4a3
+            // 
+            this.txtidturma4a3.Location = new System.Drawing.Point(53, 13);
+            this.txtidturma4a3.Name = "txtidturma4a3";
+            this.txtidturma4a3.Size = new System.Drawing.Size(100, 20);
+            this.txtidturma4a3.TabIndex = 17;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(6, 19);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(44, 13);
+            this.label28.TabIndex = 24;
+            this.label28.Text = "idturma:";
+            // 
+            // nudqtdaluno4a4
+            // 
+            this.nudqtdaluno4a4.Location = new System.Drawing.Point(53, 94);
+            this.nudqtdaluno4a4.Name = "nudqtdaluno4a4";
+            this.nudqtdaluno4a4.Size = new System.Drawing.Size(100, 20);
+            this.nudqtdaluno4a4.TabIndex = 31;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(22, 97);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(25, 13);
+            this.label29.TabIndex = 30;
+            this.label29.Text = "qtd:";
+            // 
+            // txtidturma4a4
+            // 
+            this.txtidturma4a4.Location = new System.Drawing.Point(53, 16);
+            this.txtidturma4a4.Name = "txtidturma4a4";
+            this.txtidturma4a4.Size = new System.Drawing.Size(100, 20);
+            this.txtidturma4a4.TabIndex = 25;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(1, 71);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(50, 13);
+            this.label30.TabIndex = 28;
+            this.label30.Text = "nmcurso:";
+            // 
+            // txtcurso4a4
+            // 
+            this.txtcurso4a4.Location = new System.Drawing.Point(53, 68);
+            this.txtcurso4a4.Name = "txtcurso4a4";
+            this.txtcurso4a4.Size = new System.Drawing.Size(100, 20);
+            this.txtcurso4a4.TabIndex = 29;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(1, 45);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(50, 13);
+            this.label31.TabIndex = 26;
+            this.label31.Text = "nmturma:";
+            // 
+            // cbonmturma4a4
+            // 
+            this.cbonmturma4a4.FormattingEnabled = true;
+            this.cbonmturma4a4.Location = new System.Drawing.Point(53, 39);
+            this.cbonmturma4a4.Name = "cbonmturma4a4";
+            this.cbonmturma4a4.Size = new System.Drawing.Size(100, 21);
+            this.cbonmturma4a4.TabIndex = 15;
+            this.cbonmturma4a4.SelectedIndexChanged += new System.EventHandler(this.cbonmturma4a4_SelectedIndexChanged);
             // 
             // session
             // 
@@ -1387,6 +1428,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "session";
             this.Text = "session";
+            this.Load += new System.EventHandler(this.session_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picfecha)).EndInit();
             this.One.ResumeLayout(false);
@@ -1412,28 +1454,33 @@
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvgcurso2)).EndInit();
             this.tabPage3.ResumeLayout(false);
-            this.tabPage4.ResumeLayout(false);
+            this.groupBox9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dvgturma3)).EndInit();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudqtdaluno3)).EndInit();
-            this.groupBox9.ResumeLayout(false);
-            this.groupBox10.ResumeLayout(false);
-            this.groupBox10.PerformLayout();
-            this.groupBox11.ResumeLayout(false);
-            this.groupBox11.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            this.groupBox13.ResumeLayout(false);
-            this.groupBox13.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
-            this.groupBox14.ResumeLayout(false);
-            this.groupBox14.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
+            this.tabPage4.ResumeLayout(false);
+            this.groupBox12.ResumeLayout(false);
+            this.groupBox12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudqtdaluno4a2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvg4a2)).EndInit();
             this.groupBox15.ResumeLayout(false);
             this.groupBox15.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dvg4a1)).EndInit();
+            this.groupBox14.ResumeLayout(false);
+            this.groupBox14.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dvg4a4)).EndInit();
+            this.groupBox11.ResumeLayout(false);
+            this.groupBox11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dvg4a3)).EndInit();
+            this.groupBox10.ResumeLayout(false);
+            this.groupBox10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtqtdaluno4a1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvg4a1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.schooldbDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbturmaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudqtdaluno4a3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudqtdaluno4a4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1518,38 +1565,11 @@
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.TextBox textBox24;
         private System.Windows.Forms.GroupBox groupBox14;
-        private System.Windows.Forms.DataGridView dataGridView5;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.DataGridView dvg4a4;
         private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.GroupBox groupBox13;
-        private System.Windows.Forms.DataGridView dataGridView4;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.TextBox textBox16;
         private System.Windows.Forms.GroupBox groupBox11;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.DataGridView dvg4a3;
         private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.GroupBox groupBox10;
         private System.Windows.Forms.NumericUpDown txtqtdaluno4a1;
         private System.Windows.Forms.DataGridView dvg4a1;
@@ -1561,5 +1581,36 @@
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Label lbl;
         private System.Windows.Forms.TextBox txtidturma4a1;
+        private System.Windows.Forms.GroupBox groupBox12;
+        private System.Windows.Forms.ComboBox cbonmturma4a2;
+        private System.Windows.Forms.NumericUpDown nudqtdaluno4a2;
+        private System.Windows.Forms.DataGridView dvg4a2;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.TextBox txtcurso4a2;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.TextBox txtidturma4a2;
+        private schooldbDataSet schooldbDataSet;
+        private System.Windows.Forms.BindingSource tbturmaBindingSource;
+        private schooldbDataSetTableAdapters.tbturmaTableAdapter tbturmaTableAdapter;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.NumericUpDown nudqtdaluno4a3;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.TextBox txtidturma4a3;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.TextBox txtcurso4a3;
+        private System.Windows.Forms.TextBox txtnmturma4a3;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.ComboBox cbonmturma4a4;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.NumericUpDown nudqtdaluno4a4;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.TextBox txtidturma4a4;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.TextBox txtcurso4a4;
     }
 }

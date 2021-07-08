@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="schooldbDataSet" targetNamespace="http://tempuri.org/schooldbDataSet.xsd" xmlns:mstns="http://tempuri.org/schooldbDataSet.xsd" xmlns="http://tempuri.org/schooldbDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="schooldbConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="schooldbConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.freientity.Properties.Settings.GlobalReference.Default.schooldbConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbturmaTableAdapter" GeneratorDataComponentClassName="tbturmaTableAdapter" Name="tbturma" UserDataComponentName="tbturmaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="schooldbConnectionString (Settings)" DbObjectName="schooldb.tbturma" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `nmturma` FROM `tbturma`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="schooldbDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="schooldbDataSet" msprop:Generator_UserDSName="schooldbDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tbturma" msprop:Generator_TableClassName="tbturmaDataTable" msprop:Generator_TableVarName="tabletbturma" msprop:Generator_TablePropName="tbturma" msprop:Generator_RowDeletingName="tbturmaRowDeleting" msprop:Generator_RowChangingName="tbturmaRowChanging" msprop:Generator_RowEvHandlerName="tbturmaRowChangeEventHandler" msprop:Generator_RowDeletedName="tbturmaRowDeleted" msprop:Generator_UserTableName="tbturma" msprop:Generator_RowChangedName="tbturmaRowChanged" msprop:Generator_RowEvArgName="tbturmaRowChangeEvent" msprop:Generator_RowClassName="tbturmaRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
