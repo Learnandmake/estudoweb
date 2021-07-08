@@ -440,27 +440,36 @@ namespace freientity
         }
 
         private void button13_Click(object sender, EventArgs e)
-        {
-            int idturma = Convert.ToInt32(txtidturma5.Text);
-            int nrchamada = Convert.ToInt32(txtnrchamada5.Text);
-            string nome = Convert.ToString(txtnome5.Text);
-            string bairro = Convert.ToString(txtbairro5.Text);
-            string municipio = Convert.ToString(txtmunicipio5.Text);
-            DateTime data = Convert.ToDateTime(dtnascimento5.Value);
+        {try
+            {
+                int idturma = Convert.ToInt32(txtidturma5.Text);
+                int nrchamada = Convert.ToInt32(txtnrchamada5.Value);
+                string nome = Convert.ToString(txtnome5.Text);
+                string bairro = Convert.ToString(txtbairro5.Text);
+                string municipio = Convert.ToString(txtmunicipio5.Text);
+                DateTime data = Convert.ToDateTime(dtnascimento5.Value);
 
-            bussines.bussinesalunos b = new bussines.bussinesalunos();
+                bussines.bussinesalunos b = new bussines.bussinesalunos();
 
-            database.entity.tbaluno aluno = new database.entity.tbaluno();
-            aluno.idturma = idturma;
-            aluno.nmaluno = nome;
-            aluno.nrchamada = nrchamada;
-            aluno.dsbairro = bairro;
-            aluno.dsmunicipio = municipio;
-            aluno.dtnascimento = data;
+                database.entity.tbaluno aluno = new database.entity.tbaluno();
+                aluno.idturma = idturma;
+                aluno.nmaluno = nome;
+                aluno.nrchamada = nrchamada;
+                aluno.dsbairro = bairro;
+                aluno.dsmunicipio = municipio;
+                aluno.dtnascimento = data;
 
-            b.inserir(aluno);
+                b.inserir(aluno);
 
-            MessageBox.Show("Operação bem sucedida");
+                MessageBox.Show("Operação bem sucedida");
+
+                bussines.bussinesalunos al = new bussines.bussinesalunos();
+                dvg5.DataSource = al.listartda();
+            }
+           catch(Exception )
+           {
+                MessageBox.Show("erro verifique o formulario");
+           }
 
         }
     }

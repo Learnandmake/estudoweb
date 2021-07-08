@@ -158,7 +158,6 @@
             this.label32 = new System.Windows.Forms.Label();
             this.txtidturma5 = new System.Windows.Forms.TextBox();
             this.button13 = new System.Windows.Forms.Button();
-            this.txtnrchamada5 = new System.Windows.Forms.TextBox();
             this.label36 = new System.Windows.Forms.Label();
             this.txtnome5 = new System.Windows.Forms.TextBox();
             this.label37 = new System.Windows.Forms.Label();
@@ -168,6 +167,7 @@
             this.label39 = new System.Windows.Forms.Label();
             this.dtnascimento5 = new System.Windows.Forms.DateTimePicker();
             this.label40 = new System.Windows.Forms.Label();
+            this.txtnrchamada5 = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picfecha)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.schooldbDataSet)).BeginInit();
@@ -213,6 +213,7 @@
             this.groupBox13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvg5)).BeginInit();
             this.groupBox16.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtnrchamada5)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -1441,6 +1442,7 @@
             // 
             // groupBox16
             // 
+            this.groupBox16.Controls.Add(this.txtnrchamada5);
             this.groupBox16.Controls.Add(this.label40);
             this.groupBox16.Controls.Add(this.dtnascimento5);
             this.groupBox16.Controls.Add(this.txtmunicipio5);
@@ -1449,7 +1451,6 @@
             this.groupBox16.Controls.Add(this.label38);
             this.groupBox16.Controls.Add(this.txtnome5);
             this.groupBox16.Controls.Add(this.label37);
-            this.groupBox16.Controls.Add(this.txtnrchamada5);
             this.groupBox16.Controls.Add(this.label36);
             this.groupBox16.Controls.Add(this.button13);
             this.groupBox16.Controls.Add(this.txtidturma5);
@@ -1487,13 +1488,6 @@
             this.button13.Text = "Cadastrar";
             this.button13.UseVisualStyleBackColor = true;
             this.button13.Click += new System.EventHandler(this.button13_Click);
-            // 
-            // txtnrchamada5
-            // 
-            this.txtnrchamada5.Location = new System.Drawing.Point(72, 40);
-            this.txtnrchamada5.Name = "txtnrchamada5";
-            this.txtnrchamada5.Size = new System.Drawing.Size(81, 20);
-            this.txtnrchamada5.TabIndex = 4;
             // 
             // label36
             // 
@@ -1569,6 +1563,13 @@
             this.label40.TabIndex = 12;
             this.label40.Text = "Nascimento:";
             // 
+            // txtnrchamada5
+            // 
+            this.txtnrchamada5.Location = new System.Drawing.Point(72, 42);
+            this.txtnrchamada5.Name = "txtnrchamada5";
+            this.txtnrchamada5.Size = new System.Drawing.Size(81, 20);
+            this.txtnrchamada5.TabIndex = 13;
+            // 
             // session
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1641,6 +1642,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dvg5)).EndInit();
             this.groupBox16.ResumeLayout(false);
             this.groupBox16.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtnrchamada5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1777,7 +1779,6 @@
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.TextBox txtnome5;
         private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.TextBox txtnrchamada5;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.TextBox txtidturma5;
@@ -1786,5 +1787,6 @@
         private System.Windows.Forms.DataGridView dvg5;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.DateTimePicker dtnascimento5;
+        private System.Windows.Forms.NumericUpDown txtnrchamada5;
     }
 }
