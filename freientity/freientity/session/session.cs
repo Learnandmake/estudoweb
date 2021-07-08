@@ -116,5 +116,21 @@ namespace freientity
             List<database.entity.tbturma> lista = b.fturma(curso);
             dvgturma2.DataSource = lista;
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            int id = Convert.ToInt32(txtid.Text);
+            bussines.bussines b = new bussines.bussines();
+            List<database.entity.tbturma> lista = b.fid(id);
+            dvgidturma2.DataSource = lista;
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            int qtd = Convert.ToInt32(txtqtdaluno2.Text);
+            bussines.bussines b = new bussines.bussines();
+            List<database.entity.tbturma> lista = b.fqtdaluno(qtd);
+            dvgqtdaluno2.DataSource = lista;
+        }
     }
 }

@@ -71,7 +71,7 @@
             this.dvgidturma2 = new System.Windows.Forms.DataGridView();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.button6 = new System.Windows.Forms.Button();
-            this.txtqtdaluno = new System.Windows.Forms.TextBox();
+            this.txtqtdaluno2 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.dvgqtdaluno2 = new System.Windows.Forms.DataGridView();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
@@ -478,6 +478,7 @@
             this.button5.TabIndex = 4;
             this.button5.Text = "buscar";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // txtid
             // 
@@ -509,7 +510,7 @@
             // groupBox6
             // 
             this.groupBox6.Controls.Add(this.button6);
-            this.groupBox6.Controls.Add(this.txtqtdaluno);
+            this.groupBox6.Controls.Add(this.txtqtdaluno2);
             this.groupBox6.Controls.Add(this.label9);
             this.groupBox6.Controls.Add(this.dvgqtdaluno2);
             this.groupBox6.Location = new System.Drawing.Point(388, 253);
@@ -528,13 +529,14 @@
             this.button6.TabIndex = 4;
             this.button6.Text = "buscar";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
-            // txtqtdaluno
+            // txtqtdaluno2
             // 
-            this.txtqtdaluno.Location = new System.Drawing.Point(75, 15);
-            this.txtqtdaluno.Name = "txtqtdaluno";
-            this.txtqtdaluno.Size = new System.Drawing.Size(100, 20);
-            this.txtqtdaluno.TabIndex = 6;
+            this.txtqtdaluno2.Location = new System.Drawing.Point(75, 15);
+            this.txtqtdaluno2.Name = "txtqtdaluno2";
+            this.txtqtdaluno2.Size = new System.Drawing.Size(100, 20);
+            this.txtqtdaluno2.TabIndex = 6;
             // 
             // label9
             // 
@@ -708,7 +710,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.TextBox txtqtdaluno;
+        private System.Windows.Forms.TextBox txtqtdaluno2;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DataGridView dvgqtdaluno2;
         private System.Windows.Forms.GroupBox groupBox5;

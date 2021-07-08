@@ -31,5 +31,15 @@ namespace freientity.database
             List<entity.tbturma> lista = entitie.tbturmas.Where(t => t.nmcurso == curso).ToList();
             return lista;
         }
+        public List<entity.tbturma> fid(int id)
+        {
+            List<entity.tbturma> lista = entitie.tbturmas.Where(t => t.idturma == id).ToList();
+            return lista;
+        }
+        public List<entity.tbturma> fqtdaluno(int qtdaluno)
+        {
+            List<entity.tbturma> lista = entitie.tbturmas.Where(t => t.qtmaxalunos == qtdaluno).ToList();
+            return lista;
+        }
     }
 }

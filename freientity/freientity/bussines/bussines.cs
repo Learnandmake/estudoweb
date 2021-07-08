@@ -30,5 +30,15 @@ namespace freientity.bussines
             List<database.entity.tbturma> lista = data.fcurso(curso);
             return lista;
         }
+        public List<database.entity.tbturma> fid(int id)
+        {
+            List<database.entity.tbturma> lista = data.fid(id);
+            return lista;
+        }
+        public List<database.entity.tbturma> fqtdaluno(int qtdmaxaluno)
+        {
+            List<database.entity.tbturma> lista = data.fqtdaluno(qtdmaxaluno);
+            return lista;
+        }
     }
 }
