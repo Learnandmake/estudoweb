@@ -10,18 +10,21 @@ using System.Windows.Forms;
 
 namespace freientity
 {
-    public partial class Form1 : Form
+    public partial class session : Form
     {
-        public Form1()
+        public session()
         {
             InitializeComponent();
-            database.entity.schooldbEntities a = new database.entity.schooldbEntities();
-            dvg.DataSource = a.tbturmas.ToList();
         }
 
-        private void dvg_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
         {
+            lbltime.Text = (DateTime.Now.ToString("HH:mm:ss"));
+        }
 
+        private void picfecha_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
