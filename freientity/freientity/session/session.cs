@@ -29,7 +29,9 @@ namespace freientity
             nudqtdaluno2.Minimum = 25;
             txtnmturma2.MaxLength = 50;
             txtnmcurso2.MaxLength = 50;
-         
+
+            //s3
+            nudqtdaluno3.Minimum = 25;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -155,9 +157,27 @@ namespace freientity
             txtnmturma3.Text = turmaselecionada.nmturma;
             txtidturma3.Text = Convert.ToString(turmaselecionada.idturma);
             nudqtdaluno3.Value = Convert.ToDecimal(turmaselecionada.qtmaxalunos);
+                      }
 
+        private void button8_Click(object sender, EventArgs e)
+        {
+            string curso = Convert.ToString(txtnmcurso3.Text);
+            string turma = Convert.ToString(txtnmturma3.Text);
+            int idturma = Convert.ToInt32(txtidturma3.Text);
+            int qtdaluno = Convert.ToInt32(nudqtdaluno3.Value);
+            bussines.bussines b = new bussines.bussines();
+            database.entity.tbturma model = new database.entity.tbturma();
+            model.idturma = idturma;
+            model.nmcurso = curso;
+            model.nmturma = turma;
+            model.qtmaxalunos = qtdaluno;
 
+            b.aturma(model);
 
-            }
+            MessageBox.Show("Operação bem sucedida");
+
+            List<database.entity.tbturma> lista = b.ltodos();
+            dvgturma3.DataSource = lista;
+        }
     }
 }

@@ -47,5 +47,19 @@ namespace freientity.database
             entitie.Entry(lista).State = System.Data.EntityState.Deleted;
             entitie.SaveChanges();
         }
+       public void alterar(entity.tbturma turma)
+       {
+            entity.tbturma lista =entitie.tbturmas.FirstOrDefault(t => t.idturma == turma.idturma);
+
+            if (lista != null)
+            {
+                lista.idturma = lista.idturma ;
+                lista.nmcurso = turma.nmcurso;
+                lista.nmturma = turma.nmturma;
+                lista.qtmaxalunos = turma.qtmaxalunos;
+
+                entitie.SaveChanges();
+            }
+        }
     }
 }

@@ -44,5 +44,9 @@ namespace freientity.bussines
         {
             data.delete(id);
         }
+        public void aturma(database.entity.tbturma turma)
+        {
+            data.alterar(turma);
+        }
     }
 }
