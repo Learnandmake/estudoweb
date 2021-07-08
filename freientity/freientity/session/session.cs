@@ -478,21 +478,26 @@ namespace freientity
 
         private void button16_Click(object sender, EventArgs e)
         {
-            database.entity.tbaluno aluno = new database.entity.tbaluno();
-            aluno.dsbairro = Convert.ToString(txtbairro6.Text);
-            aluno.idaluno = Convert.ToInt32(txtidaluno6.Text);
-            aluno.dsmunicipio = Convert.ToString(txtmunicipio6.Text);
-            aluno.nmaluno = Convert.ToString(txtnome6.Text);
-            aluno.idturma = Convert.ToInt32(txtturma6.Text);
-            aluno.nrchamada = Convert.ToInt32(nudnrchamada6.Value);
-            aluno.dtnascimento = dtnascimento6.Value;
+        try
+            {
+                database.entity.tbaluno aluno = new database.entity.tbaluno();
+                aluno.dsbairro = Convert.ToString(txtbairro6.Text);
+                aluno.idaluno = Convert.ToInt32(txtidaluno6.Text);
+                aluno.dsmunicipio = Convert.ToString(txtmunicipio6.Text);
+                aluno.nmaluno = Convert.ToString(txtnome6.Text);
+                aluno.idturma = Convert.ToInt32(txtturma6.Text);
+                aluno.nrchamada = Convert.ToInt32(nudnrchamada6.Value);
+                aluno.dtnascimento = dtnascimento6.Value;
 
-            bussines.bussinesalunos b = new bussines.bussinesalunos();
-            b.alterar(aluno);
+                bussines.bussinesalunos b = new bussines.bussinesalunos();
+                b.alterar(aluno);
 
-            MessageBox.Show("operação bem sucedida");
+                MessageBox.Show("operação bem sucedida");
 
-            dvg6.DataSource = b.listartda();
+                dvg6.DataSource = b.listartda();
+            }
+            catch (Exception)
+            { MessageBox.Show("erro verifique o formulario"); }
         }
 
         private void button17_Click(object sender, EventArgs e)
