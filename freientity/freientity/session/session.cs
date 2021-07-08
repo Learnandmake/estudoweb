@@ -39,7 +39,6 @@ namespace freientity
             bussines.bussines b = new bussines.bussines();
             database.entity.tbturma model = new database.entity.tbturma();
            
-
             model.nmcurso = curso;
             model.nmturma = nmturma;
             model.qtmaxalunos = qtdaluno;
@@ -49,6 +48,14 @@ namespace freientity
             MessageBox.Show("Operação bem sucedida");
 
             List<database.entity.tbturma> lista = b.ltodos();
+            dvg.DataSource = lista;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string curso = Convert.ToString(txtcurso.Text);
+            bussines.bussines b = new bussines.bussines();
+            List<database.entity.tbturma> lista = b.ftodos(curso);
             dvg.DataSource = lista;
         }
     }

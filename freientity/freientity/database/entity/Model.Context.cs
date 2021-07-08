@@ -25,7 +25,7 @@ namespace freientity.database.entity
             throw new UnintentionalCodeFirstException();
         }
     
-        public DbSet<tbaluno> tbalunoes { get; set; }
+        public DbSet<tbaluno> tbalunos { get; set; }
         public DbSet<tbmedia> tbmedias { get; set; }
         public DbSet<tbturma> tbturmas { get; set; }
     }
