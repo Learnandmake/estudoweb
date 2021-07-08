@@ -15,6 +15,9 @@ namespace freientity
         public session()
         {
             InitializeComponent();
+            bussines.bussines b = new bussines.bussines();
+            List<database.entity.tbturma> lista = b.ltodos();
+            dvg.DataSource = lista; 
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -25,6 +28,28 @@ namespace freientity
         private void picfecha_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string nmturma = Convert.ToString(txtnmturma.Text);
+            string curso = Convert.ToString(txtcurso.Text);
+            int qtdaluno = Convert.ToInt32(qtdmaxaluno.Text);
+
+            bussines.bussines b = new bussines.bussines();
+            database.entity.tbturma model = new database.entity.tbturma();
+           
+
+            model.nmcurso = curso;
+            model.nmturma = nmturma;
+            model.qtmaxalunos = qtdaluno;
+
+            b.inserir(model);
+
+            MessageBox.Show("Operação bem sucedida");
+
+            List<database.entity.tbturma> lista = b.ltodos();
+            dvg.DataSource = lista;
         }
     }
 }

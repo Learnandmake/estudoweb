@@ -54,6 +54,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="bussines\bussines.cs" />
     <Compile Include="Challenge\Challenge.cs">
       <SubType>Form</SubType>
     </Compile>

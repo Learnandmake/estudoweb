@@ -46,7 +46,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.txtnome = new System.Windows.Forms.TextBox();
+            this.txtnmturma = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtcurso = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -218,7 +218,7 @@
             this.groupBox2.Controls.Add(this.txtcurso);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.button1);
-            this.groupBox2.Controls.Add(this.txtnome);
+            this.groupBox2.Controls.Add(this.txtnmturma);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Location = new System.Drawing.Point(6, 5);
             this.groupBox2.Name = "groupBox2";
@@ -236,13 +236,14 @@
             this.button1.TabIndex = 6;
             this.button1.Text = "Cadastrar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // txtnome
+            // txtnmturma
             // 
-            this.txtnome.Location = new System.Drawing.Point(55, 43);
-            this.txtnome.Name = "txtnome";
-            this.txtnome.Size = new System.Drawing.Size(100, 20);
-            this.txtnome.TabIndex = 5;
+            this.txtnmturma.Location = new System.Drawing.Point(55, 43);
+            this.txtnmturma.Name = "txtnmturma";
+            this.txtnmturma.Size = new System.Drawing.Size(100, 20);
+            this.txtnmturma.TabIndex = 5;
             // 
             // label2
             // 
@@ -255,7 +256,7 @@
             // 
             // txtcurso
             // 
-            this.txtcurso.Location = new System.Drawing.Point(55, 69);
+            this.txtcurso.Location = new System.Drawing.Point(55, 66);
             this.txtcurso.Name = "txtcurso";
             this.txtcurso.Size = new System.Drawing.Size(100, 20);
             this.txtcurso.TabIndex = 8;
@@ -263,7 +264,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(17, 71);
+            this.label3.Location = new System.Drawing.Point(17, 69);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(37, 13);
             this.label3.TabIndex = 7;
@@ -337,7 +338,7 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox txtnome;
+        private System.Windows.Forms.TextBox txtnmturma;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dvg;
