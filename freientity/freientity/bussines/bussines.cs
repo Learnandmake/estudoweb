@@ -48,5 +48,9 @@ namespace freientity.bussines
         {
             data.alterar(turma);
         }
+        public void aturmapornome(database.entity.tbturma turma)
+        {
+            data.alterarpornome(turma);
+        }
     }
 }

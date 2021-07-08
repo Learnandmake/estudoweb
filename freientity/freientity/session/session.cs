@@ -24,6 +24,7 @@ namespace freientity
             dvgidturma2.DataSource = lista;
             dvgqtdaluno2.DataSource = lista;
             dvgturma3.DataSource = lista;
+            dvg4a1.DataSource = lista;
 
             //s2
             nudqtdaluno2.Minimum = 25;
@@ -32,6 +33,9 @@ namespace freientity
 
             //s3
             nudqtdaluno3.Minimum = 25;
+
+            //s4
+            txtqtdaluno4a1.Minimum = 25;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -186,5 +190,44 @@ namespace freientity
             List<database.entity.tbturma> lista = b.ltodos();
             dvgturma3.DataSource = lista;
         }
+
+        private void dvg4a1_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            database.entity.tbturma turmaselecionada = dvg4a1.CurrentRow.DataBoundItem as database.entity.tbturma;
+            txtcurso4a1.Text = turmaselecionada.nmcurso;
+            txtnmturma4a1.Text = turmaselecionada.nmturma;
+            txtidturma4a1.Text = Convert.ToString(turmaselecionada.idturma);
+            txtqtdaluno4a1.Value = Convert.ToDecimal(turmaselecionada.qtmaxalunos);
+
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            string curso = Convert.ToString(txtcurso4a1.Text);
+            string turma = Convert.ToString(txtnmturma4a1.Text);
+            int idturma = Convert.ToInt32(txtidturma4a1.Text);
+            int qtdaluno = Convert.ToInt32(txtqtdaluno4a1.Value);
+            bussines.bussines b = new bussines.bussines();
+            if (turma != string.Empty && curso != string.Empty && qtdaluno != null)
+            {
+
+
+                database.entity.tbturma model = new database.entity.tbturma();
+                model.idturma = idturma;
+                model.nmcurso = curso;
+                model.nmturma = turma;
+                model.qtmaxalunos = qtdaluno;
+
+                b.aturmapornome(model);
+                MessageBox.Show("Operação bem sucedida");
+            }
+
+            else
+            { MessageBox.Show("erro verifique o formulario"); }
+
+            List<database.entity.tbturma> lista = b.ltodos();
+            dvg4a1.DataSource = lista;
+        }
+    
     }
 }
