@@ -23,7 +23,9 @@ namespace freientity
             dvgcurso2.DataSource = lista;
             dvgidturma2.DataSource = lista;
             dvgqtdaluno2.DataSource = lista;
+            dvgturma3.DataSource = lista;
 
+            //s2
             nudqtdaluno2.Minimum = 25;
             txtnmturma2.MaxLength = 50;
             txtnmcurso2.MaxLength = 50;
@@ -132,5 +134,30 @@ namespace freientity
             List<database.entity.tbturma> lista = b.fqtdaluno(qtd);
             dvgqtdaluno2.DataSource = lista;
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            int id = Convert.ToInt32(txtidturma3.Text);
+
+            bussines.bussines b = new bussines.bussines();
+            b.dturma(id);
+
+            MessageBox.Show("Operação bem sucedida");
+
+            List<database.entity.tbturma> lista = b.ltodos();
+            dvgturma3.DataSource = lista;
+        }
+
+        private void dvgturma3_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+           database.entity.tbturma turmaselecionada = dvgturma3.CurrentRow.DataBoundItem as database.entity.tbturma ;
+            txtnmcurso3.Text = turmaselecionada.nmcurso;
+            txtnmturma3.Text = turmaselecionada.nmturma;
+            txtidturma3.Text = Convert.ToString(turmaselecionada.idturma);
+            nudqtdaluno3.Value = Convert.ToDecimal(turmaselecionada.qtmaxalunos);
+
+
+
+            }
     }
 }

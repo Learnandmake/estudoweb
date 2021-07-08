@@ -40,5 +40,9 @@ namespace freientity.bussines
             List<database.entity.tbturma> lista = data.fqtdaluno(qtdmaxaluno);
             return lista;
         }
+        public void dturma (int id)
+        {
+            data.delete(id);
+        }
     }
 }

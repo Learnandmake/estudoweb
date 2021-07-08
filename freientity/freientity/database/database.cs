@@ -41,5 +41,11 @@ namespace freientity.database
             List<entity.tbturma> lista = entitie.tbturmas.Where(t => t.qtmaxalunos == qtdaluno).ToList();
             return lista;
         }
+        public void delete (int idturma)
+        {
+          entity.tbturma lista = entitie.tbturmas.FirstOrDefault(t => t.idturma == idturma);
+            entitie.Entry(lista).State = System.Data.EntityState.Deleted;
+            entitie.SaveChanges();
+        }
     }
 }
