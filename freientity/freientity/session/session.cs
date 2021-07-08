@@ -166,16 +166,23 @@ namespace freientity
             int idturma = Convert.ToInt32(txtidturma3.Text);
             int qtdaluno = Convert.ToInt32(nudqtdaluno3.Value);
             bussines.bussines b = new bussines.bussines();
-            database.entity.tbturma model = new database.entity.tbturma();
-            model.idturma = idturma;
-            model.nmcurso = curso;
-            model.nmturma = turma;
-            model.qtmaxalunos = qtdaluno;
+            if (turma != string.Empty && curso != string.Empty && qtdaluno != null)
+            {
+               
+             
+                database.entity.tbturma model = new database.entity.tbturma();
+                model.idturma = idturma;
+                model.nmcurso = curso;
+                model.nmturma = turma;
+                model.qtmaxalunos = qtdaluno;
 
-            b.aturma(model);
-
-            MessageBox.Show("Operação bem sucedida");
-
+                b.aturma(model);
+                MessageBox.Show("Operação bem sucedida");
+            }
+          
+             else
+            { MessageBox.Show("erro verifique o formulario"); }
+  
             List<database.entity.tbturma> lista = b.ltodos();
             dvgturma3.DataSource = lista;
         }
