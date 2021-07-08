@@ -48,6 +48,9 @@ namespace freientity
             cbonmturma4a4.DataSource = lista;
             cbonmturma4a4.DisplayMember = "nmturma";
             cbonmturma4a4.ValueMember = "nmturma";
+            //s5 
+            bussines.bussinesalunos al = new bussines.bussinesalunos();
+            dvg5.DataSource = al.listartda();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -434,6 +437,31 @@ namespace freientity
             }
             catch (Exception)
             { MessageBox.Show("erro verifique o formulario"); }
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            int idturma = Convert.ToInt32(txtidturma5.Text);
+            int nrchamada = Convert.ToInt32(txtnrchamada5.Text);
+            string nome = Convert.ToString(txtnome5.Text);
+            string bairro = Convert.ToString(txtbairro5.Text);
+            string municipio = Convert.ToString(txtmunicipio5.Text);
+            DateTime data = Convert.ToDateTime(dtnascimento5.Value);
+
+            bussines.bussinesalunos b = new bussines.bussinesalunos();
+
+            database.entity.tbaluno aluno = new database.entity.tbaluno();
+            aluno.idturma = idturma;
+            aluno.nmaluno = nome;
+            aluno.nrchamada = nrchamada;
+            aluno.dsbairro = bairro;
+            aluno.dsmunicipio = municipio;
+            aluno.dtnascimento = data;
+
+            b.inserir(aluno);
+
+            MessageBox.Show("Operação bem sucedida");
+
         }
     }
 }
