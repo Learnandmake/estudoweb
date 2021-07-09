@@ -61,11 +61,11 @@ namespace freientity.database
                 entitie.SaveChanges();
             }
         }
-
+      
         public void alterarpornome(entity.tbturma turma)
         {
             entity.tbturma lista = entitie.tbturmas.FirstOrDefault(t => t.nmturma == turma.nmturma);
-
+            
             if (lista != null)
             {
                 lista.idturma = lista.idturma;

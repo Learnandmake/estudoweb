@@ -112,6 +112,9 @@
     <Compile Include="telas\menu.Designer.cs">
       <DependentUpon>menu.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Challenge\Challenge.resx">
+      <DependentUpon>Challenge.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
