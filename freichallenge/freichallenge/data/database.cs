@@ -8,5 +8,6 @@ namespace freichallenge.data
 {
     class database
     {
+        entity.schooldbEntities banco = new entity.schooldbEntities();
     }
 }
