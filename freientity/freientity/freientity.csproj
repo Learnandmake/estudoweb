@@ -61,12 +61,6 @@
   <ItemGroup>
     <Compile Include="bussines\bussines.cs" />
     <Compile Include="bussines\bussinesalunos.cs" />
-    <Compile Include="Challenge\Challenge.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Challenge\Challenge.Designer.cs">
-      <DependentUpon>Challenge.cs</DependentUpon>
-    </Compile>
     <Compile Include="database\database.cs" />
     <Compile Include="database\databasealuno.cs" />
     <Compile Include="database\entity\Model.Context.cs">
@@ -106,15 +100,6 @@
     <Compile Include="session\session.Designer.cs">
       <DependentUpon>session.cs</DependentUpon>
     </Compile>
-    <Compile Include="telas\menu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="telas\menu.Designer.cs">
-      <DependentUpon>menu.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="Challenge\Challenge.resx">
-      <DependentUpon>Challenge.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -126,9 +111,6 @@
     </Compile>
     <EmbeddedResource Include="session\session.resx">
       <DependentUpon>session.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="telas\menu.resx">
-      <DependentUpon>menu.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="database\entity\Model.edmx">
       <Generator>EntityModelCodeGenerator</Generator>

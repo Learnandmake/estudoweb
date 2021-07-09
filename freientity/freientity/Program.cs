@@ -16,7 +16,7 @@ namespace freientity
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new telas.menu());
+            Application.Run(new session());
         }
     }
 }

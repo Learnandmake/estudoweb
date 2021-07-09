@@ -33,10 +33,5 @@ namespace freientity.bussines
             data.alterar(aluno);
         }
     
-        public int count()
-        {
-           int b= data.count();
-            return b;
-        }
     }
 }

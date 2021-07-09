@@ -50,11 +50,27 @@ namespace freientity.database
             }
         }
 
-     
-        public int count  ()
+        public void ordenaral(entity.tbaluno idaluno)
         {
-            int b = entitie.tbalunos.Count();
-            return b;
+            entity.tbaluno lista = entitie.tbalunos.FirstOrDefault(t => t.idaluno == idaluno.idaluno);
+            
+          
+         if  (lista != null )
+            {
+                lista.idturma = idaluno.idturma;
+                lista.nmaluno = idaluno.nmaluno;
+                lista.nrchamada = idaluno.nrchamada;
+                lista.dtnascimento = idaluno.dtnascimento;
+                lista.idaluno = lista.idaluno;
+                lista.dsmunicipio = idaluno.dsmunicipio;
+                lista.dsbairro = idaluno.dsbairro;
+
+
+                entitie.SaveChanges();
+            }
         }
+
+
+        
     }
 }
