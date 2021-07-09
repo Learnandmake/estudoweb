@@ -30,15 +30,10 @@ namespace freientity.database
             List<entity.tbaluno> lista = entitie.tbalunos.Where(t=>t.idturma == a).ToList();
             return lista;
         }
-        public List<entity.tbaluno> falunosptoa(int a)
-        {
-            List<entity.tbaluno> lista = entitie.tbalunos.Where(t => t.idturma == a).OrderBy(t=>t.nmaluno).ToList();
-            entitie.SaveChanges();
-              return lista;
-        }
+        
         public void alterar(entity.tbaluno idaluno)
         {
-            entity.tbaluno lista =  entitie.tbalunos.OrderBy(t =>t.nmaluno).FirstOrDefault(t => t.idaluno == idaluno.idaluno);
+            entity.tbaluno lista =  entitie.tbalunos.OrderByDescending(t =>t.nmaluno).FirstOrDefault(t => t.idaluno == idaluno.idaluno);
 
             if (lista != null)
             {
@@ -55,24 +50,7 @@ namespace freientity.database
             }
         }
 
-        public void ordenarnumero(entity.tbaluno idaluno)
-        {
-            entity.tbaluno lista = entitie.tbalunos.FirstOrDefault(t => t.idaluno == idaluno.idaluno);
-
-            if (lista != null)
-            {
-                lista.idturma = idaluno.idturma;
-                lista.nmaluno = idaluno.nmaluno;
-                lista.nrchamada = idaluno.nrchamada;
-                lista.dtnascimento = idaluno.dtnascimento;
-                lista.idaluno = lista.idaluno;
-                lista.dsmunicipio = idaluno.dsmunicipio;
-                lista.dsbairro = idaluno.dsbairro;
-
-
-                entitie.SaveChanges();
-            }
-        }
+     
         public int count  ()
         {
             int b = entitie.tbalunos.Count();

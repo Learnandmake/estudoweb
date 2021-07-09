@@ -23,11 +23,7 @@ namespace freientity.bussines
             List<database.entity.tbaluno> lista = data.falunospt(a);
             return lista;
         }
-        public List<database.entity.tbaluno> lalunosptpa(int a)
-        {
-            List<database.entity.tbaluno> lista = data.falunosptoa(a);
-            return lista;
-        }
+      
         public void delete (int id)
         {
             data.delete(id);
@@ -36,10 +32,7 @@ namespace freientity.bussines
         {
             data.alterar(aluno);
         }
-        public void ordernarnm(database.entity.tbaluno aluno)
-        {
-            data.ordenarnumero(aluno);
-        }
+    
         public int count()
         {
            int b= data.count();

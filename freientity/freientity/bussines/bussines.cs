@@ -48,6 +48,11 @@ namespace freientity.bussines
         {
             data.deletenmturma(id);
         }
+        public int  vnmturma(string id)
+        {
+           int b =  data.vnmturma(id);
+            return b;
+        }
         public void aturma(database.entity.tbturma turma)
         {
             data.alterar(turma);
@@ -56,12 +61,7 @@ namespace freientity.bussines
         {
             data.alterarpornome(turma);
         }
-
-        public int vnmturma(string nmturma)
-        {
-           int b =  data.vnmturma(nmturma);
-            return b;
-        }
+ 
 
     }
 }
