@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace freichallenge.data
 {
-    class database
+    class databaseturma
     {
         entity.schooldbEntities banco = new entity.schooldbEntities();
+        public List<data.entity.tbturma> listar () 
+        {
+            List<data.entity.tbturma> lista = banco.tbturma.ToList();
+            return lista;
+        }
     }
 }

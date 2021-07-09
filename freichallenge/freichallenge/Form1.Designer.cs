@@ -116,6 +116,7 @@
             this.cbo1.Name = "cbo1";
             this.cbo1.Size = new System.Drawing.Size(291, 21);
             this.cbo1.TabIndex = 1;
+            this.cbo1.SelectedIndexChanged += new System.EventHandler(this.cbo1_SelectedIndexChanged);
             // 
             // button1
             // 
@@ -125,6 +126,7 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 

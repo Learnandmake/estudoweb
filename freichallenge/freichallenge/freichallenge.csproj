@@ -54,7 +54,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="data\database.cs" />
+    <Compile Include="bussines\bussinesaluno.cs" />
+    <Compile Include="bussines\bussinesturma.cs" />
+    <Compile Include="data\databasealuno.cs" />
+    <Compile Include="data\databaseturma.cs" />
     <Compile Include="data\entity\Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
