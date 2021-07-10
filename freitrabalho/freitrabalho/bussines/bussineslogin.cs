@@ -8,5 +8,11 @@ namespace freitrabalho.bussines
 {
     class bussineslogin
     {
+
+        database.databaselogin data = new database.databaselogin();
+        public void inserir(database.entity.tblogin login)
+        {
+            data.inserir(login);
+        }
     }
 }

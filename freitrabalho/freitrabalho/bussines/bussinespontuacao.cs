@@ -7,6 +7,11 @@ using System.Threading.Tasks;
 namespace freitrabalho.bussines
 {
     class bussinespontuacao
-    {database.entity.
+    {
+        database.databasepontuacao data = new database.databasepontuacao();
+        public void inserir(database.entity.tbpontuacao pontuacao)
+        {
+            data.inserir(pontuacao);
+        }
     }
 }

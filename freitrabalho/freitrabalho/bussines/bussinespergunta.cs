@@ -8,5 +8,10 @@ namespace freitrabalho.bussines
 {
     class bussinespergunta
     {
+        database.databasepergunta data = new database.databasepergunta();
+        public void inserir(database.entity.tbpergunta pergunta)
+        {
+            data.inserir(pergunta);
+        }
     }
 }
