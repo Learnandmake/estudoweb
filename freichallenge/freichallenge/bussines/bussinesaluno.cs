@@ -14,5 +14,10 @@ namespace freichallenge.bussines
             List<data.entity.tbaluno> list = banco.filtrarporturma(id);
             return list;
         }
+        public List<data.entity.tbaluno> btodos()
+        {
+            List<data.entity.tbaluno> list = banco.ltodos();
+            return list;
+        }
     }
 }

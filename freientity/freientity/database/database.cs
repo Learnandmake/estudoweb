@@ -15,7 +15,7 @@ namespace freientity.database
             entitie.tbturmas.Add(turma);
             entitie.SaveChanges();
         }
-
+      
         public List<entity.tbturma> ltodos()
         {
             List<entity.tbturma> lista = entitie.tbturmas.ToList();
