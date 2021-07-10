@@ -29,13 +29,26 @@ namespace freitrabalho.telas
             bussines.bussinespergunta bpergunta = new bussines.bussinespergunta();
             bussines.bussinespontuacao bpontuacao = new bussines.bussinespontuacao();
             bussines.bussinesusuario busuario = new bussines.bussinesusuario();
+            function.criptografia criptografia = new function.criptografia();
+            string senha2 = criptografia.gerarmd5(senha);
 
             database.entity.tblogin login = new database.entity.tblogin();
             database.entity.tbpergunta pergunta = new database.entity.tbpergunta();
             database.entity.tbpontuacao pontuacao = new database.entity.tbpontuacao();
-            database.entity.tbusuario usuario = new database.entity.tbusuario(); 
+            database.entity.tbusuario usuario = new database.entity.tbusuario();
 
+            usuario.nick = nick;
+            usuario.email = email;
+            usuario.registro = DateTime.Now;
+            login.nick = nick;
+            login.senha = senha2;
+            pontuacao.nick = nick;
+            pontuacao.pontuacao = 0;
 
+            busuario.inserir(usuario);
+            blogin.inserir(login);
+            bpontuacao.inserir(pontuacao);
+            MessageBox.Show("Operação bem sucedida");
 
 
         }
