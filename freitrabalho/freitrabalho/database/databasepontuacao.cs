@@ -10,5 +10,11 @@ namespace freitrabalho.database.entity
     {
 
         database.entity.freitrabalhoEntities banco = new database.entity.freitrabalhoEntities();
+    
+        public void inserir(database.entity.tbpontuacao pontuacao)
+        {
+            banco.tbpontuacao.Add(pontuacao);
+            banco.SaveChanges();
+        }
     }
 }

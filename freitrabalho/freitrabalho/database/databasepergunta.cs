@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace freitrabalho.database
 {
-    class databaseusuario
+    class databasepergunta
     {
-
         database.entity.freitrabalhoEntities banco = new database.entity.freitrabalhoEntities();
 
-        public void inserir(database.entity.tbusuario usuario)
+        public void inserir(database.entity.tbpergunta pergunta)
         {
-            banco.tbusuario.Add(usuario);
+            banco.tbpergunta.Add(pergunta);
             banco.SaveChanges();
         }
     }
