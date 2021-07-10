@@ -90,6 +90,7 @@
       <DependentUpon>modeltrabalho.tt</DependentUpon>
     </Compile>
     <Compile Include="function\criptografia.cs" />
+    <Compile Include="function\vemail.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="telas\cadastrarpergunta.cs">
