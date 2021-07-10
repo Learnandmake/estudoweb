@@ -55,8 +55,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="database\databaseusuario.cs" />
-    <Compile Include="database\entity\databaselogin.cs" />
-    <Compile Include="database\entity\databasepontuacao.cs" />
+    <Compile Include="database\databaselogin.cs" />
+    <Compile Include="database\databasepontuacao.cs" />
     <Compile Include="database\entity\modeltrabalho.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

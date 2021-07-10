@@ -8,5 +8,7 @@ namespace freitrabalho.database
 {
     class databaseusuario
     {
+
+        database.entity.freitrabalhoEntities banco = new database.entity.freitrabalhoEntities();
     }
 }

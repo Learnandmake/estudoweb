@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace freitrabalho.database.entity
 {
-    class databaselogin
+    class databasepontuacao
     {
+
+        database.entity.freitrabalhoEntities banco = new database.entity.freitrabalhoEntities();
     }
 }
