@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace freitrabalho.database.entity
+namespace freitrabalho.database
 {
     class databaselogin
     {

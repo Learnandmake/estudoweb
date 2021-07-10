@@ -54,10 +54,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="database\databasepergunta.cs" />
-    <Compile Include="database\databaseusuario.cs" />
+    <Compile Include="bussines\bussineslogin.cs" />
+    <Compile Include="bussines\bussinespergunta.cs" />
+    <Compile Include="bussines\bussinespontuacao.cs" />
+    <Compile Include="bussines\bussinesusuario.cs" />
     <Compile Include="database\databaselogin.cs" />
+    <Compile Include="database\databasepergunta.cs" />
     <Compile Include="database\databasepontuacao.cs" />
+    <Compile Include="database\databaseusuario.cs" />
     <Compile Include="database\entity\modeltrabalho.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -126,9 +130,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="bussines\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="database\entity\modeltrabalho.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
