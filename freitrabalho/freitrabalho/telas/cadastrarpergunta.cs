@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace freitrabalho
+namespace freitrabalho.telas
 {
-    public partial class Form1 : Form
+    public partial class cadastrarpergunta : Form
     {
-        public Form1()
+        public cadastrarpergunta()
         {
             InitializeComponent();
         }
