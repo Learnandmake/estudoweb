@@ -112,6 +112,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="telas\cadastrarpergunta.resx">
+      <DependentUpon>cadastrarpergunta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="telas\cadastrarusuario.resx">
+      <DependentUpon>cadastrarusuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EntityDeploy Include="database\entity\modeltrabalho.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>modeltrabalho.Designer.cs</LastGenOutput>
