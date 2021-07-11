@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -18,13 +19,39 @@ namespace freitrabalho.telas
             txtsenha.UseSystemPasswordChar = true;
         }
 
-        private void btncadastrar_Click(object sender, EventArgs e)
+        private void pictureBox2_MouseEnter(object sender, EventArgs e)
         {
-        try 
+            picclose.BackColor = Color.Maroon;
+        }
+
+        private void picclose_MouseLeave(object sender, EventArgs e)
         {
+            picclose.BackColor = Color.Teal;
+        }
+
+        private void picclose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        private void picbarra_MouseMove(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void btncadastrar_Click_1(object sender, EventArgs e)
+        {
+
+            try
+            {
                 string nome = Convert.ToString(txtnome.Text);
                 string nick = Convert.ToString(txtnickusuario.Text);
-                string email = Convert.ToString(txtnickusuario.Text);
+                string email = Convert.ToString(txtemail.Text);
                 string senha = Convert.ToString(txtnickusuario.Text);
 
                 bussines.bussineslogin blogin = new bussines.bussineslogin();
@@ -35,14 +62,16 @@ namespace freitrabalho.telas
                 function.vemail fvemail = new function.vemail();
                 string senha2 = criptografia.gerarmd5(senha);
                 bool vemail = fvemail.isemail(email);
+                if (vemail == false)
+                { MessageBox.Show("Porfavor insira um e-mail valido"); }
 
-                database.entity.tblogin login = new database.entity.tblogin();
-                database.entity.tbpergunta pergunta = new database.entity.tbpergunta();
-                database.entity.tbpontuacao pontuacao = new database.entity.tbpontuacao();
-                database.entity.tbusuario usuario = new database.entity.tbusuario();
-
-                if (vemail == true)
+                if(vemail == true)
                 {
+                    database.entity.tblogin login = new database.entity.tblogin();
+                    database.entity.tbpergunta pergunta = new database.entity.tbpergunta();
+                    database.entity.tbpontuacao pontuacao = new database.entity.tbpontuacao();
+                    database.entity.tbusuario usuario = new database.entity.tbusuario();
+
                     usuario.nick = nick;
                     usuario.email = email;
                     usuario.registro = DateTime.Now;
@@ -57,9 +86,11 @@ namespace freitrabalho.telas
                     MessageBox.Show("Operação bem sucedida");
 
                 }
+
             }
-           catch(Exception)
-            { MessageBox.Show("erro verifique o formulario"); }
+
+            catch (Exception)
+            { MessageBox.Show("Este nome ja está sendo usado"); }
         }
     }
 }
