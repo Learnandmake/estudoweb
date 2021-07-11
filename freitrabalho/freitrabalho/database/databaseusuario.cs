@@ -21,5 +21,10 @@ namespace freitrabalho.database
             List<entity.tbusuario> lista = banco.tbusuario.ToList();
             return lista;
         }
+        public List<entity.tbusuario> flista(string nick)
+        {
+            List<entity.tbusuario> lista = banco.tbusuario.Where(t=>t.nick == nick).ToList();
+            return lista;
+        }
     }
 }

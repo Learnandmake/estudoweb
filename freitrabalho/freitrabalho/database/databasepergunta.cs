@@ -20,5 +20,6 @@ namespace freitrabalho.database
             List<entity.tbpergunta> lista = banco.tbpergunta.ToList();
             return lista;
         }
+      
     }
 }
