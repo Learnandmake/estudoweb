@@ -16,7 +16,7 @@ namespace freitrabalho
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new telas.cadastrarusuario());
+            Application.Run(new telas.usuario.consultarusuario ());
         }
     }
 }
