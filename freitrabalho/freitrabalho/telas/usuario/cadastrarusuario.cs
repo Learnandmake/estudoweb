@@ -49,7 +49,7 @@ namespace freitrabalho.telas
 
             try
             {
-                string nome = Convert.ToString(txtnome.Text);
+            
                 string nick = Convert.ToString(txtnickusuario.Text);
                 string email = Convert.ToString(txtemail.Text);
                 string senha = Convert.ToString(txtnickusuario.Text);

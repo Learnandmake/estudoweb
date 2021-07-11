@@ -16,6 +16,9 @@ namespace freitrabalho.telas.usuario
         public consultarusuario()
         {
             InitializeComponent();
+            bussines.bussinesusuario bussinesusuario = new freitrabalho.bussines.bussinesusuario();         
+            List<database.entity.tbusuario> lista = bussinesusuario.ltodos();
+            dvgusuario.DataSource = lista;
         }
 
         private void picclose_Click(object sender, EventArgs e)
@@ -45,7 +48,7 @@ namespace freitrabalho.telas.usuario
 
         private void btncadastrar_Click(object sender, EventArgs e)
         {
-            string nome = Convert.ToString(txtnome.Text);
+ 
             string nick = Convert.ToString(txtnickusuario.Text);
             string email = Convert.ToString(txtemail.Text);
             string senha = Convert.ToString(txtnickusuario.Text);
@@ -71,16 +74,32 @@ namespace freitrabalho.telas.usuario
                 usuario.nick = nick;
                 usuario.email = email;
                 usuario.registro = DateTime.Now;
-                login.nick = nick;
                 login.senha = senha2;
+                login.nick = nick;
                 pontuacao.nick = nick;
-                pontuacao.pontuacao = 0;
 
-                busuario.inserir(usuario);
-                blogin.inserir(login);
-                bpontuacao.inserir(pontuacao);
+                blogin.alterar(login);
+                bpontuacao.alterar(pontuacao);
+                busuario.alterar(usuario);  
+                
                 MessageBox.Show("Operação bem sucedida");
+                bussines.bussinesusuario bussinesusuario = new freitrabalho.bussines.bussinesusuario();
+                List<database.entity.tbusuario> lista = bussinesusuario.ltodos();
+                dvgusuario.DataSource = lista;
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dvgusuario_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            database.entity.tbusuario nickselecionado = dvgusuario.CurrentRow.DataBoundItem as database.entity.tbusuario;
+            txtnickusuario.Text = nickselecionado.nick;
+            txtemail.Text = nickselecionado.email;
+            
         }
     }
 }

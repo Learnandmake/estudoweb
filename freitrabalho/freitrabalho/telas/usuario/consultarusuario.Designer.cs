@@ -33,23 +33,26 @@
             this.picbarra = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.txtnickusuario = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtsenha = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtemail = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtnome = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btncadastrar = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.dvgusuario = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.txtbnick = new System.Windows.Forms.TextBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.txtbnick = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.dvgusuario = new System.Windows.Forms.DataGridView();
+            this.nick = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.registro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tbpontuacao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tblogin = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.picclose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbarra)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -104,22 +107,11 @@
             this.groupBox2.TabIndex = 18;
             this.groupBox2.TabStop = false;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(7, 15);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 19);
-            this.label2.TabIndex = 12;
-            this.label2.Text = "Nome:";
-            // 
             // txtnickusuario
             // 
             this.txtnickusuario.Font = new System.Drawing.Font("Ravie", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtnickusuario.ForeColor = System.Drawing.Color.Black;
-            this.txtnickusuario.Location = new System.Drawing.Point(73, 40);
+            this.txtnickusuario.Location = new System.Drawing.Point(73, 20);
             this.txtnickusuario.Name = "txtnickusuario";
             this.txtnickusuario.Size = new System.Drawing.Size(100, 23);
             this.txtnickusuario.TabIndex = 10;
@@ -131,8 +123,6 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.txtemail);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.txtnome);
-            this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtnickusuario);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(13, 109);
@@ -145,7 +135,7 @@
             // 
             this.txtsenha.Font = new System.Drawing.Font("Ravie", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtsenha.ForeColor = System.Drawing.Color.Black;
-            this.txtsenha.Location = new System.Drawing.Point(73, 88);
+            this.txtsenha.Location = new System.Drawing.Point(73, 81);
             this.txtsenha.Name = "txtsenha";
             this.txtsenha.Size = new System.Drawing.Size(100, 23);
             this.txtsenha.TabIndex = 17;
@@ -155,7 +145,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(1, 88);
+            this.label4.Location = new System.Drawing.Point(1, 81);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(66, 19);
             this.label4.TabIndex = 16;
@@ -165,7 +155,7 @@
             // 
             this.txtemail.Font = new System.Drawing.Font("Ravie", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtemail.ForeColor = System.Drawing.Color.Black;
-            this.txtemail.Location = new System.Drawing.Point(73, 64);
+            this.txtemail.Location = new System.Drawing.Point(73, 51);
             this.txtemail.Name = "txtemail";
             this.txtemail.Size = new System.Drawing.Size(100, 23);
             this.txtemail.TabIndex = 15;
@@ -175,27 +165,18 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(3, 65);
+            this.label3.Location = new System.Drawing.Point(3, 52);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(64, 19);
             this.label3.TabIndex = 14;
             this.label3.Text = "Email:";
-            // 
-            // txtnome
-            // 
-            this.txtnome.Font = new System.Drawing.Font("Ravie", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtnome.ForeColor = System.Drawing.Color.Black;
-            this.txtnome.Location = new System.Drawing.Point(73, 16);
-            this.txtnome.Name = "txtnome";
-            this.txtnome.Size = new System.Drawing.Size(100, 23);
-            this.txtnome.TabIndex = 13;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(15, 41);
+            this.label1.Location = new System.Drawing.Point(15, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(52, 19);
             this.label1.TabIndex = 9;
@@ -227,6 +208,18 @@
             this.groupBox3.TabIndex = 19;
             this.groupBox3.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.MintCream;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.Teal;
+            this.button1.Location = new System.Drawing.Point(107, 247);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(96, 44);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "Deletar";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.Color.Transparent;
@@ -240,28 +233,25 @@
             this.groupBox4.TabIndex = 20;
             this.groupBox4.TabStop = false;
             // 
-            // dvgusuario
+            // label5
             // 
-            this.dvgusuario.AllowUserToAddRows = false;
-            this.dvgusuario.AllowUserToDeleteRows = false;
-            this.dvgusuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dvgusuario.Location = new System.Drawing.Point(6, 49);
-            this.dvgusuario.Name = "dvgusuario";
-            this.dvgusuario.ReadOnly = true;
-            this.dvgusuario.Size = new System.Drawing.Size(478, 245);
-            this.dvgusuario.TabIndex = 0;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(48, 17);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(52, 19);
+            this.label5.TabIndex = 18;
+            this.label5.Text = "Nick:";
             // 
-            // button1
+            // txtbnick
             // 
-            this.button1.BackColor = System.Drawing.Color.MintCream;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.Teal;
-            this.button1.Location = new System.Drawing.Point(107, 247);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(96, 44);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "Deletar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.txtbnick.Font = new System.Drawing.Font("Ravie", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbnick.ForeColor = System.Drawing.Color.Black;
+            this.txtbnick.Location = new System.Drawing.Point(107, 16);
+            this.txtbnick.Name = "txtbnick";
+            this.txtbnick.Size = new System.Drawing.Size(243, 23);
+            this.txtbnick.TabIndex = 18;
             // 
             // button2
             // 
@@ -274,26 +264,71 @@
             this.button2.TabIndex = 20;
             this.button2.Text = "Buscar";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // txtbnick
+            // dvgusuario
             // 
-            this.txtbnick.Font = new System.Drawing.Font("Ravie", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbnick.ForeColor = System.Drawing.Color.Black;
-            this.txtbnick.Location = new System.Drawing.Point(107, 16);
-            this.txtbnick.Name = "txtbnick";
-            this.txtbnick.Size = new System.Drawing.Size(243, 23);
-            this.txtbnick.TabIndex = 18;
+            this.dvgusuario.AllowUserToAddRows = false;
+            this.dvgusuario.AllowUserToDeleteRows = false;
+            this.dvgusuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dvgusuario.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.nick,
+            this.email,
+            this.registro,
+            this.tbpontuacao,
+            this.tblogin});
+            this.dvgusuario.Location = new System.Drawing.Point(6, 49);
+            this.dvgusuario.Name = "dvgusuario";
+            this.dvgusuario.ReadOnly = true;
+            this.dvgusuario.Size = new System.Drawing.Size(478, 245);
+            this.dvgusuario.TabIndex = 0;
+            this.dvgusuario.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dvgusuario_RowHeaderMouseClick);
             // 
-            // label5
+            // nick
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(48, 17);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 19);
-            this.label5.TabIndex = 18;
-            this.label5.Text = "Nick:";
+            this.nick.DataPropertyName = "nick";
+            this.nick.Frozen = true;
+            this.nick.HeaderText = "nick";
+            this.nick.Name = "nick";
+            this.nick.ReadOnly = true;
+            this.nick.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.nick.Width = 145;
+            // 
+            // email
+            // 
+            this.email.DataPropertyName = "email";
+            this.email.Frozen = true;
+            this.email.HeaderText = "email";
+            this.email.Name = "email";
+            this.email.ReadOnly = true;
+            this.email.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.email.Width = 145;
+            // 
+            // registro
+            // 
+            this.registro.DataPropertyName = "registro";
+            this.registro.Frozen = true;
+            this.registro.HeaderText = "registro";
+            this.registro.Name = "registro";
+            this.registro.ReadOnly = true;
+            this.registro.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.registro.Width = 145;
+            // 
+            // tbpontuacao
+            // 
+            this.tbpontuacao.DataPropertyName = "tbpontuacao";
+            this.tbpontuacao.HeaderText = "tbpontuacao";
+            this.tbpontuacao.Name = "tbpontuacao";
+            this.tbpontuacao.ReadOnly = true;
+            this.tbpontuacao.Visible = false;
+            // 
+            // tblogin
+            // 
+            this.tblogin.DataPropertyName = "tblogin";
+            this.tblogin.HeaderText = "tblogin";
+            this.tblogin.Name = "tblogin";
+            this.tblogin.ReadOnly = true;
+            this.tblogin.Visible = false;
             // 
             // consultarusuario
             // 
@@ -331,14 +366,12 @@
         private System.Windows.Forms.PictureBox picbarra;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtnickusuario;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txtsenha;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtemail;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtnome;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btncadastrar;
         private System.Windows.Forms.GroupBox groupBox3;
@@ -348,5 +381,10 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtbnick;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nick;
+        private System.Windows.Forms.DataGridViewTextBoxColumn email;
+        private System.Windows.Forms.DataGridViewTextBoxColumn registro;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tbpontuacao;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tblogin;
     }
 }

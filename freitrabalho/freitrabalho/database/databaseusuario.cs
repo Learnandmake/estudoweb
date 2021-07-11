@@ -23,13 +23,20 @@ namespace freitrabalho.database
         }
         public List<entity.tbusuario> flista(string nick)
         {
-            List<entity.tbusuario> lista = banco.tbusuario.Where(t=>t.nick == nick).ToList();
+            List<entity.tbusuario> lista = banco.tbusuario.Where(t=>t.nick == nick ).ToList();
             return lista;
         }
-        public void deletar (string nick)
-        { entity.tbusuario lista = banco.tbusuario.FirstOrDefault(t => t.nick == nick);
-            banco.Entry(lista).State =System.Data.Entity.EntityState.Deleted;
+        public void alterar(entity.tbusuario usuario)
+        {
+            entity.tbusuario lista = banco.tbusuario.FirstOrDefault(t => t.nick == usuario.nick);
+            if (lista != null)
+            {
+                lista.email = usuario.email;
+                lista.registro = usuario.registro;
+                lista.nick = usuario.email;
+            }
             banco.SaveChanges();
+
         }
     }
 }

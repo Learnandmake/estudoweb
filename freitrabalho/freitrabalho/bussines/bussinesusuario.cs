@@ -13,5 +13,14 @@ namespace freitrabalho.bussines
         {
             data.inserir(usuario);
         }
+        public List<database.entity.tbusuario> ltodos ()
+        {
+            List<database.entity.tbusuario> lista = data.btodos();
+            return lista;
+        }
+        public void alterar (database.entity.tbusuario usuario)
+        {
+            data.alterar(usuario);
+        }
     }
 }

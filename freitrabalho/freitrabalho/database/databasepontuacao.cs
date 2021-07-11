@@ -25,6 +25,16 @@ namespace freitrabalho.database
             List<entity.tbpontuacao> lista = banco.tbpontuacao.Where(t => t.nick == nick).ToList();
             return lista;
         }
-        
+        public void alterar(entity.tbpontuacao usuario)
+        {
+            entity.tbpontuacao lista = banco.tbpontuacao.FirstOrDefault(t => t.nick == usuario.nick);
+            if (lista != null)
+            {
+                lista.nick = usuario.nick;
+              
+            }
+            banco.SaveChanges();
+
+        }
     }
 }

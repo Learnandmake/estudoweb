@@ -12,6 +12,16 @@ namespace freitrabalho.bussines
         public void inserir(database.entity.tbpontuacao pontuacao)
         {
             data.inserir(pontuacao);
+
+        }
+        public List<database.entity.tbpontuacao> ltodos()
+        {
+            List<database.entity.tbpontuacao> lista = data.btodos();
+            return lista;
+        }
+        public void alterar(database.entity.tbpontuacao usuario)
+        {
+            data.alterar(usuario);
         }
     }
 }

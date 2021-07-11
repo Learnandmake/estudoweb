@@ -25,6 +25,15 @@ namespace freitrabalho.database
             List<entity.tblogin> lista = banco.tblogin.Where(t => t.nick == nick).ToList();
             return lista;
         }
-   
+        public void alterar(entity.tblogin usuario)
+        {
+            entity.tblogin lista = banco.tblogin.FirstOrDefault(t => t.nick == usuario.nick);
+            if (lista != null)
+            {
+                lista.senha = usuario.senha;
+            }
+            banco.SaveChanges();
+
+        }
     }
 }
