@@ -25,5 +25,6 @@ namespace freitrabalho.database
             List<entity.tbpontuacao> lista = banco.tbpontuacao.Where(t => t.nick == nick).ToList();
             return lista;
         }
+        
     }
 }

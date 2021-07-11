@@ -26,5 +26,10 @@ namespace freitrabalho.database
             List<entity.tbusuario> lista = banco.tbusuario.Where(t=>t.nick == nick).ToList();
             return lista;
         }
+        public void deletar (string nick)
+        { entity.tbusuario lista = banco.tbusuario.FirstOrDefault(t => t.nick == nick);
+            banco.Entry(lista).State =System.Data.Entity.EntityState.Deleted;
+            banco.SaveChanges();
+        }
     }
 }
