@@ -15,5 +15,10 @@ namespace freitrabalho.database
             banco.tbpergunta.Add(pergunta);
             banco.SaveChanges();
         }
+        public List<entity.tbpergunta> btodos()
+        {
+            List<entity.tbpergunta> lista = banco.tbpergunta.ToList();
+            return lista;
+        }
     }
 }

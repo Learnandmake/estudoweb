@@ -15,5 +15,10 @@ namespace freitrabalho.database
             banco.tblogin.Add(login);
             banco.SaveChanges();
         }
+        public List<entity.tblogin> btodos()
+        {
+            List<entity.tblogin> lista = banco.tblogin.ToList();
+            return lista;
+        }
     }
 }

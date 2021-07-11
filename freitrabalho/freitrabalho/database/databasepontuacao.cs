@@ -15,5 +15,10 @@ namespace freitrabalho.database
             banco.tbpontuacao.Add(pontuacao);
             banco.SaveChanges();
         }
+        public List<entity.tbpontuacao> btodos()
+        {
+            List<entity.tbpontuacao> lista = banco.tbpontuacao.ToList();
+            return lista;
+        }
     }
 }

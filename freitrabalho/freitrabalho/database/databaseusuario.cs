@@ -16,5 +16,10 @@ namespace freitrabalho.database
             banco.tbusuario.Add(usuario);
             banco.SaveChanges();
         }
+        public List<entity.tbusuario> btodos ()
+        {
+            List<entity.tbusuario> lista = banco.tbusuario.ToList();
+            return lista;
+        }
     }
 }
