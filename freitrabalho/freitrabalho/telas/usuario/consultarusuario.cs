@@ -76,8 +76,10 @@ namespace freitrabalho.telas.usuario
                 usuario.nick = nick;
                 usuario.email = email;
                 usuario.registro = DateTime.Now;
+                login.idusuario = idusuario;
                 login.senha = senha2;
                 login.nick = nick;
+                pontuacao.idusuario = idusuario;
                 pontuacao.nick = nick;
                
                 busuario.alterar(usuario);

@@ -28,9 +28,10 @@ namespace freitrabalho.database
         }
         public void alterar(entity.tbusuario usuario)
         {
-            entity.tbusuario lista = banco.tbusuario.FirstOrDefault(t => t.nick == usuario.nick);
+            entity.tbusuario lista = banco.tbusuario.FirstOrDefault(t => t.idusuario == usuario.idusuario);
             if (lista != null)
             {
+                lista.idusuario = lista.idusuario;
                 lista.nick = usuario.nick;
                 lista.email = usuario.email;
                 lista.registro = usuario.registro;

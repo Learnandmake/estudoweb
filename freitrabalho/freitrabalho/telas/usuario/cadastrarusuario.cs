@@ -81,6 +81,7 @@ namespace freitrabalho.telas
                     pontuacao.pontuacao = 0;
 
                     busuario.inserir(usuario);
+                    
                     blogin.inserir(login);
                     bpontuacao.inserir(pontuacao);
                     MessageBox.Show("Operação bem sucedida");

@@ -27,9 +27,10 @@ namespace freitrabalho.database
         }
         public void alterar(entity.tblogin usuario)
         {
-            entity.tblogin lista = banco.tblogin.FirstOrDefault(t => t.nick == usuario.nick);
+            entity.tblogin lista = banco.tblogin.FirstOrDefault(t => t.idusuario == usuario.idusuario);
             if (lista != null)
             {
+                lista.nick = usuario.nick;
                 lista.senha = usuario.senha;
             }
             banco.SaveChanges();

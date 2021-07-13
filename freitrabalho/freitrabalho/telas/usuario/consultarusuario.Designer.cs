@@ -35,6 +35,8 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtnickusuario = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtidusuario = new System.Windows.Forms.TextBox();
             this.txtsenha = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtemail = new System.Windows.Forms.TextBox();
@@ -54,8 +56,6 @@
             this.registro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tbpontuacao = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tblogin = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txtidusuario = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picclose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbarra)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -135,6 +135,27 @@
             this.groupBox1.Size = new System.Drawing.Size(190, 132);
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(35, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(32, 19);
+            this.label2.TabIndex = 19;
+            this.label2.Text = "Id:";
+            // 
+            // txtidusuario
+            // 
+            this.txtidusuario.Enabled = false;
+            this.txtidusuario.Font = new System.Drawing.Font("Ravie", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtidusuario.ForeColor = System.Drawing.Color.Black;
+            this.txtidusuario.Location = new System.Drawing.Point(73, 9);
+            this.txtidusuario.Name = "txtidusuario";
+            this.txtidusuario.Size = new System.Drawing.Size(20, 23);
+            this.txtidusuario.TabIndex = 18;
             // 
             // txtsenha
             // 
@@ -344,26 +365,6 @@
             this.tblogin.Name = "tblogin";
             this.tblogin.ReadOnly = true;
             this.tblogin.Visible = false;
-            // 
-            // txtidusuario
-            // 
-            this.txtidusuario.Font = new System.Drawing.Font("Ravie", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtidusuario.ForeColor = System.Drawing.Color.Black;
-            this.txtidusuario.Location = new System.Drawing.Point(73, 9);
-            this.txtidusuario.Name = "txtidusuario";
-            this.txtidusuario.Size = new System.Drawing.Size(20, 23);
-            this.txtidusuario.TabIndex = 18;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(35, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(32, 19);
-            this.label2.TabIndex = 19;
-            this.label2.Text = "Id:";
             // 
             // consultarusuario
             // 
