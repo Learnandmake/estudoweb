@@ -46,6 +46,7 @@ namespace freitrabalho.database
                 lista.idusuario = lista.idusuario;
                 lista.nick = usuario.nick;
                 lista.email = usuario.email;
+                lista.cargo = usuario.cargo;
                 lista.registro = usuario.registro;
                 lista.tblogin = lista.tblogin;
                 lista.tbpontuacao = lista.tbpontuacao;

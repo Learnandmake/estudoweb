@@ -19,6 +19,8 @@ namespace freitrabalho.telas.usuario
             bussines.bussinesusuario bussinesusuario = new freitrabalho.bussines.bussinesusuario();
             List<database.entity.tbusuario> lista = bussinesusuario.ltodos();
             dvgusuario.DataSource = lista;
+            cbocargo.DataSource = lista;
+            cbocargo.DisplayMember = "cargo";
         }
 
         private void picclose_Click(object sender, EventArgs e)
@@ -52,7 +54,7 @@ namespace freitrabalho.telas.usuario
             string nick = Convert.ToString(txtnickusuario.Text);
             string email = Convert.ToString(txtemail.Text);
             string senha = Convert.ToString(txtnickusuario.Text);
-
+            var cargo = cbocargo.SelectedItem as database.entity.tbusuario;
 
             bussines.bussineslogin blogin = new bussines.bussineslogin();
             bussines.bussinespergunta bpergunta = new bussines.bussinespergunta();
@@ -75,6 +77,7 @@ namespace freitrabalho.telas.usuario
                 usuario.idusuario = idusuario;
                 usuario.nick = nick;
                 usuario.email = email;
+                usuario.cargo = cargo.cargo;
                 usuario.registro = DateTime.Now;
                 login.idusuario = idusuario;
                 login.senha = senha2;

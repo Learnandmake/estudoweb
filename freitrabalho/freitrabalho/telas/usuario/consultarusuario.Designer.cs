@@ -35,6 +35,8 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtnickusuario = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cbocargo = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtidusuario = new System.Windows.Forms.TextBox();
             this.txtsenha = new System.Windows.Forms.TextBox();
@@ -52,6 +54,7 @@
             this.dvgusuario = new System.Windows.Forms.DataGridView();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nick = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cargo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.registro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tbpontuacao = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -95,7 +98,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(3, 17);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 73);
+            this.pictureBox1.Size = new System.Drawing.Size(85, 49);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
@@ -106,7 +109,7 @@
             this.groupBox2.Controls.Add(this.pictureBox1);
             this.groupBox2.Location = new System.Drawing.Point(52, 11);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(109, 101);
+            this.groupBox2.Size = new System.Drawing.Size(94, 72);
             this.groupBox2.TabIndex = 18;
             this.groupBox2.TabStop = false;
             // 
@@ -122,6 +125,8 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.cbocargo);
+            this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtidusuario);
             this.groupBox1.Controls.Add(this.txtsenha);
@@ -130,11 +135,30 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txtnickusuario);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(13, 109);
+            this.groupBox1.Location = new System.Drawing.Point(13, 83);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(190, 132);
+            this.groupBox1.Size = new System.Drawing.Size(190, 158);
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
+            // 
+            // cbocargo
+            // 
+            this.cbocargo.FormattingEnabled = true;
+            this.cbocargo.Location = new System.Drawing.Point(73, 98);
+            this.cbocargo.Name = "cbocargo";
+            this.cbocargo.Size = new System.Drawing.Size(100, 21);
+            this.cbocargo.TabIndex = 21;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(3, 98);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(65, 19);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "Cargo:";
             // 
             // label2
             // 
@@ -161,7 +185,7 @@
             // 
             this.txtsenha.Font = new System.Drawing.Font("Ravie", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtsenha.ForeColor = System.Drawing.Color.Black;
-            this.txtsenha.Location = new System.Drawing.Point(73, 98);
+            this.txtsenha.Location = new System.Drawing.Point(73, 125);
             this.txtsenha.Name = "txtsenha";
             this.txtsenha.Size = new System.Drawing.Size(100, 23);
             this.txtsenha.TabIndex = 17;
@@ -171,7 +195,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(1, 98);
+            this.label4.Location = new System.Drawing.Point(1, 125);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(66, 19);
             this.label4.TabIndex = 16;
@@ -230,7 +254,7 @@
             this.groupBox3.Controls.Add(this.groupBox1);
             this.groupBox3.Location = new System.Drawing.Point(4, 32);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(214, 300);
+            this.groupBox3.Size = new System.Drawing.Size(214, 299);
             this.groupBox3.TabIndex = 19;
             this.groupBox3.TabStop = false;
             // 
@@ -301,6 +325,7 @@
             this.dvgusuario.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id,
             this.nick,
+            this.cargo,
             this.email,
             this.registro,
             this.tbpontuacao,
@@ -331,6 +356,14 @@
             this.nick.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.nick.Width = 90;
             // 
+            // cargo
+            // 
+            this.cargo.DataPropertyName = "cargo";
+            this.cargo.Frozen = true;
+            this.cargo.HeaderText = "cargo";
+            this.cargo.Name = "cargo";
+            this.cargo.ReadOnly = true;
+            // 
             // email
             // 
             this.email.DataPropertyName = "email";
@@ -339,7 +372,7 @@
             this.email.Name = "email";
             this.email.ReadOnly = true;
             this.email.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.email.Width = 145;
+            this.email.Width = 90;
             // 
             // registro
             // 
@@ -373,7 +406,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(724, 335);
+            this.ClientSize = new System.Drawing.Size(724, 339);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.picclose);
@@ -418,13 +451,16 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtbnick;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtidusuario;
+        private System.Windows.Forms.ComboBox cbocargo;
+        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridViewTextBoxColumn id;
         private System.Windows.Forms.DataGridViewTextBoxColumn nick;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cargo;
         private System.Windows.Forms.DataGridViewTextBoxColumn email;
         private System.Windows.Forms.DataGridViewTextBoxColumn registro;
         private System.Windows.Forms.DataGridViewTextBoxColumn tbpontuacao;
         private System.Windows.Forms.DataGridViewTextBoxColumn tblogin;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtidusuario;
     }
 }

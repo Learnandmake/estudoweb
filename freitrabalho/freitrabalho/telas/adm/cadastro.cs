@@ -35,7 +35,12 @@ namespace freitrabalho.telas.adm
                 string nick = Convert.ToString(txtnickusuario.Text);
                 string email = Convert.ToString(txtemail.Text);
                 string senha = Convert.ToString(txtnickusuario.Text);
-
+                nick.Trim();
+                email.Trim();
+                senha.Trim();
+                nick.ToLower();
+                email.ToLower();
+                senha.ToLower();
                 bussines.bussineslogin blogin = new bussines.bussineslogin();
                 bussines.bussinespergunta bpergunta = new bussines.bussinespergunta();
                 bussines.bussinespontuacao bpontuacao = new bussines.bussinespontuacao();
@@ -57,7 +62,7 @@ namespace freitrabalho.telas.adm
                     usuario.nick = nick;
                     usuario.email = email;
                     usuario.registro = DateTime.Now;
-                    usuario.cargo = "player";
+                    usuario.cargo = "adm";
                     busuario.inserir(usuario);
                     usuario = busuario.buscaridpornick(nick);
                     login.idusuario = usuario.idusuario;
