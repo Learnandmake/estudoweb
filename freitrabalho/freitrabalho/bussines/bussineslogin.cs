@@ -18,6 +18,9 @@ namespace freitrabalho.bussines
         {
             data.alterar(usuario);
         }
-
+        public void deletar(database.entity.tblogin login)
+        {
+            data.deletar(login);
+        }
     }
 }

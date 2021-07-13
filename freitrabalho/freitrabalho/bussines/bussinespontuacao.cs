@@ -23,5 +23,9 @@ namespace freitrabalho.bussines
         {
             data.alterar(usuario);
         }
+        public void deletar(database.entity.tbpontuacao pontuacao)
+        {
+            data.deletar(pontuacao);
+        }
     }
 }

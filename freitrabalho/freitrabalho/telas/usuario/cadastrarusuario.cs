@@ -75,13 +75,14 @@ namespace freitrabalho.telas
                     usuario.nick = nick;
                     usuario.email = email;
                     usuario.registro = DateTime.Now;
+                    busuario.inserir(usuario);
+                    usuario= busuario.buscaridpornick(nick);
+                    login.idusuario = usuario.idusuario;
                     login.nick = nick;
                     login.senha = senha2;
+                    pontuacao.idusuario = usuario.idusuario;
                     pontuacao.nick = nick;
                     pontuacao.pontuacao = 0;
-
-                    busuario.inserir(usuario);
-                    
                     blogin.inserir(login);
                     bpontuacao.inserir(pontuacao);
                     MessageBox.Show("Operação bem sucedida");

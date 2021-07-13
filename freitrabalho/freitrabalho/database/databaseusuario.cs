@@ -31,6 +31,12 @@ namespace freitrabalho.database
            entity.tbusuario lista = banco.tbusuario.FirstOrDefault(t => t.nick == nick);
             return lista;
         }
+        public void deletar (entity.tbusuario usuario)
+        {
+            entity.tbusuario lista = banco.tbusuario.FirstOrDefault(t => t.idusuario == usuario.idusuario);
+            banco.Entry(lista).State = System.Data.EntityState.Deleted;
+            banco.SaveChanges();
+        }
         public void alterar(entity.tbusuario usuario)
         {
             entity.tbusuario lista = banco.tbusuario.FirstOrDefault(t => t.idusuario == usuario.idusuario);

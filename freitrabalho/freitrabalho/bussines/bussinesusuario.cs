@@ -27,5 +27,9 @@ namespace freitrabalho.bussines
             database.entity.tbusuario lista = data.buscaridpornick(nick);
             return lista;
         }
+        public void deletar(database.entity.tbusuario usuario)
+        {
+            data.deletar(usuario);
+        }
     }
 }

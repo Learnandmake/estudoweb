@@ -13,5 +13,9 @@ namespace freitrabalho.bussines
         {
             data.inserir(pergunta);
         }
+        public void deletar(database.entity.tbpergunta pergunta)
+        {
+            data.deletar(pergunta);
+        }
     }
 }

@@ -109,5 +109,10 @@ namespace freitrabalho.telas.usuario
             txtidusuario.Text = Convert.ToString(nickselecionado.idusuario);
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

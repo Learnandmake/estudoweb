@@ -20,6 +20,11 @@ namespace freitrabalho.database
             List<entity.tbpergunta> lista = banco.tbpergunta.ToList();
             return lista;
         }
-      
+        public void deletar(entity.tbpergunta pergunta)
+        {
+            entity.tbpergunta lista = banco.tbpergunta.FirstOrDefault(t => t.idpergunta== pergunta.idpergunta);
+            banco.Entry(lista).State = System.Data.EntityState.Deleted;
+            banco.SaveChanges();
+        }
     }
 }

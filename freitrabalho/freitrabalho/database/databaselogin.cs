@@ -34,7 +34,12 @@ namespace freitrabalho.database
                 lista.senha = usuario.senha;
             }
             banco.SaveChanges();
-
+        }
+        public void deletar(entity.tblogin login)
+        {
+            entity.tblogin lista = banco.tblogin.FirstOrDefault(t => t.idusuario == login.idusuario);
+            banco.Entry(lista).State = System.Data.EntityState.Deleted;
+            banco.SaveChanges();
         }
     }
 }
