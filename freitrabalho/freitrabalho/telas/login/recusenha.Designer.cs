@@ -35,12 +35,12 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtcsenha = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.txtsenha = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.lblnick = new System.Windows.Forms.Label();
-            this.txtsenha = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.picclose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbarra)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -74,7 +74,7 @@
             this.btncadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btncadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncadastrar.ForeColor = System.Drawing.Color.Teal;
-            this.btncadastrar.Location = new System.Drawing.Point(42, 252);
+            this.btncadastrar.Location = new System.Drawing.Point(48, 252);
             this.btncadastrar.Name = "btncadastrar";
             this.btncadastrar.Size = new System.Drawing.Size(190, 44);
             this.btncadastrar.TabIndex = 20;
@@ -114,6 +114,15 @@
             this.label4.Size = new System.Drawing.Size(162, 19);
             this.label4.TabIndex = 16;
             this.label4.Text = "Confirmar senha:";
+            // 
+            // txtsenha
+            // 
+            this.txtsenha.Font = new System.Drawing.Font("Ravie", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtsenha.ForeColor = System.Drawing.Color.Black;
+            this.txtsenha.Location = new System.Drawing.Point(6, 30);
+            this.txtsenha.Name = "txtsenha";
+            this.txtsenha.Size = new System.Drawing.Size(157, 23);
+            this.txtsenha.TabIndex = 10;
             // 
             // label1
             // 
@@ -170,15 +179,6 @@
             this.lblnick.TabIndex = 22;
             this.lblnick.Text = "nick";
             // 
-            // txtsenha
-            // 
-            this.txtsenha.Font = new System.Drawing.Font("Ravie", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtsenha.ForeColor = System.Drawing.Color.Black;
-            this.txtsenha.Location = new System.Drawing.Point(6, 30);
-            this.txtsenha.Name = "txtsenha";
-            this.txtsenha.Size = new System.Drawing.Size(157, 23);
-            this.txtsenha.TabIndex = 10;
-            // 
             // recusenha
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -195,7 +195,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "recusenha";
-     
             ((System.ComponentModel.ISupportInitialize)(this.picclose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbarra)).EndInit();
             this.groupBox1.ResumeLayout(false);

@@ -35,6 +35,10 @@ namespace freitrabalho.telas.login
                 this.Visible = false;
                 
             }
+            else
+            {
+                MessageBox.Show("código incorreto");
+            }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
