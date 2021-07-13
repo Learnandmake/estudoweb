@@ -52,12 +52,22 @@ namespace freitrabalho.telas.login
         private void lblrecusenha_Click(object sender, EventArgs e)
         {
             string nick = Convert.ToString(txtnickusuario.Text);
-            bussines.bussinesusuario busuario = new bussines.bussinesusuario();
-            string email = busuario.buscaremail(nick);
-            if(email != string.Empty)
-            { MessageBox.Show("email enviado para " + email); }
-            else
-            { MessageBox.Show("usuario não encontrado"); }
+          try 
+            {
+                bussines.bussinesusuario busuario = new bussines.bussinesusuario();
+                function.enviaremail enviaremail = new function.enviaremail();
+                database.entity.tbusuario usuario = new database.entity.tbusuario();
+               
+                 usuario = busuario.buscarusuariopornick(nick);
+                if (usuario.email != string.Empty)
+                { MessageBox.Show("email enviado para " + usuario.email); }
+             
+            }
+      
+            catch(Exception)
+            {
+                MessageBox.Show("usuario não encontrado");
+            }
         }
     }
 }

@@ -54,11 +54,11 @@ namespace freitrabalho.database
             banco.SaveChanges();
 
         }
-        public string email(string nick)
+        public entity.tbusuario buscarusuariopornick(string nick)
         {
             entity.tbusuario lista = banco.tbusuario.FirstOrDefault(t => t.nick == nick);
-            string email = lista.email;
-            return email;
+            return lista;
+
         }
     }
 }

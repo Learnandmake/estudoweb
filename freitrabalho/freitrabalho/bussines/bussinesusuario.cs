@@ -36,10 +36,10 @@ namespace freitrabalho.bussines
         {
             data.deletar(usuario);
         }
-        public string buscaremail (string nick )
+        public database.entity.tbusuario buscarusuariopornick(string nick )
         {
-           string email =  data.email(nick);
-            return email;
+            database.entity.tbusuario lista=  data.buscarusuariopornick(nick);
+            return lista;
         }
     }
 }
