@@ -41,5 +41,6 @@ namespace freitrabalho.database
             banco.Entry(lista).State = System.Data.EntityState.Deleted;
             banco.SaveChanges();
         }
+        
     }
 }

@@ -36,5 +36,10 @@ namespace freitrabalho.bussines
         {
             data.deletar(usuario);
         }
+        public string buscaremail (string nick )
+        {
+           string email =  data.email(nick);
+            return email;
+        }
     }
 }
