@@ -18,6 +18,11 @@ namespace freitrabalho.bussines
             List<database.entity.tbusuario> lista = data.btodos();
             return lista;
         }
+        public List<database.entity.tbusuario> ftodos(string nick)
+        {
+            List<database.entity.tbusuario> lista = data.flista(nick);
+            return lista;
+        }
         public void alterar (database.entity.tbusuario usuario)
         {
             data.alterar(usuario);

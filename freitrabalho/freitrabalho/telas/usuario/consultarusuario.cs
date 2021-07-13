@@ -96,7 +96,20 @@ namespace freitrabalho.telas.usuario
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            string nome = Convert.ToString(txtbnick.Text);
+            if (nome !=null)
+            {
+                bussines.bussinesusuario busuario = new bussines.bussinesusuario();
+                List<database.entity.tbusuario> lista = busuario.ftodos(nome);
+                dvgusuario.DataSource = lista;
+            }
+            if(txtbnick.Text == string.Empty)
+            {
+                bussines.bussinesusuario busuario = new bussines.bussinesusuario();
+                List<database.entity.tbusuario> lista = busuario.ltodos();
+                dvgusuario.DataSource = lista;
+            }
+           
         }
 
         private void dvgusuario_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)

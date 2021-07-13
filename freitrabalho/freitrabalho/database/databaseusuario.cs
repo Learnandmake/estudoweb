@@ -37,6 +37,7 @@ namespace freitrabalho.database
             banco.Entry(lista).State = System.Data.EntityState.Deleted;
             banco.SaveChanges();
         }
+        
         public void alterar(entity.tbusuario usuario)
         {
             entity.tbusuario lista = banco.tbusuario.FirstOrDefault(t => t.idusuario == usuario.idusuario);
