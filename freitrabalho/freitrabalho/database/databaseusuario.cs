@@ -31,9 +31,12 @@ namespace freitrabalho.database
             entity.tbusuario lista = banco.tbusuario.FirstOrDefault(t => t.nick == usuario.nick);
             if (lista != null)
             {
+                lista.nick = usuario.nick;
                 lista.email = usuario.email;
                 lista.registro = usuario.registro;
-                lista.nick = usuario.email;
+                lista.tblogin = lista.tblogin;
+                lista.tbpontuacao = lista.tbpontuacao;
+                
             }
             banco.SaveChanges();
 

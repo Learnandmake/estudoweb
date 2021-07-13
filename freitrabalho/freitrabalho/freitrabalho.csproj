@@ -77,18 +77,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>modeltrabalho.edmx</DependentUpon>
     </Compile>
-    <Compile Include="database\entity\tblogin.cs">
-      <DependentUpon>modeltrabalho.tt</DependentUpon>
-    </Compile>
-    <Compile Include="database\entity\tbpergunta.cs">
-      <DependentUpon>modeltrabalho.tt</DependentUpon>
-    </Compile>
-    <Compile Include="database\entity\tbpontuacao.cs">
-      <DependentUpon>modeltrabalho.tt</DependentUpon>
-    </Compile>
-    <Compile Include="database\entity\tbusuario.cs">
-      <DependentUpon>modeltrabalho.tt</DependentUpon>
-    </Compile>
     <Compile Include="function\criptografia.cs" />
     <Compile Include="function\vemail.cs" />
     <Compile Include="Program.cs" />

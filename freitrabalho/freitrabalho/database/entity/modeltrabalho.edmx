@@ -36,53 +36,24 @@
         </EntityType>
         <EntityType Name="tbusuario">
           <Key>
-            <PropertyRef Name="nick" />
+            <PropertyRef Name="idusuario" />
           </Key>
-          <Property Name="nick" Type="varchar" MaxLength="150" Nullable="false" />
+          <Property Name="idusuario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nick" Type="varchar" MaxLength="150" />
           <Property Name="email" Type="varchar" MaxLength="150" />
           <Property Name="registro" Type="datetime" Precision="0" />
         </EntityType>
-        <Association Name="tblogin_ibfk_1">
-          <End Role="tbusuario" Type="Self.tbusuario" Multiplicity="0..1">
-            <OnDelete Action="Cascade" />
-          </End>
-          <End Role="tblogin" Type="Self.tblogin" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="tbusuario">
-              <PropertyRef Name="nick" />
-            </Principal>
-            <Dependent Role="tblogin">
-              <PropertyRef Name="nick" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="tbpontuacao_ibfk_1">
-          <End Role="tbusuario" Type="Self.tbusuario" Multiplicity="0..1">
-            <OnDelete Action="Cascade" />
-          </End>
-          <End Role="tbpontuacao" Type="Self.tbpontuacao" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="tbusuario">
-              <PropertyRef Name="nick" />
-            </Principal>
-            <Dependent Role="tbpontuacao">
-              <PropertyRef Name="nick" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
+        <!--Errors Found During Generation:
+warning 6035: The relationship 'tblogin_ibfk_1' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+        <Association Name="tblogin_ibfk_1" />-->
+        <!--Errors Found During Generation:
+warning 6035: The relationship 'tbpontuacao_ibfk_1' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+        <Association Name="tbpontuacao_ibfk_1" />-->
         <EntityContainer Name="freitrabalhoModelStoreContainer">
           <EntitySet Name="tblogin" EntityType="Self.tblogin" Schema="freitrabalho" store:Type="Tables" />
           <EntitySet Name="tbpergunta" EntityType="Self.tbpergunta" Schema="freitrabalho" store:Type="Tables" />
           <EntitySet Name="tbpontuacao" EntityType="Self.tbpontuacao" Schema="freitrabalho" store:Type="Tables" />
           <EntitySet Name="tbusuario" EntityType="Self.tbusuario" Schema="freitrabalho" store:Type="Tables" />
-          <AssociationSet Name="tblogin_ibfk_1" Association="Self.tblogin_ibfk_1">
-            <End Role="tbusuario" EntitySet="tbusuario" />
-            <End Role="tblogin" EntitySet="tblogin" />
-          </AssociationSet>
-          <AssociationSet Name="tbpontuacao_ibfk_1" Association="Self.tbpontuacao_ibfk_1">
-            <End Role="tbusuario" EntitySet="tbusuario" />
-            <End Role="tbpontuacao" EntitySet="tbpontuacao" />
-          </AssociationSet>
         </EntityContainer>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
@@ -122,12 +93,14 @@
         <EntityType Name="tbusuario">
           <Key>
             <PropertyRef Name="nick" />
+            <PropertyRef Name="idusuario" />
           </Key>
           <Property Name="nick" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="email" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
           <Property Name="registro" Type="DateTime" />
           <NavigationProperty Name="tblogin" Relationship="Self.tblogin_ibfk_1" FromRole="tbusuario" ToRole="tblogin" />
           <NavigationProperty Name="tbpontuacao" Relationship="Self.tbpontuacao_ibfk_1" FromRole="tbusuario" ToRole="tbpontuacao" />
+          <Property Name="idusuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
         </EntityType>
         <Association Name="tblogin_ibfk_1">
           <End Role="tbusuario" Type="Self.tbusuario" Multiplicity="0..1" />
@@ -208,6 +181,7 @@
           <EntitySetMapping Name="tbusuario">
             <EntityTypeMapping TypeName="freitrabalhoModel.tbusuario">
               <MappingFragment StoreEntitySet="tbusuario">
+                <ScalarProperty Name="idusuario" ColumnName="idusuario" />
                 <ScalarProperty Name="nick" ColumnName="nick" />
                 <ScalarProperty Name="email" ColumnName="email" />
                 <ScalarProperty Name="registro" ColumnName="registro" />
