@@ -70,6 +70,7 @@
             this.picbarra.Size = new System.Drawing.Size(302, 31);
             this.picbarra.TabIndex = 14;
             this.picbarra.TabStop = false;
+         
             this.picbarra.MouseMove += new System.Windows.Forms.MouseEventHandler(this.picbarra_MouseMove);
             // 
             // pictureBox1
@@ -202,7 +203,6 @@
             this.Name = "login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "login";
-         
             ((System.ComponentModel.ISupportInitialize)(this.picclose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbarra)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
