@@ -22,6 +22,11 @@ namespace freitrabalho.bussines
         {
             data.deletar(login);
         }
+      public database.entity.tblogin fazerlogin (string nick , string senha)
+      {
+           database.entity.tblogin lista= data.fazerlogin(nick, senha);
+            return lista;
+      }
         public database.entity.tblogin buscarloginpornick(string nick)
         {
             database.entity.tblogin lista = data.buscarloginpornick(nick);

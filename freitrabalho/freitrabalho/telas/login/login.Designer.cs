@@ -70,7 +70,6 @@
             this.picbarra.Size = new System.Drawing.Size(302, 31);
             this.picbarra.TabIndex = 14;
             this.picbarra.TabStop = false;
-         
             this.picbarra.MouseMove += new System.Windows.Forms.MouseEventHandler(this.picbarra_MouseMove);
             // 
             // pictureBox1
@@ -158,6 +157,7 @@
             this.btncadastrar.TabIndex = 17;
             this.btncadastrar.Text = "Login";
             this.btncadastrar.UseVisualStyleBackColor = false;
+            this.btncadastrar.Click += new System.EventHandler(this.btncadastrar_Click);
             // 
             // lblcadastro
             // 

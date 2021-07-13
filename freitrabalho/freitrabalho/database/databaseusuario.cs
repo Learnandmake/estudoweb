@@ -26,6 +26,7 @@ namespace freitrabalho.database
             List<entity.tbusuario> lista = banco.tbusuario.Where(t => t.nick == nick).ToList();
             return lista;
         }
+       
         public entity.tbusuario buscaridpornick(string nick)
         {
            entity.tbusuario lista = banco.tbusuario.FirstOrDefault(t => t.nick == nick);

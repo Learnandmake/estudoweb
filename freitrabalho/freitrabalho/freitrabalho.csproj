@@ -118,6 +118,18 @@
     <Compile Include="telas\login\recusenha.Designer.cs">
       <DependentUpon>recusenha.cs</DependentUpon>
     </Compile>
+    <Compile Include="telas\menu\menuadm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="telas\menu\menuadm.Designer.cs">
+      <DependentUpon>menuadm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="telas\menu\menuplayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="telas\menu\menuplayer.Designer.cs">
+      <DependentUpon>menuplayer.cs</DependentUpon>
+    </Compile>
     <Compile Include="telas\usuario\cadastrarusuario.cs">
       <SubType>Form</SubType>
     </Compile>

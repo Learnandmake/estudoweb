@@ -81,6 +81,43 @@ namespace freitrabalho.telas.login
             }
         }
 
-       
+        private void btncadastrar_Click(object sender, EventArgs e)
+        {
+        try
+        {
+
+                string nick = Convert.ToString(txtnickusuario.Text);
+                string senha1 = Convert.ToString(txtnickusuario.Text);
+
+                function.criptografia criptografia = new function.criptografia();
+                bussines.bussineslogin blogin = new bussines.bussineslogin();
+                bussines.bussinesusuario busuario = new bussines.bussinesusuario();
+                database.entity.tblogin login = new database.entity.tblogin();
+                database.entity.tbusuario usuario = new database.entity.tbusuario();
+                string senha2 = criptografia.gerarmd5(senha1);
+
+                usuario = busuario.buscaridpornick(nick);
+                login = blogin.fazerlogin(nick, senha2);
+
+                if (login != null)
+                {
+                    if (usuario.cargo == "adm")
+                    {
+                        menu.menuadm m = new menu.menuadm();
+                        m.Show();
+                    }
+                    if (usuario.cargo == "player")
+                    {
+                        menu.menuplayer m = new menu.menuplayer();
+                        m.Show();
+                    }
+                }
+                else {
+                    MessageBox.Show("usuario não encontrado");
+                }
+            }
+            catch(Exception)
+            { MessageBox.Show("Erro por favor verifique o formulario"); }
+        }
     }
 }
