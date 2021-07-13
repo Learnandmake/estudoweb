@@ -43,6 +43,7 @@
           <Property Name="idusuario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="nick" Type="varchar" MaxLength="150" />
           <Property Name="email" Type="varchar" MaxLength="150" />
+          <Property Name="cargo" Type="enum" />
           <Property Name="registro" Type="datetime" Precision="0" />
         </EntityType>
         <Association Name="tblogin_ibfk_1">
@@ -134,6 +135,7 @@
           <Property Name="registro" Type="DateTime" />
           <NavigationProperty Name="tblogin" Relationship="Self.tblogin_ibfk_1" FromRole="tbusuario" ToRole="tblogin" />
           <NavigationProperty Name="tbpontuacao" Relationship="Self.tbpontuacao_ibfk_1" FromRole="tbusuario" ToRole="tbpontuacao" />
+          <Property Name="cargo" Type="String" MaxLength="65532" FixedLength="false" Unicode="false" />
         </EntityType>
         <Association Name="tblogin_ibfk_1">
           <End Role="tbusuario" Type="Self.tbusuario" Multiplicity="0..1">
@@ -220,6 +222,7 @@
           <EntitySetMapping Name="tbusuario">
             <EntityTypeMapping TypeName="freitrabalhoModel.tbusuario">
               <MappingFragment StoreEntitySet="tbusuario">
+                <ScalarProperty Name="cargo" ColumnName="cargo" />
                 <ScalarProperty Name="idusuario" ColumnName="idusuario" />
                 <ScalarProperty Name="nick" ColumnName="nick" />
                 <ScalarProperty Name="email" ColumnName="email" />

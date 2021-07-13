@@ -24,6 +24,7 @@ namespace freitrabalho.database.entity
         public string nick { get; set; }
         public string email { get; set; }
         public Nullable<System.DateTime> registro { get; set; }
+        public string cargo { get; set; }
     
         public virtual ICollection<tblogin> tblogin { get; set; }
         public virtual ICollection<tbpontuacao> tbpontuacao { get; set; }

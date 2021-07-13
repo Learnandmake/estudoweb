@@ -46,6 +46,11 @@ namespace freitrabalho.database
             database.entity.tblogin lista = banco.tblogin.FirstOrDefault(t=>t.nick == nick);
             return lista;
         }
+        public entity.tblogin fazerlogin(string nick, string senha)
+        {
+            entity.tblogin lista = banco.tblogin.FirstOrDefault(t => t.nick == nick && t.senha == senha);
+            return lista;
+        }
   
     }
 }

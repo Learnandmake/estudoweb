@@ -9,29 +9,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace freitrabalho.telas
+namespace freitrabalho.telas.adm
 {
-    public partial class cadastrarusuario : Form
+    public partial class cadastro : Form
     {
-        public cadastrarusuario()
+        public cadastro()
         {
             InitializeComponent();
-            txtsenha.UseSystemPasswordChar = true;
-        }
-
-        private void pictureBox2_MouseEnter(object sender, EventArgs e)
-        {
-            picclose.BackColor = Color.Maroon;
-        }
-
-        private void picclose_MouseLeave(object sender, EventArgs e)
-        {
-            picclose.BackColor = Color.Teal;
-        }
-
-        private void picclose_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
 
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
@@ -43,13 +27,11 @@ namespace freitrabalho.telas
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
-
-        private void btncadastrar_Click_1(object sender, EventArgs e)
+        private void btncadastrar_Click(object sender, EventArgs e)
         {
-
             try
             {
-            
+
                 string nick = Convert.ToString(txtnickusuario.Text);
                 string email = Convert.ToString(txtemail.Text);
                 string senha = Convert.ToString(txtnickusuario.Text);
@@ -65,7 +47,7 @@ namespace freitrabalho.telas
                 if (vemail == false)
                 { MessageBox.Show("Porfavor insira um e-mail valido"); }
 
-                if(vemail == true)
+                if (vemail == true)
                 {
                     database.entity.tblogin login = new database.entity.tblogin();
                     database.entity.tbpergunta pergunta = new database.entity.tbpergunta();
@@ -77,7 +59,7 @@ namespace freitrabalho.telas
                     usuario.registro = DateTime.Now;
                     usuario.cargo = "player";
                     busuario.inserir(usuario);
-                    usuario= busuario.buscaridpornick(nick);
+                    usuario = busuario.buscaridpornick(nick);
                     login.idusuario = usuario.idusuario;
                     login.nick = nick;
                     login.senha = senha2;
@@ -94,6 +76,21 @@ namespace freitrabalho.telas
 
             catch (Exception)
             { MessageBox.Show("Este nome ja está sendo usado"); }
+        }
+
+        private void picclose_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+        }
+
+        private void picclose_MouseEnter(object sender, EventArgs e)
+        {
+            picclose.BackColor = Color.Maroon;
+        }
+
+        private void picclose_MouseLeave(object sender, EventArgs e)
+        {
+            picclose.BackColor = Color.Teal;
         }
     }
 }
