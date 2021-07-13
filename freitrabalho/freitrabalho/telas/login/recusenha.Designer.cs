@@ -74,7 +74,7 @@
             this.btncadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btncadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncadastrar.ForeColor = System.Drawing.Color.Teal;
-            this.btncadastrar.Location = new System.Drawing.Point(48, 252);
+            this.btncadastrar.Location = new System.Drawing.Point(45, 252);
             this.btncadastrar.Name = "btncadastrar";
             this.btncadastrar.Size = new System.Drawing.Size(190, 44);
             this.btncadastrar.TabIndex = 20;
@@ -139,7 +139,7 @@
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
             this.groupBox2.Controls.Add(this.pictureBox1);
-            this.groupBox2.Location = new System.Drawing.Point(83, 37);
+            this.groupBox2.Location = new System.Drawing.Point(86, 37);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(109, 101);
             this.groupBox2.TabIndex = 19;

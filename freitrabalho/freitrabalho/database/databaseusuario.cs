@@ -54,6 +54,7 @@ namespace freitrabalho.database
             banco.SaveChanges();
 
         }
+
         public entity.tbusuario buscarusuariopornick(string nick)
         {
             entity.tbusuario lista = banco.tbusuario.FirstOrDefault(t => t.nick == nick);
