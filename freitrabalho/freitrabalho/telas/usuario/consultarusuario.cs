@@ -16,7 +16,7 @@ namespace freitrabalho.telas.usuario
         public consultarusuario()
         {
             InitializeComponent();
-            bussines.bussinesusuario bussinesusuario = new freitrabalho.bussines.bussinesusuario();         
+            bussines.bussinesusuario bussinesusuario = new freitrabalho.bussines.bussinesusuario();
             List<database.entity.tbusuario> lista = bussinesusuario.ltodos();
             dvgusuario.DataSource = lista;
         }
@@ -52,7 +52,7 @@ namespace freitrabalho.telas.usuario
             string nick = Convert.ToString(txtnickusuario.Text);
             string email = Convert.ToString(txtemail.Text);
             string senha = Convert.ToString(txtnickusuario.Text);
-            
+
 
             bussines.bussineslogin blogin = new bussines.bussineslogin();
             bussines.bussinespergunta bpergunta = new bussines.bussinespergunta();
@@ -81,12 +81,12 @@ namespace freitrabalho.telas.usuario
                 login.nick = nick;
                 pontuacao.idusuario = idusuario;
                 pontuacao.nick = nick;
-               
+
                 busuario.alterar(usuario);
                 blogin.alterar(login);
                 bpontuacao.alterar(pontuacao);
-              
-                
+
+
                 MessageBox.Show("Operação bem sucedida");
                 bussines.bussinesusuario bussinesusuario = new freitrabalho.bussines.bussinesusuario();
                 List<database.entity.tbusuario> lista = bussinesusuario.ltodos();
@@ -102,7 +102,7 @@ namespace freitrabalho.telas.usuario
         private void dvgusuario_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             string nome = txtnickusuario.Text;
-         
+
             database.entity.tbusuario nickselecionado = dvgusuario.CurrentRow.DataBoundItem as database.entity.tbusuario;
             txtnickusuario.Text = nickselecionado.nick;
             txtemail.Text = nickselecionado.email;
@@ -112,6 +112,30 @@ namespace freitrabalho.telas.usuario
 
         private void button1_Click(object sender, EventArgs e)
         {
+            int idusuario = Convert.ToInt32(txtidusuario.Text);
+
+            bussines.bussineslogin blogin = new bussines.bussineslogin();
+            bussines.bussinespergunta bpergunta = new bussines.bussinespergunta();
+            bussines.bussinespontuacao bpontuacao = new bussines.bussinespontuacao();
+            bussines.bussinesusuario busuario = new bussines.bussinesusuario();
+
+            database.entity.tblogin login = new database.entity.tblogin();
+            database.entity.tbpergunta pergunta = new database.entity.tbpergunta();
+            database.entity.tbpontuacao pontuacao = new database.entity.tbpontuacao();
+            database.entity.tbusuario usuario = new database.entity.tbusuario();
+
+            usuario.idusuario = idusuario;
+            login.idusuario = idusuario;
+            pontuacao.idusuario = idusuario;
+
+            blogin.deletar(login);
+            bpontuacao.deletar(pontuacao);
+            busuario.deletar(usuario);
+
+            MessageBox.Show("Operação bem sucedida");
+            bussines.bussinesusuario bussinesusuario = new freitrabalho.bussines.bussinesusuario();
+            List<database.entity.tbusuario> lista = bussinesusuario.ltodos();
+            dvgusuario.DataSource = lista;
 
         }
     }
