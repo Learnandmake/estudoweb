@@ -17,7 +17,8 @@ namespace freitrabalho.telas.login
             InitializeComponent();
         }
 
-        private void recusenha_Load(object sender, EventArgs e)
+    
+        private void btncadastrar_Click(object sender, EventArgs e)
         {
 
         }

@@ -35,13 +35,14 @@
             this.btncadastrar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.lblcodigo = new System.Windows.Forms.Label();
             this.lblnick = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtcodigo = new System.Windows.Forms.MaskedTextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblnickaviso = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picclose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbarra)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -86,7 +87,7 @@
             this.btncadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btncadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncadastrar.ForeColor = System.Drawing.Color.Teal;
-            this.btncadastrar.Location = new System.Drawing.Point(90, 84);
+            this.btncadastrar.Location = new System.Drawing.Point(99, 123);
             this.btncadastrar.Name = "btncadastrar";
             this.btncadastrar.Size = new System.Drawing.Size(150, 42);
             this.btncadastrar.TabIndex = 21;
@@ -98,35 +99,25 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Teal;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(256, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(278, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(39, 31);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 24;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox1.MouseEnter += new System.EventHandler(this.pictureBox1_MouseEnter);
+            this.pictureBox1.MouseLeave += new System.EventHandler(this.pictureBox1_MouseLeave);
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Teal;
             this.pictureBox2.Location = new System.Drawing.Point(1, 0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(302, 31);
+            this.pictureBox2.Size = new System.Drawing.Size(318, 31);
             this.pictureBox2.TabIndex = 23;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox2_MouseMove);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(12, 96);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 19);
-            this.label2.TabIndex = 22;
-            this.label2.Text = "Código:";
             // 
             // lblcodigo
             // 
@@ -170,7 +161,7 @@
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.txtcodigo);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Location = new System.Drawing.Point(90, 37);
+            this.groupBox1.Location = new System.Drawing.Point(97, 76);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(150, 41);
             this.groupBox1.TabIndex = 32;
@@ -179,7 +170,7 @@
             // txtcodigo
             // 
             this.txtcodigo.Location = new System.Drawing.Point(73, 16);
-            this.txtcodigo.Mask = "000000000";
+            this.txtcodigo.Mask = "0000000000";
             this.txtcodigo.Name = "txtcodigo";
             this.txtcodigo.Size = new System.Drawing.Size(65, 20);
             this.txtcodigo.TabIndex = 32;
@@ -196,19 +187,44 @@
             this.label4.TabIndex = 31;
             this.label4.Text = "Código:";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(51, 36);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(240, 19);
+            this.label2.TabIndex = 33;
+            this.label2.Text = "Um email foi enviado para ";
+            // 
+            // lblnickaviso
+            // 
+            this.lblnickaviso.AutoSize = true;
+            this.lblnickaviso.BackColor = System.Drawing.Color.Transparent;
+            this.lblnickaviso.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblnickaviso.ForeColor = System.Drawing.Color.White;
+            this.lblnickaviso.Location = new System.Drawing.Point(93, 55);
+            this.lblnickaviso.Name = "lblnickaviso";
+            this.lblnickaviso.Size = new System.Drawing.Size(52, 19);
+            this.lblnickaviso.TabIndex = 34;
+            this.lblnickaviso.Text = "Nick:";
+            // 
             // codigo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(296, 139);
+            this.ClientSize = new System.Drawing.Size(318, 173);
+            this.Controls.Add(this.lblnickaviso);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lblnick);
             this.Controls.Add(this.lblcodigo);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.picclose);
             this.Controls.Add(this.picbarra);
             this.Controls.Add(this.label1);
@@ -235,12 +251,13 @@
         private System.Windows.Forms.Button btncadastrar;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblcodigo;
         private System.Windows.Forms.Label lblnick;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.MaskedTextBox txtcodigo;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblnickaviso;
     }
 }

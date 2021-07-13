@@ -13,11 +13,12 @@ namespace freitrabalho.telas.login
 {
     public partial class codigo : Form
     {
-        public codigo(int codigo, string nick)
+        public codigo(int codigo, string nick, string email)
         {
             InitializeComponent();
             lblnick.Text = nick;
             lblcodigo.Text = Convert.ToString(codigo);
+            lblnickaviso.Text = email;
             txtcodigo.MaxLength = 9;
 
         }
@@ -30,17 +31,15 @@ namespace freitrabalho.telas.login
             {
                 recusenha m = new recusenha(nick);
                 m.Show();
-                
-                telas.login.codigo codigo2 = new codigo(1,nick);
-                codigo2.Visible = false;
+
+                this.Visible = false;
                 
             }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            telas.login.codigo codigo2 = new codigo(1, lblnick.Text);
-            codigo2.Visible = false;
+            this.Visible = false;
         }
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
@@ -50,6 +49,16 @@ namespace freitrabalho.telas.login
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void pictureBox1_MouseEnter(object sender, EventArgs e)
+        {
+            pictureBox1.BackColor = Color.Maroon;
+        }
+
+        private void pictureBox1_MouseLeave(object sender, EventArgs e)
+        {
+            pictureBox1.BackColor = Color.Teal;
         }
     }
 }

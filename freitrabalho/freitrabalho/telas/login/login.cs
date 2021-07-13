@@ -71,13 +71,8 @@ namespace freitrabalho.telas.login
                 enviaremail.ConfigurarCredenciais("testinmail21@gmail.com", "98847685");
                 enviaremail.Enviar(usuario.email, "recuperaçao de senha", "aqui esta seu codigo"+" "+codigo);
 
-                telas.login.codigo telacodigo = new telas.login.codigo(codigo,nick);
+                telas.login.codigo telacodigo = new telas.login.codigo(codigo, nick, usuario.email);
                 telacodigo.Show();
-
-
-                if (usuario.email != string.Empty)
-                { MessageBox.Show("email enviado para " + usuario.email); }
-             
             }
       
             catch(Exception)
