@@ -8,7 +8,7 @@ namespace freitrabalho.database
 {
     class databasepergunta
     {
-        database.entity.freitrabalhoEntities banco = new database.entity.freitrabalhoEntities();
+        database.entity.freitrabalhoEntities1 banco = new database.entity.freitrabalhoEntities1();
 
         public void inserir(database.entity.tbpergunta pergunta)
         {

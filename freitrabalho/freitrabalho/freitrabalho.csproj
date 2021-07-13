@@ -62,20 +62,32 @@
     <Compile Include="database\databasepergunta.cs" />
     <Compile Include="database\databasepontuacao.cs" />
     <Compile Include="database\databaseusuario.cs" />
-    <Compile Include="database\entity\modeltrabalho.Context.cs">
+    <Compile Include="database\entity\modelentity.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>modeltrabalho.Context.tt</DependentUpon>
+      <DependentUpon>modelentity.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="database\entity\modeltrabalho.cs">
+    <Compile Include="database\entity\modelentity.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>modeltrabalho.tt</DependentUpon>
+      <DependentUpon>modelentity.tt</DependentUpon>
     </Compile>
-    <Compile Include="database\entity\modeltrabalho.Designer.cs">
+    <Compile Include="database\entity\modelentity.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>modeltrabalho.edmx</DependentUpon>
+      <DependentUpon>modelentity.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="database\entity\tblogin.cs">
+      <DependentUpon>modelentity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="database\entity\tbpergunta.cs">
+      <DependentUpon>modelentity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="database\entity\tbpontuacao.cs">
+      <DependentUpon>modelentity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="database\entity\tbusuario.cs">
+      <DependentUpon>modelentity.tt</DependentUpon>
     </Compile>
     <Compile Include="function\criptografia.cs" />
     <Compile Include="function\vemail.cs" />
@@ -108,12 +120,12 @@
     <EmbeddedResource Include="telas\usuario\consultarusuario.resx">
       <DependentUpon>consultarusuario.cs</DependentUpon>
     </EmbeddedResource>
-    <EntityDeploy Include="database\entity\modeltrabalho.edmx">
+    <EntityDeploy Include="database\entity\modelentity.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>modeltrabalho.Designer.cs</LastGenOutput>
+      <LastGenOutput>modelentity.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="database\entity\modeltrabalho.edmx.diagram">
-      <DependentUpon>modeltrabalho.edmx</DependentUpon>
+    <None Include="database\entity\modelentity.edmx.diagram">
+      <DependentUpon>modelentity.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -129,17 +141,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Content Include="database\entity\modeltrabalho.Context.tt">
+    <Content Include="database\entity\modelentity.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>modeltrabalho.Context.cs</LastGenOutput>
-      <DependentUpon>modeltrabalho.edmx</DependentUpon>
+      <DependentUpon>modelentity.edmx</DependentUpon>
+      <LastGenOutput>modelentity.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="database\entity\modeltrabalho.tt">
+    <Content Include="database\entity\modelentity.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>modeltrabalho.edmx</DependentUpon>
-      <LastGenOutput>modeltrabalho.cs</LastGenOutput>
+      <DependentUpon>modelentity.edmx</DependentUpon>
+      <LastGenOutput>modelentity.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>

@@ -48,7 +48,7 @@ namespace freitrabalho.telas.usuario
 
         private void btncadastrar_Click(object sender, EventArgs e)
         {
-           
+            int idusuario = Convert.ToInt32(txtidusuario.Text);
             string nick = Convert.ToString(txtnickusuario.Text);
             string email = Convert.ToString(txtemail.Text);
             string senha = Convert.ToString(txtnickusuario.Text);
@@ -72,6 +72,7 @@ namespace freitrabalho.telas.usuario
                 database.entity.tbpontuacao pontuacao = new database.entity.tbpontuacao();
                 database.entity.tbusuario usuario = new database.entity.tbusuario();
 
+                usuario.idusuario = idusuario;
                 usuario.nick = nick;
                 usuario.email = email;
                 usuario.registro = DateTime.Now;
@@ -99,11 +100,12 @@ namespace freitrabalho.telas.usuario
         private void dvgusuario_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             string nome = txtnickusuario.Text;
-
+         
             database.entity.tbusuario nickselecionado = dvgusuario.CurrentRow.DataBoundItem as database.entity.tbusuario;
             txtnickusuario.Text = nickselecionado.nick;
             txtemail.Text = nickselecionado.email;
-            
+            txtidusuario.Text = Convert.ToString(nickselecionado.idusuario);
+
         }
     }
 }
