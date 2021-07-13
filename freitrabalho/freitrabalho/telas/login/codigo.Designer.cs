@@ -87,7 +87,7 @@
             this.btncadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btncadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncadastrar.ForeColor = System.Drawing.Color.Teal;
-            this.btncadastrar.Location = new System.Drawing.Point(99, 123);
+            this.btncadastrar.Location = new System.Drawing.Point(95, 123);
             this.btncadastrar.Name = "btncadastrar";
             this.btncadastrar.Size = new System.Drawing.Size(150, 42);
             this.btncadastrar.TabIndex = 21;

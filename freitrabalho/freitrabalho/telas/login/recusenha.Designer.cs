@@ -58,6 +58,9 @@
             this.picclose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picclose.TabIndex = 19;
             this.picclose.TabStop = false;
+            this.picclose.Click += new System.EventHandler(this.picclose_Click);
+            this.picclose.MouseEnter += new System.EventHandler(this.picclose_MouseEnter);
+            this.picclose.MouseLeave += new System.EventHandler(this.picclose_MouseLeave);
             // 
             // picbarra
             // 
@@ -67,6 +70,7 @@
             this.picbarra.Size = new System.Drawing.Size(302, 31);
             this.picbarra.TabIndex = 18;
             this.picbarra.TabStop = false;
+            this.picbarra.MouseMove += new System.Windows.Forms.MouseEventHandler(this.picbarra_MouseMove);
             // 
             // btncadastrar
             // 
@@ -195,6 +199,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "recusenha";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.picclose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbarra)).EndInit();
             this.groupBox1.ResumeLayout(false);
