@@ -55,10 +55,26 @@ namespace freitrabalho.telas.login
           try 
             {
                 bussines.bussinesusuario busuario = new bussines.bussinesusuario();
+                bussines.bussineslogin blogin = new bussines.bussineslogin();
                 function.enviaremail enviaremail = new function.enviaremail();
                 database.entity.tbusuario usuario = new database.entity.tbusuario();
-               
-                 usuario = busuario.buscarusuariopornick(nick);
+                database.entity.tblogin login= new database.entity.tblogin();
+                Random randNum = new Random();
+                int codigo = 0;
+                for (int i = 0; i <= 1; i++)
+                { codigo = Convert.ToInt32((randNum.Next())); }
+
+
+                usuario = busuario.buscarusuariopornick(nick);
+                login = blogin.buscarloginpornick(nick);
+                string senha = Convert.ToString(login.senha);
+                enviaremail.ConfigurarCredenciais("testinmail21@gmail.com", "98847685");
+                enviaremail.Enviar(usuario.email, "recuperaçao de senha", "aqui esta seu codigo"+" "+codigo);
+
+                telas.login.codigo telacodigo = new telas.login.codigo(codigo,nick);
+                telacodigo.Show();
+
+
                 if (usuario.email != string.Empty)
                 { MessageBox.Show("email enviado para " + usuario.email); }
              
@@ -69,5 +85,7 @@ namespace freitrabalho.telas.login
                 MessageBox.Show("usuario não encontrado");
             }
         }
+
+     
     }
 }

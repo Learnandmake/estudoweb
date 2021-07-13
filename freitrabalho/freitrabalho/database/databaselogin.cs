@@ -41,6 +41,10 @@ namespace freitrabalho.database
             banco.Entry(lista).State = System.Data.EntityState.Deleted;
             banco.SaveChanges();
         }
-        
+        public database.entity.tblogin buscarloginpornick(string nick)
+        {
+            database.entity.tblogin lista = banco.tblogin.FirstOrDefault(t=>t.nick == nick);
+            return lista;
+        }
     }
 }
