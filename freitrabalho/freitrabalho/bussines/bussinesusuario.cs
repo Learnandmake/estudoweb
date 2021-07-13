@@ -22,5 +22,10 @@ namespace freitrabalho.bussines
         {
             data.alterar(usuario);
         }
+        public database.entity.tbusuario buscaridpornick (string nick)
+        {
+            database.entity.tbusuario lista = data.buscaridpornick(nick);
+            return lista;
+        }
     }
 }

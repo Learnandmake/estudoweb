@@ -16,14 +16,19 @@ namespace freitrabalho.database
             banco.tbusuario.Add(usuario);
             banco.SaveChanges();
         }
-        public List<entity.tbusuario> btodos ()
+        public List<entity.tbusuario> btodos()
         {
             List<entity.tbusuario> lista = banco.tbusuario.ToList();
             return lista;
         }
         public List<entity.tbusuario> flista(string nick)
         {
-            List<entity.tbusuario> lista = banco.tbusuario.Where(t=>t.nick == nick ).ToList();
+            List<entity.tbusuario> lista = banco.tbusuario.Where(t => t.nick == nick).ToList();
+            return lista;
+        }
+        public entity.tbusuario buscaridpornick(string nick)
+        {
+           entity.tbusuario lista = banco.tbusuario.FirstOrDefault(t => t.nick == nick);
             return lista;
         }
         public void alterar(entity.tbusuario usuario)
