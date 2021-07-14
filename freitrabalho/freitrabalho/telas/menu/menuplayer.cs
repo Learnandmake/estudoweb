@@ -51,5 +51,86 @@ namespace freitrabalho.telas.menu
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
+
+        private void label2_MouseMove(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void lblnick_MouseMove(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void label1_MouseMove(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void lblpts_MouseMove(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void lbltime_MouseMove(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void picask_MouseMove(object sender, MouseEventArgs e)
+        {
+
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void pictop_MouseMove(object sender, MouseEventArgs e)
+        {
+
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void picmap_MouseMove(object sender, MouseEventArgs e)
+        {
+
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+        private void menuplayer_MouseMove(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+        private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
+        {
+
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+        private void picmap_Click(object sender, EventArgs e)
+        {
+            telas.mapa.mapabrasil mapa = new telas.mapa.mapabrasil();
+            mapa.Show();
+        }
+
+        private void pictop_Click(object sender, EventArgs e)
+        {
+            telas.usuario.topplayer player = new usuario.topplayer();
+            player.Show();
+        }
+
+        private void picask_Click(object sender, EventArgs e)
+        {
+            telas.pergunta.pergunta m = new pergunta.pergunta();
+            m.Show();
+        }
+
+     
     }
 }

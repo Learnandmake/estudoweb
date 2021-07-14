@@ -118,6 +118,12 @@
     <Compile Include="telas\login\recusenha.Designer.cs">
       <DependentUpon>recusenha.cs</DependentUpon>
     </Compile>
+    <Compile Include="telas\mapa\mapabrasil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="telas\mapa\mapabrasil.Designer.cs">
+      <DependentUpon>mapabrasil.cs</DependentUpon>
+    </Compile>
     <Compile Include="telas\menu\menuadm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,6 +141,12 @@
     </Compile>
     <Compile Include="telas\pergunta\cadastrar.Designer.cs">
       <DependentUpon>cadastrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="telas\pergunta\pergunta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="telas\pergunta\pergunta.Designer.cs">
+      <DependentUpon>pergunta.cs</DependentUpon>
     </Compile>
     <Compile Include="telas\usuario\cadastrarusuario.cs">
       <SubType>Form</SubType>

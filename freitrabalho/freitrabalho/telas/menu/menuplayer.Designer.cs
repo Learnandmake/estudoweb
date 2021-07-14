@@ -38,8 +38,16 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.lblpts = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.picask = new System.Windows.Forms.PictureBox();
+            this.pictop = new System.Windows.Forms.PictureBox();
+            this.picmap = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picclose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbarra)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picask)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictop)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picmap)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblnick
@@ -53,6 +61,7 @@
             this.lblnick.Size = new System.Drawing.Size(45, 19);
             this.lblnick.TabIndex = 30;
             this.lblnick.Text = "nick";
+            this.lblnick.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lblnick_MouseMove);
             // 
             // label2
             // 
@@ -65,6 +74,7 @@
             this.label2.Size = new System.Drawing.Size(160, 19);
             this.label2.TabIndex = 27;
             this.label2.Text = "Seja bem vindo(a)";
+            this.label2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.label2_MouseMove);
             // 
             // picclose
             // 
@@ -96,11 +106,12 @@
             this.lbltime.BackColor = System.Drawing.Color.Teal;
             this.lbltime.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltime.ForeColor = System.Drawing.Color.White;
-            this.lbltime.Location = new System.Drawing.Point(346, 2);
+            this.lbltime.Location = new System.Drawing.Point(344, 2);
             this.lbltime.Name = "lbltime";
             this.lbltime.Size = new System.Drawing.Size(57, 19);
             this.lbltime.TabIndex = 31;
             this.lbltime.Text = "Hora:";
+            this.lbltime.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lbltime_MouseMove);
             // 
             // timer1
             // 
@@ -119,6 +130,7 @@
             this.lblpts.Size = new System.Drawing.Size(19, 19);
             this.lblpts.TabIndex = 32;
             this.lblpts.Text = "0";
+            this.lblpts.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lblpts_MouseMove);
             // 
             // label1
             // 
@@ -131,13 +143,67 @@
             this.label1.Size = new System.Drawing.Size(39, 19);
             this.label1.TabIndex = 33;
             this.label1.Text = "pts";
+            this.label1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.label1_MouseMove);
+            // 
+            // picask
+            // 
+            this.picask.BackColor = System.Drawing.Color.Teal;
+            this.picask.Image = ((System.Drawing.Image)(resources.GetObject("picask.Image")));
+            this.picask.Location = new System.Drawing.Point(13, 124);
+            this.picask.Name = "picask";
+            this.picask.Size = new System.Drawing.Size(48, 38);
+            this.picask.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picask.TabIndex = 42;
+            this.picask.TabStop = false;
+            this.picask.Click += new System.EventHandler(this.picask_Click);
+            this.picask.MouseMove += new System.Windows.Forms.MouseEventHandler(this.picask_MouseMove);
+            // 
+            // pictop
+            // 
+            this.pictop.BackColor = System.Drawing.Color.Teal;
+            this.pictop.Image = ((System.Drawing.Image)(resources.GetObject("pictop.Image")));
+            this.pictop.Location = new System.Drawing.Point(12, 80);
+            this.pictop.Name = "pictop";
+            this.pictop.Size = new System.Drawing.Size(48, 38);
+            this.pictop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictop.TabIndex = 41;
+            this.pictop.TabStop = false;
+            this.pictop.Click += new System.EventHandler(this.pictop_Click);
+            this.pictop.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictop_MouseMove);
+            // 
+            // picmap
+            // 
+            this.picmap.BackColor = System.Drawing.Color.Teal;
+            this.picmap.Image = ((System.Drawing.Image)(resources.GetObject("picmap.Image")));
+            this.picmap.Location = new System.Drawing.Point(13, 36);
+            this.picmap.Name = "picmap";
+            this.picmap.Size = new System.Drawing.Size(48, 38);
+            this.picmap.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picmap.TabIndex = 39;
+            this.picmap.TabStop = false;
+            this.picmap.Click += new System.EventHandler(this.picmap_Click);
+            this.picmap.MouseMove += new System.Windows.Forms.MouseEventHandler(this.picmap_MouseMove);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Teal;
+            this.pictureBox1.Location = new System.Drawing.Point(-1, 25);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(76, 267);
+            this.pictureBox1.TabIndex = 38;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseMove);
             // 
             // menuplayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(467, 262);
+            this.ClientSize = new System.Drawing.Size(467, 276);
+            this.Controls.Add(this.picask);
+            this.Controls.Add(this.pictop);
+            this.Controls.Add(this.picmap);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblpts);
             this.Controls.Add(this.lbltime);
@@ -149,8 +215,13 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "menuplayer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.menuplayer_MouseMove);
             ((System.ComponentModel.ISupportInitialize)(this.picclose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbarra)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picask)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictop)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picmap)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -166,5 +237,9 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label lblpts;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox picask;
+        private System.Windows.Forms.PictureBox pictop;
+        private System.Windows.Forms.PictureBox picmap;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

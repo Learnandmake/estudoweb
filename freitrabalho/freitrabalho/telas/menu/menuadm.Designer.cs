@@ -127,6 +127,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(76, 267);
             this.pictureBox1.TabIndex = 33;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseMove);
             // 
             // piccadastraradm
             // 
@@ -139,6 +140,7 @@
             this.piccadastraradm.TabIndex = 34;
             this.piccadastraradm.TabStop = false;
             this.piccadastraradm.Click += new System.EventHandler(this.piccadastraradm_Click);
+            this.piccadastraradm.MouseMove += new System.Windows.Forms.MouseEventHandler(this.piccadastraradm_MouseMove);
             // 
             // picconsultar
             // 
@@ -151,6 +153,7 @@
             this.picconsultar.TabIndex = 35;
             this.picconsultar.TabStop = false;
             this.picconsultar.Click += new System.EventHandler(this.picconsultar_Click);
+            this.picconsultar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.picconsultar_MouseMove);
             // 
             // picconsultartop
             // 
@@ -163,6 +166,7 @@
             this.picconsultartop.TabIndex = 36;
             this.picconsultartop.TabStop = false;
             this.picconsultartop.Click += new System.EventHandler(this.picconsultartop_Click);
+            this.picconsultartop.MouseMove += new System.Windows.Forms.MouseEventHandler(this.picconsultartop_MouseMove);
             // 
             // piccadastrarpergunta
             // 
@@ -175,6 +179,7 @@
             this.piccadastrarpergunta.TabIndex = 37;
             this.piccadastrarpergunta.TabStop = false;
             this.piccadastrarpergunta.Click += new System.EventHandler(this.piccadastrarpergunta_Click);
+            this.piccadastrarpergunta.MouseMove += new System.Windows.Forms.MouseEventHandler(this.piccadastrarpergunta_MouseMove);
             // 
             // menuadm
             // 
@@ -196,6 +201,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "menuadm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.menuadm_MouseMove);
             ((System.ComponentModel.ISupportInitialize)(this.picclose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbarra)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
