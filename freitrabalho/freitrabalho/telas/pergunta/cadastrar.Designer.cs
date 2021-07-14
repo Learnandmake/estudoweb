@@ -148,6 +148,7 @@
             this.dvgpergunta.ReadOnly = true;
             this.dvgpergunta.Size = new System.Drawing.Size(478, 245);
             this.dvgpergunta.TabIndex = 0;
+            this.dvgpergunta.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dvgpergunta_RowHeaderMouseClick);
             this.dvgpergunta.MouseMove += new System.Windows.Forms.MouseEventHandler(this.dvgpergunta_MouseMove);
             // 
             // groupBox3
@@ -188,6 +189,7 @@
             this.button1.TabIndex = 19;
             this.button1.Text = "Deletar";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             this.button1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.button1_MouseMove);
             // 
             // btncadastrar
@@ -201,6 +203,7 @@
             this.btncadastrar.TabIndex = 17;
             this.btncadastrar.Text = "Alterar";
             this.btncadastrar.UseVisualStyleBackColor = false;
+            this.btncadastrar.Click += new System.EventHandler(this.btncadastrar_Click);
             this.btncadastrar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btncadastrar_MouseMove);
             // 
             // groupBox1

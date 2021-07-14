@@ -19,6 +19,8 @@ namespace freitrabalho.telas.pergunta
             bussines.bussinespergunta bpergunta = new bussines.bussinespergunta();
             List<database.entity.tbpergunta> lista = bpergunta.ltodos();
             dvgpergunta.DataSource = lista;
+            cbobuf.DataSource = lista;
+            cbobuf.DisplayMember = "uf";
         }
 
         private void picclose_Click(object sender, EventArgs e)
@@ -120,6 +122,65 @@ namespace freitrabalho.telas.pergunta
 
             MessageBox.Show("Operação bem sucedida");
            
+            List<database.entity.tbpergunta> lista = bpergunta.ltodos();
+            dvgpergunta.DataSource = lista;
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            database.entity.tbpergunta pergunta = new database.entity.tbpergunta();
+            bussines.bussinespergunta bpergunta = new bussines.bussinespergunta();
+            pergunta.idpergunta =Convert.ToInt32(lblid.Text);
+            bpergunta.deletar(pergunta);
+
+            MessageBox.Show("Operação bem sucedida");
+
+            List<database.entity.tbpergunta> lista = bpergunta.ltodos();
+            dvgpergunta.DataSource = lista;
+
+        }
+
+        private void dvgpergunta_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+       
+            database.entity.tbpergunta pergunta = dvgpergunta.CurrentRow.DataBoundItem as database.entity.tbpergunta;
+            lblid.Text = Convert.ToString(pergunta.idpergunta);
+            txtenunciado.Text = Convert.ToString(pergunta.enunciado);
+            txtala.Text = Convert.ToString(pergunta.palternativa);
+            txtalb.Text = Convert.ToString(pergunta.salternativa);
+            txtalc.Text = Convert.ToString(pergunta.talternativa);
+            txtald.Text = Convert.ToString(pergunta.qalternativa);
+            
+            
+        }
+
+        private void btncadastrar_Click(object sender, EventArgs e)
+        {
+            string enunciado = Convert.ToString(txtenunciado.Text);
+            string ala = Convert.ToString(txtala.Text);
+            string alb = Convert.ToString(txtalb.Text);
+            string alc = Convert.ToString(txtalc.Text);
+            string ald = Convert.ToString(txtald.Text);
+            string resposta = Convert.ToString(cboresposta.SelectedItem);
+            string uf = Convert.ToString(cbouf.SelectedItem);
+
+            database.entity.tbpergunta pergunta = new database.entity.tbpergunta();
+            bussines.bussinespergunta bpergunta = new bussines.bussinespergunta();
+
+            pergunta.idpergunta = Convert.ToInt32(lblid.Text);
+            pergunta.enunciado = enunciado;
+            pergunta.palternativa = ala;
+            pergunta.salternativa = alb;
+            pergunta.talternativa = alc;
+            pergunta.qalternativa = ald;
+            pergunta.resposta = resposta;
+            pergunta.uf = uf;
+
+            bpergunta.alterar(pergunta);
+
+            MessageBox.Show("Operação bem sucedida");
+
             List<database.entity.tbpergunta> lista = bpergunta.ltodos();
             dvgpergunta.DataSource = lista;
 

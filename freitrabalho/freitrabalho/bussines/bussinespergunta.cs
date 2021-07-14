@@ -22,6 +22,10 @@ namespace freitrabalho.bussines
             List<database.entity.tbpergunta> listar = data.btodos();
             return listar;
         }
+        public void alterar(database.entity.tbpergunta pergunta)
+        {
+            data.alterar(pergunta);
+        }
 
     }
 }

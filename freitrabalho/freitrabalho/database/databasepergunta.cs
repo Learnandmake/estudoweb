@@ -26,5 +26,21 @@ namespace freitrabalho.database
             banco.Entry(lista).State = System.Data.EntityState.Deleted;
             banco.SaveChanges();
         }
+        public void alterar (entity.tbpergunta pergunta)
+        {
+            entity.tbpergunta lista = banco.tbpergunta.FirstOrDefault(t => t.idpergunta == pergunta.idpergunta);
+            if(lista != null)
+            {
+                lista.enunciado = pergunta.enunciado;
+                lista.idpergunta = lista.idpergunta;
+                lista.palternativa = pergunta.palternativa;
+                lista.salternativa = pergunta.salternativa;
+                lista.talternativa = pergunta.talternativa;
+                lista.qalternativa = pergunta.qalternativa;
+                lista.uf = pergunta.uf;
+                lista.resposta = pergunta.resposta;          
+            }
+            banco.SaveChanges();
+        }
     }
 }
