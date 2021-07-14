@@ -20,6 +20,16 @@ namespace freitrabalho.database
             List<entity.tbpergunta> lista = banco.tbpergunta.ToList();
             return lista;
         }
+        public entity.tbpergunta bporid(int id)
+        {
+            entity.tbpergunta lista = banco.tbpergunta.FirstOrDefault(t => t.idpergunta == id);
+            return lista;
+        }
+        public int  contarpergunta()
+        {
+           int count = banco.tbpergunta.Max(t=>t.idpergunta);
+            return count;
+        }
         public List<entity.tbpergunta> fuf(string uf)
         {
             List<entity.tbpergunta> lista = banco.tbpergunta.Where(t=>t.uf == uf).ToList();

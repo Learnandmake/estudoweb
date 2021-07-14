@@ -31,6 +31,15 @@ namespace freitrabalho.bussines
         {
             data.alterar(pergunta);
         }
-
+        public database.entity.tbpergunta bporid(int id)
+        {
+            database.entity.tbpergunta pergunta = data.bporid(id);
+            return pergunta;
+        }
+        public int maximopergunta()
+        {
+            int contar = data.contarpergunta();
+            return contar;
+        }
     }
 }

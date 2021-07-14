@@ -91,6 +91,7 @@
     </Compile>
     <Compile Include="function\criptografia.cs" />
     <Compile Include="function\enviaremail.cs" />
+    <Compile Include="function\escolhepergunta.cs" />
     <Compile Include="function\gerarcodigo.cs" />
     <Compile Include="function\vemail.cs" />
     <Compile Include="Program.cs" />
@@ -196,6 +197,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="telas\pergunta\cadastrar.resx">
       <DependentUpon>cadastrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="telas\pergunta\pergunta.resx">
+      <DependentUpon>pergunta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="telas\usuario\cadastrarusuario.resx">
       <DependentUpon>cadastrarusuario.cs</DependentUpon>

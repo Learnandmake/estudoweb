@@ -127,7 +127,7 @@ namespace freitrabalho.telas.menu
 
         private void picask_Click(object sender, EventArgs e)
         {
-            telas.pergunta.pergunta m = new pergunta.pergunta();
+            telas.pergunta.pergunta m = new pergunta.pergunta(lblnick.Text);
             m.Show();
         }
 
