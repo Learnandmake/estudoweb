@@ -28,11 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(menuadm));
             this.lblnick = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.picclose = new System.Windows.Forms.PictureBox();
             this.picbarra = new System.Windows.Forms.PictureBox();
+            this.lbltime = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.picclose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbarra)).BeginInit();
             this.SuspendLayout();
@@ -82,11 +85,28 @@
             this.picbarra.TabIndex = 24;
             this.picbarra.TabStop = false;
             // 
+            // lbltime
+            // 
+            this.lbltime.AutoSize = true;
+            this.lbltime.BackColor = System.Drawing.Color.Teal;
+            this.lbltime.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltime.ForeColor = System.Drawing.Color.White;
+            this.lbltime.Location = new System.Drawing.Point(242, 3);
+            this.lbltime.Name = "lbltime";
+            this.lbltime.Size = new System.Drawing.Size(57, 19);
+            this.lbltime.TabIndex = 32;
+            this.lbltime.Text = "Hora:";
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // menuadm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(466, 292);
+            this.Controls.Add(this.lbltime);
             this.Controls.Add(this.lblnick);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.picclose);
@@ -107,5 +127,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox picclose;
         private System.Windows.Forms.PictureBox picbarra;
+        private System.Windows.Forms.Label lbltime;
+        private System.Windows.Forms.Timer timer1;
     }
 }

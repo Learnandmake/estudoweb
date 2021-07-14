@@ -22,5 +22,10 @@ namespace freitrabalho.telas.menu
         {
 
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lbltime.Text = (DateTime.Now.ToString("HH:mm:ss"));
+        }
     }
 }
