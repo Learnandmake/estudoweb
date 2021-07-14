@@ -27,6 +27,8 @@ namespace freitrabalho.telas.login
         {
             string nick = lblnick.Text;
          string codigo1 = lblcodigo.Text;
+            codigo1.Trim();
+            codigo1.ToLower();
             if (codigo1 == txtcodigo.Text)
             {
                 recusenha m = new recusenha(nick);

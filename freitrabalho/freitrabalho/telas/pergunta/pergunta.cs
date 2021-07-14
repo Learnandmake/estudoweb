@@ -17,15 +17,26 @@ namespace freitrabalho.telas.pergunta
         {
             InitializeComponent();
             lblnick.Text = nick;
+
             function.escolhepergunta epergunta = new function.escolhepergunta();
         
-           database.entity.tbpergunta pergunta= epergunta.escolherpergunta();
+            database.entity.tbpergunta pergunta= epergunta.escolherpergunta();
             lblenunciado.Text = pergunta.enunciado;
             lblala.Text = pergunta.palternativa;
             lblalb.Text = pergunta.salternativa;
             lblalc.Text = pergunta.talternativa;
             lblald.Text = pergunta.qalternativa;
-            lblresposta.Text = pergunta.resposta;
+            lblresposta.Text = pergunta.resposta;      
+         
+            bussines.bussinesusuario busuario = new bussines.bussinesusuario();
+            bussines.bussinespontuacao bpontuacao = new bussines.bussinespontuacao();       
+            database.entity.tbusuario usuario = new database.entity.tbusuario();
+            database.entity.tbpontuacao pontuacao = new database.entity.tbpontuacao();
+
+            usuario = busuario.buscaridpornick(nick); 
+            pontuacao = bpontuacao.buscarpontuacaopnick(usuario.nick);
+            string pontuacaof = Convert.ToString(pontuacao.pontuacao);
+            lblpontuacao.Text = pontuacaof;
 
         }
 
@@ -151,6 +162,56 @@ namespace freitrabalho.telas.pergunta
 
         private void btnenviar_Click(object sender, EventArgs e)
         {
+            string resposta = Convert.ToString(cboresposta.SelectedItem);
+            string nick =  lblnick.Text;
+           
+            function.escolhepergunta epergunta = new function.escolhepergunta();
+
+            database.entity.tbpergunta pergunta = epergunta.escolherpergunta();
+
+            bussines.bussinespontuacao bpontuacao = new bussines.bussinespontuacao();
+            if (resposta == lblresposta.Text)
+            {
+                bpontuacao.addpontuacao(nick);
+              
+                lblenunciado.Text = pergunta.enunciado;
+                lblala.Text = pergunta.palternativa;
+                lblalb.Text = pergunta.salternativa;
+                lblalc.Text = pergunta.talternativa;
+                lblald.Text = pergunta.qalternativa;
+                lblresposta.Text = pergunta.resposta;
+
+                bussines.bussinesusuario busuario = new bussines.bussinesusuario();
+                database.entity.tbusuario usuario = new database.entity.tbusuario();
+                database.entity.tbpontuacao pontuacao = new database.entity.tbpontuacao();
+
+                usuario = busuario.buscaridpornick(nick);
+                pontuacao = bpontuacao.buscarpontuacaopnick(usuario.nick);
+                string pontuacaof = Convert.ToString(pontuacao.pontuacao);
+                lblpontuacao.Text = pontuacaof;
+
+            }
+            else
+            {
+                bpontuacao.reduzirpontuacao(nick);
+                lblenunciado.Text = pergunta.enunciado;
+                lblala.Text = pergunta.palternativa;
+                lblalb.Text = pergunta.salternativa;
+                lblalc.Text = pergunta.talternativa;
+                lblald.Text = pergunta.qalternativa;
+                lblresposta.Text = pergunta.resposta;
+
+                bussines.bussinesusuario busuario = new bussines.bussinesusuario();
+                database.entity.tbusuario usuario = new database.entity.tbusuario();
+                database.entity.tbpontuacao pontuacao = new database.entity.tbpontuacao();
+
+                usuario = busuario.buscaridpornick(nick);
+                pontuacao = bpontuacao.buscarpontuacaopnick(usuario.nick);
+                string pontuacaof = Convert.ToString(pontuacao.pontuacao);
+                lblpontuacao.Text = pontuacaof;
+
+            }
+
 
         }
     }

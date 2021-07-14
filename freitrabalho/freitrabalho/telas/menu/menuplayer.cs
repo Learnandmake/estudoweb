@@ -13,13 +13,13 @@ namespace freitrabalho.telas.menu
 {
     public partial class menuplayer : Form
     {
-        public menuplayer(string nick)
+        public menuplayer(string nick, string pontuacao)
         {
             InitializeComponent();
             lblnick.Text = nick;
-            bussines.bussinespontuacao bpontuacao = new bussines.bussinespontuacao();
-            database.entity.tbpontuacao pot = bpontuacao.buscarpontuacaopnick(nick);
-            lblpts.Text = Convert.ToString(pot.pontuacao);
+
+
+            lblpts.Text = Convert.ToString(pontuacao);
           
         }
 

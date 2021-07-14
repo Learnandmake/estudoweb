@@ -32,5 +32,13 @@ namespace freitrabalho.bussines
             database.entity.tbpontuacao lista = data.buscarpontuacaopnick(nick);
             return lista;
         }
+        public void addpontuacao(string nick)
+        {
+            data.addpontuacao(nick);
+        }
+        public void reduzirpontuacao(string nick)
+        {
+            data.reduzirpontuacao(nick);
+        }
     }
 }

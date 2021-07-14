@@ -93,13 +93,17 @@ namespace freitrabalho.telas.login
                 function.criptografia criptografia = new function.criptografia();
                 bussines.bussineslogin blogin = new bussines.bussineslogin();
                 bussines.bussinesusuario busuario = new bussines.bussinesusuario();
+                bussines.bussinespontuacao bpontuacao = new bussines.bussinespontuacao();
                 database.entity.tblogin login = new database.entity.tblogin();
                 database.entity.tbusuario usuario = new database.entity.tbusuario();
-                string senha2 = criptografia.gerarmd5(senha1);
+                database.entity.tbpontuacao pontuacao = new database.entity.tbpontuacao();
+
+                 string senha2 = criptografia.gerarmd5(senha1);
 
                 usuario = busuario.buscaridpornick(nick);
                 login = blogin.fazerlogin(nick, senha2);
-
+                pontuacao = bpontuacao.buscarpontuacaopnick(usuario.nick);
+                string pontuacaof = Convert.ToString(pontuacao.pontuacao);
                 if (login != null)
                 {
                     if (usuario.cargo == "adm")
@@ -110,7 +114,7 @@ namespace freitrabalho.telas.login
                     }
                     if (usuario.cargo == "player")
                     {
-                        menu.menuplayer m = new menu.menuplayer(nick);
+                        menu.menuplayer m = new menu.menuplayer(nick,pontuacaof);
                         m.Show();
                         this.Visible = false;
                     }
