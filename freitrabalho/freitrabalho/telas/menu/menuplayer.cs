@@ -129,6 +129,7 @@ namespace freitrabalho.telas.menu
         {
             telas.pergunta.pergunta m = new pergunta.pergunta(lblnick.Text);
             m.Show();
+            this.Visible = false;
         }
 
      

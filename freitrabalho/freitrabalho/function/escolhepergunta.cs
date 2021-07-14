@@ -15,6 +15,7 @@ namespace freitrabalho.function
             int limite = bpergunta.maximopergunta();
             var rand = new Random();
             int id = 0;
+            limite += 1;
             for (int ctr = 0; ctr <= 1; ctr++)
              id = Convert.ToInt32(( rand.Next(0, limite)));
 

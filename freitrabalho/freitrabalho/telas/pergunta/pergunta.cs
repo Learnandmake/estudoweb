@@ -189,6 +189,7 @@ namespace freitrabalho.telas.pergunta
                 pontuacao = bpontuacao.buscarpontuacaopnick(usuario.nick);
                 string pontuacaof = Convert.ToString(pontuacao.pontuacao);
                 lblpontuacao.Text = pontuacaof;
+           
 
             }
             else
@@ -209,7 +210,7 @@ namespace freitrabalho.telas.pergunta
                 pontuacao = bpontuacao.buscarpontuacaopnick(usuario.nick);
                 string pontuacaof = Convert.ToString(pontuacao.pontuacao);
                 lblpontuacao.Text = pontuacaof;
-
+               
             }
 
 
