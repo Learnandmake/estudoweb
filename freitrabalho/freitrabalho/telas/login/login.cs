@@ -103,12 +103,12 @@ namespace freitrabalho.telas.login
                 {
                     if (usuario.cargo == "adm")
                     {
-                        menu.menuadm m = new menu.menuadm();
+                        menu.menuadm m = new menu.menuadm(nick);
                         m.Show();
                     }
                     if (usuario.cargo == "player")
                     {
-                        menu.menuplayer m = new menu.menuplayer();
+                        menu.menuplayer m = new menu.menuplayer(nick);
                         m.Show();
                     }
                 }

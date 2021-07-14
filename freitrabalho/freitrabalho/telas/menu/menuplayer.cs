@@ -12,9 +12,15 @@ namespace freitrabalho.telas.menu
 {
     public partial class menuplayer : Form
     {
-        public menuplayer()
+        public menuplayer(string nick)
         {
             InitializeComponent();
+            lblnick.Text = nick;
+        }
+
+        private void picclose_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
