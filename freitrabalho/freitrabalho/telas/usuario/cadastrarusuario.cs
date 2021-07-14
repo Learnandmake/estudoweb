@@ -31,7 +31,7 @@ namespace freitrabalho.telas
 
         private void picclose_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Visible = false;
         }
 
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]

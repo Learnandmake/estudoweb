@@ -45,7 +45,6 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -63,6 +62,7 @@
             this.picclose = new System.Windows.Forms.PictureBox();
             this.picbarra = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picclose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbarra)).BeginInit();
@@ -185,11 +185,12 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Ravie", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(231, 34);
+            this.label6.Location = new System.Drawing.Point(231, 32);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(38, 39);
             this.label6.TabIndex = 38;
             this.label6.Text = "?";
+            this.label6.MouseEnter += new System.EventHandler(this.label6_MouseEnter);
             // 
             // label7
             // 
@@ -241,6 +242,7 @@
             this.label11.Size = new System.Drawing.Size(38, 39);
             this.label11.TabIndex = 42;
             this.label11.Text = "?";
+            this.label11.MouseEnter += new System.EventHandler(this.label11_MouseEnter);
             // 
             // label12
             // 
@@ -253,6 +255,7 @@
             this.label12.Size = new System.Drawing.Size(38, 39);
             this.label12.TabIndex = 43;
             this.label12.Text = "?";
+            this.label12.MouseEnter += new System.EventHandler(this.label12_MouseEnter);
             // 
             // label13
             // 
@@ -260,23 +263,12 @@
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Ravie", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(108, 162);
+            this.label13.Location = new System.Drawing.Point(109, 160);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(38, 39);
             this.label13.TabIndex = 44;
             this.label13.Text = "?";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("Ravie", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(28, 146);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(38, 39);
-            this.label14.TabIndex = 45;
-            this.label14.Text = "?";
+            this.label13.MouseEnter += new System.EventHandler(this.label13_MouseEnter);
             // 
             // label15
             // 
@@ -284,11 +276,12 @@
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Ravie", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(127, 32);
+            this.label15.Location = new System.Drawing.Point(130, 32);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(38, 39);
             this.label15.TabIndex = 46;
             this.label15.Text = "?";
+            this.label15.MouseEnter += new System.EventHandler(this.label15_MouseEnter);
             // 
             // label16
             // 
@@ -296,11 +289,12 @@
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Ravie", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(339, 183);
+            this.label16.Location = new System.Drawing.Point(335, 179);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(38, 39);
             this.label16.TabIndex = 47;
             this.label16.Text = "?";
+            this.label16.MouseEnter += new System.EventHandler(this.label16_MouseEnter);
             // 
             // label17
             // 
@@ -348,11 +342,12 @@
             this.label20.BackColor = System.Drawing.Color.Transparent;
             this.label20.Font = new System.Drawing.Font("Ravie", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.White;
-            this.label20.Location = new System.Drawing.Point(335, 121);
+            this.label20.Location = new System.Drawing.Point(335, 128);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(38, 39);
             this.label20.TabIndex = 51;
             this.label20.Text = "?";
+            this.label20.MouseEnter += new System.EventHandler(this.label20_MouseEnter);
             // 
             // label22
             // 
@@ -365,6 +360,7 @@
             this.label22.Size = new System.Drawing.Size(38, 39);
             this.label22.TabIndex = 52;
             this.label22.Text = "?";
+            this.label22.MouseEnter += new System.EventHandler(this.label22_MouseEnter);
             // 
             // label25
             // 
@@ -372,11 +368,12 @@
             this.label25.BackColor = System.Drawing.Color.Transparent;
             this.label25.Font = new System.Drawing.Font("Ravie", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.ForeColor = System.Drawing.Color.White;
-            this.label25.Location = new System.Drawing.Point(365, 95);
+            this.label25.Location = new System.Drawing.Point(370, 91);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(38, 39);
             this.label25.TabIndex = 55;
             this.label25.Text = "?";
+            this.label25.MouseEnter += new System.EventHandler(this.label25_MouseEnter);
             // 
             // label9
             // 
@@ -384,11 +381,12 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Ravie", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(270, 162);
+            this.label9.Location = new System.Drawing.Point(270, 165);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(38, 39);
             this.label9.TabIndex = 59;
             this.label9.Text = "?";
+            this.label9.MouseEnter += new System.EventHandler(this.label9_MouseEnter);
             // 
             // label23
             // 
@@ -401,6 +399,7 @@
             this.label23.Size = new System.Drawing.Size(26, 26);
             this.label23.TabIndex = 63;
             this.label23.Text = "?";
+            this.label23.MouseEnter += new System.EventHandler(this.label23_MouseEnter);
             // 
             // label26
             // 
@@ -408,11 +407,12 @@
             this.label26.BackColor = System.Drawing.Color.Transparent;
             this.label26.Font = new System.Drawing.Font("Ravie", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.Color.White;
-            this.label26.Location = new System.Drawing.Point(409, 108);
+            this.label26.Location = new System.Drawing.Point(402, 110);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(26, 26);
             this.label26.TabIndex = 64;
             this.label26.Text = "?";
+            this.label26.MouseEnter += new System.EventHandler(this.label26_MouseEnter);
             // 
             // label27
             // 
@@ -425,6 +425,7 @@
             this.label27.Size = new System.Drawing.Size(21, 21);
             this.label27.TabIndex = 65;
             this.label27.Text = "?";
+            this.label27.MouseEnter += new System.EventHandler(this.label27_MouseEnter);
             // 
             // label21
             // 
@@ -432,11 +433,12 @@
             this.label21.BackColor = System.Drawing.Color.Transparent;
             this.label21.Font = new System.Drawing.Font("Ravie", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.White;
-            this.label21.Location = new System.Drawing.Point(389, 146);
+            this.label21.Location = new System.Drawing.Point(400, 146);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(21, 21);
             this.label21.TabIndex = 66;
             this.label21.Text = "?";
+            this.label21.MouseEnter += new System.EventHandler(this.label21_MouseEnter);
             // 
             // label24
             // 
@@ -449,6 +451,7 @@
             this.label24.Size = new System.Drawing.Size(21, 21);
             this.label24.TabIndex = 67;
             this.label24.Text = "?";
+            this.label24.MouseEnter += new System.EventHandler(this.label24_MouseEnter);
             // 
             // picclose
             // 
@@ -460,6 +463,9 @@
             this.picclose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picclose.TabIndex = 69;
             this.picclose.TabStop = false;
+            this.picclose.Click += new System.EventHandler(this.picclose_Click_1);
+            this.picclose.MouseEnter += new System.EventHandler(this.picclose_MouseEnter_1);
+            this.picclose.MouseLeave += new System.EventHandler(this.picclose_MouseLeave_1);
             // 
             // picbarra
             // 
@@ -469,6 +475,7 @@
             this.picbarra.Size = new System.Drawing.Size(737, 31);
             this.picbarra.TabIndex = 68;
             this.picbarra.TabStop = false;
+            this.picbarra.MouseMove += new System.Windows.Forms.MouseEventHandler(this.picbarra_MouseMove_1);
             // 
             // label2
             // 
@@ -482,6 +489,19 @@
             this.label2.TabIndex = 70;
             this.label2.Text = "?";
             this.label2.MouseEnter += new System.EventHandler(this.label2_MouseEnter);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Font = new System.Drawing.Font("Ravie", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(28, 146);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(38, 39);
+            this.label14.TabIndex = 45;
+            this.label14.Text = "?";
+            this.label14.MouseEnter += new System.EventHandler(this.label14_MouseEnter);
             // 
             // mapabrasil
             // 
@@ -548,7 +568,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
@@ -568,5 +587,6 @@
         private System.Windows.Forms.PictureBox picclose;
         private System.Windows.Forms.PictureBox picbarra;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label14;
     }
 }
