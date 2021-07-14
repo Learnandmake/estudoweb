@@ -61,6 +61,7 @@
             this.lblnick.Size = new System.Drawing.Size(45, 19);
             this.lblnick.TabIndex = 26;
             this.lblnick.Text = "nick";
+            this.lblnick.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lblnick_MouseMove);
             // 
             // label2
             // 
@@ -73,6 +74,7 @@
             this.label2.Size = new System.Drawing.Size(160, 19);
             this.label2.TabIndex = 23;
             this.label2.Text = "Seja bem vindo(a)";
+            this.label2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.label2_MouseMove);
             // 
             // picclose
             // 
@@ -109,6 +111,7 @@
             this.lbltime.Size = new System.Drawing.Size(57, 19);
             this.lbltime.TabIndex = 32;
             this.lbltime.Text = "Hora:";
+            this.lbltime.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lbltime_MouseMove);
             // 
             // timer1
             // 

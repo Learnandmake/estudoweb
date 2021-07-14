@@ -48,7 +48,22 @@ namespace freitrabalho.telas.menu
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
+        private void lbltime_MouseMove(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+        private void label2_MouseMove(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+        private void lblnick_MouseMove(object sender, MouseEventArgs e)
+        {
 
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
         private void piccadastrarpergunta_Click(object sender, EventArgs e)
         {
             telas.pergunta.cadastrar m = new pergunta.cadastrar();
@@ -72,5 +87,7 @@ namespace freitrabalho.telas.menu
             telas.adm.cadastro m = new adm.cadastro();
             m.Show();
         }
+
+
     }
 }
