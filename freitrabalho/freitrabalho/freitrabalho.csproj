@@ -91,6 +91,7 @@
     </Compile>
     <Compile Include="function\criptografia.cs" />
     <Compile Include="function\enviaremail.cs" />
+    <Compile Include="function\gerarcodigo.cs" />
     <Compile Include="function\vemail.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

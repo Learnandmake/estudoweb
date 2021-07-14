@@ -32,7 +32,7 @@
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.dvgusuario = new System.Windows.Forms.DataGridView();
+            this.dvgpergunta = new System.Windows.Forms.DataGridView();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nick = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cargo = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,21 +48,21 @@
             this.label6 = new System.Windows.Forms.Label();
             this.lblid = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtemail = new System.Windows.Forms.TextBox();
+            this.txtalb = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtnickusuario = new System.Windows.Forms.TextBox();
+            this.txtala = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.picbarra = new System.Windows.Forms.PictureBox();
             this.picclose = new System.Windows.Forms.PictureBox();
             this.btncadastro = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtenunciado = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.txtsenha = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtald = new System.Windows.Forms.TextBox();
+            this.txtalc = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dvgusuario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvgpergunta)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbarra)).BeginInit();
@@ -75,7 +75,7 @@
             this.groupBox4.Controls.Add(this.comboBox1);
             this.groupBox4.Controls.Add(this.label5);
             this.groupBox4.Controls.Add(this.button2);
-            this.groupBox4.Controls.Add(this.dvgusuario);
+            this.groupBox4.Controls.Add(this.dvgpergunta);
             this.groupBox4.Location = new System.Drawing.Point(225, 31);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(488, 300);
@@ -105,12 +105,12 @@
             this.button2.Text = "Buscar";
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // dvgusuario
+            // dvgpergunta
             // 
-            this.dvgusuario.AllowUserToAddRows = false;
-            this.dvgusuario.AllowUserToDeleteRows = false;
-            this.dvgusuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dvgusuario.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dvgpergunta.AllowUserToAddRows = false;
+            this.dvgpergunta.AllowUserToDeleteRows = false;
+            this.dvgpergunta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dvgpergunta.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id,
             this.nick,
             this.cargo,
@@ -118,11 +118,11 @@
             this.registro,
             this.tbpontuacao,
             this.tblogin});
-            this.dvgusuario.Location = new System.Drawing.Point(6, 49);
-            this.dvgusuario.Name = "dvgusuario";
-            this.dvgusuario.ReadOnly = true;
-            this.dvgusuario.Size = new System.Drawing.Size(478, 245);
-            this.dvgusuario.TabIndex = 0;
+            this.dvgpergunta.Location = new System.Drawing.Point(6, 49);
+            this.dvgpergunta.Name = "dvgpergunta";
+            this.dvgpergunta.ReadOnly = true;
+            this.dvgpergunta.Size = new System.Drawing.Size(478, 245);
+            this.dvgpergunta.TabIndex = 0;
             // 
             // id
             // 
@@ -227,18 +227,18 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.txtalc);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.txtsenha);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtald);
+            this.groupBox1.Controls.Add(this.txtenunciado);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.cbocargo);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.lblid);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.txtemail);
+            this.groupBox1.Controls.Add(this.txtalb);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.txtnickusuario);
+            this.groupBox1.Controls.Add(this.txtala);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(6, 11);
             this.groupBox1.Name = "groupBox1";
@@ -288,14 +288,14 @@
             this.label4.TabIndex = 16;
             this.label4.Text = "Resposta:";
             // 
-            // txtemail
+            // txtalb
             // 
-            this.txtemail.Font = new System.Drawing.Font("Ravie", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtemail.ForeColor = System.Drawing.Color.Black;
-            this.txtemail.Location = new System.Drawing.Point(93, 79);
-            this.txtemail.Name = "txtemail";
-            this.txtemail.Size = new System.Drawing.Size(100, 23);
-            this.txtemail.TabIndex = 15;
+            this.txtalb.Font = new System.Drawing.Font("Ravie", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtalb.ForeColor = System.Drawing.Color.Black;
+            this.txtalb.Location = new System.Drawing.Point(93, 79);
+            this.txtalb.Name = "txtalb";
+            this.txtalb.Size = new System.Drawing.Size(100, 23);
+            this.txtalb.TabIndex = 15;
             // 
             // label3
             // 
@@ -308,14 +308,14 @@
             this.label3.TabIndex = 14;
             this.label3.Text = "B:";
             // 
-            // txtnickusuario
+            // txtala
             // 
-            this.txtnickusuario.Font = new System.Drawing.Font("Ravie", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtnickusuario.ForeColor = System.Drawing.Color.Black;
-            this.txtnickusuario.Location = new System.Drawing.Point(93, 53);
-            this.txtnickusuario.Name = "txtnickusuario";
-            this.txtnickusuario.Size = new System.Drawing.Size(100, 23);
-            this.txtnickusuario.TabIndex = 10;
+            this.txtala.Font = new System.Drawing.Font("Ravie", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtala.ForeColor = System.Drawing.Color.Black;
+            this.txtala.Location = new System.Drawing.Point(93, 53);
+            this.txtala.Name = "txtala";
+            this.txtala.Size = new System.Drawing.Size(100, 23);
+            this.txtala.TabIndex = 10;
             // 
             // label1
             // 
@@ -360,14 +360,14 @@
             this.btncadastro.Text = "Cadastrar";
             this.btncadastro.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // txtenunciado
             // 
-            this.textBox1.Font = new System.Drawing.Font("Ravie", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.Black;
-            this.textBox1.Location = new System.Drawing.Point(94, 27);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 23);
-            this.textBox1.TabIndex = 23;
+            this.txtenunciado.Font = new System.Drawing.Font("Ravie", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtenunciado.ForeColor = System.Drawing.Color.Black;
+            this.txtenunciado.Location = new System.Drawing.Point(94, 27);
+            this.txtenunciado.Name = "txtenunciado";
+            this.txtenunciado.Size = new System.Drawing.Size(100, 23);
+            this.txtenunciado.TabIndex = 23;
             // 
             // label2
             // 
@@ -383,28 +383,55 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "sp",
+            "rj",
+            "es",
+            "mg",
+            "ac",
+            "al",
+            "ap",
+            "am",
+            "ba",
+            "ce",
+            "df",
+            "go",
+            "ma",
+            "mt",
+            "ms",
+            "pa",
+            "pb",
+            "pe",
+            "pi",
+            "rr",
+            "ro",
+            "rn",
+            "rs",
+            "sc",
+            "se",
+            "to"});
             this.comboBox1.Location = new System.Drawing.Point(107, 18);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(246, 21);
             this.comboBox1.TabIndex = 24;
             // 
-            // txtsenha
+            // txtald
             // 
-            this.txtsenha.Font = new System.Drawing.Font("Ravie", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtsenha.ForeColor = System.Drawing.Color.Black;
-            this.txtsenha.Location = new System.Drawing.Point(93, 132);
-            this.txtsenha.Name = "txtsenha";
-            this.txtsenha.Size = new System.Drawing.Size(100, 23);
-            this.txtsenha.TabIndex = 24;
+            this.txtald.Font = new System.Drawing.Font("Ravie", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtald.ForeColor = System.Drawing.Color.Black;
+            this.txtald.Location = new System.Drawing.Point(93, 132);
+            this.txtald.Name = "txtald";
+            this.txtald.Size = new System.Drawing.Size(100, 23);
+            this.txtald.TabIndex = 24;
             // 
-            // textBox2
+            // txtalc
             // 
-            this.textBox2.Font = new System.Drawing.Font("Ravie", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.Black;
-            this.textBox2.Location = new System.Drawing.Point(93, 105);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 23);
-            this.textBox2.TabIndex = 26;
+            this.txtalc.Font = new System.Drawing.Font("Ravie", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtalc.ForeColor = System.Drawing.Color.Black;
+            this.txtalc.Location = new System.Drawing.Point(93, 105);
+            this.txtalc.Name = "txtalc";
+            this.txtalc.Size = new System.Drawing.Size(100, 23);
+            this.txtalc.TabIndex = 26;
             // 
             // label7
             // 
@@ -431,7 +458,7 @@
             this.Name = "cadastrar";
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dvgusuario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvgpergunta)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -446,7 +473,7 @@
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.DataGridView dvgusuario;
+        private System.Windows.Forms.DataGridView dvgpergunta;
         private System.Windows.Forms.DataGridViewTextBoxColumn id;
         private System.Windows.Forms.DataGridViewTextBoxColumn nick;
         private System.Windows.Forms.DataGridViewTextBoxColumn cargo;
@@ -462,18 +489,18 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblid;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtemail;
+        private System.Windows.Forms.TextBox txtalb;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtnickusuario;
+        private System.Windows.Forms.TextBox txtala;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox picbarra;
         private System.Windows.Forms.Button btncadastro;
         private System.Windows.Forms.PictureBox picclose;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtalc;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtsenha;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtald;
+        private System.Windows.Forms.TextBox txtenunciado;
         private System.Windows.Forms.Label label2;
     }
 }

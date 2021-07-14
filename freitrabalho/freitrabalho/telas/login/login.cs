@@ -59,11 +59,8 @@ namespace freitrabalho.telas.login
                 function.enviaremail enviaremail = new function.enviaremail();
                 database.entity.tbusuario usuario = new database.entity.tbusuario();
                 database.entity.tblogin login= new database.entity.tblogin();
-                Random randNum = new Random();
-                int codigo = 0;
-                for (int i = 0; i <= 1; i++)
-                { codigo = Convert.ToInt32((randNum.Next())); }
-
+                function.gerarcodigo gcogido = new function.gerarcodigo();
+                int codigo = gcogido.gcodigo();
 
                 usuario = busuario.buscarusuariopornick(nick);
                 login = blogin.buscarloginpornick(nick);
