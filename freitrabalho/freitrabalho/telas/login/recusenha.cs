@@ -27,6 +27,11 @@ namespace freitrabalho.telas.login
             string nick = lblnick.Text;
             string senha1 = Convert.ToString(txtsenha.Text);
             
+            nick.Trim();
+            senha1.Trim();
+            nick.ToLower();
+            senha1.ToLower();
+
             database.entity.tbusuario usuario = new database.entity.tbusuario();
             database.entity.tblogin login = new database.entity.tblogin();
             bussines.bussineslogin blogin = new bussines.bussineslogin();

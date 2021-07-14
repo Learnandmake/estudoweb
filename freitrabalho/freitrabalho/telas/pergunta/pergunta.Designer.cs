@@ -34,7 +34,6 @@
             this.lblenunciado = new System.Windows.Forms.Label();
             this.btnenviar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.cboresposta = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lblald = new System.Windows.Forms.Label();
@@ -48,6 +47,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblnick = new System.Windows.Forms.Label();
             this.lblresposta = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.picclose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbarra)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -109,27 +109,13 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.cboresposta);
+            this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Location = new System.Drawing.Point(144, 210);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(226, 56);
             this.groupBox1.TabIndex = 32;
             this.groupBox1.TabStop = false;
-            // 
-            // cboresposta
-            // 
-            this.cboresposta.FormattingEnabled = true;
-            this.cboresposta.Items.AddRange(new object[] {
-            "a",
-            "b",
-            "c",
-            "d"});
-            this.cboresposta.Location = new System.Drawing.Point(119, 19);
-            this.cboresposta.Name = "cboresposta";
-            this.cboresposta.Size = new System.Drawing.Size(100, 21);
-            this.cboresposta.TabIndex = 30;
-            this.cboresposta.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cboresposta_MouseMove);
             // 
             // label4
             // 
@@ -305,6 +291,19 @@
             this.lblresposta.Text = "a";
             this.lblresposta.Visible = false;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "a",
+            "b",
+            "c",
+            "d"});
+            this.comboBox1.Location = new System.Drawing.Point(109, 22);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(111, 21);
+            this.comboBox1.TabIndex = 30;
+            // 
             // pergunta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -356,7 +355,7 @@
         private System.Windows.Forms.Label lblala;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblnick;
-        private System.Windows.Forms.ComboBox cboresposta;
         private System.Windows.Forms.Label lblresposta;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

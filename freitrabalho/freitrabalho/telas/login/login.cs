@@ -85,7 +85,11 @@ namespace freitrabalho.telas.login
 
                 string nick = Convert.ToString(txtnickusuario.Text);
                 string senha1 = Convert.ToString(txtnickusuario.Text);
-
+                nick.Trim();
+                senha1.Trim();
+                nick.ToLower();
+                senha1.ToLower();
+             
                 function.criptografia criptografia = new function.criptografia();
                 bussines.bussineslogin blogin = new bussines.bussineslogin();
                 bussines.bussinesusuario busuario = new bussines.bussinesusuario();
