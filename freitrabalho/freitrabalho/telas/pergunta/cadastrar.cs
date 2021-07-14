@@ -19,8 +19,7 @@ namespace freitrabalho.telas.pergunta
             bussines.bussinespergunta bpergunta = new bussines.bussinespergunta();
             List<database.entity.tbpergunta> lista = bpergunta.ltodos();
             dvgpergunta.DataSource = lista;
-            cbobuf.DataSource = lista;
-            cbobuf.DisplayMember = "uf";
+           
         }
 
         private void picclose_Click(object sender, EventArgs e)
@@ -184,6 +183,23 @@ namespace freitrabalho.telas.pergunta
             List<database.entity.tbpergunta> lista = bpergunta.ltodos();
             dvgpergunta.DataSource = lista;
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            database.entity.tbpergunta pergunta = new database.entity.tbpergunta();
+            bussines.bussinespergunta bpergunta = new bussines.bussinespergunta();
+            string uf =Convert.ToString( cbobuf.SelectedItem);
+            if(uf != null)
+            {
+                List<database.entity.tbpergunta> lista = bpergunta.fuf(uf);
+                dvgpergunta.DataSource = lista;
+            }  
+         else
+            {
+                List<database.entity.tbpergunta> lista = bpergunta.ltodos();
+                dvgpergunta.DataSource = lista;
+            }
         }
     }
 }

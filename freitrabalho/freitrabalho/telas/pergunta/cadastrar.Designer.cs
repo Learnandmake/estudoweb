@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(cadastrar));
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.cbobuf = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.dvgpergunta = new System.Windows.Forms.DataGridView();
@@ -56,6 +55,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.picbarra = new System.Windows.Forms.PictureBox();
             this.picclose = new System.Windows.Forms.PictureBox();
+            this.cbobuf = new System.Windows.Forms.ComboBox();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvgpergunta)).BeginInit();
             this.groupBox3.SuspendLayout();
@@ -76,42 +76,6 @@
             this.groupBox4.Size = new System.Drawing.Size(488, 300);
             this.groupBox4.TabIndex = 23;
             this.groupBox4.TabStop = false;
-            // 
-            // cbobuf
-            // 
-            this.cbobuf.FormattingEnabled = true;
-            this.cbobuf.Items.AddRange(new object[] {
-            "sp",
-            "rj",
-            "es",
-            "mg",
-            "ac",
-            "al",
-            "ap",
-            "am",
-            "ba",
-            "ce",
-            "df",
-            "go",
-            "ma",
-            "mt",
-            "ms",
-            "pa",
-            "pb",
-            "pe",
-            "pi",
-            "rr",
-            "ro",
-            "rn",
-            "rs",
-            "sc",
-            "se",
-            "to"});
-            this.cbobuf.Location = new System.Drawing.Point(107, 18);
-            this.cbobuf.Name = "cbobuf";
-            this.cbobuf.Size = new System.Drawing.Size(246, 21);
-            this.cbobuf.TabIndex = 24;
-            this.cbobuf.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cbobuf_MouseMove);
             // 
             // label5
             // 
@@ -136,6 +100,7 @@
             this.button2.TabIndex = 20;
             this.button2.Text = "Buscar";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             this.button2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.button2_MouseMove);
             // 
             // dvgpergunta
@@ -436,6 +401,41 @@
             this.picclose.MouseEnter += new System.EventHandler(this.picclose_MouseEnter);
             this.picclose.MouseLeave += new System.EventHandler(this.picclose_MouseLeave);
             // 
+            // cbobuf
+            // 
+            this.cbobuf.FormattingEnabled = true;
+            this.cbobuf.Items.AddRange(new object[] {
+            "sp",
+            "rj",
+            "es",
+            "mg",
+            "ac",
+            "al",
+            "ap",
+            "am",
+            "ba",
+            "ce",
+            "df",
+            "go",
+            "ma",
+            "mt",
+            "ms",
+            "pa",
+            "pb",
+            "pe",
+            "pi",
+            "rr",
+            "ro",
+            "rn",
+            "rs",
+            "sc",
+            "se",
+            "to"});
+            this.cbobuf.Location = new System.Drawing.Point(103, 18);
+            this.cbobuf.Name = "cbobuf";
+            this.cbobuf.Size = new System.Drawing.Size(250, 21);
+            this.cbobuf.TabIndex = 29;
+            // 
             // cadastrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -482,7 +482,6 @@
         private System.Windows.Forms.PictureBox picbarra;
         private System.Windows.Forms.Button btncadastro;
         private System.Windows.Forms.PictureBox picclose;
-        private System.Windows.Forms.ComboBox cbobuf;
         private System.Windows.Forms.TextBox txtalc;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtald;
@@ -490,5 +489,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cbouf;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox cbobuf;
     }
 }
