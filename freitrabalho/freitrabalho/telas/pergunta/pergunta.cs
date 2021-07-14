@@ -194,7 +194,7 @@ namespace freitrabalho.telas.pergunta
         {
             string resposta = Convert.ToString(cboresposta.SelectedItem);
             string nick =  lblnick.Text;
-           
+
             function.escolhepergunta epergunta = new function.escolhepergunta();
 
             database.entity.tbpergunta pergunta = epergunta.escolherpergunta();
@@ -224,6 +224,7 @@ namespace freitrabalho.telas.pergunta
             }
             else
             {
+            if(lblpontuacao.Text !="0")
                 bpontuacao.reduzirpontuacao(nick);
                 lblenunciado.Text = pergunta.enunciado;
                 lblala.Text = pergunta.palternativa;
