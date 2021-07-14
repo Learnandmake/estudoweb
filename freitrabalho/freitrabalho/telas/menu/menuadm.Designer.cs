@@ -75,6 +75,8 @@
             this.picclose.TabIndex = 25;
             this.picclose.TabStop = false;
             this.picclose.Click += new System.EventHandler(this.picclose_Click);
+            this.picclose.MouseEnter += new System.EventHandler(this.picclose_MouseEnter);
+            this.picclose.MouseLeave += new System.EventHandler(this.picclose_MouseLeave);
             // 
             // picbarra
             // 
@@ -84,6 +86,7 @@
             this.picbarra.Size = new System.Drawing.Size(471, 31);
             this.picbarra.TabIndex = 24;
             this.picbarra.TabStop = false;
+            this.picbarra.MouseMove += new System.Windows.Forms.MouseEventHandler(this.picbarra_MouseMove);
             // 
             // lbltime
             // 
