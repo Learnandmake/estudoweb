@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mapabrasil));
-            this.picclose = new System.Windows.Forms.PictureBox();
-            this.picbarra = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.lblevento2 = new System.Windows.Forms.Label();
@@ -63,34 +61,15 @@
             this.label27 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
+            this.picclose = new System.Windows.Forms.PictureBox();
+            this.picbarra = new System.Windows.Forms.PictureBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.lblcapital = new System.Windows.Forms.Label();
+            this.lblevento3 = new System.Windows.Forms.Label();
+            this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picclose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbarra)).BeginInit();
-            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // picclose
-            // 
-            this.picclose.BackColor = System.Drawing.Color.Teal;
-            this.picclose.Image = ((System.Drawing.Image)(resources.GetObject("picclose.Image")));
-            this.picclose.Location = new System.Drawing.Point(677, 0);
-            this.picclose.Name = "picclose";
-            this.picclose.Size = new System.Drawing.Size(39, 31);
-            this.picclose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picclose.TabIndex = 30;
-            this.picclose.TabStop = false;
-            this.picclose.Click += new System.EventHandler(this.picclose_Click);
-            this.picclose.MouseEnter += new System.EventHandler(this.picclose_MouseEnter);
-            this.picclose.MouseLeave += new System.EventHandler(this.picclose_MouseLeave);
-            // 
-            // picbarra
-            // 
-            this.picbarra.BackColor = System.Drawing.Color.Teal;
-            this.picbarra.Location = new System.Drawing.Point(-8, 0);
-            this.picbarra.Name = "picbarra";
-            this.picbarra.Size = new System.Drawing.Size(737, 31);
-            this.picbarra.TabIndex = 28;
-            this.picbarra.TabStop = false;
-            this.picbarra.MouseMove += new System.Windows.Forms.MouseEventHandler(this.picbarra_MouseMove);
             // 
             // label3
             // 
@@ -107,14 +86,17 @@
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.Color.Teal;
+            this.groupBox4.Controls.Add(this.lblevento3);
+            this.groupBox4.Controls.Add(this.lblcapital);
+            this.groupBox4.Controls.Add(this.label29);
             this.groupBox4.Controls.Add(this.lblevento2);
             this.groupBox4.Controls.Add(this.lblevento1);
             this.groupBox4.Controls.Add(this.label2);
             this.groupBox4.Controls.Add(this.lblsinopse);
             this.groupBox4.Controls.Add(this.lbltitulo);
-            this.groupBox4.Location = new System.Drawing.Point(487, 24);
+            this.groupBox4.Location = new System.Drawing.Point(487, 22);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(229, 403);
+            this.groupBox4.Size = new System.Drawing.Size(229, 405);
             this.groupBox4.TabIndex = 34;
             this.groupBox4.TabStop = false;
             // 
@@ -123,7 +105,7 @@
             this.lblevento2.AutoSize = true;
             this.lblevento2.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblevento2.ForeColor = System.Drawing.Color.White;
-            this.lblevento2.Location = new System.Drawing.Point(17, 271);
+            this.lblevento2.Location = new System.Drawing.Point(17, 326);
             this.lblevento2.Name = "lblevento2";
             this.lblevento2.Size = new System.Drawing.Size(78, 19);
             this.lblevento2.TabIndex = 22;
@@ -134,7 +116,7 @@
             this.lblevento1.AutoSize = true;
             this.lblevento1.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblevento1.ForeColor = System.Drawing.Color.White;
-            this.lblevento1.Location = new System.Drawing.Point(17, 236);
+            this.lblevento1.Location = new System.Drawing.Point(17, 291);
             this.lblevento1.Name = "lblevento1";
             this.lblevento1.Size = new System.Drawing.Size(78, 19);
             this.lblevento1.TabIndex = 21;
@@ -145,11 +127,11 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(17, 205);
+            this.label2.Location = new System.Drawing.Point(17, 260);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 19);
+            this.label2.Size = new System.Drawing.Size(84, 19);
             this.label2.TabIndex = 20;
-            this.label2.Text = "Eventos";
+            this.label2.Text = "Eventos:";
             // 
             // lblsinopse
             // 
@@ -471,12 +453,67 @@
             this.label24.TabIndex = 67;
             this.label24.Text = "?";
             // 
+            // picclose
+            // 
+            this.picclose.BackColor = System.Drawing.Color.Teal;
+            this.picclose.Image = ((System.Drawing.Image)(resources.GetObject("picclose.Image")));
+            this.picclose.Location = new System.Drawing.Point(677, -2);
+            this.picclose.Name = "picclose";
+            this.picclose.Size = new System.Drawing.Size(39, 31);
+            this.picclose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picclose.TabIndex = 69;
+            this.picclose.TabStop = false;
+            // 
+            // picbarra
+            // 
+            this.picbarra.BackColor = System.Drawing.Color.Teal;
+            this.picbarra.Location = new System.Drawing.Point(-8, -2);
+            this.picbarra.Name = "picbarra";
+            this.picbarra.Size = new System.Drawing.Size(737, 31);
+            this.picbarra.TabIndex = 68;
+            this.picbarra.TabStop = false;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.ForeColor = System.Drawing.Color.White;
+            this.label29.Location = new System.Drawing.Point(17, 192);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(78, 19);
+            this.label29.TabIndex = 23;
+            this.label29.Text = "Capital:";
+            // 
+            // lblcapital
+            // 
+            this.lblcapital.AutoSize = true;
+            this.lblcapital.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblcapital.ForeColor = System.Drawing.Color.White;
+            this.lblcapital.Location = new System.Drawing.Point(17, 211);
+            this.lblcapital.Name = "lblcapital";
+            this.lblcapital.Size = new System.Drawing.Size(78, 19);
+            this.lblcapital.TabIndex = 24;
+            this.lblcapital.Text = "Capital:";
+            // 
+            // lblevento3
+            // 
+            this.lblevento3.AutoSize = true;
+            this.lblevento3.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblevento3.ForeColor = System.Drawing.Color.White;
+            this.lblevento3.Location = new System.Drawing.Point(17, 363);
+            this.lblevento3.Name = "lblevento3";
+            this.lblevento3.Size = new System.Drawing.Size(78, 19);
+            this.lblevento3.TabIndex = 25;
+            this.lblevento3.Text = "Eventos";
+            // 
             // mapabrasil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(716, 427);
+            this.Controls.Add(this.picclose);
+            this.Controls.Add(this.picbarra);
             this.Controls.Add(this.label24);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label27);
@@ -504,26 +541,21 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.picclose);
-            this.Controls.Add(this.picbarra);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "mapabrasil";
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.mapabrasil_MouseMove);
-            ((System.ComponentModel.ISupportInitialize)(this.picclose)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picbarra)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picclose)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picbarra)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox picclose;
-        private System.Windows.Forms.PictureBox picbarra;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label lblevento2;
@@ -556,5 +588,10 @@
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label lblevento3;
+        private System.Windows.Forms.Label lblcapital;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.PictureBox picclose;
+        private System.Windows.Forms.PictureBox picbarra;
     }
 }
