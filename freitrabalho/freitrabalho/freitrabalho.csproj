@@ -189,6 +189,9 @@
     <EmbeddedResource Include="telas\login\recusenha.resx">
       <DependentUpon>recusenha.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="telas\mapa\mapabrasil.resx">
+      <DependentUpon>mapabrasil.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="telas\menu\menuadm.resx">
       <DependentUpon>menuadm.cs</DependentUpon>
     </EmbeddedResource>
