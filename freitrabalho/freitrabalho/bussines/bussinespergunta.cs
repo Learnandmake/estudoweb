@@ -17,5 +17,11 @@ namespace freitrabalho.bussines
         {
             data.deletar(pergunta);
         }
+        public List<database.entity.tbpergunta> ltodos()
+        {
+            List<database.entity.tbpergunta> listar = data.btodos();
+            return listar;
+        }
+
     }
 }
