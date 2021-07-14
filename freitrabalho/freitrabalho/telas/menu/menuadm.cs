@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -46,6 +47,30 @@ namespace freitrabalho.telas.menu
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void piccadastrarpergunta_Click(object sender, EventArgs e)
+        {
+            telas.pergunta.cadastrar m = new pergunta.cadastrar();
+            m.Show();
+        }
+
+        private void picconsultartop_Click(object sender, EventArgs e)
+        {
+            telas.usuario.topplayer m = new usuario.topplayer();
+            m.Show();
+        }
+
+        private void picconsultar_Click(object sender, EventArgs e)
+        {
+            telas.usuario.consultarusuario m = new usuario.consultarusuario();
+            m.Show();
+        }
+
+        private void piccadastraradm_Click(object sender, EventArgs e)
+        {
+            telas.adm.cadastro m = new adm.cadastro();
+            m.Show();
         }
     }
 }

@@ -135,6 +135,7 @@
             this.piccadastraradm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.piccadastraradm.TabIndex = 34;
             this.piccadastraradm.TabStop = false;
+            this.piccadastraradm.Click += new System.EventHandler(this.piccadastraradm_Click);
             // 
             // picconsultar
             // 
@@ -146,6 +147,7 @@
             this.picconsultar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picconsultar.TabIndex = 35;
             this.picconsultar.TabStop = false;
+            this.picconsultar.Click += new System.EventHandler(this.picconsultar_Click);
             // 
             // picconsultartop
             // 
@@ -157,6 +159,7 @@
             this.picconsultartop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picconsultartop.TabIndex = 36;
             this.picconsultartop.TabStop = false;
+            this.picconsultartop.Click += new System.EventHandler(this.picconsultartop_Click);
             // 
             // piccadastrarpergunta
             // 
@@ -168,6 +171,7 @@
             this.piccadastrarpergunta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.piccadastrarpergunta.TabIndex = 37;
             this.piccadastrarpergunta.TabStop = false;
+            this.piccadastrarpergunta.Click += new System.EventHandler(this.piccadastrarpergunta_Click);
             // 
             // menuadm
             // 

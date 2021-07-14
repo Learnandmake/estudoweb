@@ -25,7 +25,7 @@ namespace freitrabalho.telas.usuario
 
         private void picclose_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Visible = false;
         }
 
         private void picclose_MouseLeave(object sender, EventArgs e)

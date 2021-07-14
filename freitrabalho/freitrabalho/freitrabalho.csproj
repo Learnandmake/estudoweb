@@ -130,6 +130,12 @@
     <Compile Include="telas\menu\menuplayer.Designer.cs">
       <DependentUpon>menuplayer.cs</DependentUpon>
     </Compile>
+    <Compile Include="telas\pergunta\cadastrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="telas\pergunta\cadastrar.Designer.cs">
+      <DependentUpon>cadastrar.cs</DependentUpon>
+    </Compile>
     <Compile Include="telas\usuario\cadastrarusuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,6 +147,12 @@
     </Compile>
     <Compile Include="telas\usuario\consultarusuario.Designer.cs">
       <DependentUpon>consultarusuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="telas\usuario\topplayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="telas\usuario\topplayer.Designer.cs">
+      <DependentUpon>topplayer.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
