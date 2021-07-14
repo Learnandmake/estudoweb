@@ -27,5 +27,10 @@ namespace freitrabalho.bussines
         {
             data.deletar(pontuacao);
         }
+        public database.entity.tbpontuacao buscarpontuacaopnick(string nick)
+        {
+            database.entity.tbpontuacao lista = data.buscarpontuacaopnick(nick);
+            return lista;
+        }
     }
 }

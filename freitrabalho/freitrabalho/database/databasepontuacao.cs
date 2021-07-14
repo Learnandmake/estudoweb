@@ -26,6 +26,11 @@ namespace freitrabalho.database
             List<entity.tbpontuacao> lista = banco.tbpontuacao.Where(t => t.nick == nick).ToList();
             return lista;
         }
+        public entity.tbpontuacao buscarpontuacaopnick(string nick)
+        {
+            entity.tbpontuacao lista = banco.tbpontuacao.FirstOrDefault(t =>t.nick == nick) ;
+            return lista;
+        }
         public void deletar(entity.tbpontuacao pontuacao)
         {
             entity.tbpontuacao lista = banco.tbpontuacao.FirstOrDefault(t => t.idusuario == pontuacao.idusuario);

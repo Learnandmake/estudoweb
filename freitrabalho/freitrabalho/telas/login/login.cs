@@ -105,11 +105,13 @@ namespace freitrabalho.telas.login
                     {
                         menu.menuadm m = new menu.menuadm(nick);
                         m.Show();
+                        this.Visible = false;
                     }
                     if (usuario.cargo == "player")
                     {
                         menu.menuplayer m = new menu.menuplayer(nick);
                         m.Show();
+                        this.Visible = false;
                     }
                 }
                 else {

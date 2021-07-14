@@ -36,6 +36,8 @@
             this.picbarra = new System.Windows.Forms.PictureBox();
             this.lbltime = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lblpts = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picclose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbarra)).BeginInit();
             this.SuspendLayout();
@@ -68,7 +70,7 @@
             // 
             this.picclose.BackColor = System.Drawing.Color.Teal;
             this.picclose.Image = ((System.Drawing.Image)(resources.GetObject("picclose.Image")));
-            this.picclose.Location = new System.Drawing.Point(427, -2);
+            this.picclose.Location = new System.Drawing.Point(428, -2);
             this.picclose.Name = "picclose";
             this.picclose.Size = new System.Drawing.Size(39, 31);
             this.picclose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -94,7 +96,7 @@
             this.lbltime.BackColor = System.Drawing.Color.Teal;
             this.lbltime.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltime.ForeColor = System.Drawing.Color.White;
-            this.lbltime.Location = new System.Drawing.Point(265, 2);
+            this.lbltime.Location = new System.Drawing.Point(346, 2);
             this.lbltime.Name = "lbltime";
             this.lbltime.Size = new System.Drawing.Size(57, 19);
             this.lbltime.TabIndex = 31;
@@ -102,13 +104,42 @@
             // 
             // timer1
             // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // lblpts
+            // 
+            this.lblpts.AutoSize = true;
+            this.lblpts.BackColor = System.Drawing.Color.Teal;
+            this.lblpts.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblpts.ForeColor = System.Drawing.Color.White;
+            this.lblpts.Location = new System.Drawing.Point(261, 2);
+            this.lblpts.Name = "lblpts";
+            this.lblpts.Size = new System.Drawing.Size(19, 19);
+            this.lblpts.TabIndex = 32;
+            this.lblpts.Text = "0";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Teal;
+            this.label1.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(288, 2);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(39, 19);
+            this.label1.TabIndex = 33;
+            this.label1.Text = "pts";
             // 
             // menuplayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(467, 262);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblpts);
             this.Controls.Add(this.lbltime);
             this.Controls.Add(this.lblnick);
             this.Controls.Add(this.label2);
@@ -133,5 +164,7 @@
         private System.Windows.Forms.PictureBox picbarra;
         private System.Windows.Forms.Label lbltime;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label lblpts;
+        private System.Windows.Forms.Label label1;
     }
 }

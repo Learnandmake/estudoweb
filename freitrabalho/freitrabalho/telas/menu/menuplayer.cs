@@ -17,6 +17,10 @@ namespace freitrabalho.telas.menu
         {
             InitializeComponent();
             lblnick.Text = nick;
+            bussines.bussinespontuacao bpontuacao = new bussines.bussinespontuacao();
+            database.entity.tbpontuacao pot = bpontuacao.buscarpontuacaopnick(nick);
+            lblpts.Text = Convert.ToString(pot.pontuacao);
+          
         }
 
         private void picclose_Click(object sender, EventArgs e)
