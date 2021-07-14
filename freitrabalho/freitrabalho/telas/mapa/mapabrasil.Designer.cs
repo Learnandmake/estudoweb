@@ -31,9 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mapabrasil));
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.lblevento2 = new System.Windows.Forms.Label();
-            this.lblevento1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblcapital = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
             this.lblsinopse = new System.Windows.Forms.Label();
             this.lbltitulo = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -63,9 +62,7 @@
             this.label24 = new System.Windows.Forms.Label();
             this.picclose = new System.Windows.Forms.PictureBox();
             this.picbarra = new System.Windows.Forms.PictureBox();
-            this.label29 = new System.Windows.Forms.Label();
-            this.lblcapital = new System.Windows.Forms.Label();
-            this.lblevento3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picclose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbarra)).BeginInit();
@@ -82,16 +79,14 @@
             this.label3.Size = new System.Drawing.Size(38, 39);
             this.label3.TabIndex = 32;
             this.label3.Text = "?";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.label3.MouseEnter += new System.EventHandler(this.label3_MouseEnter);
             // 
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.Color.Teal;
-            this.groupBox4.Controls.Add(this.lblevento3);
             this.groupBox4.Controls.Add(this.lblcapital);
             this.groupBox4.Controls.Add(this.label29);
-            this.groupBox4.Controls.Add(this.lblevento2);
-            this.groupBox4.Controls.Add(this.lblevento1);
-            this.groupBox4.Controls.Add(this.label2);
             this.groupBox4.Controls.Add(this.lblsinopse);
             this.groupBox4.Controls.Add(this.lbltitulo);
             this.groupBox4.Location = new System.Drawing.Point(487, 22);
@@ -100,38 +95,27 @@
             this.groupBox4.TabIndex = 34;
             this.groupBox4.TabStop = false;
             // 
-            // lblevento2
+            // lblcapital
             // 
-            this.lblevento2.AutoSize = true;
-            this.lblevento2.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblevento2.ForeColor = System.Drawing.Color.White;
-            this.lblevento2.Location = new System.Drawing.Point(17, 326);
-            this.lblevento2.Name = "lblevento2";
-            this.lblevento2.Size = new System.Drawing.Size(78, 19);
-            this.lblevento2.TabIndex = 22;
-            this.lblevento2.Text = "Eventos";
+            this.lblcapital.AutoSize = true;
+            this.lblcapital.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblcapital.ForeColor = System.Drawing.Color.White;
+            this.lblcapital.Location = new System.Drawing.Point(17, 312);
+            this.lblcapital.Name = "lblcapital";
+            this.lblcapital.Size = new System.Drawing.Size(78, 19);
+            this.lblcapital.TabIndex = 24;
+            this.lblcapital.Text = "Capital:";
             // 
-            // lblevento1
+            // label29
             // 
-            this.lblevento1.AutoSize = true;
-            this.lblevento1.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblevento1.ForeColor = System.Drawing.Color.White;
-            this.lblevento1.Location = new System.Drawing.Point(17, 291);
-            this.lblevento1.Name = "lblevento1";
-            this.lblevento1.Size = new System.Drawing.Size(78, 19);
-            this.lblevento1.TabIndex = 21;
-            this.lblevento1.Text = "Eventos";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(17, 260);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 19);
-            this.label2.TabIndex = 20;
-            this.label2.Text = "Eventos:";
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.ForeColor = System.Drawing.Color.White;
+            this.label29.Location = new System.Drawing.Point(17, 283);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(78, 19);
+            this.label29.TabIndex = 23;
+            this.label29.Text = "Capital:";
             // 
             // lblsinopse
             // 
@@ -139,7 +123,7 @@
             this.lblsinopse.ForeColor = System.Drawing.Color.White;
             this.lblsinopse.Location = new System.Drawing.Point(17, 57);
             this.lblsinopse.Name = "lblsinopse";
-            this.lblsinopse.Size = new System.Drawing.Size(188, 137);
+            this.lblsinopse.Size = new System.Drawing.Size(188, 211);
             this.lblsinopse.TabIndex = 19;
             this.lblsinopse.Text = "sinopse";
             // 
@@ -164,6 +148,8 @@
             this.label1.Size = new System.Drawing.Size(38, 39);
             this.label1.TabIndex = 35;
             this.label1.Text = "?";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.label1.MouseEnter += new System.EventHandler(this.label1_MouseEnter);
             // 
             // label4
             // 
@@ -176,6 +162,8 @@
             this.label4.Size = new System.Drawing.Size(38, 39);
             this.label4.TabIndex = 36;
             this.label4.Text = "?";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.label4.MouseEnter += new System.EventHandler(this.label4_MouseEnter);
             // 
             // label5
             // 
@@ -188,6 +176,8 @@
             this.label5.Size = new System.Drawing.Size(38, 39);
             this.label5.TabIndex = 37;
             this.label5.Text = "?";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            this.label5.MouseEnter += new System.EventHandler(this.label5_MouseEnter);
             // 
             // label6
             // 
@@ -207,11 +197,12 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Ravie", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(199, 265);
+            this.label7.Location = new System.Drawing.Point(189, 265);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(38, 39);
             this.label7.TabIndex = 39;
             this.label7.Text = "?";
+            this.label7.MouseEnter += new System.EventHandler(this.label7_MouseEnter);
             // 
             // label8
             // 
@@ -219,11 +210,12 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Ravie", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(263, 213);
+            this.label8.Location = new System.Drawing.Point(254, 230);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(38, 39);
             this.label8.TabIndex = 40;
             this.label8.Text = "?";
+            this.label8.MouseEnter += new System.EventHandler(this.label8_MouseEnter);
             // 
             // label10
             // 
@@ -236,6 +228,7 @@
             this.label10.Size = new System.Drawing.Size(38, 39);
             this.label10.TabIndex = 41;
             this.label10.Text = "?";
+            this.label10.MouseEnter += new System.EventHandler(this.label10_MouseEnter);
             // 
             // label11
             // 
@@ -320,6 +313,8 @@
             this.label17.Size = new System.Drawing.Size(38, 39);
             this.label17.TabIndex = 48;
             this.label17.Text = "?";
+            this.label17.Click += new System.EventHandler(this.label17_Click);
+            this.label17.MouseEnter += new System.EventHandler(this.label17_MouseEnter);
             // 
             // label18
             // 
@@ -332,6 +327,7 @@
             this.label18.Size = new System.Drawing.Size(38, 39);
             this.label18.TabIndex = 49;
             this.label18.Text = "?";
+            this.label18.MouseEnter += new System.EventHandler(this.label18_MouseEnter);
             // 
             // label19
             // 
@@ -339,11 +335,12 @@
             this.label19.BackColor = System.Drawing.Color.Transparent;
             this.label19.Font = new System.Drawing.Font("Ravie", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(210, 369);
+            this.label19.Location = new System.Drawing.Point(210, 368);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(38, 39);
             this.label19.TabIndex = 50;
             this.label19.Text = "?";
+            this.label19.MouseEnter += new System.EventHandler(this.label19_MouseEnter);
             // 
             // label20
             // 
@@ -473,38 +470,18 @@
             this.picbarra.TabIndex = 68;
             this.picbarra.TabStop = false;
             // 
-            // label29
+            // label2
             // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.ForeColor = System.Drawing.Color.White;
-            this.label29.Location = new System.Drawing.Point(17, 192);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(78, 19);
-            this.label29.TabIndex = 23;
-            this.label29.Text = "Capital:";
-            // 
-            // lblcapital
-            // 
-            this.lblcapital.AutoSize = true;
-            this.lblcapital.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblcapital.ForeColor = System.Drawing.Color.White;
-            this.lblcapital.Location = new System.Drawing.Point(17, 211);
-            this.lblcapital.Name = "lblcapital";
-            this.lblcapital.Size = new System.Drawing.Size(78, 19);
-            this.lblcapital.TabIndex = 24;
-            this.lblcapital.Text = "Capital:";
-            // 
-            // lblevento3
-            // 
-            this.lblevento3.AutoSize = true;
-            this.lblevento3.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblevento3.ForeColor = System.Drawing.Color.White;
-            this.lblevento3.Location = new System.Drawing.Point(17, 363);
-            this.lblevento3.Name = "lblevento3";
-            this.lblevento3.Size = new System.Drawing.Size(78, 19);
-            this.lblevento3.TabIndex = 25;
-            this.lblevento3.Text = "Eventos";
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Ravie", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(287, 221);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(21, 21);
+            this.label2.TabIndex = 70;
+            this.label2.Text = "?";
+            this.label2.MouseEnter += new System.EventHandler(this.label2_MouseEnter);
             // 
             // mapabrasil
             // 
@@ -512,6 +489,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(716, 427);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.picclose);
             this.Controls.Add(this.picbarra);
             this.Controls.Add(this.label24);
@@ -558,9 +536,6 @@
         #endregion
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Label lblevento2;
-        private System.Windows.Forms.Label lblevento1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblsinopse;
         private System.Windows.Forms.Label lbltitulo;
         private System.Windows.Forms.Label label1;
@@ -588,10 +563,10 @@
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label lblevento3;
         private System.Windows.Forms.Label lblcapital;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.PictureBox picclose;
         private System.Windows.Forms.PictureBox picbarra;
+        private System.Windows.Forms.Label label2;
     }
 }
