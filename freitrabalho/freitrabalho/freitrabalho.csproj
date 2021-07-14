@@ -193,6 +193,9 @@
     <EmbeddedResource Include="telas\menu\menuplayer.resx">
       <DependentUpon>menuplayer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="telas\pergunta\cadastrar.resx">
+      <DependentUpon>cadastrar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="telas\usuario\cadastrarusuario.resx">
       <DependentUpon>cadastrarusuario.cs</DependentUpon>
     </EmbeddedResource>
