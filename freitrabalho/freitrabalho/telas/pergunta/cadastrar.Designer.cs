@@ -447,6 +447,7 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.picbarra);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "cadastrar";
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cadastrar_MouseMove);
             this.groupBox4.ResumeLayout(false);
