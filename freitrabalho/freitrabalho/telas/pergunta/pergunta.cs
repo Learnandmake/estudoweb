@@ -13,6 +13,9 @@ namespace freitrabalho.telas.pergunta
 {
     public partial class pergunta : Form
     {
+        int tempo = 200;
+        int minuto = 0;
+        int segundo = 0;
         public pergunta(string nick)
         {
             InitializeComponent();
@@ -37,7 +40,22 @@ namespace freitrabalho.telas.pergunta
             pontuacao = bpontuacao.buscarpontuacaopnick(usuario.nick);
             string pontuacaof = Convert.ToString(pontuacao.pontuacao);
             lblpontuacao.Text = pontuacaof;
+           
+            
+            if (tempo >=60) 
+        {
+                minuto = tempo / 60;
+                segundo = tempo % 60;
+        }
+            else
+            {
+                minuto = 0;
+                minuto = tempo;
+            }
 
+            lblminuto.Text = Convert.ToString(minuto);
+            lblsegundo.Text = Convert.ToString(segundo);
+            timer1.Enabled = true;
         }
 
         private void picbarra_Click(object sender, EventArgs e)
@@ -52,8 +70,20 @@ namespace freitrabalho.telas.pergunta
         private void picclose_Click(object sender, EventArgs e)
         {
             this.Visible = false;
+            telas.menu.menuplayer m  = new menu.menuplayer(lblnick.Text, lblpontuacao.Text);
+            m.Show();
+        }
+        private void label2_MouseMove_1(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
+        private void lblpontuacao_MouseMove(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
         private void picbarra_MouseMove(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
@@ -189,7 +219,7 @@ namespace freitrabalho.telas.pergunta
                 pontuacao = bpontuacao.buscarpontuacaopnick(usuario.nick);
                 string pontuacaof = Convert.ToString(pontuacao.pontuacao);
                 lblpontuacao.Text = pontuacaof;
-           
+            
 
             }
             else
@@ -214,6 +244,29 @@ namespace freitrabalho.telas.pergunta
             }
 
 
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            segundo--;
+            if (minuto > 0)
+            {
+                if (segundo < 0)
+                {
+                    segundo = 59;
+                   
+                    minuto--;
+                }      
+            }
+            lblminuto.Text = Convert.ToString(minuto);
+            lblsegundo.Text = Convert.ToString(segundo);
+            if(minuto == 0 && segundo ==0)
+            {
+                MessageBox.Show("sessao encerrada");
+                telas.menu.menuplayer m = new menu.menuplayer(lblnick.Text, lblpontuacao.Text);
+                m.Show();
+                this.Visible = false;
+            }
         }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(pergunta));
             this.picclose = new System.Windows.Forms.PictureBox();
             this.picbarra = new System.Windows.Forms.PictureBox();
@@ -37,6 +38,9 @@
             this.cboresposta = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblminuto = new System.Windows.Forms.Label();
             this.lblald = new System.Windows.Forms.Label();
             this.lblalc = new System.Windows.Forms.Label();
             this.lblalb = new System.Windows.Forms.Label();
@@ -50,6 +54,8 @@
             this.lblresposta = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblpontuacao = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lblsegundo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picclose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbarra)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -148,6 +154,10 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox2.Controls.Add(this.lblsegundo);
+            this.groupBox2.Controls.Add(this.label9);
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Controls.Add(this.lblminuto);
             this.groupBox2.Controls.Add(this.lblald);
             this.groupBox2.Controls.Add(this.lblalc);
             this.groupBox2.Controls.Add(this.lblalb);
@@ -162,6 +172,42 @@
             this.groupBox2.Size = new System.Drawing.Size(502, 148);
             this.groupBox2.TabIndex = 33;
             this.groupBox2.TabStop = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(442, 16);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(15, 19);
+            this.label9.TabIndex = 42;
+            this.label9.Text = ":";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(331, 16);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(70, 19);
+            this.label3.TabIndex = 41;
+            this.label3.Text = "Tempo:";
+            // 
+            // lblminuto
+            // 
+            this.lblminuto.AutoSize = true;
+            this.lblminuto.BackColor = System.Drawing.Color.Transparent;
+            this.lblminuto.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblminuto.ForeColor = System.Drawing.Color.White;
+            this.lblminuto.Location = new System.Drawing.Point(413, 16);
+            this.lblminuto.Name = "lblminuto";
+            this.lblminuto.Size = new System.Drawing.Size(29, 19);
+            this.lblminuto.TabIndex = 41;
+            this.lblminuto.Text = "00";
             // 
             // lblald
             // 
@@ -312,11 +358,12 @@
             this.label2.BackColor = System.Drawing.Color.Teal;
             this.label2.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(149, 3);
+            this.label2.Location = new System.Drawing.Point(164, 5);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(149, 19);
             this.label2.TabIndex = 39;
             this.label2.Text = "Sua pontuacao é";
+            this.label2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.label2_MouseMove_1);
             // 
             // lblpontuacao
             // 
@@ -329,6 +376,24 @@
             this.lblpontuacao.Size = new System.Drawing.Size(45, 19);
             this.lblpontuacao.TabIndex = 40;
             this.lblpontuacao.Text = "nick";
+            this.lblpontuacao.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lblpontuacao_MouseMove);
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // lblsegundo
+            // 
+            this.lblsegundo.AutoSize = true;
+            this.lblsegundo.BackColor = System.Drawing.Color.Transparent;
+            this.lblsegundo.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblsegundo.ForeColor = System.Drawing.Color.White;
+            this.lblsegundo.Location = new System.Drawing.Point(458, 16);
+            this.lblsegundo.Name = "lblsegundo";
+            this.lblsegundo.Size = new System.Drawing.Size(29, 19);
+            this.lblsegundo.TabIndex = 43;
+            this.lblsegundo.Text = "00";
             // 
             // pergunta
             // 
@@ -387,5 +452,10 @@
         private System.Windows.Forms.ComboBox cboresposta;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblpontuacao;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblminuto;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lblsegundo;
     }
 }
