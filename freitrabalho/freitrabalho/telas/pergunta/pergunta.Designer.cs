@@ -38,10 +38,6 @@
             this.cboresposta = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.lblsegundo = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lblminuto = new System.Windows.Forms.Label();
             this.lblald = new System.Windows.Forms.Label();
             this.lblalc = new System.Windows.Forms.Label();
             this.lblalb = new System.Windows.Forms.Label();
@@ -56,6 +52,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lblpontuacao = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lblsegundo = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblminuto = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picclose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbarra)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -93,7 +93,7 @@
             this.lblenunciado.BackColor = System.Drawing.Color.Transparent;
             this.lblenunciado.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblenunciado.ForeColor = System.Drawing.Color.White;
-            this.lblenunciado.Location = new System.Drawing.Point(164, 16);
+            this.lblenunciado.Location = new System.Drawing.Point(0, 16);
             this.lblenunciado.Name = "lblenunciado";
             this.lblenunciado.Size = new System.Drawing.Size(101, 19);
             this.lblenunciado.TabIndex = 29;
@@ -105,7 +105,7 @@
             this.btnenviar.BackColor = System.Drawing.Color.MintCream;
             this.btnenviar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnenviar.ForeColor = System.Drawing.Color.Teal;
-            this.btnenviar.Location = new System.Drawing.Point(152, 283);
+            this.btnenviar.Location = new System.Drawing.Point(155, 284);
             this.btnenviar.Name = "btnenviar";
             this.btnenviar.Size = new System.Drawing.Size(197, 44);
             this.btnenviar.TabIndex = 26;
@@ -119,7 +119,7 @@
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.cboresposta);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Location = new System.Drawing.Point(144, 210);
+            this.groupBox1.Location = new System.Drawing.Point(144, 225);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(226, 56);
             this.groupBox1.TabIndex = 32;
@@ -154,10 +154,6 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox2.Controls.Add(this.lblsegundo);
-            this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.lblminuto);
             this.groupBox2.Controls.Add(this.lblald);
             this.groupBox2.Controls.Add(this.lblalc);
             this.groupBox2.Controls.Add(this.lblalb);
@@ -167,59 +163,11 @@
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.lblala);
             this.groupBox2.Controls.Add(this.lblenunciado);
-            this.groupBox2.Location = new System.Drawing.Point(12, 37);
+            this.groupBox2.Location = new System.Drawing.Point(-1, 30);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(502, 148);
+            this.groupBox2.Size = new System.Drawing.Size(540, 148);
             this.groupBox2.TabIndex = 33;
             this.groupBox2.TabStop = false;
-            // 
-            // lblsegundo
-            // 
-            this.lblsegundo.AutoSize = true;
-            this.lblsegundo.BackColor = System.Drawing.Color.Transparent;
-            this.lblsegundo.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblsegundo.ForeColor = System.Drawing.Color.White;
-            this.lblsegundo.Location = new System.Drawing.Point(458, 16);
-            this.lblsegundo.Name = "lblsegundo";
-            this.lblsegundo.Size = new System.Drawing.Size(29, 19);
-            this.lblsegundo.TabIndex = 43;
-            this.lblsegundo.Text = "00";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(442, 16);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(15, 19);
-            this.label9.TabIndex = 42;
-            this.label9.Text = ":";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(331, 16);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 19);
-            this.label3.TabIndex = 41;
-            this.label3.Text = "Tempo:";
-            // 
-            // lblminuto
-            // 
-            this.lblminuto.AutoSize = true;
-            this.lblminuto.BackColor = System.Drawing.Color.Transparent;
-            this.lblminuto.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblminuto.ForeColor = System.Drawing.Color.White;
-            this.lblminuto.Location = new System.Drawing.Point(413, 16);
-            this.lblminuto.Name = "lblminuto";
-            this.lblminuto.Size = new System.Drawing.Size(29, 19);
-            this.lblminuto.TabIndex = 41;
-            this.lblminuto.Text = "00";
             // 
             // lblald
             // 
@@ -253,7 +201,7 @@
             this.lblalb.BackColor = System.Drawing.Color.Transparent;
             this.lblalb.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblalb.ForeColor = System.Drawing.Color.White;
-            this.lblalb.Location = new System.Drawing.Point(44, 111);
+            this.lblalb.Location = new System.Drawing.Point(34, 111);
             this.lblalb.Name = "lblalb";
             this.lblalb.Size = new System.Drawing.Size(31, 19);
             this.lblalb.TabIndex = 35;
@@ -318,7 +266,7 @@
             this.lblala.BackColor = System.Drawing.Color.Transparent;
             this.lblala.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblala.ForeColor = System.Drawing.Color.White;
-            this.lblala.Location = new System.Drawing.Point(44, 59);
+            this.lblala.Location = new System.Drawing.Point(35, 59);
             this.lblala.Name = "lblala";
             this.lblala.Size = new System.Drawing.Size(31, 19);
             this.lblala.TabIndex = 30;
@@ -395,6 +343,54 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // lblsegundo
+            // 
+            this.lblsegundo.AutoSize = true;
+            this.lblsegundo.BackColor = System.Drawing.Color.Transparent;
+            this.lblsegundo.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblsegundo.ForeColor = System.Drawing.Color.White;
+            this.lblsegundo.Location = new System.Drawing.Point(304, 203);
+            this.lblsegundo.Name = "lblsegundo";
+            this.lblsegundo.Size = new System.Drawing.Size(29, 19);
+            this.lblsegundo.TabIndex = 47;
+            this.lblsegundo.Text = "00";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(288, 203);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(15, 19);
+            this.label9.TabIndex = 46;
+            this.label9.Text = ":";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(177, 203);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(70, 19);
+            this.label3.TabIndex = 44;
+            this.label3.Text = "Tempo:";
+            // 
+            // lblminuto
+            // 
+            this.lblminuto.AutoSize = true;
+            this.lblminuto.BackColor = System.Drawing.Color.Transparent;
+            this.lblminuto.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblminuto.ForeColor = System.Drawing.Color.White;
+            this.lblminuto.Location = new System.Drawing.Point(259, 203);
+            this.lblminuto.Name = "lblminuto";
+            this.lblminuto.Size = new System.Drawing.Size(29, 19);
+            this.lblminuto.TabIndex = 45;
+            this.lblminuto.Text = "00";
+            // 
             // pergunta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -402,8 +398,12 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(539, 331);
+            this.Controls.Add(this.lblsegundo);
             this.Controls.Add(this.lblpontuacao);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblminuto);
             this.Controls.Add(this.lblresposta);
             this.Controls.Add(this.lblnick);
             this.Controls.Add(this.label1);
@@ -451,10 +451,10 @@
         private System.Windows.Forms.ComboBox cboresposta;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblpontuacao;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label lblsegundo;
+        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblminuto;
-        private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label lblsegundo;
     }
 }
