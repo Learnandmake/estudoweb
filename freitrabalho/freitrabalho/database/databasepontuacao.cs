@@ -17,7 +17,7 @@ namespace freitrabalho.database
         }
         public List<entity.tbpontuacao> btodos()
         {
-            List<entity.tbpontuacao> lista = banco.tbpontuacao.OrderBy(t => t.pontuacao).Where(t =>t.pontuacao !=0).ToList();
+            List<entity.tbpontuacao> lista = banco.tbpontuacao.OrderByDescending(t => t.pontuacao).Where(t =>t.pontuacao !=0).ToList();
             return lista;
         }
        

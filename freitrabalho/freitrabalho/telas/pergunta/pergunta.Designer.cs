@@ -89,13 +89,12 @@
             // 
             // lblenunciado
             // 
-            this.lblenunciado.AutoSize = true;
             this.lblenunciado.BackColor = System.Drawing.Color.Transparent;
             this.lblenunciado.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblenunciado.ForeColor = System.Drawing.Color.White;
             this.lblenunciado.Location = new System.Drawing.Point(0, 16);
             this.lblenunciado.Name = "lblenunciado";
-            this.lblenunciado.Size = new System.Drawing.Size(101, 19);
+            this.lblenunciado.Size = new System.Drawing.Size(534, 43);
             this.lblenunciado.TabIndex = 29;
             this.lblenunciado.Text = "Enunciado:";
             this.lblenunciado.MouseMove += new System.Windows.Forms.MouseEventHandler(this.label2_MouseMove);
@@ -171,39 +170,36 @@
             // 
             // lblald
             // 
-            this.lblald.AutoSize = true;
             this.lblald.BackColor = System.Drawing.Color.Transparent;
             this.lblald.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblald.ForeColor = System.Drawing.Color.White;
             this.lblald.Location = new System.Drawing.Point(301, 111);
             this.lblald.Name = "lblald";
-            this.lblald.Size = new System.Drawing.Size(31, 19);
+            this.lblald.Size = new System.Drawing.Size(227, 34);
             this.lblald.TabIndex = 37;
             this.lblald.Text = "AL";
             this.lblald.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lblald_MouseMove);
             // 
             // lblalc
             // 
-            this.lblalc.AutoSize = true;
             this.lblalc.BackColor = System.Drawing.Color.Transparent;
             this.lblalc.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblalc.ForeColor = System.Drawing.Color.White;
             this.lblalc.Location = new System.Drawing.Point(301, 59);
             this.lblalc.Name = "lblalc";
-            this.lblalc.Size = new System.Drawing.Size(31, 19);
+            this.lblalc.Size = new System.Drawing.Size(227, 32);
             this.lblalc.TabIndex = 36;
             this.lblalc.Text = "AL";
             this.lblalc.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lblalc_MouseMove);
             // 
             // lblalb
             // 
-            this.lblalb.AutoSize = true;
             this.lblalb.BackColor = System.Drawing.Color.Transparent;
             this.lblalb.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblalb.ForeColor = System.Drawing.Color.White;
             this.lblalb.Location = new System.Drawing.Point(34, 111);
             this.lblalb.Name = "lblalb";
-            this.lblalb.Size = new System.Drawing.Size(31, 19);
+            this.lblalb.Size = new System.Drawing.Size(235, 34);
             this.lblalb.TabIndex = 35;
             this.lblalb.Text = "AL";
             this.lblalb.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lblalb_MouseMove);
@@ -262,13 +258,12 @@
             // 
             // lblala
             // 
-            this.lblala.AutoSize = true;
             this.lblala.BackColor = System.Drawing.Color.Transparent;
             this.lblala.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblala.ForeColor = System.Drawing.Color.White;
             this.lblala.Location = new System.Drawing.Point(35, 59);
             this.lblala.Name = "lblala";
-            this.lblala.Size = new System.Drawing.Size(31, 19);
+            this.lblala.Size = new System.Drawing.Size(234, 32);
             this.lblala.TabIndex = 30;
             this.lblala.Text = "AL";
             this.lblala.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lblala_MouseMove);
