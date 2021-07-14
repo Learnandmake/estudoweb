@@ -17,13 +17,13 @@ namespace freitrabalho.database
         }
         public List<entity.tbpontuacao> btodos()
         {
-            List<entity.tbpontuacao> lista = banco.tbpontuacao.ToList();
+            List<entity.tbpontuacao> lista = banco.tbpontuacao.OrderBy(t => t.pontuacao).Where(t =>t.pontuacao !=0).ToList();
             return lista;
         }
        
         public List<entity.tbpontuacao> flista(string nick)
         {
-            List<entity.tbpontuacao> lista = banco.tbpontuacao.Where(t => t.nick == nick).ToList();
+            List<entity.tbpontuacao> lista = banco.tbpontuacao.OrderBy(t=>t.pontuacao).Where(t => t.nick == nick).ToList();
             return lista;
         }
         public void addpontuacao(string nick)

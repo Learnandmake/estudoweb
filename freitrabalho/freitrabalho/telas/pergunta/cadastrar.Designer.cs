@@ -29,10 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(cadastrar));
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.dvgpergunta = new System.Windows.Forms.DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.btncadastro = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -54,67 +50,19 @@
             this.txtala = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.picbarra = new System.Windows.Forms.PictureBox();
+            this.dvgpergunta = new System.Windows.Forms.DataGridView();
+            this.button2 = new System.Windows.Forms.Button();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.picclose = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.cbobuf = new System.Windows.Forms.ComboBox();
-            this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dvgpergunta)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbarra)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvgpergunta)).BeginInit();
+            this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picclose)).BeginInit();
             this.SuspendLayout();
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox4.Controls.Add(this.cbobuf);
-            this.groupBox4.Controls.Add(this.label5);
-            this.groupBox4.Controls.Add(this.button2);
-            this.groupBox4.Controls.Add(this.dvgpergunta);
-            this.groupBox4.Location = new System.Drawing.Point(225, 31);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(488, 300);
-            this.groupBox4.TabIndex = 23;
-            this.groupBox4.TabStop = false;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(65, 17);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(36, 19);
-            this.label5.TabIndex = 18;
-            this.label5.Text = "Uf:";
-            this.label5.MouseMove += new System.Windows.Forms.MouseEventHandler(this.label5_MouseMove);
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.MintCream;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.Teal;
-            this.button2.Location = new System.Drawing.Point(359, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(94, 31);
-            this.button2.TabIndex = 20;
-            this.button2.Text = "Buscar";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            this.button2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.button2_MouseMove);
-            // 
-            // dvgpergunta
-            // 
-            this.dvgpergunta.AllowUserToAddRows = false;
-            this.dvgpergunta.AllowUserToDeleteRows = false;
-            this.dvgpergunta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dvgpergunta.Location = new System.Drawing.Point(6, 49);
-            this.dvgpergunta.Name = "dvgpergunta";
-            this.dvgpergunta.ReadOnly = true;
-            this.dvgpergunta.Size = new System.Drawing.Size(478, 245);
-            this.dvgpergunta.TabIndex = 0;
-            this.dvgpergunta.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dvgpergunta_RowHeaderMouseClick);
-            this.dvgpergunta.MouseMove += new System.Windows.Forms.MouseEventHandler(this.dvgpergunta_MouseMove);
             // 
             // groupBox3
             // 
@@ -387,6 +335,46 @@
             this.picbarra.TabStop = false;
             this.picbarra.MouseMove += new System.Windows.Forms.MouseEventHandler(this.picbarra_MouseMove);
             // 
+            // dvgpergunta
+            // 
+            this.dvgpergunta.AllowUserToAddRows = false;
+            this.dvgpergunta.AllowUserToDeleteRows = false;
+            this.dvgpergunta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dvgpergunta.Location = new System.Drawing.Point(6, 49);
+            this.dvgpergunta.Name = "dvgpergunta";
+            this.dvgpergunta.ReadOnly = true;
+            this.dvgpergunta.Size = new System.Drawing.Size(478, 245);
+            this.dvgpergunta.TabIndex = 0;
+            this.dvgpergunta.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dvgpergunta_RowHeaderMouseClick);
+            this.dvgpergunta.MouseMove += new System.Windows.Forms.MouseEventHandler(this.dvgpergunta_MouseMove);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.MintCream;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.Color.Teal;
+            this.button2.Location = new System.Drawing.Point(359, 12);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(94, 31);
+            this.button2.TabIndex = 20;
+            this.button2.Text = "Buscar";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.button2_MouseMove);
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox4.Controls.Add(this.cbobuf);
+            this.groupBox4.Controls.Add(this.label5);
+            this.groupBox4.Controls.Add(this.button2);
+            this.groupBox4.Controls.Add(this.dvgpergunta);
+            this.groupBox4.Location = new System.Drawing.Point(225, 31);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(488, 300);
+            this.groupBox4.TabIndex = 23;
+            this.groupBox4.TabStop = false;
+            // 
             // picclose
             // 
             this.picclose.BackColor = System.Drawing.Color.Teal;
@@ -400,6 +388,18 @@
             this.picclose.Click += new System.EventHandler(this.picclose_Click);
             this.picclose.MouseEnter += new System.EventHandler(this.picclose_MouseEnter);
             this.picclose.MouseLeave += new System.EventHandler(this.picclose_MouseLeave);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(65, 17);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(36, 19);
+            this.label5.TabIndex = 18;
+            this.label5.Text = "Uf:";
+            this.label5.MouseMove += new System.Windows.Forms.MouseEventHandler(this.label5_MouseMove);
             // 
             // cbobuf
             // 
@@ -450,24 +450,19 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "cadastrar";
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cadastrar_MouseMove);
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dvgpergunta)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbarra)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvgpergunta)).EndInit();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picclose)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.DataGridView dvgpergunta;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btncadastrar;
@@ -480,9 +475,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtala;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox picbarra;
         private System.Windows.Forms.Button btncadastro;
-        private System.Windows.Forms.PictureBox picclose;
         private System.Windows.Forms.TextBox txtalc;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtald;
@@ -490,6 +483,12 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cbouf;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.PictureBox picbarra;
+        private System.Windows.Forms.DataGridView dvgpergunta;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox picclose;
         private System.Windows.Forms.ComboBox cbobuf;
     }
 }

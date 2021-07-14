@@ -207,6 +207,9 @@
     <EmbeddedResource Include="telas\usuario\consultarusuario.resx">
       <DependentUpon>consultarusuario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="telas\usuario\topplayer.resx">
+      <DependentUpon>topplayer.cs</DependentUpon>
+    </EmbeddedResource>
     <EntityDeploy Include="database\entity\modelentity.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>modelentity.Designer.cs</LastGenOutput>
