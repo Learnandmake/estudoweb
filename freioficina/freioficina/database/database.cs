@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,97 +9,100 @@ namespace freioficina.database
     public class database
     
     {
-        public void Inserir(model.modelfilme filme)
+        public void Inserir(model.livromodel livro)
         {
-            string script = @"insert into tbfilme (nmfilme, vlavaliacao, btdisponivel, dtestreia)
-                                            values (@nmfilme, @vlavaliacao, @btdisponivel, @dtestreia)";
+            string script = @"insert into tblivro (nmlivro, nmautor, dtlancamento, dtleitura,lido)
+                                            values (@nmlivro, @nmautor, @dtlancamento, @dtleitura,@lido)";
 
             List<MySqlParameter> parms = new List<MySqlParameter>();
-            parms.Add(new MySqlParameter("nmfilme", filme.nome));
-            parms.Add(new MySqlParameter("vlavaliacao", filme.avaliacao));
-            parms.Add(new MySqlParameter("btdisponivel", filme.disponivel));
-            parms.Add(new MySqlParameter("dtestreia", filme.dtestreia));
+            parms.Add(new MySqlParameter("nmlivro", livro.nmlivro));
+            parms.Add(new MySqlParameter("nmautor", livro.nmautor));
+            parms.Add(new MySqlParameter("dtlancamento", livro.dtlancamento));
+            parms.Add(new MySqlParameter("dtleitura", livro.dtleitura));
+            parms.Add(new MySqlParameter("lido", livro.lido));
 
             db db = new db();
             db.ExecuteInsertScript(script, parms);
         }
 
-        public List<model.modelfilme> FiltrarPorNome(string nome)
+        public List<model.livromodel> FiltrarPorid(int idlivro)
         {
-            string script = "select * from tbfilme where nmfilme like @nome";
+            string script = "select * from tblivro where idlivro like @idlivro";
 
             List<MySqlParameter> parms = new List<MySqlParameter>();
-            parms.Add(new MySqlParameter("nome", "%" + nome + "%"));
+            parms.Add(new MySqlParameter("idlivro", "%" + idlivro + "%"));
 
             db db = new db();
             MySqlDataReader reader = db.ExecuteSelectScript(script, parms);
 
-            List<model.modelfilme> lista = new List<model.modelfilme>();
+            List<model.livromodel> lista = new List<model.livromodel>();
 
             while (reader.Read())
             {
-                model.modelfilme filme = new model.modelfilme();
-                filme.idfilme = Convert.ToInt32(reader["idfilme"]);
-                filme.nome = Convert.ToString(reader["nmfilme"]);
-                filme.avaliacao = Convert.ToDecimal(reader["vlavaliacao"]);
-                filme.dtestreia = Convert.ToDateTime(reader["dtestreia"]);
-                filme.disponivel = Convert.ToBoolean(reader["btdisponivel"]);
+                model.livromodel livro= new model.livromodel();
+               livro.idlivro= Convert.ToInt32(reader["idlivro"]);
+               livro.nmlivro = Convert.ToString(reader["nmlivro"]);
+               livro.nmautor = Convert.ToString(reader["nmautor"]);
+               livro.dtlancamento = Convert.ToDateTime(reader["dtlancamento"]);
+               livro.dtleitura = Convert.ToDateTime(reader["dtleitura"]);
+               livro.lido = Convert.ToBoolean(reader["lido"]);
 
-                lista.Add(filme);
+                lista.Add(livro);
             }
             reader.Close();
 
             return lista;
         }
 
-        public List<model.modelfilme> Filtrartodos()
+        public List<model.livromodel>  Filtrartodos()
         {
-            string script = "select * from tbfilme";
+            string script = "select * from tblivro";
 
             List<MySqlParameter> parms = new List<MySqlParameter>();
             db db = new db();
             MySqlDataReader reader = db.ExecuteSelectScript(script, parms);
 
-            List<model.modelfilme> lista = new List<model.modelfilme>();
+            List<model.livromodel> lista = new List<model.livromodel>();
 
             while (reader.Read())
             {
-                model.modelfilme filme = new model.modelfilme();
-                filme.idfilme = Convert.ToInt32(reader["idfilme"]);
-                filme.nome = Convert.ToString(reader["nmfilme"]);
-                filme.avaliacao = Convert.ToDecimal(reader["vlavaliacao"]);
-                filme.dtestreia = Convert.ToDateTime(reader["dtestreia"]);
-                filme.disponivel = Convert.ToBoolean(reader["btdisponivel"]);
+                model.livromodel livro = new model.livromodel();
+                livro.idlivro = Convert.ToInt32(reader["idlivro"]);
+                livro.nmlivro = Convert.ToString(reader["nmlivro"]);
+                livro.nmautor = Convert.ToString(reader["nmautor"]);
+                livro.dtlancamento = Convert.ToDateTime(reader["dtlancamento"]);
+                livro.dtleitura = Convert.ToDateTime(reader["dtleitura"]);
+                livro.lido = Convert.ToBoolean(reader["lido"]);
 
-                lista.Add(filme);
+                lista.Add(livro);
             }
             reader.Close();
 
             return lista;
         }
-        public void delete(string nome)
+        public void delete(int idlivro)
         {
-            string script = "delete  from tbfilme where nmfilme like @nome";
+            string script = "delete  from tblivro where idlivro like idlivro ";
 
             List<MySqlParameter> parms = new List<MySqlParameter>();
-            parms.Add(new MySqlParameter("nome", "%" + nome + "%"));
+            parms.Add(new MySqlParameter("idlivro", "%" + idlivro + "%"));
 
             db db = new db();
             MySqlDataReader reader = db.ExecuteSelectScript(script, parms);
 
         }
-        public void alterar(model.modelfilme filme)
+        public void alterar(model.livromodel livro)
         {
-            string script = "update  tbfilme set nmfilme=@nmfilme,vlavaliacao=@vlavaliacao,btdisponivel=@btdisponivel,dtestreia=@dtestreia where idfilme like @idfilme";
+            string script = "update  tblivro set idlivro=@idlivro,nmlivroo=@nmlivro,nmlivro=@nmlivro,dtlancamento=@dtlancamento,dtleitura=@dtleitura,lido=@lido where idfilme like @idfilme";
 
 
             List<MySqlParameter> parms = new List<MySqlParameter>();
-            parms.Add(new MySqlParameter("idfilme", "%" + filme.idfilme + "%"));
-
-            parms.Add(new MySqlParameter("nmfilme", filme.nome));
-            parms.Add(new MySqlParameter("vlavaliacao", filme.avaliacao));
-            parms.Add(new MySqlParameter("btdisponivel", filme.disponivel));
-            parms.Add(new MySqlParameter("dtestreia", filme.dtestreia));
+            parms.Add(new MySqlParameter("idlivro", livro.idlivro));
+            parms.Add(new MySqlParameter("nmlivro", livro.nmlivro));
+            parms.Add(new MySqlParameter("nmautor", livro.nmautor));
+            parms.Add(new MySqlParameter("dtlancamento", livro.dtlancamento));
+            parms.Add(new MySqlParameter("dtleitura", livro.dtleitura));
+            parms.Add(new MySqlParameter("lido", livro.lido));
             db db = new db();
             MySqlDataReader reader = db.ExecuteSelectScript(script, parms);
         }

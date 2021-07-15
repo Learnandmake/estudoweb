@@ -10,7 +10,7 @@ namespace freioficina.model
     public string nmlivro { get; set; }
     public string nmautor { get; set; }
     public DateTime dtlancamento { get; set; }
-    public DateTime leitura { get; set; }
+    public DateTime dtleitura { get; set; }
     public bool lido { get; set; }
     }
 }
