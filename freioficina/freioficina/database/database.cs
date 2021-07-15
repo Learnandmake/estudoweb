@@ -54,7 +54,7 @@ namespace freioficina.database
             return lista;
         }
 
-        public List<model.livromodel>  Filtrartodos()
+        public List<model.livromodel>  listartodos()
         {
             string script = "select * from tblivro";
 
