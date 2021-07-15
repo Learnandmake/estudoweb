@@ -8,9 +8,10 @@ namespace freioficina.Controllers
 {
     public class LivroController : Controller
     {
-    
+
         // GET: Livro
-     
+
+        //inserir
         [HttpPost]
         public ActionResult cadastrar(model.livromodel livro)
         {
@@ -23,8 +24,32 @@ namespace freioficina.Controllers
             return View();
         }
 
+        //listar
+        public ActionResult listar()
+        {
+            bussines.bussines blivro = new bussines.bussines();
+            List<model.livromodel> lista = blivro.ltodos();
+            return View(lista);
+        }
+        //deletar
+    
+     
+         
+        public ActionResult deletar(int idlivro)
+        {
+            bussines.bussines blivro = new bussines.bussines();
+            model.livromodel lista = blivro.flivro(idlivro);
+            return View(lista);
+        }
+        [HttpPost]
+        public ActionResult deletar( model.livromodel l)
+        {
+            bussines.bussines blivro = new bussines.bussines();
+            blivro.delete(l.idlivro);
+            return View("listar");
+        }
 
-
+        //alterar
         public ActionResult alterar(int idlivro)
         {
             bussines.bussines blivro = new bussines.bussines();
@@ -40,30 +65,14 @@ namespace freioficina.Controllers
             blivro.alterar(livro);
             return View("listar");
         }
+        
+        
+
+
+
+
       
-
-
-
-
-        public ActionResult deletar(int id)
-        {
-         
-            bussines.bussines blivro = new bussines.bussines();
-            blivro.delete(id);
-            return View();
-        }
-        public ActionResult deletar()
-        {
-
-         
-            return View();
-        }
-        public ActionResult listar()
-        {
-            bussines.bussines blivro = new bussines.bussines();
-            List<model.livromodel> lista = blivro.ltodos();
-            return View(lista);
-        }
+    
 
     }
 }
