@@ -18,18 +18,32 @@ namespace freioficina.Controllers
             blivro.inserir(livro);
             return View();
         }
-        public ActionResult alterar()
+        public ActionResult cadastrar()
         {
-            model.livromodel livro = new model.livromodel();
+            return View();
+        }
+        public ActionResult alterar(model.livromodel livro)
+        {
+       
             bussines.bussines blivro = new bussines.bussines();
             blivro.alterar(livro);
             return View();
         }
-        public ActionResult deletar()
+        public ActionResult alterar()
+        {
+            return View();
+        }
+        public ActionResult deletar(int id)
         {
          
             bussines.bussines blivro = new bussines.bussines();
             blivro.delete(id);
+            return View();
+        }
+        public ActionResult deletar()
+        {
+
+         
             return View();
         }
         public ActionResult listar()
