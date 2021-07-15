@@ -14,9 +14,9 @@ namespace freioficina.bussines
             List<model.livromodel> lista = data.listartodos();
             return lista;
     }
-        public List<model.livromodel> flista(int id)
+        public model.livromodel flivro(int id)
         {
-            List<model.livromodel> lista = data.FiltrarPorid(id);
+            model.livromodel lista = data.FiltrarPorid(id);
             return lista;
         }
         public void inserir(model.livromodel livro)

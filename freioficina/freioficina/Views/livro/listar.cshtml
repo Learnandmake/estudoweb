@@ -53,9 +53,8 @@
             @Html.DisplayFor(modelItem => item.lido)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            @Html.ActionLink("Editar", "alterar", new { idlivro = item.idlivro })|
+            @Html.ActionLink("Deletar", "deletar", new { idlivro = item.idlivro })
         </td>
     </tr>
 }

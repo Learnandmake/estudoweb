@@ -25,33 +25,37 @@ namespace freioficina.database
             db.ExecuteInsertScript(script, parms);
         }
 
-        public List<model.livromodel> FiltrarPorid(int idlivro)
+        public model.livromodel FiltrarPorid(int idlivro)
         {
-            string script = "select * from tblivro where idlivro like @idlivro";
 
-            List<MySqlParameter> parms = new List<MySqlParameter>();
-            parms.Add(new MySqlParameter("idlivro", "%" + idlivro + "%"));
 
-            db db = new db();
-            MySqlDataReader reader = db.ExecuteSelectScript(script, parms);
+            MySqlConnection con = new MySqlConnection("server=localhost;database=freioficina;uid=root;pwd=");
+            con.Open();
 
-            List<model.livromodel> lista = new List<model.livromodel>();
+            MySqlCommand comand = con.CreateCommand();
+            comand.CommandText = @" select * from tblivro where idlivro = @idlivro";
 
-            while (reader.Read())
+            comand.Parameters.Add(new MySqlParameter("idlivro", idlivro));
+
+            MySqlDataReader reader = comand.ExecuteReader();
+
+            model.livromodel livros = null;
+
+            if (reader.Read())
             {
-                model.livromodel livro= new model.livromodel();
-               livro.idlivro= Convert.ToInt32(reader["idlivro"]);
-               livro.nmlivro = Convert.ToString(reader["nmlivro"]);
-               livro.nmautor = Convert.ToString(reader["nmautor"]);
-               livro.dtlancamento = Convert.ToDateTime(reader["dtlancamento"]);
-               livro.dtleitura = Convert.ToDateTime(reader["dtleitura"]);
-               livro.lido = Convert.ToBoolean(reader["lido"]);
-
-                lista.Add(livro);
+                livros = new model.livromodel();
+                livros.idlivro = Convert.ToInt32(reader["idlivro"]);
+                livros.nmlivro = Convert.ToString(reader["nmlivro"]);
+                livros.nmautor = Convert.ToString(reader["nmautor"]);
+                livros.dtlancamento = Convert.ToDateTime(reader["dtlancamento"]);
+                livros.dtleitura = Convert.ToDateTime(reader["dtleitura"]);
+                livros.lido = Convert.ToBoolean(reader["lido"]);
             }
-            reader.Close();
+            con.Close();
 
-            return lista;
+            return livros;
+
+
         }
 
         public List<model.livromodel>  listartodos()
@@ -93,7 +97,7 @@ namespace freioficina.database
         }
         public void alterar(model.livromodel livro)
         {
-            string script = "update  tblivro set idlivro=@idlivro,nmlivroo=@nmlivro,nmlivro=@nmlivro,dtlancamento=@dtlancamento,dtleitura=@dtleitura,lido=@lido where idfilme like @idfilme";
+            string script = "update tblivro set idlivro=@idlivro,nmlivro=@nmlivro,nmautor=@nmautor,dtlancamento=@dtlancamento,dtleitura=@dtleitura,lido=@lido where idlivro like @idlivro";
 
 
             List<MySqlParameter> parms = new List<MySqlParameter>();

@@ -22,17 +22,29 @@ namespace freioficina.Controllers
         {
             return View();
         }
+
+
+
+        public ActionResult alterar(int idlivro)
+        {
+            bussines.bussines blivro = new bussines.bussines();
+            model.livromodel lista = blivro.flivro(idlivro);
+            return View(lista);
+        }
+
+        [HttpPost]
         public ActionResult alterar(model.livromodel livro)
         {
        
             bussines.bussines blivro = new bussines.bussines();
             blivro.alterar(livro);
-            return View();
+            return View("listar");
         }
-        public ActionResult alterar()
-        {
-            return View();
-        }
+      
+
+
+
+
         public ActionResult deletar(int id)
         {
          
