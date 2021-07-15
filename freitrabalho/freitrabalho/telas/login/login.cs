@@ -84,11 +84,11 @@ namespace freitrabalho.telas.login
         {
 
                 string nick = Convert.ToString(txtnickusuario.Text);
-                string senha1 = Convert.ToString(txtnickusuario.Text);
+                string senha1 = Convert.ToString(txtsenha.Text);
                 nick.Trim();
-                senha1.Trim();
-                nick.ToLower();
                 senha1.ToLower();
+                nick.ToLower();
+                senha1.Trim();
              
                 function.criptografia criptografia = new function.criptografia();
                 bussines.bussineslogin blogin = new bussines.bussineslogin();
@@ -101,7 +101,7 @@ namespace freitrabalho.telas.login
                  string senha2 = criptografia.gerarmd5(senha1);
 
                 usuario = busuario.buscaridpornick(nick);
-                login = blogin.fazerlogin(nick, senha2);
+                login = blogin.fazerlogin(nick,senha2);
                 pontuacao = bpontuacao.buscarpontuacaopnick(usuario.nick);
                 string pontuacaof = Convert.ToString(pontuacao.pontuacao);
                 if (login != null)
