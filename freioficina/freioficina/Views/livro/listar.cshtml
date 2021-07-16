@@ -53,8 +53,8 @@
             @Html.DisplayFor(modelItem => item.lido)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { idlivro = item.idlivro}) |
-            @Html.ActionLink("Delete", "Delete", new { idlivro = item.idlivro })
+            @Html.ActionLink("Edit", "alterar", new { idlivro = item.idlivro}) |
+            @Html.ActionLink("Delete", "deletar", new { idlivro = item.idlivro })
         </td>
     </tr>
 }
