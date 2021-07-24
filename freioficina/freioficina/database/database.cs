@@ -85,8 +85,11 @@ namespace freioficina.database
         }
         public void delete(int idlivro)
         {
-            string script = "delete  from tblivro where idlivro like idlivro ";
+            MySqlConnection con = new MySqlConnection("server=localhost;database=freioficina;uid=root;pwd=");
+            con.Open();
 
+            string script = "delete  from tblivro where idlivro like idlivro ";
+            MySqlCommand comand = con.CreateCommand();
             List<MySqlParameter> parms = new List<MySqlParameter>();
             comand.Parameters.Add(new MySqlParameter("idlivro", idlivro));
            

@@ -139,31 +139,19 @@
                 color: #fff;
             }
     </style>
-
 </head>
 <body>
-    <a href="" class="logo">Readerbook</a>
-    <ul>
-        <li><a href="">Home</a></li>
-        <li>@Html.ActionLink("Cadastrar", "cadastrar", "livro")</li>
-        <li>@Html.ActionLink("Consultar", "listar", "livro")</li>
-        
-    </ul>
-    <
+            <header>
+                <a href="" class="logo">Readerbook</a>
+                <ul>
 
-    </ul>
-    </div>
-    </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-
-
-
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Nois aqui dnovo</p>
-        </footer>
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Cadastrar", "cadastrar", "livro")</li>
+                    <li>@Html.ActionLink("Consultar", "listar", "livro")</li>
+                </ul>
+            </header>
+    <div >
+        @RenderBody()    
     </div>
 
     @Scripts.Render("~/bundles/jquery")
