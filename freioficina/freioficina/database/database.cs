@@ -88,7 +88,8 @@ namespace freioficina.database
             string script = "delete  from tblivro where idlivro like idlivro ";
 
             List<MySqlParameter> parms = new List<MySqlParameter>();
-            parms.Add(new MySqlParameter("idlivro", "%" + idlivro + "%"));
+            comand.Parameters.Add(new MySqlParameter("idlivro", idlivro));
+           
 
             db db = new db();
             MySqlDataReader reader = db.ExecuteSelectScript(script, parms);
