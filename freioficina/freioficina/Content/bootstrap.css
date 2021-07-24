@@ -314,7 +314,7 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 1.428571429;
-    color: #fff;
+    color: white;
     background-color: #fff;
 }
 
@@ -341,7 +341,7 @@ a {
 
 a:hover,
 a:focus {
-  color: #2a6496;
+  color: #ff;
   text-decoration: underline;
 }
 
