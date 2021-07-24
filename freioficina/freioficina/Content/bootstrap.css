@@ -315,7 +315,7 @@ body {
     font-size: 14px;
     line-height: 1.428571429;
     color: #fff;
-    background-color: #ffffff;
+    background-color: #fff;
 }
 
 input,
@@ -335,7 +335,7 @@ textarea {
 }
 
 a {
-  color: #428bca;
+  color: #fff;
   text-decoration: none;
 }
 
