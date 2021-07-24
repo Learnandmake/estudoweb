@@ -4,11 +4,9 @@
     ViewBag.Title = "listar";
 }
 
-<h2>listar</h2>
+<h2>Livros</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
+
 <table class="table">
     <tr>
         <th>
@@ -55,8 +53,8 @@
                     @Html.DisplayFor(modelItem => item.lido)
                 </td>
                 <td>
-                    @Html.ActionLink("Edit", "alterar", new { idlivro = item.idlivro }) |
-                    @Html.ActionLink("Delete", "deletar", new { idlivro = item.idlivro })
+                    @Html.ActionLink("Editar", "alterar", new { idlivro = item.idlivro }) |
+                    @Html.ActionLink("Deletar", "deletar", new { idlivro = item.idlivro })
                 </td>
             </tr>
         }
