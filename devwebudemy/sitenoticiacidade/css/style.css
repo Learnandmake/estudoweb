@@ -130,6 +130,24 @@ cursor:text;
     margin: 0 0 20px -750px;
 }
 
+#lateral ul a 
+{
+    font-size:0.9em;
+    padding:3px;
+    display: block;
+    line-height: 30px;
+    color: #000;
+    text-decoration: none;
+    border-bottom:1px solid #f3f3f3;
+}
+
+#lateral ul a:hover
+{
+    background: #f9f9f9 url(https://lh3.googleusercontent.com/pw/AM-JKLUo1FGrujHeTA0vppXF0a1wbVvq3ZD-9UhBHq81snbHvBPmaYxOgXsCVzjC_0S-zQfdlKpAc72HggBK3Pt9_iySxtQKogNHbaDb5SB4giv6FrULO5jSyUX-JJh5Z7zm19VaBm23nRHsfLWDo2JQKfw=w17-h10-no?authuser=7) no-repeat left;
+    padding-left:20px;
+    color:#a1a1a1;
+}
+
 #container-rodape
 {
     background: #294c71;
@@ -161,4 +179,26 @@ h2
     background: #fff;
     padding:5px;
     margin-top:5px;
+}
+
+label
+{
+    display: block;
+    cursor:pointer;
+}
+
+input
+{
+ padding: 5px;
+ width: 125px;
+ font-size: 0.9em;
+ background-color: #fff;    
+}
+
+input.submit
+{
+    width: 80px;
+    color:#fff;
+    background-color: #b10333;
+    border:2px solid #870529;
 }
