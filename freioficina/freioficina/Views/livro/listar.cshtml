@@ -4,11 +4,8 @@
     ViewBag.Title = "listar";
 }
 
-<h2>listar</h2>
+<h2>Livros</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
 <table class="table">
     <tr>
         <th>
@@ -31,32 +28,37 @@
         </th>
         <th></th>
     </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.idlivro)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.nmlivro)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.nmautor)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.dtlancamento)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.dtleitura)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.lido)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "alterar", new { idlivro = item.idlivro}) |
-            @Html.ActionLink("Delete", "deletar", new { idlivro = item.idlivro })
-        </td>
-    </tr>
-}
+    @try
+    {
+        foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.idlivro)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nmlivro)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nmautor)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.dtlancamento)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.dtleitura)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.lido)
+                </td>
+                <td>
+                    @Html.ActionLink("Editar", "alterar", new { idlivro = item.idlivro }) |
+                    @Html.ActionLink("Deletar", "deletar", new { idlivro = item.idlivro })
+                </td>
+            </tr>
+        }
+    }
+    catch(Exception)
+    { }
 
 </table>
