@@ -1,0 +1,31 @@
+*
+{
+    margin:0;
+    padding:0;
+}
+
+body
+{
+    font-family: "Trebuchet MS",Helvetica,sans-serif;
+    background: #fff url('https://lh3.googleusercontent.com/pw/AM-JKLWq3XgaFZr36ohqjqyrRF6tK2gE1atXQvKFlJHRF09TWNGPZ1CC5IDhNycFHoOuunjXcCf_xkOCd2NVW-qQS6FQD4U8TJjxf8xlu8eIpd-aLgX3-Pq8PuaOZQou8Fgn2kxqPZAyMUO1Ilgg_Esqkfo=w258-h233-no?authuser=7')repeat-x;
+}
+
+#container
+{
+    width: 750px;
+    margin:0 auto;  
+}
+
+#topo
+{
+    height:150px;
+   padding-top:25px;
+    background: url('https://lh3.googleusercontent.com/pw/AM-JKLWap5f3hA2WNvgyAnl9DG7CDl1Fs_MFdic7rydQAbIuiDcwAZx7kFjw3nlyBI9Hos8MPN3xzVCNVoqdesuKNavSF5h5-kaDo5RFFmHeD_itQDnnB7Bol-k7qtcLjTc8v949KPSVdbsfXbpsOJrUOpo=w176-h179-no?authuser=7') no-repeat right top;
+}
+.logo
+{
+    width: 152px;
+    height: 66px;
+    background: url('https://lh3.googleusercontent.com/pw/AM-JKLWu-oD6iklv5LP_EnmGND9ag3gD2q-XaM8wWiPWrCGCbUY5CXXD7atiFWEBJFXU89Z1gdpp4XFSjeYuKG_tUl4B7fl8PodZEyOYG-i-uFo_4X7fhl-k_h9vbY13GdjWYsLMJkxWyo_L1FotsrMkuCU=w152-h66-no?authuser=7') no-repeat center;
+    text-indent:-3000px;
+}
