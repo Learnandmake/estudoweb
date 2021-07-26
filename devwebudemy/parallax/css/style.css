@@ -1,0 +1,95 @@
+
+body,html
+{
+    margin:0;
+    font:16px "lato", sans-serif;
+    color:#777;
+    height: 100%;
+}
+.conteudo
+{
+    color:#777;
+    background-color: white;
+    text-align: justify;
+    padding:50px 80px;
+}
+h3
+{
+    text-transform: uppercase;
+    color:#111;
+    text-align: center;
+}
+
+p
+{
+margin-bottom: 20px;
+}
+/* efeito parallax*/
+.caixa1,.caixa2,
+.caixa3,.caixa4,
+.caixa5,.caixa6
+{
+position: relative;
+opacity: 0.7;
+height: 100%;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+}
+
+.caixa1
+{
+    background-image: url(https://lh3.googleusercontent.com/pw/AM-JKLVN0WkK7hJ6pw7na64KIjsSKLgmQf7vjE1amYTK4tl09lV0HcthcGaU6smSjdjzKCMxAETRCKajAfzBRqvSmdNv37evsnoZTb0cyTSKVFfe24Kln6fc1u7O4d9wTD26EO5H6imdc8gRlsj_lJnl-Gk=w938-h625-no?authuser=7);
+}
+
+.caixa2
+{
+    background-image: url(https://lh3.googleusercontent.com/pw/AM-JKLW1yLjHllYv1Q_8WlRdKi5n7Mo_TCbStBqOZSvwjGGLl7MHxrGELobb66ClTkvNkOtqLGeCDQEPljiD5cRCU5Iz-Kgi7pdORo-wCwxeZxmIwm7czbmSJn8oSnueQkhVvfqmTgoufYeADWz2hpFqAJ0=w938-h625-no?authuser=7);
+}
+
+.caixa3
+{
+    background-image: url(https://lh3.googleusercontent.com/pw/AM-JKLUI5rzef6k1iIkyntgQJzeG28YOaxTSCNNH8HOGxLa8CUomcD4O4iqDLSpXwd-ihFEthax9p--CvmvcgNHRVs3OWV9ymuDUuzA1Z1rgzrziRo2rqWikn3cX_Kt7r7lbnzQ6rWEApzi9R77weVe_pdU=w938-h625-no?authuser=7);
+}
+
+.caixa4
+{
+    background-image: url(https://lh3.googleusercontent.com/pw/AM-JKLXH9MJ3pwcHIyvYfGsuoN26l3PHajHfsEVp4uZsgUU_2qBHYuY3cBPTNLAqUPeY3g2F7woZOuChoVAVQm40KtoGq9iFOpChB15VDnL6j0cSnhDDsc5LDyrROffapfOloiVBKWv1MWinnkkWCFv2_Y4=w936-h625-no?authuser=7);
+}
+
+.caixa5
+{
+    background-image: url(https://lh3.googleusercontent.com/pw/AM-JKLWZMYXdQT6D3-NrW0KdWRF7P-nYYdiqqCQpi3rBVgpTot7Yj8VfdQqeT6lM_5wf2rvi21hq9e03pWRlfC7YQ1cRS_eFeGDEmZAcUmVVqDyidU_gvUFtxz-x-5zy7SeSTXe47fh3pU23emj415V-hk8=w1024-h461-no?authuser=7);
+}
+
+.caixa6
+{
+    background-image: url(https://lh3.googleusercontent.com/pw/AM-JKLVvNxurDTTX36vkj0R2M77Qf6USbARqBvt6yEbNfX4wLCKjx17ynSli2gQUd00VIaNOsfCG-2oWOkmwGRk0VFFjwfshXI1w_9Zcw8wEu3UiYAYbWsYbzrgWp95hDu6XSuwMfIy-5k7hTu9v95634FA=w932-h625-no?authuser=7);
+}
+
+.rodape
+{
+    text-align: center;
+    clear:both;
+    padding:16px;
+    background: #fff;
+}
+
+.conteudo-titulo
+{
+    position: absolute;
+    left: 0;
+    top:45%;
+    width: 100%;
+    text-align: center;
+}
+
+.conteudo-titulo span.titulo
+{  
+    color:#fff;
+    background-color:#111;
+    padding:18px;
+    font-size:25px;
+    letter-spacing: 5px;
+}
