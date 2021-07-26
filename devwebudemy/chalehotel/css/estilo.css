@@ -160,4 +160,52 @@ background: #fdf6be;
 #rodape
 {
     clear:both;
+    padding:16px;
+    background: #fff url(https://lh3.googleusercontent.com/pw/AM-JKLVvAMGgx_c-dJT58QCof535rgDj8t88B8BlEgqPflHG1aqcVnLP_HxOsJjoOEe0wXppCk8-hNQnF5YYursutl0ivghbOa5iBdbHe24xh9uMS-RZrGUidBzkBTWH8qdod55GFEkbAaXcigR6NoTbh8A=w70-h6-no?authuser=7) repeat-x top;
+    color:#7d7640;
+}
+
+h2
+{
+    color:#7d7640;
+    font-size:1.1em;
+    padding:5px 0px;
+}
+
+p
+{
+font-size:1em;
+margin-bottom:10px;
+}
+
+#beneficios li
+{
+    padding:8px;
+    border-bottom: 1px solid #f3efcb;
+    height: 6em;
+}
+#beneficios li a img
+{
+    float:left;
+    margin-right: 8px;
+}
+
+#beneficios li a p 
+{
+    color:#000;
+    font-size:0.8em;
+}
+
+#beneficios li a h3
+{
+    font-size:1em;
+    color:#615b2d;
+    padding:5px 0;
+    background: url(https://lh3.googleusercontent.com/pw/AM-JKLV0x-HsfyBP1WXsDmle4wnlkX7ivcxhlb9kv5PjjVxjKBkdYyzEZmPZ1C0TdxhtuPSz0izanrnFNSqwNevtV1IljApiKcyW9gSeQTqFuC_5i8QZXrFlg220GhwT78VSyeyWdzPPzKrrZO71AwMGCsw=w50-h20-no?authuser=7) no-repeat center right;
+}
+
+#beneficios li:hover
+{
+    background: #f6f3d6;
+    cursor:pointer;
 }
