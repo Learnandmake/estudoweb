@@ -1,0 +1,52 @@
+<html>
+    <head>
+<title>Boxsizing-e borderadius</title>
+<style>
+    #caixa
+    {
+        width:300px;
+        height:300px;
+        background: #b9c941;
+        padding:10px;
+        /*border-radius define o arredondamento da caixa*/
+        border-radius: 150px;
+        /*150 px no border-radius causa arredondamento total na figura*/
+        margin: 10px;
+        /* e possivel colocar o arredondamento e cada um dos cantos8*/
+       /* alguns browsers nao suporta o border radius sendo assim usa-se prefixos */
+
+       /*google:webkit-border-radius mozilla: -mox-border-radius*/
+       /*padding passa a fazer parte do tamanho total da caixa de text*/
+       /*box-sizing:boder-box=(define o um tamanho definitivo para a caixa de texto apartir do width e height)*/
+
+    }
+    #caixa2
+    {
+        width:400px;
+        height:300px;
+        background: #b9c941;
+        box-sizing: border-box;
+    }
+    .arredondamento
+    {
+        border-radius: 20px 90px;
+
+    }
+
+
+</style>
+        <meta charset="utf-8">
+    </head>
+    <body>
+<div id=caixa>
+    <h1>titulo</h1>
+    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+<div id=caixa2>
+    <h1>titulo</h1>
+    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+
+<img class="arredondamento" width="300" src="https://lh3.googleusercontent.com/pw/AM-JKLUQ2a2i2kHgrdiuS061jnx12YgljR8It2kfGbv5ZPJllXhJmxhlyhbhjpG38PQcFwmnDE75IglalfBcvZ0YhTL7QsfGxGsGqizeLcFj3EOrqjRqSIoeAjaApK3TLoakIy84NGD7b5mIewFI5199rjs=w640-h425-no?authuser=7">
+    </body>
+</html>
