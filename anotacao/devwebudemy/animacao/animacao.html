@@ -1,26 +1,55 @@
 <html>
     <head>
-        <title>degradeetransparencia</title>
+        <title>animacao</title>
    <meta charset="utf-8">
    <style>
+       /*funcao*/ /*nome*/
+       @keyframes animacao-caixa
+       {
+           from 
+           {
+            /*estado inicial*/
+            background:red;
+            border-radius: 0px;
+            top:0px;
+            left:0px;
+           }
+           to
+           {
+            /*estado final*/
+            background:yellow;
+            border-radius: 300px;
+            top:200px;
+            left:200px;
+           }
+       }
 #caixa
 {
     width:300px;
     height:300px;
-  
+  background:red;
+  position:relative;
+  /*instancia de animacao*/
+  animation-name:animacao-caixa;
+   /*tempo de animacao*/
+  animation-duration: 5s;
+  /*tempo de delay */
+  animation-delay: 3s;
+  /*contagem de repeticao da animacao*/
+  animation-iteration-count: infinite;
+/*direcao da animacao*/
+  animation-direction: alternate;
+  /*animacao toda em uma linha*/
+  animation:animacao-caixa 5s 3s alternate;
 }
-#caixa h1
-{
-  
-}
+/* podemos usar prefixos tbm: exe:@wimacaebkit-animationname{}*/
 /*link animacao:https://www.w3schools.com/css/css3_animations.asp*/
 /*link animacao direcao:https://www.w3schools.com/cssref/css3_pr_animation-direction.asp*/
    </style>
     </head>
     <body>
 <div id=caixa>
-    <h1>titulo</h1>
-    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
 </div>
     </body>
 </html>
