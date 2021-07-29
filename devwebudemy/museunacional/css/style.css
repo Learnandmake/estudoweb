@@ -10,6 +10,11 @@ body
     margin:0 auto;
 }
 
+#logo h1
+{
+    float: left;
+}
+
 #logo a
 {
     width:248px;
@@ -48,6 +53,7 @@ a:hover
 
 nav ul li a:link
 {
+    
     display: block;
     margin-right: 25px;
     padding-bottom:3px;
@@ -57,4 +63,87 @@ nav ul li a:link
 nav ul li a:hover
 {
     border-bottom:1px solid #535858;
+}
+
+#conteudo
+{
+    width:710px;
+    float:left;
+    background: green;   
+  
+}
+
+aside
+{
+    width: 350px;
+    float:right;
+    background:#ebe7dd;
+    padding-bottom: 30px;
+}
+
+section#visita
+{
+    background: #cdc8b1;
+    padding: 10px 27px 27px 27px;
+    margin-top:10px;
+}
+
+section#galeria
+{
+    padding: 0 27px 0 27px;
+}
+
+section#galeria a
+{
+    display: block;
+    background:url(https://lh3.googleusercontent.com/pw/AM-JKLUJ0GU2AQxcm4T74y9YbYkZGANEP0KumN0Bu3ZBm3--v_AsbDksFhr5SPSZMhhgHUfsrUlzH3l6c9CM4CzstlyOCnP1l1xENeODncQaMAzAT_0v__kH18aHVw3f5JRityen95vLuAqcnIuySZjLQTGR=w126-h133-no?authuser=7) no-repeat;
+    float:left;
+    padding:17px 15px 17px 15px;
+    margin:10px 0 0 20px;
+}  
+
+section#galeria img
+{
+    margin-left: 2px;
+    margin-top: 3px;
+}
+
+h4
+{
+    color:#86521a;
+    text-transform: uppercase;
+    padding-bottom: 3px;
+    margin-bottom: 0;
+}
+
+input
+{
+    height: 20px;
+    width:80px;
+    background: #fff;
+    border:none;
+    font-size:1em;
+}
+input.campo
+{
+    border:1px solid #ada484;
+}
+
+input.botao
+{
+background:#9b9271;
+color:white;
+width: 100%;
+height: 40px;
+font-size: 1.2em;
+}
+
+fieldset
+{
+    border:none;
+}
+
+legend
+{
+    display:none
 }
