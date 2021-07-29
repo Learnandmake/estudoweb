@@ -1,0 +1,60 @@
+body
+{
+    background:#f4f2ec url(https://lh3.googleusercontent.com/pw/AM-JKLUIEcP5JkfxlxiapOq7vWP1ljoGb3hvniH05sC2_f4TRaJL9A3t3OxL-tQVaSM9W5GRhFDDFNfTsxtV63OQUfr6s3XdyGvPlG8Ue_0qd94JYCCbwp01VObsnIhqWfYsFBjsy8HcQE3GCPDft_wBKQtm=w82-h158-no?authuser=7)repeat-x;
+    font:12px "Lucida Grande","Lucida Sans Unicode", Arial,sans-serif;  
+}
+
+#container
+{
+    width:1080px;
+    margin:0 auto;
+}
+
+#logo a
+{
+    width:248px;
+    height: 21px;
+    text-indent: -9999px;
+    display: block;
+    background: url(https://lh3.googleusercontent.com/pw/AM-JKLUtC4qbHC7JzhFVS2-N6andXlXwe8HORnh_ITk-W20uXAoDWzowc5JbClI97Qks4s9MZqPF9Y8w7d5NE5x0GMf2xYVtje00bc_i8F_GcobL0f3Y6RdGvDs1FZ2j--1oNIA8DkzuQzKKeWsgTJ7aaAsg=w248-h21-no?authuser=7)no-repeat;
+}
+header
+{
+    padding:15px 0;
+    height: 55px;
+}
+nav ul
+{
+    list-style: none;
+    margin:20px;
+    float:right;
+}
+
+nav ul li
+{
+    float: left;
+}
+
+a:link, a:active, a:visited
+{
+    color:#af670a;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color:#227115;
+}
+
+nav ul li a:link
+{
+    display: block;
+    margin-right: 25px;
+    padding-bottom:3px;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover
+{
+    border-bottom:1px solid #535858;
+}
