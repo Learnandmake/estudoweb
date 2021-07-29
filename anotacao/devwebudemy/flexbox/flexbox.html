@@ -1,12 +1,86 @@
 <html>
 <head>
 <style>
+#conteudo
+{
+    background:#dcdcdc;
+    height:400px;
+    /*flex torna items flexiveis*/
+    display:flex;
+    /*podemos alterar a direcao da flexibilidade*/
+    flex-direction: row-reverse;
+    /*flex wrap define quebra de layout*/
+    /*nowrap tira a quebra de layout */
+    /*wrap quebra o layout*/
+    /*wrap-reverse redefine a ordem de quebra o layout*/
+    flex-wrap: nowrap;
+    /*justify content e uma propriedade que alinha os items*/
+    justify-content: space-around;
+    /*alinha items*/
+    align-items:baseline;
+  /*link flex-direction:https://www.w3schools.com/cssref/css3_pr_flex-direction.asp*/
+  /*link flex wrap:https://www.w3schools.com/cssref/css3_pr_flex-wrap.asp*/
+  /*link justify content:https://www.w3schools.com/cssref/css3_pr_justify-content.asp*/
+  /*link  align items:https://www.w3schools.com/cssref/css3_pr_align-items.asp*/
+  /*link compatibilidade:https://caniuse.com/?search=flexbox*/
+  /*link autoprefixer:https://autoprefixer.github.io/*/
+  /*link compatibilidade ie:https://github.com/jonathantneal/flexibility*/
+}
 
+/*modifica a ordem dos elementos*/
+.ordem1
+  {
+      order:1;
+  }
+  .ordem2
+  {
+      order:2;
+  }
+  .ordem2
+  {
+      order:3;
+  }
+  .ordem4
+  {
+      order:-1;
+  }
+
+.item
+{
+    width: 100px;
+    height:100px;
+    margin: 10px;
+    background:white;
+    border:1px solid gray;
+    /*define a ordem de crescimento dos items*/
+  /*valor 0 deifne o valor padrao de tamanho */
+    flex-grow: 0;
+    /*flex-shrink propriedade que faz encolher*/
+    flex-shrink: 1;
+    /*flex-basis: define o tamanho inicial dos items*/
+    flex-basis: 500px;
+}
+.item1
+{
+    flex-grow: 1;
+}
+.item3
+{
+    flex-shrink: 5;
+}
 </style>
+<title>flexbox</title>
 <meta charset="utf-8">
 </head>
 
 <body>
- 
+ <h1 id="flexbox">Flexbox
+ </h1>
+ <div id=conteudo >
+     <div class="item " >01</div>
+     <div class="item ">02</div>
+     <div class=item>03</div>
+     <div class="item ordem4">04</div>
+ </div>
 </body>
 </html>
