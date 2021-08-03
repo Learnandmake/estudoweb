@@ -1,0 +1,86 @@
+
+<html>
+    <head>
+        <link rel ="stylesheet" type="text/css" href="style.css">
+    </head>
+<body>
+    <header>
+        <h1 class="title">play-on-screen.js</h1>
+        <i class="arrow fa fa-arrow-down fa-2x"></i>
+      </header>
+      
+      <div class="box from-bottom js-play-on-screen"></div>
+      
+      <div class="wrapper from-bottom js-play-on-screen">
+        <div class="box box--inline"></div>
+        <div class="box box--inline"></div>
+        <div class="box box--inline"></div>
+      </div>
+      
+      <div class="wrapper from-bottom js-play-on-screen">
+        <div class="box box--inline"></div>
+        <div class="box box--inline"></div>
+      </div>
+      
+      <div class="box from-bottom js-play-on-screen"></div>
+      
+      <div class="wrapper from-bottom js-play-on-screen">
+        <div class="box box--inline"></div>
+        <div class="box box--inline"></div>
+        <div class="box box--inline"></div>
+      </div>
+      
+      <div class="box from-bottom js-play-on-screen"></div>
+      
+      <div class="wrapper from-bottom js-play-on-screen">
+        <div class="box box--inline"></div>
+        <div class="box box--inline"></div>
+        <div class="box box--inline"></div>
+      </div>
+      
+      <div class="wrapper from-bottom js-play-on-screen">
+        <div class="box box--inline"></div>
+        <div class="box box--inline"></div>
+      </div>
+      
+      <div class="wrapper from-bottom js-play-on-screen">
+        <div class="box box--inline"></div>
+        <div class="box box--inline"></div>
+      </div>
+      
+      <div class="wrapper from-bottom js-play-on-screen">
+        <div class="box box--inline"></div>
+        <div class="box box--inline"></div>
+      </div>
+
+
+      <script>
+
+const throttle = _.throttle;
+
+
+const players = 
+    Array.from(document.querySelectorAll('.js-play-on-screen'));
+
+
+function isOnScreen(el) {
+    let rect = el.getBoundingClientRect() 
+    return rect.top > 0 && rect.bottom < window.innerHeight;
+}
+
+function playAnimation(el) {
+    if(isOnScreen(el)) el.style.animationPlayState = 'running';
+}
+
+
+const render = throttle(() => players.forEach(playAnimation), 150);
+
+render();
+window.addEventListener('scroll', render);
+
+      </script>
+</body>
+</html>
+
+
+
