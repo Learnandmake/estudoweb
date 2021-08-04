@@ -1,62 +1,60 @@
 
 <html>
     <head>
-        <link rel ="stylesheet" type="text/css" href="style.css">
+      <script src=”https://cdn.jsdelivr.net/lodash/4.16.4/lodash.min.js”></script>
+      <link rel=stylesheet type=text/css href=style.css>
     </head>
 <body>
-    <header>
-        <h1 class="title">play-on-screen.js</h1>
-        <i class="arrow fa fa-arrow-down fa-2x"></i>
-      </header>
-      
-      <div class="box from-bottom js-play-on-screen"></div>
-      
-      <div class="wrapper from-bottom js-play-on-screen">
-        <div class="box box--inline"></div>
-        <div class="box box--inline"></div>
-        <div class="box box--inline"></div>
-      </div>
-      
-      <div class="wrapper from-bottom js-play-on-screen">
-        <div class="box box--inline"></div>
-        <div class="box box--inline"></div>
-      </div>
-      
-      <div class="box from-bottom js-play-on-screen"></div>
-      
-      <div class="wrapper from-bottom js-play-on-screen">
-        <div class="box box--inline"></div>
-        <div class="box box--inline"></div>
-        <div class="box box--inline"></div>
-      </div>
-      
-      <div class="box from-bottom js-play-on-screen"></div>
-      
-      <div class="wrapper from-bottom js-play-on-screen">
-        <div class="box box--inline"></div>
-        <div class="box box--inline"></div>
-        <div class="box box--inline"></div>
-      </div>
-      
-      <div class="wrapper from-bottom js-play-on-screen">
-        <div class="box box--inline"></div>
-        <div class="box box--inline"></div>
-      </div>
-      
-      <div class="wrapper from-bottom js-play-on-screen">
-        <div class="box box--inline"></div>
-        <div class="box box--inline"></div>
-      </div>
-      
-      <div class="wrapper from-bottom js-play-on-screen">
-        <div class="box box--inline"></div>
-        <div class="box box--inline"></div>
-      </div>
+   <header>
+  <h1 class="title">play-on-screen.js</h1>
+  <i class="arrow fa fa-arrow-down fa-2x"></i>
+</header>
 
+<div class="box from-bottom js-play-on-screen"></div>
 
-      <script>
+<div class="wrapper from-bottom js-play-on-screen">
+  <div class="box box--inline"></div>
+  <div class="box box--inline"></div>
+  <div class="box box--inline"></div>
+</div>
 
-const throttle = _.throttle;
+<div class="wrapper from-bottom js-play-on-screen">
+  <div class="box box--inline"></div>
+  <div class="box box--inline"></div>
+</div>
+
+<div class="box from-bottom js-play-on-screen"></div>
+
+<div class="wrapper from-bottom js-play-on-screen">
+  <div class="box box--inline"></div>
+  <div class="box box--inline"></div>
+  <div class="box box--inline"></div>
+</div>
+
+<div class="box from-bottom js-play-on-screen"></div>
+
+<div class="wrapper from-bottom js-play-on-screen">
+  <div class="box box--inline"></div>
+  <div class="box box--inline"></div>
+  <div class="box box--inline"></div>
+</div>
+
+<div class="wrapper from-bottom js-play-on-screen">
+  <div class="box box--inline"></div>
+  <div class="box box--inline"></div>
+</div>
+
+<div class="wrapper from-bottom js-play-on-screen">
+  <div class="box box--inline"></div>
+  <div class="box box--inline"></div>
+</div>
+
+<div class="wrapper from-bottom js-play-on-screen">
+  <div class="box box--inline"></div>
+  <div class="box box--inline"></div>
+</div>
+<script>
+    const throttle = _.throttle;
 
 
 const players = 
@@ -77,8 +75,8 @@ const render = throttle(() => players.forEach(playAnimation), 150);
 
 render();
 window.addEventListener('scroll', render);
-
-      </script>
+</script>
+     
 </body>
 </html>
 
