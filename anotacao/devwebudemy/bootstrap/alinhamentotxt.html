@@ -1,0 +1,97 @@
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+  <!--area de visualizacao --><!--larg total do disp --><!--escala padrao de zoom --><!--Encolhe items em dispositivos--> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!--tipo de arquivo -->    <!--link (nesse caso uso cdn)-->                                             <!--chave de associação para conseguir carregar o site de outro local (pasta) so para via cdn-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Bootstrap - Alinhamento de textos</title>
+</head>
+
+<body style="margin-bottom: 200px;padding: 16px;">
+
+
+  <!-- Parágrafo justificado -->
+  <!-- preenche toda a linha -->
+  <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.</p>
+
+  <br>
+  <br>
+ <!--   tela: sm, md, lg, xl 
+              sm>-1200px
+              md>-992px
+              lg>-768px
+              sm>-576px
+ -->
+
+  <!-- 
+      Alinhamento responsivo - 
+      class text-<tela>-<alinhamento>
+          tela: sm, md, lg, xl
+          alinhamento: left, center, right
+   -->
+ <!-- alinhamento ocasional de acordo com o tamanho da tela-->
+  <p class="text-sm-center">tela &gt;= 576px</p><!--Small-->
+  <p class="text-md-center">tela &gt;=  768px</p><!--Medium-->
+  <p class="text-lg-center">tela &gt;= 992px</p><!--Large-->
+  <p class="text-xl-center">tela &gt;= 1200px</p><!--Extra Large-->
+
+  <br>
+  <br>
+
+  <!-- Elemento Block para inline -->
+  <!--sem o d-inline ele ocupa a linha toda -->
+  <!--com o d-inline ele ocupa o espeço do texto -->
+  <h1 class="bg-success d-inline">Lorem ipsum dolor</h1>
+  <p class="bg-success d-inline">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+  <br>
+  <br>
+
+  <!-- Elemento Inline para Block -->
+  <!-- inversao de valores (inline se tranforma em tipo block) -->
+  <span class="bg-success d-block">Lorem ipsum dolor 1</span>
+  <br>
+  <span class="bg-success d-block">Lorem ipsum dolor 2</span>
+
+  <br>
+  <br>
+
+  <!-- Elemento Inline-Block -->
+  <!--converte elementos inline(mesma linha) para block(cada elemento em uma linha) -->
+  <!--elemento block da pra aplicar margen e padding superior-->
+  <!-- Elemento bg-warning server para colorir o background do elemento bg(block) de laranja -->
+  <div class="bg-warning">
+      <h3 class="bg-success d-inline-block">Lorem ipsum</h3>
+      <h3 class="bg-success d-inline-block" style="margin-top: 50px;width: 400px;">Lorem ipsum dolor</h3>
+  </div>
+  <!-- tags de cor -->
+  <p class="text-primary">.text-primary</p>
+  <p class="text-secondary">.text-secondary</p>
+  <p class="text-success">.text-success</p>
+  <p class="text-danger">.text-danger</p>
+  <p class="text-warning">.text-warning</p>
+  <p class="text-info">.text-info</p>
+  <p class="text-light bg-dark">.text-light</p>
+  <p class="text-dark">.text-dark</p>
+  <p class="text-muted">.text-muted</p>
+  <p class="text-white bg-dark">.text-white</p>
+
+
+  
+    <!-- Scripts -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- framework de javascript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- serve para elementos que respondem a eventos -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+     <!-- link do bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
