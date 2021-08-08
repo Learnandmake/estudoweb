@@ -1,0 +1,109 @@
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+  <!--area de visualizacao --><!--larg total do disp --><!--escala padrao de zoom --><!--Encolhe items em dispositivos--> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!--tipo de arquivo -->    <!--link (nesse caso uso cdn)-->                                             <!--chave de associação para conseguir carregar o site de outro local (pasta) so para via cdn-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+
+<body style="margin-bottom: 200px;padding: 16px;">
+
+  <form>
+     
+     <h2>Grupo prepend</h2>
+     <div class="input-group">
+        <!-- determina o grupo de inputs exibindo o simbolo antes dos controles-->
+         <div class="input-group-prepend">
+                 <!--determina o simbolo do grupo -->
+                   <!-- colocar tudo dentro do input-group-append ou prepend-->
+             <span class="input-group-text">@</span>
+         </div>
+         <input class="form-control" type="text" placeholder="e-mail">
+     </div> 
+
+     <h2>Grupo append</h2>
+     <div class="input-group">
+          <input class="form-control" type="text" placeholder="e-mail">
+          <!-- determina um input group com simbolos depois dos controles -->
+         <div class="input-group-append">
+             <span class="input-group-text">@gmail.com</span>
+         </div>
+     </div> 
+
+     <h2>URL customizada</h2>
+      <div class="input-group">
+          <div class="input-group-prepend">
+             <span class="input-group-text">
+                 https://site.com/usuario/
+             </span>
+         </div>
+         <input class="form-control" type="text" placeholder="Digite seu usuário">
+      </div>
+
+
+      <h2>Moeda</h2>
+      <div class="input-group">
+            <!-- une os dois grupos, prepend antes e append depois e o input de controle no centro  -->
+          <div class="input-group-prepend">
+             <span class="input-group-text">$</span>
+         </div>
+
+         <input class="form-control" type="text" placeholder="Digite um valor">
+
+         <div class="input-group-append">
+             <span class="input-group-text">,00</span>
+         </div>
+      </div>
+
+      <!--
+      type: checkbox / radio
+      -->
+        <!-- controles dentro do input-group -->
+      <h2>Checkbox / radio</h2>
+      <div class="input-group">
+          <div class="input-group-prepend">
+             <div class="input-group-text">
+                 <input type="radio">
+             </div> 
+          </div>
+          <input type="text" class="form-control">
+      </div>
+
+  
+      <h2>Múltiplos inputs</h2>
+      <div class="input-group">
+         <div class="input-group-prepend">
+             <span class="input-group-text">nome/e-mail</span>
+         </div>
+         <input class="form-control" type="text" placeholder="e-mail">
+         <input class="form-control" type="password" placeholder="senha">
+     </div> 
+
+
+     <h2>Pesquisas</h2>
+     <div class="input-group">
+         <input class="form-control" type="text" placeholder="Pesquisar" >
+            
+         <div class="input-group-append">
+             <button type="button" class="btn btn-warning">Pesquisar</button>
+         </div>
+     </div>
+
+  </form>
+  
+    <!-- Scripts -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- framework de javascript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- serve para elementos que respondem a eventos -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+     <!-- link do bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
