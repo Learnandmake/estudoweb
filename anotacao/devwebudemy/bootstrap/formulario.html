@@ -1,0 +1,128 @@
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+  <!--area de visualizacao --><!--larg total do disp --><!--escala padrao de zoom --><!--Encolhe items em dispositivos--> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!--tipo de arquivo -->    <!--link (nesse caso uso cdn)-->                                             <!--chave de associação para conseguir carregar o site de outro local (pasta) so para via cdn-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+
+<body style="margin-bottom: 200px;padding: 16px;">
+ 
+  <!-- tamanho de formulários 
+      classe: form-control-<opcoes>
+      opções: sm, lg
+  -->
+  <form>
+      
+      <!-- caixas de texto -->
+      <div class="form-group">
+          <label for="usuario">Usuário</label>
+          <input class="form-control" type="text" id="usuario" placeholder="Digite seu usuário">
+      </div>
+
+      <div class="form-group">
+          <label for="email">Email</label>                                       <!-- readonly é uma forma de bloquear o campo -->
+          <input class="form-control" type="email" id="email" placeholder="Digite seu email" readonly>
+          <small class="form-text">Email será validado</small>
+      </div>
+
+      <!-- select -->
+      <div class="form-group">
+          <label for="estados">Estados</label>
+          <select class="form-control" id="estados">
+              <option>Acre</option>
+              <option>Alagoas</option>
+              <option>Amapá</option>
+              <option>...</option>
+          </select>
+      </div>
+
+      <!-- textarea -->
+      <div class="form-group">
+          <label for="mensagem">Mensagem</label> 
+           <!-- rows= n linhas seleciona quantas linhas o usuario podera digitar -->
+          <textarea class="form-control" id="mensagem" rows="3"></textarea>
+      </div>
+
+      <!-- file input -->
+      <div class="form-group">
+          <label for="arquivo">Arquivo</label>
+           <!-- type file e possivel fazer upload de arquivos do computador -->
+          <input class="form-control-file" type="file" id="arquivo">
+      </div>
+
+
+      <!-- custom file input -->
+      <div class="custom-file">
+           <!-- aplica um textbox com o nome do arquivo que foi upado -->
+          <input class="custom-file-input" type="file" id="arquivo">
+          <label class="custom-file-label">Selecione arquivo</label>
+      </div>
+      <br><br>
+
+      <!-- range -->
+      <div class="form-group">
+           <!--range: barra de selecao   -->
+          <label id="range">Satisfação</label>
+           <!--max e min: define o valor maximo e minimo  -->
+           <!-- custom-range: define a customizacao do controle  -->
+          <input class="custom-range" type="range" 
+          id="range" min="1" max="5">
+      </div>
+
+      <!-- button -->
+      <input class="btn btn-primary" type="submit" value="Salvar">
+
+  </form>
+  <br><br>
+
+  <!-- Formulário inline -->
+  <form class="form-inline">
+      <input class="form-control mr-2" type="text" placeholder="Digite seu usuário">
+      <input class="form-control mr-2" type="password" placeholder="Digite sua senha">
+      <input  class="btn btn-primary" type="submit" value="Logar">
+  </form>
+  <br><br>
+
+  <!-- 
+  Validação de formulário 
+  Classes: is-valid, is-invalid, invalid-feedback, valid-feedback
+  -->
+  <form>
+      
+      <div class="form-group">
+          <label for="email-usuario">email</label>
+          <input class="form-control is-valid" type="text" id="email-usuario" placeholder="Digite seu e-mail">
+          <div class="valid-feedback">
+              Email válido
+          </div>
+      </div>
+
+      <div class="form-group">
+          <label for="senha-usuario">Senha</label>
+          <input class="form-control is-invalid" type="email" id="senha-usuario" placeholder="Digite sua senha">
+          <div class="invalid-feedback">
+              Senha inválida
+          </div>
+      </div>
+
+      <input class="btn btn-primary" type="submit" value="Logar">
+
+  </form>
+
+    <!-- Scripts -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- framework de javascript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- serve para elementos que respondem a eventos -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+     <!-- link do bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
