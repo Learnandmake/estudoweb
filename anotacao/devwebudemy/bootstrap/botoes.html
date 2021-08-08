@@ -1,0 +1,117 @@
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+  <!--area de visualizacao --><!--larg total do disp --><!--escala padrao de zoom --><!--Encolhe items em dispositivos--> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!--tipo de arquivo -->    <!--link (nesse caso uso cdn)-->                                             <!--chave de associação para conseguir carregar o site de outro local (pasta) so para via cdn-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+
+<body style="padding-bottom: 200px; width: 600px; margin: 0 auto;border: 1px solid red;">
+
+  <!-- Botoes 
+  formatação padrao: btn
+  formatação específicas:
+  btn-primary, btn-secondary, btn-success, btn-info,
+  btn-warning, btn-danger, btn-light, btn-dark, btn-link
+  -->
+  <h3>Botões</h3>
+  <button class="btn btn-dark" type="button">Clique</button>
+
+  <h3>Botões com diferentes tags</h3>
+  <a class="btn btn-info" href="#">Link</a>
+  <button class="btn btn-info" type="submit">Submit</button>
+  <input class="btn btn-info" type="button" value="Button">
+  <input class="btn btn-info" type="submit" value="Input Submit">
+  <input class="btn btn-info" type="reset" value="Reset">
+
+  <!-- Botoes com contorno
+  btn-outline-<formato>
+  -->
+  <h3>Botões com contorno</h3>
+  <button class="btn btn-outline-danger" type="button">Clique</button>
+
+  <!-- Tamanhos de botões
+  opções: btn-lg, btn-sm, btn-block
+  -->
+   <!-- classe btn que formata o botao que pode ser modificada ultilizando btn-tamanho, btn-cor.  -->
+  <h3>Tamanhos dos botões</h3>
+  <button class="btn btn-info btn-lg" type="button">Grande</button>
+  <button class="btn btn-info" type="button">Normal</button>
+  <button class="btn btn-info btn-sm" type="button">Pequeno</button>
+  <br><br>
+  <button class="btn btn-info btn-block" type="button">Bloco</button>
+
+  <!-- Estados dos botões
+  opções: active, disabled
+  -->
+  <h3>Estados de botões</h3>
+  <button class="btn btn-success" type="button">Normal</button>
+  <button class="btn btn-success active" type="button">Ativo</button>
+  <button class="btn btn-success disabled" type="button">Inativo</button>
+  <br><br>                         <!-- alterna estado  --> <!-- tipo de controle -->
+  <button class="btn btn-success" type="button" data-toggle="button">Alternar</button>
+
+  <h3>Grupos de botões - horizontal</h3>
+  <!-- cria um grupod de botoes -->
+  <div class="btn-group">
+      <button class="btn btn-info" type="button">Esquerda</button>
+      <button class="btn btn-info" type="button">Centro</button>
+      <button class="btn btn-info" type="button">Direita</button>
+  </div>
+
+  <h3>Grupos de botões - vertical</h3>
+  <div class="btn-group-vertical">
+      <button class="btn btn-danger" type="button">Topo</button>
+      <button class="btn btn-danger" type="button">Meio</button>
+      <button class="btn btn-danger" type="button">Fundo</button>
+  </div>
+
+  <h3>Toolbar de botões</h3>
+  <!-- une grupos de botoes -->
+  <div class="btn-toolbar">
+      <div class="btn-group">
+         <button class="btn btn-danger" type="button">1</button>
+         <button class="btn btn-danger" type="button">2</button>
+         <button class="btn btn-danger" type="button">3</button>
+      </div>
+      <div class="btn-group">
+          <button class="btn btn-danger" type="button">4</button>
+          <button class="btn btn-danger" type="button">5</button>
+      </div>
+  </div>
+
+  <h3>Botões dropdown</h3>
+  <!-- classe dropdown  -->
+  <div class="dropdown">      <!-- alterna entre dropdown --> 
+      <button class="btn btn-success dropdown-toggle" 
+      data-toggle="dropdown" type="button">
+          Clique
+      </button>
+      <!-- Associação com o botao com classe dropdown  -->
+      <div class="dropdown-menu">
+                    <!-- associacao de item na classe dropdown-->
+          <a href="#" class="dropdown-item">Link 1</a>
+         <!-- divisor de classe dropdown -->
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">Link 2</a>
+          <a href="#" class="dropdown-item">Link 3</a>
+      </div>
+  </div>
+
+
+    <!-- Scripts -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- framework de javascript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- serve para elementos que respondem a eventos -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+     <!-- link do bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
