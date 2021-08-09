@@ -1,0 +1,110 @@
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+  <!--area de visualizacao --><!--larg total do disp --><!--escala padrao de zoom --><!--Encolhe items em dispositivos--> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!--tipo de arquivo -->    <!--link (nesse caso uso cdn)-->                                             <!--chave de associação para conseguir carregar o site de outro local (pasta) so para via cdn-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <style type="text/css">
+      
+        .marcador {
+          background: #fe9d9d;
+          border: 1px solid #f94646;
+        }
+  
+        .marcador-container {
+          background: #5bf946;
+          border: 1px solid #36ae26;
+        }
+  
+      </style>
+  
+    </head>
+  
+    <body>
+  
+      <div class="container marcador-container">
+        
+        <h2>Largura fixa</h2>
+        <!--as colunas ficao dentro da row-->
+        <!--
+            row define o sistema de grids que pode estar dentro de outra row
+            independente de estar em outra row, ela continuara dividindo seu espacamento
+            interno em doze colunas.
+        -->
+        <div class="row">
+            <!--col-sozinho: define uma largura fixa-->
+          <div class="marcador col">área 1</div>
+          <div class="marcador col">área 2</div>
+          <div class="marcador col">área 3</div>
+          <div class="marcador col">área 4</div>
+        </div>
+  
+        <h2>Largura automática (auto-layout)</h2>
+        <div class="row">
+          <div class="marcador col">área 1</div>
+          <div class="marcador col">área 2</div>
+          <div class="marcador col-6">área 3</div>
+        </div>
+  
+  
+        <h2>Largura igual empilhada</h2>
+        <div class="row">
+          <div class="marcador col-sm">área 1</div>
+          <div class="marcador col-sm">área 2</div>
+          <div class="marcador col-sm">área 3</div>
+        </div>
+  
+        <h2>Ordenando</h2>
+        <div class="row">
+            <!--
+            order: define ordem de exibicao (ja visto)
+            exemplo: order-numero de posicao
+            -->
+          <div class="marcador col-md-4 order-2">área 1</div>
+          <div class="marcador col-md-4 order-3">área 2</div>
+          <div class="marcador col-md-4 order-1">área 3</div>
+        </div>
+  
+        <h2>offset</h2>
+        <div class="row">
+            <!-- 
+                offset: é uma classe que faz com que a div pule as colunas 
+                exemplo: offset-dispositivo-numero de colunas a serem puladas
+            -->
+          <div class="marcador col-md-6 offset-md-3">Login...</div>
+        </div>
+  
+        <h2>offset múltiplos alinhamentos</h2>
+        <div class="row">
+          <div class="marcador col-md-3">Conteúdo 1</div>
+          <div class="marcador col-md-3 offset-md-6">Conteúdo 2</div>
+        </div>
+  
+        <h2>Aninhamento</h2>
+        <div class="row">
+          <div class="col-md-6" style="border: 1px solid blue">
+            col-md-6
+            <div class="row">
+              <div class="col-md-9 marcador">Conteúdo 1</div>
+              <div class="col-md-3 marcador">Conteúdo 2</div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    <!-- Scripts -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- framework de javascript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- serve para elementos que respondem a eventos -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+     <!-- link do bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
