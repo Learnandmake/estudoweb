@@ -80,6 +80,12 @@ nav.nav-transparente
 }
 /*customizacao de botao fim*/
 
+/*caroussel inicio*/
+.carousel-control-next, .carousel-control-prev
+{
+    width: 5%;
+}
+/*caroussel fim*/
 /*Tipografia inicio*/
 h1
 {
