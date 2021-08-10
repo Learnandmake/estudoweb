@@ -1,0 +1,189 @@
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+  <!--area de visualizacao --><!--larg total do disp --><!--escala padrao de zoom --><!--Encolhe items em dispositivos--> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!--tipo de arquivo -->    <!--link (nesse caso uso cdn)-->                                             <!--chave de associação para conseguir carregar o site de outro local (pasta) so para via cdn-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<!-- fonte dos icones em Fontawesome CSS -->
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<title>Carousel Slider</title>
+</head>
+<body style="padding-bottom: 80px;">
+  
+  <div class="container"><!--Container -->
+    <div class="row"><!--Row -->
+      <div class="col-sm-8 m-auto"><!--col-sm8 -->
+        
+        <h1>Slider simples</h1>
+        <div class="carousel slide" data-ride="carousel"><!--Carousel -->
+          <div class="carousel-inner"><!--Inner -->
+            
+            <div class="carousel-item active">
+              <img src="https://lh3.googleusercontent.com/pw/AM-JKLU56ywCRGf3aAFtWFkxpO0QFXi6mmH9ET49Pa53Ckr5DrhfrE5lgA36VULJusi3Ev3mSI0OxRVewb1GKabetJQLb4U1QZ6LZ755vv832b6iPBkVdcGCCnpfCDKxSgs9F_Kff5DDcizqprOie7v7qoIp=w800-h400-no?authuser=7" class="img-fluid">
+            </div>
+
+            <div class="carousel-item">
+              <img src="https://lh3.googleusercontent.com/pw/AM-JKLUrI2aLf7nDQrDJCG926T4DE5UWnfKykT2LDZCToxo7lU5yJiPywNtq-O27lrjVma1UfQmoZ_GGNfboV8PM3ou9bGbQUP_pdh0XIbD1tMuDrvmBanyLnK-X-PQJSh-Bivo09_y7O77nH5Hb0YDMDCiB=w800-h400-no?authuser=7" class="img-fluid">
+            </div>
+
+            <div class="carousel-item">
+              <img src="https://lh3.googleusercontent.com/pw/AM-JKLVMbmigwS3IxjGksW241c1ijch5mtbml07W2cP3MbRqpzTHeiY-9XMqZVZxsSzzVSHV0YFFR4TG2mmVsq1G-Ly7A63jb2i_tC7sGNQMhsJCHoCZSAx9EX7f6OZEATfaVzKdf60bluWZaDrlkJV_Ptku=w800-h400-no?authuser=7" class="img-fluid">
+            </div>
+
+          </div><!--/Inner -->
+        </div><!--/Carousel -->
+        
+
+        <h1>Slider com controles</h1>
+        <div id="carousel-controles" class="carousel slide" data-ride="carousel"><!--Carousel -->
+          <div class="carousel-inner"><!--Inner -->
+            
+            <div class="carousel-item active">
+              <img src="https://lh3.googleusercontent.com/pw/AM-JKLU56ywCRGf3aAFtWFkxpO0QFXi6mmH9ET49Pa53Ckr5DrhfrE5lgA36VULJusi3Ev3mSI0OxRVewb1GKabetJQLb4U1QZ6LZ755vv832b6iPBkVdcGCCnpfCDKxSgs9F_Kff5DDcizqprOie7v7qoIp=w800-h400-no?authuser=7" class="img-fluid">
+            </div>
+
+            <div class="carousel-item">
+              <img src="https://lh3.googleusercontent.com/pw/AM-JKLUrI2aLf7nDQrDJCG926T4DE5UWnfKykT2LDZCToxo7lU5yJiPywNtq-O27lrjVma1UfQmoZ_GGNfboV8PM3ou9bGbQUP_pdh0XIbD1tMuDrvmBanyLnK-X-PQJSh-Bivo09_y7O77nH5Hb0YDMDCiB=w800-h400-no?authuser=7" class="img-fluid">
+            </div>
+
+            <div class="carousel-item">
+              <img src="https://lh3.googleusercontent.com/pw/AM-JKLVMbmigwS3IxjGksW241c1ijch5mtbml07W2cP3MbRqpzTHeiY-9XMqZVZxsSzzVSHV0YFFR4TG2mmVsq1G-Ly7A63jb2i_tC7sGNQMhsJCHoCZSAx9EX7f6OZEATfaVzKdf60bluWZaDrlkJV_Ptku=w800-h400-no?authuser=7" class="img-fluid">
+            </div>
+
+          </div><!--/Inner -->
+
+          <!-- Controles -->
+          <a href="#carousel-controles" class="carousel-control-prev" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+
+          <a href="#carousel-controles" class="carousel-control-next" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+
+        </div><!--/Carousel -->
+        
+
+        <h1>Slider com controles/indicadores</h1>
+        <div id="carousel-indicadores" class="carousel slide" data-ride="carousel"><!--Carousel -->
+
+          <!-- Indicadores -->
+          <ol class="carousel-indicators">
+
+            <li class="active" data-target="#carousel-indicadores" data-slide-to="0"></li>
+
+            <li data-target="#carousel-indicadores" data-slide-to="1"></li>
+
+            <li data-target="#carousel-indicadores" data-slide-to="2"></li>
+
+          </ol>
+
+          <div class="carousel-inner"><!--Inner -->
+            
+            <div class="carousel-item active">
+              <img src=https://lh3.googleusercontent.com/pw/AM-JKLU56ywCRGf3aAFtWFkxpO0QFXi6mmH9ET49Pa53Ckr5DrhfrE5lgA36VULJusi3Ev3mSI0OxRVewb1GKabetJQLb4U1QZ6LZ755vv832b6iPBkVdcGCCnpfCDKxSgs9F_Kff5DDcizqprOie7v7qoIp=w800-h400-no?authuser=7 class="img-fluid">
+            </div>
+
+            <div class="carousel-item">
+              <img src="https://lh3.googleusercontent.com/pw/AM-JKLUrI2aLf7nDQrDJCG926T4DE5UWnfKykT2LDZCToxo7lU5yJiPywNtq-O27lrjVma1UfQmoZ_GGNfboV8PM3ou9bGbQUP_pdh0XIbD1tMuDrvmBanyLnK-X-PQJSh-Bivo09_y7O77nH5Hb0YDMDCiB=w800-h400-no?authuser=7" class="img-fluid">
+            </div>
+
+            <div class="carousel-item">
+              <img src="https://lh3.googleusercontent.com/pw/AM-JKLVMbmigwS3IxjGksW241c1ijch5mtbml07W2cP3MbRqpzTHeiY-9XMqZVZxsSzzVSHV0YFFR4TG2mmVsq1G-Ly7A63jb2i_tC7sGNQMhsJCHoCZSAx9EX7f6OZEATfaVzKdf60bluWZaDrlkJV_Ptku=w800-h400-no?authuser=7" class="img-fluid">
+            </div>
+
+          </div><!--/Inner -->
+
+          <!-- Controles -->
+          <a href="#carousel-indicadores" class="carousel-control-prev" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+
+          <a href="#carousel-indicadores" class="carousel-control-next" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+
+        </div><!--/Carousel -->
+      
+
+        <h1>Slider com legendas</h1>
+        <div id="carousel-legenda" class="carousel slide" data-ride="carousel"><!--Carousel -->
+
+          <!-- Indicadores -->
+          <ol class="carousel-indicators">
+
+            <li class="active" data-target="#carousel-legenda" data-slide-to="0"></li>
+
+            <li data-target="#carousel-legenda" data-slide-to="1"></li>
+
+            <li data-target="#carousel-legenda" data-slide-to="2"></li>
+
+          </ol>
+
+          <div class="carousel-inner"><!--Inner -->
+            
+            <div class="carousel-item active">
+              <img src="https://lh3.googleusercontent.com/pw/AM-JKLUrI2aLf7nDQrDJCG926T4DE5UWnfKykT2LDZCToxo7lU5yJiPywNtq-O27lrjVma1UfQmoZ_GGNfboV8PM3ou9bGbQUP_pdh0XIbD1tMuDrvmBanyLnK-X-PQJSh-Bivo09_y7O77nH5Hb0YDMDCiB=w800-h400-no?authuser=7" class="img-fluid">
+              <div class="carousel-caption">
+                <div style="background: black; padding: 10px;">
+                  <h3>Item 1</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="https://lh3.googleusercontent.com/pw/AM-JKLVMbmigwS3IxjGksW241c1ijch5mtbml07W2cP3MbRqpzTHeiY-9XMqZVZxsSzzVSHV0YFFR4TG2mmVsq1G-Ly7A63jb2i_tC7sGNQMhsJCHoCZSAx9EX7f6OZEATfaVzKdf60bluWZaDrlkJV_Ptku=w800-h400-no?authuser=7" class="img-fluid">
+              <div class="carousel-caption">
+                <h3>Item 2</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="https://lh3.googleusercontent.com/pw/AM-JKLU56ywCRGf3aAFtWFkxpO0QFXi6mmH9ET49Pa53Ckr5DrhfrE5lgA36VULJusi3Ev3mSI0OxRVewb1GKabetJQLb4U1QZ6LZ755vv832b6iPBkVdcGCCnpfCDKxSgs9F_Kff5DDcizqprOie7v7qoIp=w800-h400-no?authuser=7" class="img-fluid">
+              <div class="carousel-caption">
+                <h3>Item 3</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </div>
+
+          </div><!--/Inner -->
+
+          <!-- Controles -->
+          <a href="#carousel-legenda" class="carousel-control-prev" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+
+          <a href="#carousel-legenda" class="carousel-control-next" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+
+        </div><!--/Carousel -->
+        
+
+      </div><!--/col-sm8 -->
+    </div><!--/Row -->
+  </div><!--/Container -->
+
+    <!-- Scripts -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- framework de javascript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- serve para elementos que respondem a eventos -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+     <!-- link do bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
