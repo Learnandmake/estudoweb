@@ -1,6 +1,9 @@
 html, body #home
 {
     height: 100%;
+    /*esconde a barra horizontal*/
+    /*a funcao scrool exibe a barra de rolagem mesmo se nao tiver nescessidade*/
+    overflow-x: hidden;
 }
 
 body
@@ -9,7 +12,7 @@ body
                 url(https://lh3.googleusercontent.com/pw/AM-JKLUdKx-hp1Bt1gUJTrQq9JYQeS-YP-A8l8rLXvUwEx9G8UV7kZvvUXprY5WkRrwrovp-YIWR5DB440kvUsWQZw8t_x-q5vP_JDmAJOuRhsijBwaOT8pIxZ0YPhftvEjuLgqFy5utC8Xt44TQch8O4gxf=s147-no?authuser=7),
                 linear-gradient(50deg,#ff4169,#7c26f8);
     background-attachment: fixed;
-    font-family: Helvetica, Arial, sans-serif
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 /*barra de navegacao inicio*/
@@ -46,6 +49,7 @@ nav.nav-transparente
 {
     text-align:center;
 }
+/*customizacao de botao inicio*/
 .btn-custom
 {
     color:white;
@@ -74,6 +78,7 @@ nav.nav-transparente
    background-color:white;
    color:black;
 }
+/*customizacao de botao fim*/
 
 /*Tipografia inicio*/
 h1
@@ -135,3 +140,80 @@ h1
     }
 }
 /*capa fim*/
+
+/*caixa de padding*/
+.caixa
+{
+    padding-top: 20px; 
+    padding-bottom: 20px;
+}
+
+/*inicio serviços*/
+#servicos
+{
+    background:white;
+}
+
+.albuns
+{
+    padding:10px 0;
+}
+
+h2
+{
+    font-size:3em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+h3
+{
+    font-size:2em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+#servicos h2, h3
+{
+    color:#7c25f8;
+}
+/*fim serviços*/
+
+/*inicio recursos*/
+
+#recursos
+{
+    color:white;
+}
+
+#recursos h2
+{
+    color:white;
+}
+#recursos h3
+{
+    color:#9bf0e1;
+}
+h2
+{
+    font-size:3em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+h3
+{
+    font-size:2em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+.rotacionar
+{
+    /*rotaciona a imagem*/
+    transform: rotate(30deg);
+    -ms-transform:rotate(30deg);
+    -webkit-transform:rotate(30deg);
+    padding-left:80px;
+}
+/*fim recursos*/
