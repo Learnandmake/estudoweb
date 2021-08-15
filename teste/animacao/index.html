@@ -1,6 +1,7 @@
 
 <html>
     <head>
+      <!--instanciamento do cdn do lodash-->
       <script src=https://cdn.jsdelivr.net/lodash/4.16.4/lodash.min.js></script>
       <link rel=stylesheet type=text/css href=style.css>
     </head>
@@ -54,29 +55,62 @@
   <div class="box box--inline"></div>
 </div>
 <script>
+    //cdn
     const throttle = _.throttle;
 
-
+//seleciona elementos que tenham a classe "js-play-on-screen"
 const players = 
-    Array.from(document.querySelectorAll('.js-play-on-screen'));
+    //Para manipular essa lista (com funções próprias de arrays) precisamos transformar-la em um array com a função Array.from() 
+    Array.from(                                                                                                                     
+    //retorna uma NodeList com os nodes selecionados
+    document.querySelectorAll      
+    //classe  que representa a sintaxe
+    ('.js-play-on-screen'));
 
 
+  // funcao que descobre se o elemento esta na tela
+  //forma: comparar a posicao da base da forma com a base da tela 
+  //( se a posicao da tela for maior quer dizer que o elemento esta dentro da tela)
+  //element.getBoundingClientRect():
+//O método retorna um objeto DOMRect, cuja propriedade bottom contém a coordenada Y (em relação ao viewport) da base do elemento.
+
+//window.scrollY
+//propriedade com o número de pixels que o documento já rolou na vertical.
+
+//window.innerHeight
+//Tamanho em pixels do viewport.
+
+//O código funciona porque DOMRect.top e DOMRect.bottom representam coordenadas em relação à origem* do viewport.
+//Sabemos que o elemento está na tela quando: bottom for maior que a altura da tela e top for maior que zero (valor negativo estaria acima do viewport).
 function isOnScreen(el) {
     let rect = el.getBoundingClientRect() 
     return rect.top > 0 && rect.bottom < window.innerHeight;
 }
 
+//playAnimation( element)
+//Inicia a animação ao mudar a propriedade animation-play-state do elemento para “running”.
+//Aplica a função playAnimation em cada elemento do array players.
 function playAnimation(el) {
     if(isOnScreen(el)) el.style.animationPlayState = 'running';
 }
 
-
+//O problema com window.addEventListener(“scroll”, callback) é disparar eventos em excesso.
+// O callback pode ser chamado centenas de vezes em segundos.
+//Para resolver isso usamos throttle, uma função que impede que outra função seja executada mais de uma vez a cada X milissegundos.
 const render = throttle(() => players.forEach(playAnimation), 150);
 
+// Exibe os elementso que já estão
+// na tela antes do primeiro scroll
 render();
 window.addEventListener('scroll', render);
 </script>
-     
+     <!--
+Algumas bibliotecas que implementam esse efeito com muitas opções:
+Choreographer.js (bastante interessante, vai muito além do scroll)
+Waypoints.js
+AOS.js
+
+     -->
 </body>
 </html>
 

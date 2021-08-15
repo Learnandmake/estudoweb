@@ -15,6 +15,7 @@
         <li><a href="">Consultar</a></li>
     </ul>
 </header>
+<!-- link das imagens-->
 <section>
     <img src="https://lh3.googleusercontent.com/pw/AM-JKLXoYlxFaj22P5RqpyDkcqwAXFThx2H7H6FVPbSsbPd0lIY1wVs4psorwrUu1mw3aWA8brTG8m2Gatc8XzUFdrEcmEfX_3d0ahWLuGYc84dvVzV0a-Nfw2MzeAAmVcGuRrZhc5oxfVmTTAKaPTkHhqc=w907-h625-no?authuser=7" id="back">
     <img src="https://lh3.googleusercontent.com/pw/AM-JKLWE6_5w8AMHLzldVSWOdAp17PyvB73TMrJBQA0FsPMKuPl9KXaPazCMkIb4YUEm5PVk_lpq-Sz4R6JaVqL9O3H9DXMYSIPf_0ub4zVE061ttK2-27F6FUtvRQGk6PoAYBXrfOH7_MJylc6r5DWXHtg=w907-h625-no?authuser=7" id="book">
@@ -29,15 +30,19 @@
 </div>
 
 <script>
+    //script que instancia as fotos em uma variavel
     let reader = document.getElementById('reader');
     let coffe = document.getElementById('coffe');
     let text = document.getElementById('text');
     let btn = document.getElementById('btn');
 
+//evento da tela    //tipo de acao provocada pelo usuario
 window.addEventListener('scroll',function()
 {
+ //instanciamento do valor da rolagem   
 let value = window.scrollY;
-reader.style.top = value *0.75+'px';
+//v.imagem|css  |valor modificado| valor da rolagem da tela|multiplo de pixel aumentado|instancia dos pixels
+   reader .style . top           =    value                  *0.75+                     'px';
 coffe.style.top = value *0.75+'px';
 text.style.marginRight = value *0.75+'px';
 btn.style.marginLeft = value *0.75+'px';

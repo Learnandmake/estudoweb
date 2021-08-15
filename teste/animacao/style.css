@@ -50,11 +50,19 @@ header {
 
 .from-bottom {
   animation: fade-in 0.8s cubic-bezier(.17,.67,.49,1.02);
+    /* Javascript ativa a animação ao
+   mudar o valor para 'running'  */
   animation-play-state: paused;
   animation-fill-mode: forwards;
 }
 
+/*No nosso exemplo usamos uma animação reveal que
+ realiza um fade-in trazendo o elemento de baixo(30px) para sua posição original.*/
 
+ /*Para animar posicionamento de elementos,
+  sempre use os transforms do css. Ao animar propriedades como top e left,
+  o browser é forçado a recalcular o layout, operação que consome bastante memória 
+  quando abusada.*/
 @keyframes fade-in {
     0% { 
       opacity: 0;
