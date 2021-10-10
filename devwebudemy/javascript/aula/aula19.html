@@ -1,0 +1,144 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+    //aula19
+      //funcao
+      //funcoes são como manquinas que pedem algo para que possam efetuar uma operação
+      //existem funções que procuram ter um retorno (geralmente algum valor ) ou nulo quando so efetuam uma operação
+
+      //aula20
+      //funcao feita na pratica
+
+      function calcarea ()
+      {
+      var largura = parseFloat(prompt('digite a largura em m'));
+      var altura =parseFloat(prompt('digite a altura em m'))
+
+      var total = largura * altura;
+
+      document.write('a area total é de ' + total+ "m²");
+
+      }
+      calcarea()
+      //aula21 
+      //nessa aula aprendemos que  o javascript ignora qualquer parametro adicional 
+      //passado para uma função
+      
+      //e tambem se não for passado nenhum parametro o resultado será undefined
+
+      //aula22 
+      //aprendemos sobre diferentes escopos de variaveis 
+
+      //tipos de escopos de variaveis 
+
+      //global,funcao  e bloco
+//global (pode ser acessado por funções ou blocos)
+      var serie='friends'
+
+//funcao (pode ser acessado em toda funcao que ela esta dentro e pelos blocos)
+    
+      function exemplo( )
+{
+    var nome ='gabriel';
+    
+    if(nome=='gabriel')
+    {
+        nome ='rafael'
+    }
+}
+//bloco (so pode ser acessada dentro do bloco)
+if(total  == 300)
+{
+    var tamanho = 'grande '
+    document.write('sua area é'+ tamanho)
+}
+
+    //aula23
+    //funções anonimas são funções que apesar de não ter nome 
+    //geralmente são recebidas por alguma variavel
+   // variavel         |funcao
+    var exibirsaudacao=function(nome){
+        document.write('olá '+nome+' tudo bem?')
+    }
+
+    exibirsaudacao('joger')
+
+//aula 24
+
+//funções de callback servem para dar uma resposta a uma operação
+
+//funcao principal|id|resposta da função callbacksucesso|resposta  função  da callbackerro
+function exibirartigo(id,callbacksucesso,                 callbackerro)
+{   //operação, se callback sucesso for true
+    if(true)
+    {
+        callbacksucesso('funções de callback em JS')
+    }
+    //operação se callbackerro for true
+    else
+    {
+        callbackerro ('erro na busca de dados')
+    }
+  
+}
+//funcoes anomina de callback 
+//operacao de callback que pode ter requisitos
+var callbacksucesso = function()
+   {
+
+   }
+
+   var callbackerro = function()
+   {
+
+   }
+    
+//chama a função principal dando as funções de callback como parametro
+exibirartigo(1,callbacksucesso,callbackerro)
+
+
+//aula 25 
+
+//a propriedades do tipo de variavel string
+
+ //propriedade length:
+ //retorna a quantidade de letras incluindo espaços de um nome
+ document.write('Jorge Sant Ana'.length)
+      
+      //retorna o caractere que pertence a este indice
+      //recorta todas as letras de acordo com a posição passada
+      document.write('Jorge Sant Ana'.charAt(7))
+
+      var nome = 'Jorge Sant Ana'
+      //index of: 
+      // retorna a posicao da primeira letra g do nome
+      document.write(nome.indexOf('g'))
+
+      //replace:
+      //o replace substitui a palavra passada no primeiro parametro pela 
+      //do segundo parametro 
+      document.write(nome.replace('Sant Ana', 'Silva'))
+      
+      //substring :
+      //recorta as letras apartir de uma posição inicial, seguida
+      // de pelas proximas posições de recortagem que e definida no 2° parametro
+      document.write(nome.substr(6,4))
+      
+      //to lower case:
+      //define todos os caracteres de uma string para minuscula
+      document.write(nome.toLocaleLowerCase())
+
+      //to uppercase:
+      //define todos os caracteres de uma strinf para maiuscula
+      document.write(nome.toLocaleUpperCase())
+
+      //trim:
+      //tira os espaçamentos ao lado da string 
+      document.write('-'+ nome.trim() + '-')
+
+        </script>
+    </body>
+</html>
