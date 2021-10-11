@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>exercicios</title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <script>
+           
+        var n1 = parseFloat(prompt('por favor insira o primeiro numero')) 
+        var opcao =prompt('bem vindo por favor informe a operação: soma ou subtracao');
+        opcao.trim();
+        opcao.toLowerCase();
+        var n2 =  parseFloat(prompt('por favor insira o segundo numero'))
+        function calc (n1,n2, opcao)
+      {
+        switch(opcao)
+        {
+            case 'soma':
+            {
+                 var soma =n1+n2
+                 document.write('O resultado é: '+soma)
+                 break;
+            }
+
+            case 'subtracao':
+           {
+            var subtracao =n1-n2
+                 document.write('O resultado é: '+subtracao )
+                 break;
+           }
+        }
+      }
+      calc(n1,n2,opcao)
+      
+        </Script>
+    </body>
+</html>
