@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>
+            aulas 
+        </title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+<!-- 
+eventos são ações realizadas pelo usuario como 
+passar o mouse por cima de alguma div etc
+-->
+<!--
+eventos:
+onclick: quando o usuario clicka em um elemetno
+ondblclick
+onmouseup   
+onmouseover
+onmouseout
+-->
+<!--evento de click-->
+        <div onclick="alert('voce clickou em mim')" style="background: brown; height: 160px;" >
+            </div>
+<br> 
+<br> 
+<!--funcao em evento-->
+            <div onclick="acao ()" style="background: yellow; height: 160px;" >
+        </div>
+        <br> 
+        <br> 
+        <!--double click-->
+        <div ondblclick="alert('voce clickou 2 vezes em mim')" style="background: green; height: 160px;" >
+        </div>
+        <br> 
+        <br>      
+  <!--evento de clickar e soutar o botao do mouse-->
+  <div onmouseup="alert('voce soltou o botao do click')" style="background: blue; height: 160px;" >
+</div>
+<br> 
+        <br>
+  <!--evento de passar o mouse-->
+  <div onmouseover="alert('voce passou  o mouse')" style="background: gray; height: 160px;" >
+</div>
+<br> 
+<br> 
+ <!--evento mouse sai da area-->
+ <div onmouseout="alert('voce tirou o mouse da area')" style="background: purple; height: 160px;" >
+</div>
+    <br> 
+    <br> 
+    <!--é possivel adicionar uma função a outra-->
+    <div onmouseout="alert('voce tirou o mouse da area')" onclick="acao ()" style="background: gainsboro; height: 160px;" >
+</div>
+        <!--funcao em evento-->
+
+        <!--aula 30-->
+    <!--eventos de teclado-->
+      <!--crtl não representa uma tecla ativa-->
+        
+        <br>
+        <br>
+<!--onkeydown:
+        evento de tecla de um botão
+    é ativado antes da tecla for mostrada -->
+        <input onkeydown=" alert('voce teclou uma tecla')"  type ='text'>
+        <br>
+        <br>
+        <br>
+        <!--onkeyup:
+                evento de tecla de um botão
+            é ativado depois da tecla for mostrada -->
+        <input onkeyup=" alert('voce teclou uma tecla')"  type ='text'>
+        <br>
+        <br>
+        <br>
+          <!--onkeyprees:
+                evento de tecla de um botão
+              onde o evento é ativado enquanto pressionar de um botão  -->
+            <input onkeypress=" alert('voce teclou uma tecla')"  type ='text'>
+          
+
+            
+        <script>
+function acao ()
+{
+    alert('funcao ativada')
+}
+        </script>
+    </body>
+</html>
