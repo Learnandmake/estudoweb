@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>
+            aulas 
+        </title>
+        <meta charset="utf-8">
+    </head>
+ 
+    <body> 
+        <input 
+        type="text"
+        placeholder="Digite seu nome"
+        id="nome_usuario"
+        class="campo_texto"
+        name="nome"
+        >
+    
+        <script>
+            //pega apenas um elemento de controle 
+          console.log(document.getElementById('nome_usuario'))
+          //pega uma coleção de elementos controles com a mesma tag
+          console.log(document.getElementsByTagName('input'))
+          //pega uma coleção de elementos com a mesma classe
+          console.log(document.getElementsByClassName('campo_texto'))
+          //recupera elementos com mesmo nome como se fosse  um nodelist 
+          console.log(document.getElementsByName('nome'))
+        </script>
+
+        
+      
+    </body>
+</html>
