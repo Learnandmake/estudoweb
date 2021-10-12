@@ -1,0 +1,158 @@
+<html>
+    <head>
+        <title>
+            aula array  
+        </title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+<script>
+
+    //aula38
+    // um aray serve para armazenar diversos items em uma lista
+    //sendo todos relacionados a um indice (id)
+     //array e um item que pode conter varios dados em colecao
+     
+     //aula39
+     //array em pratica
+     //criar o array
+     var listafrutas= Array( )
+  
+  listafrutas[1]  ='banana'
+    
+  listafrutas[2]  ='morango'
+    
+  listafrutas[3]  ='uva'
+//listar todo o array
+console.log (listafrutas)
+
+//listar determinado dado no array pela posicao
+console.log (listafrutas[1])
+
+
+//iniciar lista ja com dados sem dar os indices
+//o proprio javascript declara indice (id) a partir da posicao 0
+var listarfrutas2=Array('kiwi','manga','limao')
+console.log (listarfrutas2)
+
+//aula 40
+// a tributo lenght conta dados de um array apartir do numero 0 mesmo se o primeiro 
+//numero for acima de 0
+//sendo assim suponhamos que o primeiro id for 5 e seja seguido por mais 4 dados de lista 
+//exe:5,6,7,8
+// o lenght vai apresentar tamanho 9 pois considera todos os numeros antecessores de 5
+var listafrutas3= Array( )
+  
+  listafrutas3[5]  ='banana'
+    
+  listafrutas3[6]  ='morango'
+    
+  listafrutas3[7]  ='uva'
+
+  listafrutas3[8]  ='kiwi'
+//listar todo o array
+ console.log(listafrutas3.length)
+
+ //aula 41
+ //array multidimensional
+//array multidimensonal são arrays que conseguem ter outros arrays dentro deles
+var listacoisas = Array()
+//cria lista dentro da lista multidimensional
+listacoisas['frutas']=Array()
+//seta dados dentro da lista frutas dentro da lista de coisas
+listacoisas['frutas'][1] = 'banana'
+
+listacoisas['pessoas']=Array()
+//e possivel colocar letras como indice
+listacoisas['pessoas']['a'] = 'maria'
+console.log(listacoisas)
+
+//monstrar lista dentro de multidimensional
+console.log(listacoisas['pessoas']['a'])
+
+//aula42
+//excluir elementos
+
+    // var lista_frutas = Array()
+
+
+    // lista_frutas[0] = 'Banana'
+    // lista_frutas[1] = 'Maçã'
+    
+
+    //incluir elemento no final do array
+    // lista_frutas.push('Uva')
+
+    //incluir elemento no inicio do array
+    //lista_frutas.unshift('Uva')
+
+    //excluir elemento no final do array, usar o pop()
+    //lista_frutas.pop()
+
+    //excluir elemento no inicio do array
+    //lista_frutas.shift()
+
+
+    //aplicando a mesma lógica em arrays multidimensionais
+    var lista_coisas2 = Array()
+
+    lista_coisas2['frutas'] = Array()
+    lista_coisas2['pessoas'] = []
+
+    lista_coisas2['frutas'].push('Banana')
+    lista_coisas2['frutas'].push('Uva')
+
+
+    console.log( lista_coisas2)
+    // console.log(lista_frutas)
+
+  
+ 
+    // aula 43
+// é possivel pesquisar elementos dento de um array
+//  a pesquisa e case sensitiv ou seja ela diferencia letra maiuscula e minuscula
+//se não achar ele retonara o valor de -1
+var listafrutas5= Array( )
+listafrutas5[0]  ='uva'
+  listafrutas5[1]  ='banana'
+  listafrutas5[2]  ='morango'
+  listafrutas5[3]  ='kiwi'
+  listafrutas5[4]  ='manga'
+   
+  console.log(listafrutas5.indexOf('manga'))
+
+  //aula 44
+  //é possivel ordenar arrays 
+//sort(): ordena determinada lista em ordem alfanumerica
+ /*   var lista_frutas = Array()
+
+    lista_frutas[0] = 'Maçã'
+    lista_frutas[1] = 'Uva'
+    lista_frutas[2] = 'Banana'
+    lista_frutas[3] = 'Morango'
+
+    console.log(lista_frutas.sort()) */
+
+    var lista_numeros = Array()
+
+    //lembre-se, operador númerico em string funciona na ordenação.
+    lista_numeros[0] = 12
+    lista_numeros[1] = 40
+    lista_numeros[2] = 3
+    lista_numeros[3] = 7
+    lista_numeros[4] = 19
+    lista_numeros[5] = 1
+      // se não tiver uma função que ensine o sort ele vai buscar de acordo com 
+// o primeiro numero ou seja 12 e 19 irao vir primeiro porque comecao com 1
+    console.log(lista_numeros.sort(ordenaNumeros))
+
+    function ordenaNumeros (a, b) {
+        //<0=a ordenado antes de b
+        //>0=b ordenado antes de a
+        // == a ordem mantida
+      return a - b
+    }
+</script>
+    </body>
+</html>
