@@ -1,0 +1,33 @@
+<html>
+    <head>
+<title >exercicios </title>
+<meta charset="utf-8">
+<script>
+function altc(cor)
+{
+document.getElementById('ip1').style.backgroundColor=cor
+}
+
+function altextoc()
+{var texto =document.getElementById('ip1').value ;
+texto.trim();
+var tamanho =texto.length;
+console.log(tamanho)
+if( tamanho<3)
+{
+    document.getElementById('ip1').style.backgroundColor='#FF0000'
+}
+else 
+{
+    document.getElementById('ip1').style.backgroundColor='#008000'
+}
+}
+</script> 
+
+    </head>
+    <body>
+<input onblur ="altextoc()"  onfocus="altc(' #FFFF00')" id="ip1" type="text">
+
+
+    </body>
+</html>
