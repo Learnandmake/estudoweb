@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title> Exercicio</title>
+        <meta charset="utf-8">
+        <script>
+            var lista =['cadeira','impressora','garfo' ];
+
+            function adicionar(caixa1)
+            {   
+                var caixa1 = document.getElementById('caixa').value
+           
+                
+              if (caixa1!= null  && lista.indexOf(caixa1)==-1)
+              {
+                lista.push(caixa1);
+                console.log(lista)
+               document.getElementById('caixa').value = '';
+              }
+              else
+              {
+                  alert('objeto ja foi adicionado')
+              }
+            }
+
+            function ordernar()
+            {
+                lista.sort();
+
+            console.log(lista)
+            }
+            </script>
+    </head>
+    <body>
+        <input id=caixa type="text">
+        <input type="button" onclick="adicionar(caixa)" id='adicionar'value='adicionar'>
+        <input type="button" onclick="ordernar()" id='ordernar'value='ordernar'>
+        
+      
+    </body>
+</html>
