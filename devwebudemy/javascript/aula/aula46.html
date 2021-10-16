@@ -5,6 +5,38 @@
         </title>
         <meta charset="uft-8">
         <script>
+var  x=1 
+document.write('inicio')
+document.write(x)
+//repeticao com condicao
+while(x<=10)
+{ 
+
+    //incremento
+    x++
+    //identico
+    if (x===11)
+    {
+        //break para a codicao
+        break
+    }
+    //se o x for igual a 5
+    if (x==5)
+    {
+        // continue usado para dar continuaca ao  loop 
+        //se tiver incremento dentro do continue ou uma instrucao de break o continue vai dar 
+        //loop infinito
+        //continue pula um passo da condicional
+        //o numero 5 não aparece porque não esta especificado para aparecer dentro do if(x==5)
+        //se estiver para aparecer depois de continue o numero nao via aparecer porque a instrucao foi 
+        //pulada
+        continue
+
+        
+    }
+    document.write(x);
+}
+
 
         </script>
     </head>
