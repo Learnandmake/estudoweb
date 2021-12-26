@@ -1,0 +1,51 @@
+<html>
+    <title>
+        foreach
+    </title>
+    <body>
+        <script>
+      //  var lista = ['gabriel','paulo','rafael'];
+     //   console.log(lista);
+      //  document.write(lista);
+
+        //forma 1:
+        //foreach tem a mesma função do for in, porem ele so pega dados que tem o indice
+        //a zero ou superio a zero.
+        //ou seja não busca caracteres alfanumericos ou alfabeticos
+        //busca todos os dados numericos de acordo com o filtro
+        // dado pela sintaxe da função
+     //   lista.forEach(function(valor,indice,array)
+     //   {
+           // console.log('indice: '+indice+'| valor: '+valor)
+            
+            //muda o indice para um novo dado dentro do array
+            //o javascript pega a ultima alteração em um dado do array 
+            //mesmo se tive um if
+         //   if( valor="rafael")
+        //  { 
+                
+          //        array[indice]='um novo valor'
+          //  }
+
+            //forma resumida da forma 1:
+       //     console.log(valor,indice);
+
+    //    })
+       //prova que o foreach so pega valores com indices igual ou superior a 0
+       listaalfanumerica= Array ();
+       listaalfanumerica['x']='valor com indice alfabetico'
+       listaalfanumerica[2]='valor com indice numerico maior ou igual a 0'
+       listaalfanumerica[-1]='valor com indice numerico menor que 0'
+
+       var f =function(valor, indice)
+       {
+           console.log('foreach : '+indice,valor)
+       }
+       listaalfanumerica.forEach(f);
+        console.log(listaalfanumerica)
+        document.write('<br />')
+
+
+        </script>
+    </body>
+</html>
