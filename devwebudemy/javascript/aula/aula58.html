@@ -1,0 +1,52 @@
+<html> 
+    <head>
+<title>
+    bom-timing
+</title>
+    </head>
+    <body>
+<script>
+// timing serve para acionar eventos em uma pagina de acordo com o 
+//tempo
+//link documentação:
+//https://www.w3schools.com/js/js_timing.asp
+
+// principais tags
+//set time out:
+//serve para executar uma determinada ação apos um determinado tempo
+//sintaxe:
+//settimeout(<ação>,<tempo em milisegundos>)/
+//comando para parar o timeout
+//cleartimeout()
+
+//set interval
+//serve para determinar um evento que sempre executara continualmente 
+//apos um intervalo de tempo entre as açoes
+//sintaxe:
+//setinterval(<ação>,<tempo em milisegundos>)
+//comando para parar um interval
+//clearinterval()
+
+//exemplo contador 
+var segundos= 5;
+var segundostimeout=5;
+setInterval(function()  {
+document.write(segundos)
+document.write('<br />')
+segundos--
+
+if(segundos<0)
+{
+    clearInterval()
+    
+    document.write('<br />')
+    segundostimeout
+    document.write ('segundos para reiniciar ')
+    setTimeout( function()  {
+        location.reload();
+    }, 5000);
+}
+}, 1000);
+</script>
+    </body>
+</html>
