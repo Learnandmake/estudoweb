@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>
+       Bom-windonw
+        </title>
+    </head>
+    
+    <body>
+    <script>
+        // o bom permite a comunicação tanto com o html quanto com
+        //recursos do browser
+
+        //o objeto windown permite acessar elementos da pagina
+        // o alert é um exemplo de utilização do bom
+
+        //site para pesquisa sobre o bom:
+        //https://www.w3schools.com/js/js_window.asp
+
+        //sobre tags:
+        //open e close:
+        // o open e close são usadas para abrir ou fechar uma janela
+        // porem é nescessário abrir uma nova janela para fechar a 
+        //anterior
+        // por isso geralmente usaremos o open para abrir uma nova
+        //janela antes de fechar uma janela
+
+        //open:
+        //é mais facil colocar a janela aberta dentro de uma variavel facilita manipulação
+        //var janela1;
+        //sintaxe para open:
+        //janela1=windown.open('endereço da pagina','nome','width=tamanho em px','height=...')
+
+       //close:   
+       //sintaxe para fechar janela
+       //janela ou variavel com a janela|função
+       //janela1.close();
+
+       //print:
+       //imprimir página:
+       //objeto |função
+       //windown.print();
+
+       //exemplo prático:
+       function abrirPopUp(){
+     janela = window.open('http://www.google.com.br', 'nova_janela', 'width=200, height=100' )
+    }
+    function fecharPopUp(){
+      janela.close()
+    }
+    
+    </script>
+    <button onclick="abrirPopUp()">Abrir janela</button>
+    <button onclick="fecharPopUp()">Fechar janela</button>
+    <button onclick="window.print()">Imprimir página</button>
+    </body>
+</html>
