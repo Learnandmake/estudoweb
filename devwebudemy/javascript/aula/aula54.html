@@ -1,0 +1,45 @@
+<html>
+    <head>
+<title>
+    try catch e finally
+</title>
+    </head>
+
+    <body>
+        <script>
+
+             //aqui coloca o codigo que vai ser protegido
+      try
+       {
+      //lógica
+      //http
+      console.log(video[0]['nome'])
+      } 
+           //aqui vai o tratamento em caso de erro
+      catch(erro) 
+      {
+        tratarErro
+        console.log('Agora sim podemos tratar esse erro')
+        //aqui vai a mensagem que vai ser exibida par ao usuario
+        throw new Error('Houve um erro mas não se preocupe, estamos trabalhando nisso agora!')
+      } 
+         //aqui vai  depois do tratamento
+      finally
+       {
+        console.log('Sempre passa por aqui (try / catch)')
+      }
+
+      console.log('A aplicação não morreu')
+    
+    function tratarErro(e)
+    {
+      console.log(e)
+    }
+    getVideo(video)
+           
+      
+       
+        
+        </script>
+    </body>
+</html>
