@@ -12,6 +12,11 @@ ajustartamanhopalcojogo();
 
 function posicaorandomica()
 {
+
+    if(document.getElementById('mosquito'))
+    {
+        document.getElementById('mosquito').remove()
+    }
     var posicaox= Math.floor(Math.random() * largura) -90
     var posicaoy=Math.floor(Math.random() * altura) -90
     
@@ -22,18 +27,18 @@ function posicaorandomica()
     
     var mosquito = document.createElement('img')
     mosquito.src = 'https://lh3.googleusercontent.com/pw/AM-JKLUvO_YoNMhoW6R-9_RvSEyS9tSWwolPybHPdvU1vAQVvbaKNHLY384NqWjOfGo0Yu8YCrWfxKSyjPBgJW7VJGvk0D4-mRqNJ09ASO8uo1rlnExKuz1Hqn7JyOs84jHiLmi8hbPw6b8q1-e6Pa5OIA0R=w606-h625-no?authuser=4'
-    mosquito.className= tamanhoaleatorico()
+    mosquito.className= tamanhoaleatorio() +' ' +ladoaleatorio()
     mosquito.style.left=posicaox +'px'
     mosquito.style.top=posicaoy +'px'
     mosquito.style.position = 'absolute'
-
+    mosquito.id=' mosquito'
 
     document.body.appendChild(mosquito)
 
-    console.log(tamanhoaleatorico())
+    console.log(tamanhoaleatorio())
 }
 
-function tamanhoaleatorico()
+function tamanhoaleatorio()
 {
     var classe = Math.floor(Math.random()* 3)
 switch(classe)
@@ -49,4 +54,18 @@ switch(classe)
             
     return 'mosquito3'
 }
+}
+
+function ladoaleatorio()
+{
+    var classe = Math.floor(Math.random()*2)
+    
+    switch(classe)
+    {
+        case 0:
+            return 'ladoa'
+        
+        case 1:
+            return 'ladob'
+    }
 }
