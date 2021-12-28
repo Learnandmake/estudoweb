@@ -18,7 +18,7 @@ function posicaorandomica()
         document.getElementById('mosquito').remove()
         if (vidasperdidas>3)
         {
-            alert('game over')
+            location.href="../paginas/gameover.html"
         }
     
         else
