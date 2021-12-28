@@ -1,22 +1,35 @@
-var altura=0
-var largura=0
-
+var altura= 0
+var largura =0
+var vidasperdidas = 1
 function ajustartamanhopalcojogo()
 {
   altura=window.innerHeight
   largura=window.innerWidth
   console.log(altura,largura)
 }
+ajustartamanhopalcojogo()
 
-ajustartamanhopalcojogo();
 
 function posicaorandomica()
 {
 
     if(document.getElementById('mosquito'))
-    {
+    { 
         document.getElementById('mosquito').remove()
+        if (vidasperdidas>3)
+        {
+            alert('game over')
+        }
+    
+        else
+        {
+            document.getElementById('v'+ vidasperdidas).src = "https://lh3.googleusercontent.com/pw/AM-JKLWI0GYK_6Ohy1UMDqkQRbh4HOFk1ubiUWTGcgs8qKEXVqFyeS08a4DhVJJbaRGyOJ2AI5Q2gYoLDmCmMClYYZqxxLg8e6lFLhgI0ayYNrXVssa_hkO4EydQ13IgW_3VHfxUyJl0fSFMnE0hrh6Yky9N=w30-h28-no?authuser=4"   
+            vidasperdidas++
+        }
+      
     }
+
+  
     var posicaox= Math.floor(Math.random() * largura) -90
     var posicaoy=Math.floor(Math.random() * altura) -90
     
@@ -31,7 +44,11 @@ function posicaorandomica()
     mosquito.style.left=posicaox +'px'
     mosquito.style.top=posicaoy +'px'
     mosquito.style.position = 'absolute'
-    mosquito.id=' mosquito'
+    mosquito.id='mosquito'
+    mosquito.onclick= function()
+    {
+     this.remove()
+    }
 
     document.body.appendChild(mosquito)
 

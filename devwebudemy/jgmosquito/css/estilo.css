@@ -1,3 +1,10 @@
+body
+{
+    background-image:url(https://lh3.googleusercontent.com/pw/AM-JKLXbljpLS-a-WP6IgQwtDvw12fSi3LAYF9gcdBZOQ6SKhxgGxUbEDd2eEEv0yYz6C0Oj6pckd18D7ZP-uRNXCcNu1Su7tuhsVnFgvRak8BHklcYlpfWNCGsOpSZyimCa3Pzbo8IYDoFJaoKHOeI1nJiN=w787-h625-no?authuser=4);
+    background-repeat: no-repeat;
+   background-size: 100% 100%;
+     
+} 
 .mosquito1
 {
     width: 100px;
@@ -22,4 +29,33 @@ height: 400px;
 .ladob
 {
     transform: scalex(-1);
+}
+
+.painel
+{
+    position: absolute;
+    width:800px;
+    padding:150px;
+    bottom:0px;
+    border-top:solid 1px #fff;
+    background-color:#fff;
+    opacity:0.7
+
+}
+
+.vidas
+{
+    float:left;
+}
+
+.cronometro
+{
+    float:left;
+    font-size:100px;
+    font-weight:bold;
+}
+
+.coracao
+{
+    width: 189px;
 }
