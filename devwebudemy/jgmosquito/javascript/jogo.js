@@ -1,6 +1,7 @@
 var altura= 0
 var largura =0
 var vidasperdidas = 1
+var tempo=10
 function ajustartamanhopalcojogo()
 {
   altura=window.innerHeight
@@ -9,6 +10,28 @@ function ajustartamanhopalcojogo()
 }
 ajustartamanhopalcojogo()
 
+
+var cronometro = setInterval (
+function ()
+{
+
+tempo-=1
+
+//innerhtml é o atributo entre as tags html
+//é responsável por atribuir valores de javascript para ficar entre spam utiizamos inner html 
+
+
+if(tempo<0)
+{
+ clearInterval(cronometro)
+ clearInterval(aparecermosquito)
+   location.href="../paginas/vitoria.html"
+}
+else
+{
+    document.getElementById('cronometro').innerHTML = tempo 
+}
+},1000)
 
 function posicaorandomica()
 {
