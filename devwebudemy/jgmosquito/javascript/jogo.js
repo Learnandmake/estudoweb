@@ -2,6 +2,40 @@ var altura= 0
 var largura =0
 var vidasperdidas = 1
 var tempo=10
+
+var tempocriarmosquito=1000
+
+var nivel = window.location.search 
+ var nivel1  = nivel.replace('?',' ')
+ console.log(nivel1)
+
+
+
+ if(nivel1 ==' facil')
+ {
+    tempocriarmosquito =  2000
+ }
+ 
+ if(nivel1 ==' normal')
+ {
+    tempocriarmosquito = 1500
+ }
+ 
+ if(nivel1 ==' dificil')
+ {
+    tempocriarmosquito = 1000
+ }
+ 
+  if(nivel1 ==' chucknorris')
+ {
+    tempocriarmosquito =750
+ }
+ 
+
+ 
+
+
+
 function ajustartamanhopalcojogo()
 {
   altura=window.innerHeight

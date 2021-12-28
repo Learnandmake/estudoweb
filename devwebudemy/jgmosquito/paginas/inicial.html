@@ -7,12 +7,14 @@
 <script>
     function iniciarjogo()
     {
-         document.getElementById('nivel').value
-         if(nivel=='')
+       var nivel =  document.getElementById('nivel').value
+       console.log(nivel)
+         if(nivel==='false')
          {
              alert('por favor selecione um nivel para inciar o jogo')
              return false
          }
+         location.href="app.html?"+nivel
     }
 </script>
 
@@ -32,7 +34,7 @@
                       <div class= "d-flex justify-content-center">
                           <div class="mb-2">
                             <select class="form-control" id="nivel">
-                                <option value="">
+                                <option value="false">
                                     --Selecione o nivel--
                                 </option>
                                 
