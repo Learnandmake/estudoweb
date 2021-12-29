@@ -1,41 +1,45 @@
 <html>
     <head>
 <title>
-     parametros variaveis
+    aula 53-try catch e finally
 </title>
     </head>
+
     <body>
-       <script>
+        <script>
 
-           //parametros variaveis são funçoes ou objetos
-           //que por mais que estejam chamados e passados mais para
-           //metros do que o pedido não dão erro
-           // utilizamos o objeto argument que retorna como um array
-           //porem não e possivel usar metodos que usamos no array por
-           //exemplo
+             //aqui coloca o codigo que vai ser protegido
+      try
+       {
+      //lógica
+      //http
+      console.log(video[0]['nome'])
+      } 
+           //aqui vai o tratamento em caso de erro
+      catch(erro) 
+      {
+        tratarErro
+        console.log('Agora sim podemos tratar esse erro')
+        //aqui vai a mensagem que vai ser exibida par ao usuario
+        throw new Error('Houve um erro mas não se preocupe, estamos trabalhando nisso agora!')
+      } 
+         //aqui vai  depois do tratamento
+      finally
+       {
+        console.log('Sempre passa por aqui (try / catch)')
+      }
 
-    //   function parametros_variaveis()
-    //  {
-     //       console.log(arguments)
-  //      }
-     //   parametros_variaveis (1,2,2,3,4,5,6,6,7)
+      console.log('A aplicação não morreu')
+    
+    function tratarErro(e)
+    {
+      console.log(e)
+    }
+    getVideo(video)
+           
+      
        
-     function soma ()
-     {
-         var resultado=0;
-         for (var i in arguments) {
-           resultado+= arguments[i]
-            
-         }
-         return resultado
-     }
-     //se tivermos texto no final junto com os parametros numericos o 
-     //javascript vai concatenar a palavra como com total calculado 
-     //dos numeros
-     //se os numeros estiver depois da palavra não ocorrera a soma
-     //e os numeros so serão mostrados como foram passados
-       console.log(soma(1,5,2,3,65,7,4,4,4,5,85,5,5,5,5,5,55,5,'total: '))
-       </script>
-
+        
+        </script>
     </body>
 </html>

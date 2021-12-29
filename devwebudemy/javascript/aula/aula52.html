@@ -1,0 +1,41 @@
+<html>
+    <head>
+<title>
+    aula52- parametros variaveis
+</title>
+    </head>
+    <body>
+       <script>
+
+           //parametros variaveis são funçoes ou objetos
+           //que por mais que estejam chamados e passados mais para
+           //metros do que o pedido não dão erro
+           // utilizamos o objeto argument que retorna como um array
+           //porem não e possivel usar metodos que usamos no array por
+           //exemplo
+
+    //   function parametros_variaveis()
+    //  {
+     //       console.log(arguments)
+  //      }
+     //   parametros_variaveis (1,2,2,3,4,5,6,6,7)
+       
+     function soma ()
+     {
+         var resultado=0;
+         for (var i in arguments) {
+           resultado+= arguments[i]
+            
+         }
+         return resultado
+     }
+     //se tivermos texto no final junto com os parametros numericos o 
+     //javascript vai concatenar a palavra como com total calculado 
+     //dos numeros
+     //se os numeros estiver depois da palavra não ocorrera a soma
+     //e os numeros so serão mostrados como foram passados
+       console.log(soma(1,5,2,3,65,7,4,4,4,5,85,5,5,5,5,5,55,5,'total: '))
+       </script>
+
+    </body>
+</html>
