@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <!--o babel serve como um adaptador para codigos es6 para browsers mais desatualizados-->
+        <!--cdn do babel-->
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+
+    <body>
+        <div id="output"></div>
+        <!--ele so pega codigos que estejam dentro da tag 
+            script e que tenham o type como text/babel -->
+        <script type ="text/babel">
+      const getMessage = () => "Hello World";
+       document.getElementById('output').innerHTML = getMessage();
+        </script>
+    </body>
+</html>
