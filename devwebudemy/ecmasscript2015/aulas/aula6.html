@@ -1,0 +1,37 @@
+<html>
+    <head>
+    <title>
+        aula 6 - arrow function
+    </title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+    <script type ="text/babel">
+      
+      //arrow function é uma forma simplificada de sintaxe de função normal
+
+      //sintaxe basica dele 
+      let potencia1 = (x) =>
+      {
+        return x*x
+      }
+      
+      //se tiver só um parametro podemos tirar os parenteses
+      let potencia2 = x =>
+      {
+       return x*x
+      }
+      
+      //se so tiver um retorno ou seja 
+      //se não tiver um bloco de logica que vai fazer um tratamento
+      //ou seja podemos tirar as chaves e o return
+      //podemos resumir em:
+      let potencia3 = x=> x*x
+
+      console.log(potencia1(8))
+      console.log(potencia2(8))
+      console.log(potencia3(8))
+      
+    </script>
+    </body>
+</html>

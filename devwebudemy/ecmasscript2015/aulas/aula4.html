@@ -1,0 +1,31 @@
+<html>
+    <head>
+    <title>
+        aula 4- template string
+    </title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+    <script type ="text/babel">
+       // ele é semelhante a uma concatenização de strings 
+       //porem ele abre pequenas janelas que seram usadas pelo interpretador do javascript para
+       //haver operações que serão interpretadas pelo javascript e assim o resultado da operação
+       //é atrelado a string 
+       
+       //sintaxe:
+       //pode ser usado para concatenar variaveis
+       let nome='gabriel'
+        console.log(`oi  ${nome},tudo bem ?`)
+       
+       //pode usar pra concatenar operações 
+        console.log(`8 + 8 = ${8 + 8 }`)
+        
+        function calc (x,y)
+        {
+            return x * y
+        }
+      //pode usar para concatenar funções
+      console.log(`o resultado de 5 *5 é: ${calc(5,5)}`)
+    </script>
+    </body>
+</html>

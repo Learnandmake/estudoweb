@@ -1,0 +1,34 @@
+<html>
+    <head>
+    <title>
+        aula 5 - parametro default
+    </title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+    <script type ="text/babel">
+      
+      
+      function texto (personagem = 'fubá', dono = 'gabriel')
+       {
+
+        //variaveis default são variaveis pre estabelecidas dentro da função 
+        //caso não seja passado os devidos parametros na chamada da funçao
+       document.write (`era uma vez um cachorro chamado ${personagem} , que tinha um dono que se chamava ${dono}`)
+       }
+       document.write('sem parametros passados: default')
+       document.write('<br/>')
+       document.write('<br/>')
+       //se não ficara com os default
+       texto()
+       document.write('<br/>')
+       document.write('<br/>')
+       document.write('com parametros passados:')
+       document.write('<br/>')
+       document.write('<br/>')
+       //se for passado os parametro a aplicação respondera de acordo com os 
+       //parametros
+       texto('repolho', 'rafael')
+    </script>
+    </body>
+</html>
