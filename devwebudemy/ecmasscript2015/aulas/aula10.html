@@ -1,0 +1,33 @@
+<html>
+    <head>
+    <title>
+        aula 10 - reflexão da abstração da entidade
+    </title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+    <script type ="text/babel">
+     
+      class Sofa
+      {
+        constructor ()
+        {
+         this.preco = 15
+         this.quantidade = 10
+        }
+        venda ( quantidade1)
+        {   let quantidadef= this.quantidade -=quantidade1
+            this.quantidade = quantidadef
+            let precof =  this.preco * quantidade1
+            console.log(precof)
+            console.log (`cadeiras restantes: ${this.quantidade}`)
+        }
+      }
+
+    
+       
+      let x = new Sofa
+      x.venda(5)
+    </script>
+    </body>
+</html>

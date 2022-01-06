@@ -1,0 +1,69 @@
+<html>
+    <head>
+    <title>
+        aula 7 e 8  e 9- introdução a orientação a objetos , pilar de abstração
+    </title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+    <script type ="text/babel">
+       //aula7
+      // paradigma: padrão
+      // padrão como comandos como if for etc
+
+      //pequisar react
+      
+      //aula8
+      //paradigma procedural 
+      //paradigma que usa procedimentos sem usar objetos para manipulação de dados
+
+      //paradigma de orientação a objetos
+      //usa objetos que contem funções que manipulam dados que são abstrações de 
+      //funções 
+      
+      // aula 9
+      // entidade transforma um objeto em um mundo real dentro da expressão
+      // identidade identificar de forma unica cada um dos objetos
+       //caracteristicas são partes de uma entidade convertida para paramentros
+       //metodos 
+       //ações pegas do mundo real e transformadas em codigos
+       
+       //objeto
+       class Carro 
+       {
+        //determina o modelo
+        constructor()
+        {
+          this.modelo='gt'
+          this.marca='bmw'
+          this.gasolina=10
+          this.kmh = 5
+        }
+
+        //função pode não ter a sintaxe do function
+        consultargasosa(gasolina)
+        {
+          return console.log(this.gasolina)
+        }
+
+        rodar (gasolina,kmh )
+        {
+            return  console.log( this.gasolina -= this.kmh) 
+       
+        }
+
+       }
+ 
+       //invoca o objeto
+       let viagem = new Carro()
+      //pega uma  função do objeto
+       viagem.rodar()
+
+       //se invocarmos a classe denovo os dados permaneceram default
+       let x = new Carro()
+       //prova  em default 
+       console.log(x.consultargasosa())
+      
+    </script>
+    </body>
+</html>
