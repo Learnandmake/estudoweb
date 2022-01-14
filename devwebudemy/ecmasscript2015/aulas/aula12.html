@@ -1,0 +1,78 @@
+<html>
+    <head>
+<title>
+aula 12 -atributos get e set(herança)
+</title>
+
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+
+    <body>
+<script type="text/babel">
+//classes que tem os mesmos atributos podem ser usados em uma unica classe que
+//ira dar os atributos de herança
+ class animais 
+ {
+    constructor()
+    {
+        this.dorme = true
+        this.comer = true
+        this.beber = true
+    }
+    acordar ()
+    {
+        this.dorme = false
+        console.log(this.dorme )
+    }
+ }
+
+ 
+
+ //podemos estabelecer um sistema de cascata tbm para que uma classe que dara 
+ //herança receba a herança de uma classe mais no topo hierarquico
+class felinos extends animais
+{
+    constructor()
+    {super()
+        this.garras = true
+        this.familia = 'felinos'
+    }
+}
+class cat extends felinos
+ {
+constructor()
+{
+super()
+this.sinal = 'miar'
+}
+ }
+ class pantera extends felinos
+ {
+   constructor ()
+   { super()
+       this.velocidade = '200km/h'
+   }
+
+ } 
+ class dog extends animais 
+ {
+ constructor ()
+ {
+    super()
+     this.sinal = 'latir'
+     this.familia ='caninos'  
+ }
+
+ }
+ let c  = new dog()
+ console.log(c)
+ 
+ let g  = new cat ()
+  console.log(g)
+
+   c.acordar()
+   let p = new pantera()
+   console.log(p)
+</script>
+    </body>
+</html>
