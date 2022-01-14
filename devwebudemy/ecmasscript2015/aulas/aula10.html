@@ -7,13 +7,62 @@
     </head>
     <body>
     <script type ="text/babel">
-     
+     //modo procedural
+     //em resumo são passados parametros para funções que irão tratar esses 
+     //para a lista, modelo etc:
+        //um software de marcenaria
+        //cadeira e sofá
+
+        //paradigma procedural
+
+        //cadeira
+        // let qtde_pernas = 4
+        // let giratoria = false
+        // let cor = 'azul'
+        //array de cadeiras
+       /*  let cadeiras = Array()
+        cadeiras[0] = Array()
+        cadeiras[0]['qtde_pernas'] = 4
+        cadeiras[0]['giratoria'] = false
+        cadeiras[0]['cor'] = 'azul'
+
+        cadeiras[1] = Array()
+        cadeiras[1]['qtde_pernas'] = 1
+        cadeiras[1]['giratoria'] = true
+        cadeiras[1]['cor'] = 'vermelha'
+
+        function girar_cadeira(indice) {
+            if (cadeiras[indice]['giratoria'] === true) {
+                console.log('girou')
+            } else {
+                console.log('cadeira não é giratória')
+            }
+        }
+
+        function adicionar_cadeira(qtde_pernas, giratoria, cor) {
+            cadeira['qtde_pernas'] = qtde_pernas
+            cadeira['giratoria'] = giratoria
+            cadeira['cor'] = cor
+
+            cadeiras.push(cadeira)
+        }
+        adicionar_cadeira(3, false, 'verde')
+
+        //girar_cadeira(1)
+
+        //paradigma de OO */
+
+        //aqui e a orientação a objeto 
       class Sofa
       {
-        constructor ()
+        constructor (preco1,quantidade1)
         {
-         this.preco = 15
-         this.quantidade = 10
+         //o constructor precisa receber parametros que vão ser passados para um 
+         //unico objeto que vai conter todos os parametros requeridos
+         //na instancia do objeto o que facilita caso houver mudanças dentro 
+         //dos parametros de cada objeto.
+         this.preco = preco1
+         this.quantidade = quantidade1
         }
         venda ( quantidade1)
         {   let quantidadef= this.quantidade -=quantidade1
@@ -25,8 +74,9 @@
       }
 
     
-       
-      let x = new Sofa
+    //para adicionarmos dados dentro de um objeto
+      let x = new Sofa(15,20)
+      console.log(x)
       x.venda(5)
     </script>
     </body>

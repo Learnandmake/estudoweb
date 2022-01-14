@@ -1,0 +1,40 @@
+<html>
+    <head>
+<title>
+
+</title>
+
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+
+    <body>
+<script type="text/babel">
+    //babel ainda  não suporta o atributo private do javascript
+    //por isso é importante só usar um underline para determinar quais atributos
+    //devem ser acessados diretamente
+    class Tv
+    { constructor()
+        {
+        this._relacaodecanais=Array(5,4,13)
+        this._canalativo = 5
+        this._volume = 10
+        }
+       //get e set são comuns para recuperar atributos privados
+       //get:geralmente usado para recuperar atributos privados 
+       get canalativo()
+       {
+           return this._canalativo
+       }
+       //set usado para alterar ou adicionar dados em uma variavel privada
+       set canalativo(canalativo)
+       {
+        this._canalativo=canalativo
+       }
+    }
+    let x = new Tv()
+    console.log(x.canalativo = 4 )
+
+ 
+</script>
+    </body>
+</html>
