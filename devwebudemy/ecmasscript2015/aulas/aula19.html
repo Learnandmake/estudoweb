@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>aula 19 - objeto literal unico</title>
+
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type="text/babel">
+
+      let assinatura = {
+        idCliente: 1000,
+        descricao: 'Acesso a internet',
+        status() {
+          console.log('Ativo')
+        }
+      }
+
+      console.log(assinatura.descricao)
+
+      let y = assinatura
+
+      console.log(y.descricao)
+
+      //apesar de poder ser instanciado em diversas variaveis o objeto continua sendo unico
+      //e considerando isso pode sofrer alterações em uma instancia que irao afetar 
+      //as outras
+      y.descricao = 'Internet + tv + telefone'
+
+      console.log(assinatura.descricao)
+      console.log(y.descricao)
+
+    </script>
+    
+  </head>
+  <body>
+    
+  </body>
+</html>
