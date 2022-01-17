@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<title>
+    aula 18 - objeto literal adicionando atributos e funções
+</title>
+<head>
+    <title></title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    
+    <script type="text/babel">
+     
+      
+    </script>
+</head>
+
+<body>
+
+    <script type = "text/babel">
+
+  let pessoa = {
+     nome : 'jorge',
+      idade :  20
+  }
+ console.log(pessoa)
+
+// e possivel adicionar atributos em objetos
+pessoa.sexo = 'masculino'
+console.log(pessoa)
+
+//e possivel adicionar função dentro de um objeto literario
+pessoa.dizeroi = () => console.log('oi')
+
+ pessoa.dizeroi()
+    </script>
+    <div id="output"></div>
+</body>
+
+</html>

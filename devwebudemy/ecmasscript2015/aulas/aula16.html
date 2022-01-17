@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<title>
+    aula 16 - objeto literal melhoria
+</title>
+<head>
+    <title></title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    
+    <script type="text/babel">
+     
+      
+    </script>
+</head>
+
+<body>
+
+    <script type = "text/babel">
+
+  let nome = 'jorge'
+  let idade = 10
+  let sexo = 'm'
+  let profissao = 'estudante'
+
+  let objeto = 
+  {//e possivel deixar objetos literais menos extensos so colocando o nome
+    //da variavel
+    //porem é muito importante para nomear dados de variaveis
+      nome,
+      idade,
+       sexo,
+       profissao,
+       //tbm e possivel ter apenas o nome da função literal
+      resumo ()
+      {
+          console.log(`${this.nome},${this.idade},${this.sexo},${this.profissao}`)
+      }
+  }
+
+  console.log(objeto)
+  objeto.resumo()
+    </script>
+    <div id="output"></div>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<html>
+    <head>
+<title>
+aula 14 - modificar fuções de herdadas
+</title>
+
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+
+    <body>
+<script type="text/babel">
+//classes que tem os mesmos atributos podem ser usados em uma unica classe que
+//ira dar os atributos de herança
+ class animais 
+ {
+    constructor(peso)
+    {
+        this.dorme = true
+        this.comer = true
+        this.beber = true
+        this.peso = peso
+    }
+    acordar ()
+    {
+        this.dorme = false
+        console.log(this.dorme )
+    }
+ }
+
+ 
+
+ //podemos estabelecer um sistema de cascata tbm para que uma classe que dara 
+ //herança receba a herança de uma classe mais no topo hierarquico
+class felinos extends animais
+{
+    constructor(cor, peso)
+    {  // super da acesso ao constructor da classe pai da cascata de herança
+        super(peso)
+        this.cor = cor
+        this.garras = true
+        this.familia = 'felinos'
+    }
+    retrairgarra()
+   {
+       console.log ("garra retraida")
+   }
+
+}
+class cat extends felinos
+ {
+constructor()
+{
+//podemos passar parametros atraves do super
+super('laranja',10)
+this.sinal = 'miar'
+}
+
+
+ }
+ class pantera extends felinos
+ {
+   constructor ()
+   {   
+       super('preto',30)
+       this.velocidade = '200km/h'
+   }
+
+   
+ } 
+ class guepardo extends felinos
+ {
+     constructor ()
+     {
+        super('laranja',50)
+     }
+
+//e possivel fazer com que as funções do pai sejam modificadas pelo filho em
+//casos especificos
+     retrairgarra()
+   {
+       console.log ('não pode retrair garras')
+   }
+ }
+ class dog extends animais 
+ {
+ constructor ()
+ {
+    super()
+     this.sinal = 'latir'
+     this.familia ='caninos'  
+ }
+
+ }
+ let c  = new dog()
+ c.acordar()
+ console.log(c)
+ 
+ let g  = new cat ()
+console.log(g)
+g.retrairgarra()
+
+  
+   let p = new pantera()
+   console.log(p)
+  
+
+   let g1 = new guepardo()
+   console.log(g1)
+    g1.retrairgarra()
+</script>
+    </body>
+</html>
