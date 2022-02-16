@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>
+     aula21- objetos literais
+        </title>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js" ></script>
+        
+        <script type="text/babel">
+           
+       let Carro = function()
+            {
+                this.cor ='amarelo'
+                this.modelo = 'chevette'
+                this.velocidadeatual = 10
+                // para deixarmos variaveis constantes mais seguras é importante 
+                // colocar  os dados em uma variavel garante mais segurança
+                //pois ela se torna um atributo privado ao inves de publico
+                var velocidademaxima = 100
+        
+                this.acelerar = function()
+                {   
+                    let velocidade = this.getvelocidadeatual() +10
+                    if( velocidade >= velocidademaxima )
+                    {
+                        velocidade = velocidademaxima
+                    }        
+                    
+              
+              this.setvelocidadeatual (velocidade) 
+                }
+
+                this.getvelocidadeatual = function()
+                {
+                    return this.velocidadeatual
+                }
+        
+                this.setvelocidadeatual  = function(velocidadeatual)
+                 {this.velocidadeatual = velocidadeatual}
+
+                 //funcao privada
+                // var setfuncao privada = //function() =.... 
+            }
+           
+              
+        
+            let carro = new Carro() 
+            console.log(`velocidade atual: ${carro.getvelocidadeatual()}`)
+            carro.acelerar();
+            console.log(`velocidade atual: ${carro.getvelocidadeatual()}`)
+            carro.acelerar();
+            console.log(`velocidade atual: ${carro.getvelocidadeatual()}`)
+            carro.acelerar();
+            console.log(`velocidade atual: ${carro.getvelocidadeatual()}`)
+            carro.acelerar();
+            console.log(`velocidade atual: ${carro.getvelocidadeatual()}`)
+            carro.acelerar();
+            console.log(`velocidade atual: ${carro.getvelocidadeatual()}`)
+            carro.acelerar();
+            console.log(`velocidade atual: ${carro.getvelocidadeatual()}`)
+            carro.acelerar();
+            console.log(`velocidade atual: ${carro.getvelocidadeatual()}`)
+            carro.acelerar();
+            console.log(`velocidade atual: ${carro.getvelocidadeatual()}`)
+            carro.acelerar();
+            console.log(`velocidade atual: ${carro.getvelocidadeatual()}`)
+            carro.acelerar();
+            console.log(`velocidade atual: ${carro.getvelocidadeatual()}`)
+            carro.acelerar();
+            console.log(`velocidade atual: ${carro.getvelocidadeatual()}`)
+            carro.acelerar();
+            console.log(`velocidade atual: ${carro.getvelocidadeatual()}`)
+           
+            
+            </script>
+    </head>
+
+    <body>
+
+
+    </body>
+
+</html>
