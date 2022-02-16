@@ -1,0 +1,56 @@
+<html>
+    <head>
+<title>
+aula 20- funções construtoras
+
+</title>
+
+<script src="https://unpkg.com/@babel/standalone/babel.min.js" ></script>
+
+<script type="text/babel">
+
+    //e possivel criar modelos de objetos dentro de funcoes 
+    //modelos literais  
+    let Carro = function()
+    {
+        this.cor ='amarelo'
+        this.modelo = 'chevette'
+        this.velocidadeatual = 10
+        this.velocidademaxima = 100
+
+        this.acelerar = function()
+        {   
+            let velocidade = this.getvelocidadeatual() +10
+            if( velocidade < 100)
+        { 
+            
+      
+      this.setvelocidadeatual (velocidade) 
+        }
+          
+          
+          else 
+          alert ('velocidade maxima atingida')
+        }
+        this.getvelocidadeatual = function()
+        {
+            return this.velocidadeatual
+        }
+
+        this.setvelocidadeatual  = function(velocidadeatual)
+         {this.velocidadeatual = velocidadeatual}
+    }
+       
+      
+
+    let carro = new Carro() 
+    console.log(`velocidade atual: ${carro.getvelocidadeatual()}`)
+   carro.acelerar();
+    console.log(`velocidade atual: ${carro.getvelocidadeatual()}`)
+    </script>
+    </head>
+
+    <body>
+       
+    </body>
+</html>
