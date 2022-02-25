@@ -1,0 +1,27 @@
+<html>
+    <head>
+       <title>
+       aula 24 - herança
+       </title>
+       <script src="https://unpkg.com/@babel/standalone/babel.min.js" ></script>
+ <script type="text/babel">
+
+
+  
+Object.prototype.attr50 = 'Z' //cuidado, método global!
+
+let animal = { attr1: 'a' }
+let vertebrado = { __proto__: animal, attr2: 'b' }
+//__proto__: instancia o objeto que sera o genitor do herdeiro
+//apd: pesquisar como fazer herdeiros aparir de uma função factory
+let ave = { __proto__: vertebrado, attr3: 'c', attr2: 'x' }
+
+console.log(ave.attr3, ave.attr2, ave.attr1, ave.attr50) 
+
+
+
+</script>
+    </head>
+    <body>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+    <head>
+       <title>
+       aula 23 - prototype
+       </title>
+       <script src="https://unpkg.com/@babel/standalone/babel.min.js" ></script>
+ <script type="text/babel">
+
+let aviaofactory = function (acft,modelo)    
+  {    
+ // javascript todos os objetos sao funçoes
+ // quando vemos a função vemos que ele esta descendendo da função object 
+ // exemplo console log:
+ // prototype:object
+ //sendo assim o prototype na class indica o objeto que a classe esta herdando
+ 
+ // diferença entre class e objeto
+ //A classe é um modelo, um planejamento, tal como a maquete de uma casa.
+ // O objeto seria a classe materializada, ou seja, um objeto com os devidos
+ // atributos qualificados: uma casa azul, térrea, com garagem, construída em 
+ // 2015, com valor venal de $ 100.000,00, com área construída de 60m2, etc
+
+ 
+      return {
+      acft: acft,
+      modelo: modelo
+      
+      }
+   
+  } 
+ 
+ let aviao= new  aviaofactory ('xmf','boeing 787')
+  console.log(aviao)
+</script>
+    </head>
+    <body>
+    </body>
+</html>

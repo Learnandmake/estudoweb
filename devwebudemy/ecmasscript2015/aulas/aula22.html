@@ -1,0 +1,27 @@
+ <html>
+     <head>
+        <title>
+        aula 22 - funções factory
+        </title>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js" ></script>
+ <script type="text/babel">
+  let bicicletafactory = function (modelo,aro)    
+  {    
+      //modelo criados de uma forma insertiva
+      //usado principalmente em db
+      
+      return {
+
+      modelo: modelo,
+      aro: aro
+      }
+   
+  } 
+ 
+ let bike = new bicicletafactory ('caloi','20')
+  console.log(bike)
+ </script>
+     </head>
+     <body>
+     </body>
+ </html>
