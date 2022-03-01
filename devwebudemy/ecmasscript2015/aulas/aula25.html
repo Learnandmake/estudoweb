@@ -1,0 +1,61 @@
+<html>
+    <head>
+       <title>
+       aula 25 e 26 - rest spread
+       </title>
+       <script src="https://unpkg.com/@babel/standalone/babel.min.js" ></script>
+ <script type="text/babel">
+
+//spread serve para espalhar estrutura de dados
+// rest serve para juntar estrutura de dados
+  
+
+//exemplo operador spread:
+let spreadexemplo ="o spread serve para espaçar dado por dado em uma variavel"
+console.log("SEM SPREAD: "+" "+ spreadexemplo)
+
+//operador spread ...
+console.log(...spreadexemplo)
+
+//pode ser incluido dentro de arrays
+let animaisd = [ 'cachorro','gato']
+let animaiss = ['lobo','leao']
+//inclusive para juntar arrays cujo dados ficaram certa ordem numerica
+
+let tdanimais = ['golfinho','baleia', ...animaisd, ...animaiss]
+console.log(tdanimais)
+
+//operador spread pode ser usado em objetos 
+
+// operador rest
+// e o mesmo operador do spread so que usado de forma diferente
+function soma ( ...param)
+{
+     let resultado = 0 
+
+     console.log (param)
+
+     param.forEach(v => resultado += v)
+
+     return resultado
+}
+  
+ console.log(soma(3,3,3,3,3,3,3,3,3))
+
+ function multiplicacao(m, ...p)
+{
+     console.log (m)
+let resultado = 0
+     console.log (p)
+
+     p.forEach(v => resultado += m * v)
+
+     return resultado
+}
+  
+ console.log(multiplicacao(3,3,3,3,3,3,3,3,3))
+</script>
+    </head>
+    <body>
+    </body>
+</html>
