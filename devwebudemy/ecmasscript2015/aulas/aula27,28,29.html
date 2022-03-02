@@ -1,0 +1,78 @@
+<html>
+    <head>
+       <title>
+       aula 27,28 e 29 - destructuring assigment
+       </title>
+       <script src="https://unpkg.com/@babel/standalone/babel.min.js" ></script>
+ <script type="text/babel">
+     console.log('aula27')
+let frutas = ['babacaxi','uva']
+//quando tem colchetes do lado esquerdo e uma operação de desestruturação de array
+//se tiver mais variaveis do que dados dentro do array a variavel restante
+//tera valor de undefined
+                   //valor default caso nao tenha dados para a variavel
+    //default nao substitui valores ja definidos no array
+let [a,b="abacate",c = "morango"] = frutas
+
+// dados de um array sao separados dentro 
+console.log(a,b,c)
+
+//e possivel ter dois arrays dentro de uma variavel
+let animais = [['macaco', 'papagaio'], ['babacaxi','uva']]
+//pra pegar dados de dentro do primeiro array dentro de animais 
+let [[,n1]] = animais
+//para pular arrais ou dados dentro de arrays em uma variavel usa virgula
+//pra pegar dados de dentro do segundo array dentro de animais
+let [,[n2,]] =animais 
+
+
+console.log(n1)
+
+console.log(n2)
+
+console.log('aula28')
+
+//e possivel criar um objeto dentro de um objeto dentro de uma variavel 
+
+let eletro = 
+{
+   //e um
+    marca: 'asus',
+    tipo: 'notebook',
+    preco: 10000,
+   
+   //tem um
+    detalhes:{
+        modelo: 'odyssey',
+        processador:'alien',
+        video:'gtx3060'
+    }
+}
+
+//token 
+//array =>[]
+//objeto => {}
+ 
+
+ //forma de pegar sem colocar em variaveis separadas
+
+ let  {marca , preco} = eletro
+ 
+ //forma de pegar em variaveis separadas
+ let {marca:m , preco:p} = eletro
+
+ console.log(m,p)
+
+ //retorna undefined se nao tiver coluna 
+let {audio:au} = eletro
+console.log(au)
+ //default
+ let {audio:au1 = '10'} = eletro
+ console.log(au1)
+
+ 
+</script>
+    </head>
+    <body>
+    </body>
+</html>
