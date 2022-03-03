@@ -70,7 +70,54 @@ console.log(au)
  let {audio:au1 = '10'} = eletro
  console.log(au1)
 
- 
+console.log('aula 28')
+//destruction por meio da função
+
+//array na variavel
+let arr = [10,20,30]
+
+//função default 
+function t (a, b, c, d = 100)
+{
+ console.log (a,b,c,d)
+}
+
+//declarar função
+t(arr[0], arr[2])
+
+//objeto 
+let obj ={
+    a:10,
+    b:20,
+    c:30,
+    d:40
+}
+
+function teste ({a,b,c,d,e=100})
+{
+    console.log(a,b,c,d,e)
+}
+teste(obj)
+
+console.log ('aula 29')
+
+let arr1  = [10,20,30,40]
+//destructing 
+// separando e juntando dados de um array
+//rest    // spread
+let [ a11, ...resto] = arr1
+console.log(a11)
+console.log(resto)
+
+let obj11 = {
+    a111:10,b:20,c:30
+}
+
+//em objetos
+let {a111,...z} = obj11
+
+console.log(a111)
+console.log(z)
 </script>
     </head>
     <body>
