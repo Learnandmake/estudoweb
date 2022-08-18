@@ -13,6 +13,14 @@ class despesa
     }
 }
 
+//grava as despesas no db
+function gravar (d)
+{   // armazenamento hd |nome|conversao em json
+    // se so ultilizarmos o set item, a cada inserção de dados da despesa 
+    // ira substituir o valor pre existente
+    localStorage.setItem('despesa', JSON.stringify(d))
+}
+
 //cadastra despesas
 function cadastrardespesa(){
 //variaveis
@@ -22,6 +30,15 @@ function cadastrardespesa(){
  let tipo = document.getElementById('tipo')
  let descricao = document.getElementById('descricao')
  let valor = document.getElementById('valor')
- 
-console.log(ano.value, mes.value, dia.value,tipo.value, descricao.value, valor.value)
+
+ //instancia o objeto despesa e preenche ele com parametros
+ let despesadb = new despesa (
+    ano.value,
+    mes.value,
+    dia.value,
+    tipo.value,
+    descricao.value,
+    valor.value
+ )
+gravar(despesadb)
 }
