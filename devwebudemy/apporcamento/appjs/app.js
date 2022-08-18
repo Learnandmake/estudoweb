@@ -22,9 +22,6 @@ function cadastrardespesa(){
  let tipo = document.getElementById('tipo')
  let descricao = document.getElementById('descricao')
  let valor = document.getElementById('valor')
-
-// instancia o objeto despesa 
-let depesains = new despesa (ano.value, mes.value, dia.value,tipo.value, descricao.value, valor.value)
-
-console.log(depesains)
+ 
+console.log(ano.value, mes.value, dia.value,tipo.value, descricao.value, valor.value)
 }
