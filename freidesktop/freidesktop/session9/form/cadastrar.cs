@@ -19,8 +19,8 @@ namespace freidesktop.session9.form
 
         private void button1_Click(object sender, EventArgs e)
         {
-            try
-            {
+           // try
+            //{
                 string nome = Convert.ToString(txtnome.Text);
                 decimal nota = numav.Value;
                 DateTime data = dtpdatetime.Value;
@@ -37,11 +37,11 @@ namespace freidesktop.session9.form
 
                 MessageBox.Show("Operação bem sucedida");
 
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Erro, verifique o formulario");
-            }
+           // }
+          //  catch (Exception)
+           // {
+           //     MessageBox.Show("Erro, verifique o formulario");
+            //}
 
 
         }
