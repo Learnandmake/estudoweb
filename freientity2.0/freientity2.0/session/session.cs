@@ -86,6 +86,17 @@ namespace freientity2._0.session
 
             List<database.entity.tbturma> lista = b.ltodos();
             dvg.DataSource = lista;
+            dvgturma2.DataSource = lista;
+            dvgcurso2.DataSource = lista;
+            dvgidturma2.DataSource = lista;
+            dvgqtdaluno2.DataSource = lista;
+            dvgturma3.DataSource = lista;
+            dvg4a1.DataSource = lista;
+            dvg4a2.DataSource = lista;
+            dvg4a3.DataSource = lista;
+            dvg4a4.DataSource = lista;
+            dvg4a5.DataSource = lista;
+
         }
 
         private void button2_Click_1(object sender, EventArgs e)
@@ -471,6 +482,7 @@ namespace freientity2._0.session
 
                 bussines.bussinesalunos al = new bussines.bussinesalunos();
                 dvg5.DataSource = al.listartda();
+                dvg6.DataSource = al.listartda();
             }
             catch (Exception)
             {
@@ -530,6 +542,7 @@ namespace freientity2._0.session
             txtnome6.Text = alunoselecionado.nmaluno;
             txtturma6.Text = Convert.ToString(alunoselecionado.idturma);
             dtnascimento6.Value = alunoselecionado.dtnascimento;
+            nudnrchamada6.Value = Convert.ToDecimal(alunoselecionado.nrchamada);
 
         }
         
