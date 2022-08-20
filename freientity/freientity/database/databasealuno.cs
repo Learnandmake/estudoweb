@@ -8,32 +8,32 @@ namespace freientity.database
 {
     class databasealuno
     {
-        entity.schooldbEntities entitie = new entity.schooldbEntities();
+        entity.schooldbEntities0 entitie = new entity.schooldbEntities0();
         public void inserirthpk(entity.tbaluno aluno)
         {
-            entitie.tbalunos.Add(aluno);
+            entitie.tbaluno.Add(aluno);
             entitie.SaveChanges();
         }
         public List<entity.tbaluno> ltodosalfa()
         {
-            List<entity.tbaluno> lista = entitie.tbalunos.OrderBy(t => t.nmaluno).ToList();
+            List<entity.tbaluno> lista = entitie.tbaluno.OrderBy(t => t.nmaluno).ToList();
             return lista;
         }
         public void delete(int idaluno)
         {
-            entity.tbaluno lista = entitie.tbalunos.FirstOrDefault(t => t.idaluno == idaluno);
+            entity.tbaluno lista = entitie.tbaluno.FirstOrDefault(t => t.idaluno == idaluno);
             entitie.Entry(lista).State = System.Data.EntityState.Deleted;
             entitie.SaveChanges();
         }
         public List<entity.tbaluno> falunospt (int a )
         {
-            List<entity.tbaluno> lista = entitie.tbalunos.Where(t=>t.idturma == a).ToList();
+            List<entity.tbaluno> lista = entitie.tbaluno.Where(t=>t.idturma == a).ToList();
             return lista;
         }
         
         public void alterar(entity.tbaluno idaluno)
         {
-            entity.tbaluno lista =  entitie.tbalunos.OrderByDescending(t =>t.nmaluno).FirstOrDefault(t => t.idaluno == idaluno.idaluno);
+            entity.tbaluno lista =  entitie.tbaluno.OrderByDescending(t =>t.nmaluno).FirstOrDefault(t => t.idaluno == idaluno.idaluno);
 
             if (lista != null)
             {
@@ -52,7 +52,7 @@ namespace freientity.database
 
         public void ordenaral(entity.tbaluno idaluno)
         {
-            entity.tbaluno lista = entitie.tbalunos.FirstOrDefault(t => t.idaluno == idaluno.idaluno);
+            entity.tbaluno lista = entitie.tbaluno.FirstOrDefault(t => t.idaluno == idaluno.idaluno);
             
           
          if  (lista != null )

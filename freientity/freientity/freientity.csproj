@@ -35,9 +35,8 @@
   <ItemGroup>
     <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
-      <Private>True</Private>
     </Reference>
-    <Reference Include="MySql.Data, Version=6.9.12.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data.Entity, Version=6.9.10.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
@@ -63,29 +62,29 @@
     <Compile Include="bussines\bussinesalunos.cs" />
     <Compile Include="database\database.cs" />
     <Compile Include="database\databasealuno.cs" />
-    <Compile Include="database\entity\Model.Context.cs">
+    <Compile Include="database\entity\schooldbEntities.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Model.Context.tt</DependentUpon>
+      <DependentUpon>schooldbEntities.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="database\entity\Model.cs">
+    <Compile Include="database\entity\schooldbEntities.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Model.tt</DependentUpon>
+      <DependentUpon>schooldbEntities.tt</DependentUpon>
     </Compile>
-    <Compile Include="database\entity\Model.Designer.cs">
+    <Compile Include="database\entity\schooldbEntities.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Model.edmx</DependentUpon>
+      <DependentUpon>schooldbEntities.edmx</DependentUpon>
     </Compile>
     <Compile Include="database\entity\tbaluno.cs">
-      <DependentUpon>Model.tt</DependentUpon>
+      <DependentUpon>schooldbEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="database\entity\tbmedia.cs">
-      <DependentUpon>Model.tt</DependentUpon>
+      <DependentUpon>schooldbEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="database\entity\tbturma.cs">
-      <DependentUpon>Model.tt</DependentUpon>
+      <DependentUpon>schooldbEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -112,12 +111,12 @@
     <EmbeddedResource Include="session\session.resx">
       <DependentUpon>session.cs</DependentUpon>
     </EmbeddedResource>
-    <EntityDeploy Include="database\entity\Model.edmx">
+    <EntityDeploy Include="database\entity\schooldbEntities.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Model.Designer.cs</LastGenOutput>
+      <LastGenOutput>schooldbEntities.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="database\entity\Model.edmx.diagram">
-      <DependentUpon>Model.edmx</DependentUpon>
+    <None Include="database\entity\schooldbEntities.edmx.diagram">
+      <DependentUpon>schooldbEntities.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -145,21 +144,21 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="database\entity\Model.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Model.Context.cs</LastGenOutput>
-      <DependentUpon>Model.edmx</DependentUpon>
-    </Content>
-    <Content Include="database\entity\Model.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model.edmx</DependentUpon>
-      <LastGenOutput>Model.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <Content Include="database\entity\schooldbEntities.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>schooldbEntities.edmx</DependentUpon>
+      <LastGenOutput>schooldbEntities.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="database\entity\schooldbEntities.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>schooldbEntities.edmx</DependentUpon>
+      <LastGenOutput>schooldbEntities.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

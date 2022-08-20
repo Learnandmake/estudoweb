@@ -81,18 +81,18 @@
           <Property Name="nmcurso" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="qtmaxalunos" Type="Int32" Nullable="false" />
         </EntityType>
-        <EntityContainer Name="schooldbEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="tbalunoes" EntityType="Self.tbaluno" />
-          <EntitySet Name="tbmedias" EntityType="Self.tbmedia" />
-          <EntitySet Name="tbturmas" EntityType="Self.tbturma" />
+        <EntityContainer Name="schooldbEntities0" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tbaluno" EntityType="Self.tbaluno" />
+          <EntitySet Name="tbmedia" EntityType="Self.tbmedia" />
+          <EntitySet Name="tbturma" EntityType="Self.tbturma" />
         </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="schooldbModelStoreContainer" CdmEntityContainer="schooldbEntities">
-          <EntitySetMapping Name="tbalunoes">
+        <EntityContainerMapping StorageEntityContainer="schooldbModelStoreContainer" CdmEntityContainer="schooldbEntities0">
+          <EntitySetMapping Name="tbaluno">
             <EntityTypeMapping TypeName="schooldbModel.tbaluno">
               <MappingFragment StoreEntitySet="tbaluno">
                 <ScalarProperty Name="idaluno" ColumnName="idaluno" />
@@ -105,7 +105,7 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="tbmedias">
+          <EntitySetMapping Name="tbmedia">
             <EntityTypeMapping TypeName="schooldbModel.tbmedia">
               <MappingFragment StoreEntitySet="tbmedia">
                 <ScalarProperty Name="idmedia" ColumnName="idmedia" />
@@ -118,7 +118,7 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="tbturmas">
+          <EntitySetMapping Name="tbturma">
             <EntityTypeMapping TypeName="schooldbModel.tbturma">
               <MappingFragment StoreEntitySet="tbturma">
                 <ScalarProperty Name="idturma" ColumnName="idturma" />
@@ -142,7 +142,7 @@
     <Options>
       <DesignerInfoPropertySet>
         <DesignerProperty Name="ValidateOnBuild" Value="true" />
-        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
         <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
         <DesignerProperty Name="UseLegacyProvider" Value="true" />
         <DesignerProperty Name="CodeGenerationStrategy" Value="None" />

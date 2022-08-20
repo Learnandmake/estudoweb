@@ -11,8 +11,7 @@
 #pragma warning disable 1591
 
 namespace freientity {
-    
-    
+   
     /// <summary>
     ///Represents a strongly typed in-memory cache of data.
     ///</summary>
@@ -557,7 +556,7 @@ namespace freientity {
 }
 namespace freientity.schooldbDataSetTableAdapters {
     
-    
+
     /// <summary>
     ///Represents the connection and commands used to retrieve and save data.
     ///</summary>
