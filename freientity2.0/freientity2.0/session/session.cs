@@ -88,7 +88,7 @@ namespace freientity2._0.session
             dvg.DataSource = lista;
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click_1(object sender, EventArgs e)
         {
             string curso = Convert.ToString(txtnmturma.Text);
             bussines.bussines b = new bussines.bussines();
@@ -96,7 +96,7 @@ namespace freientity2._0.session
             dvg.DataSource = lista;
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void button7_Click_1(object sender, EventArgs e)
         {
             string nmturma = Convert.ToString(txtnmturma2.Text);
             string curso = Convert.ToString(txtnmcurso2.Text);
@@ -129,7 +129,7 @@ namespace freientity2._0.session
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button3_Click_1(object sender, EventArgs e)
         {
             string curso = Convert.ToString(txtbcurso2.Text);
             bussines.bussines b = new bussines.bussines();
@@ -180,6 +180,7 @@ namespace freientity2._0.session
             txtnmcurso3.Text = turmaselecionada.nmcurso;
             txtnmturma3.Text = turmaselecionada.nmturma;
             txtidturma3.Text = Convert.ToString(turmaselecionada.idturma);
+            
             nudqtdaluno3.Value = Convert.ToDecimal(turmaselecionada.qtmaxalunos);
         }
 
@@ -531,8 +532,7 @@ namespace freientity2._0.session
             dtnascimento6.Value = alunoselecionado.dtnascimento;
 
         }
-
-       
+        
     }
    }
   

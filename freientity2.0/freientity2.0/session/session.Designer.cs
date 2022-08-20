@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(session));
             this.dvg = new System.Windows.Forms.DataGridView();
             this.lbltime = new System.Windows.Forms.Label();
@@ -182,6 +183,7 @@
             this.dvg6 = new System.Windows.Forms.DataGridView();
             this.picfecha = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dvg)).BeginInit();
             this.One.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -295,7 +297,7 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabPage1.Size = new System.Drawing.Size(1158, 791);
+            this.tabPage1.Size = new System.Drawing.Size(1092, 791);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "One";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -330,6 +332,7 @@
             this.button2.TabIndex = 12;
             this.button2.Text = "Consultar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // label5
             // 
@@ -431,7 +434,7 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabPage2.Size = new System.Drawing.Size(1158, 791);
+            this.tabPage2.Size = new System.Drawing.Size(1092, 791);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Two";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -500,6 +503,7 @@
             this.button7.TabIndex = 4;
             this.button7.Text = "Cadastrar";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click_1);
             // 
             // txtnmturma2
             // 
@@ -544,6 +548,7 @@
             this.button6.TabIndex = 4;
             this.button6.Text = "buscar";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // txtqtdaluno2
             // 
@@ -600,6 +605,7 @@
             this.button5.TabIndex = 4;
             this.button5.Text = "buscar";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // txtid
             // 
@@ -656,6 +662,7 @@
             this.button4.TabIndex = 4;
             this.button4.Text = "buscar";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // txtbturma2
             // 
@@ -712,6 +719,7 @@
             this.button3.TabIndex = 4;
             this.button3.Text = "buscar";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // txtbcurso2
             // 
@@ -751,7 +759,7 @@
             this.tabPage3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabPage3.Size = new System.Drawing.Size(1158, 791);
+            this.tabPage3.Size = new System.Drawing.Size(1092, 791);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Three";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -778,6 +786,7 @@
             this.dvgturma3.ReadOnly = true;
             this.dvgturma3.Size = new System.Drawing.Size(742, 215);
             this.dvgturma3.TabIndex = 0;
+            this.dvgturma3.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dvgturma3_RowHeaderMouseClick);
             // 
             // groupBox8
             // 
@@ -836,6 +845,7 @@
             this.button9.TabIndex = 6;
             this.button9.Text = "Delete";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // label15
             // 
@@ -894,6 +904,7 @@
             this.button8.TabIndex = 0;
             this.button8.Text = "Update";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // tabPage4
             // 
@@ -902,6 +913,7 @@
             this.tabPage4.Controls.Add(this.groupBox14);
             this.tabPage4.Controls.Add(this.groupBox11);
             this.tabPage4.Controls.Add(this.groupBox10);
+            this.tabPage4.Controls.Add(this.button15);
             this.tabPage4.Location = new System.Drawing.Point(4, 29);
             this.tabPage4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPage4.Name = "tabPage4";
@@ -1009,6 +1021,7 @@
             this.button12.TabIndex = 0;
             this.button12.Text = "update";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // label26
             // 
@@ -1037,12 +1050,11 @@
             this.groupBox15.Controls.Add(this.txtnmturma4a5);
             this.groupBox15.Controls.Add(this.label35);
             this.groupBox15.Controls.Add(this.dvg4a5);
-            this.groupBox15.Controls.Add(this.button15);
             this.groupBox15.Location = new System.Drawing.Point(12, 480);
             this.groupBox15.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox15.Name = "groupBox15";
             this.groupBox15.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox15.Size = new System.Drawing.Size(546, 231);
+            this.groupBox15.Size = new System.Drawing.Size(552, 231);
             this.groupBox15.TabIndex = 11;
             this.groupBox15.TabStop = false;
             // 
@@ -1116,13 +1128,14 @@
             // 
             this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button15.ForeColor = System.Drawing.Color.Maroon;
-            this.button15.Location = new System.Drawing.Point(14, 180);
+            this.button15.Location = new System.Drawing.Point(572, 502);
             this.button15.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(216, 35);
             this.button15.TabIndex = 0;
             this.button15.Text = "Insert";
             this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // groupBox14
             // 
@@ -1194,6 +1207,7 @@
             this.button14.TabIndex = 0;
             this.button14.Text = "delete";
             this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // label29
             // 
@@ -1283,6 +1297,7 @@
             this.dvg4a3.ReadOnly = true;
             this.dvg4a3.Size = new System.Drawing.Size(300, 195);
             this.dvg4a3.TabIndex = 9;
+            this.dvg4a3.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dvg4a3_RowHeaderMouseClick);
             // 
             // nudqtdaluno4a3
             // 
@@ -1303,6 +1318,7 @@
             this.button11.TabIndex = 0;
             this.button11.Text = "Delete";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // label22
             // 
@@ -1407,6 +1423,7 @@
             this.dvg4a1.ReadOnly = true;
             this.dvg4a1.Size = new System.Drawing.Size(300, 195);
             this.dvg4a1.TabIndex = 9;
+            this.dvg4a1.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dvg4a1_RowHeaderMouseClick);
             // 
             // label20
             // 
@@ -1465,6 +1482,7 @@
             this.button10.TabIndex = 0;
             this.button10.Text = "update";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // lbl
             // 
@@ -1492,7 +1510,7 @@
             this.tabPage5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabPage5.Size = new System.Drawing.Size(1158, 791);
+            this.tabPage5.Size = new System.Drawing.Size(1092, 791);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Five";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -1622,6 +1640,7 @@
             this.button13.TabIndex = 2;
             this.button13.Text = "Cadastrar";
             this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // txtidturma5
             // 
@@ -1672,7 +1691,7 @@
             this.tabPage6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabPage6.Size = new System.Drawing.Size(1158, 791);
+            this.tabPage6.Size = new System.Drawing.Size(1092, 791);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Six";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -1732,6 +1751,7 @@
             this.button17.TabIndex = 12;
             this.button17.Text = "Delete";
             this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
             // label46
             // 
@@ -1827,6 +1847,7 @@
             this.button16.TabIndex = 3;
             this.button16.Text = "Update";
             this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // txtidaluno6
             // 
@@ -1876,6 +1897,7 @@
             this.dvg6.ReadOnly = true;
             this.dvg6.Size = new System.Drawing.Size(765, 335);
             this.dvg6.TabIndex = 0;
+            this.dvg6.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dvg6_RowHeaderMouseClick);
             // 
             // picfecha
             // 
@@ -1899,6 +1921,12 @@
             this.pictureBox1.Size = new System.Drawing.Size(1166, 57);
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // session
             // 
@@ -2136,5 +2164,6 @@
         private System.Windows.Forms.DataGridView dvg6;
         private System.Windows.Forms.PictureBox picfecha;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Timer timer1;
     }
 }
