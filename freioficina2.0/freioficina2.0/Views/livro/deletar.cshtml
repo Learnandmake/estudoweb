@@ -3,7 +3,8 @@
 @{
     ViewBag.Title = "Deletar";
 }
-
+<br />
+<br />
 
 <h3 class="a">Voce tem certeza que deseja deletar   @Html.DisplayFor(model => model.nmlivro)? </h3>
 <div>
@@ -76,12 +77,13 @@
 
     </dl>
 
-    @using (Html.BeginForm()) {
+    @using (Html.BeginForm())
+    {
         @Html.AntiForgeryToken()
 
         <div class="form-actions no-color">
             <input type="submit" value="Deletar" id="btn" /> |
-          
+
         </div>
     }
 </div>
