@@ -1,0 +1,64 @@
+﻿@model IEnumerable<freioficina.model.livromodel>
+
+@{
+    ViewBag.Title = "listar";
+}
+
+<h2>Livros</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.idlivro)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nmlivro)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nmautor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dtlancamento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dtleitura)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.lido)
+        </th>
+        <th></th>
+    </tr>
+    @try
+    {
+        foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.idlivro)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nmlivro)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nmautor)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.dtlancamento)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.dtleitura)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.lido)
+                </td>
+                <td>
+                    @Html.ActionLink("Editar", "alterar", new { idlivro = item.idlivro }) |
+                    @Html.ActionLink("Deletar", "deletar", new { idlivro = item.idlivro })
+                </td>
+            </tr>
+        }
+    }
+    catch(Exception)
+    { }
+
+</table>
