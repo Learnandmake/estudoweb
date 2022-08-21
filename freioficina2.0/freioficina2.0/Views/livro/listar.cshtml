@@ -3,10 +3,14 @@
 @{
     ViewBag.Title = "listar";
 }
+<style>
+    .a {
+        color: white;
+    }
+</style>
+<h2 class="a">Livros</h2>
 
-<h2>Livros</h2>
-
-<table class="table">
+<table class="table , a">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.idlivro)

@@ -4,7 +4,7 @@
     ViewBag.Title = "deletar";
 }
 
-<h2>deletar</h2>
+<h2 class="a">deletar</h2>
 
 <h3>Voce tem certeza que deseja deletar   @Html.DisplayFor(model => model.nmlivro)? </h3>
 <div>
@@ -21,8 +21,12 @@
             transform: translateY(-5px);
             transform: translateX(105px);
         }
+
+        .a {
+            color: white;
+        }
     </style>
-    <dl class="dl-horizontal">
+    <dl class="dl-horizontal,a">
         <dt>
             @Html.DisplayNameFor(model => model.idlivro)
         </dt>
