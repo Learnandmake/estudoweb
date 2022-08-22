@@ -39,7 +39,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtnickusuario = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.lblrecusenha = new System.Windows.Forms.Label();
             this.lblcadastro = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picclose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbarra)).BeginInit();
@@ -171,20 +170,6 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "Nick:";
             // 
-            // lblrecusenha
-            // 
-            this.lblrecusenha.AutoSize = true;
-            this.lblrecusenha.BackColor = System.Drawing.Color.Transparent;
-            this.lblrecusenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblrecusenha.ForeColor = System.Drawing.Color.White;
-            this.lblrecusenha.Location = new System.Drawing.Point(142, 432);
-            this.lblrecusenha.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblrecusenha.Name = "lblrecusenha";
-            this.lblrecusenha.Size = new System.Drawing.Size(161, 25);
-            this.lblrecusenha.TabIndex = 26;
-            this.lblrecusenha.Text = "Recuperar senha";
-            this.lblrecusenha.Click += new System.EventHandler(this.lblrecusenha_Click_1);
-            // 
             // lblcadastro
             // 
             this.lblcadastro.AutoSize = true;
@@ -210,7 +195,6 @@
             this.Controls.Add(this.btncadastrar);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.lblrecusenha);
             this.Controls.Add(this.lblcadastro);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "login";
@@ -238,7 +222,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtnickusuario;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lblrecusenha;
         private System.Windows.Forms.Label lblcadastro;
     }
 }

@@ -16,6 +16,7 @@ namespace freitrabalho2._0.telas.adm
         public cadastro()
         {
             InitializeComponent();
+            txtsenha.UseSystemPasswordChar = true;
         }
         
 
@@ -35,7 +36,7 @@ namespace freitrabalho2._0.telas.adm
 
                 string nick = Convert.ToString(txtnickusuario.Text);
                 string email = Convert.ToString(txtemail.Text);
-                string senha = Convert.ToString(txtnickusuario.Text);
+                string senha = Convert.ToString(txtsenha.Text);
                 nick.Trim();
                 email.Trim();
                 senha.Trim();

@@ -16,7 +16,7 @@ namespace freitrabalho2._0
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new telas.usuario.topplayer());
+            Application.Run(new telas.login.login());
         }
     }
 }

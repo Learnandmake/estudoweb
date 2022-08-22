@@ -16,6 +16,7 @@ namespace freitrabalho2._0.telas.login
         public login()
         {
             InitializeComponent();
+            txtsenha.UseSystemPasswordChar = true;
         }
         private void lblcadastro_Click(object sender, EventArgs e)
         {
@@ -46,18 +47,18 @@ namespace freitrabalho2._0.telas.login
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
-
+     //   googledesativou permitir app menos seguro o codigo abaixo retornara erro
         private void lblrecusenha_Click_1(object sender, EventArgs e)
-        {
-            string nick = Convert.ToString(txtnickusuario.Text);
-            try
-            {
-                bussines.bussinesusuario busuario = new bussines.bussinesusuario();
-                bussines.bussineslogin blogin = new bussines.bussineslogin();
-                function.enviaremail enviaremail = new function.enviaremail();
-                database.entity.tbusuario usuario = new database.entity.tbusuario();
-                database.entity.tblogin login = new database.entity.tblogin();
-                function.gerarcodigo gcogido = new function.gerarcodigo();
+       {
+          string nick = Convert.ToString(txtnickusuario.Text);
+           try
+          {
+              bussines.bussinesusuario busuario = new bussines.bussinesusuario();
+              bussines.bussineslogin blogin = new bussines.bussineslogin();
+              function.enviaremail enviaremail = new function.enviaremail();
+               database.entity.tbusuario usuario = new database.entity.tbusuario();
+               database.entity.tblogin login = new database.entity.tblogin();
+               function.gerarcodigo gcogido = new function.gerarcodigo();
                 int codigo = gcogido.gcodigo();
 
                 usuario = busuario.buscarusuariopornick(nick);
@@ -75,6 +76,8 @@ namespace freitrabalho2._0.telas.login
                 MessageBox.Show("usuario não encontrado");
             }
         }
+        //aqui termina o codigo defeituoso
+
 
         private void btncadastrar_Click_1(object sender, EventArgs e)
         {
