@@ -42,6 +42,7 @@
             this.piccadastraradm = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.picmap = new System.Windows.Forms.PictureBox();
+            this.piclogout = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picclose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbarra)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.piccadastrarpergunta)).BeginInit();
@@ -50,6 +51,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.piccadastraradm)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picmap)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.piclogout)).BeginInit();
             this.SuspendLayout();
             // 
             // lbltime
@@ -198,12 +200,26 @@
             this.picmap.TabStop = false;
             this.picmap.Click += new System.EventHandler(this.picmap_Click);
             // 
+            // piclogout
+            // 
+            this.piclogout.BackColor = System.Drawing.Color.Teal;
+            this.piclogout.Image = ((System.Drawing.Image)(resources.GetObject("piclogout.Image")));
+            this.piclogout.Location = new System.Drawing.Point(26, 407);
+            this.piclogout.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.piclogout.Name = "piclogout";
+            this.piclogout.Size = new System.Drawing.Size(55, 41);
+            this.piclogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.piclogout.TabIndex = 56;
+            this.piclogout.TabStop = false;
+            this.piclogout.Click += new System.EventHandler(this.piclogout_Click);
+            // 
             // menuadm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(698, 452);
+            this.Controls.Add(this.piclogout);
             this.Controls.Add(this.picmap);
             this.Controls.Add(this.lbltime);
             this.Controls.Add(this.lblnick);
@@ -226,6 +242,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.piccadastraradm)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picmap)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.piclogout)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -245,5 +262,6 @@
         private System.Windows.Forms.PictureBox piccadastraradm;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox picmap;
+        private System.Windows.Forms.PictureBox piclogout;
     }
 }

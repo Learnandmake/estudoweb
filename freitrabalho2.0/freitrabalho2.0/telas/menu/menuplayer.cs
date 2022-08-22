@@ -133,5 +133,12 @@ namespace freitrabalho2._0.telas.menu
             telas.mapa.mapa mapa = new telas.mapa.mapa();
             mapa.Show();
         }
+
+        private void picloginout_Click(object sender, EventArgs e)
+        {
+            telas.login.login login = new login.login();
+            login.Show();
+            this.Visible = false;
+        }
     }
 }

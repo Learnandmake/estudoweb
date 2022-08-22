@@ -129,7 +129,10 @@ namespace freitrabalho2._0.telas.login
             { MessageBox.Show("Erro por favor verifique o formulario"); }
         }
 
-
-       
+        private void label2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Por favor entre em contato com o administrador " +
+                "email: gabrod7k@gmail.com");
+        }
     }
 }
