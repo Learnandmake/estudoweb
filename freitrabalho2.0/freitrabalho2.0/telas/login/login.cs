@@ -130,9 +130,9 @@ namespace freitrabalho2._0.telas.login
         }
 
         private void label2_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Por favor entre em contato com o administrador " +
-                "email: gabrod7k@gmail.com");
+        { 
+            MessageBox.Show("recursos de recuperação de senha estão em manutenção");
+            MessageBox.Show("por favor entre em contato com o email:gabrod7k@gmail.com, informando o login");
         }
     }
 }
