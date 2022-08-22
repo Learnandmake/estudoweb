@@ -63,7 +63,6 @@
             this.label13 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.lblacre = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picclose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbarra)).BeginInit();
             this.groupBox4.SuspendLayout();
@@ -94,6 +93,8 @@
             this.picclose.TabIndex = 99;
             this.picclose.TabStop = false;
             this.picclose.Click += new System.EventHandler(this.picclose_Click);
+            this.picclose.MouseEnter += new System.EventHandler(this.picclose_MouseEnter_1);
+            this.picclose.MouseLeave += new System.EventHandler(this.picclose_MouseLeave_1);
             // 
             // picbarra
             // 
@@ -104,6 +105,7 @@
             this.picbarra.Size = new System.Drawing.Size(1366, 48);
             this.picbarra.TabIndex = 98;
             this.picbarra.TabStop = false;
+            this.picbarra.MouseMove += new System.Windows.Forms.MouseEventHandler(this.picbarra_MouseMove_1);
             // 
             // label24
             // 
@@ -117,6 +119,7 @@
             this.label24.Size = new System.Drawing.Size(25, 29);
             this.label24.TabIndex = 97;
             this.label24.Text = "?";
+            this.label24.MouseEnter += new System.EventHandler(this.label24_MouseEnter);
             // 
             // label21
             // 
@@ -130,6 +133,7 @@
             this.label21.Size = new System.Drawing.Size(25, 29);
             this.label21.TabIndex = 96;
             this.label21.Text = "?";
+            this.label21.MouseEnter += new System.EventHandler(this.label21_MouseEnter);
             // 
             // label27
             // 
@@ -143,6 +147,7 @@
             this.label27.Size = new System.Drawing.Size(25, 29);
             this.label27.TabIndex = 95;
             this.label27.Text = "?";
+            this.label27.MouseEnter += new System.EventHandler(this.label27_MouseEnter);
             // 
             // label26
             // 
@@ -156,6 +161,7 @@
             this.label26.Size = new System.Drawing.Size(31, 33);
             this.label26.TabIndex = 94;
             this.label26.Text = "?";
+            this.label26.MouseEnter += new System.EventHandler(this.label26_MouseEnter);
             // 
             // label23
             // 
@@ -169,6 +175,7 @@
             this.label23.Size = new System.Drawing.Size(31, 33);
             this.label23.TabIndex = 93;
             this.label23.Text = "?";
+            this.label23.MouseEnter += new System.EventHandler(this.label23_MouseEnter);
             // 
             // label9
             // 
@@ -182,6 +189,7 @@
             this.label9.Size = new System.Drawing.Size(47, 52);
             this.label9.TabIndex = 92;
             this.label9.Text = "?";
+            this.label9.MouseEnter += new System.EventHandler(this.label9_MouseEnter);
             // 
             // label25
             // 
@@ -195,6 +203,7 @@
             this.label25.Size = new System.Drawing.Size(47, 52);
             this.label25.TabIndex = 91;
             this.label25.Text = "?";
+            this.label25.MouseEnter += new System.EventHandler(this.label25_MouseEnter);
             // 
             // label22
             // 
@@ -208,6 +217,7 @@
             this.label22.Size = new System.Drawing.Size(47, 52);
             this.label22.TabIndex = 90;
             this.label22.Text = "?";
+            this.label22.MouseEnter += new System.EventHandler(this.label22_MouseEnter);
             // 
             // label20
             // 
@@ -221,6 +231,7 @@
             this.label20.Size = new System.Drawing.Size(47, 52);
             this.label20.TabIndex = 89;
             this.label20.Text = "?";
+            this.label20.MouseEnter += new System.EventHandler(this.label20_MouseEnter);
             // 
             // label19
             // 
@@ -234,6 +245,7 @@
             this.label19.Size = new System.Drawing.Size(47, 52);
             this.label19.TabIndex = 88;
             this.label19.Text = "?";
+            this.label19.MouseEnter += new System.EventHandler(this.label19_MouseEnter);
             // 
             // label18
             // 
@@ -247,6 +259,7 @@
             this.label18.Size = new System.Drawing.Size(47, 52);
             this.label18.TabIndex = 87;
             this.label18.Text = "?";
+            this.label18.MouseEnter += new System.EventHandler(this.label18_MouseEnter);
             // 
             // label17
             // 
@@ -260,6 +273,7 @@
             this.label17.Size = new System.Drawing.Size(47, 52);
             this.label17.TabIndex = 86;
             this.label17.Text = "?";
+            this.label17.MouseEnter += new System.EventHandler(this.label17_Click);
             // 
             // label16
             // 
@@ -273,6 +287,7 @@
             this.label16.Size = new System.Drawing.Size(47, 52);
             this.label16.TabIndex = 85;
             this.label16.Text = "?";
+            this.label16.MouseEnter += new System.EventHandler(this.label16_MouseEnter);
             // 
             // label15
             // 
@@ -286,6 +301,7 @@
             this.label15.Size = new System.Drawing.Size(47, 52);
             this.label15.TabIndex = 84;
             this.label15.Text = "?";
+            this.label15.MouseEnter += new System.EventHandler(this.label15_MouseEnter);
             // 
             // label14
             // 
@@ -293,12 +309,13 @@
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(10, 230);
+            this.label14.Location = new System.Drawing.Point(278, 233);
             this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(47, 52);
             this.label14.TabIndex = 83;
             this.label14.Text = "?";
+            this.label14.MouseEnter += new System.EventHandler(this.label14_MouseEnter);
             // 
             // label12
             // 
@@ -312,6 +329,7 @@
             this.label12.Size = new System.Drawing.Size(47, 52);
             this.label12.TabIndex = 81;
             this.label12.Text = "?";
+            this.label12.MouseEnter += new System.EventHandler(this.label12_MouseEnter);
             // 
             // label11
             // 
@@ -325,6 +343,7 @@
             this.label11.Size = new System.Drawing.Size(47, 52);
             this.label11.TabIndex = 80;
             this.label11.Text = "?";
+            this.label11.MouseEnter += new System.EventHandler(this.label11_MouseEnter);
             // 
             // label10
             // 
@@ -338,6 +357,7 @@
             this.label10.Size = new System.Drawing.Size(47, 52);
             this.label10.TabIndex = 79;
             this.label10.Text = "?";
+            this.label10.MouseEnter += new System.EventHandler(this.label10_MouseEnter);
             // 
             // label8
             // 
@@ -351,6 +371,7 @@
             this.label8.Size = new System.Drawing.Size(47, 52);
             this.label8.TabIndex = 78;
             this.label8.Text = "?";
+            this.label8.MouseEnter += new System.EventHandler(this.label8_MouseEnter);
             // 
             // label7
             // 
@@ -364,6 +385,7 @@
             this.label7.Size = new System.Drawing.Size(47, 52);
             this.label7.TabIndex = 77;
             this.label7.Text = "?";
+            this.label7.MouseEnter += new System.EventHandler(this.label7_MouseEnter);
             // 
             // label6
             // 
@@ -377,6 +399,7 @@
             this.label6.Size = new System.Drawing.Size(47, 52);
             this.label6.TabIndex = 76;
             this.label6.Text = "?";
+            this.label6.MouseEnter += new System.EventHandler(this.label6_MouseEnter);
             // 
             // label5
             // 
@@ -390,6 +413,7 @@
             this.label5.Size = new System.Drawing.Size(47, 52);
             this.label5.TabIndex = 75;
             this.label5.Text = "?";
+            this.label5.MouseEnter += new System.EventHandler(this.label5_MouseEnter);
             // 
             // label4
             // 
@@ -403,6 +427,7 @@
             this.label4.Size = new System.Drawing.Size(47, 52);
             this.label4.TabIndex = 74;
             this.label4.Text = "?";
+            this.label4.MouseEnter += new System.EventHandler(this.label4_MouseEnter);
             // 
             // label1
             // 
@@ -416,6 +441,7 @@
             this.label1.Size = new System.Drawing.Size(47, 52);
             this.label1.TabIndex = 73;
             this.label1.Text = "?";
+            this.label1.MouseEnter += new System.EventHandler(this.label1_MouseEnter_1);
             // 
             // lblcapital
             // 
@@ -475,6 +501,7 @@
             this.label13.Size = new System.Drawing.Size(47, 52);
             this.label13.TabIndex = 82;
             this.label13.Text = "?";
+            this.label13.MouseEnter += new System.EventHandler(this.label13_MouseEnter);
             // 
             // groupBox4
             // 
@@ -503,28 +530,16 @@
             this.label3.Size = new System.Drawing.Size(47, 52);
             this.label3.TabIndex = 71;
             this.label3.Text = "?";
-            // 
-            // lblacre
-            // 
-            this.lblacre.AutoSize = true;
-            this.lblacre.BackColor = System.Drawing.Color.Transparent;
-            this.lblacre.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblacre.ForeColor = System.Drawing.Color.White;
-            this.lblacre.Location = new System.Drawing.Point(278, 228);
-            this.lblacre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblacre.Name = "lblacre";
-            this.lblacre.Size = new System.Drawing.Size(47, 52);
-            this.lblacre.TabIndex = 101;
-            this.lblacre.Text = "?";
+            this.label3.MouseEnter += new System.EventHandler(this.label3_MouseEnter);
             // 
             // mapa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Teal;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1253, 703);
-            this.Controls.Add(this.lblacre);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.picclose);
             this.Controls.Add(this.picbarra);
@@ -603,6 +618,5 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label lblacre;
     }
 }

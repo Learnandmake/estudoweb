@@ -62,7 +62,7 @@ namespace freitrabalho2._0.telas.mapa
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
         //sp
-        private void label1_MouseEnter(object sender, EventArgs e)
+        private void label1_MouseEnter_1(object sender, EventArgs e)
         {
             lbltitulo.Text = "São Paulo";
             lblsinopse.Text = "São Paulo, centro financeiro do Brasil, está entre as cidades mais populosas do mundo, com diversas instituições culturais e uma rica tradição arquitetônica. Há prédios simbólicos como a catedral neogótica, o Edifício Martinelli, um arranha-céu inaugurado em 1929, e o Edifício Copan, com suas linhas curvas projetadas pelo arquiteto modernista Oscar Niemeyer. A igreja em estilo colonial do Pátio do Colégio marca o local onde os padres jesuítas fundaram a cidade em 1554.";
