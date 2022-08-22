@@ -85,9 +85,7 @@ namespace freitrabalho2._0.telas.adm
         }
 
         private void picclose_Click(object sender, EventArgs e)
-        {
-            this.Visible = false;
-        }
+        { this.Visible = false;       }
 
         private void picclose_MouseEnter(object sender, EventArgs e)
         {

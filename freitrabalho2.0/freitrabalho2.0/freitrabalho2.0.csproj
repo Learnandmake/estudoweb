@@ -111,6 +111,24 @@
     <Compile Include="telas\adm\cadastro.Designer.cs">
       <DependentUpon>cadastro.cs</DependentUpon>
     </Compile>
+    <Compile Include="telas\menu\menuplayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="telas\menu\menuplayer.Designer.cs">
+      <DependentUpon>menuplayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="telas\pergunta\cadastrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="telas\pergunta\cadastrar.Designer.cs">
+      <DependentUpon>cadastrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="telas\pergunta\pergunta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="telas\pergunta\pergunta.Designer.cs">
+      <DependentUpon>pergunta.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -122,6 +140,15 @@
     </Compile>
     <EmbeddedResource Include="telas\adm\cadastro.resx">
       <DependentUpon>cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="telas\menu\menuplayer.resx">
+      <DependentUpon>menuplayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="telas\pergunta\cadastrar.resx">
+      <DependentUpon>cadastrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="telas\pergunta\pergunta.resx">
+      <DependentUpon>pergunta.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="database\entity\freitrabalhoentitties.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -144,9 +171,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="telas\NewFolder1\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="database\entity\freitrabalhoentitties.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>

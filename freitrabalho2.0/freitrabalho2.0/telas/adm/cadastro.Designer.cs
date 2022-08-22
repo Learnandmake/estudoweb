@@ -82,6 +82,7 @@
             this.picbarra.Size = new System.Drawing.Size(453, 48);
             this.picbarra.TabIndex = 19;
             this.picbarra.TabStop = false;
+            this.picbarra.MouseMove += new System.Windows.Forms.MouseEventHandler(this.picbarra_MouseMove);
             // 
             // pictureBox1
             // 
@@ -184,10 +185,10 @@
             this.btncadastrar.BackColor = System.Drawing.Color.MintCream;
             this.btncadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btncadastrar.ForeColor = System.Drawing.Color.Teal;
-            this.btncadastrar.Location = new System.Drawing.Point(137, 389);
+            this.btncadastrar.Location = new System.Drawing.Point(94, 389);
             this.btncadastrar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btncadastrar.Name = "btncadastrar";
-            this.btncadastrar.Size = new System.Drawing.Size(242, 68);
+            this.btncadastrar.Size = new System.Drawing.Size(285, 68);
             this.btncadastrar.TabIndex = 22;
             this.btncadastrar.Text = "Cadastrar";
             this.btncadastrar.UseVisualStyleBackColor = false;
