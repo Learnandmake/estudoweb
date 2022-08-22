@@ -129,6 +129,12 @@
     <Compile Include="telas\login\recusenha.Designer.cs">
       <DependentUpon>recusenha.cs</DependentUpon>
     </Compile>
+    <Compile Include="telas\mapa\mapa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="telas\mapa\mapa.Designer.cs">
+      <DependentUpon>mapa.cs</DependentUpon>
+    </Compile>
     <Compile Include="telas\menu\menuadm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -191,6 +197,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="telas\login\recusenha.resx">
       <DependentUpon>recusenha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="telas\mapa\mapa.resx">
+      <DependentUpon>mapa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="telas\menu\menuadm.resx">
       <DependentUpon>menuadm.cs</DependentUpon>
