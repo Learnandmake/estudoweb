@@ -11,16 +11,12 @@ using System.Windows.Forms;
 
 namespace freitrabalho2._0.telas.menu
 {
-    public partial class menuplayer : Form
+    public partial class menuadm : Form
     {
-        public menuplayer(string nick, string pontuacao)
+        public menuadm(string nick)
         {
             InitializeComponent();
             lblnick.Text = nick;
-
-
-            lblpts.Text = Convert.ToString(pontuacao);
-
         }
 
         private void picclose_Click(object sender, EventArgs e)
@@ -33,14 +29,14 @@ namespace freitrabalho2._0.telas.menu
             lbltime.Text = (DateTime.Now.ToString("HH:mm:ss"));
         }
 
-        private void picclose_MouseLeave(object sender, EventArgs e)
-        {
-            picclose.BackColor = Color.Teal;
-        }
-
         private void picclose_MouseEnter(object sender, EventArgs e)
         {
             picclose.BackColor = Color.Maroon;
+        }
+
+        private void picclose_MouseLeave(object sender, EventArgs e)
+        {
+            picclose.BackColor = Color.Teal;
         }
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
@@ -51,84 +47,85 @@ namespace freitrabalho2._0.telas.menu
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
-
-        private void label2_MouseMove(object sender, MouseEventArgs e)
-        {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
-        }
-
-        private void lblnick_MouseMove(object sender, MouseEventArgs e)
-        {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
-        }
-
-        private void label1_MouseMove(object sender, MouseEventArgs e)
-        {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
-        }
-
-        private void lblpts_MouseMove(object sender, MouseEventArgs e)
-        {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
-        }
-
         private void lbltime_MouseMove(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
+        private void label2_MouseMove(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+        private void piccadastraradm_MouseMove(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
 
-        private void picask_MouseMove(object sender, MouseEventArgs e)
+        private void picconsultar_MouseMove(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void picconsultartop_MouseMove(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void piccadastrarpergunta_MouseMove(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+        private void lblnick_MouseMove(object sender, MouseEventArgs e)
         {
 
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
-
-        private void pictop_MouseMove(object sender, MouseEventArgs e)
-        {
-
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
-        }
-
-        private void picmap_MouseMove(object sender, MouseEventArgs e)
-        {
-
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
-        }
-        private void menuplayer_MouseMove(object sender, MouseEventArgs e)
+        private void pictureBox2_MouseMove(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
+        private void menuadm_MouseMove(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
         private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
         {
-
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
-
-
-       private void pictop_Click(object sender, EventArgs e)
-       {
-           telas.usuario.topplayer player = new usuario.topplayer();
-           player.Show();
-        }
-
-        private void picask_Click(object sender, EventArgs e)
+        private void piccadastrarpergunta_Click(object sender, EventArgs e)
         {
-            telas.pergunta.pergunta m = new pergunta.pergunta(lblnick.Text);
+            telas.pergunta.cadastrar m = new pergunta.cadastrar();
             m.Show();
-            this.Visible = false;
         }
 
+        private void picconsultartop_Click(object sender, EventArgs e)
+        {
+            telas.usuario.topplayer m = new usuario.topplayer();
+            m.Show();
+        }
 
-       
+        private void picconsultar_Click(object sender, EventArgs e)
+        {
+            telas.usuario.consultarusuario m = new usuario.consultarusuario();
+            m.Show();
+        }
+
+        private void piccadastraradm_Click(object sender, EventArgs e)
+        {
+            telas.adm.cadastro m = new adm.cadastro();
+            m.Show();
+        }
+
+      
     }
 }

@@ -111,6 +111,30 @@
     <Compile Include="telas\adm\cadastro.Designer.cs">
       <DependentUpon>cadastro.cs</DependentUpon>
     </Compile>
+    <Compile Include="telas\login\codigo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="telas\login\codigo.Designer.cs">
+      <DependentUpon>codigo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="telas\login\login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="telas\login\login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="telas\login\recusenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="telas\login\recusenha.Designer.cs">
+      <DependentUpon>recusenha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="telas\menu\menuadm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="telas\menu\menuadm.Designer.cs">
+      <DependentUpon>menuadm.cs</DependentUpon>
+    </Compile>
     <Compile Include="telas\menu\menuplayer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,6 +182,18 @@
     </Compile>
     <EmbeddedResource Include="telas\adm\cadastro.resx">
       <DependentUpon>cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="telas\login\codigo.resx">
+      <DependentUpon>codigo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="telas\login\login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="telas\login\recusenha.resx">
+      <DependentUpon>recusenha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="telas\menu\menuadm.resx">
+      <DependentUpon>menuadm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="telas\menu\menuplayer.resx">
       <DependentUpon>menuplayer.cs</DependentUpon>
