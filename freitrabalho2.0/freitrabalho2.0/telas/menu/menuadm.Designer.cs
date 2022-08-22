@@ -41,6 +41,7 @@
             this.picconsultar = new System.Windows.Forms.PictureBox();
             this.piccadastraradm = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picmap = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picclose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbarra)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.piccadastrarpergunta)).BeginInit();
@@ -48,6 +49,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picconsultar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.piccadastraradm)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picmap)).BeginInit();
             this.SuspendLayout();
             // 
             // lbltime
@@ -183,12 +185,26 @@
             this.pictureBox1.TabIndex = 43;
             this.pictureBox1.TabStop = false;
             // 
+            // picmap
+            // 
+            this.picmap.BackColor = System.Drawing.Color.Teal;
+            this.picmap.Image = ((System.Drawing.Image)(resources.GetObject("picmap.Image")));
+            this.picmap.Location = new System.Drawing.Point(17, 325);
+            this.picmap.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.picmap.Name = "picmap";
+            this.picmap.Size = new System.Drawing.Size(72, 58);
+            this.picmap.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picmap.TabIndex = 55;
+            this.picmap.TabStop = false;
+            this.picmap.Click += new System.EventHandler(this.picmap_Click);
+            // 
             // menuadm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(698, 452);
+            this.Controls.Add(this.picmap);
             this.Controls.Add(this.lbltime);
             this.Controls.Add(this.lblnick);
             this.Controls.Add(this.label2);
@@ -202,7 +218,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "menuadm";
             this.Text = "menuadm";
-        
             ((System.ComponentModel.ISupportInitialize)(this.picclose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbarra)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.piccadastrarpergunta)).EndInit();
@@ -210,6 +225,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picconsultar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.piccadastraradm)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picmap)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -228,5 +244,6 @@
         private System.Windows.Forms.PictureBox picconsultar;
         private System.Windows.Forms.PictureBox piccadastraradm;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picmap;
     }
 }

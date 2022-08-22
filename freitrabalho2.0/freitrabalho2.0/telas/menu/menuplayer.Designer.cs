@@ -41,11 +41,13 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lblpts = new System.Windows.Forms.Label();
+            this.picmap = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picclose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbarra)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picask)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictop)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picmap)).BeginInit();
             this.SuspendLayout();
             // 
             // lbltime
@@ -181,12 +183,26 @@
             this.lblpts.TabIndex = 48;
             this.lblpts.Text = "0";
             // 
+            // picmap
+            // 
+            this.picmap.BackColor = System.Drawing.Color.Teal;
+            this.picmap.Image = ((System.Drawing.Image)(resources.GetObject("picmap.Image")));
+            this.picmap.Location = new System.Drawing.Point(15, 205);
+            this.picmap.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.picmap.Name = "picmap";
+            this.picmap.Size = new System.Drawing.Size(72, 58);
+            this.picmap.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picmap.TabIndex = 54;
+            this.picmap.TabStop = false;
+            this.picmap.Click += new System.EventHandler(this.picmap_Click);
+            // 
             // menuplayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(699, 446);
+            this.Controls.Add(this.picmap);
             this.Controls.Add(this.lbltime);
             this.Controls.Add(this.lblnick);
             this.Controls.Add(this.label2);
@@ -205,6 +221,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picask)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictop)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picmap)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -223,5 +240,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblpts;
+        private System.Windows.Forms.PictureBox picmap;
     }
 }

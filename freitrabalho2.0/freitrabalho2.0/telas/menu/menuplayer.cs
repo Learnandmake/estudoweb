@@ -128,7 +128,10 @@ namespace freitrabalho2._0.telas.menu
             this.Visible = false;
         }
 
-
-       
+        private void picmap_Click(object sender, EventArgs e)
+        {
+            telas.mapa.mapa mapa = new telas.mapa.mapa();
+            mapa.Show();
+        }
     }
 }
