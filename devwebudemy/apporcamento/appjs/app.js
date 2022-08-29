@@ -12,14 +12,46 @@ class despesa
        this.valor = valor
     }
 }
+//db para conseguir adicionar dados sem subistituir os existentes
+//classe bd que vai gravar os dados
+class bd{
+    //funcao que adiciona um campo no objeto
+    constructor()
+    {
+        //busca o id
+        let id = localStorage.getItem('id')
+        
 
+        //se a busca for retornar vazia o id inicial sera '0'
+        if(id === null)
+        {
+            localStorage.setItem('id',0)
+        }
+    }
+    //funcao que determina o proximo id que vai ser 
+    //atrelado aos dados inseridos posteriormente~
+    getproximoid()
+    {//variavel/ getitem busca um item da localstorage com base em um filtro/filtro    (se o campo filtro nao existir no objeto a busca retornara null)
+        let proximoid =                                         localStorage.getItem('id');
+        return parseInt(proximoid) + 1
+    }
 //grava as despesas no db
-function gravar (d)
+ gravar (d)
 {   // armazenamento hd |nome|conversao em json
     // se so ultilizarmos o set item, a cada inserção de dados da despesa 
     // ira substituir o valor pre existente
-    localStorage.setItem('despesa', JSON.stringify(d))
+    //localStorage.setItem('despesa', JSON.stringify(d))
+  
+  
+    //chama funcao de busca o proximo id
+    let id =  this.getproximoid()
+
+    localStorage.setItem(id, JSON.stringify(d))
+  
+    localStorage.setItem('id',id)
 }
+}
+let bd1 = new bd();
 
 //cadastra despesas
 function cadastrardespesa(){
@@ -40,5 +72,6 @@ function cadastrardespesa(){
     descricao.value,
     valor.value
  )
-gravar(despesadb)
+ //instancia do do bjeto
+bd1.gravar(despesadb)
 }

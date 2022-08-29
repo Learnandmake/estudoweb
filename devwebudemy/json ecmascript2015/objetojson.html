@@ -1,0 +1,49 @@
+<html>
+
+<head>
+</head>
+
+<body>  
+</body>
+
+<script>
+
+//aula de diferenças entre ecmascript e json
+
+//objeto literal 
+
+let objeto = 
+{
+    categoria :'eletrodomestico',
+    descricao : 'geladeira',
+    preco : '1999,00'
+} 
+
+console.log(objeto)
+
+//anotacao json
+
+//json diferente de um objeto literal se categoriza como string 
+
+// no json precisamos encapsular as strings internamente
+
+//json e usado para trafegar informaçoes entre a aplicação e o navegador 
+//com fim de armazenar informaçoes no internal storage 
+// ja que o obejto literal so existe dentro da aplicação
+
+let objetoJSON = '{"categoria":  " eletrodomestico ", "descricao": "geladeira", "preco": 1999)'
+
+console.log(objetoJSON)
+
+
+//converter objetos  em json
+JSON.stringify(objeto)
+
+console.log(objeto)
+
+//converter  json em objeto 
+JSON.parse(objeto)
+
+console.log(objeto)
+</script>
+</html>
