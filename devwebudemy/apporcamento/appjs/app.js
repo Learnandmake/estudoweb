@@ -102,11 +102,17 @@ function cadastrardespesa(){
 // if se estiver completo e else se algum campo estiver vazio
  if(despesadb.validardados()) {
     // instancia do objeto
-    //bd1.gravar(despesadb)
+    bd1.gravar(despesadb)
     //dialog de sucesso
+    $('#sucessogravacao').modal('show')
     console.log('Dados válidos')
 } else {
     //dialog de sucesso
+    //$ : seletor de elementos do jquery 
+    //dentro dos parenteses entra o id da div
+    //modal: usado para representar modais de bootstrap
+    //show: estado do modal para 'aparecer'
+    $('#errogravacao').modal('show')
     console.log('Dados inválidos')
 }
  //instancia do do bjeto

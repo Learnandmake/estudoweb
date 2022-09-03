@@ -107,5 +107,61 @@
           </div>
         </div>
       </div>
+      <!--modal de erro 'formulario incompleto'-->
+      <!--o botao so serve pra mudar o modo do style display de 'none' pra 'block'-->
+      <!--bootstrap reage a jquery-->
+      <!--botao que vai acionar a mensagem de erro-->
+      <!-- Button trigger modal -->                               <!--id do alvo setado-->                                                                 
+<!--
+ <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#errogravacao">
+  texto do botao 
+  Launch demo modal
+</button>
+-->
+     
+<!--modal de erro-->
+<!--estrutura da mensagem-->
+<!-- Modal -->          <!--id para identificação da div-->
+<div class="modal fade" id="errogravacao" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content"><!--cor do titulo -->
+      <div class="modal-header text-danger">      <!--titulo-->
+        <h5 class="modal-title" id="exampleModalLabel">erro na gravação</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <!--mensagem de erro-->
+      <div class="modal-body">
+        Formulário incompleto
+      </div>
+      <div class="modal-footer"> <!--cor do botao resposta--><!--atributo usado para esconder o modal --><!--texto do botao--> 
+        <button type="button" class="btn btn-danger"         data-dismiss="modal">        Ok</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--modal de sucesso-->
+
+<div class="modal fade" id="sucessogravacao" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content"><!--cor do titulo -->
+      <div class="modal-header text-success">      <!--titulo-->
+        <h5 class="modal-title" id="exampleModalLabel">sucesso</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <!--mensagem de erro-->
+      <div class="modal-body">
+        despesa inserida com sucesso
+      </div>
+      <div class="modal-footer"> <!--cor do botao resposta--><!--atributo usado para esconder o modal --><!--texto do botao--> 
+        <button type="button" class="btn btn-success"         data-dismiss="modal">        voltar</button>
+      </div>
+    </div>
+  </div>
+</div>
     </body>
 </html>
