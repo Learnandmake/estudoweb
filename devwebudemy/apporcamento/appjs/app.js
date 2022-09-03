@@ -101,18 +101,47 @@ function cadastrardespesa(){
 //invoca apartir da variavel com a instancia do objeto
 // if se estiver completo e else se algum campo estiver vazio
  if(despesadb.validardados()) {
-    // instancia do objeto
+
+    //captura pelo innerhtml titulo do modal
+    //innerhtmleplicação
+    //Essa propriedade fornece uma forma simples de trocar
+    // completamente o conteúdo de um elemento. Por exemplo,
+    // o conteúdo inteiro do elemento body pode ser excluído ao fazer
+       
+    //voltando ao codigo
+    //captura o elemento apartir do id       / novo comteudo do id  
+    document.getElementById('modal_titulo').innerHTML='sucesso'
+   //mudar classe do id 
+   document.getElementById('modal-titulo-div').className='modal-header text-success'
+    
+   //botao
+   document.getElementById('modal-btn').innerHTML='voltar'
+   document.getElementById('modal-btn').className ='btn btn-success'
+   
+   //conteudo
+   document.getElementById('modal-conteudo').innerHTML = 'despesa cadastrada com sucesso'
+   // instancia do objeto
     bd1.gravar(despesadb)
     //dialog de sucesso
-    $('#sucessogravacao').modal('show')
+    $('#registradespesa').modal('show')
     console.log('Dados válidos')
-} else {
+}
+ else {
     //dialog de sucesso
     //$ : seletor de elementos do jquery 
     //dentro dos parenteses entra o id da div
     //modal: usado para representar modais de bootstrap
     //show: estado do modal para 'aparecer'
-    $('#errogravacao').modal('show')
+    document.getElementById('modal_titulo').innerHTML='Erro'
+    //mudar classe do id 
+    document.getElementById('modal-titulo-div').className = 'modal-header text-danger'
+  
+ //botao
+ document.getElementById('modal-btn').innerHTML='ok'
+ document.getElementById('modal-btn').className = 'btn btn-danger'
+
+    document.getElementById('modal-conteudo').innerHTML = 'formulario incompleto'
+    $('#registradespesa').modal('show')
     console.log('Dados inválidos')
 }
  //instancia do do bjeto

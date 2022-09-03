@@ -118,47 +118,56 @@
   Launch demo modal
 </button>
 -->
-     
+     <!--transformar modal hardcode em um normal-->
+<!--modal abaixo apagado pra fazemos um modal que varia de acordo
+com o sucesso ou falha da inserção de despesa
+-->
 <!--modal de erro-->
 <!--estrutura da mensagem-->
 <!-- Modal -->          <!--id para identificação da div-->
+<!--
+
+  
+
 <div class="modal fade" id="errogravacao" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
-    <div class="modal-content"><!--cor do titulo -->
-      <div class="modal-header text-danger">      <!--titulo-->
+    <div class="modal-content">  cor do titulo 
+      <div class="modal-header text-danger">      titulo
         <h5 class="modal-title" id="exampleModalLabel">erro na gravação</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <!--mensagem de erro-->
+      mensagem de erro
       <div class="modal-body">
         Formulário incompleto
       </div>
-      <div class="modal-footer"> <!--cor do botao resposta--><!--atributo usado para esconder o modal --><!--texto do botao--> 
+      <div class="modal-footer"> cor do botao resposta   atributo usado para esconder o modal texto do botao
         <button type="button" class="btn btn-danger"         data-dismiss="modal">        Ok</button>
       </div>
     </div>
   </div>
 </div>
 
-<!--modal de sucesso-->
+-->
+<!--modal variavel-->
 
-<div class="modal fade" id="sucessogravacao" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="registradespesa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content"><!--cor do titulo -->
-      <div class="modal-header text-success">      <!--titulo-->
-        <h5 class="modal-title" id="exampleModalLabel">sucesso</h5>
+      <div id = "modal-titulo-div"> 
+                                <!--id usado pra titulo do modal-->     <!--titulo-->
+        <h5 class="modal-title" id="modal_titulo"></h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <!--mensagem de erro-->
-      <div class="modal-body">
-        despesa inserida com sucesso
+      <div class="modal-body" id="modal-conteudo">
+
       </div>
       <div class="modal-footer"> <!--cor do botao resposta--><!--atributo usado para esconder o modal --><!--texto do botao--> 
-        <button type="button" class="btn btn-success"         data-dismiss="modal">        voltar</button>
+        <button type="button"        data-dismiss="modal" id="modal-btn">        </button>
       </div>
     </div>
   </div>
