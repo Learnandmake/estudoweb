@@ -11,6 +11,31 @@ class despesa
        this.descricao = descricao
        this.valor = valor
     }
+    // funcao para validar dados 
+    validardados()
+   {
+    // verifica cada linha do constructo do objeto 
+       for(let i in this)
+       {
+        //'this' faz referencia a um objeto literal em uma classe
+        // 'this' se encaixa para objetos literais, funções construtora de objetos
+        //'this' se encaixa em objetos baseados em classe
+        //o "i" retorna os indices do array ou os atributos do objeto
+        //o "i" nao retorna os valores especificamente falando
+       // pega a referencia this e
+        //   console.log(i , this[i])
+         
+        //se o form vier incompleto
+     if(this[i] == undefined ||  this[i] == ''  || this [i == null])
+      {
+        //retorna falso
+        return false
+      }
+      // se o formulario ficar completo ou seja nao cair no 'if'
+      return true
+        }
+
+    }
 }
 //db para conseguir adicionar dados sem subistituir os existentes
 //classe bd que vai gravar os dados
@@ -72,6 +97,18 @@ function cadastrardespesa(){
     descricao.value,
     valor.value
  )
+
+//invoca apartir da variavel com a instancia do objeto
+// if se estiver completo e else se algum campo estiver vazio
+ if(despesadb.validardados()) {
+    // instancia do objeto
+    //bd1.gravar(despesadb)
+    //dialog de sucesso
+    console.log('Dados válidos')
+} else {
+    //dialog de sucesso
+    console.log('Dados inválidos')
+}
  //instancia do do bjeto
-bd1.gravar(despesadb)
+
 }
