@@ -117,10 +117,15 @@ ldespesa.push(despesa)
 return ldespesa
 //console lod=g da lista despesas
 console.log(ldespesa)
-
-
+}
+//filtro de pesquisa 
+pesquisar(despesa)
+{
+console.log(despesa)
 }
 }
+
+
 let bd1 = new bd();
 
 //cadastra despesas
@@ -246,4 +251,25 @@ linha.insertCell(3).innerHTML = d.valor
  }
 
  )
+}
+
+//filtrar despesa
+function  pesquisardespesa()
+{
+//declaracao de variaveis
+let ano = document.getElementById('ano').value
+let mes = document.getElementById('mes').value
+let dia = document.getElementById('dia').value
+let tipo = document.getElementById('tipo').value
+let descricao = document.getElementById('descricao').value
+let valor = document.getElementById('valor').value
+
+//instanciamento do objeto despesa
+let despesafiltro = new despesa (ano, mes, dia, tipo, descricao, valor)
+
+//apenas teste
+//console.log(despesafiltro)
+
+//instaciamento do bd pesquisar
+bd1.pesquisar(despesafiltro)
 }
