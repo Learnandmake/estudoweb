@@ -1,0 +1,101 @@
+<html>
+    <head>
+<title>
+    array filter
+</title>
+    </head>
+    <body>
+    </body>
+    <script>
+    //lista
+    let funcionario = 
+    [
+    {
+        nome:'fernanda',
+        cargo:'analista de rh',
+        salario:3100,
+        status:'ativo'
+    },
+    {
+        nome:'miguel',
+        cargo:'assistente de adm',
+        salario:1700,
+        status:'ativo'
+    },
+    {
+        nome:'rosa',
+        cargo:'auxiliar de rh',
+        salario:1600,
+        status:'inativo'
+    },
+    {
+        nome:'roberto',
+        cargo:'programador php',
+        salario:4500,
+        status:'ativo'
+    },
+    {
+        nome:'maria',
+        cargo:'engenharia mecanica',
+        salario:7500,
+        status:'ativo'
+    },
+    ]
+
+    console.log(funcionario)
+    
+    //metodo filter
+    //filter percore array com base  em um filtro dentro de 
+    //uma função de callback
+    // sempre retornando menor ou igual nunca maior 
+    //retorna um array com os resultados encontrados
+   console.log
+  (
+    //primeiro filtro, instanciado apartir do array
+    funcionario
+    //primeiro filtro
+    .filter
+    (
+        function(f)
+        {
+         //retornar se o salario e menor que 2000
+         return f.salario<2000
+        }
+    )
+    //segundo filtro
+    .filter
+    (
+        function(f)
+        {
+            return f.status == "ativo"
+        }
+    )
+  )
+
+//filtro com arrow function
+  console.log
+  (
+    //primeiro filtro, instanciado apartir do array
+    funcionario
+    //primeiro filtro
+    .filter
+    (
+        f =>
+        
+         //retornar se o salario e menor que 2000
+          f.salario<2000
+        
+    )
+    //segundo filtro
+    .filter
+    (
+        f =>
+        
+         f.status == "inativo"
+        
+    )
+  )
+
+
+    </script>
+</html>
