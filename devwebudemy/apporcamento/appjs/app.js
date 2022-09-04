@@ -1,3 +1,6 @@
+
+//cadastrar despesa
+
 //objeto despesa
 class despesa
 {
@@ -72,8 +75,50 @@ class bd{
     let id =  this.getproximoid()
 
     localStorage.setItem(id, JSON.stringify(d))
-  
+
     localStorage.setItem('id',id)
+
+}
+
+recuperartregistro()
+{
+    //lista despesas
+    let ldespesa = Array()
+//console.log("regis recuperado")
+ 
+
+// recuperou id mais alto dos registros 
+let id = localStorage.getItem('id')
+
+// recuperar todas as despesas cadastradas 
+// let i = 1: começo / i <= id: checagem a condição for alcançada / i++ se a condicao nao for atingida é incrementada +1 na conta do 'i'
+for(let i = 1; i <= id ; i++)
+{
+
+//so recupera o json em formato de string 
+//let despesa = localStorage.getItem(i)
+//transforma objetos json em objetos literais
+let despesa = JSON.parse(localStorage.getItem(i))
+
+//verificar possibilidade de indices nulos
+
+//se sim pular indice nulo 
+if(despesa === null)
+{
+    continue
+}
+
+//insere o objeto despesa dentro do array ldespesa
+ldespesa.push(despesa)
+// i recupera id do obj
+//console.log(i ,despesa)
+
+}
+return ldespesa
+//console lod=g da lista despesas
+console.log(ldespesa)
+
+
 }
 }
 let bd1 = new bd();
@@ -146,4 +191,12 @@ function cadastrardespesa(){
 }
  //instancia do do bjeto
 
+}
+
+//consultar despesa
+function carregalistadespesa()
+{
+let listapgdespesa = Array()
+   listapgdespesa =  bd1.recuperartregistro()
+ console.log(listapgdespesa)
 }
