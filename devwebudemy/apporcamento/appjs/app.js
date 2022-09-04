@@ -199,4 +199,42 @@ function carregalistadespesa()
 let listapgdespesa = Array()
    listapgdespesa =  bd1.recuperartregistro()
  console.log(listapgdespesa)
+ 
+//selecionando o elemento tbody da tabela
+ let bodylistadespesa = document.getElementById('listabodydespesa')
+
+ //percorrer listapgdespesa
+ listapgdespesa.forEach(
+   
+function(d)
+ {
+//criar linhas tr
+let linha = bodylistadespesa.insertRow()
+
+//criar colunas td  / insere informacao/ modelo da informação
+linha.insertCell(0).innerHTML= `${d.dia}/${d.mes}/${d.ano}`
+
+//ajustar o tipo
+switch(d.tipo)
+{
+    case'1': d.tipo = 'Alimentação'
+    break
+    case'2': d.tipo = 'Educação'
+    break
+    case'3' :d.tipo = 'Lazer'
+    break
+    case'4': d.tipo = 'Saúde'
+    break
+    case'5': d.tipo = 'Transporte'
+    break
+}
+linha.insertCell(1).innerHTML = d.tipo
+
+linha.insertCell(2).innerHTML = d.descricao
+
+linha.insertCell(3).innerHTML = d.valor
+
+ }
+
+ )
 }
