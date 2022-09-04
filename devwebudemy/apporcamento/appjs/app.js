@@ -79,50 +79,137 @@ class bd{
     localStorage.setItem('id',id)
 
 }
-
+//recupera todos os registros
 recuperartregistro()
 {
-    //lista despesas
+     //lista despesas
     let ldespesa = Array()
-//console.log("regis recuperado")
+ //console.log("regis recuperado")
  
 
-// recuperou id mais alto dos registros 
-let id = localStorage.getItem('id')
+ // recuperou id mais alto dos registros 
+ let id = localStorage.getItem('id')
 
-// recuperar todas as despesas cadastradas 
-// let i = 1: começo / i <= id: checagem a condição for alcançada / i++ se a condicao nao for atingida é incrementada +1 na conta do 'i'
-for(let i = 1; i <= id ; i++)
-{
+ // recuperar todas as despesas cadastradas 
+ // let i = 1: começo / i <= id: checagem a condição for alcançada / i++ se a condicao nao for atingida é incrementada +1 na conta do 'i'
+ for(let i = 1; i <= id ; i++)
+ {
 
-//so recupera o json em formato de string 
-//let despesa = localStorage.getItem(i)
-//transforma objetos json em objetos literais
-let despesa = JSON.parse(localStorage.getItem(i))
+ //so recupera o json em formato de string 
+ //let despesa = localStorage.getItem(i)
+ //transforma objetos json em objetos literais
+ let despesa = JSON.parse(localStorage.getItem(i))
 
-//verificar possibilidade de indices nulos
+ //verificar possibilidade de indices nulos
 
-//se sim pular indice nulo 
-if(despesa === null)
-{
+ //se sim pular indice nulo 
+ if(despesa === null)
+ {
     continue
-}
+ }
 
-//insere o objeto despesa dentro do array ldespesa
-ldespesa.push(despesa)
-// i recupera id do obj
-//console.log(i ,despesa)
+ //insere o objeto despesa dentro do array ldespesa
+ ldespesa.push(despesa)
+ // i recupera id do obj
+ //console.log(i ,despesa)
 
-}
-return ldespesa
-//console lod=g da lista despesas
-console.log(ldespesa)
+ }
+ return ldespesa
+ //console lod=g da lista despesas
+ console.log(ldespesa)
 }
 //filtro de pesquisa 
 pesquisar(despesa)
 {
-console.log(despesa)
-}
+ //instanciamento de arrays e objetos
+ let despesafiltrada = Array()
+
+ despesafiltrada = 
+ this.recuperartregistro()
+
+ //filtros:
+
+ //ano
+ console.log('filtro de ano')
+ if(despesa.ano != '')
+ {
+    
+    console.log
+ (
+    despesafiltrada.filter
+    (
+      
+        d => d.ano == despesa.ano
+    )
+ )
+ }   
+ //mes
+ 
+ console.log('filtro de mes')
+ if(despesa.mes != '')
+ {
+    console.log
+ (
+    despesafiltrada.filter
+    (
+        d => d.mes == despesa.mes
+    )
+ )
+ }   
+
+ //dia
+ console.log('filtro de dia')
+ if(despesa.dia != '')
+ {
+   
+    console.log
+ (
+    despesafiltrada.filter
+    (
+        d => d.dia == despesa.dia
+    )
+ )
+ }   
+ //tipo
+ console.log('filtro de tipo')
+ if(despesa.tipo != '')
+ {
+   
+    console.log
+ (
+    despesafiltrada.filter
+    (
+        d => d.tipo == despesa.tipo
+    )
+ )
+ }   
+ //descricao
+ console.log('filtro de descricao')
+ if(despesa.descricao != '')
+ {
+    console.log
+ (
+    despesafiltrada.filter
+    (
+        d => d.descricao == despesa.descricao
+    )
+ )
+ }  
+
+ //valor
+   console.log('filtro de valor')
+ if(despesa.valor != '')
+ {
+    console.log
+ (
+    despesafiltrada.filter
+    (
+        d => d.valor == despesa.valor
+    )
+ )
+ }  
+
+   }
 }
 
 
@@ -212,7 +299,8 @@ function carregalistadespesa()
 {
 let listapgdespesa = Array()
    listapgdespesa =  bd1.recuperartregistro()
- console.log(listapgdespesa)
+ //apenas para teste
+   //console.log(listapgdespesa)
 
 //selecionando o elemento tbody da tabela
  let bodylistadespesa = document.getElementById('listabodydespesa')
