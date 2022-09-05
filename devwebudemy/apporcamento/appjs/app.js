@@ -107,6 +107,8 @@ recuperartregistro()
  {
     continue
  }
+// pegar id do objeto e coloca no array / o i é usado como contador para os arrays 
+despesa.id = i 
 
  //insere o objeto despesa dentro do array ldespesa
  ldespesa.push(despesa)
@@ -172,6 +174,17 @@ recuperartregistro()
 		return despesasFiltradas
 
 	}
+
+    //exclusao de dados
+    removeritem (id)
+    {
+        //linha de exclusao
+      localStorage.removeItem(id)  
+
+      alert('despesa removida')
+      //atualizar pagina apos remoção de item
+      window.location.reload()
+    }
 }
 
 
@@ -304,7 +317,30 @@ linha.insertCell(2).innerHTML = d.descricao
 
 linha.insertCell(3).innerHTML = d.valor
 
- }
+//botao de exclusao
+//cria o botao
+let btn = document.createElement("button")
+// cor de fundo do botao
+btn.className = 'btn btn-danger'
+//icone do botao
+btn.innerHTML = '<i class="fas fa-times"></i>'
+//insercao do botao na coluna 
+linha.insertCell(4).append(btn)
+//colocar dado 'id' do array nos dados do botao
+btn.id = `id_btndeldespesa_${d.id}`
+//evento do botao
+btn.onclick = 
+//funcao de exclusao
+function()
+{
+    //formata o id pra que reste so o numero
+    let id = this.id.replace('id_btndeldespesa_','')
+
+    //chama a funcao de exclusao
+    bd1.removeritem(id)
+
+}
+}
 
  )
 }
