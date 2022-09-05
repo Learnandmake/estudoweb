@@ -119,97 +119,59 @@ recuperartregistro()
  console.log(ldespesa)
 }
 //filtro de pesquisa 
-pesquisar(despesa)
+   pesquisar(despesa)
 {
- //instanciamento de arrays e objetos
- let despesafiltrada = Array()
 
- despesafiltrada = 
- this.recuperartregistro()
+    //INSTANCIA DO ARRAY
+	 let despesasFiltradas = Array()
+     // arrayrecebe a lista com todos os regitros
+		despesasFiltradas = this.recuperartregistro()
+		console.log(despesasFiltradas);
+		console.log(despesa)
 
- //filtros:
+        //filtros
+		//ano
+        //se o campo 'ano' for passado cheio
+		if(despesa.ano != ''){
+			console.log("filtro de ano");
+            //array recebe a busca / array filtrando  o ano passado pelo usuario e comparando com os anos que estao dentro do armazenamento
+			despesasFiltradas = despesasFiltradas.filter(d => d.ano == despesa.ano)
+		}
+			
+		//mes
+		if(despesa.mes != ''){
+			console.log("filtro de mes");
+			despesasFiltradas = despesasFiltradas.filter(d => d.mes == despesa.mes)
+		}
 
- //ano
- console.log('filtro de ano')
- if(despesa.ano != '')
- {
-    
-    console.log
- (
-    despesafiltrada.filter
-    (
-      
-        d => d.ano == despesa.ano
-    )
- )
- }   
- //mes
- 
- console.log('filtro de mes')
- if(despesa.mes != '')
- {
-    console.log
- (
-    despesafiltrada.filter
-    (
-        d => d.mes == despesa.mes
-    )
- )
- }   
+		//dia
+		if(despesa.dia != ''){
+			console.log("filtro de dia");
+			despesasFiltradas = despesasFiltradas.filter(d => d.dia == despesa.dia)
+		}
 
- //dia
- console.log('filtro de dia')
- if(despesa.dia != '')
- {
-   
-    console.log
- (
-    despesafiltrada.filter
-    (
-        d => d.dia == despesa.dia
-    )
- )
- }   
- //tipo
- console.log('filtro de tipo')
- if(despesa.tipo != '')
- {
-   
-    console.log
- (
-    despesafiltrada.filter
-    (
-        d => d.tipo == despesa.tipo
-    )
- )
- }   
- //descricao
- console.log('filtro de descricao')
- if(despesa.descricao != '')
- {
-    console.log
- (
-    despesafiltrada.filter
-    (
-        d => d.descricao == despesa.descricao
-    )
- )
- }  
+		//tipo
+		if(despesa.tipo != ''){
+			console.log("filtro de tipo");
+			despesasFiltradas = despesasFiltradas.filter(d => d.tipo == despesa.tipo)
+		}
 
- //valor
-   console.log('filtro de valor')
- if(despesa.valor != '')
- {
-    console.log
- (
-    despesafiltrada.filter
-    (
-        d => d.valor == despesa.valor
-    )
- )
- }  
+		//descricao
+		if(despesa.descricao != ''){
+			console.log("filtro de descricao");
+			despesasFiltradas = despesasFiltradas.filter(d => d.descricao == despesa.descricao)
+		}
 
-   }
+		//valor
+		if(despesa.valor != ''){
+			console.log("filtro de valor");
+			despesasFiltradas = despesasFiltradas.filter(d => d.valor == despesa.valor)
+		}
+
+		//retorna o array com as despesasfiltradas
+		return despesasFiltradas
+
+	}
 }
 
 
@@ -294,17 +256,23 @@ document.getElementById('modal-conteudo').innerHTML = 'formulario incompleto'
 
 }
 
-//consultar despesa
-function carregalistadespesa()
+//consultar despesa        / recebe um array 
+function carregalistadespesa(listapgdespesa = Array(), filtro = false)
 {
-let listapgdespesa = Array()
-   listapgdespesa =  bd1.recuperartregistro()
+    //se a lista de filtro estiver vazia
+    if(listapgdespesa.length == 0&& filtro == false)
+{
+    //busca todas as despesas
+    listapgdespesa =  bd1.recuperartregistro()
+}
+  
  //apenas para teste
    //console.log(listapgdespesa)
 
 //selecionando o elemento tbody da tabela
  let bodylistadespesa = document.getElementById('listabodydespesa')
-
+// esvazia a tabela para que nao haja dados duplicados
+ bodylistadespesa.innerHTML = ''
  //percorrer listapgdespesa
  listapgdespesa.forEach(
    
@@ -355,9 +323,13 @@ let valor = document.getElementById('valor').value
 //instanciamento do objeto despesa
 let despesafiltro = new despesa (ano, mes, dia, tipo, descricao, valor)
 
-//apenas teste
-//console.log(despesafiltro)
 
 //instaciamento do bd pesquisar
-bd1.pesquisar(despesafiltro)
+ let despesaf = bd1.pesquisar(despesafiltro )
+
+ console.log(despesaf)
+ // carrega a despesa filtrada pra funcao que exibi a tabela
+ carregalistadespesa(despesaf , true)
+ 
+
 }
