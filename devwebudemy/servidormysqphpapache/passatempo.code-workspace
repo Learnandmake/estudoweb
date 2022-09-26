@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"name": "passatempo",
+			"path": "../../../passatempo"
+		},
+		{
+			"name": "estudo",
+			"path": "../.."
+		},
+		{
+			"name": "autoralweb",
+			"path": "../../../autoralweb"
+		},
+		{
+			"name": "estudovs",
+			"path": "../../../estudovs"
+		},
+		{
+			"path": "../../../../../../../../xampp/htdocs/devudemyphp"
+		}
+	],
+	"settings": {}
+}
