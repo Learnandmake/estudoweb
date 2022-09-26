@@ -9,15 +9,16 @@
 			"path": "../.."
 		},
 		{
+			"name": "devudemyphp",
+			"path": "../../../../../../../../xampp/htdocs/devudemyphp"
+		},
+		{
 			"name": "autoralweb",
 			"path": "../../../autoralweb"
 		},
 		{
 			"name": "estudovs",
 			"path": "../../../estudovs"
-		},
-		{
-			"path": "../../../../../../../../xampp/htdocs/devudemyphp"
 		}
 	],
 	"settings": {}
