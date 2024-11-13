@@ -4,7 +4,27 @@
     <title> cursophp</title>
     </head>
     <body>
+    
     <?php
+    //a 308
+    //o php tem um vasto suporte a protocolos da internet com programação orientada
+    // a objeto 
+    //suporte a diversos banco de dados
+    // suporta protocolos de comunicação
+
+    //a309
+
+    //embutindo bloos php em paginas html
+
+    //nome
+    //tag padrao      <?php codigo aqui habilitada
+    //tag de impressao  <?= codgo aqui  habilitada
+    //tag curta          <?             desabilitada
+    //asp tag             <%            descontinuada na versao 7
+    
+    // as codificações php não sao entregues para o browser 
+    // sendo assim as tags php não aparecem no console
+   
     echo ('aula1');
     ?>
     <br/>
@@ -17,7 +37,7 @@
     ?>
       <br/>
     <?php
-      echo ('html precisa vir pronto do back end');
+      echo ('html precisa vir pronto do back end'); 
     ?>
     <br/>
     <?= ' utilizando tag de impressão' ?>
@@ -30,5 +50,7 @@
     echo ('tag curta');
     ?>
     <br/>
+
+
     </body>
 </html>
