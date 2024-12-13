@@ -59,5 +59,42 @@ comentarios de varias linhas
 
 
 ?>
+<br>
+<br>
+<br>
+<?php
+echo 
+'
+315. Variáveis - Prática (string, int, float e boolean)
+';
+/*
+anotações:
+o retorno da variavel bool é 1 se o retorno for true e vazio se for false
+
+*/ 
+
+//instaciamento de variaveis 
+
+//string
+$nome = 'jorge sant ana';
+
+//int
+$idade = 29;
+
+//float
+$peso = 82.5;
+
+//boolean (true or false) true = 1 e false (vazio)
+$fumante = true;
+?>
+
+<h1>ficha cadastral</h1>
+<br>
+<!-- tem que instancia a tag php pra poder invocar a variavel -->
+<p>Nome: <?= $nome ?></p>
+<p>Idade: <?= $idade ?></p>
+<p>Peso: <?= $peso ?></p>
+<p>Fumante: <?= $fumante ?></p>
+
     </body>
 </html>
