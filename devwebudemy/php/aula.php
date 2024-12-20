@@ -76,25 +76,48 @@ o retorno da variavel bool é 1 se o retorno for true e vazio se for false
 //instaciamento de variaveis 
 
 //string
-$nome = 'jorge sant ana';
+$nome315 = 'jorge sant ana';
 
 //int
-$idade = 29;
+$idade315 = 29;
 
 //float
-$peso = 82.5;
+$peso315 = 82.5;
 
 //boolean (true or false) true = 1 e false (vazio)
-$fumante = true;
+$fumante315 = true;
 ?>
 
 <h1>ficha cadastral</h1>
 <br>
 <!-- tem que instancia a tag php pra poder invocar a variavel -->
-<p>Nome: <?= $nome ?></p>
-<p>Idade: <?= $idade ?></p>
-<p>Peso: <?= $peso ?></p>
-<p>Fumante: <?= $fumante ?></p>
+<p>Nome: <?= $nome315 ?></p>
+<p>Idade: <?= $idade315 ?></p>
+<p>Peso: <?= $peso315 ?></p>
+<p>Fumante: <?= $fumante315 ?></p>
+<!--a316 mudando dados das variaveis-->
 
+<!--317 concatenação-->
+
+<?php 
+echo 
+'
+317. concatenação
+'; ?>
+
+<br>
+<br>
+
+<?php
+/*a contatenação é a a função de juntar 1 ou mais
+variaveis dentro de uma frase estatica 
+tambem da pra usar aspas duplas e essa ultima não precisa adicionar ponto pra instanciar a
+variavel */
+
+$nome317 = 'Gabriel';
+$idade317=21 ;  
+echo 'olá '. $nome317. " tenha uma boa tarde! voce tem  $idade317 anos";
+
+?>
     </body>
 </html>
