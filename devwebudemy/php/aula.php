@@ -119,5 +119,20 @@ $idade317=21 ;
 echo 'olá '. $nome317. " tenha uma boa tarde! voce tem  $idade317 anos";
 
 ?>
+
+<?php 
+/*a318 variaveis constantes
+
+variaveis constantes sao variaveis que seus valores não podem ser alterados muitas vezes so uma vez
+*/
+define('bd_url','endereco_bd_dev');
+define('bd_usuario','usuario_dev');
+define('bd_senha','senha_dev');
+
+echo bd_url . '<br />';
+echo bd_usuario. '<br />';
+echo bd_senha . '<br />';
+/*caso tente alterar o valor de algumas dessas variaveis denovo ira resultar em um erro */
+?>
     </body>
 </html>
