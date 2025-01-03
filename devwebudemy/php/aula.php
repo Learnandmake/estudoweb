@@ -133,6 +133,33 @@ echo bd_url . '<br />';
 echo bd_usuario. '<br />';
 echo bd_senha . '<br />';
 /*caso tente alterar o valor de algumas dessas variaveis denovo ira resultar em um erro */
+/* a319 if/else */
+
+/*if ( condiçao)`
+{se a condição for atendida esse bloco de codigo vai ser executado}
+senão esse bloco de codigo vai ser executado
+else if(se nao vamos tentar outra alternativa de condição)
+
+{se a segunda condição  for atendida e a primeira nao, vai cair nesse bloco de codigo que vai ser executado}
+
+else
+{se nenhuma condição for atendida esse bloco de codigo vai ser executado}
+
+a320 operadores de comparação condicionais 
+o php oferece 9 operadores para atender determinadas condições
+
+operadores if/ else
+igual (===) - verifica se os valores comparadossao iguais
+identico (===) - verifica se os valores comparadossao iguais e do mesmo tipo
+diferente(!=)  - verifica seos valorescomparados são direfentes
+diferente (<>) - verifica se os valores comparados sao diferentes
+não identico (!===) - verifica se os valores comparados sao diferentes e de tipos diferentes 
+menor(<) - verifica se o valoresquerdo e menor que o valor da direita
+maior (>) - verifica se o valor da esquerda é maior que o valor dadireita
+menor igual (<=) - verifica se o valor da esquerda e menor ou igual ao da direita
+maior igual (>=) - verofocase o valor da esquerda emaior ou igual ao valor da direita
+
+*/
 ?>
     </body>
 </html>
