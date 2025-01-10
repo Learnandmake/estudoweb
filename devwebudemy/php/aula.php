@@ -160,6 +160,82 @@ menor igual (<=) - verifica se o valor da esquerda e menor ou igual ao da direit
 maior igual (>=) - verofocase o valor da esquerda emaior ou igual ao valor da direita
 
 */
+
+/*
+321 if/else parte 2
+
+*/
+
+//se a condição não for atendida vai cair no else e se a condição for atendida vai cair no if
+if(false)
+{
+    echo 'verdadeiro';
+}
+
+else
+{
+    echo 'falso';
+}
+
+//==
+
+if(2 == 2)
+{ echo 'verdadeiro';}
+
+else 
+{ echo 'false';}
+
+//=== apesar de visualmente ter o mesmo numero o computador interpreta como diferente porque esta em formato de texto
+if(2 === '2')
+{ echo 'verdadeiro';}
+
+else 
+{ echo 'false';}
+
+//!= ou <> tem que ser diferente 
+
+
+if(2 != '2')
+{ echo 'verdadeiro';}
+
+else 
+{ echo 'false';}
+
+// tem que ser diferente no tipo de dado e valor
+if(2 !== '2')
+{ echo 'verdadeiro';}
+
+else 
+{ echo 'false';}
+
+// < o valor da esquerda tem que ser menor que o comparado pra condição ser atendida
+if(1 < 2)
+{ echo 'verdadeiro';}
+
+else 
+{ echo 'false';}
+
+// > o valor da esquerda tem que ser menor que o comparado
+if(2 > 1)
+{ echo 'verdadeiro';}
+
+else 
+{ echo 'false';}
+
+
+// verifica se o valor da esquerda e menor ou igual ao da direita 
+if(1 <= 2)
+{ echo 'verdadeiro';}
+
+else 
+{ echo 'false';}
+// verifica se o valor da esquerda e maior ou igual ao da direita 
+if(2 => 1)
+{ echo 'verdadeiro';}
+
+else 
+{ echo 'false';}
+
 ?>
     </body>
 </html>
