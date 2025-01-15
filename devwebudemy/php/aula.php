@@ -230,11 +230,18 @@ if(1 <= 2)
 else 
 { echo 'false';}
 // verifica se o valor da esquerda e maior ou igual ao da direita 
-if(2 => 1)
+if(2 >= 1)
 { echo 'verdadeiro';}
 
 else 
 { echo 'false';}
+
+/*a322 operadores logicos
+
+operador e (and ou  &&) - verdadeiro se todas as expressoes forem erdadeiras 
+operador ou (or ou ||) - verdadeuri se pelo menos uma das expressoes for verdadeira 
+operador xor (xor ) - verdadeiro apenas se uma das expressoes for verdadeiro, mas não ambas
+operador negação (!) - inverte o resultado da expressão*/ 
 
 ?>
     </body>
