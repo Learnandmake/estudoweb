@@ -238,11 +238,48 @@ else
 
 /*a322 operadores logicos
 
-operador e (and ou  &&) - verdadeiro se todas as expressoes forem erdadeiras 
-operador ou (or ou ||) - verdadeuri se pelo menos uma das expressoes for verdadeira 
+operador e (and ou  &&) - verdadeiro se todas as expressoes forem verdadeiras 
+operador ou (or ou ||) - verdadeiro se pelo menos uma das expressoes for verdadeira 
 operador xor (xor ) - verdadeiro apenas se uma das expressoes for verdadeiro, mas não ambas
 operador negação (!) - inverte o resultado da expressão*/ 
 
+/*
+a323 praticando com operadores logicos
+(())estabelecer prioridade quanto mais dentro dos parenteses maior a prioridade
+
+*/
+
+
+//operador e (and ou  &&) - verdadeiro se todas as expressoes forem verdadeiras
+if(2 == 2 and 3 == 3 )
+{ echo 'verdadeiro';}
+
+else 
+{ echo 'false';}
+
+//operador ou (or ou ||) - verdadeiro se pelo menos uma das expressoes for verdadeira 
+if(2 == 2 or 1 == 3 )
+{ echo 'verdadeiro';}
+
+else 
+{ echo 'false';}
+
+//operador xor (xor ) - verdadeiro apenas se uma das expressoes for verdadeiro, mas não ambas
+if(2 == 2 xor 2 == 3 )
+{ echo 'verdadeiro';}
+
+else 
+{ echo 'false';}
+
+//operador negação (!) - inverte o resultado da expressão
+// no caso abaixo a expressão retornaria true ira retornar false
+if(!(2 == 2 xor 2 == 3) )
+{ echo 'verdadeiro';}
+
+else 
+{ echo 'false';}
 ?>
+
+
     </body>
 </html>
